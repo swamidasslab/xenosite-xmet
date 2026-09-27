@@ -26,6 +26,8 @@ xrm:9100100	skos:exactMatch	forest.rule:Hydroxylation	semapv:ManualMappingCurati
 xrm:9100110	skos:exactMatch	forest.rule:Epoxidation	semapv:ManualMappingCuration	Epoxidation rule	Epoxidation
 xrm:9100120	skos:exactMatch	forest.rule:NitrogenOxidation	semapv:ManualMappingCuration	NitrogenOxidation rule	NitrogenOxidation
 xrm:9100130	skos:exactMatch	forest.rule:SulfurOxidation	semapv:ManualMappingCuration	SulfurOxidation rule	SulfurOxidation
+xrm:9100131	skos:exactMatch	forest.rule:ThiopheneSulfurOxidation	semapv:ManualMappingCuration	ThiopheneSulfurOxidation rule	ThiopheneSulfurOxidation
+xrm:0000133	skos:relatedMatch	forest.rule:ThiopheneSulfurOxidation	semapv:ManualMappingCuration	thiophene S-oxidation	ThiopheneSulfurOxidation
 xrm:9100200	skos:exactMatch	forest.rule:Dealkylation	semapv:ManualMappingCuration	Dealkylation rule	Dealkylation
 xrm:9100201	skos:exactMatch	forest.rule:NDealkylation	semapv:ManualMappingCuration	NDealkylation rule	NDealkylation
 xrm:9100210	skos:exactMatch	forest.rule:OxidativeDehalogenation	semapv:ManualMappingCuration	OxidativeDehalogenation rule	OxidativeDehalogenation
@@ -34,6 +36,8 @@ xrm:9100400	skos:exactMatch	forest.rule:Hydrolysis	semapv:ManualMappingCuration	
 xrm:9100401	skos:exactMatch	forest.rule:EpoxideOpening	semapv:ManualMappingCuration	EpoxideOpening rule	EpoxideOpening
 xrm:9100402	skos:exactMatch	forest.rule:Dephosphorylation	semapv:ManualMappingCuration	Dephosphorylation rule	Dephosphorylation
 xrm:9100403	skos:exactMatch	forest.rule:AzoSplitting	semapv:ManualMappingCuration	AzoSplitting rule	AzoSplitting
+xrm:9100404	skos:exactMatch	forest.rule:EpoxideHydration	semapv:ManualMappingCuration	EpoxideHydration rule	EpoxideHydration
+xrm:0000400	skos:relatedMatch	forest.rule:EpoxideHydration	semapv:ManualMappingCuration	epoxide opening	EpoxideHydration
 xrm:9100500	skos:exactMatch	forest.rule:Hydrogenation	semapv:ManualMappingCuration	Hydrogenation rule	Hydrogenation
 xrm:9100501	skos:exactMatch	forest.rule:Dehydration	semapv:ManualMappingCuration	Dehydration rule	Dehydration
 xrm:9100510	skos:exactMatch	forest.rule:NitrogenReduction	semapv:ManualMappingCuration	NitrogenReduction rule	NitrogenReduction
@@ -132,3 +136,5 @@ xrm:9200082	skos:exactMatch	forest.pattern:Glutathionation/aziridine_ch2	semapv:
 xrm:9200083	skos:exactMatch	forest.pattern:Glutathionation/aziridine_c	semapv:ManualMappingCuration	Glutathionation/aziridine_c	aziridine_c
 xrm:9200084	skos:exactMatch	forest.pattern:Glutathionation/mesylate	semapv:ManualMappingCuration	Glutathionation/mesylate	mesylate
 xrm:9200085	skos:exactMatch	forest.pattern:Glutathionation/isocyanate	semapv:ManualMappingCuration	Glutathionation/isocyanate	isocyanate
+xrm:9200086	skos:exactMatch	forest.pattern:EpoxideHydration/diol	semapv:ManualMappingCuration	EpoxideHydration/diol	diol
+xrm:9200087	skos:exactMatch	forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide	semapv:ManualMappingCuration	ThiopheneSulfurOxidation/thiophene_s_oxide	thiophene_s_oxide

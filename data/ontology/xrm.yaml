@@ -484,6 +484,7 @@ concepts:
   - xrm:8000006
   related_match:
   - xrm:8000006
+  - xrm:9100131
   synonyms:
   - Thiohene S-oxidation
   - thiohene S-oxidation
@@ -867,6 +868,7 @@ concepts:
   - xrm:0000013
   related_match:
   - xrm:9100401
+  - xrm:9100404
   definition: 'epoxide opening: xenobiotic-metabolism term under hydrolysis.'
 - id: xrm:0000401
   preferred_label: ester hydrolysis
@@ -5795,6 +5797,15 @@ concepts:
   - xrm:9000010
   related_match:
   - xrm:0000130
+- id: xrm:9100131
+  preferred_label: ThiopheneSulfurOxidation rule
+  synonyms:
+  - ThiopheneSulfurOxidation
+  definition: Metabolic Forest rule `ThiopheneSulfurOxidation` in the Forest-map hierarchy.
+  parents:
+  - xrm:9000010
+  related_match:
+  - xrm:0000133
 - id: xrm:9100200
   preferred_label: Dealkylation rule
   synonyms:
@@ -5867,6 +5878,16 @@ concepts:
   - xrm:9000013
   related_match:
   - xrm:0000412
+- id: xrm:9100404
+  preferred_label: EpoxideHydration rule
+  synonyms:
+  - EpoxideHydration
+  definition: Metabolic Forest rule `EpoxideHydration` in the Forest-map hierarchy
+    (alkene to vicinal diol; elementary plan Epoxidation then EpoxideOpening).
+  parents:
+  - xrm:9000013
+  related_match:
+  - xrm:0000400
 - id: xrm:9100500
   preferred_label: Hydrogenation rule
   synonyms:
@@ -6577,6 +6598,21 @@ concepts:
   definition: Metabolic Forest PatternInfo `isocyanate` under rule `Glutathionation`.
   parents:
   - xrm:9101030
+- id: xrm:9200086
+  preferred_label: EpoxideHydration/diol
+  synonyms:
+  - diol
+  definition: Metabolic Forest PatternInfo `diol` under rule `EpoxideHydration`.
+  parents:
+  - xrm:9100404
+- id: xrm:9200087
+  preferred_label: ThiopheneSulfurOxidation/thiophene_s_oxide
+  synonyms:
+  - thiophene_s_oxide
+  definition: Metabolic Forest PatternInfo `thiophene_s_oxide` under rule
+    `ThiopheneSulfurOxidation`.
+  parents:
+  - xrm:9100131
 - id: xrm:1500230
   preferred_label: macromolecule binding
   synonyms:

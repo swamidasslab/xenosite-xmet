@@ -3,14 +3,13 @@
   "n_smirks": 74,
   "n_rule_classes": 23,
   "n_pattern_tags": 48,
-  "classes_with_sssom": 20,
+  "classes_with_sssom": 21,
   "classes_assignment_taggable": 21,
-  "unmapped_pattern_count": 4,
+  "unmapped_pattern_count": 3,
   "unmapped_patterns_sample": [
     "forest.pattern:ConjugationRule/acetyl",
     "forest.pattern:NitroaromaticReduction/nitro_charged",
-    "forest.pattern:NitroaromaticReduction/nitro_neutral",
-    "forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide"
+    "forest.pattern:NitroaromaticReduction/nitro_neutral"
   ],
   "classes": [
     {
@@ -408,12 +407,17 @@
       "rule_class": "ThiopheneSulfurOxidation",
       "n_smirks": 1,
       "forest_rule": "forest.rule:ThiopheneSulfurOxidation",
-      "sssom_rule_mapped": false,
-      "sssom_subjects": [],
+      "sssom_rule_mapped": true,
+      "sssom_subjects": [
+        "xrm:9100131",
+        "xrm:0000133"
+      ],
       "patterns": [
         "forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide"
       ],
-      "patterns_sssom_mapped": [],
+      "patterns_sssom_mapped": [
+        "forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide"
+      ],
       "assignment_taggable": false
     }
   ],

@@ -572,7 +572,10 @@
         "xrm:0004001",
         "xrm:8000006"
       ],
-      "relatedMatch": "xrm:8000006"
+      "relatedMatch": [
+        "xrm:8000006",
+        "xrm:9100131"
+      ]
     },
     {
       "id": "xrm:0000134",
@@ -1111,7 +1114,10 @@
         "epoxide hydrolysis"
       ],
       "broader": "xrm:0000013",
-      "relatedMatch": "xrm:9100401"
+      "relatedMatch": [
+        "xrm:9100401",
+        "xrm:9100404"
+      ]
     },
     {
       "id": "xrm:0000401",
@@ -9479,6 +9485,18 @@
       "relatedMatch": "xrm:0000130"
     },
     {
+      "id": "xrm:9100131",
+      "type": "skos:Concept",
+      "prefLabel": "ThiopheneSulfurOxidation rule",
+      "inScheme": "xrm:scheme",
+      "definition": "Metabolic Forest rule `ThiopheneSulfurOxidation` in the Forest-map hierarchy.",
+      "altLabel": [
+        "ThiopheneSulfurOxidation"
+      ],
+      "broader": "xrm:9000010",
+      "relatedMatch": "xrm:0000133"
+    },
+    {
       "id": "xrm:9100200",
       "type": "skos:Concept",
       "prefLabel": "Dealkylation rule",
@@ -9573,6 +9591,18 @@
       ],
       "broader": "xrm:9000013",
       "relatedMatch": "xrm:0000412"
+    },
+    {
+      "id": "xrm:9100404",
+      "type": "skos:Concept",
+      "prefLabel": "EpoxideHydration rule",
+      "inScheme": "xrm:scheme",
+      "definition": "Metabolic Forest rule `EpoxideHydration` in the Forest-map hierarchy (alkene to vicinal diol; elementary plan Epoxidation then EpoxideOpening).",
+      "altLabel": [
+        "EpoxideHydration"
+      ],
+      "broader": "xrm:9000013",
+      "relatedMatch": "xrm:0000400"
     },
     {
       "id": "xrm:9100500",
@@ -10663,6 +10693,28 @@
         "isocyanate"
       ],
       "broader": "xrm:9101030"
+    },
+    {
+      "id": "xrm:9200086",
+      "type": "skos:Concept",
+      "prefLabel": "EpoxideHydration/diol",
+      "inScheme": "xrm:scheme",
+      "definition": "Metabolic Forest PatternInfo `diol` under rule `EpoxideHydration`.",
+      "altLabel": [
+        "diol"
+      ],
+      "broader": "xrm:9100404"
+    },
+    {
+      "id": "xrm:9200087",
+      "type": "skos:Concept",
+      "prefLabel": "ThiopheneSulfurOxidation/thiophene_s_oxide",
+      "inScheme": "xrm:scheme",
+      "definition": "Metabolic Forest PatternInfo `thiophene_s_oxide` under rule `ThiopheneSulfurOxidation`.",
+      "altLabel": [
+        "thiophene_s_oxide"
+      ],
+      "broader": "xrm:9100131"
     }
   ]
 }
