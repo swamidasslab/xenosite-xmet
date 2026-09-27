@@ -53,7 +53,7 @@ chemical transformation and phase I family).
 | `skos:related` / `skos:relatedMatch` | Loose cross-spine association |
 | `skos:exactMatch` | True identity to an external concept (rare) |
 | `skos:closeMatch` | Similar MeSH/KEGG/Rhea/model term |
-| `skos:broadMatch` / `skos:narrowMatch` | Legacy/model terms broader/narrower than XRM |
+| `skos:broadMatch` / `skos:narrowMatch` | Legacy/model terms broader/narrower than XMET |
 
 ## Operational annotation properties (`xmet:`)
 
@@ -87,11 +87,11 @@ identity parents.
 ### Reaction class ↔ experimental context
 
 Curated priors (not hard OWL axioms) live in
-[`../mappings/xrm-reaction-context-expectations.tsv`](../mappings/xrm-reaction-context-expectations.tsv):
+[`../mappings/xmet-reaction-context-expectations.tsv`](../mappings/xmet-reaction-context-expectations.tsv):
 
 | Column | Meaning |
 | --- | --- |
-| `reaction_id` | XRM reaction / transformation concept |
+| `reaction_id` | XMET reaction / transformation concept |
 | `context_id` | Biological-context leaf (assay, matrix, species, setting) |
 | `relation` | `likely_in` / `observed_in` / `unlikely_in` (→ `xmet:likelyInContext` etc.) |
 | `inherit_children` | If true, apply to `skos:narrower` descendants |
@@ -104,11 +104,11 @@ Combinations stay out of the SKOS inventory; bundles attach context via
 
 ```json
 {
-  "transformation": "xrm:0000106",
-  "phase": "xrm:0000001",
-  "site_environment": ["xrm:1600014"],
-  "structural_delta": ["xrm:1700012"],
-  "medchem_interpretation": ["xrm:1400010"],
+  "transformation": "xmet:0000106",
+  "phase": "xmet:0000001",
+  "site_environment": ["xmet:1600014"],
+  "structural_delta": ["xmet:1700012"],
+  "medchem_interpretation": ["xmet:1400010"],
   "site_label": "benzylic hydroxylation @1",
   "site": {"map_nums": [1]},
   "xmet_properties": ["xmet:hasPhase", "xmet:hasTransformation", "xmet:localizesToSite"]

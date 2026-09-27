@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Decompose MetXBioDB compositional reaction phrases into XRM facets.
+"""Decompose MetXBioDB compositional reaction phrases into XMET facets.
 
 For each compositional residual/match, decide:
-  composite_covered  — head + site/attachment facets already in XRM
+  composite_covered  — head + site/attachment facets already in XMET
   partial_composite  — head covered; some qualifier facets missing
   novel_facet        — introduces a concept beyond identity+site composition
 
@@ -106,7 +106,7 @@ def analyze_term(term: str, head: str, site_norms: set[str], xrm_id: str) -> dic
     if head:
         matched_facets.append(f"head:{head}")
     if xrm_id:
-        matched_facets.append(f"xrm:{xrm_id}")
+        matched_facets.append(f"xmet:{xrm_id}")
 
     for pat, labels in QUALIFIER_MAP:
         if pat.search(term) or pat.search(n):
@@ -227,14 +227,14 @@ def main() -> None:
     lines = [
         "# MetXBioDB compositional refinement",
         "",
-        "Decomposes site-/substrate-qualified Reaction Type phrases into existing XRM",
+        "Decomposes site-/substrate-qualified Reaction Type phrases into existing XMET",
         "facets vs concepts that still need coverage.",
         "",
         f"- Phrases analyzed: **{len(out_rows)}**",
         "",
         "| Bucket | Terms | Meaning |",
         "| --- | ---: | --- |",
-        f"| `composite_covered` | {buckets['composite_covered']} | Head + site/attachment already expressible as XRM composites |",
+        f"| `composite_covered` | {buckets['composite_covered']} | Head + site/attachment already expressible as XMET composites |",
         f"| `partial_composite` | {buckets['partial_composite']} | Head known; some qualifier facets missing |",
         f"| `novel_facet` | {buckets['novel_facet']} | Extra concept beyond chemical identity + standard site |",
         "",

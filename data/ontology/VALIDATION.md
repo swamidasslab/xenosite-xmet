@@ -1,6 +1,6 @@
 # Forest SMARTS validation (no namer coupling)
 
-Forest rule SMIRKS are a **validation and candidate** source for XRM. The namer
+Forest rule SMIRKS are a **validation and candidate** source for XMET. The namer
 must never import `xenosite-forest` or RDKit Forest code.
 
 ## Pipeline
@@ -19,7 +19,7 @@ python3 crates/xenosite-tagger/tools/validate_forest_coverage.py
 
 1. Harvest is checked in and well-formed (SMIRKS, opaque `forest.*` tags).
 2. Coverage report exists; most Forest rule classes have SSSOM and/or
-   assignment-tag pathways into XRM.
+   assignment-tag pathways into XMET.
 3. For each SSSOM-mapped `forest.rule:*` / `forest.pattern:*` from the harvest,
    `Namer::name_smiles(..., &[tag])` succeeds (opaque tag path) — Forest code
    is not executed.
@@ -35,12 +35,12 @@ cargo test -p xenosite-tagger --test gold_score
 python3 crates/xenosite-tagger/tools/score_gold_set.py
 ```
 
-See `data/competency/PLAN.md`. SPARQL runs against `xrm.skos.ttl`; SHACL against
-`xrm.shacl.ttl`. Tagging CQs export to `fixtures/reactions.jsonl` for Rust.
+See `data/competency/PLAN.md`. SPARQL runs against `xmet.skos.ttl`; SHACL against
+`xmet.shacl.ttl`. Tagging CQs export to `fixtures/reactions.jsonl` for Rust.
 
 ## Promoting SMARTS into assignments
 
 Reviewed rows from `forest-smarts.jsonl` may become structural
 `reactant_smarts` / `product_smarts` in `xenobiotic.jsonl` **after** chemist
-simplification. Prefer simpler XRM SMARTS for naming; keep dense Forest SMIRKS
-as the oracle for “does this Forest pattern family have an XRM handle?”
+simplification. Prefer simpler XMET SMARTS for naming; keep dense Forest SMIRKS
+as the oracle for “does this Forest pattern family have an XMET handle?”

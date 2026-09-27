@@ -1,4 +1,4 @@
-# Guidance sources for XRM terms, synonyms, and examples
+# Guidance sources for XMET terms, synonyms, and examples
 
 Checked-in harvester: `harvest_candidates.py` (stdlib Python). Promote reviewed
 rows from `data/candidates/*.jsonl` into SKOS / SSSOM / goldens.
@@ -21,7 +21,7 @@ See [`data/ontology/RELATED_ONTOLOGIES.md`](../../data/ontology/RELATED_ONTOLOGI
 Order of relevance: **RXNO** (naming architecture) → **MOP** (broad
 transformation parents) → **GO:0006805** (xenobiotic process anchor) →
 **ChEBI / Rhea / KEGG RCLASS** (participants & structure deltas) → **MeSH**
-(literature) → **ECO / CHMO** (evidence & methods). XRM stays separate SKOS
+(literature) → **ECO / CHMO** (evidence & methods). XMET stays separate SKOS
 with SSSOM crosswalks.
 
 ## Strong next targets (stub / manual)
@@ -35,7 +35,7 @@ with SSSOM crosswalks.
 | **NCIt** | Cancer/drug metabolism wording | NCI EVS API |
 | **HMDB** | Human metabolite structures + biotransformations | HMDB XML/API dumps |
 | **MetaCyc / BioCyc** | Curated reaction frames with compounds | Pathway Tools web services / flat files |
-| **UniProt** (Rhea-linked) | Enzyme→reaction, not preferred as XRM prefLabels | UniProt REST |
+| **UniProt** (Rhea-linked) | Enzyme→reaction, not preferred as XMET prefLabels | UniProt REST |
 | **SBO** | Systems biology reaction-type terms | OLS |
 | **IUPAC xenobiotic glossary** (Pure Appl. Chem. 2021) | Authoritative chemist vocabulary | Manual PDF/table extract → seed |
 | **DrugBank** metabolites | Clinical xenobiotic examples | Licensed dump / scrape policy check |

@@ -1,4 +1,4 @@
-# Map MetXBioDB and AMD reaction terms to XRM separately (never merged).
+# Map MetXBioDB and AMD reaction terms to XMET separately (never merged).
 #
 # Usage (from repo root):
 #   uv run snakemake -s workflows/db_term_mapping/Snakefile -c1

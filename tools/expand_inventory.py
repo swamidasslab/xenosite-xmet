@@ -12,8 +12,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-YAML_PATH = ROOT / "data/ontology/xrm.yaml"
-SKOS_PATH = ROOT / "data/ontology/xrm.skos.jsonld"
+YAML_PATH = ROOT / "data/ontology/xmet.yaml"
+SKOS_PATH = ROOT / "data/ontology/xmet.skos.jsonld"
 
 # Next free id ranges (avoid collisions with existing).
 NEXT = {
@@ -35,7 +35,7 @@ NEXT = {
 def next_id(bucket: str) -> str:
     n = NEXT[bucket]
     NEXT[bucket] = n + 1
-    return f"xrm:{n:07d}"
+    return f"xmet:{n:07d}"
 
 
 def main():
@@ -66,20 +66,20 @@ def main():
     # --- metabolism phase / pathway role ---
     add(
         "sequential metabolism",
-        "xrm:1000000",
+        "xmet:1000000",
         "Multi-step metabolic sequence rather than a single transformation.",
         ["sequential biotransformation"],
         "phase",
     )
     add(
         "intermediate metabolite formation",
-        "xrm:1000000",
+        "xmet:1000000",
         "Formation of a non-terminal metabolic intermediate.",
         bucket="phase",
     )
     add(
         "first-pass metabolism",
-        "xrm:1000000",
+        "xmet:1000000",
         "Pathway role associated with first-pass metabolic clearance.",
         bucket="phase",
     )
@@ -102,7 +102,7 @@ def main():
         ("hydrogenation class", "Addition of hydrogen across unsaturation.", []),
         ("aldehyde formation class", "Phase I path that forms an aldehyde.", ["aldehyde-forming class"]),
     ]:
-        add(pref, "xrm:1200000", definition, syn or None, "p1")
+        add(pref, "xmet:1200000", definition, syn or None, "p1")
 
     # --- phase II conjugation detail ---
     for pref, definition, syn in [
@@ -129,7 +129,7 @@ def main():
         ("Michael GSH conjugation", "GSH attack on a Michael acceptor.", []),
         ("halide-displacement GSH conjugation", "GSH displacement of a halide.", []),
     ]:
-        parents = ["xrm:1300000", "xrm:0000002"]
+        parents = ["xmet:1300000", "xmet:0000002"]
         add(pref, parents, definition, syn or None, "p2")
 
     # --- reactive / product metabolite classes ---
@@ -170,7 +170,7 @@ def main():
         ("sulfenic acid metabolite", "Sulfenic acid intermediate/product.", []),
         ("nitro anion radical", "Nitro anion radical intermediate.", []),
     ]:
-        add(pref, "xrm:1500000", definition, syn or None, "reactive")
+        add(pref, "xmet:1500000", definition, syn or None, "reactive")
 
     # --- site environment ---
     for pref, definition, syn in [
@@ -220,7 +220,7 @@ def main():
         # Bare hybridization / vinyl / alkyne carbons are out of scope
         # (general chem); see data/ontology/SCOPE.md.
     ]:
-        add(pref, "xrm:1600000", definition, syn or None, "site")
+        add(pref, "xmet:1600000", definition, syn or None, "site")
 
     # --- medchem interpretation ---
     for pref, definition, syn in [
@@ -255,7 +255,7 @@ def main():
         ("metabolic switching risk", "Blocking one site may switch metabolism elsewhere.", []),
         ("species-difference risk", "Liability sensitive to species differences.", []),
     ]:
-        add(pref, "xrm:1400000", definition, syn or None, "medchem")
+        add(pref, "xmet:1400000", definition, syn or None, "medchem")
 
     # --- evidence / assertion ---
     for pref, definition, syn in [
@@ -286,7 +286,7 @@ def main():
         ("low confidence assertion", "Low-confidence assertion.", []),
         ("high confidence assertion", "High-confidence assertion.", []),
     ]:
-        add(pref, "xrm:2000000", definition, syn or None, "evidence")
+        add(pref, "xmet:2000000", definition, syn or None, "evidence")
 
     # --- biological context (orthogonal) ---
     for pref, definition, syn in [
@@ -321,7 +321,7 @@ def main():
         ("mitochondria compartment", "Mitochondrial compartment framing.", []),
         ("blood compartment", "Blood / systemic compartment framing.", []),
     ]:
-        add(pref, "xrm:2100000", definition, syn or None, "bio")
+        add(pref, "xmet:2100000", definition, syn or None, "bio")
 
     # --- structural delta extras ---
     for pref, definition, syn in [
@@ -341,7 +341,7 @@ def main():
         ("ring expansion delta", "Ring size increase.", []),
         ("ring contraction delta", "Ring size decrease.", []),
     ]:
-        add(pref, "xrm:1700000", definition, syn or None, "delta")
+        add(pref, "xmet:1700000", definition, syn or None, "delta")
 
     # --- product status extras ---
     for pref, definition, syn in [
@@ -354,7 +354,7 @@ def main():
         ("structure elucidated", "Structure fully elucidated.", []),
         ("structure partially elucidated", "Structure only partially elucidated.", []),
     ]:
-        add(pref, "xrm:1800000", definition, syn or None, "product")
+        add(pref, "xmet:1800000", definition, syn or None, "product")
 
     # --- rule provenance extras ---
     for pref, definition, syn in [
@@ -366,7 +366,7 @@ def main():
         ("priority override", "Higher-priority rule overrode a broader tag.", []),
         ("site template expansion", "Localized label generated from a site template (not a concept).", []),
     ]:
-        add(pref, "xrm:1900000", definition, syn or None, "prov")
+        add(pref, "xmet:1900000", definition, syn or None, "prov")
 
     # Localization / display-name templates are NOT SKOS concepts.
     # They live in data/ontology/site_templates.yml (see SCOPE.md).
@@ -403,15 +403,15 @@ def main():
 
     doc["concepts"].sort(key=lambda c: c["id"])
     YAML_PATH.write_text(
-        "# XRM thesaurus (authoring source). Export to xrm.skos.jsonld for Rust.\n"
+        "# XMET thesaurus (authoring source). Export to xmet.skos.jsonld for Rust.\n"
         "# Site-localized names (e.g. C4 hydroxylation) are NOT concepts; generate from templates.\n"
         + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True, width=100)
     )
     non_forest = sum(
         1
         for c in doc["concepts"]
-        if not c["id"].startswith("xrm:9")
-        and c["id"] != "xrm:0000000"
+        if not c["id"].startswith("xmet:9")
+        and c["id"] != "xmet:0000000"
     )
     alts = sum(len(c.get("synonyms") or []) for c in doc["concepts"])
     print(f"concepts={len(doc['concepts'])} non_forest≈{non_forest} synonyms={alts}")

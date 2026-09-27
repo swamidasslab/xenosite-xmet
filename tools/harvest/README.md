@@ -1,4 +1,4 @@
-# XRM candidate harvest (offline)
+# XMET candidate harvest (offline)
 
 Python tooling to collect **candidate terms, synonyms, and example
 reactant→product pairs** from public ontologies/databases. Output is JSONL for
@@ -19,10 +19,10 @@ This does **not** import Metabolic Forest. Prefer structure-backed examples
 | **MeSH** | Phase I/II and biotransformation descriptors | NCBI E-utilities (optional) |
 | **GO** | Xenobiotic metabolic process terms | QuickGO |
 | **Reactome** | Pathway display names (glucuronidation, …) | Content service |
-| **Seed lexicon** | Hand list of XRM-relevant reaction-type strings | local |
+| **Seed lexicon** | Hand list of XMET-relevant reaction-type strings | local |
 
 Also useful later (stubs documented, not all wired): MOP/OLS, NCIT, HMDB,
-MetaCyc, UniProt enzyme names (enzyme labels stay orthogonal to primary XRM
+MetaCyc, UniProt enzyme names (enzyme labels stay orthogonal to primary XMET
 prefLabels).
 
 ## Usage

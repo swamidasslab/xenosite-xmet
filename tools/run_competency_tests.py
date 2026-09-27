@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run XRM competency questions (ontology / mapping / SPARQL / SHACL).
+"""Run XMET competency questions (ontology / mapping / SPARQL / SHACL).
 
 Tagging-layer CQs are exported to fixtures and asserted in Rust
 ``tests/competency.rs`` (uses the real namer).
@@ -21,9 +21,9 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 CQ = ROOT / "data/competency/cq.yml"
-SKOS_JSON = ROOT / "data/ontology/xrm.skos.jsonld"
-SKOS_TTL = ROOT / "data/ontology/xrm.skos.ttl"
-SHACL = ROOT / "data/ontology/xrm.shacl.ttl"
+SKOS_JSON = ROOT / "data/ontology/xmet.skos.jsonld"
+SKOS_TTL = ROOT / "data/ontology/xmet.skos.ttl"
+SHACL = ROOT / "data/ontology/xmet.shacl.ttl"
 MAP_DIR = ROOT / "data/mappings"
 FIXTURES = ROOT / "data/competency/fixtures/reactions.jsonl"
 EXPECTED_TAGS = ROOT / "data/competency/fixtures/expected_tags.jsonl"
@@ -93,14 +93,14 @@ def load_sssom():
 
 def iri_to_curie(term) -> str:
     s = str(term)
-    prefix = "https://xenosite.org/ontology/xrm#"
+    prefix = "https://xenosite.org/ontology/xmet#"
     if s.startswith(prefix):
-        return "xrm:" + s[len(prefix) :]
-    if s.startswith("xrm:"):
+        return "xmet:" + s[len(prefix) :]
+    if s.startswith("xmet:"):
         return s
-    m = re.search(r"xrm[:#]([0-9A-Za-z_.:/-]+)$", s)
+    m = re.search(r"xmet[:#]([0-9A-Za-z_.:/-]+)$", s)
     if m:
-        return "xrm:" + m.group(1).split("/")[-1]
+        return "xmet:" + m.group(1).split("/")[-1]
     return s
 
 
@@ -211,8 +211,8 @@ def main() -> int:
                 if q.get("min_results") is not None and len(got) < q["min_results"]:
                     raise AssertionError(f"SPARQL min_results {q['min_results']} > {len(got)}")
             elif typ == "shacl":
-                data = ROOT / "data/competency" / q.get("data", "../ontology/xrm.skos.ttl")
-                shapes = ROOT / "data/competency" / q.get("shapes", "../ontology/xrm.shacl.ttl")
+                data = ROOT / "data/competency" / q.get("data", "../ontology/xmet.skos.ttl")
+                shapes = ROOT / "data/competency" / q.get("shapes", "../ontology/xmet.shacl.ttl")
                 # resolve .. paths cleanly
                 data = (SPARQL_DIR / q["data"]).resolve() if "data" in q else SKOS_TTL
                 shapes = (SPARQL_DIR / q["shapes"]).resolve() if "shapes" in q else SHACL

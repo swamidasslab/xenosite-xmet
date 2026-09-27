@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enumerate negation-prefix antonym pairs between source terms and XRM labels."""
+"""Enumerate negation-prefix antonym pairs between source terms and XMET labels."""
 from __future__ import annotations
 
 import csv

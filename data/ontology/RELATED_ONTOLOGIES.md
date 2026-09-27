@@ -1,8 +1,8 @@
-# Related ontologies and XRM positioning
+# Related ontologies and XMET positioning
 
 ## Positioning
 
-XRM is a **med-chem-oriented SKOS thesaurus** for xenobiotic metabolism reaction
+XMET is a **med-chem-oriented SKOS thesaurus** for xenobiotic metabolism reaction
 naming, site-localized reaction labels, structural transformation tags,
 product/liability classes, and mappings to existing biochemical and chemical
 ontologies.
@@ -12,7 +12,7 @@ ontology, or named-synthesis ontology. It is the missing layer between
 reaction-generating SMARTS/rules and human-useful med-chem metabolism names.
 
 **RXNO + MOP** are the closest actual reaction ontologies, but they are
-synthesis / name-reaction oriented, not xenobiotic-metabolism oriented. XRM
+synthesis / name-reaction oriented, not xenobiotic-metabolism oriented. XMET
 stays **separate and SKOS-first**, with explicit SSSOM mappings to
 RXNO / MOP / GO / ChEBI / Rhea / KEGG / MeSH (and ECO / CHMO for evidence),
 rather than extending any one of them. Do **not** grow a full chemical
@@ -46,10 +46,10 @@ Checked-in SSSOM:
 
 | File | Targets |
 | --- | --- |
-| [`../mappings/xrm-mop.sssom.tsv`](../mappings/xrm-mop.sssom.tsv) | MOP process leaves |
-| [`../mappings/xrm-mesh.sssom.tsv`](../mappings/xrm-mesh.sssom.tsv) | MeSH literature descriptors |
-| [`../mappings/xrm-forest.sssom.tsv`](../mappings/xrm-forest.sssom.tsv) | Opaque Metabolic Forest CURIEs (alias spine) |
-| [`../mappings/xrm-external.sssom.tsv`](../mappings/xrm-external.sssom.tsv) | GO, RXNO, ChEBI, Rhea, KEGG RCLASS, ECO, CHMO |
+| [`../mappings/xmet-mop.sssom.tsv`](../mappings/xmet-mop.sssom.tsv) | MOP process leaves |
+| [`../mappings/xmet-mesh.sssom.tsv`](../mappings/xmet-mesh.sssom.tsv) | MeSH literature descriptors |
+| [`../mappings/xmet-forest.sssom.tsv`](../mappings/xmet-forest.sssom.tsv) | Opaque Metabolic Forest CURIEs (alias spine) |
+| [`../mappings/xmet-external.sssom.tsv`](../mappings/xmet-external.sssom.tsv) | GO, RXNO, ChEBI, Rhea, KEGG RCLASS, ECO, CHMO |
 
 Harvest tooling pulls ChEBI / KEGG / Rhea / GO / Reactome candidates; promote
 reviewed rows into SSSOM rather than inventing parallel hierarchies.

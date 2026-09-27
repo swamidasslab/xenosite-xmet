@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Heads-up ontology statistics for XRM (terminal summary).
+"""Heads-up ontology statistics for XMET (terminal summary).
 
 Reads authoring YAML (+ optional SKOS/mappings/assignments) and prints
 spine inventory vs guidance bands, label counts, and mapping tallies.
@@ -18,8 +18,8 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-YAML_PATH = ROOT / "data/ontology/xrm.yaml"
-SKOS_PATH = ROOT / "data/ontology/xrm.skos.jsonld"
+YAML_PATH = ROOT / "data/ontology/xmet.yaml"
+SKOS_PATH = ROOT / "data/ontology/xmet.skos.jsonld"
 MAP_DIR = ROOT / "data/mappings"
 ASSIGN_DIR = ROOT / "data/assignments"
 
@@ -160,7 +160,7 @@ def main() -> int:
             )
 
     # --- print ---
-    print("XRM ontology stats")
+    print("XMET ontology stats")
     print(f"  source: {args.yaml.relative_to(ROOT) if args.yaml.is_relative_to(ROOT) else args.yaml}")
     print(f"  spines:   {len(spines)}")
     print(f"  concepts: {len(concepts)}  (leaves {leaves}, internal {len(concepts) - leaves})")

@@ -1,4 +1,4 @@
-"""Shared helpers for DB term → XRM matching."""
+"""Shared helpers for DB term → XMET matching."""
 from __future__ import annotations
 
 import re

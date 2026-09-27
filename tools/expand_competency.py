@@ -19,7 +19,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-YAML_PATH = ROOT / "data/ontology/xrm.yaml"
+YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 ASSIGN = ROOT / "data/assignments/xenobiotic.jsonl"
 MAP_DIR = ROOT / "data/mappings"
 CQ_OUT = ROOT / "data/competency/cq.yml"
@@ -42,21 +42,21 @@ TARGETS = {
 }
 
 SPINES = {
-    "P1": ("xrm:1100000", "chemical transformation"),
-    "P2": ("xrm:1300000", "phase II conjugation family"),
-    "RM": ("xrm:1500000", "reactive metabolite family"),
-    "SITE": ("xrm:1600000", "site type"),
-    "DELTA": ("xrm:1700000", "structural delta"),
-    "EV": ("xrm:2000000", "evidence"),
-    "PROV": ("xrm:1900000", "rule provenance"),
-    "LG": ("xrm:2200000", "leaving group"),
-    "PHARM": ("xrm:2300000", "pharmacological role"),
-    "ABOUT": ("xrm:2400000", "annotation about"),
-    "MED": ("xrm:1400000", "medchem liability"),
+    "P1": ("xmet:1100000", "chemical transformation"),
+    "P2": ("xmet:1300000", "phase II conjugation family"),
+    "RM": ("xmet:1500000", "reactive metabolite family"),
+    "SITE": ("xmet:1600000", "site type"),
+    "DELTA": ("xmet:1700000", "structural delta"),
+    "EV": ("xmet:2000000", "evidence"),
+    "PROV": ("xmet:1900000", "rule provenance"),
+    "LG": ("xmet:2200000", "leaving group"),
+    "PHARM": ("xmet:2300000", "pharmacological role"),
+    "ABOUT": ("xmet:2400000", "annotation about"),
+    "MED": ("xmet:1400000", "medchem liability"),
 }
 
 # Secondary P1 spine for family-class broader checks.
-P1_FAMILY = "xrm:1200000"
+P1_FAMILY = "xmet:1200000"
 
 
 def load():
@@ -152,7 +152,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Hydroxylation family labels under chemical transformation.",
             "type": "ontology_labels",
-            "under": "xrm:1100000",
+            "under": "xmet:1100000",
             "expected_contains_labels": [
                 "hydroxylation",
                 "aromatic hydroxylation",
@@ -164,8 +164,8 @@ def seed_questions():
             "layer": "ontology",
             "question": "Rainbow unstable oxygenation under phase I reaction family.",
             "type": "ontology_broader",
-            "concept": "xrm:0000011",
-            "expected_ancestors": ["xrm:1200000"],
+            "concept": "xmet:0000011",
+            "expected_ancestors": ["xmet:1200000"],
         },
         {
             "id": "CQ-P1-003",
@@ -200,8 +200,8 @@ def seed_questions():
             "question": "Find transformations that can produce aldehydes.",
             "type": "sparql",
             "query": "sparql/cq_aldehyde_producers.rq",
-            "expected_contains": ["xrm:0000201", "xrm:0000205"],
-            "expected_excludes": ["xrm:0001000"],
+            "expected_contains": ["xmet:0000201", "xmet:0000205"],
+            "expected_excludes": ["xmet:0001000"],
         },
         # --- Phase II seeds ---
         {
@@ -209,7 +209,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Phase II includes glucuronidation, sulfation, glutathionation.",
             "type": "ontology_labels",
-            "under": "xrm:1300000",
+            "under": "xmet:1300000",
             "expected_contains_labels": [
                 "glucuronidation",
                 "sulfation",
@@ -223,18 +223,18 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_phase2_oxygen_attachment.rq",
             "expected_contains": [
-                "xrm:0001001",
-                "xrm:0001011",
-                "xrm:0001041",
-                "xrm:1300100",
-                "xrm:1300103",
-                "xrm:1300106",
+                "xmet:0001001",
+                "xmet:0001011",
+                "xmet:0001041",
+                "xmet:1300100",
+                "xmet:1300103",
+                "xmet:1300106",
             ],
             "expected_excludes": [
-                "xrm:0001005",
-                "xrm:1300101",
-                "xrm:0001004",
-                "xrm:1300102",
+                "xmet:0001005",
+                "xmet:1300101",
+                "xmet:0001004",
+                "xmet:1300102",
             ],
         },
         {
@@ -244,11 +244,11 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_glucuronidation_attachment_atoms.rq",
             "expected_contains": [
-                "xrm:1300100",
-                "xrm:1300101",
-                "xrm:1300102",
-                "xrm:1300120",
-                "xrm:1300121",
+                "xmet:1300100",
+                "xmet:1300101",
+                "xmet:1300102",
+                "xmet:1300120",
+                "xmet:1300121",
             ],
             "min_results": 5,
         },
@@ -268,8 +268,8 @@ def seed_questions():
             "question": "Phase II nitrogen attachment SPARQL.",
             "type": "sparql",
             "query": "sparql/cq_phase2_nitrogen_attachment.rq",
-            "expected_contains": ["xrm:0001005", "xrm:1300101"],
-            "expected_excludes": ["xrm:0001001", "xrm:1300100"],
+            "expected_contains": ["xmet:0001005", "xmet:1300101"],
+            "expected_excludes": ["xmet:0001001", "xmet:1300100"],
         },
         {
             "id": "CQ-P2-006",
@@ -277,7 +277,7 @@ def seed_questions():
             "question": "Phase II not enzyme-specific.",
             "type": "sparql",
             "query": "sparql/cq_phase2_not_enzyme.rq",
-            "expected_contains": ["xrm:0001000", "xrm:0001010", "xrm:0001030"],
+            "expected_contains": ["xmet:0001000", "xmet:0001010", "xmet:0001030"],
         },
         # --- RM seeds ---
         {
@@ -285,7 +285,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Reactive metabolite family core classes.",
             "type": "ontology_labels",
-            "under": "xrm:1500000",
+            "under": "xmet:1500000",
             "expected_contains_labels": [
                 "quinone",
                 "epoxide",
@@ -299,8 +299,8 @@ def seed_questions():
             "question": "Quinone-like but not strict quinone.",
             "type": "sparql",
             "query": "sparql/cq_quinone_like_not_strict.rq",
-            "expected_contains": ["xrm:1500011", "xrm:1500100", "xrm:1500103"],
-            "expected_excludes": ["xrm:1500010"],
+            "expected_contains": ["xmet:1500011", "xmet:1500100", "xmet:1500103"],
+            "expected_excludes": ["xmet:1500010"],
         },
         {
             "id": "CQ-RM-003",
@@ -309,10 +309,10 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_gsh_trappable_producers.rq",
             "expected_contains": [
-                "xrm:0000110",
-                "xrm:0000300",
-                "xrm:0001004",
-                "xrm:0001030",
+                "xmet:0000110",
+                "xmet:0000300",
+                "xmet:0001004",
+                "xmet:0001030",
             ],
         },
         {
@@ -322,10 +322,10 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_reactive_aromatic_metabolites.rq",
             "expected_contains": [
-                "xrm:1500010",
-                "xrm:1500012",
-                "xrm:1500104",
-                "xrm:1500017",
+                "xmet:1500010",
+                "xmet:1500012",
+                "xmet:1500104",
+                "xmet:1500017",
             ],
         },
         {
@@ -344,7 +344,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Core site environments.",
             "type": "ontology_labels",
-            "under": "xrm:1600000",
+            "under": "xmet:1600000",
             "expected_contains_labels": [
                 "benzylic site",
                 "tertiary amine site",
@@ -358,12 +358,12 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_site_environments.rq",
             "expected_contains": [
-                "xrm:1600014",
-                "xrm:1600015",
-                "xrm:1600021",
-                "xrm:1600022",
-                "xrm:1600103",
-                "xrm:1600130",
+                "xmet:1600014",
+                "xmet:1600015",
+                "xmet:1600021",
+                "xmet:1600022",
+                "xmet:1600103",
+                "xmet:1600130",
             ],
             "min_results": 5,
         },
@@ -396,7 +396,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Structural delta core labels.",
             "type": "ontology_labels",
-            "under": "xrm:1700000",
+            "under": "xmet:1700000",
             "expected_contains_labels": [
                 "monooxygenation",
                 "formula delta",
@@ -409,7 +409,7 @@ def seed_questions():
             "question": "Structural delta SPARQL.",
             "type": "sparql",
             "query": "sparql/cq_structural_deltas.rq",
-            "expected_contains": ["xrm:1700100", "xrm:7700001", "xrm:1700010"],
+            "expected_contains": ["xmet:1700100", "xmet:7700001", "xmet:1700010"],
             "min_results": 3,
         },
         {
@@ -428,7 +428,7 @@ def seed_questions():
             "layer": "mapping",
             "question": "Hydroxylation maps to MOP.",
             "type": "mapping_exists",
-            "subject": "xrm:0000100",
+            "subject": "xmet:0000100",
             "object_prefix": "mop:",
         },
         {
@@ -436,7 +436,7 @@ def seed_questions():
             "layer": "mapping",
             "question": "Xenobiotic biotransformation → GO:0006805.",
             "type": "mapping_exists",
-            "subject": "xrm:0000000",
+            "subject": "xmet:0000000",
             "object": "GO:0006805",
         },
         {
@@ -451,8 +451,8 @@ def seed_questions():
             "layer": "ontology",
             "question": "SHACL core shape for all concepts.",
             "type": "shacl",
-            "shapes": "../ontology/xrm.shacl.ttl",
-            "data": "../ontology/xrm.skos.ttl",
+            "shapes": "../ontology/xmet.shacl.ttl",
+            "data": "../ontology/xmet.skos.ttl",
             "allow_warnings": False,
         },
         {
@@ -460,7 +460,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Leaving group spine core.",
             "type": "ontology_labels",
-            "under": "xrm:2200000",
+            "under": "xmet:2200000",
             "expected_contains_labels": [
                 "methyl leaving group",
                 "halide leaving group",
@@ -472,7 +472,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Pharmacological role distinctions.",
             "type": "ontology_labels",
-            "under": "xrm:2300000",
+            "under": "xmet:2300000",
             "expected_contains_labels": [
                 "pharmacologically active metabolite",
                 "pharmacologically inactive metabolite",
@@ -484,7 +484,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Annotation-about parent/product/reaction.",
             "type": "ontology_labels",
-            "under": "xrm:2400000",
+            "under": "xmet:2400000",
             "expected_contains_labels": [
                 "about parent",
                 "about product",
@@ -516,7 +516,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Medchem liability includes soft spot and bioactivation.",
             "type": "ontology_labels",
-            "under": "xrm:1400000",
+            "under": "xmet:1400000",
             "expected_contains_labels": [
                 "metabolic soft spot",
                 "bioactivation",
@@ -549,10 +549,10 @@ def sparql_under_spine(spine_id: str, concept_id: str) -> str:
     local_spine = spine_id.split(":", 1)[1]
     local_c = concept_id.split(":", 1)[1]
     return f"""PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xrm: <https://xenosite.org/ontology/xrm#>
+PREFIX xmet: <https://xenosite.org/ontology/xmet#>
 SELECT DISTINCT ?term WHERE {{
-  BIND(xrm:{local_c} AS ?term)
-  ?term skos:broader+ xrm:{local_spine} .
+  BIND(xmet:{local_c} AS ?term)
+  ?term skos:broader+ xmet:{local_spine} .
 }}
 """
 
@@ -609,7 +609,7 @@ def expand_category(
     # Product-class companions are covered by relatedMatch expansion + gold gaps,
     # not by asserting every former ad-hoc emit id.
     chem_desc = set()
-    for root in ("xrm:1100000", "xrm:1200000", "xrm:1300000"):
+    for root in ("xmet:1100000", "xmet:1200000", "xmet:1300000"):
         chem_desc |= descendants(children, root)
 
     seen_tags = set()
@@ -854,12 +854,12 @@ def build_gold(by_id, tag_rules, n=150):
     def under(root):
         return descendants(children, root)
 
-    chem_t = under("xrm:1100000")
-    phase1 = under("xrm:1000000") | {"xrm:0000001"} | under("xrm:1200000")
-    phase2 = under("xrm:1300000") | {"xrm:0000002"}
-    product = under("xrm:1500000")
-    site = under("xrm:1600000")
-    liability = under("xrm:1400000") | under("xrm:2300000")
+    chem_t = under("xmet:1100000")
+    phase1 = under("xmet:1000000") | {"xmet:0000001"} | under("xmet:1200000")
+    phase2 = under("xmet:1300000") | {"xmet:0000002"}
+    product = under("xmet:1500000")
+    site = under("xmet:1600000")
+    liability = under("xmet:1400000") | under("xmet:2300000")
 
     seen_tags = set()
 
@@ -875,13 +875,13 @@ def build_gold(by_id, tag_rules, n=150):
         for eid, lab in zip(rule["emit"], rule["emit_labels"]):
             if not transformation and eid in chem_t:
                 transformation = lab
-            if not phase and (eid == "xrm:0000001" or lab == "phase I"):
+            if not phase and (eid == "xmet:0000001" or lab == "phase I"):
                 phase = "phase I"
-            if not phase and (eid == "xrm:0000002" or lab == "phase II"):
+            if not phase and (eid == "xmet:0000002" or lab == "phase II"):
                 phase = "phase II"
-            if not phase and eid in under("xrm:1200000"):
+            if not phase and eid in under("xmet:1200000"):
                 phase = "phase I"
-            if not phase and eid in under("xrm:1300000"):
+            if not phase and eid in under("xmet:1300000"):
                 phase = "phase II"
             if not prod and eid in product and lab not in (
                 "reactive metabolite family",
@@ -1029,7 +1029,7 @@ def main():
         "questions": questions,
     }
     header = (
-        "# Executable competency questions for XRM (auto-expanded ~10×).\n"
+        "# Executable competency questions for XMET (auto-expanded ~10×).\n"
         "# Regenerated by tools/expand_competency.py — edit seeds there.\n"
         "# Types: ontology_broader, ontology_labels, sparql, shacl,\n"
         "#         mapping_exists, definition_coverage, tagging\n"

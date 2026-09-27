@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Harvest XRM candidate terms / synonyms / examples from public sources.
+"""Harvest XMET candidate terms / synonyms / examples from public sources.
 
 Stdlib only. See README.md in this directory.
 """

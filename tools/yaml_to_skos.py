@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export data/ontology/xrm.yaml → data/ontology/xrm.skos.jsonld."""
+"""Export data/ontology/xmet.yaml → data/ontology/xmet.skos.jsonld."""
 from __future__ import annotations
 
 import json
@@ -8,13 +8,13 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-YAML_PATH = ROOT / "data/ontology/xrm.yaml"
-SKOS_PATH = ROOT / "data/ontology/xrm.skos.jsonld"
+YAML_PATH = ROOT / "data/ontology/xmet.yaml"
+SKOS_PATH = ROOT / "data/ontology/xmet.skos.jsonld"
 
 CONTEXT = {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dct": "http://purl.org/dc/terms/",
-    "xrm": "https://xenosite.org/ontology/xrm#",
+    "xmet": "https://xenosite.org/ontology/xmet#",
     "id": "@id",
     "type": "@type",
     "prefLabel": "skos:prefLabel",
@@ -55,7 +55,7 @@ def main():
             "id": c["id"],
             "type": "skos:Concept",
             "prefLabel": c["preferred_label"],
-            "inScheme": "xrm:scheme",
+            "inScheme": "xmet:scheme",
         }
         if c.get("definition"):
             node["definition"] = c["definition"]
@@ -72,12 +72,12 @@ def main():
         ]:
             if c.get(src):
                 node[dst] = one_or_list(c[src])
-        if c.get("id") == "xrm:0000000":
+        if c.get("id") == "xmet:0000000":
             node["topConcept"] = True
         graph.append(node)
     # scheme first already; ensure root second
-    root = next(n for n in graph if n["id"] == "xrm:0000000")
-    others = [n for n in graph if n["id"] not in ("xrm:scheme", "xrm:0000000")]
+    root = next(n for n in graph if n["id"] == "xmet:0000000")
+    others = [n for n in graph if n["id"] not in ("xmet:scheme", "xmet:0000000")]
     others.sort(key=lambda n: n["id"])
     out = {"@context": CONTEXT, "@graph": [graph[0], root, *others]}
     SKOS_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")

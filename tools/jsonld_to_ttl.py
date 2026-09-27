@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Export data/ontology/xrm.skos.jsonld → xrm.skos.ttl (+ optional xmet attachment props).
+"""Export data/ontology/xmet.skos.jsonld → xmet.skos.ttl (+ optional xmet attachment props).
 
 Also materializes ``xmet:hasAttachmentAtomType`` when a concept ``skos:relatedMatch``
 points at an attachment-atom site concept — so SPARQL competency queries can use
@@ -11,25 +11,25 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-JSONLD = ROOT / "data/ontology/xrm.skos.jsonld"
-TTL = ROOT / "data/ontology/xrm.skos.ttl"
+JSONLD = ROOT / "data/ontology/xmet.skos.jsonld"
+TTL = ROOT / "data/ontology/xmet.skos.ttl"
 
-XRM = "https://xenosite.org/ontology/xrm#"
+XMET = "https://xenosite.org/ontology/xmet#"
 XMET = "https://xenosite.org/ontology/xmet#"
 SKOS = "http://www.w3.org/2004/02/skos/core#"
 
 ATTACHMENT = {
-    "xrm:1600135": "oxygen",  # attachment atom O
-    "xrm:1600136": "nitrogen",
-    "xrm:1600137": "sulfur",
-    "xrm:1600138": "carbon",
-    "xrm:1600139": "acyl",
+    "xmet:1600135": "oxygen",  # attachment atom O
+    "xmet:1600136": "nitrogen",
+    "xmet:1600137": "sulfur",
+    "xmet:1600138": "carbon",
+    "xmet:1600139": "acyl",
 }
 
 
 def curie_to_iri(curie: str) -> str:
-    if curie.startswith("xrm:"):
-        return XRM + curie.split(":", 1)[1]
+    if curie.startswith("xmet:"):
+        return XMET + curie.split(":", 1)[1]
     if curie.startswith("http://") or curie.startswith("https://"):
         return curie
     # opaque / external CURIEs kept as string literals in match objects when needed
@@ -37,13 +37,13 @@ def curie_to_iri(curie: str) -> str:
 
 
 def ttl_iri(curie: str) -> str:
-    if curie.startswith("xrm:"):
-        return f"xrm:{curie.split(':', 1)[1]}"
+    if curie.startswith("xmet:"):
+        return f"xmet:{curie.split(':', 1)[1]}"
     if curie.startswith("http://") or curie.startswith("https://"):
         return f"<{curie}>"
-    # non-xrm CURIEs → angle-bracket synthetic IRIs under xrm:ext/
+    # non-xmet CURIEs → angle-bracket synthetic IRIs under xmet:ext/
     safe = curie.replace(":", "/")
-    return f"<https://xenosite.org/ontology/xrm/ext/{safe}>"
+    return f"<https://xenosite.org/ontology/xmet/ext/{safe}>"
 
 
 def esc(s: str) -> str:
@@ -62,7 +62,7 @@ def main() -> None:
     data = json.loads(JSONLD.read_text())
     lines = [
         "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-        "@prefix xrm: <https://xenosite.org/ontology/xrm#> .",
+        "@prefix xmet: <https://xenosite.org/ontology/xmet#> .",
         "@prefix xmet: <https://xenosite.org/ontology/xmet#> .",
         "@prefix dct: <http://purl.org/dc/terms/> .",
         "",

@@ -7,7 +7,7 @@
     {
       "pattern": "forest.pattern:AzoSplitting/azo",
       "mapped_subjects": [
-        "xrm:9200041"
+        "xmet:9200041"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -17,7 +17,7 @@
     {
       "pattern": "forest.pattern:BenzodioxoleReduction/dioxole_methylene",
       "mapped_subjects": [
-        "xrm:9200063"
+        "xmet:9200063"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -27,15 +27,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/cc_alcohol",
       "mapped_subjects": [
-        "xrm:9200020"
+        "xmet:9200020"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -55,15 +55,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/cc_carbonyl",
       "mapped_subjects": [
-        "xrm:9200021"
+        "xmet:9200021"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -83,15 +83,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/cc_quaternary_alcohol",
       "mapped_subjects": [
-        "xrm:9200019"
+        "xmet:9200019"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -111,15 +111,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/hemiaminal",
       "mapped_subjects": [
-        "xrm:9200022"
+        "xmet:9200022"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -139,15 +139,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methine_alcohol",
       "mapped_subjects": [
-        "xrm:9200017"
+        "xmet:9200017"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -167,15 +167,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methine_carbonyl",
       "mapped_subjects": [
-        "xrm:9200016"
+        "xmet:9200016"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -195,15 +195,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methyl_alcohol",
       "mapped_subjects": [
-        "xrm:9200012"
+        "xmet:9200012"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -223,15 +223,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methyl_carbonyl",
       "mapped_subjects": [
-        "xrm:9200011"
+        "xmet:9200011"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -251,15 +251,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methyl_carboxylic",
       "mapped_subjects": [
-        "xrm:9200010"
+        "xmet:9200010"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -279,15 +279,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methylene_alcohol",
       "mapped_subjects": [
-        "xrm:9200015"
+        "xmet:9200015"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -307,15 +307,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methylene_carbonyl",
       "mapped_subjects": [
-        "xrm:9200014"
+        "xmet:9200014"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -335,15 +335,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/methylene_carboxylic",
       "mapped_subjects": [
-        "xrm:9200013"
+        "xmet:9200013"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -363,15 +363,15 @@
     {
       "pattern": "forest.pattern:Dealkylation/quaternary_alcohol",
       "mapped_subjects": [
-        "xrm:9200018"
+        "xmet:9200018"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000201",
-        "xrm:0000202",
-        "xrm:0000203",
-        "xrm:0000204",
-        "xrm:0000720"
+        "xmet:0000201",
+        "xmet:0000202",
+        "xmet:0000203",
+        "xmet:0000204",
+        "xmet:0000720"
       ],
       "n_narrowing_smarts_rules": 11,
       "narrowing_smarts_rules": [
@@ -391,7 +391,7 @@
     {
       "pattern": "forest.pattern:Dehydration/alcohol",
       "mapped_subjects": [
-        "xrm:9200045"
+        "xmet:9200045"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -401,7 +401,7 @@
     {
       "pattern": "forest.pattern:Dehydration/beta_elimination",
       "mapped_subjects": [
-        "xrm:9200046"
+        "xmet:9200046"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -411,7 +411,7 @@
     {
       "pattern": "forest.pattern:Dehydration/carbonyl",
       "mapped_subjects": [
-        "xrm:9200047"
+        "xmet:9200047"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -421,16 +421,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/alcohol",
       "mapped_subjects": [
-        "xrm:9200030"
+        "xmet:9200030"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -447,16 +447,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/alkyl",
       "mapped_subjects": [
-        "xrm:9200032"
+        "xmet:9200032"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -473,16 +473,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/amine",
       "mapped_subjects": [
-        "xrm:9200031"
+        "xmet:9200031"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -499,16 +499,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/amine_end",
       "mapped_subjects": [
-        "xrm:9200034"
+        "xmet:9200034"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -525,16 +525,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/methide_end",
       "mapped_subjects": [
-        "xrm:9200035"
+        "xmet:9200035"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -551,16 +551,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/phenol_end",
       "mapped_subjects": [
-        "xrm:9200033"
+        "xmet:9200033"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -577,16 +577,16 @@
     {
       "pattern": "forest.pattern:Dehydrogenation/sulfoxide",
       "mapped_subjects": [
-        "xrm:9200029"
+        "xmet:9200029"
       ],
       "n_potential_narrows": 6,
       "potential_narrows": [
-        "xrm:0000305",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317"
+        "xmet:0000305",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317"
       ],
       "n_narrowing_smarts_rules": 8,
       "narrowing_smarts_rules": [
@@ -603,7 +603,7 @@
     {
       "pattern": "forest.pattern:Dephosphorylation/phosphate_ester",
       "mapped_subjects": [
-        "xrm:9200040"
+        "xmet:9200040"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -613,13 +613,13 @@
     {
       "pattern": "forest.pattern:Epoxidation/epoxide",
       "mapped_subjects": [
-        "xrm:9200003"
+        "xmet:9200003"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000111",
-        "xrm:0000112",
-        "xrm:0000113"
+        "xmet:0000111",
+        "xmet:0000112",
+        "xmet:0000113"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -633,7 +633,7 @@
     {
       "pattern": "forest.pattern:EpoxideHydration/diol",
       "mapped_subjects": [
-        "xrm:9200086"
+        "xmet:9200086"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -643,7 +643,7 @@
     {
       "pattern": "forest.pattern:EpoxideOpening/hydrate",
       "mapped_subjects": [
-        "xrm:9200039"
+        "xmet:9200039"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -653,7 +653,7 @@
     {
       "pattern": "forest.pattern:EpoxideOpening/rearrange",
       "mapped_subjects": [
-        "xrm:9200038"
+        "xmet:9200038"
       ],
       "n_potential_narrows": 0,
       "potential_narrows": [],
@@ -663,15 +663,15 @@
     {
       "pattern": "forest.pattern:Glucuronidation/alcohol",
       "mapped_subjects": [
-        "xrm:9200069"
+        "xmet:9200069"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0001001",
-        "xrm:0001005",
-        "xrm:0001007",
-        "xrm:0001008",
-        "xrm:0001009"
+        "xmet:0001001",
+        "xmet:0001005",
+        "xmet:0001007",
+        "xmet:0001008",
+        "xmet:0001009"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -685,15 +685,15 @@
     {
       "pattern": "forest.pattern:Glucuronidation/carboxylate",
       "mapped_subjects": [
-        "xrm:9200070"
+        "xmet:9200070"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0001001",
-        "xrm:0001005",
-        "xrm:0001007",
-        "xrm:0001008",
-        "xrm:0001009"
+        "xmet:0001001",
+        "xmet:0001005",
+        "xmet:0001007",
+        "xmet:0001008",
+        "xmet:0001009"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -707,17 +707,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/alkene",
       "mapped_subjects": [
-        "xrm:9200078"
+        "xmet:9200078"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -727,17 +727,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/aziridine_c",
       "mapped_subjects": [
-        "xrm:9200083"
+        "xmet:9200083"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -747,17 +747,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/aziridine_ch",
       "mapped_subjects": [
-        "xrm:9200081"
+        "xmet:9200081"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -767,17 +767,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/aziridine_ch2",
       "mapped_subjects": [
-        "xrm:9200082"
+        "xmet:9200082"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -787,17 +787,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/carbonyl",
       "mapped_subjects": [
-        "xrm:9200080"
+        "xmet:9200080"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -807,17 +807,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/epoxide_c",
       "mapped_subjects": [
-        "xrm:9200075"
+        "xmet:9200075"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -827,17 +827,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/epoxide_ch",
       "mapped_subjects": [
-        "xrm:9200073"
+        "xmet:9200073"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -847,17 +847,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/epoxide_ch2",
       "mapped_subjects": [
-        "xrm:9200074"
+        "xmet:9200074"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -867,17 +867,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/halide",
       "mapped_subjects": [
-        "xrm:9200076"
+        "xmet:9200076"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -887,17 +887,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/isocyanate",
       "mapped_subjects": [
-        "xrm:9200085"
+        "xmet:9200085"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -907,17 +907,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/mesylate",
       "mapped_subjects": [
-        "xrm:9200084"
+        "xmet:9200084"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -927,18 +927,18 @@
     {
       "pattern": "forest.pattern:Glutathionation/michael",
       "mapped_subjects": [
-        "xrm:0001031",
-        "xrm:9200079"
+        "xmet:0001031",
+        "xmet:9200079"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -948,17 +948,17 @@
     {
       "pattern": "forest.pattern:Glutathionation/thiol",
       "mapped_subjects": [
-        "xrm:9200077"
+        "xmet:9200077"
       ],
       "n_potential_narrows": 7,
       "potential_narrows": [
-        "xrm:0001031",
-        "xrm:0001032",
-        "xrm:0001033",
-        "xrm:0001034",
-        "xrm:0001035",
-        "xrm:0001036",
-        "xrm:0001037"
+        "xmet:0001031",
+        "xmet:0001032",
+        "xmet:0001033",
+        "xmet:0001034",
+        "xmet:0001035",
+        "xmet:0001036",
+        "xmet:0001037"
       ],
       "n_narrowing_smarts_rules": 1,
       "narrowing_smarts_rules": [
@@ -968,12 +968,12 @@
     {
       "pattern": "forest.pattern:Hydrogenation/alkene",
       "mapped_subjects": [
-        "xrm:9200043"
+        "xmet:9200043"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0000501",
-        "xrm:0000502"
+        "xmet:0000501",
+        "xmet:0000502"
       ],
       "n_narrowing_smarts_rules": 2,
       "narrowing_smarts_rules": [
@@ -984,12 +984,12 @@
     {
       "pattern": "forest.pattern:Hydrogenation/alkyne",
       "mapped_subjects": [
-        "xrm:9200042"
+        "xmet:9200042"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0000501",
-        "xrm:0000502"
+        "xmet:0000501",
+        "xmet:0000502"
       ],
       "n_narrowing_smarts_rules": 2,
       "narrowing_smarts_rules": [
@@ -1000,12 +1000,12 @@
     {
       "pattern": "forest.pattern:Hydrogenation/path_end",
       "mapped_subjects": [
-        "xrm:9200044"
+        "xmet:9200044"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0000501",
-        "xrm:0000502"
+        "xmet:0000501",
+        "xmet:0000502"
       ],
       "n_narrowing_smarts_rules": 2,
       "narrowing_smarts_rules": [
@@ -1016,27 +1016,27 @@
     {
       "pattern": "forest.pattern:Hydrolysis/add_water",
       "mapped_subjects": [
-        "xrm:9200036"
+        "xmet:9200036"
       ],
       "n_potential_narrows": 17,
       "potential_narrows": [
-        "xrm:0000400",
-        "xrm:0000401",
-        "xrm:0000402",
-        "xrm:0000405",
-        "xrm:0000406",
-        "xrm:0000407",
-        "xrm:0000408",
-        "xrm:0000409",
-        "xrm:0000410",
-        "xrm:0000411",
-        "xrm:0000412",
-        "xrm:0000700",
-        "xrm:0000701",
-        "xrm:0000702",
-        "xrm:0000732",
-        "xrm:0001023",
-        "xrm:0004012"
+        "xmet:0000400",
+        "xmet:0000401",
+        "xmet:0000402",
+        "xmet:0000405",
+        "xmet:0000406",
+        "xmet:0000407",
+        "xmet:0000408",
+        "xmet:0000409",
+        "xmet:0000410",
+        "xmet:0000411",
+        "xmet:0000412",
+        "xmet:0000700",
+        "xmet:0000701",
+        "xmet:0000702",
+        "xmet:0000732",
+        "xmet:0001023",
+        "xmet:0004012"
       ],
       "n_narrowing_smarts_rules": 19,
       "narrowing_smarts_rules": [
@@ -1057,27 +1057,27 @@
     {
       "pattern": "forest.pattern:Hydrolysis/cleave",
       "mapped_subjects": [
-        "xrm:9200037"
+        "xmet:9200037"
       ],
       "n_potential_narrows": 17,
       "potential_narrows": [
-        "xrm:0000400",
-        "xrm:0000401",
-        "xrm:0000402",
-        "xrm:0000405",
-        "xrm:0000406",
-        "xrm:0000407",
-        "xrm:0000408",
-        "xrm:0000409",
-        "xrm:0000410",
-        "xrm:0000411",
-        "xrm:0000412",
-        "xrm:0000700",
-        "xrm:0000701",
-        "xrm:0000702",
-        "xrm:0000732",
-        "xrm:0001023",
-        "xrm:0004012"
+        "xmet:0000400",
+        "xmet:0000401",
+        "xmet:0000402",
+        "xmet:0000405",
+        "xmet:0000406",
+        "xmet:0000407",
+        "xmet:0000408",
+        "xmet:0000409",
+        "xmet:0000410",
+        "xmet:0000411",
+        "xmet:0000412",
+        "xmet:0000700",
+        "xmet:0000701",
+        "xmet:0000702",
+        "xmet:0000732",
+        "xmet:0001023",
+        "xmet:0004012"
       ],
       "n_narrowing_smarts_rules": 19,
       "narrowing_smarts_rules": [
@@ -1098,14 +1098,14 @@
     {
       "pattern": "forest.pattern:Hydroxylation/h",
       "mapped_subjects": [
-        "xrm:9200001"
+        "xmet:9200001"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000101",
-        "xrm:0000102",
-        "xrm:0000106",
-        "xrm:0000721"
+        "xmet:0000101",
+        "xmet:0000102",
+        "xmet:0000106",
+        "xmet:0000721"
       ],
       "n_narrowing_smarts_rules": 14,
       "narrowing_smarts_rules": [
@@ -1126,14 +1126,14 @@
     {
       "pattern": "forest.pattern:Hydroxylation/h2",
       "mapped_subjects": [
-        "xrm:9200002"
+        "xmet:9200002"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000101",
-        "xrm:0000102",
-        "xrm:0000106",
-        "xrm:0000721"
+        "xmet:0000101",
+        "xmet:0000102",
+        "xmet:0000106",
+        "xmet:0000721"
       ],
       "n_narrowing_smarts_rules": 14,
       "narrowing_smarts_rules": [
@@ -1154,15 +1154,15 @@
     {
       "pattern": "forest.pattern:NitrogenOxidation/hydroxylamine",
       "mapped_subjects": [
-        "xrm:9200004"
+        "xmet:9200004"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000121",
-        "xrm:0000122",
-        "xrm:0000123",
-        "xrm:0000124",
-        "xrm:0000125"
+        "xmet:0000121",
+        "xmet:0000122",
+        "xmet:0000123",
+        "xmet:0000124",
+        "xmet:0000125"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -1176,15 +1176,15 @@
     {
       "pattern": "forest.pattern:NitrogenOxidation/n_oxide",
       "mapped_subjects": [
-        "xrm:9200006"
+        "xmet:9200006"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000121",
-        "xrm:0000122",
-        "xrm:0000123",
-        "xrm:0000124",
-        "xrm:0000125"
+        "xmet:0000121",
+        "xmet:0000122",
+        "xmet:0000123",
+        "xmet:0000124",
+        "xmet:0000125"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -1198,15 +1198,15 @@
     {
       "pattern": "forest.pattern:NitrogenOxidation/nitroso",
       "mapped_subjects": [
-        "xrm:9200005"
+        "xmet:9200005"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000121",
-        "xrm:0000122",
-        "xrm:0000123",
-        "xrm:0000124",
-        "xrm:0000125"
+        "xmet:0000121",
+        "xmet:0000122",
+        "xmet:0000123",
+        "xmet:0000124",
+        "xmet:0000125"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -1220,14 +1220,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/hydroxylamine",
       "mapped_subjects": [
-        "xrm:9200053"
+        "xmet:9200053"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1240,14 +1240,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitro_anion",
       "mapped_subjects": [
-        "xrm:9200049"
+        "xmet:9200049"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1260,14 +1260,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitro_both",
       "mapped_subjects": [
-        "xrm:9200052"
+        "xmet:9200052"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1280,14 +1280,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitro_both_any",
       "mapped_subjects": [
-        "xrm:9200055"
+        "xmet:9200055"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1300,14 +1300,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitro_charged",
       "mapped_subjects": [
-        "xrm:9200048"
+        "xmet:9200048"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1320,14 +1320,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitro_neutral",
       "mapped_subjects": [
-        "xrm:9200050"
+        "xmet:9200050"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1340,14 +1340,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitro_to_amine",
       "mapped_subjects": [
-        "xrm:9200051"
+        "xmet:9200051"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1360,14 +1360,14 @@
     {
       "pattern": "forest.pattern:NitrogenReduction/nitroso",
       "mapped_subjects": [
-        "xrm:9200054"
+        "xmet:9200054"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000511",
-        "xrm:0000514",
-        "xrm:0000515",
-        "xrm:0000516"
+        "xmet:0000511",
+        "xmet:0000514",
+        "xmet:0000515",
+        "xmet:0000516"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1380,13 +1380,13 @@
     {
       "pattern": "forest.pattern:OxidativeDehalogenation/alcohol",
       "mapped_subjects": [
-        "xrm:9200023"
+        "xmet:9200023"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000214",
-        "xrm:0000215",
-        "xrm:0000216"
+        "xmet:0000214",
+        "xmet:0000215",
+        "xmet:0000216"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1398,13 +1398,13 @@
     {
       "pattern": "forest.pattern:OxidativeDehalogenation/carbonyl",
       "mapped_subjects": [
-        "xrm:9200024"
+        "xmet:9200024"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000214",
-        "xrm:0000215",
-        "xrm:0000216"
+        "xmet:0000214",
+        "xmet:0000215",
+        "xmet:0000216"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1416,13 +1416,13 @@
     {
       "pattern": "forest.pattern:OxidativeDehalogenation/carboxylic",
       "mapped_subjects": [
-        "xrm:9200025"
+        "xmet:9200025"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000214",
-        "xrm:0000215",
-        "xrm:0000216"
+        "xmet:0000214",
+        "xmet:0000215",
+        "xmet:0000216"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1434,13 +1434,13 @@
     {
       "pattern": "forest.pattern:OxidativeDehalogenation/gem_carboxylic",
       "mapped_subjects": [
-        "xrm:9200027"
+        "xmet:9200027"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000214",
-        "xrm:0000215",
-        "xrm:0000216"
+        "xmet:0000214",
+        "xmet:0000215",
+        "xmet:0000216"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1452,13 +1452,13 @@
     {
       "pattern": "forest.pattern:OxidativeDehalogenation/gem_hydrate",
       "mapped_subjects": [
-        "xrm:9200028"
+        "xmet:9200028"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000214",
-        "xrm:0000215",
-        "xrm:0000216"
+        "xmet:0000214",
+        "xmet:0000215",
+        "xmet:0000216"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1470,13 +1470,13 @@
     {
       "pattern": "forest.pattern:OxidativeDehalogenation/rearrange",
       "mapped_subjects": [
-        "xrm:9200026"
+        "xmet:9200026"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000214",
-        "xrm:0000215",
-        "xrm:0000216"
+        "xmet:0000214",
+        "xmet:0000215",
+        "xmet:0000216"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1488,14 +1488,14 @@
     {
       "pattern": "forest.pattern:OxygenReduction/carbonyl",
       "mapped_subjects": [
-        "xrm:9200056"
+        "xmet:9200056"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000521",
-        "xrm:0000522",
-        "xrm:0000523",
-        "xrm:0000524"
+        "xmet:0000521",
+        "xmet:0000522",
+        "xmet:0000523",
+        "xmet:0000524"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1507,14 +1507,14 @@
     {
       "pattern": "forest.pattern:OxygenReduction/peroxide",
       "mapped_subjects": [
-        "xrm:9200057"
+        "xmet:9200057"
       ],
       "n_potential_narrows": 4,
       "potential_narrows": [
-        "xrm:0000521",
-        "xrm:0000522",
-        "xrm:0000523",
-        "xrm:0000524"
+        "xmet:0000521",
+        "xmet:0000522",
+        "xmet:0000523",
+        "xmet:0000524"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1526,30 +1526,30 @@
     {
       "pattern": "forest.pattern:QuinoneFormation/add_carbonyl_o",
       "mapped_subjects": [
-        "xrm:9200065"
+        "xmet:9200065"
       ],
       "n_potential_narrows": 20,
       "potential_narrows": [
-        "xrm:0000103",
-        "xrm:0000104",
-        "xrm:0000105",
-        "xrm:0000112",
-        "xrm:0000133",
-        "xrm:0000301",
-        "xrm:0000302",
-        "xrm:0000303",
-        "xrm:0000304",
-        "xrm:0000305",
-        "xrm:0000306",
-        "xrm:0000307",
-        "xrm:0000308",
-        "xrm:0000309",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317",
-        "xrm:0003002"
+        "xmet:0000103",
+        "xmet:0000104",
+        "xmet:0000105",
+        "xmet:0000112",
+        "xmet:0000133",
+        "xmet:0000301",
+        "xmet:0000302",
+        "xmet:0000303",
+        "xmet:0000304",
+        "xmet:0000305",
+        "xmet:0000306",
+        "xmet:0000307",
+        "xmet:0000308",
+        "xmet:0000309",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317",
+        "xmet:0003002"
       ],
       "n_narrowing_smarts_rules": 15,
       "narrowing_smarts_rules": [
@@ -1570,30 +1570,30 @@
     {
       "pattern": "forest.pattern:QuinoneFormation/dealkylate",
       "mapped_subjects": [
-        "xrm:9200068"
+        "xmet:9200068"
       ],
       "n_potential_narrows": 20,
       "potential_narrows": [
-        "xrm:0000103",
-        "xrm:0000104",
-        "xrm:0000105",
-        "xrm:0000112",
-        "xrm:0000133",
-        "xrm:0000301",
-        "xrm:0000302",
-        "xrm:0000303",
-        "xrm:0000304",
-        "xrm:0000305",
-        "xrm:0000306",
-        "xrm:0000307",
-        "xrm:0000308",
-        "xrm:0000309",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317",
-        "xrm:0003002"
+        "xmet:0000103",
+        "xmet:0000104",
+        "xmet:0000105",
+        "xmet:0000112",
+        "xmet:0000133",
+        "xmet:0000301",
+        "xmet:0000302",
+        "xmet:0000303",
+        "xmet:0000304",
+        "xmet:0000305",
+        "xmet:0000306",
+        "xmet:0000307",
+        "xmet:0000308",
+        "xmet:0000309",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317",
+        "xmet:0003002"
       ],
       "n_narrowing_smarts_rules": 15,
       "narrowing_smarts_rules": [
@@ -1614,30 +1614,30 @@
     {
       "pattern": "forest.pattern:QuinoneFormation/iminium",
       "mapped_subjects": [
-        "xrm:9200067"
+        "xmet:9200067"
       ],
       "n_potential_narrows": 20,
       "potential_narrows": [
-        "xrm:0000103",
-        "xrm:0000104",
-        "xrm:0000105",
-        "xrm:0000112",
-        "xrm:0000133",
-        "xrm:0000301",
-        "xrm:0000302",
-        "xrm:0000303",
-        "xrm:0000304",
-        "xrm:0000305",
-        "xrm:0000306",
-        "xrm:0000307",
-        "xrm:0000308",
-        "xrm:0000309",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317",
-        "xrm:0003002"
+        "xmet:0000103",
+        "xmet:0000104",
+        "xmet:0000105",
+        "xmet:0000112",
+        "xmet:0000133",
+        "xmet:0000301",
+        "xmet:0000302",
+        "xmet:0000303",
+        "xmet:0000304",
+        "xmet:0000305",
+        "xmet:0000306",
+        "xmet:0000307",
+        "xmet:0000308",
+        "xmet:0000309",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317",
+        "xmet:0003002"
       ],
       "n_narrowing_smarts_rules": 15,
       "narrowing_smarts_rules": [
@@ -1658,30 +1658,30 @@
     {
       "pattern": "forest.pattern:QuinoneFormation/replace_halogen",
       "mapped_subjects": [
-        "xrm:9200066"
+        "xmet:9200066"
       ],
       "n_potential_narrows": 20,
       "potential_narrows": [
-        "xrm:0000103",
-        "xrm:0000104",
-        "xrm:0000105",
-        "xrm:0000112",
-        "xrm:0000133",
-        "xrm:0000301",
-        "xrm:0000302",
-        "xrm:0000303",
-        "xrm:0000304",
-        "xrm:0000305",
-        "xrm:0000306",
-        "xrm:0000307",
-        "xrm:0000308",
-        "xrm:0000309",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317",
-        "xrm:0003002"
+        "xmet:0000103",
+        "xmet:0000104",
+        "xmet:0000105",
+        "xmet:0000112",
+        "xmet:0000133",
+        "xmet:0000301",
+        "xmet:0000302",
+        "xmet:0000303",
+        "xmet:0000304",
+        "xmet:0000305",
+        "xmet:0000306",
+        "xmet:0000307",
+        "xmet:0000308",
+        "xmet:0000309",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317",
+        "xmet:0003002"
       ],
       "n_narrowing_smarts_rules": 15,
       "narrowing_smarts_rules": [
@@ -1702,30 +1702,30 @@
     {
       "pattern": "forest.pattern:QuinoneFormation/single_to_double",
       "mapped_subjects": [
-        "xrm:9200064"
+        "xmet:9200064"
       ],
       "n_potential_narrows": 20,
       "potential_narrows": [
-        "xrm:0000103",
-        "xrm:0000104",
-        "xrm:0000105",
-        "xrm:0000112",
-        "xrm:0000133",
-        "xrm:0000301",
-        "xrm:0000302",
-        "xrm:0000303",
-        "xrm:0000304",
-        "xrm:0000305",
-        "xrm:0000306",
-        "xrm:0000307",
-        "xrm:0000308",
-        "xrm:0000309",
-        "xrm:0000310",
-        "xrm:0000314",
-        "xrm:0000315",
-        "xrm:0000316",
-        "xrm:0000317",
-        "xrm:0003002"
+        "xmet:0000103",
+        "xmet:0000104",
+        "xmet:0000105",
+        "xmet:0000112",
+        "xmet:0000133",
+        "xmet:0000301",
+        "xmet:0000302",
+        "xmet:0000303",
+        "xmet:0000304",
+        "xmet:0000305",
+        "xmet:0000306",
+        "xmet:0000307",
+        "xmet:0000308",
+        "xmet:0000309",
+        "xmet:0000310",
+        "xmet:0000314",
+        "xmet:0000315",
+        "xmet:0000316",
+        "xmet:0000317",
+        "xmet:0003002"
       ],
       "n_narrowing_smarts_rules": 15,
       "narrowing_smarts_rules": [
@@ -1746,12 +1746,12 @@
     {
       "pattern": "forest.pattern:ReductiveDehalogenation/alkene",
       "mapped_subjects": [
-        "xrm:9200062"
+        "xmet:9200062"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0000541",
-        "xrm:0000542"
+        "xmet:0000541",
+        "xmet:0000542"
       ],
       "n_narrowing_smarts_rules": 2,
       "narrowing_smarts_rules": [
@@ -1762,12 +1762,12 @@
     {
       "pattern": "forest.pattern:ReductiveDehalogenation/cleave",
       "mapped_subjects": [
-        "xrm:9200061"
+        "xmet:9200061"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0000541",
-        "xrm:0000542"
+        "xmet:0000541",
+        "xmet:0000542"
       ],
       "n_narrowing_smarts_rules": 2,
       "narrowing_smarts_rules": [
@@ -1778,12 +1778,12 @@
     {
       "pattern": "forest.pattern:Sulfation/alcohol",
       "mapped_subjects": [
-        "xrm:9200071"
+        "xmet:9200071"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0001011",
-        "xrm:0001014"
+        "xmet:0001011",
+        "xmet:0001014"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1796,12 +1796,12 @@
     {
       "pattern": "forest.pattern:Sulfation/epoxide_methyl_sulfone",
       "mapped_subjects": [
-        "xrm:9200072"
+        "xmet:9200072"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0001011",
-        "xrm:0001014"
+        "xmet:0001011",
+        "xmet:0001014"
       ],
       "n_narrowing_smarts_rules": 4,
       "narrowing_smarts_rules": [
@@ -1814,15 +1814,15 @@
     {
       "pattern": "forest.pattern:SulfurOxidation/hydroxy",
       "mapped_subjects": [
-        "xrm:9200008"
+        "xmet:9200008"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000131",
-        "xrm:0000132",
-        "xrm:0000133",
-        "xrm:0000134",
-        "xrm:0000135"
+        "xmet:0000131",
+        "xmet:0000132",
+        "xmet:0000133",
+        "xmet:0000134",
+        "xmet:0000135"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -1836,15 +1836,15 @@
     {
       "pattern": "forest.pattern:SulfurOxidation/oxo",
       "mapped_subjects": [
-        "xrm:9200009"
+        "xmet:9200009"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000131",
-        "xrm:0000132",
-        "xrm:0000133",
-        "xrm:0000134",
-        "xrm:0000135"
+        "xmet:0000131",
+        "xmet:0000132",
+        "xmet:0000133",
+        "xmet:0000134",
+        "xmet:0000135"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -1858,15 +1858,15 @@
     {
       "pattern": "forest.pattern:SulfurOxidation/zwitterion",
       "mapped_subjects": [
-        "xrm:9200007"
+        "xmet:9200007"
       ],
       "n_potential_narrows": 5,
       "potential_narrows": [
-        "xrm:0000131",
-        "xrm:0000132",
-        "xrm:0000133",
-        "xrm:0000134",
-        "xrm:0000135"
+        "xmet:0000131",
+        "xmet:0000132",
+        "xmet:0000133",
+        "xmet:0000134",
+        "xmet:0000135"
       ],
       "n_narrowing_smarts_rules": 5,
       "narrowing_smarts_rules": [
@@ -1880,13 +1880,13 @@
     {
       "pattern": "forest.pattern:SulfurReduction/disulfide",
       "mapped_subjects": [
-        "xrm:9200059"
+        "xmet:9200059"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000531",
-        "xrm:0000532",
-        "xrm:0000533"
+        "xmet:0000531",
+        "xmet:0000532",
+        "xmet:0000533"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1898,13 +1898,13 @@
     {
       "pattern": "forest.pattern:SulfurReduction/sulfoxide",
       "mapped_subjects": [
-        "xrm:9200058"
+        "xmet:9200058"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000531",
-        "xrm:0000532",
-        "xrm:0000533"
+        "xmet:0000531",
+        "xmet:0000532",
+        "xmet:0000533"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1916,13 +1916,13 @@
     {
       "pattern": "forest.pattern:SulfurReduction/thioether",
       "mapped_subjects": [
-        "xrm:9200060"
+        "xmet:9200060"
       ],
       "n_potential_narrows": 3,
       "potential_narrows": [
-        "xrm:0000531",
-        "xrm:0000532",
-        "xrm:0000533"
+        "xmet:0000531",
+        "xmet:0000532",
+        "xmet:0000533"
       ],
       "n_narrowing_smarts_rules": 3,
       "narrowing_smarts_rules": [
@@ -1934,12 +1934,12 @@
     {
       "pattern": "forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide",
       "mapped_subjects": [
-        "xrm:9200087"
+        "xmet:9200087"
       ],
       "n_potential_narrows": 2,
       "potential_narrows": [
-        "xrm:0000113",
-        "xrm:0000133"
+        "xmet:0000113",
+        "xmet:0000133"
       ],
       "n_narrowing_smarts_rules": 2,
       "narrowing_smarts_rules": [

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""First-pass confidence-binned matching of source terms → XRM."""
+"""First-pass confidence-binned matching of source terms → XMET."""
 from __future__ import annotations
 
 import csv

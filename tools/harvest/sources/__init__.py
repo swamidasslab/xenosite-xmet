@@ -1,4 +1,4 @@
-"""Pluggable harvest sources for XRM candidate terms."""
+"""Pluggable harvest sources for XMET candidate terms."""
 
 from .seed import harvest as harvest_seed
 from .chebi import harvest as harvest_chebi

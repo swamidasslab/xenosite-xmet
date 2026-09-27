@@ -2,7 +2,7 @@
 
 Status: **executed** (executable CQs in CI; ~10× expanded; gold set scored; SHACL definitions complete).
 
-Store of the design note (metabolism-specific XRM adaptation). Every competency
+Store of the design note (metabolism-specific XMET adaptation). Every competency
 question is a regression test: if the ontology cannot answer it, add terms/links
 or mark the question out of scope.
 
@@ -32,13 +32,13 @@ python3 crates/xenosite-tagger/tools/yaml_to_skos.py
 3. **Tagging competency** — Given reactant/product/rule, does the system emit
    the right tags and localized names?
 
-## Design note → XRM paths
+## Design note → XMET paths
 
 ```
-# Design note                          # XRM adaptation
+# Design note                          # XMET adaptation
 ontology/
-  xmet.ttl / xmet.skos.ttl      →  data/ontology/xrm.skos.ttl (+ xrm.skos.jsonld)
-  xmet.shacl.ttl                →  data/ontology/xrm.shacl.ttl
+  xmet.ttl / xmet.skos.ttl      →  data/ontology/xmet.skos.ttl (+ xmet.skos.jsonld)
+  xmet.shacl.ttl                →  data/ontology/xmet.shacl.ttl
   mappings/mesh.tsv             →  data/mappings/views/mesh.tsv
   mappings/kegg.tsv             →  data/mappings/views/kegg.tsv
   mappings/rxno_mop.tsv         →  data/mappings/views/rxno_mop.tsv
@@ -53,7 +53,7 @@ scripts/
   score_gold_set.py             →  tools/score_gold_set.py
 ```
 
-Authoring remains YAML (`xrm.yaml`) → JSON-LD → Turtle. SSSOM TSVs stay the
+Authoring remains YAML (`xmet.yaml`) → JSON-LD → Turtle. SSSOM TSVs stay the
 canonical mapping store; `views/` are compact projections for CQ readability.
 
 ## CQ types
@@ -61,8 +61,8 @@ canonical mapping store; `views/` are compact projections for CQ readability.
 | Type | Layer | Runner |
 | --- | --- | --- |
 | `ontology_labels` / `ontology_broader` | ontology | Python over JSON-LD |
-| `sparql` | ontology | rdflib over `xrm.skos.ttl` |
-| `shacl` | ontology | pyshacl over `xrm.shacl.ttl` |
+| `sparql` | ontology | rdflib over `xmet.skos.ttl` |
+| `shacl` | ontology | pyshacl over `xmet.shacl.ttl` |
 | `definition_coverage` | ontology | Python fraction check |
 | `mapping_exists` | mapping | SSSOM TSV scan |
 | `tagging` | tagging | exported fixtures → Rust `tests/competency.rs` |

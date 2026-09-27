@@ -1,6 +1,6 @@
 # Scope: metabolism-specific only
 
-XRM is **not** a full chemical ontology. Do not import or mirror ChEBI/RXNO/MOP
+XMET is **not** a full chemical ontology. Do not import or mirror ChEBI/RXNO/MOP
 hierarchies wholesale. Keep terms that a medicinal chemist uses when reading
 xenobiotic metabolism:
 

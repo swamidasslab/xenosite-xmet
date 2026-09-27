@@ -207,7 +207,7 @@ def harvest(_cfg=None):
                 examples=row.get("examples"),
                 suggested_spines=row.get("spines"),
                 sources=[{"system": "seed", "id": f"seed:{i}", "url": ""}],
-                notes="Hand-curated seed example for XRM review",
+                notes="Hand-curated seed example for XMET review",
             )
         )
     return out

@@ -1,4 +1,4 @@
-# amd reaction terms → XRM mapping analysis
+# amd reaction terms → XMET mapping analysis
 
 **Ontology fills applied for approved categories** (reactive-metabolite binding,
 cyanide, antonym inverses, high-count facet gaps). Further mid-fuzzy adjudication still open.
@@ -35,7 +35,7 @@ Terms that did **not** land in the high-quality strong-match list.
 | `coverage_decision_unknown` | 38 | 3587 | Needs a human cover/exclude decision |
 | `existing_facet_gap` | 7 | 66 | Likely missing leaf/synonym under an existing reaction facet |
 | `coverage_decision_exclude` | 5 | 2401 | Propose exclude from reaction-type spine |
-| `site_compositional` | 2 | 967 | Qualified phrases; head already in XRM — use bundles/templates |
+| `site_compositional` | 2 | 967 | Qualified phrases; head already in XMET — use bundles/templates |
 | `broad_class` | 2 | 60 | Coarse umbrella needing systematic child mapping |
 
 ### `needs_adjudication`
@@ -104,7 +104,7 @@ Propose exclude from reaction-type spine
 
 ### `site_compositional`
 
-Qualified phrases; head already in XRM — use bundles/templates
+Qualified phrases; head already in XMET — use bundles/templates
 
 | Term | Count | Notes |
 | --- | ---: | --- |

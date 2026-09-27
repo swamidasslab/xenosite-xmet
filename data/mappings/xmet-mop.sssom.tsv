@@ -1,0 +1,19 @@
+subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label
+xmet:0000100	skos:exactMatch	mop:0000673	semapv:ManualMappingCuration	hydroxylation	hydroxylation
+xmet:0000101	skos:closeMatch	mop:0000673	semapv:ManualMappingCuration	aromatic hydroxylation	hydroxylation
+xmet:0000110	skos:exactMatch	mop:0000671	semapv:ManualMappingCuration	epoxidation	epoxidation
+xmet:0001000	skos:exactMatch	mop:0000156	semapv:ManualMappingCuration	glucuronidation	glucuronosylation
+xmet:0000200	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	dealkylation	demethylation
+xmet:0000205	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	N-demethylation	demethylation
+xmet:0001040	skos:closeMatch	mop:0000060	semapv:ManualMappingCuration	methylation	methylation
+xmet:7000001	skos:relatedMatch	mop:0000673	semapv:ManualMappingCuration	net oxidation	hydroxylation
+xmet:7200002	skos:relatedMatch	mop:0000669	semapv:ManualMappingCuration	bond cleavage	demethylation
+xmet:0000013	skos:closeMatch	mop:0000402	semapv:ManualMappingCuration	hydrolysis	hydrolysis
+xmet:0000014	skos:relatedMatch	mop:0000469	semapv:ManualMappingCuration	reduction	reduction
+xmet:0000020	skos:relatedMatch	mop:0000450	semapv:ManualMappingCuration	oxidation	oxidation
+xmet:0000012	skos:relatedMatch	mop:0000454	semapv:ManualMappingCuration	dehydrogenation	dehydrogenation
+xmet:0001020	skos:closeMatch	mop:0000035	semapv:ManualMappingCuration	acetylation	acetylation
+xmet:0001010	skos:relatedMatch	mop:0000410	semapv:ManualMappingCuration	sulfation	sulfation
+xmet:0000201	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	N-dealkylation	demethylation
+xmet:0000202	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	O-dealkylation	demethylation
+xmet:1100000	skos:broadMatch	mop:0000000	semapv:ManualMappingCuration	chemical transformation	molecular process

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build matchable XRM label index from xrm.yaml."""
+"""Build matchable XMET label index from xmet.yaml."""
 from __future__ import annotations
 
 import json

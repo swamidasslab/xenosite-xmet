@@ -1,4 +1,4 @@
-# DB reaction-term → XRM mapping (per dataset)
+# DB reaction-term → XMET mapping (per dataset)
 
 MetXBioDB and AMD are **never combined**. Each dataset has its own
 `data/derived/db_term_mapping/<dataset>/` tree (committed). Raw DBs stay local
@@ -19,12 +19,12 @@ uv run snakemake -s workflows/db_term_mapping/Snakefile -c1 amd
 ## Pipeline (each dataset)
 
 1. `prepare_terms` — inventory from that dataset's counts TSV
-2. `match_terms` — confidence bins vs XRM label index (+ shared `aliases.tsv`)
+2. `match_terms` — confidence bins vs XMET label index (+ shared `aliases.tsv`)
 3. `prepare_review` — uncertain / high-count unmatched queue
 4. `apply_adjudications` — merge `resources/adjudications_<dataset>.tsv` → strong + residual
 5. `analyze_gaps` — residual gap buckets + markdown report
 
-Shared: `ontology_index.tsv` built once from `xrm.yaml`.
+Shared: `ontology_index.tsv` built once from `xmet.yaml`.
 
 ## Adjudication decisions
 

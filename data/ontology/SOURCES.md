@@ -1,7 +1,7 @@
-# Sources for XRM term inventory
+# Sources for XMET terms inventory
 
-XRM **tags each reaction with many terms** from parallel, cross-cutting spines.
-Authoring source: [`xrm.yaml`](xrm.yaml). Runtime export: [`xrm.skos.jsonld`](xrm.skos.jsonld).
+XMET **tags each reaction with many terms** from parallel, cross-cutting spines.
+Authoring source: [`xmet.yaml`](xmet.yaml). Runtime export: [`xmet.skos.jsonld`](xmet.skos.jsonld).
 Annotation bundles / `xmet:` link types: [`ANNOTATION.md`](ANNOTATION.md).
 
 v0.1 useful band: ~350–500 chemist-facing concepts with 1,000–2,000
@@ -20,7 +20,7 @@ structural delta, product
 status, rule provenance, evidence, biological context), plus ambiguity and the
 Metabolic Forest map as an **alias / mapping** spine.
 
-Forest abbreviations (`SO`, `UO`, `DH`, `HD`, `RD`, …) are **never** XRM
+Forest abbreviations (`SO`, `UO`, `DH`, `HD`, `RD`, …) are **never** XMET
 prefLabels. They appear only as opaque `forest.*` CURIE object ids in SSSOM.
 Forest ruleset concepts use unabbreviated labels ending in `ruleset`.
 
@@ -57,7 +57,7 @@ than as peer root spines.
 
 ## Metabolic Forest map (full names)
 
-| XRM prefLabel | Opaque Forest CURIE |
+| XMET prefLabel | Opaque Forest CURIE |
 | --- | --- |
 | stable oxygenation ruleset | `forest.ruleset:SO` |
 | unstable oxygenation ruleset | `forest.ruleset:UO` |

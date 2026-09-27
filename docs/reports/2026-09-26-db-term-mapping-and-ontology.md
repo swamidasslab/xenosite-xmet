@@ -3,7 +3,7 @@
 ## What we did
 
 Built a **per-dataset** Snakemake workflow (`workflows/db_term_mapping/`) that maps
-MetXBioDB Reaction Type and AMD RXNCLASS labels to XRM separately (never merged),
+MetXBioDB Reaction Type and AMD RXNCLASS labels to XMET separately (never merged),
 with confidence bins, adjudication TSV, strong matches, and gap analysis.
 
 Extractors write countable inventories and capped validation examples under
@@ -37,7 +37,7 @@ coverage is high on coarse umbrellas; mid-fuzzy adjudication queue remains open.
 - **Experimental context** under biological context: in vivo / in vitro settings;
   assay systems (hepatocytes, microsomes, baculosomes, S9, …); AMD-basic species
   adds; reparented tissue/species/matrix leaves. Starter
-  `xrm-reaction-context-expectations.tsv` with child inheritance + exclusions
+  `xmet-reaction-context-expectations.tsv` with child inheritance + exclusions
   (`likely_in` / `observed_in` / `unlikely_in`).
 - MetX **Thiohene → Thiophene** normalization in extracts + ontology altLabels.
 

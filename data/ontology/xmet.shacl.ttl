@@ -1,9 +1,9 @@
 @prefix sh:   <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xrm:  <https://xenosite.org/ontology/xrm#> .
+@prefix xmet:  <https://xenosite.org/ontology/xmet#> .
 @prefix xmet: <https://xenosite.org/ontology/xmet#> .
 
-# Structural quality shapes for the XRM SKOS thesaurus.
+# Structural quality shapes for the XMET SKOS thesaurus.
 # Validated by tools/run_competency_tests.py (pyshacl).
 
 # Hard requirements for every concept (CI must pass).
@@ -21,11 +21,11 @@ xmet:CoreConceptShape a sh:NodeShape ;
   sh:property [
     sh:path skos:inScheme ;
     sh:minCount 1 ;
-    sh:hasValue xrm:scheme ;
+    sh:hasValue xmet:scheme ;
   ] .
 
 xmet:SchemeShape a sh:NodeShape ;
-  sh:targetNode xrm:scheme ;
+  sh:targetNode xmet:scheme ;
   sh:property [
     sh:path skos:prefLabel ;
     sh:minCount 1 ;

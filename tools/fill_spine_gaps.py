@@ -13,7 +13,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
-YAML_PATH = ROOT / "data/ontology/xrm.yaml"
+YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 
 NEXT = {
     "reactive": 1500200,
@@ -26,7 +26,7 @@ NEXT = {
 def next_id(bucket: str) -> str:
     n = NEXT[bucket]
     NEXT[bucket] = n + 1
-    return f"xrm:{n:07d}"
+    return f"xmet:{n:07d}"
 
 
 def main():
@@ -85,7 +85,7 @@ def main():
         ("carboxylic acid from alcohol", "Carboxylic acid from alcohol oxidation cascade.", []),
         ("ketone metabolite", "Ketone metabolite product class.", []),
     ]:
-        add(pref, "xrm:1500000", definition, syn or None, "reactive")
+        add(pref, "xmet:1500000", definition, syn or None, "reactive")
 
     # Biological context (need ~5–45 more; aim mid-band)
     for pref, definition, syn in [
@@ -122,7 +122,7 @@ def main():
         ("fed state context", "Fed-state ADME framing.", []),
         ("fasted state context", "Fasted-state ADME framing.", []),
     ]:
-        add(pref, "xrm:2100000", definition, syn or None, "bio")
+        add(pref, "xmet:2100000", definition, syn or None, "bio")
 
     # Rule / model provenance (need ~8+)
     for pref, definition, syn in [
@@ -147,7 +147,7 @@ def main():
         ("site aromaticity gate", "Assignment gated on site aromaticity.", []),
         ("multi-site split", "Emission split across distinct localized sites.", []),
     ]:
-        add(pref, "xrm:1900000", definition, syn or None, "prov")
+        add(pref, "xmet:1900000", definition, syn or None, "prov")
 
     # Localization / display-name templates are NOT SKOS concepts.
     # They live in data/ontology/site_templates.yml (see SCOPE.md).
@@ -181,7 +181,7 @@ def main():
         # only freshly style: ensure slug for leaves under target spines
         parents = c.get("parents") or []
         if not any(
-            p in ("xrm:1500000", "xrm:1600000", "xrm:1900000", "xrm:2100000") for p in parents
+            p in ("xmet:1500000", "xmet:1600000", "xmet:1900000", "xmet:2100000") for p in parents
         ):
             continue
         slug = re.sub(r"[^a-z0-9]+", "_", c["preferred_label"].lower()).strip("_")
@@ -192,7 +192,7 @@ def main():
 
     doc["concepts"].sort(key=lambda c: c["id"])
     YAML_PATH.write_text(
-        "# XRM thesaurus (authoring source). Export to xrm.skos.jsonld for Rust.\n"
+        "# XMET thesaurus (authoring source). Export to xmet.skos.jsonld for Rust.\n"
         "# Site-localized names (e.g. C4 hydroxylation) are NOT concepts; generate from templates.\n"
         + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True, width=100)
     )

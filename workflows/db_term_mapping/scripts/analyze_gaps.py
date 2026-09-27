@@ -28,11 +28,11 @@ PRODUCT_OR_LIABILITY = re.compile(
 )
 
 BUCKET_HELP = {
-    "site_compositional": "Qualified phrases; head already in XRM — use bundles/templates",
+    "site_compositional": "Qualified phrases; head already in XMET — use bundles/templates",
     "existing_facet_gap": "Likely missing leaf/synonym under an existing reaction facet",
     "broad_class": "Coarse umbrella needing systematic child mapping",
     "coverage_decision_exclude": "Propose exclude from reaction-type spine",
-    "coverage_decision_other_spine": "May belong on another XRM spine",
+    "coverage_decision_other_spine": "May belong on another XMET spine",
     "coverage_decision_unknown": "Needs a human cover/exclude decision",
     "needs_adjudication": "Algorithm match present; decision still open",
     "antonym_link": "Negation antonym of existing leaf — mint inverse + related_match",
@@ -52,7 +52,7 @@ def classify(row: dict[str, str]) -> tuple[str, str]:
         return (
             "antonym_link",
             adj_note
-            or "Negation-prefix antonym of an existing XRM leaf; mint inverse + related_match.",
+            or "Negation-prefix antonym of an existing XMET leaf; mint inverse + related_match.",
         )
 
     if status == "compositional_held" or (conf == "compositional" and row.get("xrm_id")):
@@ -98,7 +98,7 @@ def classify(row: dict[str, str]) -> tuple[str, str]:
     if OUT_OF_SCOPE.search(n) or OUT_OF_SCOPE.search(term):
         return (
             "coverage_decision_exclude",
-            "Likely out of XRM reaction-type scope (binding / optical / non-metabolic).",
+            "Likely out of XMET reaction-type scope (binding / optical / non-metabolic).",
         )
 
     if PRODUCT_OR_LIABILITY.search(n) and "conjugat" not in n:
@@ -209,7 +209,7 @@ def main() -> None:
     n_terms = len(strong) + len(residual)
 
     lines = [
-        f"# {dataset} reaction terms → XRM mapping analysis",
+        f"# {dataset} reaction terms → XMET mapping analysis",
         "",
         "**Ontology fills applied for approved categories** (reactive-metabolite binding,",
         "cyanide, antonym inverses, high-count facet gaps). Further mid-fuzzy adjudication still open.",

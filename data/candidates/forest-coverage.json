@@ -18,7 +18,7 @@
       "forest_rule": "forest.rule:AzoSplitting",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100403"
+        "xmet:9100403"
       ],
       "patterns": [
         "forest.pattern:AzoSplitting/azo"
@@ -34,7 +34,7 @@
       "forest_rule": "forest.rule:BenzodioxoleReduction",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100541"
+        "xmet:9100541"
       ],
       "patterns": [
         "forest.pattern:BenzodioxoleReduction/dioxole_methylene"
@@ -62,7 +62,7 @@
       "forest_rule": "forest.rule:Dealkylation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100200"
+        "xmet:9100200"
       ],
       "patterns": [
         "forest.pattern:Dealkylation/cc_alcohol",
@@ -98,7 +98,7 @@
       "forest_rule": "forest.rule:Dehydration",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100501"
+        "xmet:9100501"
       ],
       "patterns": [
         "forest.pattern:Dehydration/beta_elimination"
@@ -114,7 +114,7 @@
       "forest_rule": "forest.rule:Dehydrogenation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100300"
+        "xmet:9100300"
       ],
       "patterns": [
         "forest.pattern:Dehydrogenation/alcohol",
@@ -132,8 +132,8 @@
       "forest_rule": "forest.rule:Epoxidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:0000110",
-        "xrm:9100110"
+        "xmet:0000110",
+        "xmet:9100110"
       ],
       "patterns": [
         "forest.pattern:Epoxidation/epoxide"
@@ -149,7 +149,7 @@
       "forest_rule": "forest.rule:EpoxideOpening",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100401"
+        "xmet:9100401"
       ],
       "patterns": [
         "forest.pattern:EpoxideOpening/hydrate"
@@ -165,8 +165,8 @@
       "forest_rule": "forest.rule:Glucuronidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:0001000",
-        "xrm:9101000"
+        "xmet:0001000",
+        "xmet:9101000"
       ],
       "patterns": [],
       "patterns_sssom_mapped": [],
@@ -178,7 +178,7 @@
       "forest_rule": "forest.rule:Hydrogenation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100500"
+        "xmet:9100500"
       ],
       "patterns": [
         "forest.pattern:Hydrogenation/alkene",
@@ -196,7 +196,7 @@
       "forest_rule": "forest.rule:Hydrolysis",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100400"
+        "xmet:9100400"
       ],
       "patterns": [
         "forest.pattern:Hydrolysis/cleave"
@@ -212,8 +212,8 @@
       "forest_rule": "forest.rule:Hydroxylation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:0000100",
-        "xrm:9100100"
+        "xmet:0000100",
+        "xmet:9100100"
       ],
       "patterns": [
         "forest.pattern:Hydroxylation/h",
@@ -231,8 +231,8 @@
       "forest_rule": "forest.rule:NDealkylation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:0000201",
-        "xrm:9100201"
+        "xmet:0000201",
+        "xmet:9100201"
       ],
       "patterns": [],
       "patterns_sssom_mapped": [],
@@ -257,7 +257,7 @@
       "forest_rule": "forest.rule:NitrogenOxidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100120"
+        "xmet:9100120"
       ],
       "patterns": [
         "forest.pattern:NitrogenOxidation/hydroxylamine",
@@ -275,7 +275,7 @@
       "forest_rule": "forest.rule:NitrogenReduction",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100510"
+        "xmet:9100510"
       ],
       "patterns": [
         "forest.pattern:NitrogenReduction/hydroxylamine",
@@ -305,7 +305,7 @@
       "forest_rule": "forest.rule:OxidativeDehalogenation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100210"
+        "xmet:9100210"
       ],
       "patterns": [
         "forest.pattern:OxidativeDehalogenation/alcohol",
@@ -327,7 +327,7 @@
       "forest_rule": "forest.rule:OxygenReduction",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100520"
+        "xmet:9100520"
       ],
       "patterns": [
         "forest.pattern:OxygenReduction/carbonyl",
@@ -345,7 +345,7 @@
       "forest_rule": "forest.rule:ReductiveDehalogenation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100540"
+        "xmet:9100540"
       ],
       "patterns": [
         "forest.pattern:ReductiveDehalogenation/cleave"
@@ -361,7 +361,7 @@
       "forest_rule": "forest.rule:Sulfation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9101010"
+        "xmet:9101010"
       ],
       "patterns": [],
       "patterns_sssom_mapped": [],
@@ -373,7 +373,7 @@
       "forest_rule": "forest.rule:SulfurOxidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100130"
+        "xmet:9100130"
       ],
       "patterns": [
         "forest.pattern:SulfurOxidation/hydroxy",
@@ -391,7 +391,7 @@
       "forest_rule": "forest.rule:SulfurReduction",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100530"
+        "xmet:9100530"
       ],
       "patterns": [
         "forest.pattern:SulfurReduction/disulfide",
@@ -409,8 +409,8 @@
       "forest_rule": "forest.rule:ThiopheneSulfurOxidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xrm:9100131",
-        "xrm:0000133"
+        "xmet:9100131",
+        "xmet:0000133"
       ],
       "patterns": [
         "forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide"

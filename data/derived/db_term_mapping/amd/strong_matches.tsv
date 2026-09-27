@@ -1,171 +1,171 @@
 source	term	term_norm	count	final_status	final_confidence	final_xrm_id	final_preferred_label	final_spine	matched_label	match_method	score	adjudication_note
-amd	C-Hydroxylation	c-hydroxylation	16493	strong	alias	xrm:0000100	hydroxylation	chemical transformation	C-Hydroxylation	alias_table		
-amd	Hydrolysis	hydrolysis	13320	strong	alias	xrm:0000013	hydrolysis	chemical transformation	Hydrolysis	alias_table		
-amd	C-Oxidation	c-oxidation	9499	strong	alias	xrm:0000021	carbon oxidation	chemical transformation	C-Oxidation	alias_table		
-amd	O-Glucuronidation	o-glucuronidation	8798	strong	alias	xrm:0001001	O-glucuronidation	metabolism phase	O-Glucuronidation	alias_table		
-amd	Aromatic Hydroxylation	aromatic hydroxylation	6910	strong	alias	xrm:0000101	aromatic hydroxylation	chemical transformation	Aromatic Hydroxylation	alias_table		
-amd	Aliphatic Hydroxylation	aliphatic hydroxylation	6462	strong	alias	xrm:0000102	aliphatic hydroxylation	chemical transformation	Aliphatic Hydroxylation	alias_table		
-amd	N-Dealkylation	n-dealkylation	5261	strong	alias	xrm:0000201	N-dealkylation	chemical transformation	N-Dealkylation	alias_table		
-amd	Reduction	reduction	5135	strong	alias	xrm:0000014	reduction	chemical transformation	Reduction	alias_table		
-amd	Ring Opening	ring opening	4864	strong	exact_pref	xrm:0004008	ring opening	chemical transformation	ring opening	exact	100	
-amd	O-Dealkylation	o-dealkylation	3747	strong	alias	xrm:0000202	O-dealkylation	chemical transformation	O-Dealkylation	alias_table		
-amd	O-Sulfation	o-sulfation	3510	strong	alias	xrm:0001011	O-sulfation	metabolism phase	O-Sulfation	alias_table		
-amd	Glutathionation	glutathionation	3134	strong	alias	xrm:0001030	glutathionation	metabolism phase	Glutathionation	alias_table		
-amd	Oxidation	oxidation	2977	strong	alias	xrm:0000020	oxidation	chemical transformation	Oxidation	alias_table		
-amd	Hydrogenation	hydrogenation	2830	strong	exact_pref	xrm:0000500	hydrogenation	chemical transformation	hydrogenation	exact	100	
-amd	O-Demethylation	o-demethylation	2598	strong	alias	xrm:0000209	O-demethylation	chemical transformation	O-Demethylation	alias_table		
-amd	Dehydrogenation	dehydrogenation	2424	strong	exact_pref	xrm:0000012	dehydrogenation	chemical transformation	dehydrogenation	exact	100	
-amd	N-Demethylation	n-demethylation	2388	strong	alias	xrm:0000205	N-demethylation	chemical transformation	N-Demethylation	alias_table		
-amd	Aromatization	aromatization	2154	strong	exact_pref	xrm:0000315	aromatization	chemical transformation	aromatization	exact	100	
-amd	Dearomatization	dearomatization	1894	strong	exact_pref	xrm:0004001	dearomatization	chemical transformation	dearomatization	exact	100	
-amd	Epoxidation	epoxidation	1803	strong	alias	xrm:0000110	epoxidation	chemical transformation	Epoxidation	alias_table		
-amd	Dehalogenation	dehalogenation	1797	strong	exact_pref	xrm:1100014	dehalogenation	chemical transformation	dehalogenation	exact	100	
-amd	DNA Binding	dna binding	1795	strong	adjudicated:accept_as	xrm:1500231	DNA binding	reactive metabolite family	DNA binding	exact	100	in scope as reactive metabolite
-amd	Conjugation	conjugation	1686	strong	exact_pref	xrm:0000024	conjugation	chemical transformation	conjugation	exact	100	
-amd	Protein Binding	protein binding	1589	strong	adjudicated:accept_as	xrm:1500233	protein binding	reactive metabolite family	protein binding	exact	100	in scope as reactive metabolite
-amd	O-Methylation	o-methylation	1579	strong	exact_pref	xrm:0001041	O-methylation	metabolism phase	O-methylation	exact	100	
-amd	N-Acetylation	n-acetylation	1534	strong	exact_pref	xrm:0001021	N-acetylation	metabolism phase	N-acetylation	exact	100	
-amd	S-Oxidation	s-oxidation	1464	strong	alias	xrm:0000130	sulfur oxidation	chemical transformation	S-Oxidation	alias_table		
-amd	O-Alkylation	o-alkylation	1450	strong	exact_pref	xrm:0000612	O-alkylation	chemical transformation	O-alkylation	exact	100	
-amd	Isomerization	isomerization	1384	strong	exact_pref	xrm:0002003	isomerization	chemical transformation	isomerization	exact	100	
-amd	Oxidative Deamination	oxidative deamination	1340	strong	exact_pref	xrm:0000208	oxidative deamination	chemical transformation	oxidative deamination	exact	100	
-amd	N-Oxidation	n-oxidation	1325	strong	alias	xrm:0000120	nitrogen oxidation	chemical transformation	N-Oxidation	alias_table		
-amd	O-Conjugation	o-conjugation	1309	strong	adjudicated:accept_as	xrm:0000024	conjugation	metabolism phase	conjugation	fuzzy_token_sort	91.7	broad umbrella; broadMatch-style
-amd	N-Deacylation	n-deacylation	1277	strong	adjudicated:accept_as	xrm:0002005	deacylation	chemical transformation	N-dearylation	fuzzy_token_sort	92.3	
-amd	N-Acylation	n-acylation	1256	strong	adjudicated:accept_as	xrm:0001020	acetylation	phase II conjugation family	N-acetylation	fuzzy_token_sort	91.7	acylation synonym path; may over-narrow to acetyl
-amd	Covalent Binding	covalent binding	1243	strong	adjudicated:accept_as	xrm:1500234	covalent binding	reactive metabolite family	covalent binding	exact	100	in scope as reactive metabolite
-amd	Ring Closure	ring closure	1169	strong	exact_pref	xrm:7200006	ring closure	structural delta	ring closure	exact	100	
-amd	Dehydration	dehydration	1143	strong	exact_pref	xrm:0000550	dehydration	chemical transformation	dehydration	exact	100	
-amd	Glucuronidation	glucuronidation	1091	strong	exact_pref	xrm:0001000	glucuronidation	metabolism phase	glucuronidation	exact	100	
-amd	N-Reduction	n-reduction	1014	strong	alias	xrm:0000510	nitrogen reduction	chemical transformation	N-Reduction	alias_table		
-amd	Tautomerization	tautomerization	978	strong	exact_pref	xrm:0002000	tautomerization	chemical transformation	tautomerization	exact	100	
-amd	O-Deacylation	o-deacylation	958	strong	adjudicated:accept_as	xrm:0002005	deacylation	chemical transformation	O-dearylation	fuzzy_token_sort	92.3	
-amd	Hydroxylation	hydroxylation	889	strong	exact_pref	xrm:0000100	hydroxylation	chemical transformation	hydroxylation	exact	100	
-amd	Rearrangement	rearrangement	849	strong	exact_pref	xrm:0002004	rearrangement	chemical transformation	rearrangement	exact	100	
-amd	Cyclization	cyclization	836	strong	exact_pref	xrm:0000640	cyclization	chemical transformation	cyclization	exact	100	
-amd	Decarboxylation	decarboxylation	802	strong	exact_pref	xrm:0000620	decarboxylation	chemical transformation	decarboxylation	exact	100	
-amd	Phosphorylation	phosphorylation	733	strong	exact_pref	xrm:1300012	phosphorylation	phase II conjugation family	phosphorylation	exact	100	
-amd	N-Glucuronidation	n-glucuronidation	710	strong	exact_pref	xrm:0001005	N-glucuronidation	metabolism phase	N-glucuronidation	exact	100	
-amd	Esterification	esterification	684	strong	exact_pref	xrm:0000630	esterification	chemical transformation	esterification	exact	100	
-amd	Hydration	hydration	682	strong	exact_pref	xrm:0004012	hydration	chemical transformation	hydration	exact	100	
-amd	O-Deglycosidation	o-deglycosidation	667	strong	exact_synonym	xrm:0000702	deglycosidation	chemical transformation	O-deglycosidation	exact	100	
-amd	Deamination	deamination	625	strong	exact_pref	xrm:1100013	deamination	chemical transformation	deamination	exact	100	
-amd	Oxidative N-Dealkylation	oxidative n-dealkylation	563	strong	exact_synonym	xrm:0000201	N-dealkylation	chemical transformation	oxidative N-dealkylation	exact	100	
-amd	O-Phosphorylation	o-phosphorylation	549	strong	adjudicated:accept_as	xrm:1300012	phosphorylation	phase II conjugation family	phosphorylation	fuzzy_token_sort	93.8	O-attachment via site
-amd	Dehydroxylation	dehydroxylation	512	strong	exact_pref	xrm:0000650	dehydroxylation	chemical transformation	dehydroxylation	exact	100	
-amd	N-Acetylcysteination	n-acetylcysteination	484	strong	adjudicated:accept_as	xrm:1300011	N-acetylcysteine conjugation	phase II conjugation family		none	78.8	
-amd	Glycination	glycination	450	strong	adjudicated:accept_as	xrm:0001051	glycine conjugation	phase II conjugation family	glycosidation	fuzzy_token_sort	83.3	AMD spelling for glycine conjugation
-amd	N-Hydroxylation	n-hydroxylation	409	strong	exact_synonym	xrm:0000122	hydroxylamine formation	chemical transformation	N-hydroxylation	exact	100	
-amd	Oxidative Dealkylation	oxidative dealkylation	396	strong	exact_synonym	xrm:0000200	dealkylation	chemical transformation	oxidative dealkylation	exact	100	
-amd	Deglycosidation	deglycosidation	395	strong	exact_pref	xrm:0000702	deglycosidation	chemical transformation	deglycosidation	exact	100	
-amd	S-Methylation	s-methylation	389	strong	exact_pref	xrm:0001043	S-methylation	metabolism phase	S-methylation	exact	100	
-amd	S-Dealkylation	s-dealkylation	388	strong	alias	xrm:0000203	S-dealkylation	chemical transformation	S-Dealkylation	alias_table		
-amd	S-Alkylation	s-alkylation	343	strong	exact_pref	xrm:0000613	S-alkylation	chemical transformation	S-alkylation	exact	100	
-amd	Epimerization	epimerization	341	strong	adjudicated:accept_as	xrm:0002003	isomerization	chemical transformation	isomerization	fuzzy_token_sort	84.6	epimerization as isomerization leaf proxy
-amd	O-Deacetylation	o-deacetylation	340	strong	adjudicated:accept_as	xrm:0001023	deacetylation	chemical transformation	O-acetylation	negation_prefix	100	
-amd	Sulfation	sulfation	303	strong	exact_pref	xrm:0001010	sulfation	metabolism phase	sulfation	exact	100	
-amd	C-Dealkylation	c-dealkylation	295	strong	exact_pref	xrm:0000204	C-dealkylation	chemical transformation	C-dealkylation	exact	100	
-amd	Cysteination	cysteination	291	strong	adjudicated:accept_as	xrm:1300010	cysteine conjugation	phase II conjugation family	cysteination	exact	100	
-amd	O-Dephosphorylation	o-dephosphorylation	263	strong	adjudicated:accept_as	xrm:0000410	dephosphorylation	chemical transformation	dephosphorylation	fuzzy_token_sort	94.4	
-amd	N-Deacetylation	n-deacetylation	254	strong	adjudicated:accept_as	xrm:0001023	deacetylation	chemical transformation	N-acetylation	negation_prefix	100	
-amd	Dealkylation	dealkylation	250	strong	exact_pref	xrm:0000200	dealkylation	chemical transformation	dealkylation	exact	100	
-amd	Desulfuration	desulfuration	246	strong	exact_pref	xrm:0000690	desulfuration	chemical transformation	desulfuration	exact	100	
-amd	O-Dearylation	o-dearylation	240	strong	adjudicated:accept_as	xrm:0000202	O-dealkylation	chemical transformation	O-dearylation	exact	100	aryl ether cleavage family
-amd	O-Acylation	o-acylation	221	strong	adjudicated:accept_as	xrm:0001022	O-acetylation	phase II conjugation family	O-acetylation	fuzzy_token_sort	91.7	same caveat
-amd	Lactonization	lactonization	220	strong	exact_pref	xrm:0000632	lactonization	chemical transformation	lactonization	exact	100	
-amd	Glycosidation	glycosidation	208	strong	exact_synonym	xrm:0001060	glycosylation	metabolism phase	glycosidation	exact	100	
-amd	S-Reduction	s-reduction	207	strong	adjudicated:accept_as	xrm:0000530	sulfur reduction	chemical transformation	reduction	fuzzy_token_sort	90.0	
-amd	N-Alkylation	n-alkylation	203	strong	exact_pref	xrm:0000611	N-alkylation	chemical transformation	N-alkylation	exact	100	
-amd	N-Methylation	n-methylation	203	strong	exact_pref	xrm:0001042	N-methylation	metabolism phase	N-methylation	exact	100	
-amd	Radical Formation	radical formation	200	strong	exact_pref	xrm:0004019	radical formation	chemical transformation	radical formation	exact	100	
-amd	Oxidative Desulfuration	oxidative desulfuration	197	strong	exact_synonym	xrm:0000690	desulfuration	chemical transformation	oxidative desulfuration	exact	100	
-amd	Lipid Binding	lipid binding	193	strong	adjudicated:accept_as	xrm:1500235	lipid binding	reactive metabolite family	lipid binding	exact	100	in scope as reactive metabolite
-amd	Sulfuration	sulfuration	189	strong	exact_pref	xrm:0000691	sulfuration	chemical transformation	sulfuration	exact	100	
-amd	Dephosphorylation	dephosphorylation	188	strong	exact_pref	xrm:0000410	dephosphorylation	chemical transformation	dephosphorylation	exact	100	
-amd	C-Decarboxylation	c-decarboxylation	181	strong	exact_synonym	xrm:0000620	decarboxylation	chemical transformation	C-decarboxylation	exact	100	
-amd	Acyl Migration	acyl migration	169	strong	exact_pref	xrm:0004017	acyl migration	chemical transformation	acyl migration	exact	100	
-amd	N-Dehydroxylation	n-dehydroxylation	169	strong	exact_synonym	xrm:0000650	dehydroxylation	chemical transformation	N-dehydroxylation	exact	100	
-amd	Aromatic Dehydroxylation	aromatic dehydroxylation	162	strong	exact_synonym	xrm:0000650	dehydroxylation	chemical transformation	aromatic dehydroxylation	exact	100	
-amd	Amination	amination	159	strong	exact_pref	xrm:0000661	amination	chemical transformation	amination	exact	100	
-amd	Alkylation	alkylation	155	strong	exact_pref	xrm:0000610	alkylation	chemical transformation	alkylation	exact	100	
-amd	Methylation	methylation	153	strong	exact_pref	xrm:0001040	methylation	metabolism phase	methylation	exact	100	
-amd	O-Acetylation	o-acetylation	142	strong	exact_pref	xrm:0001022	O-acetylation	metabolism phase	O-acetylation	exact	100	
-amd	Transesterification	transesterification	139	strong	exact_pref	xrm:0000631	transesterification	chemical transformation	transesterification	exact	100	
-amd	Deglucosidation	deglucosidation	138	strong	exact_synonym	xrm:0000702	deglycosidation	chemical transformation	deglucosidation	exact	100	
-amd	Cyanidation	cyanidation	132	strong	adjudicated:accept_as	xrm:0000600	cyanidation	chemical transformation	cyanidation	exact	100	cyanide in scope
-amd	Ring Contraction	ring contraction	129	strong	exact_pref	xrm:0004010	ring contraction	chemical transformation	ring contraction	exact	100	
-amd	Oxidative Dehalogenation	oxidative dehalogenation	128	strong	exact_pref	xrm:0000210	oxidative dehalogenation	chemical transformation	oxidative dehalogenation	exact	100	
-amd	N-Deglycosidation	n-deglycosidation	128	strong	exact_synonym	xrm:0000702	deglycosidation	chemical transformation	N-deglycosidation	exact	100	
-amd	Desulfation	desulfation	125	strong	exact_pref	xrm:0000701	desulfation	chemical transformation	desulfation	exact	100	
-amd	Denitrogenation	denitrogenation	101	strong	exact_pref	xrm:0002006	denitrogenation	metabolism phase	denitrogenation	exact	100	
-amd	C-Demethylation	c-demethylation	100	strong	adjudicated:accept_as	xrm:0000204	C-dealkylation	chemical transformation	N-demethylation	fuzzy_token_sort	93.3	C-demethyl as C-dealkyl leaf proxy
-amd	N-Sulfation	n-sulfation	98	strong	exact_pref	xrm:0001014	N-sulfation	metabolism phase	N-sulfation	exact	100	
-amd	Demethylation	demethylation	97	strong	exact_synonym	xrm:0000205	N-demethylation	chemical transformation	demethylation	exact	100	
-amd	Taurination	taurination	96	strong	adjudicated:accept_as	xrm:0001053	taurine conjugation	phase II conjugation family	amination	fuzzy_token_sort	80.0	
-amd	N-Glycosidation	n-glycosidation	95	strong	adjudicated:accept_as	xrm:0001060	glycosylation	phase II conjugation family	N-glycosidation	exact	100	
-amd	Demethoxylation	demethoxylation	94	strong	fuzzy_high	xrm:0000205	N-demethylation	chemical transformation	demethylation	fuzzy_token_sort	92.9	
-amd	N-Dearylation	n-dearylation	92	strong	adjudicated:accept_as	xrm:0000201	N-dealkylation	chemical transformation	N-dearylation	exact	100	
-amd	Deglutathionation	deglutathionation	92	strong	exact_pref	xrm:0000703	deglutathionation	chemical transformation	deglutathionation	exact	100	
-amd	Deoxygenation	deoxygenation	91	strong	fuzzy_high	xrm:1700101	dioxygenation	structural delta	dioxygenation	fuzzy_token_sort	92.3	
-amd	Nucleic Acid Binding	nucleic acid binding	90	strong	adjudicated:accept_as	xrm:1500231	DNA binding	reactive metabolite family	nucleic acid binding	exact	100	synonym path via nucleic acid binding
-amd	Transacylation	transacylation	87	strong	exact_pref	xrm:0004018	transacylation	chemical transformation	transacylation	exact	100	
-amd	NIH Shift	nih shift	86	strong	exact_pref	xrm:0004003	NIH shift	chemical transformation	NIH shift	exact	100	
-amd	O-Deglucuronidation	o-deglucuronidation	86	strong	exact_synonym	xrm:0000700	deglucuronidation	chemical transformation	O-deglucuronidation	exact	100	
-amd	C-Alkylation	c-alkylation	82	strong	exact_pref	xrm:0000614	C-alkylation	chemical transformation	C-alkylation	exact	100	
-amd	Sulfonation	sulfonation	80	strong	exact_synonym	xrm:0001010	sulfation	metabolism phase	sulfonation	exact	100	
-amd	Halogenation	halogenation	77	strong	exact_pref	xrm:0000660	halogenation	chemical transformation	halogenation	exact	100	
-amd	Decyanidation	decyanidation	77	strong	adjudicated:accept_as	xrm:0000601	decyanidation	chemical transformation	decyanidation	exact	100	antonym of cyanidation
-amd	N-Carboxylation	n-carboxylation	76	strong	exact_synonym	xrm:0000621	carboxylation	chemical transformation	N-carboxylation	exact	100	
-amd	O-Glucosidation	o-glucosidation	75	strong	exact_synonym	xrm:0001060	glycosylation	metabolism phase	O-glucosidation	exact	100	
-amd	N-Formylation	n-formylation	73	strong	exact_synonym	xrm:0000670	formylation	chemical transformation	N-formylation	exact	100	
-amd	Acetylcysteination	acetylcysteination	73	strong	adjudicated:accept_as	xrm:1300011	N-acetylcysteine conjugation	phase II conjugation family	decysteination	fuzzy_token_sort	81.2	
-amd	Carboxylation	carboxylation	71	strong	exact_pref	xrm:0000621	carboxylation	chemical transformation	carboxylation	exact	100	
-amd	Deacylation	deacylation	68	strong	exact_pref	xrm:0002005	deacylation	metabolism phase	deacylation	exact	100	
-amd	N-Decarboxylation	n-decarboxylation	67	strong	adjudicated:accept_as	xrm:0000620	decarboxylation	chemical transformation	N-decarboxylation	exact	100	N-labeled decarboxylation
-amd	Denitrosation	denitrosation	67	strong	exact_pref	xrm:0000681	denitrosation	chemical transformation	denitrosation	exact	100	
-amd	Decarbonylation	decarbonylation	64	strong	exact_pref	xrm:0002007	decarbonylation	metabolism phase	decarbonylation	exact	100	
-amd	O-Glycosidation	o-glycosidation	62	strong	adjudicated:accept_as	xrm:0001060	glycosylation	phase II conjugation family	O-glycosidation	exact	100	
-amd	Deacetylation	deacetylation	61	strong	exact_pref	xrm:0001023	deacetylation	metabolism phase	deacetylation	exact	100	
-amd	Azo Cleavage	azo cleavage	60	strong	exact_pref	xrm:0000412	azo cleavage	chemical transformation	azo cleavage	exact	100	
-amd	Acetylation	acetylation	58	strong	exact_pref	xrm:0001020	acetylation	metabolism phase	acetylation	exact	100	
-amd	N-Deformylation	n-deformylation	53	strong	exact_synonym	xrm:0000671	deformylation	chemical transformation	N-deformylation	exact	100	
-amd	Lactamization	lactamization	50	strong	exact_pref	xrm:0000633	lactamization	chemical transformation	lactamization	exact	100	
-amd	Deformylation	deformylation	47	strong	exact_pref	xrm:0000671	deformylation	chemical transformation	deformylation	exact	100	
-amd	Deglucuronidation	deglucuronidation	44	strong	exact_pref	xrm:0000700	deglucuronidation	chemical transformation	deglucuronidation	exact	100	
-amd	Adduct Formation	adduct formation	41	strong	adjudicated:accept_as	xrm:1500234	covalent binding	reactive metabolite family	DNA adduct formation	fuzzy_token_sort	88.9	generic adduct → covalent binding
-amd	C-Alkoxylation	c-alkoxylation	40	strong	fuzzy_high	xrm:0000614	C-alkylation	chemical transformation	C-alkylation	fuzzy_token_sort	92.3	
-amd	N-Denitrosation	n-denitrosation	40	strong	exact_synonym	xrm:0000681	denitrosation	chemical transformation	N-denitrosation	exact	100	
-amd	S-Deacetylation	s-deacetylation	39	strong	adjudicated:accept_as	xrm:0001023	deacetylation	chemical transformation	deacetylation	fuzzy_token_sort	92.9	
-amd	S-Demethylation	s-demethylation	36	strong	exact_pref	xrm:0000217	S-demethylation	chemical transformation	S-demethylation	exact	100	
-amd	Glucosidation	glucosidation	34	strong	adjudicated:accept_as	xrm:0001060	glycosylation	phase II conjugation family	glucosidation	exact	100	glucose-specific glycosylation
-amd	Dealkenylation	dealkenylation	28	strong	adjudicated:accept_as	xrm:0000200	dealkylation	chemical transformation	dealkylation	fuzzy_token_sort	92.3	
-amd	N-Nitrosation	n-nitrosation	28	strong	exact_pref	xrm:0000680	N-nitrosation	chemical transformation	N-nitrosation	exact	100	
-amd	Se-Methylation	se-methylation	28	strong	exact_pref	xrm:0000710	Se-methylation	metabolism phase	Se-methylation	exact	100	
-amd	RNA Binding	rna binding	27	strong	adjudicated:accept_as	xrm:1500232	RNA binding	reactive metabolite family	RNA binding	exact	100	in scope as reactive metabolite
-amd	Decysteination	decysteination	26	strong	exact_pref	xrm:0000704	decysteination	chemical transformation	decysteination	exact	100	
-amd	CoA Binding	coa binding	25	strong	adjudicated:accept_as	xrm:1500236	CoA binding	reactive metabolite family	CoA binding	exact	100	in scope as reactive metabolite
-amd	Formylation	formylation	24	strong	exact_pref	xrm:0000670	formylation	chemical transformation	formylation	exact	100	
-amd	C-Carboxylation	c-carboxylation	24	strong	exact_synonym	xrm:0000621	carboxylation	chemical transformation	C-carboxylation	exact	100	
-amd	Dearylation	dearylation	22	strong	exact_pref	xrm:0000720	dearylation	chemical transformation	dearylation	exact	100	
-amd	Deconjugation	deconjugation	22	strong	exact_pref	xrm:0000732	deconjugation	chemical transformation	deconjugation	exact	100	
-amd	Se-Alkylation	se-alkylation	19	strong	fuzzy_high	xrm:0000613	S-alkylation	chemical transformation	S-alkylation	fuzzy_token_sort	96.0	
-amd	N-Glucosidation	n-glucosidation	18	strong	exact_synonym	xrm:0001060	glycosylation	metabolism phase	N-glucosidation	exact	100	
-amd	S-Glucuronidation	s-glucuronidation	18	strong	exact_pref	xrm:0001007	S-glucuronidation	metabolism phase	S-glucuronidation	exact	100	
-amd	Dealkoxylation	dealkoxylation	18	strong	adjudicated:accept_as	xrm:0000200	dealkylation	chemical transformation	dealkylation	fuzzy_token_sort	92.3	
-amd	S-Cysteination	s-cysteination	16	strong	adjudicated:accept_as	xrm:1300010	cysteine conjugation	phase II conjugation family	S-cysteination	exact	100	S-cysteine conjugation
-amd	Reductive Dehalogenation	reductive dehalogenation	15	strong	exact_pref	xrm:0000540	reductive dehalogenation	chemical transformation	reductive dehalogenation	exact	100	
-amd	Transacetylation	transacetylation	15	strong	adjudicated:accept_as	xrm:0004018	transacylation	chemical transformation	transacylation	fuzzy_token_sort	93.3	
-amd	Dealkynylation	dealkynylation	14	strong	adjudicated:accept_as	xrm:0000200	dealkylation	chemical transformation	dealkylation	fuzzy_token_sort	92.3	
-amd	Nitrosation	nitrosation	13	strong	exact_synonym	xrm:0000680	N-nitrosation	chemical transformation	nitrosation	exact	100	
-amd	Se-Dealkylation	se-dealkylation	13	strong	fuzzy_high	xrm:0000203	S-dealkylation	chemical transformation	S-dealkylation	fuzzy_token_sort	96.6	
-amd	N-Denitrosylation	n-denitrosylation	11	strong	fuzzy_high	xrm:0000681	denitrosation	chemical transformation	N-denitrosation	fuzzy_token_sort	93.8	
-amd	Se-Oxidation	se-oxidation	11	strong	fuzzy_high	xrm:1200103	S-oxidation	phase I reaction family	S-oxidation	fuzzy_token_sort	95.7	
-amd	C-Desulfuration	c-desulfuration	10	strong	fuzzy_high	xrm:0000690	desulfuration	chemical transformation	desulfuration	fuzzy_token_sort	92.9	
-amd	P-Hydroxylation	para-hydroxylation	7	strong	exact_pref	xrm:0000103	para-hydroxylation	chemical transformation	para-hydroxylation	exact	100	
-amd	Arylation	arylation	5	strong	exact_pref	xrm:0000730	arylation	chemical transformation	arylation	exact	100	
-amd	Ring Expansion	ring expansion	5	strong	exact_pref	xrm:0004009	ring expansion	chemical transformation	ring expansion	exact	100	
-amd	N-Deglucuronidation	n-deglucuronidation	4	strong	exact_synonym	xrm:0000700	deglucuronidation	chemical transformation	N-deglucuronidation	exact	100	
-amd	Aromatic Dealkylation	aromatic dealkylation	3	strong	adjudicated:accept_as	xrm:0000212	aromatic O-dealkylation	chemical transformation	aromatic O-dealkylation	fuzzy_token_sort	95.5	
-amd	Carbonylation	carbonylation	3	strong	exact_pref	xrm:0000731	carbonylation	chemical transformation	carbonylation	exact	100	
-amd	N-Dehalogenation	n-dehalogenation	1	strong	adjudicated:accept_as	xrm:1100014	dehalogenation	chemical transformation	dehalogenation	fuzzy_token_sort	93.3	
-amd	O-Deallylation	o-deallylation	1	strong	adjudicated:accept_as	xrm:0000202	O-dealkylation	chemical transformation	O-dealkylation	fuzzy_token_sort	92.9	
+amd	C-Hydroxylation	c-hydroxylation	16493	strong	alias	xmet:0000100	hydroxylation	chemical transformation	C-Hydroxylation	alias_table		
+amd	Hydrolysis	hydrolysis	13320	strong	alias	xmet:0000013	hydrolysis	chemical transformation	Hydrolysis	alias_table		
+amd	C-Oxidation	c-oxidation	9499	strong	alias	xmet:0000021	carbon oxidation	chemical transformation	C-Oxidation	alias_table		
+amd	O-Glucuronidation	o-glucuronidation	8798	strong	alias	xmet:0001001	O-glucuronidation	metabolism phase	O-Glucuronidation	alias_table		
+amd	Aromatic Hydroxylation	aromatic hydroxylation	6910	strong	alias	xmet:0000101	aromatic hydroxylation	chemical transformation	Aromatic Hydroxylation	alias_table		
+amd	Aliphatic Hydroxylation	aliphatic hydroxylation	6462	strong	alias	xmet:0000102	aliphatic hydroxylation	chemical transformation	Aliphatic Hydroxylation	alias_table		
+amd	N-Dealkylation	n-dealkylation	5261	strong	alias	xmet:0000201	N-dealkylation	chemical transformation	N-Dealkylation	alias_table		
+amd	Reduction	reduction	5135	strong	alias	xmet:0000014	reduction	chemical transformation	Reduction	alias_table		
+amd	Ring Opening	ring opening	4864	strong	exact_pref	xmet:0004008	ring opening	chemical transformation	ring opening	exact	100	
+amd	O-Dealkylation	o-dealkylation	3747	strong	alias	xmet:0000202	O-dealkylation	chemical transformation	O-Dealkylation	alias_table		
+amd	O-Sulfation	o-sulfation	3510	strong	alias	xmet:0001011	O-sulfation	metabolism phase	O-Sulfation	alias_table		
+amd	Glutathionation	glutathionation	3134	strong	alias	xmet:0001030	glutathionation	metabolism phase	Glutathionation	alias_table		
+amd	Oxidation	oxidation	2977	strong	alias	xmet:0000020	oxidation	chemical transformation	Oxidation	alias_table		
+amd	Hydrogenation	hydrogenation	2830	strong	exact_pref	xmet:0000500	hydrogenation	chemical transformation	hydrogenation	exact	100	
+amd	O-Demethylation	o-demethylation	2598	strong	alias	xmet:0000209	O-demethylation	chemical transformation	O-Demethylation	alias_table		
+amd	Dehydrogenation	dehydrogenation	2424	strong	exact_pref	xmet:0000012	dehydrogenation	chemical transformation	dehydrogenation	exact	100	
+amd	N-Demethylation	n-demethylation	2388	strong	alias	xmet:0000205	N-demethylation	chemical transformation	N-Demethylation	alias_table		
+amd	Aromatization	aromatization	2154	strong	exact_pref	xmet:0000315	aromatization	chemical transformation	aromatization	exact	100	
+amd	Dearomatization	dearomatization	1894	strong	exact_pref	xmet:0004001	dearomatization	chemical transformation	dearomatization	exact	100	
+amd	Epoxidation	epoxidation	1803	strong	alias	xmet:0000110	epoxidation	chemical transformation	Epoxidation	alias_table		
+amd	Dehalogenation	dehalogenation	1797	strong	exact_pref	xmet:1100014	dehalogenation	chemical transformation	dehalogenation	exact	100	
+amd	DNA Binding	dna binding	1795	strong	adjudicated:accept_as	xmet:1500231	DNA binding	reactive metabolite family	DNA binding	exact	100	in scope as reactive metabolite
+amd	Conjugation	conjugation	1686	strong	exact_pref	xmet:0000024	conjugation	chemical transformation	conjugation	exact	100	
+amd	Protein Binding	protein binding	1589	strong	adjudicated:accept_as	xmet:1500233	protein binding	reactive metabolite family	protein binding	exact	100	in scope as reactive metabolite
+amd	O-Methylation	o-methylation	1579	strong	exact_pref	xmet:0001041	O-methylation	metabolism phase	O-methylation	exact	100	
+amd	N-Acetylation	n-acetylation	1534	strong	exact_pref	xmet:0001021	N-acetylation	metabolism phase	N-acetylation	exact	100	
+amd	S-Oxidation	s-oxidation	1464	strong	alias	xmet:0000130	sulfur oxidation	chemical transformation	S-Oxidation	alias_table		
+amd	O-Alkylation	o-alkylation	1450	strong	exact_pref	xmet:0000612	O-alkylation	chemical transformation	O-alkylation	exact	100	
+amd	Isomerization	isomerization	1384	strong	exact_pref	xmet:0002003	isomerization	chemical transformation	isomerization	exact	100	
+amd	Oxidative Deamination	oxidative deamination	1340	strong	exact_pref	xmet:0000208	oxidative deamination	chemical transformation	oxidative deamination	exact	100	
+amd	N-Oxidation	n-oxidation	1325	strong	alias	xmet:0000120	nitrogen oxidation	chemical transformation	N-Oxidation	alias_table		
+amd	O-Conjugation	o-conjugation	1309	strong	adjudicated:accept_as	xmet:0000024	conjugation	metabolism phase	conjugation	fuzzy_token_sort	91.7	broad umbrella; broadMatch-style
+amd	N-Deacylation	n-deacylation	1277	strong	adjudicated:accept_as	xmet:0002005	deacylation	chemical transformation	N-dearylation	fuzzy_token_sort	92.3	
+amd	N-Acylation	n-acylation	1256	strong	adjudicated:accept_as	xmet:0001020	acetylation	phase II conjugation family	N-acetylation	fuzzy_token_sort	91.7	acylation synonym path; may over-narrow to acetyl
+amd	Covalent Binding	covalent binding	1243	strong	adjudicated:accept_as	xmet:1500234	covalent binding	reactive metabolite family	covalent binding	exact	100	in scope as reactive metabolite
+amd	Ring Closure	ring closure	1169	strong	exact_pref	xmet:7200006	ring closure	structural delta	ring closure	exact	100	
+amd	Dehydration	dehydration	1143	strong	exact_pref	xmet:0000550	dehydration	chemical transformation	dehydration	exact	100	
+amd	Glucuronidation	glucuronidation	1091	strong	exact_pref	xmet:0001000	glucuronidation	metabolism phase	glucuronidation	exact	100	
+amd	N-Reduction	n-reduction	1014	strong	alias	xmet:0000510	nitrogen reduction	chemical transformation	N-Reduction	alias_table		
+amd	Tautomerization	tautomerization	978	strong	exact_pref	xmet:0002000	tautomerization	chemical transformation	tautomerization	exact	100	
+amd	O-Deacylation	o-deacylation	958	strong	adjudicated:accept_as	xmet:0002005	deacylation	chemical transformation	O-dearylation	fuzzy_token_sort	92.3	
+amd	Hydroxylation	hydroxylation	889	strong	exact_pref	xmet:0000100	hydroxylation	chemical transformation	hydroxylation	exact	100	
+amd	Rearrangement	rearrangement	849	strong	exact_pref	xmet:0002004	rearrangement	chemical transformation	rearrangement	exact	100	
+amd	Cyclization	cyclization	836	strong	exact_pref	xmet:0000640	cyclization	chemical transformation	cyclization	exact	100	
+amd	Decarboxylation	decarboxylation	802	strong	exact_pref	xmet:0000620	decarboxylation	chemical transformation	decarboxylation	exact	100	
+amd	Phosphorylation	phosphorylation	733	strong	exact_pref	xmet:1300012	phosphorylation	phase II conjugation family	phosphorylation	exact	100	
+amd	N-Glucuronidation	n-glucuronidation	710	strong	exact_pref	xmet:0001005	N-glucuronidation	metabolism phase	N-glucuronidation	exact	100	
+amd	Esterification	esterification	684	strong	exact_pref	xmet:0000630	esterification	chemical transformation	esterification	exact	100	
+amd	Hydration	hydration	682	strong	exact_pref	xmet:0004012	hydration	chemical transformation	hydration	exact	100	
+amd	O-Deglycosidation	o-deglycosidation	667	strong	exact_synonym	xmet:0000702	deglycosidation	chemical transformation	O-deglycosidation	exact	100	
+amd	Deamination	deamination	625	strong	exact_pref	xmet:1100013	deamination	chemical transformation	deamination	exact	100	
+amd	Oxidative N-Dealkylation	oxidative n-dealkylation	563	strong	exact_synonym	xmet:0000201	N-dealkylation	chemical transformation	oxidative N-dealkylation	exact	100	
+amd	O-Phosphorylation	o-phosphorylation	549	strong	adjudicated:accept_as	xmet:1300012	phosphorylation	phase II conjugation family	phosphorylation	fuzzy_token_sort	93.8	O-attachment via site
+amd	Dehydroxylation	dehydroxylation	512	strong	exact_pref	xmet:0000650	dehydroxylation	chemical transformation	dehydroxylation	exact	100	
+amd	N-Acetylcysteination	n-acetylcysteination	484	strong	adjudicated:accept_as	xmet:1300011	N-acetylcysteine conjugation	phase II conjugation family		none	78.8	
+amd	Glycination	glycination	450	strong	adjudicated:accept_as	xmet:0001051	glycine conjugation	phase II conjugation family	glycosidation	fuzzy_token_sort	83.3	AMD spelling for glycine conjugation
+amd	N-Hydroxylation	n-hydroxylation	409	strong	exact_synonym	xmet:0000122	hydroxylamine formation	chemical transformation	N-hydroxylation	exact	100	
+amd	Oxidative Dealkylation	oxidative dealkylation	396	strong	exact_synonym	xmet:0000200	dealkylation	chemical transformation	oxidative dealkylation	exact	100	
+amd	Deglycosidation	deglycosidation	395	strong	exact_pref	xmet:0000702	deglycosidation	chemical transformation	deglycosidation	exact	100	
+amd	S-Methylation	s-methylation	389	strong	exact_pref	xmet:0001043	S-methylation	metabolism phase	S-methylation	exact	100	
+amd	S-Dealkylation	s-dealkylation	388	strong	alias	xmet:0000203	S-dealkylation	chemical transformation	S-Dealkylation	alias_table		
+amd	S-Alkylation	s-alkylation	343	strong	exact_pref	xmet:0000613	S-alkylation	chemical transformation	S-alkylation	exact	100	
+amd	Epimerization	epimerization	341	strong	adjudicated:accept_as	xmet:0002003	isomerization	chemical transformation	isomerization	fuzzy_token_sort	84.6	epimerization as isomerization leaf proxy
+amd	O-Deacetylation	o-deacetylation	340	strong	adjudicated:accept_as	xmet:0001023	deacetylation	chemical transformation	O-acetylation	negation_prefix	100	
+amd	Sulfation	sulfation	303	strong	exact_pref	xmet:0001010	sulfation	metabolism phase	sulfation	exact	100	
+amd	C-Dealkylation	c-dealkylation	295	strong	exact_pref	xmet:0000204	C-dealkylation	chemical transformation	C-dealkylation	exact	100	
+amd	Cysteination	cysteination	291	strong	adjudicated:accept_as	xmet:1300010	cysteine conjugation	phase II conjugation family	cysteination	exact	100	
+amd	O-Dephosphorylation	o-dephosphorylation	263	strong	adjudicated:accept_as	xmet:0000410	dephosphorylation	chemical transformation	dephosphorylation	fuzzy_token_sort	94.4	
+amd	N-Deacetylation	n-deacetylation	254	strong	adjudicated:accept_as	xmet:0001023	deacetylation	chemical transformation	N-acetylation	negation_prefix	100	
+amd	Dealkylation	dealkylation	250	strong	exact_pref	xmet:0000200	dealkylation	chemical transformation	dealkylation	exact	100	
+amd	Desulfuration	desulfuration	246	strong	exact_pref	xmet:0000690	desulfuration	chemical transformation	desulfuration	exact	100	
+amd	O-Dearylation	o-dearylation	240	strong	adjudicated:accept_as	xmet:0000202	O-dealkylation	chemical transformation	O-dearylation	exact	100	aryl ether cleavage family
+amd	O-Acylation	o-acylation	221	strong	adjudicated:accept_as	xmet:0001022	O-acetylation	phase II conjugation family	O-acetylation	fuzzy_token_sort	91.7	same caveat
+amd	Lactonization	lactonization	220	strong	exact_pref	xmet:0000632	lactonization	chemical transformation	lactonization	exact	100	
+amd	Glycosidation	glycosidation	208	strong	exact_synonym	xmet:0001060	glycosylation	metabolism phase	glycosidation	exact	100	
+amd	S-Reduction	s-reduction	207	strong	adjudicated:accept_as	xmet:0000530	sulfur reduction	chemical transformation	reduction	fuzzy_token_sort	90.0	
+amd	N-Alkylation	n-alkylation	203	strong	exact_pref	xmet:0000611	N-alkylation	chemical transformation	N-alkylation	exact	100	
+amd	N-Methylation	n-methylation	203	strong	exact_pref	xmet:0001042	N-methylation	metabolism phase	N-methylation	exact	100	
+amd	Radical Formation	radical formation	200	strong	exact_pref	xmet:0004019	radical formation	chemical transformation	radical formation	exact	100	
+amd	Oxidative Desulfuration	oxidative desulfuration	197	strong	exact_synonym	xmet:0000690	desulfuration	chemical transformation	oxidative desulfuration	exact	100	
+amd	Lipid Binding	lipid binding	193	strong	adjudicated:accept_as	xmet:1500235	lipid binding	reactive metabolite family	lipid binding	exact	100	in scope as reactive metabolite
+amd	Sulfuration	sulfuration	189	strong	exact_pref	xmet:0000691	sulfuration	chemical transformation	sulfuration	exact	100	
+amd	Dephosphorylation	dephosphorylation	188	strong	exact_pref	xmet:0000410	dephosphorylation	chemical transformation	dephosphorylation	exact	100	
+amd	C-Decarboxylation	c-decarboxylation	181	strong	exact_synonym	xmet:0000620	decarboxylation	chemical transformation	C-decarboxylation	exact	100	
+amd	Acyl Migration	acyl migration	169	strong	exact_pref	xmet:0004017	acyl migration	chemical transformation	acyl migration	exact	100	
+amd	N-Dehydroxylation	n-dehydroxylation	169	strong	exact_synonym	xmet:0000650	dehydroxylation	chemical transformation	N-dehydroxylation	exact	100	
+amd	Aromatic Dehydroxylation	aromatic dehydroxylation	162	strong	exact_synonym	xmet:0000650	dehydroxylation	chemical transformation	aromatic dehydroxylation	exact	100	
+amd	Amination	amination	159	strong	exact_pref	xmet:0000661	amination	chemical transformation	amination	exact	100	
+amd	Alkylation	alkylation	155	strong	exact_pref	xmet:0000610	alkylation	chemical transformation	alkylation	exact	100	
+amd	Methylation	methylation	153	strong	exact_pref	xmet:0001040	methylation	metabolism phase	methylation	exact	100	
+amd	O-Acetylation	o-acetylation	142	strong	exact_pref	xmet:0001022	O-acetylation	metabolism phase	O-acetylation	exact	100	
+amd	Transesterification	transesterification	139	strong	exact_pref	xmet:0000631	transesterification	chemical transformation	transesterification	exact	100	
+amd	Deglucosidation	deglucosidation	138	strong	exact_synonym	xmet:0000702	deglycosidation	chemical transformation	deglucosidation	exact	100	
+amd	Cyanidation	cyanidation	132	strong	adjudicated:accept_as	xmet:0000600	cyanidation	chemical transformation	cyanidation	exact	100	cyanide in scope
+amd	Ring Contraction	ring contraction	129	strong	exact_pref	xmet:0004010	ring contraction	chemical transformation	ring contraction	exact	100	
+amd	Oxidative Dehalogenation	oxidative dehalogenation	128	strong	exact_pref	xmet:0000210	oxidative dehalogenation	chemical transformation	oxidative dehalogenation	exact	100	
+amd	N-Deglycosidation	n-deglycosidation	128	strong	exact_synonym	xmet:0000702	deglycosidation	chemical transformation	N-deglycosidation	exact	100	
+amd	Desulfation	desulfation	125	strong	exact_pref	xmet:0000701	desulfation	chemical transformation	desulfation	exact	100	
+amd	Denitrogenation	denitrogenation	101	strong	exact_pref	xmet:0002006	denitrogenation	metabolism phase	denitrogenation	exact	100	
+amd	C-Demethylation	c-demethylation	100	strong	adjudicated:accept_as	xmet:0000204	C-dealkylation	chemical transformation	N-demethylation	fuzzy_token_sort	93.3	C-demethyl as C-dealkyl leaf proxy
+amd	N-Sulfation	n-sulfation	98	strong	exact_pref	xmet:0001014	N-sulfation	metabolism phase	N-sulfation	exact	100	
+amd	Demethylation	demethylation	97	strong	exact_synonym	xmet:0000205	N-demethylation	chemical transformation	demethylation	exact	100	
+amd	Taurination	taurination	96	strong	adjudicated:accept_as	xmet:0001053	taurine conjugation	phase II conjugation family	amination	fuzzy_token_sort	80.0	
+amd	N-Glycosidation	n-glycosidation	95	strong	adjudicated:accept_as	xmet:0001060	glycosylation	phase II conjugation family	N-glycosidation	exact	100	
+amd	Demethoxylation	demethoxylation	94	strong	fuzzy_high	xmet:0000205	N-demethylation	chemical transformation	demethylation	fuzzy_token_sort	92.9	
+amd	N-Dearylation	n-dearylation	92	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-dearylation	exact	100	
+amd	Deglutathionation	deglutathionation	92	strong	exact_pref	xmet:0000703	deglutathionation	chemical transformation	deglutathionation	exact	100	
+amd	Deoxygenation	deoxygenation	91	strong	fuzzy_high	xmet:1700101	dioxygenation	structural delta	dioxygenation	fuzzy_token_sort	92.3	
+amd	Nucleic Acid Binding	nucleic acid binding	90	strong	adjudicated:accept_as	xmet:1500231	DNA binding	reactive metabolite family	nucleic acid binding	exact	100	synonym path via nucleic acid binding
+amd	Transacylation	transacylation	87	strong	exact_pref	xmet:0004018	transacylation	chemical transformation	transacylation	exact	100	
+amd	NIH Shift	nih shift	86	strong	exact_pref	xmet:0004003	NIH shift	chemical transformation	NIH shift	exact	100	
+amd	O-Deglucuronidation	o-deglucuronidation	86	strong	exact_synonym	xmet:0000700	deglucuronidation	chemical transformation	O-deglucuronidation	exact	100	
+amd	C-Alkylation	c-alkylation	82	strong	exact_pref	xmet:0000614	C-alkylation	chemical transformation	C-alkylation	exact	100	
+amd	Sulfonation	sulfonation	80	strong	exact_synonym	xmet:0001010	sulfation	metabolism phase	sulfonation	exact	100	
+amd	Halogenation	halogenation	77	strong	exact_pref	xmet:0000660	halogenation	chemical transformation	halogenation	exact	100	
+amd	Decyanidation	decyanidation	77	strong	adjudicated:accept_as	xmet:0000601	decyanidation	chemical transformation	decyanidation	exact	100	antonym of cyanidation
+amd	N-Carboxylation	n-carboxylation	76	strong	exact_synonym	xmet:0000621	carboxylation	chemical transformation	N-carboxylation	exact	100	
+amd	O-Glucosidation	o-glucosidation	75	strong	exact_synonym	xmet:0001060	glycosylation	metabolism phase	O-glucosidation	exact	100	
+amd	N-Formylation	n-formylation	73	strong	exact_synonym	xmet:0000670	formylation	chemical transformation	N-formylation	exact	100	
+amd	Acetylcysteination	acetylcysteination	73	strong	adjudicated:accept_as	xmet:1300011	N-acetylcysteine conjugation	phase II conjugation family	decysteination	fuzzy_token_sort	81.2	
+amd	Carboxylation	carboxylation	71	strong	exact_pref	xmet:0000621	carboxylation	chemical transformation	carboxylation	exact	100	
+amd	Deacylation	deacylation	68	strong	exact_pref	xmet:0002005	deacylation	metabolism phase	deacylation	exact	100	
+amd	N-Decarboxylation	n-decarboxylation	67	strong	adjudicated:accept_as	xmet:0000620	decarboxylation	chemical transformation	N-decarboxylation	exact	100	N-labeled decarboxylation
+amd	Denitrosation	denitrosation	67	strong	exact_pref	xmet:0000681	denitrosation	chemical transformation	denitrosation	exact	100	
+amd	Decarbonylation	decarbonylation	64	strong	exact_pref	xmet:0002007	decarbonylation	metabolism phase	decarbonylation	exact	100	
+amd	O-Glycosidation	o-glycosidation	62	strong	adjudicated:accept_as	xmet:0001060	glycosylation	phase II conjugation family	O-glycosidation	exact	100	
+amd	Deacetylation	deacetylation	61	strong	exact_pref	xmet:0001023	deacetylation	metabolism phase	deacetylation	exact	100	
+amd	Azo Cleavage	azo cleavage	60	strong	exact_pref	xmet:0000412	azo cleavage	chemical transformation	azo cleavage	exact	100	
+amd	Acetylation	acetylation	58	strong	exact_pref	xmet:0001020	acetylation	metabolism phase	acetylation	exact	100	
+amd	N-Deformylation	n-deformylation	53	strong	exact_synonym	xmet:0000671	deformylation	chemical transformation	N-deformylation	exact	100	
+amd	Lactamization	lactamization	50	strong	exact_pref	xmet:0000633	lactamization	chemical transformation	lactamization	exact	100	
+amd	Deformylation	deformylation	47	strong	exact_pref	xmet:0000671	deformylation	chemical transformation	deformylation	exact	100	
+amd	Deglucuronidation	deglucuronidation	44	strong	exact_pref	xmet:0000700	deglucuronidation	chemical transformation	deglucuronidation	exact	100	
+amd	Adduct Formation	adduct formation	41	strong	adjudicated:accept_as	xmet:1500234	covalent binding	reactive metabolite family	DNA adduct formation	fuzzy_token_sort	88.9	generic adduct → covalent binding
+amd	C-Alkoxylation	c-alkoxylation	40	strong	fuzzy_high	xmet:0000614	C-alkylation	chemical transformation	C-alkylation	fuzzy_token_sort	92.3	
+amd	N-Denitrosation	n-denitrosation	40	strong	exact_synonym	xmet:0000681	denitrosation	chemical transformation	N-denitrosation	exact	100	
+amd	S-Deacetylation	s-deacetylation	39	strong	adjudicated:accept_as	xmet:0001023	deacetylation	chemical transformation	deacetylation	fuzzy_token_sort	92.9	
+amd	S-Demethylation	s-demethylation	36	strong	exact_pref	xmet:0000217	S-demethylation	chemical transformation	S-demethylation	exact	100	
+amd	Glucosidation	glucosidation	34	strong	adjudicated:accept_as	xmet:0001060	glycosylation	phase II conjugation family	glucosidation	exact	100	glucose-specific glycosylation
+amd	Dealkenylation	dealkenylation	28	strong	adjudicated:accept_as	xmet:0000200	dealkylation	chemical transformation	dealkylation	fuzzy_token_sort	92.3	
+amd	N-Nitrosation	n-nitrosation	28	strong	exact_pref	xmet:0000680	N-nitrosation	chemical transformation	N-nitrosation	exact	100	
+amd	Se-Methylation	se-methylation	28	strong	exact_pref	xmet:0000710	Se-methylation	metabolism phase	Se-methylation	exact	100	
+amd	RNA Binding	rna binding	27	strong	adjudicated:accept_as	xmet:1500232	RNA binding	reactive metabolite family	RNA binding	exact	100	in scope as reactive metabolite
+amd	Decysteination	decysteination	26	strong	exact_pref	xmet:0000704	decysteination	chemical transformation	decysteination	exact	100	
+amd	CoA Binding	coa binding	25	strong	adjudicated:accept_as	xmet:1500236	CoA binding	reactive metabolite family	CoA binding	exact	100	in scope as reactive metabolite
+amd	Formylation	formylation	24	strong	exact_pref	xmet:0000670	formylation	chemical transformation	formylation	exact	100	
+amd	C-Carboxylation	c-carboxylation	24	strong	exact_synonym	xmet:0000621	carboxylation	chemical transformation	C-carboxylation	exact	100	
+amd	Dearylation	dearylation	22	strong	exact_pref	xmet:0000720	dearylation	chemical transformation	dearylation	exact	100	
+amd	Deconjugation	deconjugation	22	strong	exact_pref	xmet:0000732	deconjugation	chemical transformation	deconjugation	exact	100	
+amd	Se-Alkylation	se-alkylation	19	strong	fuzzy_high	xmet:0000613	S-alkylation	chemical transformation	S-alkylation	fuzzy_token_sort	96.0	
+amd	N-Glucosidation	n-glucosidation	18	strong	exact_synonym	xmet:0001060	glycosylation	metabolism phase	N-glucosidation	exact	100	
+amd	S-Glucuronidation	s-glucuronidation	18	strong	exact_pref	xmet:0001007	S-glucuronidation	metabolism phase	S-glucuronidation	exact	100	
+amd	Dealkoxylation	dealkoxylation	18	strong	adjudicated:accept_as	xmet:0000200	dealkylation	chemical transformation	dealkylation	fuzzy_token_sort	92.3	
+amd	S-Cysteination	s-cysteination	16	strong	adjudicated:accept_as	xmet:1300010	cysteine conjugation	phase II conjugation family	S-cysteination	exact	100	S-cysteine conjugation
+amd	Reductive Dehalogenation	reductive dehalogenation	15	strong	exact_pref	xmet:0000540	reductive dehalogenation	chemical transformation	reductive dehalogenation	exact	100	
+amd	Transacetylation	transacetylation	15	strong	adjudicated:accept_as	xmet:0004018	transacylation	chemical transformation	transacylation	fuzzy_token_sort	93.3	
+amd	Dealkynylation	dealkynylation	14	strong	adjudicated:accept_as	xmet:0000200	dealkylation	chemical transformation	dealkylation	fuzzy_token_sort	92.3	
+amd	Nitrosation	nitrosation	13	strong	exact_synonym	xmet:0000680	N-nitrosation	chemical transformation	nitrosation	exact	100	
+amd	Se-Dealkylation	se-dealkylation	13	strong	fuzzy_high	xmet:0000203	S-dealkylation	chemical transformation	S-dealkylation	fuzzy_token_sort	96.6	
+amd	N-Denitrosylation	n-denitrosylation	11	strong	fuzzy_high	xmet:0000681	denitrosation	chemical transformation	N-denitrosation	fuzzy_token_sort	93.8	
+amd	Se-Oxidation	se-oxidation	11	strong	fuzzy_high	xmet:1200103	S-oxidation	phase I reaction family	S-oxidation	fuzzy_token_sort	95.7	
+amd	C-Desulfuration	c-desulfuration	10	strong	fuzzy_high	xmet:0000690	desulfuration	chemical transformation	desulfuration	fuzzy_token_sort	92.9	
+amd	P-Hydroxylation	para-hydroxylation	7	strong	exact_pref	xmet:0000103	para-hydroxylation	chemical transformation	para-hydroxylation	exact	100	
+amd	Arylation	arylation	5	strong	exact_pref	xmet:0000730	arylation	chemical transformation	arylation	exact	100	
+amd	Ring Expansion	ring expansion	5	strong	exact_pref	xmet:0004009	ring expansion	chemical transformation	ring expansion	exact	100	
+amd	N-Deglucuronidation	n-deglucuronidation	4	strong	exact_synonym	xmet:0000700	deglucuronidation	chemical transformation	N-deglucuronidation	exact	100	
+amd	Aromatic Dealkylation	aromatic dealkylation	3	strong	adjudicated:accept_as	xmet:0000212	aromatic O-dealkylation	chemical transformation	aromatic O-dealkylation	fuzzy_token_sort	95.5	
+amd	Carbonylation	carbonylation	3	strong	exact_pref	xmet:0000731	carbonylation	chemical transformation	carbonylation	exact	100	
+amd	N-Dehalogenation	n-dehalogenation	1	strong	adjudicated:accept_as	xmet:1100014	dehalogenation	chemical transformation	dehalogenation	fuzzy_token_sort	93.3	
+amd	O-Deallylation	o-deallylation	1	strong	adjudicated:accept_as	xmet:0000202	O-dealkylation	chemical transformation	O-dealkylation	fuzzy_token_sort	92.9	
