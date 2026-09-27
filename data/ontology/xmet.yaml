@@ -4294,6 +4294,9 @@ concepts:
   - xmet:2100000
   synonyms:
   - ces_enzyme_family_context
+  - carboxylesterase
+  - carboxylesterases
+  - CES
 - id: xmet:2100109
   preferred_label: liver tissue context
   definition: Liver tissue framing.
@@ -4471,6 +4474,7 @@ concepts:
   synonyms:
   - CYP3A
   - cyp3a_context
+  - cytochrome P450 3A
 - id: xmet:2100201
   preferred_label: CYP2D6 context
   definition: CYP2D6 isoform context (orthogonal).
@@ -4478,6 +4482,7 @@ concepts:
   - xmet:2100000
   synonyms:
   - cyp2d6_context
+  - CYP2D6
 - id: xmet:2100202
   preferred_label: CYP2C9 context
   definition: CYP2C9 isoform context (orthogonal).
@@ -4695,6 +4700,48 @@ concepts:
   - xmet:2100000
   synonyms:
   - fasted_state_context
+- id: xmet:2100232
+  preferred_label: CES1 context
+  definition: Carboxylesterase 1 isoform context (orthogonal).
+  parents:
+  - xmet:2100000
+  synonyms:
+  - CES1
+  - ces1_context
+  - hCE1
+  related_match:
+  - xmet:2100108
+- id: xmet:2100233
+  preferred_label: CES2 context
+  definition: Carboxylesterase 2 isoform context (orthogonal).
+  parents:
+  - xmet:2100000
+  synonyms:
+  - CES2
+  - ces2_context
+  - hCE2
+  related_match:
+  - xmet:2100108
+- id: xmet:2100234
+  preferred_label: CYP3A4 context
+  definition: CYP3A4 isoform context (orthogonal).
+  parents:
+  - xmet:2100000
+  synonyms:
+  - CYP3A4
+  - cyp3a4_context
+  related_match:
+  - xmet:2100200
+- id: xmet:2100235
+  preferred_label: CYP3A5 context
+  definition: CYP3A5 isoform context (orthogonal).
+  parents:
+  - xmet:2100000
+  synonyms:
+  - CYP3A5
+  - cyp3a5_context
+  related_match:
+  - xmet:2100200
 - id: xmet:2200000
   preferred_label: leaving group
   definition: Fragment or moiety that departs in a cleavage / substitution / dealkylation / hydrolysis
@@ -4890,6 +4937,9 @@ concepts:
   - xmet:2300000
   synonyms:
   - active metabolite
+  - active metabolites
+  - active form
+  - active forms
   related_match:
   - xmet:2400011
 - id: xmet:2300011
@@ -4904,6 +4954,8 @@ concepts:
   definition: Parent administered in inactive/less-active form requiring metabolic activation.
   parents:
   - xmet:2300000
+  synonyms:
+  - prodrugs
   related_match:
   - xmet:1400127
 - id: xmet:2300014

@@ -42,3 +42,4 @@ xmet:2000012	skos:relatedMatch	CHMO:0000575	semapv:ManualMappingCuration	MS2 evi
 xmet:2000014	skos:relatedMatch	CHMO:0000591	semapv:ManualMappingCuration	NMR evidence	nuclear magnetic resonance spectroscopy
 xmet:2000013	skos:relatedMatch	CHMO:0001000	semapv:ManualMappingCuration	retention time evidence	chromatography
 xmet:2000015	skos:relatedMatch	CHMO:0000593	semapv:ManualMappingCuration	synthetic standard	chemical synthesis
+xmet:2300012	skos:exactMatch	CHEBI:50266	semapv:ManualMappingCuration	prodrug	prodrug
