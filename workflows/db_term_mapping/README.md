@@ -9,6 +9,8 @@ under `data/` and are gitignored.
 From repo root (requires prior extract outputs under `data/derived/db_extracts/`):
 
 ```bash
+make db-term-mapping
+# equivalent:
 uv run snakemake -s workflows/db_term_mapping/Snakefile -c1
 uv run snakemake -s workflows/db_term_mapping/Snakefile -c1 metxbiodb
 uv run snakemake -s workflows/db_term_mapping/Snakefile -c1 amd
