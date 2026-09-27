@@ -4702,6 +4702,9 @@ xmet:2100108 a skos:Concept ;
   skos:definition "Carboxylesterase context (orthogonal)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "ces_enzyme_family_context" ;
+  skos:altLabel "carboxylesterase" ;
+  skos:altLabel "carboxylesterases" ;
+  skos:altLabel "CES" ;
   skos:broader xmet:2100000 .
 
 xmet:2100109 a skos:Concept ;
@@ -4879,6 +4882,7 @@ xmet:2100200 a skos:Concept ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "CYP3A" ;
   skos:altLabel "cyp3a_context" ;
+  skos:altLabel "cytochrome P450 3A" ;
   skos:broader xmet:2100000 .
 
 xmet:2100201 a skos:Concept ;
@@ -4886,6 +4890,7 @@ xmet:2100201 a skos:Concept ;
   skos:definition "CYP2D6 isoform context (orthogonal)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cyp2d6_context" ;
+  skos:altLabel "CYP2D6" ;
   skos:broader xmet:2100000 .
 
 xmet:2100202 a skos:Concept ;
@@ -5104,6 +5109,44 @@ xmet:2100231 a skos:Concept ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "fasted_state_context" ;
   skos:broader xmet:2100000 .
+
+xmet:2100232 a skos:Concept ;
+  skos:prefLabel "CES1 context" ;
+  skos:definition "Carboxylesterase 1 isoform context (orthogonal)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "CES1" ;
+  skos:altLabel "ces1_context" ;
+  skos:altLabel "hCE1" ;
+  skos:broader xmet:2100000 ;
+  skos:relatedMatch xmet:2100108 .
+
+xmet:2100233 a skos:Concept ;
+  skos:prefLabel "CES2 context" ;
+  skos:definition "Carboxylesterase 2 isoform context (orthogonal)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "CES2" ;
+  skos:altLabel "ces2_context" ;
+  skos:altLabel "hCE2" ;
+  skos:broader xmet:2100000 ;
+  skos:relatedMatch xmet:2100108 .
+
+xmet:2100234 a skos:Concept ;
+  skos:prefLabel "CYP3A4 context" ;
+  skos:definition "CYP3A4 isoform context (orthogonal)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "CYP3A4" ;
+  skos:altLabel "cyp3a4_context" ;
+  skos:broader xmet:2100000 ;
+  skos:relatedMatch xmet:2100200 .
+
+xmet:2100235 a skos:Concept ;
+  skos:prefLabel "CYP3A5 context" ;
+  skos:definition "CYP3A5 isoform context (orthogonal)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "CYP3A5" ;
+  skos:altLabel "cyp3a5_context" ;
+  skos:broader xmet:2100000 ;
+  skos:relatedMatch xmet:2100200 .
 
 xmet:2100300 a skos:Concept ;
   skos:prefLabel "experimental setting" ;
@@ -5468,6 +5511,9 @@ xmet:2300010 a skos:Concept ;
   skos:definition "Metabolite that retains or gains pharmacological activity." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "active metabolite" ;
+  skos:altLabel "active metabolites" ;
+  skos:altLabel "active form" ;
+  skos:altLabel "active forms" ;
   skos:broader xmet:2300000 ;
   skos:relatedMatch xmet:2400011 .
 
@@ -5482,6 +5528,7 @@ xmet:2300012 a skos:Concept ;
   skos:prefLabel "prodrug" ;
   skos:definition "Parent administered in inactive/less-active form requiring metabolic activation." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "prodrugs" ;
   skos:broader xmet:2300000 ;
   skos:relatedMatch xmet:1400127 .
 
@@ -6298,7 +6345,7 @@ xmet:9000010 a skos:Concept ;
   skos:altLabel "SO ruleset" ;
   skos:broader xmet:9000000 ;
   skos:broader xmet:9000018 ;
-  skos:exactMatch <https://xenosite.org/ontology/xrm/ext/forest.ruleset/SO> .
+  skos:exactMatch <https://xenosite.org/ontology/xmet/ext/forest.ruleset/SO> .
 
 xmet:9000011 a skos:Concept ;
   skos:prefLabel "unstable oxygenation ruleset" ;
@@ -6308,7 +6355,7 @@ xmet:9000011 a skos:Concept ;
   skos:altLabel "UO ruleset" ;
   skos:broader xmet:9000000 ;
   skos:broader xmet:9000018 ;
-  skos:exactMatch <https://xenosite.org/ontology/xrm/ext/forest.ruleset/UO> .
+  skos:exactMatch <https://xenosite.org/ontology/xmet/ext/forest.ruleset/UO> .
 
 xmet:9000012 a skos:Concept ;
   skos:prefLabel "dehydrogenation ruleset" ;

@@ -7020,7 +7020,10 @@
       "inScheme": "xmet:scheme",
       "definition": "Carboxylesterase context (orthogonal).",
       "altLabel": [
-        "ces_enzyme_family_context"
+        "ces_enzyme_family_context",
+        "carboxylesterase",
+        "carboxylesterases",
+        "CES"
       ],
       "broader": "xmet:2100000"
     },
@@ -7299,7 +7302,8 @@
       "definition": "CYP3A family context (orthogonal).",
       "altLabel": [
         "CYP3A",
-        "cyp3a_context"
+        "cyp3a_context",
+        "cytochrome P450 3A"
       ],
       "broader": "xmet:2100000"
     },
@@ -7310,7 +7314,8 @@
       "inScheme": "xmet:scheme",
       "definition": "CYP2D6 isoform context (orthogonal).",
       "altLabel": [
-        "cyp2d6_context"
+        "cyp2d6_context",
+        "CYP2D6"
       ],
       "broader": "xmet:2100000"
     },
@@ -7660,6 +7665,60 @@
         "fasted_state_context"
       ],
       "broader": "xmet:2100000"
+    },
+    {
+      "id": "xmet:2100232",
+      "type": "skos:Concept",
+      "prefLabel": "CES1 context",
+      "inScheme": "xmet:scheme",
+      "definition": "Carboxylesterase 1 isoform context (orthogonal).",
+      "altLabel": [
+        "CES1",
+        "ces1_context",
+        "hCE1"
+      ],
+      "broader": "xmet:2100000",
+      "relatedMatch": "xmet:2100108"
+    },
+    {
+      "id": "xmet:2100233",
+      "type": "skos:Concept",
+      "prefLabel": "CES2 context",
+      "inScheme": "xmet:scheme",
+      "definition": "Carboxylesterase 2 isoform context (orthogonal).",
+      "altLabel": [
+        "CES2",
+        "ces2_context",
+        "hCE2"
+      ],
+      "broader": "xmet:2100000",
+      "relatedMatch": "xmet:2100108"
+    },
+    {
+      "id": "xmet:2100234",
+      "type": "skos:Concept",
+      "prefLabel": "CYP3A4 context",
+      "inScheme": "xmet:scheme",
+      "definition": "CYP3A4 isoform context (orthogonal).",
+      "altLabel": [
+        "CYP3A4",
+        "cyp3a4_context"
+      ],
+      "broader": "xmet:2100000",
+      "relatedMatch": "xmet:2100200"
+    },
+    {
+      "id": "xmet:2100235",
+      "type": "skos:Concept",
+      "prefLabel": "CYP3A5 context",
+      "inScheme": "xmet:scheme",
+      "definition": "CYP3A5 isoform context (orthogonal).",
+      "altLabel": [
+        "CYP3A5",
+        "cyp3a5_context"
+      ],
+      "broader": "xmet:2100000",
+      "relatedMatch": "xmet:2100200"
     },
     {
       "id": "xmet:2100300",
@@ -8188,7 +8247,10 @@
       "inScheme": "xmet:scheme",
       "definition": "Metabolite that retains or gains pharmacological activity.",
       "altLabel": [
-        "active metabolite"
+        "active metabolite",
+        "active metabolites",
+        "active form",
+        "active forms"
       ],
       "broader": "xmet:2300000",
       "relatedMatch": "xmet:2400011"
@@ -8210,6 +8272,9 @@
       "prefLabel": "prodrug",
       "inScheme": "xmet:scheme",
       "definition": "Parent administered in inactive/less-active form requiring metabolic activation.",
+      "altLabel": [
+        "prodrugs"
+      ],
       "broader": "xmet:2300000",
       "relatedMatch": "xmet:1400127"
     },
