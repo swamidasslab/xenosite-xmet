@@ -15,7 +15,8 @@ tracked against the category bands in [`ANNOTATION.md`](ANNOTATION.md).
 
 Spine vocabulary follows the ChatGPT design share (metabolism phase, chemical
 transformation, Rainbow phase I family, phase II conjugation family, medchem
-liability, reactive metabolite family, site type, structural delta, product
+liability, reactive metabolite family, metabolite product family, site type,
+structural delta, product
 status, rule provenance, evidence, biological context), plus ambiguity and the
 Metabolic Forest map as an **alias / mapping** spine.
 
@@ -33,6 +34,7 @@ Forest ruleset concepts use unabbreviated labels ending in `ruleset`.
 | **phase II conjugation family** | Glucuronidation, sulfation, GSH, … | conjugation SMARTS / tags |
 | **medchem liability** | Soft spot, clearance, bioactivation, blocking | typed liability emits |
 | **reactive metabolite family** | Quinone, epoxide, aldehyde, acyl glucuronide, … | quinone / epoxide / GSH tags |
+| **metabolite product family** | Glucuronide/sulfate conjugates, phenol, N-oxide, … | stable Phase I/II product classes |
 | **site type** | Atom / bond / ring / aromatic / benzylic / … | site aromaticity + typed sites |
 | **structural delta** | Formula, mass, bond order, aromaticity, … | elemental delta; nested legacy delta spines |
 | **product status** | Observed / predicted / intermediate / … | caller / harvest tags |

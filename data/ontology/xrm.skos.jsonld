@@ -4360,7 +4360,7 @@
       "prefLabel": "stable conjugate",
       "inScheme": "xrm:scheme",
       "definition": "Conjugate product class expected to be chemically stable.",
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500100",
@@ -4552,7 +4552,7 @@
       "altLabel": [
         "glucuronide_conjugate"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": [
         "xrm:0001000",
         "xrm:0001005",
@@ -4568,7 +4568,7 @@
       "altLabel": [
         "sulfate_conjugate"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": "xrm:0001010"
     },
     {
@@ -4580,7 +4580,7 @@
       "altLabel": [
         "phenol_metabolite"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": [
         "xrm:0000101",
         "xrm:0001002"
@@ -4595,7 +4595,7 @@
       "altLabel": [
         "catechol_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500120",
@@ -4606,7 +4606,7 @@
       "altLabel": [
         "alcohol_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500121",
@@ -4617,7 +4617,7 @@
       "altLabel": [
         "carboxylic_acid_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500122",
@@ -4628,7 +4628,7 @@
       "altLabel": [
         "n_oxide_metabolite"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": "xrm:1200102"
     },
     {
@@ -4640,7 +4640,7 @@
       "altLabel": [
         "sulfoxide_metabolite"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": "xrm:0000131"
     },
     {
@@ -4652,7 +4652,7 @@
       "altLabel": [
         "sulfone_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500125",
@@ -4776,7 +4776,7 @@
       "altLabel": [
         "hydroquinone_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500201",
@@ -4787,7 +4787,7 @@
       "altLabel": [
         "aminophenol_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500202",
@@ -4864,7 +4864,7 @@
       "altLabel": [
         "sulfinic_acid_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500209",
@@ -4875,7 +4875,7 @@
       "altLabel": [
         "sulfonic_acid_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500210",
@@ -4886,7 +4886,7 @@
       "altLabel": [
         "disulfide_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500211",
@@ -4897,7 +4897,7 @@
       "altLabel": [
         "lactam_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500212",
@@ -4908,7 +4908,7 @@
       "altLabel": [
         "lactone_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500213",
@@ -4930,7 +4930,7 @@
       "altLabel": [
         "ether_glucuronide"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500215",
@@ -4941,7 +4941,7 @@
       "altLabel": [
         "n_glucuronide"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": "xrm:0001005"
     },
     {
@@ -4953,7 +4953,7 @@
       "altLabel": [
         "quaternary_ammonium_glucuronide"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500217",
@@ -4964,7 +4964,7 @@
       "altLabel": [
         "sulfate_ester_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500218",
@@ -4999,7 +4999,7 @@
       "altLabel": [
         "glycine_conjugate"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": "xrm:0001051"
     },
     {
@@ -5011,7 +5011,7 @@
       "altLabel": [
         "taurine_conjugate"
       ],
-      "broader": "xrm:1500000",
+      "broader": "xrm:2500000",
       "relatedMatch": "xrm:0001053"
     },
     {
@@ -5035,7 +5035,7 @@
       "altLabel": [
         "methylated_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500224",
@@ -5046,7 +5046,7 @@
       "altLabel": [
         "acetylated_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500225",
@@ -5057,7 +5057,7 @@
       "altLabel": [
         "dealkylated_amine"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500226",
@@ -5068,7 +5068,7 @@
       "altLabel": [
         "dealkylated_phenol"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500227",
@@ -5079,7 +5079,7 @@
       "altLabel": [
         "nor_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500228",
@@ -5090,7 +5090,7 @@
       "altLabel": [
         "carboxylic_acid_from_alcohol"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500229",
@@ -5101,7 +5101,7 @@
       "altLabel": [
         "ketone_metabolite"
       ],
-      "broader": "xrm:1500000"
+      "broader": "xrm:2500000"
     },
     {
       "id": "xrm:1500230",
@@ -8343,6 +8343,19 @@
       "inScheme": "xrm:scheme",
       "definition": "Tag describes multi-step pathway context rather than a single edge.",
       "broader": "xrm:2400000"
+    },
+    {
+      "id": "xrm:2500000",
+      "type": "skos:Concept",
+      "prefLabel": "metabolite product family",
+      "inScheme": "xrm:scheme",
+      "definition": "Stable or ordinary metabolite product classes (conjugates, oxygenated products, dealkylation products, …). Distinct from reactive / trapping-prone species.",
+      "altLabel": [
+        "metabolite_product_family",
+        "metabolite product",
+        "product class"
+      ],
+      "broader": "xrm:0000000"
     },
     {
       "id": "xrm:6000000",
