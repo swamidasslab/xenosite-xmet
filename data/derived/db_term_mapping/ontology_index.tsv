@@ -17,6 +17,9 @@ term_norm	xrm_id	preferred_label	spine	matched_label	label_kind
 -hydroxylation	xrm:0000721	alpha-hydroxylation	chemical transformation	α-hydroxylation	synonym
 -o	xrm:7700002	oxygen loss	structural delta	-O	synonym
 -system impact	xrm:8000000	aromatic and conjugated-system impact	structural delta	π-system impact	synonym
+1-step quinone formation	xrm:0000307	one-step quinone formation	metabolism phase	1-step quinone formation	synonym
+2-step quinone formation	xrm:0000308	two-step quinone formation	metabolism phase	2-step quinone formation	synonym
+3-step quinone formation	xrm:0000309	three-step quinone formation	metabolism phase	3-step quinone formation	synonym
 acetaldehyde leaving fragment	xrm:2200031	acetaldehyde leaving fragment	leaving group	acetaldehyde leaving fragment	pref
 acetylated metabolite	xrm:1500224	acetylated metabolite	reactive metabolite family	acetylated metabolite	pref
 acetylated metabolite	xrm:1500224	acetylated metabolite	reactive metabolite family	acetylated_metabolite	synonym
@@ -377,6 +380,7 @@ detoxification pathway	xrm:1400109	detoxification pathway	medchem liability	deto
 detoxification pathway	xrm:1400109	detoxification pathway	medchem liability	detoxification_pathway	synonym
 dioxygenation	xrm:1700101	dioxygenation	structural delta	dioxygenation	pref
 direct one-step transformation	xrm:7900001	direct one-step transformation	structural delta	direct one-step transformation	pref
+direct quinone formation	xrm:0000307	one-step quinone formation	metabolism phase	direct quinone formation	synonym
 disulfide formation	xrm:0000135	disulfide formation	chemical transformation	disulfide formation	pref
 disulfide metabolite	xrm:1500210	disulfide metabolite	reactive metabolite family	disulfide metabolite	pref
 disulfide metabolite	xrm:1500210	disulfide metabolite	reactive metabolite family	disulfide_metabolite	synonym
@@ -1088,6 +1092,7 @@ thiophene structural alert	xrm:1400202	thiophene structural alert	medchem liabil
 thiophene toxicophore	xrm:1400202	thiophene structural alert	medchem liability	thiophene toxicophore	synonym
 thiyl radical	xrm:1500206	thiyl radical	reactive metabolite family	thiyl radical	pref
 thiyl radical	xrm:1500206	thiyl radical	reactive metabolite family	thiyl_radical	synonym
+three-step quinone formation	xrm:0000309	three-step quinone formation	metabolism phase	three-step quinone formation	pref
 time dependent inhibition risk	xrm:1400119	time-dependent inhibition risk	medchem liability	time_dependent_inhibition_risk	synonym
 time-dependent inhibition risk	xrm:1400119	time-dependent inhibition risk	medchem liability	time-dependent inhibition risk	pref
 toluene side-chain hydroxylation	xrm:0000106	benzylic hydroxylation	chemical transformation	toluene side-chain hydroxylation	synonym

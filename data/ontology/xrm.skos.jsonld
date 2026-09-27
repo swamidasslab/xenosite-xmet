@@ -863,7 +863,7 @@
       "type": "skos:Concept",
       "prefLabel": "quinone formation",
       "inScheme": "xrm:scheme",
-      "definition": "Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, quinone-methide, or imine-methide), in one or two metabolic steps. From the quinone-formation and Metabolic Forest papers; under dehydrogenation in the Forest-mapped Phase I hierarchy.",
+      "definition": "Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, quinone-methide, or imine-methide), in one, two, or three metabolic steps. From the quinone-formation and Metabolic Forest papers; under dehydrogenation in the Forest-mapped Phase I hierarchy.",
       "altLabel": [
         "quinonation",
         "quinone species formation"
@@ -964,7 +964,11 @@
       "type": "skos:Concept",
       "prefLabel": "one-step quinone formation",
       "inScheme": "xrm:scheme",
-      "definition": "Direct dehydrogenation of the parent to a quinone species without a prior hydroxylation intermediate (quinone-formation / Rainbow papers).",
+      "definition": "Direct dehydrogenation of a hydroquinone (or catechol) parent to a quinone species without a prior hydroxylation intermediate (quinone-formation / Rainbow papers). Elementary plan length 1 (Dehydrogenation only).",
+      "altLabel": [
+        "1-step quinone formation",
+        "direct quinone formation"
+      ],
       "broader": "xrm:0000300",
       "relatedMatch": "xrm:7900001"
     },
@@ -973,7 +977,26 @@
       "type": "skos:Concept",
       "prefLabel": "two-step quinone formation",
       "inScheme": "xrm:scheme",
-      "definition": "Quinone species formed after an intermediate hydroxylation (or related) step followed by dehydrogenation (quinone-formation / Metabolic Forest papers).",
+      "definition": "Quinone species formed after one intermediate hydroxylation (or related) step followed by dehydrogenation (quinone-formation / Metabolic Forest papers). Elementary plan length 2 (Hydroxylation then Dehydrogenation), e.g. phenol → p-benzoquinone.",
+      "altLabel": [
+        "2-step quinone formation"
+      ],
+      "broader": "xrm:0000300",
+      "relatedMatch": [
+        "xrm:7900002",
+        "xrm:7900003",
+        "xrm:6000040"
+      ]
+    },
+    {
+      "id": "xrm:0000309",
+      "type": "skos:Concept",
+      "prefLabel": "three-step quinone formation",
+      "inScheme": "xrm:scheme",
+      "definition": "Quinone species formed after two preparatory hydroxylations followed by dehydrogenation. Elementary plan length 3 (Hydroxylation ×2 then Dehydrogenation), e.g. benzene → p-benzoquinone via the Metabolic Forest QuinoneFormation spine.",
+      "altLabel": [
+        "3-step quinone formation"
+      ],
       "broader": "xrm:0000300",
       "relatedMatch": [
         "xrm:7900002",
@@ -8437,7 +8460,10 @@
       "inScheme": "xrm:scheme",
       "definition": "Unclear whether the observed change is one-step or requires intermediates.",
       "broader": "xrm:6000000",
-      "relatedMatch": "xrm:0000308"
+      "relatedMatch": [
+        "xrm:0000308",
+        "xrm:0000309"
+      ]
     },
     {
       "id": "xrm:6000041",
@@ -9140,11 +9166,12 @@
       "type": "skos:Concept",
       "prefLabel": "multi-step pathway member",
       "inScheme": "xrm:scheme",
-      "definition": "Step participates in a path of depth ≥ 2 (e.g. two-step quinone formation).",
+      "definition": "Step participates in a path of depth ≥ 2 (e.g. two- or three-step quinone formation).",
       "broader": "xrm:7900000",
       "relatedMatch": [
         "xrm:0000300",
-        "xrm:0000308"
+        "xrm:0000308",
+        "xrm:0000309"
       ]
     },
     {
@@ -9154,7 +9181,10 @@
       "inScheme": "xrm:scheme",
       "definition": "Intermediate that enables a subsequent defining step (e.g. hydroxylation before quinone formation).",
       "broader": "xrm:7900000",
-      "relatedMatch": "xrm:0000308"
+      "relatedMatch": [
+        "xrm:0000308",
+        "xrm:0000309"
+      ]
     },
     {
       "id": "xrm:7900004",

@@ -810,7 +810,7 @@ def patch_assignments():
             extra += ["xrm:1300000", "xrm:1400020", "xrm:1400021"]
         if eid == "asg:tag-acyl-glucuronidation":
             extra += ["xrm:1500015", "xrm:1400014", "xrm:1400019"]
-        if eid in ("asg:tag-quinone", "asg:tag-quinone-imine", "asg:tag-quinone-methide", "asg:tag-imine-methide", "asg:tag-one-step-quinone", "asg:tag-two-step-quinone"):
+        if eid in ("asg:tag-quinone", "asg:tag-quinone-imine", "asg:tag-quinone-methide", "asg:tag-imine-methide", "asg:tag-one-step-quinone", "asg:tag-two-step-quinone", "asg:tag-three-step-quinone"):
             extra += ["xrm:1500010", "xrm:1400014", "xrm:1400012", "xrm:1400019", "xrm:0000012"]
         if eid == "asg:tag-quinone-imine":
             extra += ["xrm:1500011"]
@@ -915,6 +915,7 @@ def patch_assignments_preserve_comments():
             "asg:tag-imine-methide",
             "asg:tag-one-step-quinone",
             "asg:tag-two-step-quinone",
+            "asg:tag-three-step-quinone",
         ):
             extra += [
                 "xrm:1500010",

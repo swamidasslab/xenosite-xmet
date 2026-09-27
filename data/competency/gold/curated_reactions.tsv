@@ -35,6 +35,7 @@ GOLD-0033	C	C	chem:quinone-methide	dearomatization				bioactivation
 GOLD-0034	C	C	chem:imine-methide	dearomatization				bioactivation	
 GOLD-0035	C	C	chem:one-step-quinone-formation	dearomatization				bioactivation	
 GOLD-0036	C	C	chem:two-step-quinone-formation	dearomatization				bioactivation	
+GOLD-0151	C	C	chem:three-step-quinone-formation	dearomatization				bioactivation	
 GOLD-0037	C	C	chem:nitro-reduction	nitro reduction	phase I		nitrogen site		
 GOLD-0038	C	C	chem:nitroaromatic-reduction	nitroaromatic reduction	phase I		aromatic site	bioactivation	
 GOLD-0039	C	C	chem:carbonyl-reduction	carbonyl reduction	phase I		carbon site		

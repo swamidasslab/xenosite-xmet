@@ -1,6 +1,6 @@
 {
-  "n_labels": 1118,
-  "n_concepts": 615,
+  "n_labels": 1123,
+  "n_concepts": 616,
   "match_spines": [
     "chemical transformation",
     "leaving group",
@@ -317,7 +317,7 @@
     "xrm:0000300": {
       "preferred_label": "quinone formation",
       "spine": "metabolism phase",
-      "definition": "Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, quinone-methide, or imine-methide), in one or two metabolic steps. From the quinone-formation and Metabolic Forest papers; under dehydrogenation in the Forest-ma"
+      "definition": "Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, quinone-methide, or imine-methide), in one, two, or three metabolic steps. From the quinone-formation and Metabolic Forest papers; under dehydrogenation in the F"
     },
     "xrm:0000301": {
       "preferred_label": "ortho-quinone formation",
@@ -352,12 +352,17 @@
     "xrm:0000307": {
       "preferred_label": "one-step quinone formation",
       "spine": "metabolism phase",
-      "definition": "Direct dehydrogenation of the parent to a quinone species without a prior hydroxylation intermediate (quinone-formation / Rainbow papers)."
+      "definition": "Direct dehydrogenation of a hydroquinone (or catechol) parent to a quinone species without a prior hydroxylation intermediate (quinone-formation / Rainbow papers). Elementary plan length 1 (Dehydrogenation only)."
     },
     "xrm:0000308": {
       "preferred_label": "two-step quinone formation",
       "spine": "metabolism phase",
-      "definition": "Quinone species formed after an intermediate hydroxylation (or related) step followed by dehydrogenation (quinone-formation / Metabolic Forest papers)."
+      "definition": "Quinone species formed after one intermediate hydroxylation (or related) step followed by dehydrogenation (quinone-formation / Metabolic Forest papers). Elementary plan length 2 (Hydroxylation then Dehydrogenation), e.g. phenol \u2192 p-benzoqui"
+    },
+    "xrm:0000309": {
+      "preferred_label": "three-step quinone formation",
+      "spine": "metabolism phase",
+      "definition": "Quinone species formed after two preparatory hydroxylations followed by dehydrogenation. Elementary plan length 3 (Hydroxylation \u00d72 then Dehydrogenation), e.g. benzene \u2192 p-benzoquinone via the Metabolic Forest QuinoneFormation spine."
     },
     "xrm:0000310": {
       "preferred_label": "alcohol oxidation",
@@ -2782,7 +2787,7 @@
     "xrm:7900002": {
       "preferred_label": "multi-step pathway member",
       "spine": "structural delta",
-      "definition": "Step participates in a path of depth \u2265 2 (e.g. two-step quinone formation)."
+      "definition": "Step participates in a path of depth \u2265 2 (e.g. two- or three-step quinone formation)."
     },
     "xrm:7900003": {
       "preferred_label": "preparatory intermediate step",
