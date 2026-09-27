@@ -5,7 +5,7 @@ Uses ruamel.yaml round-trip to preserve existing authoring structure.
 
 Usage (from repo root):
   uv run python workflows/db_term_mapping/scripts/apply_ontology_fills.py
-  uv run python crates/xenosite-tagger/tools/yaml_to_skos.py
+  uv run python tools/yaml_to_skos.py
 """
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 REPO = Path(__file__).resolve().parents[3]
-YAML_PATH = REPO / "crates/xenosite-tagger/data/ontology/xmet.yaml"
+YAML_PATH = REPO / "data/ontology/xmet.yaml"
 REPORT = REPO / "data/derived/db_term_mapping/ontology_fills_report.tsv"
 
 # Import fill definitions from sibling module constants by exec-safe duplicate:

@@ -12,7 +12,7 @@ datasets:
     counts: data/derived/db_extracts/amd/counts_rxnclass.tsv
     field_label: RXNCLASS
 
-ontology_yaml: crates/xenosite-tagger/data/ontology/xmet.yaml
+ontology_yaml: data/ontology/xmet.yaml
 
 # Spines whose labels are eligible primary reaction-type matches.
 # Forest map / provenance / evidence / biological context excluded on purpose.

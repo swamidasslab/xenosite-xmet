@@ -24,7 +24,7 @@ import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[3]
+REPO = Path(__file__).resolve().parents[1]
 DEFAULT_AMD = REPO / "data" / "amd"
 DEFAULT_OUT = REPO / "data" / "derived" / "db_extracts" / "amd"
 

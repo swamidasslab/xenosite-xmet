@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.snakemake/
+.coverage
+dist/
+*.egg-info/
+.env
+.envrc
+uv.lock
+.python-version
+data/MetXBioDB*.json
+data/amd/
+artifacts/

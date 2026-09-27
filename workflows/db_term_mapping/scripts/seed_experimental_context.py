@@ -8,7 +8,7 @@ reaction↔context expectation table (inheritance + exclusions).
 
 Usage (repo root):
   uv run python workflows/db_term_mapping/scripts/seed_experimental_context.py
-  uv run python crates/xenosite-tagger/tools/yaml_to_skos.py
+  uv run python tools/yaml_to_skos.py
 """
 from __future__ import annotations
 
@@ -17,9 +17,9 @@ from pathlib import Path
 from ruamel.yaml import YAML
 
 REPO = Path(__file__).resolve().parents[3]
-YAML_PATH = REPO / "crates/xenosite-tagger/data/ontology/xmet.yaml"
+YAML_PATH = REPO / "data/ontology/xmet.yaml"
 EXPECT_PATH = (
-    REPO / "crates/xenosite-tagger/data/mappings/xmet-reaction-context-expectations.tsv"
+    REPO / "data/mappings/xmet-reaction-context-expectations.tsv"
 )
 
 BRANCHES = [

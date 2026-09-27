@@ -23,7 +23,7 @@ import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 
-REPO = Path(__file__).resolve().parents[3]
+REPO = Path(__file__).resolve().parents[1]
 DEFAULT_INPUT = REPO / "data" / "MetXBioDB-1-0.json"
 DEFAULT_OUT = REPO / "data" / "derived" / "db_extracts" / "metxbiodb"
 

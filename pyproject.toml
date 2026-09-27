@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xenosite-xmet"
+dynamic = ["version"]
+description = "XMET — xenobiotic metabolism SKOS thesaurus and ontology tooling"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [
+    { name = "S. Joshua Swamidass", email = "swamidass@gmail.com" },
+]
+dependencies = [
+    "PyYAML>=6.0",
+]
+keywords = ["metabolite", "metabolism", "ontology", "skos", "xenosite", "xmet"]
+
+[project.optional-dependencies]
+competency = [
+    "rdflib>=7.0",
+    "pyshacl>=0.25",
+]
+
+[project.urls]
+Homepage = "https://xenosite.org"
+Repository = "https://github.com/swamidasslab/xenosite-xmet"
+Issues = "https://github.com/swamidasslab/xenosite-xmet/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.1.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "rdflib>=7.0",
+    "pyshacl>=0.25",
+    "snakemake>=9.27.0",
+    "rapidfuzz>=3.14.6",
+    "ruamel-yaml>=0.19.1",
+    "pyarrow>=25.0.1",
+]
+
+[tool.hatch.version]
+source = "vcs"
+tag-pattern = 'v(?P<version>\d+\.\d+\.\d+(?:[.-].+)?)'
+[tool.hatch.version.raw-options]
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-date"
+fallback_version = "0.0.0"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/xenosite/xmet/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/xenosite"]
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib"
+pythonpath = ["src"]
