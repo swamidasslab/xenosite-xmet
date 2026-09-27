@@ -36,9 +36,9 @@ chemical transformation and phase I family).
 | Product / metabolite class | 70–110 | Quinone, epoxide, GSH adduct, … |
 | Site environment | 60–100 | Benzylic, phenol, tertiary amine, heteroarene, … |
 | Structural delta | 35–60 | +O, −2H, aromaticity loss, conjugate mass shift |
-| Med-chem interpretation | 40–70 | Soft spot, bioactivation, blocking, … |
+| Med-chem interpretation | 40–70 | Soft spot, **structural alert** (furan/thiophene/alkyne seeds), bioactivation, blocking, … |
 | Evidence / assertion | 30–50 | MS, NMR, predicted/observed/curated/conflict |
-| Biological context | 40–80 | Enzyme/tissue/species/matrix (orthogonal) |
+| Biological context | 40–100 | Enzyme/tissue/species/matrix/**experimental setting & assay system** (orthogonal) |
 | Rule/model provenance | 20–40 | SMARTS, Rainbow class, XenoNet, legacy model |
 | Localization templates | — | Not SKOS; see [`site_templates.yml`](site_templates.yml) |
 | Leaving group | 20–40 | Departing methyl/ethyl/halide/carboxylate/… fragments |
@@ -70,6 +70,9 @@ identity parents.
 | `xmet:hasMedChemInterpretation` | `medchem_interpretation` |
 | `xmet:hasEvidenceType` | `evidence_type` |
 | `xmet:hasBiologicalContext` | `biological_context` |
+| `xmet:likelyInContext` | Reaction class (and optional children) expected to proceed in an experimental setting / assay / matrix / species |
+| `xmet:observedInContext` | Metabolites of this class reported/found in that context (e.g. urine, plasma) |
+| `xmet:unlikelyInContext` | Class generally not expected in that system (e.g. sulfation in classical microsomes) |
 | `xmet:generatedByRule` | `generated_by_rule` |
 | `xmet:mapsModelOutput` | (via SSSOM / provenance leaves) |
 | `xmet:localizesToSite` | `site` + `site_label` |
@@ -80,6 +83,22 @@ identity parents.
 | `xmet:hasLeavingGroup` | `leaving_group` |
 | `xmet:hasPharmacologicalRole` | `pharmacological_role` |
 | `xmet:aboutParent` / `aboutProduct` / `aboutReaction` | distinguish tag target |
+
+### Reaction class ↔ experimental context
+
+Curated priors (not hard OWL axioms) live in
+[`../mappings/xrm-reaction-context-expectations.tsv`](../mappings/xrm-reaction-context-expectations.tsv):
+
+| Column | Meaning |
+| --- | --- |
+| `reaction_id` | XRM reaction / transformation concept |
+| `context_id` | Biological-context leaf (assay, matrix, species, setting) |
+| `relation` | `likely_in` / `observed_in` / `unlikely_in` (→ `xmet:likelyInContext` etc.) |
+| `inherit_children` | If true, apply to `skos:narrower` descendants |
+| `exclude_reaction_ids` | Pipe-separated child CURIEs to skip when inheriting |
+
+Combinations stay out of the SKOS inventory; bundles attach context via
+`xmet:hasBiologicalContext` and these expectation predicates.
 
 ## Bundle shape
 

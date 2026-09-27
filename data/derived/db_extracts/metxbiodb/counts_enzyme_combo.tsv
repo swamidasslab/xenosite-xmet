@@ -1,0 +1,441 @@
+term	count	field
+CYP3A4	333	Enzyme(s) full
+UGT	238	Enzyme(s) full
+UGT1A9	159	Enzyme(s) full
+CYP2D6	116	Enzyme(s) full
+CYP1A2	70	Enzyme(s) full
+SULT	58	Enzyme(s) full
+CYP2C9	43	Enzyme(s) full
+GST	38	Enzyme(s) full
+CYP2E1	31	Enzyme(s) full
+CYP1A2; CYP3A4	30	Enzyme(s) full
+CYP2C19	24	Enzyme(s) full
+CYP2D6; CYP3A4	23	Enzyme(s) full
+CYP2C9; CYP2C19	20	Enzyme(s) full
+CYP2A6	19	Enzyme(s) full
+CYP2C9; CYP3A4	18	Enzyme(s) full
+CYP3A4; CYP3A5	17	Enzyme(s) full
+CYP1A2; CYP2D6; CYP3A4	16	Enzyme(s) full
+CYP1A2; CYP2D6	15	Enzyme(s) full
+SULT1A1	15	Enzyme(s) full
+UGT1A3	15	Enzyme(s) full
+CYP2C8; CYP3A4	14	Enzyme(s) full
+CYP2B6; CYP3A4	13	Enzyme(s) full
+NAT	13	Enzyme(s) full
+CYP2C8	12	Enzyme(s) full
+CYP2C19; CYP3A4	11	Enzyme(s) full
+Unspecified gut bacterial enzyme	11	Enzyme(s) full
+CYP2A6; CYP2E1	9	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2E1; CYP3A4	9	Enzyme(s) full
+CYP2B6	8	Enzyme(s) full
+CYP2C9; CYP2C19; CYP3A4	7	Enzyme(s) full
+CYP2C8; CYP2C9; CYP2C19; CYP3A4	7	Enzyme(s) full
+CYP1A2; CYP2E1; CYP3A4	7	Enzyme(s) full
+CYP2C19; CYP2D6	7	Enzyme(s) full
+CYP2B6; CYP2E1	7	Enzyme(s) full
+CYP1A1	7	Enzyme(s) full
+NAT1; NAT2	7	Enzyme(s) full
+Unspecified bacterial dehydroxylase	7	Enzyme(s) full
+CYP1A2; CYP2C9	6	Enzyme(s) full
+CYP1A2 (minor); CYP2D6 (major)	6	Enzyme(s) full
+CYP1A1; CYP1A2	6	Enzyme(s) full
+CYP3A4; CYP2C9	6	Enzyme(s) full
+CYP3A4; CYP2C8	6	Enzyme(s) full
+CYP2E1; CYP3A4	5	Enzyme(s) full
+CYP1A2; CYP2C19; CYP2D6	5	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	5	Enzyme(s) full
+CYP1A2; CYP2E1	5	Enzyme(s) full
+CYP2C8; CYP3A4; CYP2D6	5	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19; CYP2D6; CYP3A4	5	Enzyme(s) full
+CYP2D6; CYP1A2	5	Enzyme(s) full
+CYP3A4; CYP2B6	5	Enzyme(s) full
+CYP2E1; CYP4A11	5	Enzyme(s) full
+CYP3A4; CYP2C9; CYP2C19	5	Enzyme(s) full
+S-COMT	5	Enzyme(s) full
+CYP1A2; CYP1A1	4	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2D6; CYP3A4	4	Enzyme(s) full
+CYP2B6; CYP2C19; CYP2E1	4	Enzyme(s) full
+CYP3A4; CYP1A2	4	Enzyme(s) full
+CYP1A2; CYP2C9; CYP3A4	4	Enzyme(s) full
+CYP2A6; CYP3A4	4	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2B6 (minor); CYP2D6	4	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C8	4	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C19; CYP3A4	4	Enzyme(s) full
+CYP2C8; CYP3A4; CYP3A5	4	Enzyme(s) full
+CYP2B6; CYP2C19; CYP3A4	4	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19	4	Enzyme(s) full
+CYP2B6; CYP3A4; CYP3A5	4	Enzyme(s) full
+CYP2C8; CYP2C9	4	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2D6; CYP3A4	4	Enzyme(s) full
+CYP1A2; CYP2B6; CYP3A4	4	Enzyme(s) full
+CYP3A; CYP2C9; CYP2C19	4	Enzyme(s) full
+CYP3A	4	Enzyme(s) full
+NAT1	4	Enzyme(s) full
+CYP2D6; CYP1A2; CYP3A4	3	Enzyme(s) full
+CYP2C8; CYP2C9; CYP2C19	3	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	3	Enzyme(s) full
+CYP1A2; CYP2A6	3	Enzyme(s) full
+CYP1A2; CYP2C19; CYP3A4	3	Enzyme(s) full
+CYP3A4 (major); CYP2C9 (minor)	3	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C19; CYP3A4	3	Enzyme(s) full
+CYP2A6; CYP2D6; CYP3A4	3	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP3A4	3	Enzyme(s) full
+CYP2A6; CYP2C9; CYP2E1	3	Enzyme(s) full
+CYP2C19; CYP2D6; CYP3A4	3	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19; CYP3A4	3	Enzyme(s) full
+CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	3	Enzyme(s) full
+CYP2C19; CYP2B6; CYP3A4	3	Enzyme(s) full
+CYP3A4; CYP2C8; CYP2B6	3	Enzyme(s) full
+CYP2C8; CYP3A4; CYP1A2	3	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP3A4	3	Enzyme(s) full
+CYP2A6; CYP2C19; CYP2E1	3	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C9; CYP2C19; CYP2D6; CYP3A4	3	Enzyme(s) full
+CYP1A1; CYP1A2; CYP1B1	3	Enzyme(s) full
+CYP3A4; CYP2C19	3	Enzyme(s) full
+CYP2C9; CYP2B6; CYP2A6	3	Enzyme(s) full
+CYP1A1; CYP1B1	3	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2D6	3	Enzyme(s) full
+CYP1A1; CYP2C8; CYP3A4	3	Enzyme(s) full
+UGT1A1; UGT1A3; UGT1A7; UGT1A8; UGT1A10	3	Enzyme(s) full
+UGT1A4	3	Enzyme(s) full
+UGT1A4; UGT1A9	3	Enzyme(s) full
+CYP2A6; CYP3A4; CYP2B6; CYP2C9; CYP2D6	2	Enzyme(s) full
+CYP2C19; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP1A2 (major); CYP2B6; CYP2E1	2	Enzyme(s) full
+CYP3A4; CYP2D6; CYP1A2 (minor)	2	Enzyme(s) full
+CYP2C8; CYP2D6; CYP3A4; CYP3A5	2	Enzyme(s) full
+CYP2D6 (major); CYP2E1 (minor); CYP2C9 (minor); CYP3A4 (minor)	2	Enzyme(s) full
+CYP2C9; CYP2C8	2	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2E1 (major); CYP3A4	2	Enzyme(s) full
+CYP2E1 (major)	2	Enzyme(s) full
+CYP2A6; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C9; CYP3A4	2	Enzyme(s) full
+CYP2C9; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP2A6; CYP2C9; CYP2C19; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP2A6; CYP3A4; CYP2C18	2	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19; CYP2D6	2	Enzyme(s) full
+CYP1A2; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP1A1 (major); CYP2B6; CYP2E1; CYP1A2; CYP2A6; CYP3A7; CYP2C9; CYP2C19	2	Enzyme(s) full
+CYP2B6; CYP2C8; CYP2C19; CYP3A4	2	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C8; CYP2C9; CYP2C19; CYP3A4	2	Enzyme(s) full
+CYP3A4; CYP3A5; CYP1A2; CYP2C19	2	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C8; CYP2C9	2	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2E1	2	Enzyme(s) full
+CYP1A2 (major); CYP2C8 (minor); CYP2C9 (minor); CYP3A4 (minor); CYP2E1 (minor)	2	Enzyme(s) full
+CYP1A2; CYP2C19; CYP2D6; CYP3A4	2	Enzyme(s) full
+CYP2C9; CYP2C19; CYP2D6	2	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C19; CYP2D6; CYP3A4	2	Enzyme(s) full
+CYP2C9; CYP1A2; CYP2A6	2	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP3A4	2	Enzyme(s) full
+CYP2C19; CYP3A4; CYP1A2	2	Enzyme(s) full
+CYP2B6; CYP3A4; CYP2C18; CYP2C19	2	Enzyme(s) full
+CYP2C8; CYP1A2; CYP3A4; CYP3A5	2	Enzyme(s) full
+CYP1B1	2	Enzyme(s) full
+CYP3A4; CYP3A5; CYP3A7	2	Enzyme(s) full
+CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP3A4	2	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP3A4 (major); CYP2C9 (minor); CYP2D6 (minor); CYP1A2 (minor)	2	Enzyme(s) full
+CYP2D6 (major); CYP1A2 (minor)	2	Enzyme(s) full
+CYP3A4; CYP2D6	2	Enzyme(s) full
+CYP2B6; CYP2C8; CYP3A4	2	Enzyme(s) full
+CYP3A4; CYP2A6	2	Enzyme(s) full
+CYP2C9; CYP3A4; CYP3A5	2	Enzyme(s) full
+CYP1A2; CYP2C19; CYP2D6; CYP2E1	2	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	2	Enzyme(s) full
+CYP2D6; CYP2C9	2	Enzyme(s) full
+CYP2C9; CYP2D6; CYP3A4	2	Enzyme(s) full
+CYP2B6 (major); CYP2C19; CYP2D6; CYP1A2; CYP2C9; CYP3A4	2	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4 (major)	2	Enzyme(s) full
+CYP2C9; CYP2C19; CYP2D6; CYP3A4	2	Enzyme(s) full
+CYP1A2; CYP1A1; CYP2C19	2	Enzyme(s) full
+CYP1A2; CYP1A1; CYP2C8	2	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2E1	2	Enzyme(s) full
+CYP2E1; CYP2A6	2	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2C19; CYP3A4	2	Enzyme(s) full
+CYP2C9; CYP2C19; CYP2E1	2	Enzyme(s) full
+CYP3A4; CYP2C9; CYP2D6	2	Enzyme(s) full
+CYP2C8; CYP2C9; CYP2C19; CYP3A4; CYP3A5	2	Enzyme(s) full
+UGT1A1; UGT1A4	2	Enzyme(s) full
+UGT2B10	2	Enzyme(s) full
+NAT2	2	Enzyme(s) full
+SULT1A1; SULT1B1; SULT1E1	2	Enzyme(s) full
+SULT1E1	2	Enzyme(s) full
+SULT2A1	2	Enzyme(s) full
+UGT1A8, UGT1A9	2	Enzyme(s) full
+UGT2B20; UGT1A4	2	Enzyme(s) full
+UGT1A1	2	Enzyme(s) full
+EC 3.2.1.X	2	Enzyme(s) full
+EC 1.6.99.1	2	Enzyme(s) full
+EC 1.7.1.6	2	Enzyme(s) full
+EC 4.3.99.4	2	Enzyme(s) full
+CYP1A2; CYP2E1; CYP3A4; CYP2A6; CYP2C9; CYP2D6; CYP1A1	1	Enzyme(s) full
+CYP2A6 (major); CYP2E1; CYP1A2; CYP2C8; CYP2C9; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP2D6 (major); CYP1A2; CYP2B6; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C19; CYP2E1	1	Enzyme(s) full
+CYP2B6; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP2C19(major); CYP2C9; CYP1A2; CYP3A4	1	Enzyme(s) full
+CYP2C9; CYP2B6; CYP3A4	1	Enzyme(s) full
+CYP2C9 (major); CYP2D6 (minor); CYP1A2 (minor); CYP2E1 (minor)	1	Enzyme(s) full
+CYP1A2 (major); CYP3A4 (minor); CYP1A1 (minor)	1	Enzyme(s) full
+CYP2C9 (major); CYP2D6; CYP2C19; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP2D6 (implied)	1	Enzyme(s) full
+CYP2D6; CYP2A6; CYP2B6; CYP2C9; CYP2C19; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP2D6; CYP2C19 (major)	1	Enzyme(s) full
+CYP2D6; CYP2B6; CYP2C19	1	Enzyme(s) full
+CYP2C19 (major); CYP3A4 (minor); CYP2C9 (minor)	1	Enzyme(s) full
+CYP3A4 (major)	1	Enzyme(s) full
+CYP2E1 (major); CYP1A1	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C19; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C9; CYP2C19,CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C19; CYP2E1	1	Enzyme(s) full
+CYP2F1	1	Enzyme(s) full
+CYP2F1; CYP2A6; CYP3A4; CYP2C8	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2C9; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2C9; CYP2C19; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2C19; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2D6; CYP2C1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP3A5; CYP3A4; CYP2A13	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2E1; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP2C9 (minor); CYP2C19 (minor); CYP3A4 (minor)	1	Enzyme(s) full
+CYP2C19; CYP2C8; CYP2D6; CYP2C18; CYP1A2	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP2C18; CYP2C19; CYP2C8; CYP2C9; CYP2D6	1	Enzyme(s) full
+CYP3A4; CYP2C8; CYP2C9; CYP1A2; CYP2D6	1	Enzyme(s) full
+CYP2C19; CYP3A4; CYP2C9; CYP1A2	1	Enzyme(s) full
+CYP2C8; CYP2C19; CYP2C9; CYP1A2	1	Enzyme(s) full
+CYP3A4 (major); CYP1A2 (minor)	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2A6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C8; CYP2C9; CYP2C19; CYP2E1	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C9	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C9	1	Enzyme(s) full
+CYP2D6; CYP3A4 (minor)	1	Enzyme(s) full
+CYP3A4 (minor)	1	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2 (major); CYP2E1 (minor)	1	Enzyme(s) full
+CYP2C9 (major); CYP3A4 (minor); CYP2C19 (minor)	1	Enzyme(s) full
+CYP2C19; CYP2D6; CYP3A4; CYP1A2; CYP2A6; CYP2E1	1	Enzyme(s) full
+CYP2C8; CYP2C19	1	Enzyme(s) full
+CYP2C19; CYP2C9; CYP2C8; CYP3A4; CYP2B6	1	Enzyme(s) full
+CYP2C19; CYP2C9; CYP2C8	1	Enzyme(s) full
+CYP2C9 (major); CYP2C19 (minor); CYP2C8 (minor); CYP1A2 (minor); CYP3A4 (minor)	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP2E1; CYP1A2; CYP1A1; CYP2A6; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP2D6; CYP2C19; CYP2C8; CYP3A5; CYP2C9	1	Enzyme(s) full
+CYP3A4; CYP1A2; CYP2C8; CYP2C19; CYP3A5	1	Enzyme(s) full
+CYP2A6; CYP2B6; CYP1A1; CYP1A2	1	Enzyme(s) full
+CYP1A2 (major); CYP3A4 (major); CYP2D6 (minor)	1	Enzyme(s) full
+CYP2E1; CYP3A4; CYP2C9; CYP2C8	1	Enzyme(s) full
+CYP2B6; CYP2C8; CYP2C9; CYP3A4	1	Enzyme(s) full
+CYP2D6 (major); CYP2C9 (minor); CYP3A4 (minor)	1	Enzyme(s) full
+CYP3A4 (major); CYP2D6 (minor); CYP2C9 (minor); CYP2B6 (minor); CYP2C19 (minor)	1	Enzyme(s) full
+CYP2A6; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP2B6; CYP3A4; CYP3A5; CYP2C19; CYP2C8; CYP2C9; CYP2C18	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP2C19 (minor)	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C9; CYP3A4	1	Enzyme(s) full
+CYP3A4 (major); CYP2C8 (minor); CYP2C9 (minor)	1	Enzyme(s) full
+CYP2D6; CYP1A2; CYP2C9; CYP2C19; CYP2B6	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP2B6; CYP1A2; CYP3A4	1	Enzyme(s) full
+CYP2C8; CYP2C9; CYP2C11; CYP2C23	1	Enzyme(s) full
+CYP2D6 (major); CYP3A4 (major); CYP2C9 (minor); CYP2C19 (minor); CYP1A2 (minor); CYP2C8 (minor)	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP1A1	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP3A7; CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C9; CYP3A4; CYP3A5; CYP3A7	1	Enzyme(s) full
+CYP1A1; CYP3A4; CYP3A5; CYP3A7	1	Enzyme(s) full
+CYP1A1; CYP3A7	1	Enzyme(s) full
+CYP1A1; CYP2C8; CYP3A4; CYP3A5; CYP3A7	1	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP2C9; CYP1A1	1	Enzyme(s) full
+CYP1A2; CYP1B1	1	Enzyme(s) full
+CYP2C9 (major); CYP2C8 (minor); CYP2D6 (minor); CYP3A4 (minor)	1	Enzyme(s) full
+CYP3A4 (major); CYP1A1; CYP2D6; CYP3A5	1	Enzyme(s) full
+CYP2D6 (major); CYP2C9 (minor); CYP2C19 (minor); CYP1A2 (minor)	1	Enzyme(s) full
+CYP3A4 (major); CYP2C8	1	Enzyme(s) full
+CYP2C19 (major); CYP2D6	1	Enzyme(s) full
+CYP2C19; CYP2C18; CYP2D6; CYP1A2	1	Enzyme(s) full
+CYP2C9 (major); CYP2C19 (minor); CYP2D6 (minor); CYP1A2 (minor)	1	Enzyme(s) full
+CYP3A4; CYP2E1	1	Enzyme(s) full
+CYP2B6 (major); CYP3A4 (major); CYP2A6 (minor); CYP2C8 (minor); CYP2C9 (minor); CYP2C19 (minor); CYP3A5 (minor)	1	Enzyme(s) full
+CYP3A4; CYP2B6; CYP2A6; CYP2C9	1	Enzyme(s) full
+CYP2E1 (major); CYP2C8 (minor); CYP2B6 (minor)	1	Enzyme(s) full
+CYP3A4; CYP2C8; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP3A5; CYP2C8; CYP2C18; CYP2B6; CYP2A6	1	Enzyme(s) full
+CYP3A4; CYP2D6; CYP2C8; CYP2B6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C19 (minor); CYP2E1	1	Enzyme(s) full
+CYP2C19 (major); CYP1A2; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C19; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C19; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP3A7; CYP2B6	1	Enzyme(s) full
+CYP2C8; CYP2D6	1	Enzyme(s) full
+CYP2C8; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP2D6; CYP2C9; CYP3A4; CYP3A5; CYP3A7	1	Enzyme(s) full
+CYP2C9 (major); CYP1A2	1	Enzyme(s) full
+CYP2D6 (major); CYP2B6 (minor); CYP3A4 (minor)	1	Enzyme(s) full
+CYP3A4 (major); CYP2D6 (minor); CYP2C9 (minor)	1	Enzyme(s) full
+CYP2A6 (major); CYP2B6; CYP2A13	1	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2A13	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP2C9; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2E1; CYP2D6; CYP2C19; CYP2C9; CYP2A6	1	Enzyme(s) full
+CYP2C9 (major); CYP2C19 (minor)	1	Enzyme(s) full
+CYP3A4; CYP3A4; CYP4B1	1	Enzyme(s) full
+CYP3A4; CYP1A1; CYP2D6; CYP2C19	1	Enzyme(s) full
+CYP2D4; CYP2D6; CYP2C19	1	Enzyme(s) full
+CYP1A2 (major); CYP3A4 (major); CYP2A6 (minor); CYP2B6 (minor; CYP2D6 (minor); CYP2E1 (minor)	1	Enzyme(s) full
+CYP1A2 (major); CYP2C9 (minor); CYP2C19 (major); CYP2A6 (minor); CYP2B6 (minor); CYP2D6 (minor); CYP2E1 (minor)	1	Enzyme(s) full
+CYP2B6 (major); CYP2C9 (major); CYP1A2 (minor); CYP2A6 (minor); CYP2C8 (minor); CYP2C19 (minor); CYP2D6 (minor)	1	Enzyme(s) full
+CYP3A4; CYP2C9; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2E1	1	Enzyme(s) full
+CYP2D6; CYP1A2; CYP3A4; CYP2B6	1	Enzyme(s) full
+CYP2C19; CYP1A2; CYP2D6	1	Enzyme(s) full
+CYP2D6 (major); CYP3A4; CYP2C9	1	Enzyme(s) full
+CYP1A2; CYP1A2; CYP1B1	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4; CYP1B1	1	Enzyme(s) full
+CYP1A1; CYP2C8; CYP2C9; CYP2C19; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP3A4(major); CYP2D6(minor)	1	Enzyme(s) full
+CYP3A4; CYP2A6; CYP2C9; CYP1A2; CYP2B6; CYP2E1; CYP2D6	1	Enzyme(s) full
+CYP2B6; CYP2C9; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2D6; CYP2B6	1	Enzyme(s) full
+CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2C9; CYP2C19; CYP2D6; CYP3A4; CYP2E1	1	Enzyme(s) full
+CYP2B6; CYP2C19; CYP2D6; CYP1A2; CYP2C9; CYP3A4	1	Enzyme(s) full
+CYP3A4; CYP2C9; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP2B6; CYP2C8; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP2D6; CYP1A2; CYP1A1; CYP3A4; CYP1B1 (at a high concentration (250ÃŽÂ¼M)); CYP2C9 (at a high concentration (250ÃŽÂ¼M)); CYP2C19 (at a high concentration (250ÃŽÂ¼M)); CYP3A5 (at a high concentration (250ÃŽÂ¼M)); CYP2E1	1	Enzyme(s) full
+CYP2D6 (major); CYP2B6; CYP2C9; CYP3A4 (at a high concentration (250ÃŽÂ¼M)); CYP1A1 (at a high concentration (250ÃŽÂ¼M)); CYP1A2 (at a high concentration (250ÃŽÂ¼M)); CYP3A5 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) full
+CYP2D6; CYP2B6	1	Enzyme(s) full
+CYP3A4; CYP2D6; CYP2B6 (give smaller amounts of ÃŽÂ±-hydroxylation); CYP2C9  (give smaller amounts of ÃŽÂ±-hydroxylation); CYP2C19 (give smaller amounts of ÃŽÂ±-hydroxylation); CYP3A5 (give smaller amounts of ÃŽÂ±-hydroxylation)	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP2B6	1	Enzyme(s) full
+CYP2C8; CYP2C9; CYP1A2	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP2C9; CYP1A1; CYP1B1	1	Enzyme(s) full
+CYP2C19; CYP2C9	1	Enzyme(s) full
+CYP2C8; CYP2C9 (major)	1	Enzyme(s) full
+CYP2C8; CYP2C9 (major); CYP2C18; CYP2C19	1	Enzyme(s) full
+CYP3A4 (major); CYP2C9 (minor); CYP2C19 (minor)	1	Enzyme(s) full
+CYP2E1 (at low concentrations); CYP2B6 (at hight concentrations); CYP2C8; CYP1A2; CYP1A1	1	Enzyme(s) full
+CYP2C8; CYP1A2	1	Enzyme(s) full
+CYP2C8; CYP2C9; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP2C9 (major); CYP2C19 (major); CYP3A4 (minor)	1	Enzyme(s) full
+CYP2C9; CYP2C18	1	Enzyme(s) full
+CYP2C9; CYP2C8; CYP2C18; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2E1; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C9; CYP2C19; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2E1; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP1B1; CYP2A6; CYP2B6; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP2A6; CYP2C19; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP1A2 (major); CYP2B6 (minor); CYP2C9 (major)	1	Enzyme(s) full
+CYP1A2; CYP2C19	1	Enzyme(s) full
+CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2C19; CYP2D6; CYP3A4; CYP2C9 (minor)	1	Enzyme(s) full
+CYP2C8; CYP2C18	1	Enzyme(s) full
+CYP2C8; CYP2C19; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP1A1; CYP1A2	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C8; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP2B6; CYP2C9; CYP2C19; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP3A4(major); CYP1A2 (minor); CYP2D6 (minor)	1	Enzyme(s) full
+CYP3A4(major); CYP1A2 (minor); CYP2D6 (minor); CYP2C9 (minor); CYP2C19 (minor)	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4; CYP3A5; CYP2B6; CYP2C19	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4; CYP2D6; CYP2C19	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2B6; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP3A4; CYP2C8; CYP2C9; CYP2C19; CYP1A1; CYP1B1	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C9; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP3A7; CYP2C8 (major); CYP3A4; CYP2C9 (minor); CYP2B6; CYP3A5; CYP2A6	1	Enzyme(s) full
+CYP4A11; CYP3A7; CYP1A1; CYP2C8; CYP2C9; CYP2C18; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP2C8; CYP2C9; CYP1A1; CYP2D6	1	Enzyme(s) full
+CYP1A2; CYP2B1; CYP4B1	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP2C9 (major); CYP2D6; CYP2C19; CYP3A5	1	Enzyme(s) full
+CYP2D6; CYP2C19; CYP1A2; CYP2C18; CYP3A4	1	Enzyme(s) full
+CYP2C19; CYP2C18; CYP2D6; CYP1A2; CYP3A4; CYP2B6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4	1	Enzyme(s) full
+CYP2C9; CYP3A4; CYP2C19; CYP1A2	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP1B1; CYP2A6; CYP2B6	1	Enzyme(s) full
+CYP2C9; CYP1A2; CYP2C19	1	Enzyme(s) full
+CYP1B1; CYP1A2; CYP1A1; CYP2A6; CYP2B6	1	Enzyme(s) full
+CYP1A2; CYP1A1; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP3A4; CYP2C8; CYP2C9; CYP3A5	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP2B6; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP2D6; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP2B6; CYP2D6; CYP2E1	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C9; CYP2C18; CYP2C19; CYP2D6; CYP3A4	1	Enzyme(s) full
+CYP2C9; CYP2C19; CYP3A4; CYP3A5; CYP3A7	1	Enzyme(s) full
+CYP1A2; CYP2B6; CYP2C9; CYP2C19; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP2C9 (major); CYP2D6	1	Enzyme(s) full
+CYP2C19; CYP2C9; CYP3A4	1	Enzyme(s) full
+CYP2B6; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+CYP2D6 (major; (major, RÃ¢â€°Ë†S)); CYP2B6 (R>S); CYP3A4  (S>R)	1	Enzyme(s) full
+CYP2B6 (R>S); CYP3A4 (R>S); CYP2C19 (R>S); CYP1A2 (RÃ¢â€°Ë†S)	1	Enzyme(s) full
+CYP3A4 (RÃ¢â€°Ë†S); CYP1A2 (S>R)	1	Enzyme(s) full
+CYP1A2; CYP2A6; CYP2B6; CYP2C8; CYP2C9; CYP2D6; CYP2C19; CYP3A4	1	Enzyme(s) full
+CYP1A2; CYP2C8; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP2D6; CYP3A4 (major); CYP2B6; CYP2C8; CYP2C19	1	Enzyme(s) full
+CYP2D6; CYP1A2; CYP2C9; CYP2C19	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2C8; CYP2D6; CYP2E1; CYP3A4; CYP3A5	1	Enzyme(s) full
+CYP2C19; CYP3A4; CYP2C9	1	Enzyme(s) full
+CYP3A4; CYP2D6; CYP1A2	1	Enzyme(s) full
+CYP1A2; CYP3A4; CYP2B6; CYP2C9; CYP2C18; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP2D4; CYP2D6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP2A6; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP1A1; CYP1A2; CYP3A4; CYP2C9; CYP2C18; CYP2C19; CYP2D6	1	Enzyme(s) full
+CYP2A6; CYP1A2; CYP2C8	1	Enzyme(s) full
+CYP2E1; CYP1A2; CYP3A4	1	Enzyme(s) full
+CYP1A1; CYP2C8; CYP2D6	1	Enzyme(s) full
+CYP3A4; CYP3A5; CYP2D6	1	Enzyme(s) full
+CYP	1	Enzyme(s) full
+CYP1A2; CYP2C19; CYP2D6; CYP2E1; CYP3A4	1	Enzyme(s) full
+UGT1A1; UGT1A3; UGT1A4)	1	Enzyme(s) full
+UGT1A1; UGT1A7; UGT1A8; UGT1A10	1	Enzyme(s) full
+UGT1A1; UGT1A4; UGT1A6; UGT1A7; UGT1A8; UGT1A9; UGT1A10; UGT2B15; UGT2B17; UGT2B7	1	Enzyme(s) full
+GLYAT (EC 2.3.1.13)	1	Enzyme(s) full
+SULT1A2	1	Enzyme(s) full
+SULT1A1; SULT1A2; SULT1C1; SULT1C2; SULT1C3; SULT1E1; SULT2A1	1	Enzyme(s) full
+SULT1A1; SULT1E1	1	Enzyme(s) full
+SULT1A1; SULT1B1, SULT2A1	1	Enzyme(s) full
+SULT1A1; SULT1C2	1	Enzyme(s) full
+SULT1C3	1	Enzyme(s) full
+GSTA1	1	Enzyme(s) full
+UGT1A1; UGT2B7	1	Enzyme(s) full
+UGT1A1; UGT1A4; UGT1A9	1	Enzyme(s) full
+UGT1A1; UGT1A9	1	Enzyme(s) full
+UGT1A1, 1A3, 1A6	1	Enzyme(s) full
+UGT1A1, 1A3, 1A7,1A8, 1A10	1	Enzyme(s) full
+SULT1B1; SULT1C3	1	Enzyme(s) full
+SULT1A1, SULT1A2	1	Enzyme(s) full
+NAT1,NAT2	1	Enzyme(s) full
+SULT1A3; SULT1A5	1	Enzyme(s) full
+SULT1C1; SULT1C2	1	Enzyme(s) full
+TAU	1	Enzyme(s) full
+UGT1A4, 1A6	1	Enzyme(s) full
+UGT2B7, UGT1A1, UGT1A3, UGT1A9, UGT2B4	1	Enzyme(s) full
+UGT1A1, UGT1A3, UGT1A10. UGT2B7, UGT2B17	1	Enzyme(s) full
+UGT2B7	1	Enzyme(s) full
+COMT	1	Enzyme(s) full
+UGT1A1, UGT1A3	1	Enzyme(s) full
+GST1A1; GST1A2; GSTM1; GSTM3; GSTP1	1	Enzyme(s) full
+UDP-glucuronosyltransferase 1-9	1	Enzyme(s) full
+UGT (primary)	1	Enzyme(s) full
+NAT1, NAT2	1	Enzyme(s) full
+UGT1A1, UGT1A3, UGTA9, UGT2B4, UGT2B7	1	Enzyme(s) full
+UGT1A9, UGT2B7	1	Enzyme(s) full
+GSTA1/A2, GSTM1/M3, GSTP1	1	Enzyme(s) full
+EC 3.2.1.40	1	Enzyme(s) full
+Unspecified bacterial isoflavone reductase	1	Enzyme(s) full

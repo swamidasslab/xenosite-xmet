@@ -1,0 +1,285 @@
+term	count	field
+O-glucuronidation	262	Reaction Type
+Aliphatic Hydroxylation	213	Reaction Type
+Aromatic Hydroxylation	117	Reaction Type
+Aromatic -OH glucuronidation	99	Reaction Type
+Aromatic hydroxylation of fused benzene ring	68	Reaction Type
+O-sulfonation	58	Reaction Type
+O-Demethylation	48	Reaction Type
+Hydroxylation of alicyclic secondary carbon	46	Reaction Type
+N-dealkylation of alicyclic tertiary amine	34	Reaction Type
+N-dealkylation of acyclic tertiary amine	26	Reaction Type
+GSH-conjugation	26	Reaction Type
+N-dealkylation of acyclic secondary amine	25	Reaction Type
+Aliphatic hydroxylation of methyl carbon adjacent to aromatic ring	25	Reaction Type
+N-demethylation	25	Reaction Type
+p-Hydroxylation of monosubstituted benzene	24	Reaction Type
+S-Oxidation	24	Reaction Type
+N-Dealkylation	24	Reaction Type
+O-dealkylation	22	Reaction Type
+Epoxidation	22	Reaction Type
+Hydroxylation of terminal methyl	21	Reaction Type
+N-dealkylation	21	Reaction Type
+O-aryl dealkylation not adjacent to substituted carbon	19	Reaction Type
+Alkyl-OH glucuronidation	19	Reaction Type
+Dehydrogenation	18	Reaction Type
+N-Oxidation	17	Reaction Type
+O-demethylation	17	Reaction Type
+O-glucuronidation of aliphatic acid	17	Reaction Type
+O-aryl demethylation	16	Reaction Type
+N-Demethylation	14	Reaction Type
+Alpha hydroxylation of carbonyl group	14	Reaction Type
+Hydroxylation of aromatic carbon ortho to halide group	14	Reaction Type
+N-hydroxylation of primary arylamine	14	Reaction Type
+EPOXIDATION_OF_12_DISUBSTITUTED_ALKLENE	12	Reaction Type
+N-acetylation of arylamine	12	Reaction Type
+Hydroxylation of benzene on carbon para to a strongly electron donating group	11	Reaction Type
+N-glucuronidation of tertiary aliphatic amine	11	Reaction Type
+Allylic hydroxylation	10	Reaction Type
+HYDROXYLATION_OF_AROMATIC_CARBON	10	Reaction Type
+Hydroxylation of heteroalicyclic secondary carbon	10	Reaction Type
+O-aryl dealkylation adjacent to substituted carbon	10	Reaction Type
+N-Dementhylation	10	Reaction Type
+N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1; N_DEALKYLATION_OF_ACYCLIC_TERTIARY_AMINES	9	Reaction Type
+O-dealkylation of dialkylether	9	Reaction Type
+N-dealkylation of mixed tertiary amine	9	Reaction Type
+HYDROXYLATION_OF_HETEROAROMATIC_CARBON	9	Reaction Type
+ARENE_EPOXIDATION	8	Reaction Type
+C-Oxidation	8	Reaction Type
+N-dealkylation of tertiary carboxamide	8	Reaction Type
+Hydroxylation of acyclic aliphatic secondary carbon	8	Reaction Type
+Sulfation of primary alcohol	8	Reaction Type
+N-acetylation	8	Reaction Type
+S-oxidation of sulfoxide to sulfone	7	Reaction Type
+Hydroxylation of penultimate aliphatic tertiary carbon	7	Reaction Type
+Hydroxylation of carbon gamma to conjugated carbonyl	7	Reaction Type
+Aliphatic hydroxylation of acyclic 1,2-disubstituted alkene	7	Reaction Type
+Hydroxylation of penultimate aliphatic secondary carbon	7	Reaction Type
+4-OH sulfonation of phenolic compound	7	Reaction Type
+Glucuronidation of primary aromatic amine	7	Reaction Type
+O-glucuronidation of aromatic acid	7	Reaction Type
+GSH-conjugation of organohalide	7	Reaction Type
+N-glucuronidation	7	Reaction Type
+N-deisopropylation	6	Reaction Type
+Dearylation of organphosphosulfur compound	6	Reaction Type
+N-desmethylation	6	Reaction Type
+N-oxidation of alicyclic tertiary amine	6	Reaction Type
+O-dementhylation	6	Reaction Type
+O-methylation	6	Reaction Type
+O-acetylation of N-hydroxylarylamine	6	Reaction Type
+N-glucuronidation of azole	6	Reaction Type
+Hydroxylation of benzene on carbon orhto to a strongly electron donating group	5	Reaction Type
+Thiophene S-oxidation	5	Reaction Type
+Hydroxlation of methyl carbon adjacent to an aliphatic ring	5	Reaction Type
+Hydroxylation of aromatic carbon meta to halide group	5	Reaction Type
+AROMATIC HYDROXYLATION	5	Reaction Type
+Terminal desaturation	5	Reaction Type
+N-DEMETHYLATION	5	Reaction Type
+S-oxidation of diarylthioether to sulfoxide	5	Reaction Type
+N-dementhylation	5	Reaction Type
+N-dechloroethylation	5	Reaction Type
+S-oxidation of dialkylthioether to sulfoxide	5	Reaction Type
+O-Dementhylation	5	Reaction Type
+N-Glucuronidation	5	Reaction Type
+Oxidation of halotrifluoroethane	4	Reaction Type
+Dehydrogenation of 4-aryl substituted 1,4-dihydropyridine	4	Reaction Type
+3-Hydroxylation of 5-aryl-1,4-benzodiazepine	4	Reaction Type
+N-dealkylation of secondary arylalkylamine	4	Reaction Type
+m-Hydroxylation of monosubstituted benzene	4	Reaction Type
+N-dealkylation of N-acylurea	4	Reaction Type
+O-DEMETHYLATION	4	Reaction Type
+Hydroxylation of benzene on carbon ortho to an electron donating group	4	Reaction Type
+Hydroxylation of benzene on carbon para to an electron donating group	4	Reaction Type
+Oxidation	4	Reaction Type
+Hydroxylation of alkyl methine	4	Reaction Type
+O-desmethylation	4	Reaction Type
+ALKENE_EPXODATION	4	Reaction Type
+3-OH sulfonation of phenolic compound	4	Reaction Type
+Dehydroxylation of catechol	4	Reaction Type
+Reduction of halotrifluoroethane	3	Reaction Type
+O-Desmethylation	3	Reaction Type
+Hydroxylation of non-terminal aliphatic carbon adjacent to aromatic ring	3	Reaction Type
+HYDROLYSIS_OF_CARBOXYLIC_ESTER	3	Reaction Type
+ALIPHATIC HYDROXYLATION	3	Reaction Type
+REDUCTION_OF_NITRO_TO_AMINE	3	Reaction Type
+Bisallylic hydroxylation	3	Reaction Type
+Desulfuration of organophosphothioates	3	Reaction Type
+N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1	3	Reaction Type
+N-dealkylation of secondary carboxamide	3	Reaction Type
+Hydroxylation	3	Reaction Type
+Hydrogenation	3	Reaction Type
+p-Hydroxylation of phenol	3	Reaction Type
+Desulfurization of thioamide into amide	3	Reaction Type
+EPOXIDATION	3	Reaction Type
+N-oxdation of aliphatic tertiary amine	3	Reaction Type
+N-dealkoxylation of N-aryl-N-chloroacetamide	3	Reaction Type
+N-demethoxymethylation	3	Reaction Type
+o-Hydroxylation of phenol	3	Reaction Type
+N-Dealkylatiion	3	Reaction Type
+17-OH glucuronidation of sterol	3	Reaction Type
+Sulfation of secondary alcohol	3	Reaction Type
+Hydroxylamine O-sulfonation	3	Reaction Type
+N-Hydroxylation	2	Reaction Type
+Methylenedioxy ring opening	2	Reaction Type
+S-OXIDATION	2	Reaction Type
+O-deisopropylation	2	Reaction Type
+2,4-thiazolidinedione ring opening	2	Reaction Type
+HYDROXYLATION_OF_AROMATIC_CARBON; HYDROXYLATION_OF_BENZENE_PARA_TO_EDG	2	Reaction Type
+N-hydroxylation of primary or secondary aliphatic amine	2	Reaction Type
+N-hydroxylation of secondary arylamide	2	Reaction Type
+O-Deethylation	2	Reaction Type
+Reduction	2	Reaction Type
+p-Hydroxylation of anilide	2	Reaction Type
+Hydroxylation of carbon alpha to conjugated carbonyl	2	Reaction Type
+N-dealkylation of urea	2	Reaction Type
+2-Hydroxylation of 1,4-disubstituted benzene	2	Reaction Type
+Hydroxylation of  carbon next to amide	2	Reaction Type
+7-Hydroxylation of coumarin	2	Reaction Type
+N-desalkylation	2	Reaction Type
+Oxidation of primary alcohol to aldehyde	2	Reaction Type
+4-alkyl hydroxylation of oxoazaphosphorine	2	Reaction Type
+Oxidation of secondary alcohol to ketone	2	Reaction Type
+OXIDATION_OF_PRIM_ALCOHOL_TO_CARBOXYLIC_ACID	2	Reaction Type
+N-OXIDATION	2	Reaction Type
+S-oxidation of alkylarylthioether to sulfoxide	2	Reaction Type
+Oxidation of nitrogen in a strained ring system	2	Reaction Type
+N-desethylation	2	Reaction Type
+Aldehyde oxidation	2	Reaction Type
+Unknown reaction	2	Reaction Type
+Epoxidation of thiophene	2	Reaction Type
+o-Hydroxylation of monosubstituted benzene	2	Reaction Type
+N-oxidation of pyrimidine	2	Reaction Type
+N-demethylations	2	Reaction Type
+Desulfuration of organophosphorodithioate	2	Reaction Type
+C-DE-ESTERIFICATION	2	Reaction Type
+Hydroxylamine O-glucuronidation	2	Reaction Type
+N-acetylation of Hydrazine derivative	2	Reaction Type
+3-OH glucuronidation of sterol	2	Reaction Type
+GSH-conjugatoon	2	Reaction Type
+Flavan-3-ol C-ring fission	2	Reaction Type
+4'-Deydroxylation of substitued benzene	2	Reaction Type
+Glycoside hydrolysis	2	Reaction Type
+Anthocyanidin C-ring fission	2	Reaction Type
+Reduction of alpha,beta unsaturated carbon-carbon double bond adjacent to an electron withdrawing group	2	Reaction Type
+Keto hydrolysis	2	Reaction Type
+Reduction of azobenzene	2	Reaction Type
+Lysis of choline to trimethylamine	2	Reaction Type
+Oxidation of p-substituted anilides	1	Reaction Type
+Reduction of terminal aliphatic trihalide	1	Reaction Type
+Alphatic Hydroxylation	1	Reaction Type
+EPOXIDATION_OF_112_TRISUBSTITUTED_ALKLENE	1	Reaction Type
+HYDROXYLATION_OF_AROMATIC_CARBON; HYDROXYLATION_OF_BENZENE_ORTHO_TO_EDG	1	Reaction Type
+C-DEALKLYATION	1	Reaction Type
+Aliphatic hydroxylation of carbon alpha to secondary or tertiary alkyl-N	1	Reaction Type
+N-HYDROXYLATION	1	Reaction Type
+N_DEHYDROGENATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	1	Reaction Type
+Hydroxylation of aromatic carbon para to halide group	1	Reaction Type
+PYRROLE_EPOXIDATION	1	Reaction Type
+O-Dealklyation	1	Reaction Type
+N-Hydroxylation; N-Oxidation	1	Reaction Type
+Epoxidation of arene	1	Reaction Type
+HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON; HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON_PATTERN1	1	Reaction Type
+N-deethylation	1	Reaction Type
+N-hydroxylation of anilide	1	Reaction Type
+EPOXIDATION_OF_MONOSUBSTITUTED_ALKENE	1	Reaction Type
+Epoxidation of vinyl ether	1	Reaction Type
+N-dealkylation of hydrazide	1	Reaction Type
+N-dealkylation of hydrazine	1	Reaction Type
+Dehydrogenation of alpha,beta-unsaturated amide	1	Reaction Type
+O-Debenzylation	1	Reaction Type
+HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	1	Reaction Type
+N-oxidation	1	Reaction Type
+O-demethylenation	1	Reaction Type
+N-Desalkylation	1	Reaction Type
+S-Dealkylation	1	Reaction Type
+OXIDATIVE_DEAMINATION_OF_TERTIARY_AMINES; N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	1	Reaction Type
+Aliphatic Hydroxylation (14-(R)-hydroxylation)	1	Reaction Type
+O-Detrifluoromethylation	1	Reaction Type
+N-hydroxylation of aniline to hydroxylamine	1	Reaction Type
+N-DESISOPROPYLATION	1	Reaction Type
+Pyridine N-oxidation	1	Reaction Type
+Alipathic Hydroxylation	1	Reaction Type
+ALKYL_HYDROXYLATION	1	Reaction Type
+Oxidization	1	Reaction Type
+oxidative defluorination	1	Reaction Type
+N-hyroxylation of guanidine or aminohydrazone	1	Reaction Type
+Formation of pyridinium from 4-substituted piperidine	1	Reaction Type
+N-Deethylation	1	Reaction Type
+O-DEETHYLATION	1	Reaction Type
+Ring opening of N-substituted piperidine	1	Reaction Type
+N-Desmethylation	1	Reaction Type
+N-dehydroxyethylation	1	Reaction Type
+N_DEALKYLATION	1	Reaction Type
+OXIDATION_OF_METHYL_TO_CARBOXYLIC_ACID	1	Reaction Type
+Aliphatic hydroxylation of methyl carbon adjacent to alkyne ring	1	Reaction Type
+Nifedipine Oxidation	1	Reaction Type
+Oxidation of alkyl formamide	1	Reaction Type
+Formation of iminium from pyrrolidine ring	1	Reaction Type
+N_DEALKYLATION_OF_CYCLIC_TERTIARY_AMINES; N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	1	Reaction Type
+Desulfation	1	Reaction Type
+DIHYDROXYLATION_OF_DOUBLE_BOND	1	Reaction Type
+Desethylation	1	Reaction Type
+O-deacetylation	1	Reaction Type
+N-Despropylation	1	Reaction Type
+S-oxidation of thiocarbamate	1	Reaction Type
+S-REDUCTION	1	Reaction Type
+N-depropargylation of secondary or tertiary amine	1	Reaction Type
+Unknown Reduction	1	Reaction Type
+N-dealkylation of sulfonamide	1	Reaction Type
+Denitrosation	1	Reaction Type
+HYDROXYLATION_OF_HETEROAROMATIC_CARBON; HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	1	Reaction Type
+Formation of imminium ion from N-substituted piperidine	1	Reaction Type
+Deamino	1	Reaction Type
+N-Dealylation	1	Reaction Type
+Demethylenation	1	Reaction Type
+Aromatic Oxidation	1	Reaction Type
+S-oxidation of dithiocarbamate	1	Reaction Type
+N-dealkylation of nitrosodialkylamine	1	Reaction Type
+Hydroxylation of sp3-carbon adjacent to N in nitrosamine	1	Reaction Type
+N-dealkylation of N-alkylnitrosamine	1	Reaction Type
+O-deethylation	1	Reaction Type
+C-DEALYLATION	1	Reaction Type
+Formation of cycloguanide	1	Reaction Type
+Hydrogenation;Reduction	1	Reaction Type
+Alipathic Hydroxylation (6ÃŽÂ²-hydroxylation)	1	Reaction Type
+EPOXIDATION_OF_1122_TETRASUBSTITUTED_ALKLENE	1	Reaction Type
+Hydroxylation of carbon adjacent to halogen	1	Reaction Type
+N-O bond cleavage	1	Reaction Type
+O-Demethylenation	1	Reaction Type
+N-dealkylation of dicarboximide	1	Reaction Type
+_2_ELECTRON_OXIDATION_OF_P_AMINOPHENOLS_TO_QUINONE_IMINES_PATTERN1	1	Reaction Type
+Oxidation of 4-substituted phenol	1	Reaction Type
+NS-cleavage	1	Reaction Type
+Oxidation of S adjacent to an aliphatic nitrogen	1	Reaction Type
+S-oxidation of organosulfurous compounds	1	Reaction Type
+Reduction of nitroimine	1	Reaction Type
+Reduction of aldehyde to alcohol	1	Reaction Type
+HYDROXYLATION_OF_ALIPHATIC_SECONDARY_CARBON	1	Reaction Type
+ALIPHATIC_HYDROXYLATION_OF_CARBON_ADJACENT_TO_OXYGEN	1	Reaction Type
+ESTERIFICATION	1	Reaction Type
+REDUCTION_OF_KETONES_TO_ALCOHOL	1	Reaction Type
+N_HYDROXYLATION_OF_ALICYCLIC_TERTIARY_AMINE	1	Reaction Type
+Dehydroxylation	1	Reaction Type
+Glycination of aromatic acid	1	Reaction Type
+Bile acid C24 acyl glucuronidation	1	Reaction Type
+6-OH glucuronidation of sterol	1	Reaction Type
+O-acetylation	1	Reaction Type
+GSH-conjugation of benzene substituted with an electron donating group	1	Reaction Type
+O-sulfation	1	Reaction Type
+3-OH-glucuronidation of a phenolic compound	1	Reaction Type
+GSH-conjugation of epoxide	1	Reaction Type
+Taurine conjugation of aliphatic acid	1	Reaction Type
+O-sulfonation oxidation	1	Reaction Type
+N-hydroxy glucuronidation	1	Reaction Type
+7-O-glucuronidation of isoflavone	1	Reaction Type
+Aromatic O-glucuronidation	1	Reaction Type
+3-OH-sulfation of sterol	1	Reaction Type
+GSH-conjugation of apha,beta-unsaturated carbonyl	1	Reaction Type
+Dehydration of isoflavanone	1	Reaction Type
+Isoflavan-4-ol dehydroxylation	1	Reaction Type
+Rhamnohydrolysis of alpha-L-rhamnoside	1	Reaction Type
+Flavonoid C-ring reduction	1	Reaction Type
+3'-Deydroxylation of substitued benzene	1	Reaction Type
+Alpha-oxidation of carboxylic acid	1	Reaction Type
+Reduction of isoflavone to isoflavanone	1	Reaction Type
+Isoflavanone C-ring fission	1	Reaction Type

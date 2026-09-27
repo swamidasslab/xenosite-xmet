@@ -1,0 +1,249 @@
+{
+  "source": "data/MetXBioDB-1-0.json",
+  "n_biotransformations": 2110,
+  "n_unique": {
+    "Reaction Type": 284,
+    "Biotransformation type": 3,
+    "Biosystem": 2,
+    "Enzyme(s) token": 138,
+    "Enzyme(s) full": 440
+  },
+  "top_reaction_types": [
+    [
+      "O-glucuronidation",
+      262
+    ],
+    [
+      "Aliphatic Hydroxylation",
+      213
+    ],
+    [
+      "Aromatic Hydroxylation",
+      117
+    ],
+    [
+      "Aromatic -OH glucuronidation",
+      99
+    ],
+    [
+      "Aromatic hydroxylation of fused benzene ring",
+      68
+    ],
+    [
+      "O-sulfonation",
+      58
+    ],
+    [
+      "O-Demethylation",
+      48
+    ],
+    [
+      "Hydroxylation of alicyclic secondary carbon",
+      46
+    ],
+    [
+      "N-dealkylation of alicyclic tertiary amine",
+      34
+    ],
+    [
+      "N-dealkylation of acyclic tertiary amine",
+      26
+    ],
+    [
+      "GSH-conjugation",
+      26
+    ],
+    [
+      "N-dealkylation of acyclic secondary amine",
+      25
+    ],
+    [
+      "Aliphatic hydroxylation of methyl carbon adjacent to aromatic ring",
+      25
+    ],
+    [
+      "N-demethylation",
+      25
+    ],
+    [
+      "p-Hydroxylation of monosubstituted benzene",
+      24
+    ],
+    [
+      "S-Oxidation",
+      24
+    ],
+    [
+      "N-Dealkylation",
+      24
+    ],
+    [
+      "O-dealkylation",
+      22
+    ],
+    [
+      "Epoxidation",
+      22
+    ],
+    [
+      "Hydroxylation of terminal methyl",
+      21
+    ],
+    [
+      "N-dealkylation",
+      21
+    ],
+    [
+      "O-aryl dealkylation not adjacent to substituted carbon",
+      19
+    ],
+    [
+      "Alkyl-OH glucuronidation",
+      19
+    ],
+    [
+      "Dehydrogenation",
+      18
+    ],
+    [
+      "N-Oxidation",
+      17
+    ]
+  ],
+  "biotransformation_type": [
+    [
+      "Human Phase I",
+      1468
+    ],
+    [
+      "Human Phase II",
+      614
+    ],
+    [
+      "Human Gut Microbial",
+      28
+    ]
+  ],
+  "biosystem": [
+    [
+      "Human",
+      2082
+    ],
+    [
+      "Gut microbial environment",
+      28
+    ]
+  ],
+  "top_enzymes": [
+    [
+      "CYP3A4",
+      822
+    ],
+    [
+      "CYP1A2",
+      419
+    ],
+    [
+      "CYP2D6",
+      371
+    ],
+    [
+      "CYP2C9",
+      311
+    ],
+    [
+      "CYP2C19",
+      293
+    ],
+    [
+      "UGT",
+      238
+    ],
+    [
+      "CYP2C8",
+      181
+    ],
+    [
+      "CYP2B6",
+      178
+    ],
+    [
+      "CYP2E1",
+      176
+    ],
+    [
+      "UGT1A9",
+      165
+    ],
+    [
+      "CYP2A6",
+      123
+    ],
+    [
+      "CYP1A1",
+      97
+    ],
+    [
+      "CYP3A5",
+      68
+    ],
+    [
+      "SULT",
+      58
+    ],
+    [
+      "GST",
+      38
+    ],
+    [
+      "CYP2C9 (minor)",
+      23
+    ],
+    [
+      "CYP1A2 (minor)",
+      21
+    ],
+    [
+      "SULT1A1",
+      21
+    ],
+    [
+      "CYP3A4 (major)",
+      20
+    ],
+    [
+      "CYP2C18",
+      19
+    ],
+    [
+      "UGT1A3",
+      19
+    ],
+    [
+      "CYP2D6 (major)",
+      17
+    ],
+    [
+      "CYP1B1",
+      16
+    ],
+    [
+      "CYP3A4 (minor)",
+      15
+    ],
+    [
+      "CYP2C9 (major)",
+      15
+    ]
+  ],
+  "outputs": [
+    "counts_biosystem.tsv",
+    "counts_biotransformation_type.tsv",
+    "counts_enzyme.tsv",
+    "counts_enzyme_combo.tsv",
+    "counts_reaction_type.tsv",
+    "counts_summary.json",
+    "examples.tsv",
+    "examples_by_term.tsv"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "n_terms": 297,
+  "by_confidence_terms": {
+    "alias": 19,
+    "exact_pref": 86,
+    "unmatched": 36,
+    "fuzzy_mid": 99,
+    "exact_synonym": 32,
+    "fuzzy_high": 23,
+    "antonym_of": 2
+  },
+  "by_confidence_occurrences": {
+    "alias": 96226,
+    "exact_pref": 47895,
+    "unmatched": 4812,
+    "fuzzy_mid": 10271,
+    "exact_synonym": 4844,
+    "fuzzy_high": 1269,
+    "antonym_of": 594
+  },
+  "fuzzy_high_min": 92.0,
+  "fuzzy_mid_min": 80.0,
+  "fuzzy_margin": 4.0
+}

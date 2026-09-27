@@ -1,0 +1,39 @@
+# DB reaction-term → XRM mapping workflow
+#
+# MetXBioDB and AMD are processed separately (never unioned).
+
+repo_root: ../..
+
+datasets:
+  metxbiodb:
+    counts: data/derived/db_extracts/metxbiodb/counts_reaction_type.tsv
+    field_label: Reaction Type
+  amd:
+    counts: data/derived/db_extracts/amd/counts_rxnclass.tsv
+    field_label: RXNCLASS
+
+ontology_yaml: crates/xenosite-tagger/data/ontology/xrm.yaml
+
+# Spines whose labels are eligible primary reaction-type matches.
+# Forest map / provenance / evidence / biological context excluded on purpose.
+match_spines:
+  - metabolism phase
+  - chemical transformation
+  - phase I reaction family
+  - phase II conjugation family
+  - reactive metabolite family
+  - structural delta
+  - site type
+  - leaving group
+  - medchem liability
+  - pharmacological role
+
+# Confidence cutoffs for fuzzy matching (rapidfuzz token_sort_ratio, 0–100)
+fuzzy_high_min: 92
+fuzzy_mid_min: 80
+fuzzy_margin: 4
+
+examples_per_gap_bucket: 12
+
+outdir: data/derived/db_term_mapping
+resources_dir: workflows/db_term_mapping/resources

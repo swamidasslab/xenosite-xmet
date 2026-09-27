@@ -1,0 +1,1119 @@
+term_norm	xrm_id	preferred_label	spine	matched_label	label_kind
++2o	xrm:1700101	dioxygenation	structural delta	+2O	synonym
++c6h8o6	xrm:1700104	glucuronide mass shift	structural delta	+C6H8O6	synonym
++gsh	xrm:1700106	GSH mass shift	structural delta	+GSH	synonym
++h2o	xrm:7700005	water addition delta	structural delta	+H2O	synonym
++o	xrm:1700100	monooxygenation	structural delta	+O	synonym
++o	xrm:7700001	oxygen gain	structural delta	+O	synonym
++so3	xrm:1700105	sulfate mass shift	structural delta	+SO3	synonym
+-1 carbon	xrm:1600131	omega-1 carbon	site type	ω-1 carbon	synonym
+-1 hydroxylation	xrm:0000109	ω-1 hydroxylation	chemical transformation	ω-1 hydroxylation	pref
+-c2h4	xrm:1700103	deethylation delta	structural delta	-C2H4	synonym
+-carbon	xrm:1600130	omega carbon	site type	ω-carbon	synonym
+-carbon hydroxylation cleavage	xrm:0000023	carbon–heteroatom oxidative cleavage	chemical transformation	α-carbon hydroxylation cleavage	synonym
+-ch2	xrm:1700102	demethylation delta	structural delta	-CH2	synonym
+-h2o	xrm:7700006	water loss delta	structural delta	-H2O	synonym
+-hydroxylation	xrm:0000108	ω-hydroxylation	chemical transformation	ω-hydroxylation	pref
+-hydroxylation	xrm:0000721	alpha-hydroxylation	chemical transformation	α-hydroxylation	synonym
+-o	xrm:7700002	oxygen loss	structural delta	-O	synonym
+-system impact	xrm:8000000	aromatic and conjugated-system impact	structural delta	π-system impact	synonym
+acetaldehyde leaving fragment	xrm:2200031	acetaldehyde leaving fragment	leaving group	acetaldehyde leaving fragment	pref
+acetylated metabolite	xrm:1500224	acetylated metabolite	reactive metabolite family	acetylated metabolite	pref
+acetylated metabolite	xrm:1500224	acetylated metabolite	reactive metabolite family	acetylated_metabolite	synonym
+acetylation	xrm:0001020	acetylation	metabolism phase	acetylation	pref
+acetylene alert	xrm:1400203	triple bond structural alert	medchem liability	acetylene alert	synonym
+acetylene site	xrm:1600210	alkyne site	site type	acetylene site	synonym
+active metabolite	xrm:2300010	pharmacologically active metabolite	pharmacological role	active metabolite	synonym
+active metabolite opportunity	xrm:1400126	active metabolite opportunity	medchem liability	active metabolite opportunity	pref
+active metabolite opportunity	xrm:1400126	active metabolite opportunity	medchem liability	active_metabolite_opportunity	synonym
+active parent	xrm:2300014	active parent	pharmacological role	active parent	pref
+active parent drug	xrm:2300014	active parent	pharmacological role	active parent drug	synonym
+acyl attachment	xrm:1600139	acyl attachment	site type	acyl attachment	pref
+acyl attachment	xrm:1600139	acyl attachment	site type	acyl_attachment	synonym
+acyl glucuronidation	xrm:0001004	acyl glucuronidation	metabolism phase	acyl glucuronidation	pref
+acyl glucuronidation class	xrm:1300102	acyl glucuronidation class	phase II conjugation family	acyl glucuronidation class	pref
+acyl glucuronidation class	xrm:1300102	acyl glucuronidation class	phase II conjugation family	acyl_glucuronidation_class	synonym
+acyl glucuronide	xrm:1500015	acyl glucuronide	reactive metabolite family	acyl glucuronide	pref
+acyl glucuronide	xrm:1500015	acyl glucuronide	reactive metabolite family	acyl_glucuronide	synonym
+acyl glucuronide formation	xrm:0001004	acyl glucuronidation	metabolism phase	acyl glucuronide formation	synonym
+acyl glucuronide reactive	xrm:1500107	acyl glucuronide reactive	reactive metabolite family	acyl glucuronide reactive	pref
+acyl glucuronide reactive	xrm:1500107	acyl glucuronide reactive	reactive metabolite family	acyl_glucuronide_reactive	synonym
+acyl glucuronide risk	xrm:1400121	acyl glucuronide risk	medchem liability	acyl glucuronide risk	pref
+acyl glucuronide risk	xrm:1400121	acyl glucuronide risk	medchem liability	acyl_glucuronide_risk	synonym
+acyl migration	xrm:0004017	acyl migration	chemical transformation	acyl migration	pref
+acyl-coa adduct	xrm:1500236	CoA binding	reactive metabolite family	acyl-CoA adduct	synonym
+acyl-coa formation	xrm:0001061	CoA conjugation	metabolism phase	acyl-CoA formation	synonym
+acylation	xrm:0001020	acetylation	metabolism phase	acylation	synonym
+alcohol dehydrogenation	xrm:0000310	alcohol oxidation	chemical transformation	alcohol dehydrogenation	synonym
+alcohol dehydrogenation	xrm:1200105	alcohol dehydrogenation	phase I reaction family	alcohol dehydrogenation	pref
+alcohol dehydrogenation	xrm:1200105	alcohol dehydrogenation	phase I reaction family	alcohol_dehydrogenation	synonym
+alcohol leaving fragment	xrm:2200021	alcohol leaving fragment	leaving group	alcohol leaving fragment	pref
+alcohol metabolite	xrm:1500120	alcohol metabolite	reactive metabolite family	alcohol metabolite	pref
+alcohol metabolite	xrm:1500120	alcohol metabolite	reactive metabolite family	alcohol_metabolite	synonym
+alcohol oxidation	xrm:0000310	alcohol oxidation	chemical transformation	alcohol oxidation	pref
+alcohol to aldehyde	xrm:0000310	alcohol oxidation	chemical transformation	alcohol to aldehyde	synonym
+alcoholic glucuronidation	xrm:0001003	alcoholic glucuronidation	metabolism phase	alcoholic glucuronidation	pref
+alcoholic sulfation	xrm:0001013	alcoholic sulfation	metabolism phase	alcoholic sulfation	pref
+aldehyde	xrm:1500013	aldehyde	reactive metabolite family	aldehyde	pref
+aldehyde formation class	xrm:1200113	aldehyde formation class	phase I reaction family	aldehyde formation class	pref
+aldehyde formation class	xrm:1200113	aldehyde formation class	phase I reaction family	aldehyde_formation_class	synonym
+aldehyde forming	xrm:1400022	aldehyde forming	medchem liability	aldehyde forming	pref
+aldehyde forming	xrm:1400022	aldehyde forming	medchem liability	aldehyde_forming	synonym
+aldehyde metabolite	xrm:1500129	aldehyde metabolite	reactive metabolite family	aldehyde metabolite	pref
+aldehyde metabolite	xrm:1500129	aldehyde metabolite	reactive metabolite family	aldehyde_metabolite	synonym
+aldehyde oxidation	xrm:0000313	aldehyde oxidation	chemical transformation	aldehyde oxidation	pref
+aldehyde reduction	xrm:0000522	aldehyde reduction	chemical transformation	aldehyde reduction	pref
+aldehyde risk	xrm:1400122	aldehyde risk	medchem liability	aldehyde risk	pref
+aldehyde risk	xrm:1400122	aldehyde risk	medchem liability	aldehyde_risk	synonym
+aldehyde to carboxylic acid	xrm:0000313	aldehyde oxidation	chemical transformation	aldehyde to carboxylic acid	synonym
+aldehyde-forming class	xrm:1200113	aldehyde formation class	phase I reaction family	aldehyde-forming class	synonym
+alicyclic carbon	xrm:1600200	alicyclic site	site type	alicyclic carbon	synonym
+alicyclic hydroxylation	xrm:0000143	alicyclic hydroxylation	chemical transformation	alicyclic hydroxylation	pref
+alicyclic site	xrm:1600200	alicyclic site	site type	alicyclic site	pref
+aliphatic epoxidation	xrm:1200101	aliphatic epoxidation	phase I reaction family	aliphatic epoxidation	pref
+aliphatic epoxidation	xrm:1200101	aliphatic epoxidation	phase I reaction family	aliphatic_epoxidation	synonym
+aliphatic hydroxylation	xrm:0000102	aliphatic hydroxylation	chemical transformation	aliphatic hydroxylation	pref
+aliphatic hydroxylation class	xrm:1200201	aliphatic hydroxylation class	phase I reaction family	aliphatic hydroxylation class	pref
+aliphatic o-dealkylation	xrm:0000213	aliphatic O-dealkylation	chemical transformation	aliphatic O-dealkylation	pref
+aliphatic o-glucuronidation	xrm:0001003	alcoholic glucuronidation	metabolism phase	aliphatic O-glucuronidation	synonym
+aliphatic site	xrm:7800002	aliphatic site	site type	aliphatic site	pref
+alkene epoxidation	xrm:0000110	epoxidation	chemical transformation	alkene epoxidation	synonym
+alkene epoxidation	xrm:0000111	alkene epoxidation	chemical transformation	alkene epoxidation	pref
+alkene formation	xrm:0000314	alkene formation	chemical transformation	alkene formation	pref
+alkene hydrogenation	xrm:0000500	hydrogenation	chemical transformation	alkene hydrogenation	synonym
+alkene hydrogenation	xrm:0000501	alkene hydrogenation	chemical transformation	alkene hydrogenation	pref
+alkyl conjugation	xrm:0000610	alkylation	chemical transformation	alkyl conjugation	synonym
+alkyl ether	xrm:1600116	alkyl ether	site type	alkyl ether	pref
+alkyl ether	xrm:1600116	alkyl ether	site type	alkyl_ether	synonym
+alkyl halide	xrm:1600127	alkyl halide	site type	alkyl halide	pref
+alkyl halide	xrm:1600127	alkyl halide	site type	alkyl_halide	synonym
+alkyl hydroxylation	xrm:0000102	aliphatic hydroxylation	chemical transformation	alkyl hydroxylation	synonym
+alkyl loss delta	xrm:7700007	alkyl loss delta	structural delta	alkyl loss delta	pref
+alkyl transfer	xrm:0000610	alkylation	chemical transformation	alkyl transfer	synonym
+alkylation	xrm:0000610	alkylation	chemical transformation	alkylation	pref
+alkyne hydrogenation	xrm:0000502	alkyne hydrogenation	chemical transformation	alkyne hydrogenation	pref
+alkyne site	xrm:1600210	alkyne site	site type	alkyne site	pref
+alkyne structural alert	xrm:1400203	triple bond structural alert	medchem liability	alkyne structural alert	synonym
+allyl leaving group	xrm:2200015	allyl leaving group	leaving group	allyl leaving group	pref
+allylic carbon	xrm:1600101	allylic carbon	site type	allylic carbon	pref
+allylic carbon	xrm:1600101	allylic carbon	site type	allylic_carbon	synonym
+allylic hydroxylation	xrm:0000107	allylic hydroxylation	chemical transformation	allylic hydroxylation	pref
+allylic site	xrm:1600015	allylic site	site type	allylic site	pref
+allylic site	xrm:1600015	allylic site	site type	allylic_site	synonym
+alpha hydroxylation of carbonyl	xrm:0000721	alpha-hydroxylation	chemical transformation	alpha hydroxylation of carbonyl	synonym
+alpha to heteroatom	xrm:1600017	alpha to heteroatom	site type	alpha to heteroatom	pref
+alpha to heteroatom	xrm:1600017	alpha to heteroatom	site type	alpha_to_heteroatom	synonym
+alpha to nitrogen	xrm:1600140	alpha to nitrogen	site type	alpha to nitrogen	pref
+alpha to nitrogen	xrm:1600140	alpha to nitrogen	site type	alpha_to_nitrogen	synonym
+alpha to oxygen	xrm:1600141	alpha to oxygen	site type	alpha to oxygen	pref
+alpha to oxygen	xrm:1600141	alpha to oxygen	site type	alpha_to_oxygen	synonym
+alpha to sulfur	xrm:1600142	alpha to sulfur	site type	alpha to sulfur	pref
+alpha to sulfur	xrm:1600142	alpha to sulfur	site type	alpha_to_sulfur	synonym
+alpha-hydroxylation	xrm:0000721	alpha-hydroxylation	chemical transformation	alpha-hydroxylation	pref
+ambiguous site	xrm:1600020	ambiguous site	site type	ambiguous site	pref
+ambiguous site	xrm:1600020	ambiguous site	site type	ambiguous_site	synonym
+amide	xrm:1600122	amide	site type	amide	pref
+amide hydrolysis	xrm:0000402	amide hydrolysis	chemical transformation	amide hydrolysis	pref
+amide hydrolysis class	xrm:1200108	amide hydrolysis class	phase I reaction family	amide hydrolysis class	pref
+amide hydrolysis class	xrm:1200108	amide hydrolysis class	phase I reaction family	amide_hydrolysis_class	synonym
+amide soft spot	xrm:1400106	amide soft spot	medchem liability	amide soft spot	pref
+amide soft spot	xrm:1400106	amide soft spot	medchem liability	amide_soft_spot	synonym
+amination	xrm:0000661	amination	chemical transformation	amination	pref
+amine dehydrogenation	xrm:1200106	amine dehydrogenation	phase I reaction family	amine dehydrogenation	pref
+amine dehydrogenation	xrm:1200106	amine dehydrogenation	phase I reaction family	amine_dehydrogenation	synonym
+amine leaving fragment	xrm:2200022	amine leaving fragment	leaving group	amine leaving fragment	pref
+amine soft spot	xrm:1400102	amine soft spot	medchem liability	amine soft spot	pref
+amine soft spot	xrm:1400102	amine soft spot	medchem liability	amine_soft_spot	synonym
+amino acid conjugation	xrm:0001050	amino acid conjugation	metabolism phase	amino acid conjugation	pref
+amino acid conjugation	xrm:0001050	amino acid conjugation	metabolism phase	amino_acid_conjugation	synonym
+amino group introduction	xrm:0000661	amination	chemical transformation	amino group introduction	synonym
+aminophenol metabolite	xrm:1500201	aminophenol metabolite	reactive metabolite family	aminophenol metabolite	pref
+aminophenol metabolite	xrm:1500201	aminophenol metabolite	reactive metabolite family	aminophenol_metabolite	synonym
+aniline	xrm:1600103	aniline	site type	aniline	pref
+annulation	xrm:0000640	cyclization	chemical transformation	annulation	synonym
+arene cis-dihydrodiol formation	xrm:0004011	cis-dihydroxylation	chemical transformation	arene cis-dihydrodiol formation	synonym
+arene epoxidation	xrm:1200100	aromatic epoxidation	phase I reaction family	arene epoxidation	synonym
+arene hydroxylation	xrm:0000101	aromatic hydroxylation	chemical transformation	arene hydroxylation	synonym
+arene oxide	xrm:0000112	arene oxide formation	chemical transformation	arene oxide	synonym
+arene oxide	xrm:1500105	arene oxide	reactive metabolite family	arene oxide	pref
+arene oxide	xrm:1500105	arene oxide	reactive metabolite family	arene_oxide	synonym
+arene oxide formation	xrm:0000112	arene oxide formation	chemical transformation	arene oxide formation	pref
+arene oxide pathway	xrm:8000007	arene oxide pathway	structural delta	arene oxide pathway	pref
+arene oxide rearrangement	xrm:0004005	arene oxide rearrangement	chemical transformation	arene oxide rearrangement	pref
+aromatic amine n-oxidation	xrm:0000125	aromatic amine N-oxidation	chemical transformation	aromatic amine N-oxidation	pref
+aromatic amine site	xrm:1600103	aniline	site type	aromatic amine site	synonym
+aromatic and conjugated-system impact	xrm:8000000	aromatic and conjugated-system impact	structural delta	aromatic and conjugated-system impact	pref
+aromatic dehydroxylation	xrm:0000650	dehydroxylation	chemical transformation	aromatic dehydroxylation	synonym
+aromatic epoxidation	xrm:0000112	arene oxide formation	chemical transformation	aromatic epoxidation	synonym
+aromatic epoxidation	xrm:1200100	aromatic epoxidation	phase I reaction family	aromatic epoxidation	pref
+aromatic epoxidation	xrm:1200100	aromatic epoxidation	phase I reaction family	aromatic_epoxidation	synonym
+aromatic hydroxylation	xrm:0000101	aromatic hydroxylation	chemical transformation	aromatic hydroxylation	pref
+aromatic hydroxylation class	xrm:1200200	aromatic hydroxylation class	phase I reaction family	aromatic hydroxylation class	pref
+aromatic o-dealkylation	xrm:0000212	aromatic O-dealkylation	chemical transformation	aromatic O-dealkylation	pref
+aromatic ring substitution impact	xrm:8000003	aromatic ring substitution impact	structural delta	aromatic ring substitution impact	pref
+aromatic site	xrm:1600013	aromatic site	site type	aromatic site	pref
+aromatic site	xrm:1600013	aromatic site	site type	aromatic_site	synonym
+aromatic site	xrm:7800001	aromatic site	site type	aromatic site	pref
+aromatic soft spot	xrm:1400100	aromatic soft spot	medchem liability	aromatic soft spot	pref
+aromatic soft spot	xrm:1400100	aromatic soft spot	medchem liability	aromatic_soft_spot	synonym
+aromatic/conjugate impact	xrm:8000000	aromatic and conjugated-system impact	structural delta	aromatic/conjugate impact	synonym
+aromaticity change	xrm:1700015	aromaticity change	structural delta	aromaticity change	pref
+aromaticity gain	xrm:8000002	aromaticity gain	structural delta	aromaticity gain	pref
+aromaticity gain delta	xrm:1700108	aromaticity gain delta	structural delta	aromaticity gain delta	pref
+aromaticity loss	xrm:8000001	aromaticity loss	structural delta	aromaticity loss	pref
+aromaticity loss delta	xrm:1700107	aromaticity loss delta	structural delta	aromaticity loss delta	pref
+aromatization	xrm:0000315	aromatization	chemical transformation	aromatization	pref
+aryl ether	xrm:1600117	aryl ether	site type	aryl ether	pref
+aryl ether	xrm:1600117	aryl ether	site type	aryl_ether	synonym
+aryl ether cleavage	xrm:0000720	dearylation	chemical transformation	aryl ether cleavage	synonym
+aryl halide	xrm:1600128	aryl halide	site type	aryl halide	pref
+aryl halide	xrm:1600128	aryl halide	site type	aryl_halide	synonym
+aryl hydroxylation	xrm:0000101	aromatic hydroxylation	chemical transformation	aryl hydroxylation	synonym
+aryl hydroxylation class	xrm:1200200	aromatic hydroxylation class	phase I reaction family	aryl hydroxylation class	synonym
+aryl leaving group	xrm:2200033	aryl leaving group	leaving group	aryl leaving group	pref
+aryl methyl ether cleavage	xrm:0000209	O-demethylation	chemical transformation	aryl methyl ether cleavage	synonym
+aryl transfer	xrm:0000730	arylation	chemical transformation	aryl transfer	synonym
+arylation	xrm:0000730	arylation	chemical transformation	arylation	pref
+atom added	xrm:1700012	atom added	structural delta	atom added	pref
+atom addition	xrm:7200001	atom addition	structural delta	atom addition	pref
+atom removed	xrm:1700013	atom removed	structural delta	atom removed	pref
+atom site	xrm:1600010	atom site	site type	atom site	pref
+atom site	xrm:1600010	atom site	site type	atom_site	synonym
+attachment atom c	xrm:1600138	attachment atom C	site type	attachment atom C	pref
+attachment atom c	xrm:1600138	attachment atom C	site type	attachment_atom_c	synonym
+attachment atom n	xrm:1600136	attachment atom N	site type	attachment atom N	pref
+attachment atom n	xrm:1600136	attachment atom N	site type	attachment_atom_n	synonym
+attachment atom o	xrm:1600135	attachment atom O	site type	attachment atom O	pref
+attachment atom o	xrm:1600135	attachment atom O	site type	attachment_atom_o	synonym
+attachment atom s	xrm:1600137	attachment atom S	site type	attachment atom S	pref
+attachment atom s	xrm:1600137	attachment atom S	site type	attachment_atom_s	synonym
+aziridine glutathionation	xrm:0001035	aziridine glutathionation	metabolism phase	aziridine glutathionation	pref
+aziridine metabolite	xrm:1500132	aziridine metabolite	reactive metabolite family	aziridine metabolite	pref
+aziridine metabolite	xrm:1500132	aziridine metabolite	reactive metabolite family	aziridine_metabolite	synonym
+azo cleavage	xrm:0000412	azo cleavage	chemical transformation	azo cleavage	pref
+azo reduction	xrm:0000514	azo reduction	chemical transformation	azo reduction	pref
+azo reduction/cleavage	xrm:0000412	azo cleavage	chemical transformation	azo reduction/cleavage	synonym
+azo splitting	xrm:0000412	azo cleavage	chemical transformation	azo splitting	synonym
+benzene hydroxylation	xrm:0000101	aromatic hydroxylation	chemical transformation	benzene hydroxylation	synonym
+benzoquinone metabolite	xrm:1500010	quinone	reactive metabolite family	benzoquinone metabolite	synonym
+benzoyl glycine conjugation	xrm:0001051	glycine conjugation	metabolism phase	benzoyl glycine conjugation	synonym
+benzyl leaving group	xrm:2200014	benzyl leaving group	leaving group	benzyl leaving group	pref
+benzylic carbon	xrm:1600100	benzylic carbon	site type	benzylic carbon	pref
+benzylic carbon	xrm:1600100	benzylic carbon	site type	benzylic_carbon	synonym
+benzylic hydroxylation	xrm:0000106	benzylic hydroxylation	chemical transformation	benzylic hydroxylation	pref
+benzylic radical	xrm:1500205	benzylic radical	reactive metabolite family	benzylic radical	pref
+benzylic radical	xrm:1500205	benzylic radical	reactive metabolite family	benzylic_radical	synonym
+benzylic site	xrm:1600014	benzylic site	site type	benzylic site	pref
+benzylic site	xrm:1600014	benzylic site	site type	benzylic_site	synonym
+benzylic site environment	xrm:1600100	benzylic carbon	site type	benzylic site environment	synonym
+benzylic soft spot	xrm:1400101	benzylic soft spot	medchem liability	benzylic soft spot	pref
+benzylic soft spot	xrm:1400101	benzylic soft spot	medchem liability	benzylic_soft_spot	synonym
+bioactivation	xrm:0003000	bioactivation	medchem liability	bioactivation	pref
+bioactivation	xrm:1400012	bioactivation	medchem liability	bioactivation	pref
+bioactivation hotspot	xrm:1400108	bioactivation hotspot	medchem liability	bioactivation hotspot	pref
+bioactivation hotspot	xrm:1400108	bioactivation hotspot	medchem liability	bioactivation_hotspot	synonym
+bioactivation liability	xrm:1400012	bioactivation	medchem liability	bioactivation liability	synonym
+bioactivation risk	xrm:1400019	bioactivation risk	medchem liability	bioactivation risk	pref
+bioactivation risk	xrm:1400019	bioactivation risk	medchem liability	bioactivation_risk	synonym
+bioinactivation	xrm:0003001	detoxication	medchem liability	bioinactivation	synonym
+bond cleavage	xrm:7200002	bond cleavage	structural delta	bond cleavage	pref
+bond order change	xrm:1700014	bond order change	structural delta	bond order change	pref
+bond order change	xrm:7200003	bond order change	structural delta	bond order change	pref
+bond order decrease	xrm:1700110	bond order decrease	structural delta	bond order decrease	pref
+bond order increase	xrm:1700109	bond order increase	structural delta	bond order increase	pref
+bond site	xrm:1600011	bond site	site type	bond site	pref
+bond site	xrm:1600011	bond site	site type	bond_site	synonym
+bond unsaturation to alkene	xrm:0000316	single- to double-bond dehydrogenation	chemical transformation	bond unsaturation to alkene	synonym
+bond unsaturation to alkyne	xrm:0000317	double- to triple-bond dehydrogenation	chemical transformation	bond unsaturation to alkyne	synonym
+bond-edit topology	xrm:7200000	bond-edit topology	structural delta	bond-edit topology	pref
+bond-edit topology unspecified	xrm:7200008	bond-edit topology unspecified	structural delta	bond-edit topology unspecified	pref
+bromide leaving group	xrm:2200019	bromide leaving group	leaving group	bromide leaving group	pref
+c glucuronidation class	xrm:1300121	C-glucuronidation class	phase II conjugation family	C_glucuronidation_class	synonym
+c-alkylation	xrm:0000614	C-alkylation	chemical transformation	C-alkylation	pref
+c-attachment	xrm:1600138	attachment atom C	site type	C-attachment	synonym
+c-carboxylation	xrm:0000621	carboxylation	chemical transformation	C-carboxylation	synonym
+c-de-esterification	xrm:0000401	ester hydrolysis	chemical transformation	C-de-esterification	synonym
+c-dealkylation	xrm:0000204	C-dealkylation	chemical transformation	C-dealkylation	pref
+c-dealkylation class	xrm:1200205	C-dealkylation class	phase I reaction family	C-dealkylation class	pref
+c-decarboxylation	xrm:0000620	decarboxylation	chemical transformation	C-decarboxylation	synonym
+c-glucuronidation	xrm:0001008	C-glucuronidation	metabolism phase	C-glucuronidation	pref
+c-glucuronidation class	xrm:1300121	C-glucuronidation class	phase II conjugation family	C-glucuronidation class	pref
+c-hydroxylation	xrm:0000100	hydroxylation	chemical transformation	C-hydroxylation	synonym
+carbamate	xrm:1600123	carbamate	site type	carbamate	pref
+carbamate hydrolysis	xrm:0000405	carbamate hydrolysis	chemical transformation	carbamate hydrolysis	pref
+carbamoyl glucuronidation	xrm:0001009	carbamoyl glucuronidation	metabolism phase	carbamoyl glucuronidation	pref
+carbamoyl glucuronidation class	xrm:1300115	carbamoyl glucuronidation class	phase II conjugation family	carbamoyl glucuronidation class	pref
+carbamoyl glucuronidation class	xrm:1300115	carbamoyl glucuronidation class	phase II conjugation family	carbamoyl_glucuronidation_class	synonym
+carbinolamine cleavage	xrm:0004006	carbinolamine cleavage	chemical transformation	carbinolamine cleavage	pref
+carbinolamine intermediate	xrm:1500126	carbinolamine intermediate	reactive metabolite family	carbinolamine intermediate	pref
+carbinolamine intermediate	xrm:1500126	carbinolamine intermediate	reactive metabolite family	carbinolamine_intermediate	synonym
+carbocation intermediate	xrm:1500204	carbocation intermediate	reactive metabolite family	carbocation intermediate	pref
+carbocation intermediate	xrm:1500204	carbocation intermediate	reactive metabolite family	carbocation_intermediate	synonym
+carbon alkylation	xrm:0000614	C-alkylation	chemical transformation	carbon alkylation	synonym
+carbon oxidation	xrm:0000021	carbon oxidation	chemical transformation	carbon oxidation	pref
+carbon site	xrm:7100001	carbon site	site type	carbon site	pref
+carbon-carbon dealkylation	xrm:0000204	C-dealkylation	chemical transformation	carbon–carbon dealkylation	synonym
+carbon-heteroatom oxidative cleavage	xrm:0000023	carbon–heteroatom oxidative cleavage	chemical transformation	carbon–heteroatom oxidative cleavage	pref
+carbonyl insertion	xrm:0000731	carbonylation	chemical transformation	carbonyl insertion	synonym
+carbonyl reduction	xrm:0000520	oxygen reduction	chemical transformation	carbonyl reduction	synonym
+carbonyl reduction	xrm:0000524	carbonyl reduction	chemical transformation	carbonyl reduction	pref
+carbonyl reduction class	xrm:1200109	carbonyl reduction class	phase I reaction family	carbonyl reduction class	pref
+carbonyl reduction class	xrm:1200109	carbonyl reduction class	phase I reaction family	carbonyl_reduction_class	synonym
+carbonylation	xrm:0000731	carbonylation	chemical transformation	carbonylation	pref
+carboxyl formation	xrm:0000621	carboxylation	chemical transformation	carboxyl formation	synonym
+carboxyl loss	xrm:0000620	decarboxylation	chemical transformation	carboxyl loss	synonym
+carboxylate leaving group	xrm:2200025	carboxylate leaving group	leaving group	carboxylate leaving group	pref
+carboxylation	xrm:0000621	carboxylation	chemical transformation	carboxylation	pref
+carboxylic acid	xrm:1600120	carboxylic acid	site type	carboxylic acid	pref
+carboxylic acid	xrm:1600120	carboxylic acid	site type	carboxylic_acid	synonym
+carboxylic acid from alcohol	xrm:1500228	carboxylic acid from alcohol	reactive metabolite family	carboxylic acid from alcohol	pref
+carboxylic acid from alcohol	xrm:1500228	carboxylic acid from alcohol	reactive metabolite family	carboxylic_acid_from_alcohol	synonym
+carboxylic acid glucuronide	xrm:1500213	carboxylic acid glucuronide	reactive metabolite family	carboxylic acid glucuronide	pref
+carboxylic acid glucuronide	xrm:1500213	carboxylic acid glucuronide	reactive metabolite family	carboxylic_acid_glucuronide	synonym
+carboxylic acid metabolite	xrm:1500121	carboxylic acid metabolite	reactive metabolite family	carboxylic acid metabolite	pref
+carboxylic acid metabolite	xrm:1500121	carboxylic acid metabolite	reactive metabolite family	carboxylic_acid_metabolite	synonym
+catechol metabolite	xrm:1500119	catechol metabolite	reactive metabolite family	catechol metabolite	pref
+catechol metabolite	xrm:1500119	catechol metabolite	reactive metabolite family	catechol_metabolite	synonym
+catechol o-methylation	xrm:0001041	O-methylation	metabolism phase	catechol O-methylation	synonym
+ch3 leaving group	xrm:2200010	methyl leaving group	leaving group	CH3 leaving group	synonym
+charge change	xrm:1700016	charge change	structural delta	charge change	pref
+chemical transformation	xrm:1100000	chemical transformation	chemical transformation	chemical transformation	pref
+chemical transformation	xrm:1100000	chemical transformation	chemical transformation	chemical_transformation	synonym
+chloride leaving group	xrm:2200018	chloride leaving group	leaving group	chloride leaving group	pref
+cis-dihydroxylation	xrm:0004011	cis-dihydroxylation	chemical transformation	cis-dihydroxylation	pref
+clearance hotspot	xrm:1400107	clearance hotspot	medchem liability	clearance hotspot	pref
+clearance hotspot	xrm:1400107	clearance hotspot	medchem liability	clearance_hotspot	synonym
+clearance liability	xrm:1400011	clearance liability	medchem liability	clearance liability	pref
+clearance liability	xrm:1400011	clearance liability	medchem liability	clearance_liability	synonym
+clearance pathway	xrm:1400020	clearance pathway	medchem liability	clearance pathway	pref
+clearance pathway	xrm:1400020	clearance pathway	medchem liability	clearance_pathway	synonym
+co insertion	xrm:0000731	carbonylation	chemical transformation	CO insertion	synonym
+co2 addition	xrm:0000621	carboxylation	chemical transformation	CO2 addition	synonym
+co2 loss	xrm:0000620	decarboxylation	chemical transformation	CO2 loss	synonym
+coa adduct	xrm:1500236	CoA binding	reactive metabolite family	CoA adduct	synonym
+coa binding	xrm:1500236	CoA binding	reactive metabolite family	CoA binding	pref
+coa conjugate	xrm:1500222	CoA conjugate	reactive metabolite family	CoA conjugate	pref
+coa conjugate	xrm:1500222	CoA conjugate	reactive metabolite family	coa_conjugate	synonym
+coa conjugation	xrm:0001061	CoA conjugation	metabolism phase	CoA conjugation	pref
+coa conjugation	xrm:0001061	CoA conjugation	metabolism phase	coa_conjugation	synonym
+conjugate addition	xrm:0004014	conjugate addition	chemical transformation	conjugate addition	pref
+conjugate cleavage	xrm:0000732	deconjugation	chemical transformation	conjugate cleavage	synonym
+conjugate gain delta	xrm:7700008	conjugate gain delta	structural delta	conjugate gain delta	pref
+conjugate moiety added	xrm:1700018	conjugate moiety added	structural delta	conjugate moiety added	pref
+conjugated -system engagement	xrm:8000004	conjugated π-system engagement	structural delta	conjugated π-system engagement	pref
+conjugated adduct formation	xrm:8000008	conjugated adduct formation	structural delta	conjugated adduct formation	pref
+conjugation	xrm:0000002	phase II	metabolism phase	conjugation	synonym
+conjugation	xrm:0000024	conjugation	chemical transformation	conjugation	pref
+conjugation family	xrm:1300000	phase II conjugation family	phase II conjugation family	conjugation family	synonym
+conjugation phase	xrm:0000002	phase II	metabolism phase	conjugation phase	synonym
+covalent adduct formation	xrm:1500234	covalent binding	reactive metabolite family	covalent adduct formation	synonym
+covalent binding	xrm:1500234	covalent binding	reactive metabolite family	covalent binding	pref
+covalent macromolecule adduct	xrm:1500234	covalent binding	reactive metabolite family	covalent macromolecule adduct	synonym
+covalent macromolecule binding	xrm:1500230	macromolecule binding	reactive metabolite family	covalent macromolecule binding	synonym
+cyanidation	xrm:0000600	cyanidation	chemical transformation	cyanidation	pref
+cyanide hydrolysis	xrm:0000409	cyanide hydrolysis	chemical transformation	cyanide hydrolysis	pref
+cyanide hydrolysis	xrm:0000411	nitrile hydrolysis	chemical transformation	cyanide hydrolysis	synonym
+cyanide hydrolysis class	xrm:1200212	cyanide hydrolysis class	phase I reaction family	cyanide hydrolysis class	pref
+cyanide incorporation	xrm:0000600	cyanidation	chemical transformation	cyanide incorporation	synonym
+cyanide leaving group	xrm:2200037	cyanide leaving group	leaving group	cyanide leaving group	pref
+cyanide release	xrm:0000601	decyanidation	chemical transformation	cyanide release	synonym
+cyano addition	xrm:0000600	cyanidation	chemical transformation	cyano addition	synonym
+cyano loss	xrm:0000601	decyanidation	chemical transformation	cyano loss	synonym
+cyclization	xrm:0000640	cyclization	chemical transformation	cyclization	pref
+cycloalkyl site	xrm:1600200	alicyclic site	site type	cycloalkyl site	synonym
+cysteination	xrm:1300010	cysteine conjugation	phase II conjugation family	cysteination	synonym
+cysteine adduct	xrm:1500218	cysteine adduct	reactive metabolite family	cysteine adduct	pref
+cysteine adduct	xrm:1500218	cysteine adduct	reactive metabolite family	cysteine_adduct	synonym
+cysteine adduct cleavage	xrm:0000704	decysteination	chemical transformation	cysteine adduct cleavage	synonym
+cysteine conjugation	xrm:1300010	cysteine conjugation	phase II conjugation family	cysteine conjugation	pref
+cysteine conjugation	xrm:1300010	cysteine conjugation	phase II conjugation family	cysteine_conjugation	synonym
+de-esterification	xrm:0000401	ester hydrolysis	chemical transformation	de-esterification	synonym
+deacetylation	xrm:0001023	deacetylation	metabolism phase	deacetylation	pref
+deacylation	xrm:0002005	deacylation	metabolism phase	deacylation	pref
+dealkylated amine	xrm:1500225	dealkylated amine	reactive metabolite family	dealkylated amine	pref
+dealkylated amine	xrm:1500225	dealkylated amine	reactive metabolite family	dealkylated_amine	synonym
+dealkylated phenol	xrm:1500226	dealkylated phenol	reactive metabolite family	dealkylated phenol	pref
+dealkylated phenol	xrm:1500226	dealkylated phenol	reactive metabolite family	dealkylated_phenol	synonym
+dealkylation	xrm:0000200	dealkylation	chemical transformation	dealkylation	pref
+deamination	xrm:0000208	oxidative deamination	chemical transformation	deamination	synonym
+deamination	xrm:1100013	deamination	chemical transformation	deamination	pref
+dearomatization	xrm:0004001	dearomatization	chemical transformation	dearomatization	pref
+dearylation	xrm:0000720	dearylation	chemical transformation	dearylation	pref
+decarbonylation	xrm:0002007	decarbonylation	metabolism phase	decarbonylation	pref
+decarboxylation	xrm:0000620	decarboxylation	chemical transformation	decarboxylation	pref
+deconjugation	xrm:0000732	deconjugation	chemical transformation	deconjugation	pref
+decyanidation	xrm:0000601	decyanidation	chemical transformation	decyanidation	pref
+decysteination	xrm:0000704	decysteination	chemical transformation	decysteination	pref
+deesterification	xrm:0000401	ester hydrolysis	chemical transformation	deesterification	synonym
+deethylation delta	xrm:1700103	deethylation delta	structural delta	deethylation delta	pref
+deformylation	xrm:0000671	deformylation	chemical transformation	deformylation	pref
+deglucosidation	xrm:0000702	deglycosidation	chemical transformation	deglucosidation	synonym
+deglucuronidation	xrm:0000700	deglucuronidation	chemical transformation	deglucuronidation	pref
+deglutathionation	xrm:0000703	deglutathionation	chemical transformation	deglutathionation	pref
+deglycosidation	xrm:0000702	deglycosidation	chemical transformation	deglycosidation	pref
+dehalogenation	xrm:1100014	dehalogenation	chemical transformation	dehalogenation	pref
+dehydration	xrm:0000550	dehydration	chemical transformation	dehydration	pref
+dehydrogenation	xrm:0000012	dehydrogenation	chemical transformation	dehydrogenation	pref
+dehydrogenation delta	xrm:7700004	dehydrogenation delta	structural delta	dehydrogenation delta	pref
+dehydroxy	xrm:0000650	dehydroxylation	chemical transformation	dehydroxy	synonym
+dehydroxylation	xrm:0000650	dehydroxylation	chemical transformation	dehydroxylation	pref
+delta	xrm:1700000	structural delta	structural delta	delta	synonym
+demethylation	xrm:0000205	N-demethylation	chemical transformation	demethylation	synonym
+demethylation delta	xrm:1700102	demethylation delta	structural delta	demethylation delta	pref
+denitrogenation	xrm:0002006	denitrogenation	metabolism phase	denitrogenation	pref
+denitrosation	xrm:0000681	denitrosation	chemical transformation	denitrosation	pref
+departing group	xrm:2200000	leaving group	leaving group	departing group	synonym
+dephosphorylation	xrm:0000410	dephosphorylation	chemical transformation	dephosphorylation	pref
+desaturation	xrm:0000012	dehydrogenation	chemical transformation	desaturation	synonym
+desaturation to alkene	xrm:0000314	alkene formation	chemical transformation	desaturation to alkene	synonym
+desulfation	xrm:0000701	desulfation	chemical transformation	desulfation	pref
+desulfuration	xrm:0000690	desulfuration	chemical transformation	desulfuration	pref
+desulfurization	xrm:0000690	desulfuration	chemical transformation	desulfurization	synonym
+detoxication	xrm:0003001	detoxication	medchem liability	detoxication	pref
+detoxication pathway	xrm:1400109	detoxification pathway	medchem liability	detoxication pathway	synonym
+detoxification	xrm:0003001	detoxication	medchem liability	detoxification	synonym
+detoxification	xrm:1400013	detoxification	medchem liability	detoxification	pref
+detoxification pathway	xrm:1400109	detoxification pathway	medchem liability	detoxification pathway	pref
+detoxification pathway	xrm:1400109	detoxification pathway	medchem liability	detoxification_pathway	synonym
+dioxygenation	xrm:1700101	dioxygenation	structural delta	dioxygenation	pref
+direct one-step transformation	xrm:7900001	direct one-step transformation	structural delta	direct one-step transformation	pref
+disulfide formation	xrm:0000135	disulfide formation	chemical transformation	disulfide formation	pref
+disulfide metabolite	xrm:1500210	disulfide metabolite	reactive metabolite family	disulfide metabolite	pref
+disulfide metabolite	xrm:1500210	disulfide metabolite	reactive metabolite family	disulfide_metabolite	synonym
+disulfide reduction	xrm:0000532	disulfide reduction	chemical transformation	disulfide reduction	pref
+dna adduct	xrm:1500231	DNA binding	reactive metabolite family	DNA adduct	synonym
+dna adduct formation	xrm:1500231	DNA binding	reactive metabolite family	DNA adduct formation	synonym
+dna binding	xrm:1500231	DNA binding	reactive metabolite family	DNA binding	pref
+double- to triple-bond dehydrogenation	xrm:0000317	double- to triple-bond dehydrogenation	chemical transformation	double- to triple-bond dehydrogenation	pref
+double-to-triple bond dehydrogenation class	xrm:1200210	double-to-triple bond dehydrogenation class	phase I reaction family	double-to-triple bond dehydrogenation class	pref
+electron poor arene	xrm:1600108	electron-poor arene	site type	electron_poor_arene	synonym
+electron rich arene	xrm:1600107	electron-rich arene	site type	electron_rich_arene	synonym
+electron-poor arene	xrm:1600108	electron-poor arene	site type	electron-poor arene	pref
+electron-rich arene	xrm:1600107	electron-rich arene	site type	electron-rich arene	pref
+electrophile consumption	xrm:7500002	electrophile consumption	reactive metabolite family	electrophile consumption	pref
+electrophile generation	xrm:7500001	electrophile generation	reactive metabolite family	electrophile generation	pref
+electrophile role	xrm:7500000	electrophile role	reactive metabolite family	electrophile role	pref
+electrophile role	xrm:7500000	electrophile role	reactive metabolite family	electrophile_role	synonym
+electrophile role unspecified	xrm:7500005	electrophile role unspecified	reactive metabolite family	electrophile role unspecified	pref
+epoxidation	xrm:0000110	epoxidation	chemical transformation	epoxidation	pref
+epoxide	xrm:1500012	epoxide	reactive metabolite family	epoxide	pref
+epoxide glutathionation	xrm:0001032	epoxide glutathionation	metabolism phase	epoxide glutathionation	pref
+epoxide gsh conjugation	xrm:1300117	epoxide GSH conjugation	phase II conjugation family	epoxide GSH conjugation	pref
+epoxide gsh conjugation	xrm:1300117	epoxide GSH conjugation	phase II conjugation family	epoxide_gsh_conjugation	synonym
+epoxide hydration	xrm:0000400	epoxide opening	chemical transformation	epoxide hydration	synonym
+epoxide hydrolysis	xrm:0000400	epoxide opening	chemical transformation	epoxide hydrolysis	synonym
+epoxide metabolite	xrm:1500128	epoxide metabolite	reactive metabolite family	epoxide metabolite	pref
+epoxide metabolite	xrm:1500128	epoxide metabolite	reactive metabolite family	epoxide_metabolite	synonym
+epoxide opening	xrm:0000400	epoxide opening	chemical transformation	epoxide opening	pref
+epoxide product	xrm:1500128	epoxide metabolite	reactive metabolite family	epoxide product	synonym
+epoxide risk	xrm:1400124	epoxide risk	medchem liability	epoxide risk	pref
+epoxide risk	xrm:1400124	epoxide risk	medchem liability	epoxide_risk	synonym
+equipotent metabolite	xrm:2300016	equipotent metabolite	pharmacological role	equipotent metabolite	pref
+ester	xrm:1600121	ester	site type	ester	pref
+ester exchange	xrm:0000631	transesterification	chemical transformation	ester exchange	synonym
+ester formation	xrm:0000630	esterification	chemical transformation	ester formation	synonym
+ester hydrolysis	xrm:0000401	ester hydrolysis	chemical transformation	ester hydrolysis	pref
+ester hydrolysis class	xrm:1200107	ester hydrolysis class	phase I reaction family	ester hydrolysis class	pref
+ester hydrolysis class	xrm:1200107	ester hydrolysis class	phase I reaction family	ester_hydrolysis_class	synonym
+ester soft spot	xrm:1400105	ester soft spot	medchem liability	ester soft spot	pref
+ester soft spot	xrm:1400105	ester soft spot	medchem liability	ester_soft_spot	synonym
+esterification	xrm:0000630	esterification	chemical transformation	esterification	pref
+ether cleavage	xrm:0000407	ether cleavage	chemical transformation	ether cleavage	pref
+ether formation	xrm:0000612	O-alkylation	chemical transformation	ether formation	synonym
+ether glucuronide	xrm:1500214	ether glucuronide	reactive metabolite family	ether glucuronide	pref
+ether glucuronide	xrm:1500214	ether glucuronide	reactive metabolite family	ether_glucuronide	synonym
+ether hydrolysis	xrm:0000407	ether cleavage	chemical transformation	ether hydrolysis	synonym
+ether hydrolysis	xrm:0000408	ether hydrolysis	chemical transformation	ether hydrolysis	pref
+ether hydrolysis class	xrm:1200211	ether hydrolysis class	phase I reaction family	ether hydrolysis class	pref
+ether soft spot	xrm:1400103	ether soft spot	medchem liability	ether soft spot	pref
+ether soft spot	xrm:1400103	ether soft spot	medchem liability	ether_soft_spot	synonym
+ethyl leaving group	xrm:2200011	ethyl leaving group	leaving group	ethyl leaving group	pref
+first-pass metabolism	xrm:1000102	first-pass metabolism	metabolism phase	first-pass metabolism	pref
+fluoride leaving group	xrm:2200017	fluoride leaving group	leaving group	fluoride leaving group	pref
+fluorine blocking	xrm:1400112	fluorine blocking	medchem liability	fluorine blocking	pref
+fluorine blocking	xrm:1400112	fluorine blocking	medchem liability	fluorine_blocking	synonym
+formaldehyde leaving fragment	xrm:2200030	formaldehyde leaving fragment	leaving group	formaldehyde leaving fragment	pref
+forms reactive conjugate	xrm:1400030	forms reactive conjugate	medchem liability	forms reactive conjugate	pref
+forms reactive conjugate	xrm:1400030	forms reactive conjugate	medchem liability	forms_reactive_conjugate	synonym
+formula delta	xrm:1700010	formula delta	structural delta	formula delta	pref
+formula-delta class	xrm:7700000	formula-delta class	structural delta	formula-delta class	pref
+formula-delta unspecified	xrm:7700011	formula-delta unspecified	structural delta	formula-delta unspecified	pref
+formyl conjugation	xrm:0000670	formylation	chemical transformation	formyl conjugation	synonym
+formyl loss	xrm:0000671	deformylation	chemical transformation	formyl loss	synonym
+formylation	xrm:0000670	formylation	chemical transformation	formylation	pref
+fragmenting transformation	xrm:7300002	fragmenting transformation	structural delta	fragmenting transformation	pref
+free radical metabolite	xrm:1500113	free radical metabolite	reactive metabolite family	free radical metabolite	pref
+free radical metabolite	xrm:1500113	free radical metabolite	reactive metabolite family	free_radical_metabolite	synonym
+functionalization	xrm:0000001	phase I	metabolism phase	functionalization	synonym
+functionalization phase	xrm:0000001	phase I	metabolism phase	functionalization phase	synonym
+furan	xrm:1600110	furan	site type	furan	pref
+furan alert	xrm:1400201	furan structural alert	medchem liability	furan alert	synonym
+furan structural alert	xrm:1400201	furan structural alert	medchem liability	furan structural alert	pref
+furan toxicophore	xrm:1400201	furan structural alert	medchem liability	furan toxicophore	synonym
+fused aromatic ring site	xrm:1600201	fused benzene site	site type	fused aromatic ring site	synonym
+fused benzene site	xrm:1600201	fused benzene site	site type	fused benzene site	pref
+glucosidation	xrm:0001060	glycosylation	metabolism phase	glucosidation	synonym
+glucuronic acid conjugation	xrm:0001000	glucuronidation	metabolism phase	glucuronic acid conjugation	synonym
+glucuronidation	xrm:0001000	glucuronidation	metabolism phase	glucuronidation	pref
+glucuronide conjugate	xrm:1500116	glucuronide conjugate	reactive metabolite family	glucuronide conjugate	pref
+glucuronide conjugate	xrm:1500116	glucuronide conjugate	reactive metabolite family	glucuronide_conjugate	synonym
+glucuronide conjugation	xrm:0001000	glucuronidation	metabolism phase	glucuronide conjugation	synonym
+glucuronide hydrolysis	xrm:0000700	deglucuronidation	chemical transformation	glucuronide hydrolysis	synonym
+glucuronide mass shift	xrm:1700104	glucuronide mass shift	structural delta	glucuronide mass shift	pref
+glucuronosylation	xrm:0001000	glucuronidation	metabolism phase	glucuronosylation	synonym
+glutamine conjugation	xrm:0001052	glutamine conjugation	metabolism phase	glutamine conjugation	pref
+glutamine conjugation class	xrm:1300113	glutamine conjugation class	phase II conjugation family	glutamine conjugation class	pref
+glutamine conjugation class	xrm:1300113	glutamine conjugation class	phase II conjugation family	glutamine_conjugation_class	synonym
+glutathionation	xrm:0001030	glutathionation	metabolism phase	glutathionation	pref
+glutathione adduct	xrm:1500114	GSH adduct	reactive metabolite family	glutathione adduct	synonym
+glutathione adduct formation	xrm:0001030	glutathionation	metabolism phase	glutathione adduct formation	synonym
+glutathione adduct hydrolysis	xrm:0000703	deglutathionation	chemical transformation	glutathione adduct hydrolysis	synonym
+glutathione conjugation	xrm:0001030	glutathionation	metabolism phase	glutathione conjugation	synonym
+glutathione conjugation class	xrm:1300105	GSH conjugation class	phase II conjugation family	glutathione conjugation class	synonym
+glutathionylation	xrm:0001030	glutathionation	metabolism phase	glutathionylation	synonym
+glycine conjugate	xrm:1500220	glycine conjugate	reactive metabolite family	glycine conjugate	pref
+glycine conjugate	xrm:1500220	glycine conjugate	reactive metabolite family	glycine_conjugate	synonym
+glycine conjugation	xrm:0001051	glycine conjugation	metabolism phase	glycine conjugation	pref
+glycine conjugation	xrm:0001051	glycine conjugation	metabolism phase	glycine_conjugation	synonym
+glycine conjugation class	xrm:1300111	glycine conjugation class	phase II conjugation family	glycine conjugation class	pref
+glycine conjugation class	xrm:1300111	glycine conjugation class	phase II conjugation family	glycine_conjugation_class	synonym
+glycosidation	xrm:0001060	glycosylation	metabolism phase	glycosidation	synonym
+glycoside hydrolysis	xrm:0000702	deglycosidation	chemical transformation	glycoside hydrolysis	synonym
+glycosylation	xrm:0001060	glycosylation	metabolism phase	glycosylation	pref
+gsh adduct	xrm:1500114	GSH adduct	reactive metabolite family	GSH adduct	pref
+gsh adduct	xrm:1500114	GSH adduct	reactive metabolite family	gsh_adduct	synonym
+gsh adduct cleavage	xrm:0000703	deglutathionation	chemical transformation	GSH adduct cleavage	synonym
+gsh conjugation	xrm:0001030	glutathionation	metabolism phase	GSH conjugation	synonym
+gsh conjugation class	xrm:1300105	GSH conjugation class	phase II conjugation family	GSH conjugation class	pref
+gsh conjugation class	xrm:1300105	GSH conjugation class	phase II conjugation family	gsh_conjugation_class	synonym
+gsh epoxide conjugation	xrm:0001032	epoxide glutathionation	metabolism phase	GSH epoxide conjugation	synonym
+gsh mass shift	xrm:1700106	GSH mass shift	structural delta	GSH mass shift	pref
+gsh michael addition	xrm:0001031	Michael glutathionation	metabolism phase	GSH Michael addition	synonym
+gsh nucleophilic aromatic/aliphatic substitution	xrm:0001033	halide displacement glutathionation	metabolism phase	GSH nucleophilic aromatic/aliphatic substitution	synonym
+gsh trappable metabolite	xrm:1500019	GSH-trappable metabolite	reactive metabolite family	gsh_trappable_metabolite	synonym
+gsh trapping opportunity	xrm:1400110	GSH trapping opportunity	medchem liability	GSH trapping opportunity	pref
+gsh trapping opportunity	xrm:1400110	GSH trapping opportunity	medchem liability	gsh_trapping_opportunity	synonym
+gsh-trappable metabolite	xrm:1500019	GSH-trappable metabolite	reactive metabolite family	GSH-trappable metabolite	pref
+halide addition	xrm:0000660	halogenation	chemical transformation	halide addition	synonym
+halide displacement glutathionation	xrm:0001033	halide displacement glutathionation	metabolism phase	halide displacement glutathionation	pref
+halide displacement gsh conjugation	xrm:1300119	halide-displacement GSH conjugation	phase II conjugation family	halide_displacement_gsh_conjugation	synonym
+halide leaving group	xrm:2200016	halide leaving group	leaving group	halide leaving group	pref
+halide-displacement gsh conjugation	xrm:1300119	halide-displacement GSH conjugation	phase II conjugation family	halide-displacement GSH conjugation	pref
+halogen leaving group	xrm:2200016	halide leaving group	leaving group	halogen leaving group	synonym
+halogen loss delta	xrm:7700009	halogen loss delta	structural delta	halogen loss delta	pref
+halogen site	xrm:7100005	halogen site	site type	halogen site	pref
+halogenation	xrm:0000660	halogenation	chemical transformation	halogenation	pref
+hemiacetal cleavage	xrm:0004007	hemiacetal cleavage	chemical transformation	hemiacetal cleavage	pref
+hemiacetal intermediate	xrm:1500127	hemiacetal intermediate	reactive metabolite family	hemiacetal intermediate	pref
+hemiacetal intermediate	xrm:1500127	hemiacetal intermediate	reactive metabolite family	hemiacetal_intermediate	synonym
+heteroarene	xrm:1600109	heteroarene	site type	heteroarene	pref
+heteroaromatic oxidation impact	xrm:8000006	heteroaromatic oxidation impact	structural delta	heteroaromatic oxidation impact	pref
+heteroaryl site	xrm:1600109	heteroarene	site type	heteroaryl site	synonym
+heteroatom oxidation	xrm:0000022	heteroatom oxidation	chemical transformation	heteroatom oxidation	pref
+heteroatom site	xrm:1600016	heteroatom site	site type	heteroatom site	pref
+heteroatom site	xrm:1600016	heteroatom site	site type	heteroatom_site	synonym
+hippurate formation	xrm:0001051	glycine conjugation	metabolism phase	hippurate formation	synonym
+hydration	xrm:0004012	hydration	chemical transformation	hydration	pref
+hydration delta	xrm:7700005	water addition delta	structural delta	hydration delta	synonym
+hydration of carbonyl	xrm:0004013	hydration of carbonyl	chemical transformation	hydration of carbonyl	pref
+hydrogen leaving group	xrm:2200029	hydrogen leaving group	leaving group	hydrogen leaving group	pref
+hydrogenation	xrm:0000500	hydrogenation	chemical transformation	hydrogenation	pref
+hydrogenation class	xrm:1200112	hydrogenation class	phase I reaction family	hydrogenation class	pref
+hydrogenation class	xrm:1200112	hydrogenation class	phase I reaction family	hydrogenation_class	synonym
+hydrogenation delta	xrm:7700003	hydrogenation delta	structural delta	hydrogenation delta	pref
+hydrolysis	xrm:0000013	hydrolysis	chemical transformation	hydrolysis	pref
+hydrolytic ether cleavage	xrm:0000407	ether cleavage	chemical transformation	hydrolytic ether cleavage	synonym
+hydroquinone metabolite	xrm:1500200	hydroquinone metabolite	reactive metabolite family	hydroquinone metabolite	pref
+hydroquinone metabolite	xrm:1500200	hydroquinone metabolite	reactive metabolite family	hydroquinone_metabolite	synonym
+hydroxylamine	xrm:1500018	hydroxylamine	reactive metabolite family	hydroxylamine	pref
+hydroxylamine formation	xrm:0000122	hydroxylamine formation	chemical transformation	hydroxylamine formation	pref
+hydroxylamine metabolite	xrm:1500111	hydroxylamine metabolite	reactive metabolite family	hydroxylamine metabolite	pref
+hydroxylamine metabolite	xrm:1500111	hydroxylamine metabolite	reactive metabolite family	hydroxylamine_metabolite	synonym
+hydroxylation	xrm:0000100	hydroxylation	chemical transformation	hydroxylation	pref
+idiosyncratic toxicity risk	xrm:1400118	idiosyncratic toxicity risk	medchem liability	idiosyncratic toxicity risk	pref
+idiosyncratic toxicity risk	xrm:1400118	idiosyncratic toxicity risk	medchem liability	idiosyncratic_toxicity_risk	synonym
+imidazole	xrm:1600112	imidazole	site type	imidazole	pref
+imine metabolite	xrm:1500125	imine metabolite	reactive metabolite family	imine metabolite	pref
+imine metabolite	xrm:1500125	imine metabolite	reactive metabolite family	imine_metabolite	synonym
+imine methide	xrm:1500104	imine methide	reactive metabolite family	imine methide	pref
+imine methide	xrm:1500104	imine methide	reactive metabolite family	imine_methide	synonym
+imine methide formation	xrm:0000306	imine-methide formation	metabolism phase	imine methide formation	synonym
+imine-enamine tautomerization	xrm:0002002	imine–enamine tautomerization	chemical transformation	imine–enamine tautomerization	pref
+imine-methide formation	xrm:0000306	imine-methide formation	metabolism phase	imine-methide formation	pref
+iminium	xrm:1500014	iminium	reactive metabolite family	iminium	pref
+iminium formation	xrm:0000305	iminium ion formation	chemical transformation	iminium formation	synonym
+iminium formation class	xrm:1200208	iminium formation class	phase I reaction family	iminium formation class	pref
+iminium ion formation	xrm:0000305	iminium ion formation	chemical transformation	iminium ion formation	pref
+iminium metabolite	xrm:1500130	iminium metabolite	reactive metabolite family	iminium metabolite	pref
+iminium metabolite	xrm:1500130	iminium metabolite	reactive metabolite family	iminium_metabolite	synonym
+iminium risk	xrm:1400123	iminium risk	medchem liability	iminium risk	pref
+iminium risk	xrm:1400123	iminium risk	medchem liability	iminium_risk	synonym
+inactive metabolite	xrm:2300011	pharmacologically inactive metabolite	pharmacological role	inactive metabolite	synonym
+inactive parent	xrm:2300015	inactive parent	pharmacological role	inactive parent	pref
+indole	xrm:1600113	indole	site type	indole	pref
+intermediate metabolite formation	xrm:1000101	intermediate metabolite formation	metabolism phase	intermediate metabolite formation	pref
+intramolecular amidation	xrm:0000633	lactamization	chemical transformation	intramolecular amidation	synonym
+intramolecular esterification	xrm:0000632	lactonization	chemical transformation	intramolecular esterification	synonym
+iodide leaving group	xrm:2200020	iodide leaving group	leaving group	iodide leaving group	pref
+ipso substitution	xrm:0004004	ipso substitution	chemical transformation	ipso substitution	pref
+isocyanate	xrm:1500108	isocyanate	reactive metabolite family	isocyanate	pref
+isocyanate glutathionation	xrm:0001034	isocyanate glutathionation	metabolism phase	isocyanate glutathionation	pref
+isocyanate leaving fragment	xrm:2200036	isocyanate leaving fragment	leaving group	isocyanate leaving fragment	pref
+isomerization	xrm:0002003	isomerization	chemical transformation	isomerization	pref
+isopropyl leaving group	xrm:2200013	isopropyl leaving group	leaving group	isopropyl leaving group	pref
+ketene	xrm:1500109	ketene	reactive metabolite family	ketene	pref
+keto-enol tautomerization	xrm:0002001	keto–enol tautomerization	chemical transformation	keto–enol tautomerization	pref
+ketone metabolite	xrm:1500229	ketone metabolite	reactive metabolite family	ketone metabolite	pref
+ketone metabolite	xrm:1500229	ketone metabolite	reactive metabolite family	ketone_metabolite	synonym
+ketone reduction	xrm:0000521	ketone reduction	chemical transformation	ketone reduction	pref
+ketone/aldehyde reduction	xrm:0000520	oxygen reduction	chemical transformation	ketone/aldehyde reduction	synonym
+lactam formation	xrm:0000633	lactamization	chemical transformation	lactam formation	synonym
+lactam hydrolysis	xrm:0000404	lactam hydrolysis	chemical transformation	lactam hydrolysis	pref
+lactam metabolite	xrm:1500211	lactam metabolite	reactive metabolite family	lactam metabolite	pref
+lactam metabolite	xrm:1500211	lactam metabolite	reactive metabolite family	lactam_metabolite	synonym
+lactamization	xrm:0000633	lactamization	chemical transformation	lactamization	pref
+lactone formation	xrm:0000632	lactonization	chemical transformation	lactone formation	synonym
+lactone hydrolysis	xrm:0000403	lactone hydrolysis	chemical transformation	lactone hydrolysis	pref
+lactone metabolite	xrm:1500212	lactone metabolite	reactive metabolite family	lactone metabolite	pref
+lactone metabolite	xrm:1500212	lactone metabolite	reactive metabolite family	lactone_metabolite	synonym
+lactonization	xrm:0000632	lactonization	chemical transformation	lactonization	pref
+leaving group	xrm:2200000	leaving group	leaving group	leaving group	pref
+leaving group	xrm:2200000	leaving group	leaving group	leaving_group	synonym
+less active metabolite	xrm:2300018	less active metabolite	pharmacological role	less active metabolite	pref
+liability	xrm:1400000	medchem liability	medchem liability	liability	synonym
+lipid adduct	xrm:1500235	lipid binding	reactive metabolite family	lipid adduct	synonym
+lipid binding	xrm:1500235	lipid binding	reactive metabolite family	lipid binding	pref
+lipophilicity decreasing	xrm:1400116	lipophilicity decreasing	medchem liability	lipophilicity decreasing	pref
+lipophilicity decreasing	xrm:1400116	lipophilicity decreasing	medchem liability	lipophilicity_decreasing	synonym
+macromolecular adduct formation	xrm:1500230	macromolecule binding	reactive metabolite family	macromolecular adduct formation	synonym
+macromolecule binding	xrm:1500230	macromolecule binding	reactive metabolite family	macromolecule binding	pref
+masked liability	xrm:1400017	masked liability	medchem liability	masked liability	pref
+masked liability	xrm:1400017	masked liability	medchem liability	masked_liability	synonym
+mass shift	xrm:1700011	mass shift	structural delta	mass shift	pref
+medchem liability	xrm:1400000	medchem liability	medchem liability	medchem liability	pref
+medchem liability	xrm:1400000	medchem liability	medchem liability	medchem_liability	synonym
+medchem structural alert	xrm:1400200	structural alert	medchem liability	medchem structural alert	synonym
+mercapturic acid	xrm:1500115	mercapturic acid	reactive metabolite family	mercapturic acid	pref
+mercapturic acid	xrm:1500115	mercapturic acid	reactive metabolite family	mercapturic_acid	synonym
+mercapturic acid formation	xrm:0001037	mercapturic acid formation	metabolism phase	mercapturic acid formation	pref
+mercapturic acid formation	xrm:0001037	mercapturic acid formation	metabolism phase	mercapturic_acid_formation	synonym
+mesylate leaving group	xrm:2200034	mesylate leaving group	leaving group	mesylate leaving group	pref
+meta aromatic carbon	xrm:1600134	meta aromatic carbon	site type	meta aromatic carbon	pref
+meta aromatic carbon	xrm:1600134	meta aromatic carbon	site type	meta_aromatic_carbon	synonym
+meta-hydroxylation	xrm:0000105	meta-hydroxylation	chemical transformation	meta-hydroxylation	pref
+metabolic activation	xrm:0003000	bioactivation	medchem liability	metabolic activation	synonym
+metabolic bioactivation	xrm:1400012	bioactivation	medchem liability	metabolic bioactivation	synonym
+metabolic blocking opportunity	xrm:1400018	metabolic blocking opportunity	medchem liability	metabolic blocking opportunity	pref
+metabolic blocking opportunity	xrm:1400018	metabolic blocking opportunity	medchem liability	metabolic_blocking_opportunity	synonym
+metabolic blocking vector	xrm:1400111	metabolic blocking vector	medchem liability	metabolic blocking vector	pref
+metabolic blocking vector	xrm:1400111	metabolic blocking vector	medchem liability	metabolic_blocking_vector	synonym
+metabolic detoxication phase i	xrm:0000001	phase I	metabolism phase	Metabolic Detoxication, Phase I	synonym
+metabolic detoxication phase ii	xrm:0000002	phase II	metabolism phase	Metabolic Detoxication, Phase II	synonym
+metabolic soft spot	xrm:1400010	metabolic soft spot	medchem liability	metabolic soft spot	pref
+metabolic soft spot	xrm:1400010	metabolic soft spot	medchem liability	metabolic_soft_spot	synonym
+metabolic soft-spot	xrm:1400010	metabolic soft spot	medchem liability	metabolic soft-spot	synonym
+metabolic switching risk	xrm:1400128	metabolic switching risk	medchem liability	metabolic switching risk	pref
+metabolic switching risk	xrm:1400128	metabolic switching risk	medchem liability	metabolic_switching_risk	synonym
+metabolism phase	xrm:1000000	metabolism phase	metabolism phase	metabolism phase	pref
+metabolism phase	xrm:1000000	metabolism phase	metabolism phase	metabolism_phase	synonym
+metabolite cardinality	xrm:7300000	metabolite cardinality	structural delta	metabolite cardinality	pref
+metabolite cardinality unspecified	xrm:7300003	metabolite cardinality unspecified	structural delta	metabolite cardinality unspecified	pref
+methyl blocking	xrm:1400113	methyl blocking	medchem liability	methyl blocking	pref
+methyl blocking	xrm:1400113	methyl blocking	medchem liability	methyl_blocking	synonym
+methyl conjugation	xrm:0001040	methylation	metabolism phase	methyl conjugation	synonym
+methyl leaving group	xrm:2200010	methyl leaving group	leaving group	methyl leaving group	pref
+methylated metabolite	xrm:1500223	methylated metabolite	reactive metabolite family	methylated metabolite	pref
+methylated metabolite	xrm:1500223	methylated metabolite	reactive metabolite family	methylated_metabolite	synonym
+methylation	xrm:0001040	methylation	metabolism phase	methylation	pref
+michael acceptor	xrm:1500016	Michael acceptor	reactive metabolite family	Michael acceptor	pref
+michael acceptor	xrm:1500016	Michael acceptor	reactive metabolite family	michael_acceptor	synonym
+michael acceptor metabolite	xrm:1500131	Michael acceptor metabolite	reactive metabolite family	Michael acceptor metabolite	pref
+michael acceptor metabolite	xrm:1500131	Michael acceptor metabolite	reactive metabolite family	michael_acceptor_metabolite	synonym
+michael addition	xrm:0004014	conjugate addition	chemical transformation	Michael addition	synonym
+michael glutathionation	xrm:0001031	Michael glutathionation	metabolism phase	Michael glutathionation	pref
+michael gsh conjugation	xrm:1300118	Michael GSH conjugation	phase II conjugation family	Michael GSH conjugation	pref
+michael gsh conjugation	xrm:1300118	Michael GSH conjugation	phase II conjugation family	michael_gsh_conjugation	synonym
+monooxygenation	xrm:1700100	monooxygenation	structural delta	monooxygenation	pref
+monooxygenation hydroxylation	xrm:0000100	hydroxylation	chemical transformation	monooxygenation hydroxylation	synonym
+more active metabolite	xrm:2300017	more active metabolite	pharmacological role	more active metabolite	pref
+multi-element site	xrm:7100007	multi-element site	site type	multi-element site	pref
+multi-step pathway member	xrm:7900002	multi-step pathway member	structural delta	multi-step pathway member	pref
+n+-glucuronidation	xrm:0001006	quaternary N-glucuronidation	metabolism phase	N+-glucuronidation	synonym
+n-acetylation	xrm:0001020	acetylation	metabolism phase	N-acetylation	synonym
+n-acetylation	xrm:0001021	N-acetylation	metabolism phase	N-acetylation	pref
+n-acetylation class	xrm:1300109	N-acetylation class	phase II conjugation family	N-acetylation class	pref
+n-acetylation class	xrm:1300109	N-acetylation class	phase II conjugation family	n_acetylation_class	synonym
+n-acetylcysteine adduct	xrm:1500219	N-acetylcysteine adduct	reactive metabolite family	N-acetylcysteine adduct	pref
+n-acetylcysteine adduct	xrm:1500219	N-acetylcysteine adduct	reactive metabolite family	n_acetylcysteine_adduct	synonym
+n-acetylcysteine conjugation	xrm:1300011	N-acetylcysteine conjugation	phase II conjugation family	N-acetylcysteine conjugation	pref
+n-acetylcysteine conjugation	xrm:1300011	N-acetylcysteine conjugation	phase II conjugation family	n_acetylcysteine_conjugation	synonym
+n-alkylation	xrm:0000611	N-alkylation	chemical transformation	N-alkylation	pref
+n-attachment	xrm:1600136	attachment atom N	site type	N-attachment	synonym
+n-carbamoyl glucuronidation	xrm:0001009	carbamoyl glucuronidation	metabolism phase	N-carbamoyl glucuronidation	synonym
+n-carboxylation	xrm:0000621	carboxylation	chemical transformation	N-carboxylation	synonym
+n-dealkylation	xrm:0000201	N-dealkylation	chemical transformation	N-dealkylation	pref
+n-dealkylation class	xrm:1200202	N-dealkylation class	phase I reaction family	N-dealkylation class	pref
+n-dealkylative cleavage	xrm:0000201	N-dealkylation	chemical transformation	N-dealkylative cleavage	synonym
+n-dearylation	xrm:0000720	dearylation	chemical transformation	N-dearylation	synonym
+n-decarboxylation	xrm:0000620	decarboxylation	chemical transformation	N-decarboxylation	synonym
+n-deethylation	xrm:0000206	N-deethylation	chemical transformation	N-deethylation	pref
+n-deformylation	xrm:0000671	deformylation	chemical transformation	N-deformylation	synonym
+n-deglucuronidation	xrm:0000700	deglucuronidation	chemical transformation	N-deglucuronidation	synonym
+n-deglycosidation	xrm:0000702	deglycosidation	chemical transformation	N-deglycosidation	synonym
+n-dehydroxylation	xrm:0000650	dehydroxylation	chemical transformation	N-dehydroxylation	synonym
+n-demethylation	xrm:0000205	N-demethylation	chemical transformation	N-demethylation	pref
+n-denitrosation	xrm:0000681	denitrosation	chemical transformation	N-denitrosation	synonym
+n-depropylation	xrm:0000207	N-depropylation	chemical transformation	N-depropylation	pref
+n-formylation	xrm:0000670	formylation	chemical transformation	N-formylation	synonym
+n-glucosidation	xrm:0001060	glycosylation	metabolism phase	N-glucosidation	synonym
+n-glucuronidation	xrm:0001005	N-glucuronidation	metabolism phase	N-glucuronidation	pref
+n-glucuronidation class	xrm:1300101	N-glucuronidation class	phase II conjugation family	N-glucuronidation class	pref
+n-glucuronidation class	xrm:1300101	N-glucuronidation class	phase II conjugation family	n_glucuronidation_class	synonym
+n-glucuronide	xrm:1500215	N-glucuronide	reactive metabolite family	N-glucuronide	pref
+n-glucuronide	xrm:1500215	N-glucuronide	reactive metabolite family	n_glucuronide	synonym
+n-glycosidation	xrm:0001060	glycosylation	metabolism phase	N-glycosidation	synonym
+n-hydroxylation	xrm:0000122	hydroxylamine formation	chemical transformation	N-hydroxylation	synonym
+n-methylation	xrm:0001042	N-methylation	metabolism phase	N-methylation	pref
+n-methylation class	xrm:1300107	N-methylation class	phase II conjugation family	N-methylation class	pref
+n-methylation class	xrm:1300107	N-methylation class	phase II conjugation family	n_methylation_class	synonym
+n-nitrosation	xrm:0000680	N-nitrosation	chemical transformation	N-nitrosation	pref
+n-nitroso cleavage	xrm:0000681	denitrosation	chemical transformation	N-nitroso cleavage	synonym
+n-nitroso formation	xrm:0000680	N-nitrosation	chemical transformation	N-nitroso formation	synonym
+n-oxidation	xrm:0000120	nitrogen oxidation	chemical transformation	N-oxidation	synonym
+n-oxidation	xrm:1200102	N-oxidation	phase I reaction family	N-oxidation	pref
+n-oxidation	xrm:1200102	N-oxidation	phase I reaction family	n_oxidation	synonym
+n-oxide formation	xrm:0000121	N-oxide formation	chemical transformation	N-oxide formation	pref
+n-oxide metabolite	xrm:1500122	N-oxide metabolite	reactive metabolite family	N-oxide metabolite	pref
+n-oxide metabolite	xrm:1500122	N-oxide metabolite	reactive metabolite family	n_oxide_metabolite	synonym
+n-oxide reduction	xrm:0000515	N-oxide reduction	chemical transformation	N-oxide reduction	pref
+n-sulfation	xrm:0001014	N-sulfation	metabolism phase	N-sulfation	pref
+n-sulfation class	xrm:1300104	N-sulfation class	phase II conjugation family	N-sulfation class	pref
+n-sulfation class	xrm:1300104	N-sulfation class	phase II conjugation family	n_sulfation_class	synonym
+nac adduct	xrm:1500219	N-acetylcysteine adduct	reactive metabolite family	NAC adduct	synonym
+napqi-type formation	xrm:0000303	quinone-imine formation	metabolism phase	NAPQI-type formation	synonym
+net oxidation	xrm:7000001	net oxidation	structural delta	net oxidation	pref
+net reduction	xrm:7000002	net reduction	structural delta	net reduction	pref
+nih shift	xrm:0004003	NIH shift	chemical transformation	NIH shift	pref
+nitrene	xrm:1500112	nitrene	reactive metabolite family	nitrene	pref
+nitrenium ion	xrm:1500203	nitrenium ion	reactive metabolite family	nitrenium ion	pref
+nitrenium ion	xrm:1500203	nitrenium ion	reactive metabolite family	nitrenium_ion	synonym
+nitrile	xrm:1600125	nitrile	site type	nitrile	pref
+nitrile cleavage	xrm:0000601	decyanidation	chemical transformation	nitrile cleavage	synonym
+nitrile formation	xrm:0000600	cyanidation	chemical transformation	nitrile formation	synonym
+nitrile hydrolysis	xrm:0000411	nitrile hydrolysis	chemical transformation	nitrile hydrolysis	pref
+nitrile hydrolysis rainbow	xrm:0000409	cyanide hydrolysis	chemical transformation	nitrile hydrolysis (Rainbow)	synonym
+nitro anion radical	xrm:1500134	nitro anion radical	reactive metabolite family	nitro anion radical	pref
+nitro anion radical	xrm:1500134	nitro anion radical	reactive metabolite family	nitro_anion_radical	synonym
+nitro reduction	xrm:0000511	nitro reduction	chemical transformation	nitro reduction	pref
+nitro reduction class	xrm:1200110	nitro reduction class	phase I reaction family	nitro reduction class	pref
+nitro reduction class	xrm:1200110	nitro reduction class	phase I reaction family	nitro_reduction_class	synonym
+nitro to amine reduction	xrm:0000512	nitro to amine reduction	chemical transformation	nitro to amine reduction	pref
+nitroarene	xrm:1600126	nitroarene	site type	nitroarene	pref
+nitroaromatic reduction	xrm:0000513	nitroaromatic reduction	chemical transformation	nitroaromatic reduction	pref
+nitrogen alkylation	xrm:0000611	N-alkylation	chemical transformation	nitrogen alkylation	synonym
+nitrogen gas leaving group	xrm:2200038	nitrogen gas leaving group	leaving group	nitrogen gas leaving group	pref
+nitrogen oxidation	xrm:0000120	nitrogen oxidation	chemical transformation	nitrogen oxidation	pref
+nitrogen oxidation class	xrm:1200102	N-oxidation	phase I reaction family	nitrogen oxidation class	synonym
+nitrogen reduction	xrm:0000510	nitrogen reduction	chemical transformation	nitrogen reduction	pref
+nitrogen site	xrm:7100002	nitrogen site	site type	nitrogen site	pref
+nitrosation	xrm:0000680	N-nitrosation	chemical transformation	nitrosation	synonym
+nitroso	xrm:1500017	nitroso	reactive metabolite family	nitroso	pref
+nitroso formation	xrm:0000123	nitroso formation	chemical transformation	nitroso formation	pref
+nitroso metabolite	xrm:1500110	nitroso metabolite	reactive metabolite family	nitroso metabolite	pref
+nitroso metabolite	xrm:1500110	nitroso metabolite	reactive metabolite family	nitroso_metabolite	synonym
+nitrosoarene	xrm:1500202	nitrosoarenes	reactive metabolite family	nitrosoarene	synonym
+nitrosoarenes	xrm:1500202	nitrosoarenes	reactive metabolite family	nitrosoarenes	pref
+no heavy-atom delta	xrm:7700010	no heavy-atom delta	structural delta	no heavy-atom delta	pref
+no leaving group	xrm:2200039	no leaving group	leaving group	no leaving group	pref
+non-cleaving transformation	xrm:2200039	no leaving group	leaving group	non-cleaving transformation	synonym
+non-oxygenative transformation	xrm:7400003	non-oxygenative transformation	structural delta	non-oxygenative transformation	pref
+nor metabolite	xrm:1500227	nor-metabolite	reactive metabolite family	nor_metabolite	synonym
+nor-metabolite	xrm:1500227	nor-metabolite	reactive metabolite family	nor-metabolite	pref
+nucleic acid binding	xrm:1500231	DNA binding	reactive metabolite family	nucleic acid binding	synonym
+nucleophile exposure	xrm:7500003	nucleophile exposure	reactive metabolite family	nucleophile exposure	pref
+nucleophilic aromatic substitution	xrm:0004015	nucleophilic aromatic substitution	chemical transformation	nucleophilic aromatic substitution	pref
+o-acetylation	xrm:0001022	O-acetylation	metabolism phase	O-acetylation	pref
+o-acetylation class	xrm:1300110	O-acetylation class	phase II conjugation family	O-acetylation class	pref
+o-acetylation class	xrm:1300110	O-acetylation class	phase II conjugation family	o_acetylation_class	synonym
+o-alkylation	xrm:0000612	O-alkylation	chemical transformation	O-alkylation	pref
+o-attachment	xrm:1600135	attachment atom O	site type	O-attachment	synonym
+o-dealkylation	xrm:0000202	O-dealkylation	chemical transformation	O-dealkylation	pref
+o-dealkylation class	xrm:1200203	O-dealkylation class	phase I reaction family	O-dealkylation class	pref
+o-dearylation	xrm:0000720	dearylation	chemical transformation	O-dearylation	synonym
+o-deethylation	xrm:0000211	O-deethylation	chemical transformation	O-deethylation	pref
+o-deglucuronidation	xrm:0000700	deglucuronidation	chemical transformation	O-deglucuronidation	synonym
+o-deglycosidation	xrm:0000702	deglycosidation	chemical transformation	O-deglycosidation	synonym
+o-demethylation	xrm:0000209	O-demethylation	chemical transformation	O-demethylation	pref
+o-desulfation	xrm:0000701	desulfation	chemical transformation	O-desulfation	synonym
+o-glucosidation	xrm:0001060	glycosylation	metabolism phase	O-glucosidation	synonym
+o-glucuronidation	xrm:0001001	O-glucuronidation	metabolism phase	O-glucuronidation	pref
+o-glucuronidation class	xrm:1300100	O-glucuronidation class	phase II conjugation family	O-glucuronidation class	pref
+o-glucuronidation class	xrm:1300100	O-glucuronidation class	phase II conjugation family	o_glucuronidation_class	synonym
+o-glycosidation	xrm:0001060	glycosylation	metabolism phase	O-glycosidation	synonym
+o-methylation	xrm:0001041	O-methylation	metabolism phase	O-methylation	pref
+o-methylation class	xrm:1300106	O-methylation class	phase II conjugation family	O-methylation class	pref
+o-methylation class	xrm:1300106	O-methylation class	phase II conjugation family	o_methylation_class	synonym
+o-sulfation	xrm:0001011	O-sulfation	metabolism phase	O-sulfation	pref
+o-sulfation class	xrm:1300103	O-sulfation class	phase II conjugation family	O-sulfation class	pref
+o-sulfation class	xrm:1300103	O-sulfation class	phase II conjugation family	o_sulfation_class	synonym
+oh loss	xrm:0000650	dehydroxylation	chemical transformation	OH loss	synonym
+omega 1 carbon	xrm:1600131	omega-1 carbon	site type	omega_1_carbon	synonym
+omega carbon	xrm:1600130	omega carbon	site type	omega carbon	pref
+omega carbon	xrm:1600130	omega carbon	site type	omega_carbon	synonym
+omega-1 carbon	xrm:1600131	omega-1 carbon	site type	omega-1 carbon	pref
+omega-1 hydroxylation	xrm:0000109	ω-1 hydroxylation	chemical transformation	omega-1 hydroxylation	synonym
+omega-hydroxylation	xrm:0000108	ω-hydroxylation	chemical transformation	omega-hydroxylation	synonym
+one-step quinone formation	xrm:0000307	one-step quinone formation	metabolism phase	one-step quinone formation	pref
+ortho aromatic carbon	xrm:1600133	ortho aromatic carbon	site type	ortho aromatic carbon	pref
+ortho aromatic carbon	xrm:1600133	ortho aromatic carbon	site type	ortho_aromatic_carbon	synonym
+ortho quinone	xrm:1500101	ortho-quinone	reactive metabolite family	ortho_quinone	synonym
+ortho-hydroxylation	xrm:0000104	ortho-hydroxylation	chemical transformation	ortho-hydroxylation	pref
+ortho-quinone	xrm:1500101	ortho-quinone	reactive metabolite family	ortho-quinone	pref
+ortho-quinone formation	xrm:0000301	ortho-quinone formation	metabolism phase	ortho-quinone formation	pref
+oxidation	xrm:0000020	oxidation	chemical transformation	oxidation	pref
+oxidative dealkylation	xrm:0000200	dealkylation	chemical transformation	oxidative dealkylation	synonym
+oxidative deamination	xrm:0000208	oxidative deamination	chemical transformation	oxidative deamination	pref
+oxidative deamination class	xrm:1200104	oxidative deamination class	phase I reaction family	oxidative deamination class	pref
+oxidative deamination class	xrm:1200104	oxidative deamination class	phase I reaction family	oxidative_deamination_class	synonym
+oxidative debromination	xrm:0000216	oxidative debromination	chemical transformation	oxidative debromination	pref
+oxidative dechlorination	xrm:0000215	oxidative dechlorination	chemical transformation	oxidative dechlorination	pref
+oxidative defluorination	xrm:0000214	oxidative defluorination	chemical transformation	oxidative defluorination	pref
+oxidative dehalogenation	xrm:0000210	oxidative dehalogenation	chemical transformation	oxidative dehalogenation	pref
+oxidative dehalogenation	xrm:0000210	oxidative dehalogenation	chemical transformation	oxidative dehalogenation	synonym
+oxidative dehalogenation class	xrm:1200206	oxidative dehalogenation class	phase I reaction family	oxidative dehalogenation class	pref
+oxidative desulfuration	xrm:0000690	desulfuration	chemical transformation	oxidative desulfuration	synonym
+oxidative metabolism	xrm:0000020	oxidation	chemical transformation	oxidative metabolism	synonym
+oxidative n-dealkylation	xrm:0000201	N-dealkylation	chemical transformation	oxidative N-dealkylation	synonym
+oxidative n-demethylation	xrm:0000205	N-demethylation	chemical transformation	oxidative N-demethylation	synonym
+oxidative o-dealkylation	xrm:0000202	O-dealkylation	chemical transformation	oxidative O-dealkylation	synonym
+oxidative o-demethylation	xrm:0000209	O-demethylation	chemical transformation	oxidative O-demethylation	synonym
+oxidative s-demethylation	xrm:0000217	S-demethylation	chemical transformation	oxidative S-demethylation	synonym
+oxime reduction	xrm:0000516	oxime reduction	chemical transformation	oxime reduction	pref
+oxirane formation	xrm:0000110	epoxidation	chemical transformation	oxirane formation	synonym
+oxirane metabolite	xrm:1500012	epoxide	reactive metabolite family	oxirane metabolite	synonym
+oxygen alkylation	xrm:0000612	O-alkylation	chemical transformation	oxygen alkylation	synonym
+oxygen gain	xrm:7700001	oxygen gain	structural delta	oxygen gain	pref
+oxygen loss	xrm:7700002	oxygen loss	structural delta	oxygen loss	pref
+oxygen reduction	xrm:0000520	oxygen reduction	chemical transformation	oxygen reduction	pref
+oxygen reduction class	xrm:1200214	oxygen reduction class	phase I reaction family	oxygen reduction class	pref
+oxygen site	xrm:7100003	oxygen site	site type	oxygen site	pref
+oxygen-triggered cleavage	xrm:7400002	oxygen-triggered cleavage	structural delta	oxygen-triggered cleavage	pref
+oxygenation outcome	xrm:7400000	oxygenation outcome	structural delta	oxygenation outcome	pref
+oxygenation outcome unspecified	xrm:7400004	oxygenation outcome unspecified	structural delta	oxygenation outcome unspecified	pref
+p s-to p o	xrm:0000690	desulfuration	chemical transformation	P=S to P=O	synonym
+para aromatic carbon	xrm:1600132	para aromatic carbon	site type	para aromatic carbon	pref
+para aromatic carbon	xrm:1600132	para aromatic carbon	site type	para_aromatic_carbon	synonym
+para quinone	xrm:1500102	para-quinone	reactive metabolite family	para_quinone	synonym
+para-hydroxylation	xrm:0000103	para-hydroxylation	chemical transformation	para-hydroxylation	pref
+para-quinone	xrm:1500102	para-quinone	reactive metabolite family	para-quinone	pref
+para-quinone formation	xrm:0000302	para-quinone formation	metabolism phase	para-quinone formation	pref
+pathway-step role	xrm:7900000	pathway-step role	structural delta	pathway-step role	pref
+pathway-step role unspecified	xrm:7900005	pathway-step role unspecified	structural delta	pathway-step role unspecified	pref
+penultimate carbon hydroxylation	xrm:0000109	ω-1 hydroxylation	chemical transformation	penultimate carbon hydroxylation	synonym
+pharma role	xrm:2300000	pharmacological role	pharmacological role	pharma_role	synonym
+pharmacological role	xrm:2300000	pharmacological role	pharmacological role	pharmacological role	pref
+pharmacologically active metabolite	xrm:2300010	pharmacologically active metabolite	pharmacological role	pharmacologically active metabolite	pref
+pharmacologically inactive metabolite	xrm:2300011	pharmacologically inactive metabolite	pharmacological role	pharmacologically inactive metabolite	pref
+pharmacology role	xrm:2300000	pharmacological role	pharmacological role	pharmacology role	synonym
+phase	xrm:1000000	metabolism phase	metabolism phase	phase	synonym
+phase 1	xrm:0000001	phase I	metabolism phase	phase 1	synonym
+phase 1 metabolism	xrm:0000001	phase I	metabolism phase	phase 1 metabolism	synonym
+phase 1 reaction family	xrm:1200000	phase I reaction family	phase I reaction family	phase_1_reaction_family	synonym
+phase 2	xrm:0000002	phase II	metabolism phase	phase 2	synonym
+phase 2 conjugation family	xrm:1300000	phase II conjugation family	phase II conjugation family	phase_2_conjugation_family	synonym
+phase 2 metabolism	xrm:0000002	phase II	metabolism phase	phase 2 metabolism	synonym
+phase 3	xrm:0000003	phase III transport	metabolism phase	phase 3	synonym
+phase i	xrm:0000001	phase I	metabolism phase	phase I	pref
+phase i family	xrm:1200000	phase I reaction family	phase I reaction family	phase I family	synonym
+phase i reaction family	xrm:1200000	phase I reaction family	phase I reaction family	phase I reaction family	pref
+phase ii	xrm:0000002	phase II	metabolism phase	phase II	pref
+phase ii conjugation family	xrm:1300000	phase II conjugation family	phase II conjugation family	phase II conjugation family	pref
+phase ii deconjugation	xrm:0000732	deconjugation	chemical transformation	phase II deconjugation	synonym
+phase iii	xrm:0000003	phase III transport	metabolism phase	phase III	synonym
+phase iii transport	xrm:0000003	phase III transport	metabolism phase	phase III transport	pref
+phenol	xrm:1600102	phenol	site type	phenol	pref
+phenol leaving fragment	xrm:2200023	phenol leaving fragment	leaving group	phenol leaving fragment	pref
+phenol metabolite	xrm:1500118	phenol metabolite	reactive metabolite family	phenol metabolite	pref
+phenol metabolite	xrm:1500118	phenol metabolite	reactive metabolite family	phenol_metabolite	synonym
+phenolic glucuronidation	xrm:0001002	phenolic glucuronidation	metabolism phase	phenolic glucuronidation	pref
+phenolic or alcoholic o-glucuronidation	xrm:1300100	O-glucuronidation class	phase II conjugation family	phenolic or alcoholic O-glucuronidation	synonym
+phenolic oxygen	xrm:1600102	phenol	site type	phenolic oxygen	synonym
+phenolic site	xrm:1600022	phenolic site	site type	phenolic site	pref
+phenolic site	xrm:1600022	phenolic site	site type	phenolic_site	synonym
+phenolic sulfation	xrm:0001012	phenolic sulfation	metabolism phase	phenolic sulfation	pref
+phosphate ester hydrolysis	xrm:0000410	dephosphorylation	chemical transformation	phosphate ester hydrolysis	synonym
+phosphate leaving group	xrm:2200026	phosphate leaving group	leaving group	phosphate leaving group	pref
+phosphorus site	xrm:7100006	phosphorus site	site type	phosphorus site	pref
+phosphorylation	xrm:1300012	phosphorylation	phase II conjugation family	phosphorylation	pref
+phosphorylation conjugation	xrm:1300114	phosphorylation conjugation	phase II conjugation family	phosphorylation conjugation	pref
+phosphorylation conjugation	xrm:1300114	phosphorylation conjugation	phase II conjugation family	phosphorylation_conjugation	synonym
+polarity decreasing	xrm:1400115	polarity decreasing	medchem liability	polarity decreasing	pref
+polarity decreasing	xrm:1400115	polarity decreasing	medchem liability	polarity_decreasing	synonym
+polarity increasing	xrm:1400021	polarity increasing	medchem liability	polarity increasing	pref
+polarity increasing	xrm:1400021	polarity increasing	medchem liability	polarity_increasing	synonym
+preparatory intermediate step	xrm:7900003	preparatory intermediate step	structural delta	preparatory intermediate step	pref
+primary alcohol oxidation	xrm:0000311	primary alcohol oxidation	chemical transformation	primary alcohol oxidation	pref
+primary amine	xrm:1600106	primary amine	site type	primary amine	pref
+primary amine	xrm:1600106	primary amine	site type	primary_amine	synonym
+primary amine n-oxidation	xrm:0000124	primary amine N-oxidation	chemical transformation	primary amine N-oxidation	pref
+primary carbon hydroxylation	xrm:0000140	primary carbon hydroxylation	chemical transformation	primary carbon hydroxylation	pref
+process facet	xrm:0004000	process facet	chemical transformation	process facet	pref
+prodrug	xrm:2300012	prodrug	pharmacological role	prodrug	pref
+prodrug activation	xrm:1400127	prodrug activation	medchem liability	prodrug activation	pref
+prodrug activation	xrm:1400127	prodrug activation	medchem liability	prodrug_activation	synonym
+propyl leaving group	xrm:2200012	propyl leaving group	leaving group	propyl leaving group	pref
+protein adduct	xrm:1500233	protein binding	reactive metabolite family	protein adduct	synonym
+protein adduct formation	xrm:1500233	protein binding	reactive metabolite family	protein adduct formation	synonym
+protein binding	xrm:1500233	protein binding	reactive metabolite family	protein binding	pref
+pyridine	xrm:1600114	pyridine	site type	pyridine	pref
+pyrimidine	xrm:1600115	pyrimidine	site type	pyrimidine	pref
+quaternary ammonium glucuronide	xrm:1500216	quaternary ammonium glucuronide	reactive metabolite family	quaternary ammonium glucuronide	pref
+quaternary ammonium glucuronide	xrm:1500216	quaternary ammonium glucuronide	reactive metabolite family	quaternary_ammonium_glucuronide	synonym
+quaternary n-glucuronidation	xrm:0001006	quaternary N-glucuronidation	metabolism phase	quaternary N-glucuronidation	pref
+quaternary n-glucuronidation class	xrm:1300116	quaternary N-glucuronidation class	phase II conjugation family	quaternary N-glucuronidation class	pref
+quaternary n-glucuronidation class	xrm:1300116	quaternary N-glucuronidation class	phase II conjugation family	quaternary_n_glucuronidation_class	synonym
+quinoid	xrm:1500010	quinone	reactive metabolite family	quinoid	synonym
+quinoid -system formation	xrm:8000005	quinoid π-system formation	structural delta	quinoid π-system formation	pref
+quinoid metabolite	xrm:1500100	quinone-like reactive metabolite	reactive metabolite family	quinoid metabolite	synonym
+quinonation	xrm:0000300	quinone formation	metabolism phase	quinonation	synonym
+quinone	xrm:1500010	quinone	reactive metabolite family	quinone	pref
+quinone formation	xrm:0000300	quinone formation	metabolism phase	quinone formation	pref
+quinone formation class	xrm:1200207	quinone formation class	phase I reaction family	quinone formation class	pref
+quinone glutathionation	xrm:0001036	quinone glutathionation	metabolism phase	quinone glutathionation	pref
+quinone imine	xrm:1500011	quinone imine	reactive metabolite family	quinone imine	pref
+quinone imine	xrm:1500011	quinone imine	reactive metabolite family	quinone_imine	synonym
+quinone imine formation	xrm:0000303	quinone-imine formation	metabolism phase	quinone imine formation	synonym
+quinone like reactive metabolite	xrm:1500100	quinone-like reactive metabolite	reactive metabolite family	quinone_like_reactive_metabolite	synonym
+quinone methide	xrm:1500103	quinone methide	reactive metabolite family	quinone methide	pref
+quinone methide	xrm:1500103	quinone methide	reactive metabolite family	quinone_methide	synonym
+quinone methide formation	xrm:0000304	quinone-methide formation	metabolism phase	quinone methide formation	synonym
+quinone reduction	xrm:0000523	quinone reduction	chemical transformation	quinone reduction	pref
+quinone risk	xrm:1400120	quinone risk	medchem liability	quinone risk	pref
+quinone risk	xrm:1400120	quinone risk	medchem liability	quinone_risk	synonym
+quinone species formation	xrm:0000300	quinone formation	metabolism phase	quinone species formation	synonym
+quinone-imine formation	xrm:0000303	quinone-imine formation	metabolism phase	quinone-imine formation	pref
+quinone-like reactive metabolite	xrm:1500100	quinone-like reactive metabolite	reactive metabolite family	quinone-like reactive metabolite	pref
+quinone-methide formation	xrm:0000304	quinone-methide formation	metabolism phase	quinone-methide formation	pref
+r-hsa-156588	xrm:0001000	glucuronidation	metabolism phase	R-HSA-156588	synonym
+radical formation	xrm:0004019	radical formation	chemical transformation	radical formation	pref
+radical recombination metabolite	xrm:0004016	radical recombination metabolite	chemical transformation	radical recombination metabolite	pref
+rainbow stable oxygenation	xrm:0000010	stable oxygenation	phase I reaction family	Rainbow stable oxygenation	synonym
+rainbow unstable oxygenation	xrm:0000011	unstable oxygenation	phase I reaction family	Rainbow unstable oxygenation	synonym
+reactive conjugate	xrm:1500030	reactive conjugate	reactive metabolite family	reactive conjugate	pref
+reactive conjugate formation	xrm:1400030	forms reactive conjugate	medchem liability	reactive conjugate formation	synonym
+reactive conjugated metabolite	xrm:1500030	reactive conjugate	reactive metabolite family	reactive conjugated metabolite	synonym
+reactive intermediate risk	xrm:1400117	reactive intermediate risk	medchem liability	reactive intermediate risk	pref
+reactive intermediate risk	xrm:1400117	reactive intermediate risk	medchem liability	reactive_intermediate_risk	synonym
+reactive metabolite	xrm:1400014	reactive metabolite	medchem liability	reactive metabolite	pref
+reactive metabolite	xrm:1400014	reactive metabolite	medchem liability	reactive_metabolite	synonym
+reactive metabolite	xrm:1500000	reactive metabolite family	reactive metabolite family	reactive metabolite	synonym
+reactive metabolite family	xrm:1500000	reactive metabolite family	reactive metabolite family	reactive metabolite family	pref
+reactive metabolite family	xrm:1500000	reactive metabolite family	reactive metabolite family	reactive_metabolite_family	synonym
+reactive metabolite formation	xrm:0003002	reactive metabolite formation	medchem liability	reactive metabolite formation	pref
+reactivity-neutral step	xrm:7500004	reactivity-neutral step	reactive metabolite family	reactivity-neutral step	pref
+rearomatization	xrm:0004002	rearomatization	chemical transformation	rearomatization	pref
+rearrangement	xrm:0002004	rearrangement	chemical transformation	rearrangement	pref
+rearrangement topology	xrm:7200005	rearrangement topology	structural delta	rearrangement topology	pref
+redox polarity	xrm:7000000	redox polarity	structural delta	redox polarity	pref
+redox polarity unspecified	xrm:7000004	redox polarity unspecified	structural delta	redox polarity unspecified	pref
+redox-neutral	xrm:7000003	redox-neutral	structural delta	redox-neutral	pref
+reduction	xrm:0000014	reduction	chemical transformation	reduction	pref
+reductive dechlorination	xrm:0000542	reductive dechlorination	chemical transformation	reductive dechlorination	pref
+reductive defluorination	xrm:0000541	reductive defluorination	chemical transformation	reductive defluorination	pref
+reductive dehalogenation	xrm:0000540	reductive dehalogenation	chemical transformation	reductive dehalogenation	pref
+reductive dehalogenation class	xrm:1200111	reductive dehalogenation class	phase I reaction family	reductive dehalogenation class	pref
+reductive dehalogenation class	xrm:1200111	reductive dehalogenation class	phase I reaction family	reductive_dehalogenation_class	synonym
+reductive saturation	xrm:0000500	hydrogenation	chemical transformation	reductive saturation	synonym
+ring closure	xrm:7200006	ring closure	structural delta	ring closure	pref
+ring contracted	xrm:7600005	ring contracted	structural delta	ring contracted	pref
+ring contraction	xrm:0004010	ring contraction	chemical transformation	ring contraction	pref
+ring contraction delta	xrm:1700112	ring contraction delta	structural delta	ring contraction delta	pref
+ring expanded	xrm:7600004	ring expanded	structural delta	ring expanded	pref
+ring expansion	xrm:0004009	ring expansion	chemical transformation	ring expansion	pref
+ring expansion delta	xrm:1700111	ring expansion delta	structural delta	ring expansion delta	pref
+ring fate	xrm:7600000	ring fate	structural delta	ring fate	pref
+ring fate unspecified	xrm:7600006	ring fate unspecified	structural delta	ring fate unspecified	pref
+ring formed	xrm:7600003	ring formed	structural delta	ring formed	pref
+ring opened	xrm:7600002	ring opened	structural delta	ring opened	pref
+ring opening	xrm:0004008	ring opening	chemical transformation	ring opening	pref
+ring opening topology	xrm:7200007	ring opening topology	structural delta	ring opening topology	pref
+ring oxidation	xrm:1100016	ring oxidation	chemical transformation	ring oxidation	pref
+ring preserved	xrm:7600001	ring preserved	structural delta	ring preserved	pref
+ring site	xrm:1600012	ring site	site type	ring site	pref
+ring site	xrm:1600012	ring site	site type	ring_site	synonym
+ring-forming cyclization	xrm:0000640	cyclization	chemical transformation	ring-forming cyclization	synonym
+rna adduct	xrm:1500232	RNA binding	reactive metabolite family	RNA adduct	synonym
+rna binding	xrm:1500232	RNA binding	reactive metabolite family	RNA binding	pref
+s-alkylation	xrm:0000613	S-alkylation	chemical transformation	S-alkylation	pref
+s-attachment	xrm:1600137	attachment atom S	site type	S-attachment	synonym
+s-cysteination	xrm:1300010	cysteine conjugation	phase II conjugation family	S-cysteination	synonym
+s-dealkylation	xrm:0000203	S-dealkylation	chemical transformation	S-dealkylation	pref
+s-dealkylation class	xrm:1200204	S-dealkylation class	phase I reaction family	S-dealkylation class	pref
+s-deglucuronidation	xrm:0000700	deglucuronidation	chemical transformation	S-deglucuronidation	synonym
+s-demethylation	xrm:0000217	S-demethylation	chemical transformation	S-demethylation	pref
+s-glucuronidation	xrm:0001007	S-glucuronidation	metabolism phase	S-glucuronidation	pref
+s-glucuronidation class	xrm:1300120	S-glucuronidation class	phase II conjugation family	S-glucuronidation class	pref
+s-glucuronidation class	xrm:1300120	S-glucuronidation class	phase II conjugation family	S_glucuronidation_class	synonym
+s-introduction	xrm:0000691	sulfuration	chemical transformation	S introduction	synonym
+s-methylation	xrm:0001043	S-methylation	metabolism phase	S-methylation	pref
+s-methylation class	xrm:1300108	S-methylation class	phase II conjugation family	S-methylation class	pref
+s-methylation class	xrm:1300108	S-methylation class	phase II conjugation family	s_methylation_class	synonym
+s-oxidation	xrm:0000130	sulfur oxidation	chemical transformation	S-oxidation	synonym
+s-oxidation	xrm:1200103	S-oxidation	phase I reaction family	S-oxidation	pref
+s-oxidation	xrm:1200103	S-oxidation	phase I reaction family	s_oxidation	synonym
+s-oxide reduction	xrm:0000533	sulfo reduction	chemical transformation	S-oxide reduction	synonym
+scaffold hop opportunity	xrm:1400114	scaffold hop opportunity	medchem liability	scaffold hop opportunity	pref
+scaffold hop opportunity	xrm:1400114	scaffold hop opportunity	medchem liability	scaffold_hop_opportunity	synonym
+se-methylation	xrm:0000710	Se-methylation	metabolism phase	Se-methylation	pref
+secondary alcohol oxidation	xrm:0000312	secondary alcohol oxidation	chemical transformation	secondary alcohol oxidation	pref
+secondary amine	xrm:1600105	secondary amine	site type	secondary amine	pref
+secondary amine	xrm:1600105	secondary amine	site type	secondary_amine	synonym
+secondary carbon hydroxylation	xrm:0000141	secondary carbon hydroxylation	chemical transformation	secondary carbon hydroxylation	pref
+selenium methylation	xrm:0000710	Se-methylation	metabolism phase	selenium methylation	synonym
+sequential biotransformation	xrm:1000100	sequential metabolism	metabolism phase	sequential biotransformation	synonym
+sequential metabolism	xrm:1000100	sequential metabolism	metabolism phase	sequential metabolism	pref
+serine conjugation	xrm:0001054	serine conjugation	metabolism phase	serine conjugation	pref
+single- to double-bond dehydrogenation	xrm:0000316	single- to double-bond dehydrogenation	chemical transformation	single- to double-bond dehydrogenation	pref
+single-metabolite transformation	xrm:7300001	single-metabolite transformation	structural delta	single-metabolite transformation	pref
+single-to-double bond dehydrogenation class	xrm:1200209	single-to-double bond dehydrogenation class	phase I reaction family	single-to-double bond dehydrogenation class	pref
+site aromaticity	xrm:7800000	site aromaticity	site type	site aromaticity	pref
+site aromaticity	xrm:7800000	site aromaticity	site type	site_aromaticity	synonym
+site aromaticity unspecified	xrm:7800003	site aromaticity unspecified	site type	site aromaticity unspecified	pref
+site atom class	xrm:7100000	site atom class	site type	site atom class	pref
+site atom class	xrm:7100000	site atom class	site type	site_atom_class	synonym
+site atom class unspecified	xrm:7100008	site atom class unspecified	site type	site atom class unspecified	pref
+site class	xrm:1600000	site type	site type	site class	synonym
+site type	xrm:1600000	site type	site type	site type	pref
+site type	xrm:1600000	site type	site type	site_type	synonym
+small alkyl leaving group	xrm:2200032	small alkyl leaving group	leaving group	small alkyl leaving group	pref
+so class	xrm:0000010	stable oxygenation	phase I reaction family	SO class	synonym
+so class full name	xrm:0000010	stable oxygenation	phase I reaction family	SO class (full name)	synonym
+soft spot	xrm:1400010	metabolic soft spot	medchem liability	soft spot	synonym
+species difference risk	xrm:1400129	species-difference risk	medchem liability	species_difference_risk	synonym
+species-difference risk	xrm:1400129	species-difference risk	medchem liability	species-difference risk	pref
+stable circulating metabolite	xrm:1400125	stable circulating metabolite	medchem liability	stable circulating metabolite	pref
+stable circulating metabolite	xrm:1400125	stable circulating metabolite	medchem liability	stable_circulating_metabolite	synonym
+stable conjugate	xrm:1500031	stable conjugate	reactive metabolite family	stable conjugate	pref
+stable metabolite	xrm:1400015	stable metabolite	medchem liability	stable metabolite	pref
+stable metabolite	xrm:1400015	stable metabolite	medchem liability	stable_metabolite	synonym
+stable oxygen addition	xrm:7400001	stable oxygen addition	structural delta	stable oxygen addition	pref
+stable oxygen addition class	xrm:0000010	stable oxygenation	phase I reaction family	stable oxygen addition class	synonym
+stable oxygenation	xrm:0000010	stable oxygenation	phase I reaction family	stable oxygenation	pref
+stable oxygenation	xrm:0000010	stable oxygenation	phase I reaction family	stable_oxygenation	synonym
+stereocenter	xrm:1600019	stereocenter	site type	stereocenter	pref
+stereochemical change	xrm:1700017	stereochemical change	structural delta	stereochemical change	pref
+structural alert	xrm:1400200	structural alert	medchem liability	structural alert	pref
+structural delta	xrm:1700000	structural delta	structural delta	structural delta	pref
+structural delta	xrm:1700000	structural delta	structural delta	structural_delta	synonym
+structural toxicophore	xrm:1400200	structural alert	medchem liability	structural toxicophore	synonym
+substitution	xrm:7200004	substitution	structural delta	substitution	pref
+sulfate conjugate	xrm:1500117	sulfate conjugate	reactive metabolite family	sulfate conjugate	pref
+sulfate conjugate	xrm:1500117	sulfate conjugate	reactive metabolite family	sulfate_conjugate	synonym
+sulfate conjugation	xrm:0001010	sulfation	metabolism phase	sulfate conjugation	synonym
+sulfate ester metabolite	xrm:1500217	sulfate ester metabolite	reactive metabolite family	sulfate ester metabolite	pref
+sulfate ester metabolite	xrm:1500217	sulfate ester metabolite	reactive metabolite family	sulfate_ester_metabolite	synonym
+sulfate hydrolysis	xrm:0000701	desulfation	chemical transformation	sulfate hydrolysis	synonym
+sulfate leaving group	xrm:2200027	sulfate leaving group	leaving group	sulfate leaving group	pref
+sulfate mass shift	xrm:1700105	sulfate mass shift	structural delta	sulfate mass shift	pref
+sulfation	xrm:0001010	sulfation	metabolism phase	sulfation	pref
+sulfenic acid	xrm:1500207	sulfenic acid	reactive metabolite family	sulfenic acid	pref
+sulfenic acid	xrm:1500207	sulfenic acid	reactive metabolite family	sulfenic_acid	synonym
+sulfenic acid metabolite	xrm:1500133	sulfenic acid metabolite	reactive metabolite family	sulfenic acid metabolite	pref
+sulfenic acid metabolite	xrm:1500133	sulfenic acid metabolite	reactive metabolite family	sulfenic_acid_metabolite	synonym
+sulfinic acid metabolite	xrm:1500208	sulfinic acid metabolite	reactive metabolite family	sulfinic acid metabolite	pref
+sulfinic acid metabolite	xrm:1500208	sulfinic acid metabolite	reactive metabolite family	sulfinic_acid_metabolite	synonym
+sulfo reduction	xrm:0000533	sulfo reduction	chemical transformation	sulfo reduction	pref
+sulfo reduction class	xrm:1200213	sulfo reduction class	phase I reaction family	sulfo reduction class	pref
+sulfo-conjugation	xrm:0001010	sulfation	metabolism phase	sulfo-conjugation	synonym
+sulfonate leaving group	xrm:2200034	mesylate leaving group	leaving group	sulfonate leaving group	synonym
+sulfonation	xrm:0001010	sulfation	metabolism phase	sulfonation	synonym
+sulfone formation	xrm:0000132	sulfone formation	chemical transformation	sulfone formation	pref
+sulfone metabolite	xrm:1500124	sulfone metabolite	reactive metabolite family	sulfone metabolite	pref
+sulfone metabolite	xrm:1500124	sulfone metabolite	reactive metabolite family	sulfone_metabolite	synonym
+sulfonic acid metabolite	xrm:1500209	sulfonic acid metabolite	reactive metabolite family	sulfonic acid metabolite	pref
+sulfonic acid metabolite	xrm:1500209	sulfonic acid metabolite	reactive metabolite family	sulfonic_acid_metabolite	synonym
+sulfoxidation	xrm:0000131	sulfoxidation	chemical transformation	sulfoxidation	pref
+sulfoxide formation	xrm:0000131	sulfoxidation	chemical transformation	sulfoxide formation	synonym
+sulfoxide metabolite	xrm:1500123	sulfoxide metabolite	reactive metabolite family	sulfoxide metabolite	pref
+sulfoxide metabolite	xrm:1500123	sulfoxide metabolite	reactive metabolite family	sulfoxide_metabolite	synonym
+sulfoxide reduction	xrm:0000531	sulfoxide reduction	chemical transformation	sulfoxide reduction	pref
+sulfoxide reduction	xrm:0000533	sulfo reduction	chemical transformation	sulfoxide reduction	synonym
+sulfur alkylation	xrm:0000613	S-alkylation	chemical transformation	sulfur alkylation	synonym
+sulfur oxidation	xrm:0000130	sulfur oxidation	chemical transformation	sulfur oxidation	pref
+sulfur oxidation class	xrm:1200103	S-oxidation	phase I reaction family	sulfur oxidation class	synonym
+sulfur reduction	xrm:0000530	sulfur reduction	chemical transformation	sulfur reduction	pref
+sulfur site	xrm:7100004	sulfur site	site type	sulfur site	pref
+sulfuration	xrm:0000691	sulfuration	chemical transformation	sulfuration	pref
+taurine conjugate	xrm:1500221	taurine conjugate	reactive metabolite family	taurine conjugate	pref
+taurine conjugate	xrm:1500221	taurine conjugate	reactive metabolite family	taurine_conjugate	synonym
+taurine conjugation	xrm:0001053	taurine conjugation	metabolism phase	taurine conjugation	pref
+taurine conjugation	xrm:0001053	taurine conjugation	metabolism phase	taurine_conjugation	synonym
+taurine conjugation class	xrm:1300112	taurine conjugation class	phase II conjugation family	taurine conjugation class	pref
+taurine conjugation class	xrm:1300112	taurine conjugation class	phase II conjugation family	taurine_conjugation_class	synonym
+tautomerization	xrm:0002000	tautomerization	chemical transformation	tautomerization	pref
+tdi risk	xrm:1400119	time-dependent inhibition risk	medchem liability	TDI risk	synonym
+terminal alkyl	xrm:1600018	terminal alkyl	site type	terminal alkyl	pref
+terminal alkyl	xrm:1600018	terminal alkyl	site type	terminal_alkyl	synonym
+terminal methyl	xrm:1600129	terminal methyl	site type	terminal methyl	pref
+terminal methyl	xrm:1600129	terminal methyl	site type	terminal_methyl	synonym
+terminal methyl hydroxylation	xrm:0000108	ω-hydroxylation	chemical transformation	terminal methyl hydroxylation	synonym
+terminal observable step	xrm:7900004	terminal observable step	structural delta	terminal observable step	pref
+tertiary amine	xrm:1600104	tertiary amine	site type	tertiary amine	pref
+tertiary amine	xrm:1600104	tertiary amine	site type	tertiary_amine	synonym
+tertiary amine n-oxidation	xrm:0000121	N-oxide formation	chemical transformation	tertiary amine N-oxidation	synonym
+tertiary amine site	xrm:1600021	tertiary amine site	site type	tertiary amine site	pref
+tertiary amine site	xrm:1600021	tertiary amine site	site type	tertiary_amine_site	synonym
+tertiary carbon hydroxylation	xrm:0000142	tertiary carbon hydroxylation	chemical transformation	tertiary carbon hydroxylation	pref
+thioether	xrm:1600118	thioether	site type	thioether	pref
+thioether formation	xrm:0000613	S-alkylation	chemical transformation	thioether formation	synonym
+thioether soft spot	xrm:1400104	thioether soft spot	medchem liability	thioether soft spot	pref
+thioether soft spot	xrm:1400104	thioether soft spot	medchem liability	thioether_soft_spot	synonym
+thiol	xrm:1600119	thiol	site type	thiol	pref
+thiol leaving fragment	xrm:2200024	thiol leaving fragment	leaving group	thiol leaving fragment	pref
+thiol methylation	xrm:0001043	S-methylation	metabolism phase	thiol methylation	synonym
+thiol oxidation	xrm:0000134	thiol oxidation	chemical transformation	thiol oxidation	pref
+thionation	xrm:0000691	sulfuration	chemical transformation	thionation	synonym
+thiophene	xrm:1600111	thiophene	site type	thiophene	pref
+thiophene	xrm:1600111	thiophene	site type	thiohene	synonym
+thiophene alert	xrm:1400202	thiophene structural alert	medchem liability	thiophene alert	synonym
+thiophene epoxidation	xrm:0000113	thiophene epoxidation	chemical transformation	thiophene epoxidation	pref
+thiophene epoxidation	xrm:0000113	thiophene epoxidation	chemical transformation	thiohene epoxidation	synonym
+thiophene epoxide	xrm:1500106	thiophene epoxide	reactive metabolite family	thiophene epoxide	pref
+thiophene epoxide	xrm:1500106	thiophene epoxide	reactive metabolite family	thiophene_epoxide	synonym
+thiophene s-oxidation	xrm:0000133	thiophene S-oxidation	chemical transformation	thiophene S-oxidation	pref
+thiophene s-oxidation	xrm:0000133	thiophene S-oxidation	chemical transformation	Thiohene S-oxidation	synonym
+thiophene s-oxidation	xrm:0000133	thiophene S-oxidation	chemical transformation	thiohene S-oxidation	synonym
+thiophene structural alert	xrm:1400202	thiophene structural alert	medchem liability	thiophene structural alert	pref
+thiophene structural alert	xrm:1400202	thiophene structural alert	medchem liability	thiohene structural alert	synonym
+thiophene toxicophore	xrm:1400202	thiophene structural alert	medchem liability	thiophene toxicophore	synonym
+thiyl radical	xrm:1500206	thiyl radical	reactive metabolite family	thiyl radical	pref
+thiyl radical	xrm:1500206	thiyl radical	reactive metabolite family	thiyl_radical	synonym
+time dependent inhibition risk	xrm:1400119	time-dependent inhibition risk	medchem liability	time_dependent_inhibition_risk	synonym
+time-dependent inhibition risk	xrm:1400119	time-dependent inhibition risk	medchem liability	time-dependent inhibition risk	pref
+toluene side-chain hydroxylation	xrm:0000106	benzylic hydroxylation	chemical transformation	toluene side-chain hydroxylation	synonym
+tosylate leaving group	xrm:2200035	tosylate leaving group	leaving group	tosylate leaving group	pref
+toxicophore	xrm:1400200	structural alert	medchem liability	toxicophore	synonym
+toxicophore-bearing metabolite	xrm:2300019	toxicophore-bearing metabolite	pharmacological role	toxicophore-bearing metabolite	pref
+transacylation	xrm:0004018	transacylation	chemical transformation	transacylation	pref
+transesterification	xrm:0000631	transesterification	chemical transformation	transesterification	pref
+transformation	xrm:1100000	chemical transformation	chemical transformation	transformation	synonym
+transport phase	xrm:0000003	phase III transport	metabolism phase	transport phase	synonym
+triple bond site	xrm:1600210	alkyne site	site type	triple bond site	synonym
+triple bond structural alert	xrm:1400203	triple bond structural alert	medchem liability	triple bond structural alert	pref
+triple-bond toxicophore	xrm:1400203	triple bond structural alert	medchem liability	triple-bond toxicophore	synonym
+two-step quinone formation	xrm:0000308	two-step quinone formation	metabolism phase	two-step quinone formation	pref
+udp-glucuronosyl conjugation	xrm:0001000	glucuronidation	metabolism phase	UDP-glucuronosyl conjugation	synonym
+udp-glucuronosyl transfer	xrm:0001000	glucuronidation	metabolism phase	UDP-glucuronosyl transfer	synonym
+unstable intermediate	xrm:1400016	unstable intermediate	medchem liability	unstable intermediate	pref
+unstable intermediate	xrm:1400016	unstable intermediate	medchem liability	unstable_intermediate	synonym
+unstable oxygen addition class	xrm:0000011	unstable oxygenation	phase I reaction family	unstable oxygen addition class	synonym
+unstable oxygenation	xrm:0000011	unstable oxygenation	phase I reaction family	unstable oxygenation	pref
+unstable oxygenation	xrm:0000011	unstable oxygenation	phase I reaction family	unstable_oxygenation	synonym
+uo class	xrm:0000011	unstable oxygenation	phase I reaction family	UO class	synonym
+uo class full name	xrm:0000011	unstable oxygenation	phase I reaction family	UO class (full name)	synonym
+urea	xrm:1600124	urea	site type	urea	pref
+urea hydrolysis	xrm:0000406	urea hydrolysis	chemical transformation	urea hydrolysis	pref
+water addition delta	xrm:7700005	water addition delta	structural delta	water addition delta	pref
+water leaving group	xrm:2200028	water leaving group	leaving group	water leaving group	pref
+water loss delta	xrm:7700006	water loss delta	structural delta	water loss delta	pref
+xenobiotic phosphorylation	xrm:1300114	phosphorylation conjugation	phase II conjugation family	xenobiotic phosphorylation	synonym

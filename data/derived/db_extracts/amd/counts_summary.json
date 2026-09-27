@@ -1,0 +1,322 @@
+{
+  "source": "data/amd",
+  "n_reactions": 132011,
+  "n_molecules": 78876,
+  "n_unique": {
+    "RXNCLASS": 298,
+    "RXNCLASS combo": 6373,
+    "STEP": 96,
+    "SCHEMEID": 17740,
+    "ENZ_NAME": 1534,
+    "SPECIES": 14032,
+    "ROUTE": 190,
+    "CONJUGATES": 180,
+    "EXCRETION": 888,
+    "ACTIVITY": 1459,
+    "CMPDCLASS": 676
+  },
+  "top_rxnclass": [
+    [
+      "(empty)",
+      29737
+    ],
+    [
+      "C-Hydroxylation",
+      16493
+    ],
+    [
+      "Hydrolysis",
+      13320
+    ],
+    [
+      "C-Oxidation",
+      9499
+    ],
+    [
+      "O-Glucuronidation",
+      8798
+    ],
+    [
+      "Aromatic Hydroxylation",
+      6910
+    ],
+    [
+      "Aliphatic Hydroxylation",
+      6462
+    ],
+    [
+      "N-Dealkylation",
+      5261
+    ],
+    [
+      "Reduction",
+      5135
+    ],
+    [
+      "Ring Opening",
+      4864
+    ],
+    [
+      "O-Dealkylation",
+      3747
+    ],
+    [
+      "O-Sulfation",
+      3510
+    ],
+    [
+      "Glutathionation",
+      3134
+    ],
+    [
+      "Oxidation",
+      2977
+    ],
+    [
+      "Hydrogenation",
+      2830
+    ],
+    [
+      "O-Demethylation",
+      2598
+    ],
+    [
+      "Dehydrogenation",
+      2424
+    ],
+    [
+      "N-Demethylation",
+      2388
+    ],
+    [
+      "Aromatization",
+      2154
+    ],
+    [
+      "Dearomatization",
+      1894
+    ],
+    [
+      "Epoxidation",
+      1803
+    ],
+    [
+      "Dehalogenation",
+      1797
+    ],
+    [
+      "DNA Binding",
+      1795
+    ],
+    [
+      "Conjugation",
+      1686
+    ],
+    [
+      "Protein Binding",
+      1589
+    ],
+    [
+      "O-Methylation",
+      1579
+    ],
+    [
+      "Optical Resolution",
+      1577
+    ],
+    [
+      "N-Acetylation",
+      1534
+    ],
+    [
+      "S-Oxidation",
+      1464
+    ],
+    [
+      "O-Alkylation",
+      1450
+    ]
+  ],
+  "top_enzymes": [
+    [
+      "Cytochrome P450",
+      78668
+    ],
+    [
+      "UDP-Glucuronosyltransferase",
+      16237
+    ],
+    [
+      "Glutathione Transferase",
+      5614
+    ],
+    [
+      "Carboxylesterase",
+      3743
+    ],
+    [
+      "Esterase",
+      3534
+    ],
+    [
+      "Sulfotransferase",
+      2850
+    ],
+    [
+      "Epoxide Hydrolase",
+      1952
+    ],
+    [
+      "Catechol O-Methyltransferase",
+      1861
+    ],
+    [
+      "N-Acetyltransferase",
+      1436
+    ],
+    [
+      "Glutathione Peroxidase",
+      1347
+    ],
+    [
+      "Caspase-3",
+      1223
+    ],
+    [
+      "Acetylcholinesterase",
+      1193
+    ],
+    [
+      "Alcohol Dehydrogenase",
+      992
+    ],
+    [
+      "Aldehyde Oxidase",
+      976
+    ],
+    [
+      "Aldehyde Dehydrogenase",
+      921
+    ],
+    [
+      "17beta-Hydroxysteroid Dehydrogenase",
+      886
+    ],
+    [
+      "Glutathione Reductase",
+      839
+    ],
+    [
+      "Monoamine Oxidase",
+      787
+    ],
+    [
+      "11beta-Hydroxysteroid Dehydrogenase",
+      766
+    ],
+    [
+      "Aldoketoreductase",
+      708
+    ],
+    [
+      "Flavin-Containing Monooxygenase",
+      619
+    ],
+    [
+      "Butyrylcholine Esterase",
+      561
+    ],
+    [
+      "Aromatase",
+      521
+    ],
+    [
+      "Carbonyl Reductase",
+      520
+    ],
+    [
+      "Xanthine Oxidase",
+      502
+    ]
+  ],
+  "top_species": [
+    [
+      "Rat",
+      75053
+    ],
+    [
+      "Human",
+      66247
+    ],
+    [
+      "in vitro (Human Liver Microsomes)",
+      27414
+    ],
+    [
+      "in vitro (Rat Liver Microsomes)",
+      23981
+    ],
+    [
+      "Mouse",
+      18039
+    ],
+    [
+      "Dog",
+      12393
+    ],
+    [
+      "(null)",
+      6242
+    ],
+    [
+      "in vitro (Rat Hepatocytes)",
+      5951
+    ],
+    [
+      "in vitro (Mouse Liver Microsomes)",
+      5723
+    ],
+    [
+      "in vitro (Human Hepatocytes)",
+      4880
+    ],
+    [
+      "Monkey",
+      4540
+    ],
+    [
+      "Rat (Bile Duct Cannulated)",
+      4247
+    ],
+    [
+      "Rabbit",
+      3878
+    ],
+    [
+      "Rat (Male)",
+      3021
+    ],
+    [
+      "in vitro (Rat Liver Cytosol)",
+      2779
+    ]
+  ],
+  "elapsed_s": 5.96,
+  "outputs": [
+    "counts_activity.tsv",
+    "counts_cmpdclass.tsv",
+    "counts_conjugates.tsv",
+    "counts_covalent_bdg.tsv",
+    "counts_enzyme.tsv",
+    "counts_excretion.tsv",
+    "counts_polymorph.tsv",
+    "counts_route.tsv",
+    "counts_rxnclass.tsv",
+    "counts_rxnclass_combo.tsv",
+    "counts_schemeid.tsv",
+    "counts_species.tsv",
+    "counts_step.tsv",
+    "examples.tsv",
+    "examples_by_term.tsv"
+  ]
+}

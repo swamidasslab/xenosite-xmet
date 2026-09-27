@@ -1,0 +1,26 @@
+reaction_id	context_id	relation	inherit_children	exclude_reaction_ids	note
+# relation: likely_in | observed_in | unlikely_in
+# inherit_children=true → applies to skos:narrower descendants except exclude_reaction_ids (pipe-separated)
+# This is an expectation / prior for systems biology annotation — not a hard axiom.
+xrm:0000020	xrm:2100312	likely_in	true		Oxidative metabolism common in microsomes
+xrm:0000020	xrm:2100311	likely_in	true		Oxidative metabolism common in hepatocytes
+xrm:0000020	xrm:2100318	likely_in	true		rCYP/Supersomes/baculosomes for CYP oxidations
+xrm:0000020	xrm:2100313	likely_in	true		Baculosome CYP panels
+xrm:0000100	xrm:2100312	likely_in	true		Hydroxylation in microsomes
+xrm:0000100	xrm:2100311	likely_in	true		Hydroxylation in hepatocytes
+xrm:0000200	xrm:2100312	likely_in	true		Oxidative dealkylation in microsomes
+xrm:0001000	xrm:2100311	likely_in	true		Glucuronidation in hepatocytes (UGT)
+xrm:0001000	xrm:2100312	likely_in	true	xrm:0001004	Microsomal UGTs; acyl glucuronidation often called out separately
+xrm:0001000	xrm:2100120	observed_in	true		Glucuronides frequently recovered in urine
+xrm:0001000	xrm:2100119	observed_in	true		Glucuronides in plasma
+xrm:0001000	xrm:2100301	likely_in	true		Phase II conjugates common in vivo
+xrm:0001010	xrm:2100315	likely_in	true		Sulfation primarily cytosolic
+xrm:0001010	xrm:2100311	likely_in	true		Hepatocytes retain SULT activity
+xrm:0001010	xrm:2100312	unlikely_in	true		Classical microsomes lack SULTs
+xrm:0001030	xrm:2100311	likely_in	true		GSH conjugation in hepatocytes
+xrm:0001030	xrm:2100315	likely_in	true		Cytosolic GSTs
+xrm:0000013	xrm:2100311	likely_in	true		Hydrolysis in hepatocytes
+xrm:0000013	xrm:2100312	likely_in	true		CES etc. in microsomes
+xrm:0000013	xrm:2100119	observed_in	true		Ester hydrolysis also in plasma
+xrm:0001020	xrm:2100315	likely_in	true		NAT acetylation cytosolic
+xrm:0001020	xrm:2100312	unlikely_in	true		Not typical microsomal

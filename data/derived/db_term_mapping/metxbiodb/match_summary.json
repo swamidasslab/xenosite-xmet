@@ -1,0 +1,26 @@
+{
+  "n_terms": 284,
+  "by_confidence_terms": {
+    "alias": 29,
+    "compositional": 160,
+    "exact_pref": 21,
+    "unmatched": 27,
+    "fuzzy_mid": 28,
+    "exact_synonym": 6,
+    "fuzzy_high": 12,
+    "antonym_of": 1
+  },
+  "by_confidence_occurrences": {
+    "alias": 952,
+    "compositional": 899,
+    "exact_pref": 79,
+    "unmatched": 55,
+    "fuzzy_mid": 91,
+    "exact_synonym": 16,
+    "fuzzy_high": 17,
+    "antonym_of": 1
+  },
+  "fuzzy_high_min": 92.0,
+  "fuzzy_mid_min": 80.0,
+  "fuzzy_margin": 4.0
+}

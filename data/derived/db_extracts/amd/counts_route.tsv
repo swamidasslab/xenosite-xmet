@@ -1,0 +1,191 @@
+term	count	field
+(null)	229777	ROUTE
+Oral	133353	ROUTE
+Intravenous	36122	ROUTE
+Intraperitoneal	16676	ROUTE
+Intragastric	4445	ROUTE
+Inhalation	3465	ROUTE
+Subcutaneous	3304	ROUTE
+Infusion	2675	ROUTE
+Environmental Exposure	2114	ROUTE
+Smoking	1826	ROUTE
+Intravenous; Oral	1464	ROUTE
+Intramuscular	1334	ROUTE
+Dermal	1328	ROUTE
+Occupational Exposure	1190	ROUTE
+Intravenous + Oral	853	ROUTE
+Aqueous Uptake	842	ROUTE
+Intraduodenal	789	ROUTE
+Dermal + Inhalation	565	ROUTE
+Transdermal	529	ROUTE
+Intranasal	322	ROUTE
+Intratracheal	277	ROUTE
+Percutaneous	236	ROUTE
+Sublingual	233	ROUTE
+Injection	228	ROUTE
+Intraarterial	215	ROUTE
+Intraperitoneal; Oral	206	ROUTE
+Cutaneous	183	ROUTE
+Fetal Infusion	161	ROUTE
+Ocular	150	ROUTE
+Nasogastric	140	ROUTE
+Rectal	133	ROUTE
+Intraocular	130	ROUTE
+Epidural	100	ROUTE
+Intraportal	96	ROUTE
+Intracerebral	96	ROUTE
+Intracardiac	94	ROUTE
+Intrajejunal	94	ROUTE
+Intramammillary	81	ROUTE
+Intraintestinal	80	ROUTE
+Intratumoral	69	ROUTE
+Intraduodenal; Oral	68	ROUTE
+Renal Perfusion	64	ROUTE
+Oral; Transdermal	63	ROUTE
+Intraperitoneal; Intravenous	61	ROUTE
+Intraruminal	56	ROUTE
+Intramuscular; Oral	55	ROUTE
+Inhalation + Intravenous	49	ROUTE
+Intravaginal	47	ROUTE
+Intracecal	43	ROUTE
+Intraperitoneal; Intravenous; Oral	39	ROUTE
+Intraarticular	36	ROUTE
+Oral; Subcutaneous	35	ROUTE
+Fetal Exposure	35	ROUTE
+Intramuscular; Intravenous	33	ROUTE
+Intramuscular; Intravenous; Oral	31	ROUTE
+Intravesical	31	ROUTE
+Oral (Maternal Milk)	30	ROUTE
+Intraperitoneal + Intravenous	29	ROUTE
+Intracolonic	29	ROUTE
+Oral (Mouth Rinse)	28	ROUTE
+Parenteral	28	ROUTE
+Intraperitoneal + Oral	25	ROUTE
+Intraabdominal	23	ROUTE
+Cerebrospinal Infusion	23	ROUTE
+Buccal	22	ROUTE
+Intracerebroventricular	22	ROUTE
+Intermuscular	21	ROUTE
+Intrahepatic	20	ROUTE
+Intraileal	19	ROUTE
+Intraluminal	19	ROUTE
+Oral + Smoking	19	ROUTE
+Environmental Exposure + Smoking	19	ROUTE
+Intracavernous	18	ROUTE
+Inhalation + Oral	18	ROUTE
+Endotracheal	18	ROUTE
+Intravenous; Oral; Subcutaneous	17	ROUTE
+Intravascular	17	ROUTE
+Intrajejunal + Intravenous	17	ROUTE
+Intravenous (Portal)	15	ROUTE
+Intravenous; Subcutaneous	14	ROUTE
+Inhalation + Oral + Percutaneous	14	ROUTE
+Intrabronchial	14	ROUTE
+Cutaneous + Inhalation	14	ROUTE
+Intrathecal	13	ROUTE
+Enteral	13	ROUTE
+Intraduodenal; Intravenous; Oral	12	ROUTE
+Intravenous (Ear)	12	ROUTE
+Inhalation + Smoking	12	ROUTE
+Oral + Percutaneous	12	ROUTE
+Oral; Rectal	11	ROUTE
+Intraaortal	11	ROUTE
+Inhalation + Transdermal	11	ROUTE
+Intravaginal; Intravenous	11	ROUTE
+Nasojejunal	11	ROUTE
+Intramuscular + Oral	10	ROUTE
+Intraventricular	10	ROUTE
+Intramammary	9	ROUTE
+Oral + Subcutaneous	9	ROUTE
+Oral (Mouth Spray)	8	ROUTE
+Intramuscular; Transdermal	8	ROUTE
+Intracoelominal; Uterine Perfusion	8	ROUTE
+Intragastric + Intravenous	8	ROUTE
+Sublingual (Spray)	7	ROUTE
+Oral; Percutaneous	7	ROUTE
+Intraduodenal; Intravenous	7	ROUTE
+Intragastric; Intravenous	7	ROUTE
+Intrapulmonary	6	ROUTE
+Intravenous + Oral + Rectal	6	ROUTE
+Intravenous + Rectal	6	ROUTE
+Intraperitoneal + Intratumoral	6	ROUTE
+Intraperitoneal; Subcutaneous	6	ROUTE
+Inhalation; Intranasal	6	ROUTE
+Oral + Transmucosal	6	ROUTE
+Infusion + Intraamniotic	6	ROUTE
+Intravenous + Transdermal	5	ROUTE
+Dermal; Intravenous; Oral	5	ROUTE
+Cutaneous + Oral	5	ROUTE
+Fetal Exposure + Oral	5	ROUTE
+Uterine Perfusion	5	ROUTE
+Intramuscular + Subcutaneous	5	ROUTE
+Intraperitoneal; Intravenous; Subcutaneous	4	ROUTE
+Intramuscular; Percutaneous	4	ROUTE
+Intraperitoneal; Oral; Subcutaneous	4	ROUTE
+Intraarterial; Intravenous	4	ROUTE
+Inhalation + Intravenous + Oral	4	ROUTE
+Intranasal + Smoking	4	ROUTE
+Intranasal + Oral + Smoking	4	ROUTE
+Fetal Exposure + Oral (Maternal Milk)	4	ROUTE
+Oral + Transdermal	4	ROUTE
+Smoking + Transdermal	4	ROUTE
+Jejunal	4	ROUTE
+Intravenous; Intraurethral; Oral	4	ROUTE
+Inhalation; Oral	4	ROUTE
+Intravenous + Subcutaneous	4	ROUTE
+Hepatic Perfusion	3	ROUTE
+Intraduodenal; Intraperitoneal; Oral	3	ROUTE
+Intrapericardial	3	ROUTE
+Intravenous (Femoral)	3	ROUTE
+Intravitreal	3	ROUTE
+Intraamniotic	3	ROUTE
+Intrabursal	2	ROUTE
+Intrabronchial; Intramuscular; Intravenous; Oral	2	ROUTE
+Intravenous; Oral; Rectal	2	ROUTE
+Sublingual (Tablet)	2	ROUTE
+Intramuscular; Intraperitoneal; Oral	2	ROUTE
+Intravenous; Oral; Sublingual; Transdermal	2	ROUTE
+Dermal (Scalp)	2	ROUTE
+Intramuscular; Intravenous; Subcutaneous	2	ROUTE
+Intraduodenal; Intragastric; Intravenous	2	ROUTE
+Intranasal + Intravenous	2	ROUTE
+Intravenous + Smoking	2	ROUTE
+Intracolostomal	2	ROUTE
+Intranasal; Intravenous	2	ROUTE
+Alveolar	2	ROUTE
+Oral + Smoking + Transdermal	2	ROUTE
+Perineal	2	ROUTE
+Retro-orbital	2	ROUTE
+Colonic Infusion	2	ROUTE
+Brain Infusion	2	ROUTE
+Oropharyngeal Aspiration	2	ROUTE
+Intravenous + Oral + Subcutaneous	2	ROUTE
+Nasoenteric	2	ROUTE
+Subcutaneous (Implant)	2	ROUTE
+Intubation (Crop)	2	ROUTE
+Subconjunctival	2	ROUTE
+Transmucosal	2	ROUTE
+Intraabdominal; Oral	1	ROUTE
+Intramuscular; Intraperitoneal; Oral; Subcutaneous	1	ROUTE
+Extradural	1	ROUTE
+Intraduodenal; Intramuscular; Intravenous; Oral; Rectal	1	ROUTE
+Oral + Rectal	1	ROUTE
+Intraatrial	1	ROUTE
+Intravenous; Smoking	1	ROUTE
+Intraarterial; Intraduodenal; Intravenous	1	ROUTE
+Intraperitoneal; Intravenous; Oral; Subcutaneous	1	ROUTE
+Intrabronchial; Intravenous; Oral; Rectal	1	ROUTE
+Sublingual + Transdermal	1	ROUTE
+Intravenous + Sublingual	1	ROUTE
+Inhalation + Intranasal	1	ROUTE
+Supralingual	1	ROUTE
+Intratesticular	1	ROUTE
+Intragastric; Intramuscular; Intravenous	1	ROUTE
+Hepatic Arterial Infusion	1	ROUTE
+Intranasal + Intravenous + Oral	1	ROUTE
+Intracarotid	1	ROUTE
+Pre-cecal	1	ROUTE
+Intraurethral	1	ROUTE
+Intramuscular + Intravenous	1	ROUTE
+Intratympanic	1	ROUTE
+Intracutaneous	1	ROUTE

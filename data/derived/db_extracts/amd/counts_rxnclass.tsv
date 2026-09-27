@@ -1,0 +1,299 @@
+term	count	field
+(empty)	29737	RXNCLASS
+C-Hydroxylation	16493	RXNCLASS
+Hydrolysis	13320	RXNCLASS
+C-Oxidation	9499	RXNCLASS
+O-Glucuronidation	8798	RXNCLASS
+Aromatic Hydroxylation	6910	RXNCLASS
+Aliphatic Hydroxylation	6462	RXNCLASS
+N-Dealkylation	5261	RXNCLASS
+Reduction	5135	RXNCLASS
+Ring Opening	4864	RXNCLASS
+O-Dealkylation	3747	RXNCLASS
+O-Sulfation	3510	RXNCLASS
+Glutathionation	3134	RXNCLASS
+Oxidation	2977	RXNCLASS
+Hydrogenation	2830	RXNCLASS
+O-Demethylation	2598	RXNCLASS
+Dehydrogenation	2424	RXNCLASS
+N-Demethylation	2388	RXNCLASS
+Aromatization	2154	RXNCLASS
+Dearomatization	1894	RXNCLASS
+Epoxidation	1803	RXNCLASS
+Dehalogenation	1797	RXNCLASS
+DNA Binding	1795	RXNCLASS
+Conjugation	1686	RXNCLASS
+Protein Binding	1589	RXNCLASS
+O-Methylation	1579	RXNCLASS
+Optical Resolution	1577	RXNCLASS
+N-Acetylation	1534	RXNCLASS
+S-Oxidation	1464	RXNCLASS
+O-Alkylation	1450	RXNCLASS
+Isomerization	1384	RXNCLASS
+Oxidative Deamination	1340	RXNCLASS
+N-Oxidation	1325	RXNCLASS
+O-Conjugation	1309	RXNCLASS
+N-Deacylation	1277	RXNCLASS
+N-Acylation	1256	RXNCLASS
+Covalent Binding	1243	RXNCLASS
+Ring Closure	1169	RXNCLASS
+Dehydration	1143	RXNCLASS
+Glucuronidation	1091	RXNCLASS
+N-Reduction	1014	RXNCLASS
+Tautomerization	978	RXNCLASS
+O-Deacylation	958	RXNCLASS
+Chain Shortening	923	RXNCLASS
+Hydroxylation	889	RXNCLASS
+Rearrangement	849	RXNCLASS
+Cyclization	836	RXNCLASS
+Decarboxylation	802	RXNCLASS
+Phosphorylation	733	RXNCLASS
+N-Glucuronidation	710	RXNCLASS
+Esterification	684	RXNCLASS
+Hydration	682	RXNCLASS
+O-Deglycosidation	667	RXNCLASS
+Deamination	625	RXNCLASS
+Cleavage	577	RXNCLASS
+Oxidative N-Dealkylation	563	RXNCLASS
+O-Phosphorylation	549	RXNCLASS
+Nucleophilic Addition	544	RXNCLASS
+Elimination	540	RXNCLASS
+Dehydroxylation	512	RXNCLASS
+N-Acetylcysteination	484	RXNCLASS
+Glycination	450	RXNCLASS
+Nucleophilic Substitution	423	RXNCLASS
+N-Hydroxylation	409	RXNCLASS
+Oxidative Dealkylation	396	RXNCLASS
+Deglycosidation	395	RXNCLASS
+S-Methylation	389	RXNCLASS
+S-Dealkylation	388	RXNCLASS
+S-Alkylation	343	RXNCLASS
+Epimerization	341	RXNCLASS
+O-Deacetylation	340	RXNCLASS
+Sulfation	303	RXNCLASS
+C-Dealkylation	295	RXNCLASS
+Condensation	293	RXNCLASS
+Cysteination	291	RXNCLASS
+O-Dephosphorylation	263	RXNCLASS
+N-Deacetylation	254	RXNCLASS
+Dealkylation	250	RXNCLASS
+Desulfuration	246	RXNCLASS
+Dimerization	244	RXNCLASS
+Deamidation	244	RXNCLASS
+O-Dearylation	240	RXNCLASS
+Inversion	232	RXNCLASS
+O-Acylation	221	RXNCLASS
+Lactonization	220	RXNCLASS
+Glycosidation	208	RXNCLASS
+S-Reduction	207	RXNCLASS
+N-Alkylation	203	RXNCLASS
+N-Methylation	203	RXNCLASS
+Radical Formation	200	RXNCLASS
+Oxidative Desulfuration	197	RXNCLASS
+Amidation	195	RXNCLASS
+Lipid Binding	193	RXNCLASS
+Sulfuration	189	RXNCLASS
+Dephosphorylation	188	RXNCLASS
+Chain Elongation	185	RXNCLASS
+C-Decarboxylation	181	RXNCLASS
+Acyl Migration	169	RXNCLASS
+N-Dehydroxylation	169	RXNCLASS
+Aromatic Dehydroxylation	162	RXNCLASS
+Amination	159	RXNCLASS
+Quaternization	156	RXNCLASS
+Alkylation	155	RXNCLASS
+Methylation	153	RXNCLASS
+O-Acetylation	142	RXNCLASS
+Transesterification	139	RXNCLASS
+Deglucosidation	138	RXNCLASS
+Cyanidation	132	RXNCLASS
+Ring Contraction	129	RXNCLASS
+Oxidative Dehalogenation	128	RXNCLASS
+N-Deglycosidation	128	RXNCLASS
+Desulfation	125	RXNCLASS
+Dehydrohalogenation	115	RXNCLASS
+Aromatic Methoxylation	104	RXNCLASS
+Denitrogenation	101	RXNCLASS
+C-Demethylation	100	RXNCLASS
+N-Sulfation	98	RXNCLASS
+Demethylation	97	RXNCLASS
+Taurination	96	RXNCLASS
+N-Glycosidation	95	RXNCLASS
+Demethoxylation	94	RXNCLASS
+Thiolation	93	RXNCLASS
+N-Dearylation	92	RXNCLASS
+Deglutathionation	92	RXNCLASS
+Deoxygenation	91	RXNCLASS
+Nucleic Acid Binding	90	RXNCLASS
+Transacylation	87	RXNCLASS
+NIH Shift	86	RXNCLASS
+O-Deglucuronidation	86	RXNCLASS
+C-Alkylation	82	RXNCLASS
+Sulfonation	80	RXNCLASS
+C-Methoxylation	79	RXNCLASS
+Peroxidation	78	RXNCLASS
+S-Deacylation	78	RXNCLASS
+Methiolation	77	RXNCLASS
+Halogenation	77	RXNCLASS
+Decyanidation	77	RXNCLASS
+N-Carboxylation	76	RXNCLASS
+O-Glucosidation	75	RXNCLASS
+N-Formylation	73	RXNCLASS
+Acetylcysteination	73	RXNCLASS
+Carboxylation	71	RXNCLASS
+Denitration	69	RXNCLASS
+Deacylation	68	RXNCLASS
+N-Decarboxylation	67	RXNCLASS
+Denitrosation	67	RXNCLASS
+Decarbonylation	64	RXNCLASS
+O-Glycosidation	62	RXNCLASS
+Deacetylation	61	RXNCLASS
+Polyglutamation	61	RXNCLASS
+Azo Cleavage	60	RXNCLASS
+Acetylation	58	RXNCLASS
+C-Deacylation	57	RXNCLASS
+N-Conjugation	55	RXNCLASS
+Decomplexation	55	RXNCLASS
+N-Deformylation	53	RXNCLASS
+Lactamization	50	RXNCLASS
+Methoxylation	48	RXNCLASS
+Deformylation	47	RXNCLASS
+Oxygenation	45	RXNCLASS
+Deglucuronidation	44	RXNCLASS
+Adduct Formation	41	RXNCLASS
+C-Alkoxylation	40	RXNCLASS
+N-Denitrosation	40	RXNCLASS
+C-Methylation	39	RXNCLASS
+S-Deacetylation	39	RXNCLASS
+P-Oxidation	39	RXNCLASS
+Aromatic Sulfuration	37	RXNCLASS
+C-Deamination	36	RXNCLASS
+S-Demethylation	36	RXNCLASS
+Transconjugation	35	RXNCLASS
+S-Dearylation	35	RXNCLASS
+Glucosidation	34	RXNCLASS
+N-Debenzylation	30	RXNCLASS
+Enantiomerization	29	RXNCLASS
+Transglucuronidation	29	RXNCLASS
+N-Deamination	29	RXNCLASS
+Nitration	29	RXNCLASS
+Dealkenylation	28	RXNCLASS
+N-Nitrosation	28	RXNCLASS
+Se-Methylation	28	RXNCLASS
+P-Desulfuration	28	RXNCLASS
+RNA Binding	27	RXNCLASS
+Decysteination	26	RXNCLASS
+C-Dearylation	26	RXNCLASS
+CoA Binding	25	RXNCLASS
+Transglycosylation	25	RXNCLASS
+Aromatic Cysteination	25	RXNCLASS
+C-Amination	25	RXNCLASS
+Thioesterification	24	RXNCLASS
+Formylation	24	RXNCLASS
+Ring Enlargement	24	RXNCLASS
+C-Carboxylation	24	RXNCLASS
+Diastereomeric Resolution	24	RXNCLASS
+Glutamination	23	RXNCLASS
+Reductive Desulfuration	23	RXNCLASS
+Heterolysis	22	RXNCLASS
+Transmethylation	22	RXNCLASS
+Dearylation	22	RXNCLASS
+Deconjugation	22	RXNCLASS
+Transcomplexation	22	RXNCLASS
+Transamination	21	RXNCLASS
+Deselenation	21	RXNCLASS
+Oxidative Cleavage	20	RXNCLASS
+C-Deglycosidation	20	RXNCLASS
+Carbamoylation	20	RXNCLASS
+Transphosphorylation	19	RXNCLASS
+Se-Alkylation	19	RXNCLASS
+N-Glucosidation	18	RXNCLASS
+S-Glucuronidation	18	RXNCLASS
+Dealkoxylation	18	RXNCLASS
+Aromatic Methiolation	18	RXNCLASS
+Azo Coupling	17	RXNCLASS
+N-Decarbamoylation	16	RXNCLASS
+S-Cysteination	16	RXNCLASS
+Lysination	16	RXNCLASS
+Reductive Dehalogenation	15	RXNCLASS
+Transacetylation	15	RXNCLASS
+Oxidative Decarboxylation	15	RXNCLASS
+Aromatic Sulfonation	15	RXNCLASS
+Dealkynylation	14	RXNCLASS
+Decarbamoylation	14	RXNCLASS
+Complexation	14	RXNCLASS
+Nitrosation	13	RXNCLASS
+Thioalkylation	13	RXNCLASS
+Se-Dealkylation	13	RXNCLASS
+N-Demethoxylation	12	RXNCLASS
+Transhalogenation	11	RXNCLASS
+N-Denitrosylation	11	RXNCLASS
+Se-Oxidation	11	RXNCLASS
+N-Deglucosidation	10	RXNCLASS
+C-Desulfuration	10	RXNCLASS
+Aromatic Deamination	9	RXNCLASS
+Aliphatic Deamination	9	RXNCLASS
+Allylic Oxidation	8	RXNCLASS
+Aliphatic Peroxidation	8	RXNCLASS
+C-Deformylation	8	RXNCLASS
+O-Deglucosidation	8	RXNCLASS
+Oxidative Deboronation	8	RXNCLASS
+P-Hydroxylation	7	RXNCLASS
+Protonation	7	RXNCLASS
+Lactosidation	6	RXNCLASS
+S-Hydroxylation	6	RXNCLASS
+Aromatic Thiolation	6	RXNCLASS
+Transalkylation	6	RXNCLASS
+Reductive Amination	6	RXNCLASS
+Deboronation	6	RXNCLASS
+S-Conjugation	5	RXNCLASS
+Arylation	5	RXNCLASS
+C-Acylation	5	RXNCLASS
+Ring Expansion	5	RXNCLASS
+C-Imination	5	RXNCLASS
+Oxidative S-Dealkylation	5	RXNCLASS
+S-Sulfation	5	RXNCLASS
+S-Deamination	5	RXNCLASS
+N-Deglucuronidation	4	RXNCLASS
+Chelation	4	RXNCLASS
+Nitrosylation	3	RXNCLASS
+S-Amidation	3	RXNCLASS
+Aromatic Dealkylation	3	RXNCLASS
+O-Galacturonidation	3	RXNCLASS
+N-Acetoxylation	3	RXNCLASS
+Acetylglutathionation	3	RXNCLASS
+Transglucosylation	3	RXNCLASS
+Carbonylation	3	RXNCLASS
+Transmetallation	3	RXNCLASS
+Transsulfuration	3	RXNCLASS
+O-Debenzylation	3	RXNCLASS
+Glucopyranosidation	2	RXNCLASS
+N-Methoxylation	2	RXNCLASS
+P-Dealkylation	2	RXNCLASS
+Cope Elimination	2	RXNCLASS
+Aromatic Sulfinylation	2	RXNCLASS
+Sulfinylation	2	RXNCLASS
+N-Carbamoylation	2	RXNCLASS
+Electron Uptake	2	RXNCLASS
+Transchelation	2	RXNCLASS
+Stereoisomerization	2	RXNCLASS
+Aromatic Selenylation	1	RXNCLASS
+Aromatic Amidation	1	RXNCLASS
+N-Cyanoalkylation	1	RXNCLASS
+Amide Hydroxylation	1	RXNCLASS
+N-Dehalogenation	1	RXNCLASS
+Thioacetylation	1	RXNCLASS
+Transcarbamoylation	1	RXNCLASS
+Aliphatic Halogenation	1	RXNCLASS
+O-Deallylation	1	RXNCLASS
+Oligomerization	1	RXNCLASS
+Transformylation	1	RXNCLASS
+Transamidation	1	RXNCLASS
+Dithiodecarboxylation	1	RXNCLASS
+Selenation	1	RXNCLASS
+S-Acylation	1	RXNCLASS
+Alkoxylation	1	RXNCLASS
+Aliphatic Sulfuration	1	RXNCLASS
+S-Denitrosylation	1	RXNCLASS
+Transselenation	1	RXNCLASS
+Trimerization	1	RXNCLASS

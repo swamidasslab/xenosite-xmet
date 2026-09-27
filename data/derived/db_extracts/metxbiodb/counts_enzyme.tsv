@@ -1,0 +1,139 @@
+term	count	field
+CYP3A4	822	Enzyme(s) token
+CYP1A2	419	Enzyme(s) token
+CYP2D6	371	Enzyme(s) token
+CYP2C9	311	Enzyme(s) token
+CYP2C19	293	Enzyme(s) token
+UGT	238	Enzyme(s) token
+CYP2C8	181	Enzyme(s) token
+CYP2B6	178	Enzyme(s) token
+CYP2E1	176	Enzyme(s) token
+UGT1A9	165	Enzyme(s) token
+CYP2A6	123	Enzyme(s) token
+CYP1A1	97	Enzyme(s) token
+CYP3A5	68	Enzyme(s) token
+SULT	58	Enzyme(s) token
+GST	38	Enzyme(s) token
+CYP2C9 (minor)	23	Enzyme(s) token
+CYP1A2 (minor)	21	Enzyme(s) token
+SULT1A1	21	Enzyme(s) token
+CYP3A4 (major)	20	Enzyme(s) token
+CYP2C18	19	Enzyme(s) token
+UGT1A3	19	Enzyme(s) token
+CYP2D6 (major)	17	Enzyme(s) token
+CYP1B1	16	Enzyme(s) token
+CYP3A4 (minor)	15	Enzyme(s) token
+CYP2C9 (major)	15	Enzyme(s) token
+CYP3A7	14	Enzyme(s) token
+CYP2C19 (minor)	14	Enzyme(s) token
+CYP2D6 (minor)	13	Enzyme(s) token
+UGT1A1	13	Enzyme(s) token
+NAT	13	Enzyme(s) token
+UGT1A4	12	Enzyme(s) token
+NAT1	11	Enzyme(s) token
+Unspecified gut bacterial enzyme	11	Enzyme(s) token
+CYP1A2 (major)	10	Enzyme(s) token
+CYP2B6 (minor)	9	Enzyme(s) token
+CYP2C8 (minor)	9	Enzyme(s) token
+NAT2	9	Enzyme(s) token
+CYP2E1 (minor)	8	Enzyme(s) token
+CYP3A	8	Enzyme(s) token
+Unspecified bacterial dehydroxylase	7	Enzyme(s) token
+CYP2C19 (major)	6	Enzyme(s) token
+CYP2E1 (major)	6	Enzyme(s) token
+CYP4A11	6	Enzyme(s) token
+SULT1E1	6	Enzyme(s) token
+UGT1A7	5	Enzyme(s) token
+UGT1A8	5	Enzyme(s) token
+UGT1A10	5	Enzyme(s) token
+S-COMT	5	Enzyme(s) token
+CYP2B6 (major)	4	Enzyme(s) token
+CYP2A6 (minor)	4	Enzyme(s) token
+CYP2A13	3	Enzyme(s) token
+CYP3A4(major)	3	Enzyme(s) token
+UGT2B7	3	Enzyme(s) token
+SULT1C2	3	Enzyme(s) token
+SULT1C3	3	Enzyme(s) token
+SULT2A1	3	Enzyme(s) token
+SULT1B1	3	Enzyme(s) token
+CYP2A6 (major)	2	Enzyme(s) token
+CYP2F1	2	Enzyme(s) token
+CYP1A1 (major)	2	Enzyme(s) token
+CYP4B1	2	Enzyme(s) token
+CYP2D4	2	Enzyme(s) token
+CYP3A5 (at a high concentration (250ÃŽÂ¼M))	2	Enzyme(s) token
+CYP2B6 (R>S)	2	Enzyme(s) token
+UGT2B10	2	Enzyme(s) token
+SULT1A2	2	Enzyme(s) token
+SULT1C1	2	Enzyme(s) token
+UGT1A8, UGT1A9	2	Enzyme(s) token
+UGT2B20	2	Enzyme(s) token
+EC 3.2.1.X	2	Enzyme(s) token
+EC 1.6.99.1	2	Enzyme(s) token
+EC 1.7.1.6	2	Enzyme(s) token
+EC 4.3.99.4	2	Enzyme(s) token
+CYP2C19(major)	1	Enzyme(s) token
+CYP1A1 (minor)	1	Enzyme(s) token
+CYP2D6 (implied)	1	Enzyme(s) token
+CYP2C19,CYP2D6	1	Enzyme(s) token
+CYP2C1	1	Enzyme(s) token
+CYP2C11	1	Enzyme(s) token
+CYP2C23	1	Enzyme(s) token
+CYP3A5 (minor)	1	Enzyme(s) token
+CYP2B6 (minor	1	Enzyme(s) token
+CYP2D6(minor)	1	Enzyme(s) token
+CYP1B1 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) token
+CYP2C9 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) token
+CYP2C19 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) token
+CYP3A4 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) token
+CYP1A1 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) token
+CYP1A2 (at a high concentration (250ÃŽÂ¼M))	1	Enzyme(s) token
+CYP2B6 (give smaller amounts of ÃŽÂ±-hydroxylation)	1	Enzyme(s) token
+CYP2C9  (give smaller amounts of ÃŽÂ±-hydroxylation)	1	Enzyme(s) token
+CYP2C19 (give smaller amounts of ÃŽÂ±-hydroxylation)	1	Enzyme(s) token
+CYP3A5 (give smaller amounts of ÃŽÂ±-hydroxylation)	1	Enzyme(s) token
+CYP2E1 (at low concentrations)	1	Enzyme(s) token
+CYP2B6 (at hight concentrations)	1	Enzyme(s) token
+CYP2C8 (major)	1	Enzyme(s) token
+CYP2B1	1	Enzyme(s) token
+CYP2D6 (major	1	Enzyme(s) token
+(major, RÃ¢â€°Ë†S))	1	Enzyme(s) token
+CYP3A4  (S>R)	1	Enzyme(s) token
+CYP3A4 (R>S)	1	Enzyme(s) token
+CYP2C19 (R>S)	1	Enzyme(s) token
+CYP1A2 (RÃ¢â€°Ë†S)	1	Enzyme(s) token
+CYP3A4 (RÃ¢â€°Ë†S)	1	Enzyme(s) token
+CYP1A2 (S>R)	1	Enzyme(s) token
+CYP	1	Enzyme(s) token
+UGT1A4)	1	Enzyme(s) token
+UGT1A6	1	Enzyme(s) token
+UGT2B15	1	Enzyme(s) token
+UGT2B17	1	Enzyme(s) token
+GLYAT (EC 2.3.1.13)	1	Enzyme(s) token
+SULT1B1, SULT2A1	1	Enzyme(s) token
+GSTA1	1	Enzyme(s) token
+UGT1A1, 1A3, 1A6	1	Enzyme(s) token
+UGT1A1, 1A3, 1A7,1A8, 1A10	1	Enzyme(s) token
+SULT1A1, SULT1A2	1	Enzyme(s) token
+NAT1,NAT2	1	Enzyme(s) token
+SULT1A3	1	Enzyme(s) token
+SULT1A5	1	Enzyme(s) token
+TAU	1	Enzyme(s) token
+UGT1A4, 1A6	1	Enzyme(s) token
+UGT2B7, UGT1A1, UGT1A3, UGT1A9, UGT2B4	1	Enzyme(s) token
+UGT1A1, UGT1A3, UGT1A10. UGT2B7, UGT2B17	1	Enzyme(s) token
+COMT	1	Enzyme(s) token
+UGT1A1, UGT1A3	1	Enzyme(s) token
+GST1A1	1	Enzyme(s) token
+GST1A2	1	Enzyme(s) token
+GSTM1	1	Enzyme(s) token
+GSTM3	1	Enzyme(s) token
+GSTP1	1	Enzyme(s) token
+UDP-glucuronosyltransferase 1-9	1	Enzyme(s) token
+UGT (primary)	1	Enzyme(s) token
+NAT1, NAT2	1	Enzyme(s) token
+UGT1A1, UGT1A3, UGTA9, UGT2B4, UGT2B7	1	Enzyme(s) token
+UGT1A9, UGT2B7	1	Enzyme(s) token
+GSTA1/A2, GSTM1/M3, GSTP1	1	Enzyme(s) token
+EC 3.2.1.40	1	Enzyme(s) token
+Unspecified bacterial isoflavone reductase	1	Enzyme(s) token

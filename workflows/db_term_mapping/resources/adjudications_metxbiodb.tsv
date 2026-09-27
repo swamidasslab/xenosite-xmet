@@ -1,0 +1,49 @@
+source	term	decision	adj_xrm_id	adj_preferred_label	spine	adj_note
+metxbiodb	N-Dementhylation	accept_as	xrm:0000205	N-demethylation	chemical transformation	typo dementhylation→demethylation
+metxbiodb	N-desmethylation	accept_as	xrm:0000205	N-demethylation	chemical transformation	des- spelling variant
+metxbiodb	N-Desmethylation	accept_as	xrm:0000205	N-demethylation	chemical transformation	casing + des- variant
+metxbiodb	N-demethylations	accept_as	xrm:0000205	N-demethylation	chemical transformation	plural typo
+metxbiodb	O-dementhylation	accept_as	xrm:0000209	O-demethylation	chemical transformation	typo
+metxbiodb	O-Dementhylation	accept_as	xrm:0000209	O-demethylation	chemical transformation	typo
+metxbiodb	O-desmethylation	accept_as	xrm:0000209	O-demethylation	chemical transformation	des- spelling
+metxbiodb	O-Desmethylation	accept_as	xrm:0000209	O-demethylation	chemical transformation	casing
+metxbiodb	N-deisopropylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	specific N-dealkyl; no isopropyl leaf yet
+metxbiodb	N-DESISOPROPYLATION	accept_as	xrm:0000201	N-dealkylation	chemical transformation	same
+metxbiodb	N-desethylation	accept_as	xrm:0000206	N-deethylation	chemical transformation	des- spelling; if 0000206 missing use 0000201
+metxbiodb	ALKENE_EPXODATION	accept_as	xrm:0000111	alkene epoxidation	chemical transformation	typo EPXODATION
+metxbiodb	Oxidization	accept_as	xrm:0000020	oxidation	chemical transformation	spelling variant
+metxbiodb	O-deacetylation	accept_as	xrm:0001023	deacetylation	chemical transformation	O-selective; map to deacetylation pending leaf
+metxbiodb	S-REDUCTION	accept_as	xrm:0000530	sulfur reduction	chemical transformation	
+metxbiodb	N-dechloroethylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	specialized N-dealkyl
+metxbiodb	O-deisopropylation	accept_as	xrm:0000202	O-dealkylation	chemical transformation	fuzzy wrongly chose N-depropylation
+metxbiodb	O-Debenzylation	accept_as	xrm:0000202	O-dealkylation	chemical transformation	fuzzy wrongly chose O-deethylation
+metxbiodb	N-dehydroxyethylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	fuzzy wrongly chose hydroxylamine
+metxbiodb	Desethylation	accept_as	xrm:0000206	N-deethylation	chemical transformation	underspecified atom; treat as N-deethyl common case
+metxbiodb	Keto hydrolysis	accept_as	xrm:0000013	hydrolysis	chemical transformation	underspecified; keep as hydrolysis pending leaf
+metxbiodb	O-demethylenation	accept_as	xrm:0004008	ring opening	chemical transformation	methylenedioxy cleavage
+metxbiodb	N-demethoxymethylation	no_match			chemical transformation	distinct dealkyl pattern; facet gap
+metxbiodb	Desulfation	accept_as	xrm:0000701	desulfation	chemical transformation	antonym of sulfation
+metxbiodb	Demethylenation	accept_as	xrm:0004008	ring opening	chemical transformation	methylenedioxy cleavage ≈ ring opening process; refine later
+metxbiodb	Aromatic Oxidation	accept_as	xrm:0000021	carbon oxidation	chemical transformation	broad aromatic C-oxidation
+metxbiodb	Bisallylic hydroxylation	accept_as	xrm:0000107	allylic hydroxylation	chemical transformation	near-leaf; optional future bisallylic concept
+metxbiodb	Thiophene S-oxidation	accept_as	xrm:0000133	thiophene S-oxidation	chemical transformation	MetX source spelling was Thiohene; normalized in extract
+metxbiodb	N-Dealkylatiion	accept_as	xrm:0000201	N-dealkylation	chemical transformation	typo
+metxbiodb	N-desalkylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	des- spelling
+metxbiodb	N-Desalkylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	
+metxbiodb	N-Dealylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	typo
+metxbiodb	Alphatic Hydroxylation	accept_as	xrm:0000102	aliphatic hydroxylation	chemical transformation	typo
+metxbiodb	Alipathic Hydroxylation	accept_as	xrm:0000102	aliphatic hydroxylation	chemical transformation	typo
+metxbiodb	C-DEALKLYATION	accept_as	xrm:0000204	C-dealkylation	chemical transformation	typo
+metxbiodb	C-DEALYLATION	accept_as	xrm:0000204	C-dealkylation	chemical transformation	typo
+metxbiodb	O-Dealklyation	accept_as	xrm:0000202	O-dealkylation	chemical transformation	typo
+metxbiodb	N-Despropylation	accept_as	xrm:0000207	N-depropylation	chemical transformation	if id missing use N-dealkylation
+metxbiodb	O-aryl demethylation	accept_as	xrm:0000209	O-demethylation	chemical transformation	aromatic O-demethyl; site via bundle
+metxbiodb	GSH-conjugatoon	accept_as	xrm:0001030	glutathionation	chemical transformation	typo
+metxbiodb	Glycoside hydrolysis	accept_as	xrm:0000407	ether cleavage	chemical transformation	glycoside O-cleavage; nearest leaf
+metxbiodb	Pyridine N-oxidation	accept_as	xrm:0000120	nitrogen oxidation	chemical transformation	heteroarene N-ox; site via bundle
+metxbiodb	Hydroxylamine O-sulfonation	accept_as	xrm:0001011	O-sulfation	phase II conjugation family	attachment atom via site; sulfonation=sulfation
+metxbiodb	Hydroxylamine O-glucuronidation	accept_as	xrm:0001001	O-glucuronidation	phase II conjugation family	
+metxbiodb	Unknown reaction	out_of_scope				not a reaction type
+metxbiodb	Unknown Reduction	out_of_scope				underspecified noise label
+metxbiodb	Nifedipine Oxidation	out_of_scope				substrate-specific label, not a type
+metxbiodb	C-DE-ESTERIFICATION	accept_as	xrm:0000401	ester hydrolysis	chemical transformation	de-esterification

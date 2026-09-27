@@ -1,0 +1,163 @@
+# Map MetXBioDB and AMD reaction terms to XRM separately (never merged).
+#
+# Usage (from repo root):
+#   uv run snakemake -s workflows/db_term_mapping/Snakefile -c1
+#   uv run snakemake -s workflows/db_term_mapping/Snakefile -c1 metxbiodb
+#   uv run snakemake -s workflows/db_term_mapping/Snakefile -c1 amd
+
+from pathlib import Path
+import json
+
+configfile: "workflows/db_term_mapping/config.yaml"
+
+REPO = Path(workflow.basedir).resolve().parents[1]
+SCRIPTS = Path(workflow.basedir) / "scripts"
+OUT = REPO / config["outdir"]
+RES = REPO / config["resources_dir"]
+DATASETS = list(config["datasets"].keys())
+
+SPINES_JSON = json.dumps(config["match_spines"])
+
+
+rule all:
+    input:
+        expand(
+            str(OUT / "{dataset}" / "gap_analysis.md"),
+            dataset=DATASETS,
+        ),
+        expand(
+            str(OUT / "{dataset}" / "strong_matches.tsv"),
+            dataset=DATASETS,
+        ),
+        expand(
+            str(OUT / "{dataset}" / "review_queue.tsv"),
+            dataset=DATASETS,
+        ),
+        expand(
+            str(OUT / "{dataset}" / "antonym_pairs.tsv"),
+            dataset=DATASETS,
+        ),
+        OUT / "metxbiodb" / "compositional_refinement.md",
+
+
+rule detect_antonyms:
+    input:
+        terms=OUT / "{dataset}" / "terms.tsv",
+        index=OUT / "ontology_index.tsv",
+    output:
+        OUT / "{dataset}" / "antonym_pairs.tsv",
+    shell:
+        "uv run python {SCRIPTS}/detect_antonyms.py "
+        "{input.terms} {input.index} {output}"
+
+
+rule refine_metx_compositional:
+    input:
+        matches=OUT / "metxbiodb" / "matches_scored.tsv",
+        ontology=REPO / config["ontology_yaml"],
+    output:
+        tsv=OUT / "metxbiodb" / "compositional_refinement.tsv",
+        md=OUT / "metxbiodb" / "compositional_refinement.md",
+    shell:
+        "uv run python {SCRIPTS}/refine_metx_compositional.py "
+        "{input.matches} {input.ontology} {output.tsv} {output.md}"
+
+
+rule metxbiodb:
+    input:
+        OUT / "metxbiodb" / "gap_analysis.md",
+        OUT / "metxbiodb" / "strong_matches.tsv",
+        OUT / "metxbiodb" / "review_queue.tsv",
+
+
+rule amd:
+    input:
+        OUT / "amd" / "gap_analysis.md",
+        OUT / "amd" / "strong_matches.tsv",
+        OUT / "amd" / "review_queue.tsv",
+
+
+rule ontology_index:
+    input:
+        yaml=REPO / config["ontology_yaml"],
+    output:
+        tsv=OUT / "ontology_index.tsv",
+        meta=OUT / "ontology_index_meta.json",
+    params:
+        spines=SPINES_JSON,
+    shell:
+        "uv run python {SCRIPTS}/build_ontology_index.py "
+        "{input.yaml} '{params.spines}' {output.tsv} {output.meta}"
+
+
+rule prepare_terms:
+    input:
+        counts=lambda wildcards: REPO / config["datasets"][wildcards.dataset]["counts"],
+    output:
+        OUT / "{dataset}" / "terms.tsv",
+    params:
+        source=lambda wildcards: wildcards.dataset,
+    shell:
+        "uv run python {SCRIPTS}/prepare_terms.py "
+        "{input.counts} {params.source} {output}"
+
+
+rule match_terms:
+    input:
+        terms=OUT / "{dataset}" / "terms.tsv",
+        index=OUT / "ontology_index.tsv",
+        aliases=RES / "aliases.tsv",
+    output:
+        matches=OUT / "{dataset}" / "matches_scored.tsv",
+        summary=OUT / "{dataset}" / "match_summary.json",
+    params:
+        high=config["fuzzy_high_min"],
+        mid=config["fuzzy_mid_min"],
+        margin=config["fuzzy_margin"],
+    shell:
+        "uv run python {SCRIPTS}/match_terms.py "
+        "{input.terms} {input.index} {input.aliases} "
+        "{output.matches} {output.summary} "
+        "{params.high} {params.mid} {params.margin}"
+
+
+rule prepare_review:
+    input:
+        OUT / "{dataset}" / "matches_scored.tsv",
+    output:
+        OUT / "{dataset}" / "review_queue.tsv",
+    shell:
+        "uv run python {SCRIPTS}/prepare_review.py {input} {output}"
+
+
+rule apply_adjudications:
+    input:
+        matches=OUT / "{dataset}" / "matches_scored.tsv",
+        adj=RES / "adjudications_{dataset}.tsv",
+    output:
+        strong=OUT / "{dataset}" / "strong_matches.tsv",
+        residual=OUT / "{dataset}" / "residual_terms.tsv",
+        summary=OUT / "{dataset}" / "condense_summary.json",
+    shell:
+        "uv run python {SCRIPTS}/apply_adjudications.py "
+        "{input.matches} {input.adj} "
+        "{output.strong} {output.residual} {output.summary}"
+
+
+rule analyze_gaps:
+    input:
+        residual=OUT / "{dataset}" / "residual_terms.tsv",
+        strong=OUT / "{dataset}" / "strong_matches.tsv",
+        match_summary=OUT / "{dataset}" / "match_summary.json",
+        condense_summary=OUT / "{dataset}" / "condense_summary.json",
+    output:
+        tsv=OUT / "{dataset}" / "gap_analysis.tsv",
+        md=OUT / "{dataset}" / "gap_analysis.md",
+    params:
+        dataset=lambda wildcards: wildcards.dataset,
+        examples=config["examples_per_gap_bucket"],
+    shell:
+        "uv run python {SCRIPTS}/analyze_gaps.py "
+        "{input.residual} {input.strong} "
+        "{input.match_summary} {input.condense_summary} "
+        "{params.dataset} {output.tsv} {output.md} {params.examples}"

@@ -3,9 +3,9 @@ scheme:
   id: xrm:scheme
   preferred_label: Xenobiotic Reaction Metabolism
   iri: https://xenosite.org/ontology/xrm#
-  definition: Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a full
-    chemical ontology. Site-localized display names use templates outside the concept scheme. SSSOM maps
-    to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO.
+  definition: Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a 
+    full chemical ontology. Site-localized display names use templates outside the concept scheme. 
+    SSSOM maps to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO.
 spines:
 - id: xrm:1000000
   preferred_label: metabolism phase
@@ -78,20 +78,20 @@ spines:
   - biological_context
 - id: xrm:6000000
   preferred_label: ambiguity and underspecification
-  definition: Cross-cutting spine for incomplete, conflicting, or underdetermined naming evidence. Prefer
-    specific ambiguity subtypes; tag alongside positive terms rather than replacing them.
+  definition: Cross-cutting spine for incomplete, conflicting, or underdetermined naming evidence. 
+    Prefer specific ambiguity subtypes; tag alongside positive terms rather than replacing them.
   synonyms: []
 - id: xrm:9000000
   preferred_label: Metabolic Forest map
-  definition: Alias / mapping spine for Metabolic Forest rulesets → rules → patterns. Opaque forest.*
-    CURIEs only; not the chemist backbone.
+  definition: Alias / mapping spine for Metabolic Forest rulesets → rules → patterns. Opaque 
+    forest.* CURIEs only; not the chemist backbone.
   synonyms: &id014
   - forest alignment
   - ruleset–rule–pattern map
 - id: xrm:2200000
   preferred_label: leaving group
-  definition: Fragment or moiety that departs in a cleavage / substitution / dealkylation / hydrolysis
-    step. Med-chem handle for soft-spot design.
+  definition: Fragment or moiety that departs in a cleavage / substitution / dealkylation / 
+    hydrolysis step. Med-chem handle for soft-spot design.
   synonyms: &id013
   - leaving_group
   - departing group
@@ -133,8 +133,8 @@ concepts:
   - Metabolic Detoxication, Phase II
   - phase 2 metabolism
   - conjugation phase
-  definition: Conjugation with hydrophilic moieties (glucuronide, sulfate, glutathione, acetyl, methyl,
-    amino acids, …).
+  definition: Conjugation with hydrophilic moieties (glucuronide, sulfate, glutathione, acetyl, 
+    methyl, amino acids, …).
   parents:
   - xrm:1000000
 - id: xrm:0000003
@@ -143,8 +143,8 @@ concepts:
   - phase 3
   - phase III
   - transport phase
-  definition: Transporter-mediated disposition related to xenobiotic handling; related to metabolism naming
-    but not a primary reaction label.
+  definition: Transporter-mediated disposition related to xenobiotic handling; related to metabolism
+    naming but not a primary reaction label.
   parents:
   - xrm:1000000
 - id: xrm:0000010
@@ -179,9 +179,10 @@ concepts:
   preferred_label: dehydrogenation
   synonyms:
   - desaturation
-  definition: Phase I class that extracts hydrogen(s) to form a multiple bond, iminium, or quinoid (alcohol→carbonyl,
-    bond unsaturation, quinone/imine/methide formation, iminium formation). Maps to the Metabolic Forest
-    / Rainbow dehydrogenation ruleset; prefer this full name over localized abbreviations.
+  definition: Phase I class that extracts hydrogen(s) to form a multiple bond, iminium, or quinoid 
+    (alcohol→carbonyl, bond unsaturation, quinone/imine/methide formation, iminium formation). Maps 
+    to the Metabolic Forest / Rainbow dehydrogenation ruleset; prefer this full name over localized 
+    abbreviations.
   parents:
   - xrm:1100000
   - xrm:0000001
@@ -195,9 +196,9 @@ concepts:
   - xrm:7400003
 - id: xrm:0000013
   preferred_label: hydrolysis
-  definition: Phase I class in which water addition cleaves amide, ester, ether, or related bonds (including
-    cyanide/nitrile hydrolysis). Maps to the Metabolic Forest / Rainbow hydrolysis ruleset; prefer this
-    full name over localized abbreviations.
+  definition: Phase I class in which water addition cleaves amide, ester, ether, or related bonds 
+    (including cyanide/nitrile hydrolysis). Maps to the Metabolic Forest / Rainbow hydrolysis 
+    ruleset; prefer this full name over localized abbreviations.
   parents:
   - xrm:1100000
   - xrm:0000001
@@ -211,9 +212,9 @@ concepts:
   - xrm:7700005
 - id: xrm:0000014
   preferred_label: reduction
-  definition: Phase I class that removes oxygen or adds hydrogen(s) (nitro, carbonyl, and sulfo reduction;
-    reductive dehalogenation; hydrogenation). Maps to the Metabolic Forest / Rainbow reduction ruleset;
-    prefer this full name over localized abbreviations.
+  definition: Phase I class that removes oxygen or adds hydrogen(s) (nitro, carbonyl, and sulfo 
+    reduction; reductive dehalogenation; hydrogenation). Maps to the Metabolic Forest / Rainbow 
+    reduction ruleset; prefer this full name over localized abbreviations.
   parents:
   - xrm:1100000
   - xrm:0000001
@@ -247,7 +248,8 @@ concepts:
   preferred_label: carbon–heteroatom oxidative cleavage
   synonyms:
   - α-carbon hydroxylation cleavage
-  definition: α-Carbon hydroxylation followed by C–X cleavage (N-/O-/S-dealkylation, oxidative deamination).
+  definition: α-Carbon hydroxylation followed by C–X cleavage (N-/O-/S-dealkylation, oxidative 
+    deamination).
   parents:
   - xrm:0000020
 - id: xrm:0000024
@@ -279,6 +281,7 @@ concepts:
   - xrm:7400001
   - xrm:7700001
   - xrm:2400012
+  - xrm:0000650
   synonyms:
   - C-hydroxylation
   - monooxygenation hydroxylation
@@ -403,6 +406,8 @@ concepts:
   - xrm:1500106
   definition: 'thiophene epoxidation: xenobiotic-metabolism term under epoxidation, heteroaromatic oxidation
     impact.'
+  synonyms:
+  - thiohene epoxidation
 - id: xrm:0000120
   preferred_label: nitrogen oxidation
   synonyms:
@@ -479,6 +484,9 @@ concepts:
   - xrm:8000006
   related_match:
   - xrm:8000006
+  synonyms:
+  - Thiohene S-oxidation
+  - thiohene S-oxidation
 - id: xrm:0000134
   preferred_label: thiol oxidation
   parents:
@@ -526,6 +534,7 @@ concepts:
   - xrm:7400002
   - xrm:7100007
   - xrm:2200032
+  - xrm:0000610
 - id: xrm:0000201
   preferred_label: N-dealkylation
   parents:
@@ -537,6 +546,7 @@ concepts:
   - xrm:1400022
   - xrm:1500129
   - xrm:1500013
+  - xrm:0000611
   synonyms:
   - oxidative N-dealkylation
   - N-dealkylative cleavage
@@ -548,6 +558,7 @@ concepts:
   related_match:
   - xrm:7100003
   - xrm:7100007
+  - xrm:0000612
   synonyms:
   - oxidative O-dealkylation
   definition: 'O-dealkylation: xenobiotic-metabolism term under dealkylation.'
@@ -558,6 +569,7 @@ concepts:
   related_match:
   - xrm:7100004
   - xrm:7100007
+  - xrm:0000613
   definition: 'S-dealkylation: xenobiotic-metabolism term under dealkylation.'
 - id: xrm:0000204
   preferred_label: C-dealkylation
@@ -566,6 +578,8 @@ concepts:
   parents:
   - xrm:0000200
   definition: 'C-dealkylation: xenobiotic-metabolism term under dealkylation.'
+  related_match:
+  - xrm:0000614
 - id: xrm:0000205
   preferred_label: N-demethylation
   synonyms:
@@ -594,7 +608,8 @@ concepts:
   preferred_label: oxidative deamination
   synonyms:
   - deamination
-  definition: α-Carbon hydroxylation of a primary (or suitable) amine releasing ammonia/amine and a carbonyl.
+  definition: α-Carbon hydroxylation of a primary (or suitable) amine releasing ammonia/amine and a 
+    carbonyl.
   parents:
   - xrm:0000201
   - xrm:0000023
@@ -664,9 +679,9 @@ concepts:
   synonyms:
   - quinonation
   - quinone species formation
-  definition: Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, quinone-methide,
-    or imine-methide), in one or two metabolic steps. From the quinone-formation and Metabolic Forest
-    papers; under dehydrogenation in the Forest-mapped Phase I hierarchy.
+  definition: Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, 
+    quinone-methide, or imine-methide), in one or two metabolic steps. From the quinone-formation 
+    and Metabolic Forest papers; under dehydrogenation in the Forest-mapped Phase I hierarchy.
   parents:
   - xrm:0000001
   related_match:
@@ -730,24 +745,24 @@ concepts:
   preferred_label: imine-methide formation
   synonyms:
   - imine methide formation
-  definition: Formation of an imine-methide quinoid species (quinone-formation paper subtype alongside
-    quinone, quinone-imine, and quinone-methide).
+  definition: Formation of an imine-methide quinoid species (quinone-formation paper subtype 
+    alongside quinone, quinone-imine, and quinone-methide).
   parents:
   - xrm:0000300
   related_match:
   - xrm:8000005
 - id: xrm:0000307
   preferred_label: one-step quinone formation
-  definition: Direct dehydrogenation of the parent to a quinone species without a prior hydroxylation
-    intermediate (quinone-formation / Rainbow papers).
+  definition: Direct dehydrogenation of the parent to a quinone species without a prior 
+    hydroxylation intermediate (quinone-formation / Rainbow papers).
   parents:
   - xrm:0000300
   related_match:
   - xrm:7900001
 - id: xrm:0000308
   preferred_label: two-step quinone formation
-  definition: Quinone species formed after an intermediate hydroxylation (or related) step followed by
-    dehydrogenation (quinone-formation / Metabolic Forest papers).
+  definition: Quinone species formed after an intermediate hydroxylation (or related) step followed 
+    by dehydrogenation (quinone-formation / Metabolic Forest papers).
   parents:
   - xrm:0000300
   related_match:
@@ -832,7 +847,12 @@ concepts:
   - xrm:0000013
   related_match:
   - xrm:2200025
+  - xrm:0000630
   definition: 'ester hydrolysis: xenobiotic-metabolism term under hydrolysis.'
+  synonyms:
+  - de-esterification
+  - C-de-esterification
+  - deesterification
 - id: xrm:0000402
   preferred_label: amide hydrolysis
   parents:
@@ -845,11 +865,15 @@ concepts:
   parents:
   - xrm:0000401
   definition: 'lactone hydrolysis: xenobiotic-metabolism term under ester hydrolysis.'
+  related_match:
+  - xrm:0000632
 - id: xrm:0000404
   preferred_label: lactam hydrolysis
   parents:
   - xrm:0000402
   definition: 'lactam hydrolysis: xenobiotic-metabolism term under amide hydrolysis.'
+  related_match:
+  - xrm:0000633
 - id: xrm:0000405
   preferred_label: carbamate hydrolysis
   parents:
@@ -870,8 +894,8 @@ concepts:
   - xrm:0000013
 - id: xrm:0000408
   preferred_label: ether hydrolysis
-  definition: Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from oxidative
-    O-dealkylation).
+  definition: Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from 
+    oxidative O-dealkylation).
   parents:
   - xrm:0000013
   related_match:
@@ -1083,6 +1107,7 @@ concepts:
   - xrm:7500003
   - xrm:7700008
   - xrm:1500116
+  - xrm:0000700
   definition: 'glucuronidation: xenobiotic-metabolism term under phase II, phase II conjugation family.'
 - id: xrm:0001001
   preferred_label: O-glucuronidation
@@ -1090,6 +1115,7 @@ concepts:
   - xrm:0001000
   related_match:
   - xrm:1600135
+  - xrm:0000700
   definition: 'O-glucuronidation: xenobiotic-metabolism term under glucuronidation.'
 - id: xrm:0001002
   preferred_label: phenolic glucuronidation
@@ -1173,6 +1199,7 @@ concepts:
   related_match:
   - xrm:9101010
   - xrm:1500117
+  - xrm:0000701
   definition: 'sulfation: xenobiotic-metabolism term under phase II, phase II conjugation family.'
 - id: xrm:0001011
   preferred_label: O-sulfation
@@ -1180,6 +1207,7 @@ concepts:
   - xrm:0001010
   related_match:
   - xrm:1600135
+  - xrm:0000701
   definition: 'O-sulfation: xenobiotic-metabolism term under sulfation.'
 - id: xrm:0001012
   preferred_label: phenolic sulfation
@@ -1241,6 +1269,7 @@ concepts:
   - xrm:7000003
   - xrm:1500114
   - xrm:1500019
+  - xrm:0000703
   definition: 'glutathionation: xenobiotic-metabolism term under phase II, phase II conjugation family.'
 - id: xrm:0001031
   preferred_label: Michael glutathionation
@@ -1345,6 +1374,7 @@ concepts:
   - xrm:0001040
   related_match:
   - xrm:1600137
+  - xrm:0000217
   definition: 'S-methylation: xenobiotic-metabolism term under methylation.'
 - id: xrm:0001050
   preferred_label: amino acid conjugation
@@ -1395,16 +1425,24 @@ concepts:
   preferred_label: glycosylation
   synonyms:
   - glycosidation
+  - O-glycosidation
+  - N-glycosidation
+  - glucosidation
+  - O-glucosidation
+  - N-glucosidation
   definition: Conjugation with sugars other than glucuronic acid.
   parents:
   - xrm:0000002
   - xrm:1300000
+  related_match:
+  - xrm:0000702
 - id: xrm:0001061
   preferred_label: CoA conjugation
   synonyms:
   - acyl-CoA formation
   - coa_conjugation
-  definition: Activation of carboxylic acids as CoA thioesters (often preceding amino acid conjugation).
+  definition: Activation of carboxylic acids as CoA thioesters (often preceding amino acid 
+    conjugation).
   parents:
   - xrm:0000002
   - xrm:1300000
@@ -1433,18 +1471,20 @@ concepts:
   definition: 'imine–enamine tautomerization: xenobiotic-metabolism term under tautomerization.'
 - id: xrm:0002003
   preferred_label: isomerization
-  definition: Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; Metabolic
-    Forest treats related rearrangements separately from the five Phase I classes).
+  definition: Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; 
+    Metabolic Forest treats related rearrangements separately from the five Phase I classes).
   parents:
   - xrm:1100000
 - id: xrm:0002004
   preferred_label: rearrangement
-  definition: Skeletal or substituent rearrangement in a metabolic pathway (Rainbow excluded remainder).
+  definition: Skeletal or substituent rearrangement in a metabolic pathway (Rainbow excluded 
+    remainder).
   parents:
   - xrm:1100000
 - id: xrm:0002005
   preferred_label: deacylation
-  definition: Removal of an acyl group (Rainbow excluded phase I remainder; related to hydrolysis/deacetylation).
+  definition: Removal of an acyl group (Rainbow excluded phase I remainder; related to 
+    hydrolysis/deacetylation).
   parents:
   - xrm:0000001
   related_match:
@@ -1457,9 +1497,12 @@ concepts:
   - xrm:0000001
 - id: xrm:0002007
   preferred_label: decarbonylation
-  definition: Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder).
+  definition: Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I 
+    remainder).
   parents:
   - xrm:0000001
+  related_match:
+  - xrm:0000731
 - id: xrm:0003000
   preferred_label: bioactivation
   synonyms:
@@ -1502,13 +1545,14 @@ concepts:
   definition: 'reactive metabolite formation: xenobiotic-metabolism term under bioactivation.'
 - id: xrm:0004000
   preferred_label: process facet
-  definition: Cross-cutting process-mechanism facets (NIH shift, ipso, carbinolamine cleavage, acyl migration,
-    …). Orthogonal to reaction-type, Forest-map, and impact spines.
+  definition: Cross-cutting process-mechanism facets (NIH shift, ipso, carbinolamine cleavage, acyl 
+    migration, …). Orthogonal to reaction-type, Forest-map, and impact spines.
   parents:
   - xrm:1100000
 - id: xrm:0004001
   preferred_label: dearomatization
-  definition: Loss of aromatic character (arene oxide, quinone, thiophene S-oxide, cis-dihydrodiol, etc.).
+  definition: Loss of aromatic character (arene oxide, quinone, thiophene S-oxide, cis-dihydrodiol, 
+    etc.).
   parents:
   - xrm:0004000
   - xrm:8000001
@@ -1522,7 +1566,8 @@ concepts:
   - xrm:7600001
 - id: xrm:0004002
   preferred_label: rearomatization
-  definition: Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol formation).
+  definition: Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol 
+    formation).
   parents:
   - xrm:0004000
   - xrm:8000002
@@ -1544,7 +1589,8 @@ concepts:
   - xrm:8000007
 - id: xrm:0004004
   preferred_label: ipso substitution
-  definition: Substitution at a substituted aromatic carbon (ipso), often displacing alkyl/halogen/alkoxy.
+  definition: Substitution at a substituted aromatic carbon (ipso), often displacing 
+    alkyl/halogen/alkoxy.
   parents:
   - xrm:0004000
   related_match:
@@ -1566,8 +1612,8 @@ concepts:
     pathway.'
 - id: xrm:0004006
   preferred_label: carbinolamine cleavage
-  definition: Spontaneous collapse of an α-hydroxy amine to amine + carbonyl; mechanism shared by N-dealkylation
-    and oxidative deamination.
+  definition: Spontaneous collapse of an α-hydroxy amine to amine + carbonyl; mechanism shared by 
+    N-dealkylation and oxidative deamination.
   parents:
   - xrm:0004000
   related_match:
@@ -1603,7 +1649,8 @@ concepts:
   preferred_label: cis-dihydroxylation
   synonyms:
   - arene cis-dihydrodiol formation
-  definition: Addition of two hydroxyls across an aromatic bond (often dioxygenase); a dearomatizing path.
+  definition: Addition of two hydroxyls across an aromatic bond (often dioxygenase); a dearomatizing
+    path.
   parents:
   - xrm:0004000
   - xrm:0000021
@@ -1703,11 +1750,15 @@ concepts:
   definition: Removal of an amino group.
   parents:
   - xrm:1100000
+  related_match:
+  - xrm:0000661
 - id: xrm:1100014
   preferred_label: dehalogenation
   definition: Removal of a halogen atom.
   parents:
   - xrm:1100000
+  related_match:
+  - xrm:0000660
 - id: xrm:1100016
   preferred_label: ring oxidation
   definition: Oxidation on a ring framework.
@@ -1918,6 +1969,10 @@ concepts:
   - xrm:0000002
   synonyms:
   - cysteine_conjugation
+  - S-cysteination
+  - cysteination
+  related_match:
+  - xrm:0000704
 - id: xrm:1300011
   preferred_label: N-acetylcysteine conjugation
   definition: 'Phase II conjugation family: N-acetylcysteine conjugation.'
@@ -2235,8 +2290,8 @@ concepts:
   - aldehyde_forming
 - id: xrm:1400030
   preferred_label: forms reactive conjugate
-  definition: Transformation yields or proceeds via a reactive conjugate (e.g. acyl glucuronide, GSH-trappable
-    adduct precursor).
+  definition: Transformation yields or proceeds via a reactive conjugate (e.g. acyl glucuronide, 
+    GSH-trappable adduct precursor).
   parents:
   - xrm:1400000
   synonyms:
@@ -3256,6 +3311,8 @@ concepts:
   definition: Thiophene ring site environment.
   parents:
   - xrm:1600000
+  synonyms:
+  - thiohene
 - id: xrm:1600112
   preferred_label: imidazole
   definition: Imidazole ring site environment.
@@ -4207,122 +4264,143 @@ concepts:
   preferred_label: liver tissue context
   definition: Liver tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - liver_tissue_context
 - id: xrm:2100110
   preferred_label: intestine tissue context
   definition: Intestine tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - intestine_tissue_context
 - id: xrm:2100111
   preferred_label: kidney tissue context
   definition: Kidney tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - kidney_tissue_context
 - id: xrm:2100112
   preferred_label: lung tissue context
   definition: Lung tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - lung_tissue_context
 - id: xrm:2100113
   preferred_label: brain tissue context
   definition: Brain tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - brain_tissue_context
 - id: xrm:2100114
   preferred_label: human species context
   definition: Human species framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - human_species_context
+  - Human
+  - human
 - id: xrm:2100115
   preferred_label: rat species context
   definition: Rat species framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - rat_species_context
+  - Rat
+  - rat
 - id: xrm:2100116
   preferred_label: mouse species context
   definition: Mouse species framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - mouse_species_context
+  - Mouse
+  - mouse
 - id: xrm:2100117
   preferred_label: dog species context
   definition: Dog species framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - dog_species_context
+  - Dog
+  - dog
 - id: xrm:2100118
   preferred_label: monkey species context
   definition: Nonhuman primate framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - NHP species context
   - monkey_species_context
+  - Monkey
+  - monkey
+  - non-human primate
 - id: xrm:2100119
   preferred_label: plasma matrix context
   definition: Plasma matrix framing.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100301
   synonyms:
   - plasma_matrix_context
 - id: xrm:2100120
   preferred_label: urine matrix context
   definition: Urine matrix framing.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100301
   synonyms:
   - urine_matrix_context
 - id: xrm:2100121
   preferred_label: bile matrix context
   definition: Bile matrix framing.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100301
   synonyms:
   - bile_matrix_context
 - id: xrm:2100122
   preferred_label: feces matrix context
   definition: Feces matrix framing.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100301
   synonyms:
   - feces_matrix_context
 - id: xrm:2100123
   preferred_label: microsome matrix context
   definition: Microsome incubation matrix.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100310
   synonyms:
   - microsome_matrix_context
+  - microsomes
+  - liver microsomes
 - id: xrm:2100124
   preferred_label: cytosol matrix context
   definition: Cytosol incubation matrix.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100310
   synonyms:
   - cytosol_matrix_context
 - id: xrm:2100125
   preferred_label: hepatocyte matrix context
   definition: Hepatocyte incubation matrix.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100310
   synonyms:
   - hepatocyte_matrix_context
+  - hepatocytes
 - id: xrm:2100126
   preferred_label: endoplasmic reticulum compartment
   definition: ER compartment framing.
@@ -4440,72 +4518,79 @@ concepts:
   preferred_label: skin tissue context
   definition: Skin tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - skin_tissue_context
 - id: xrm:2100213
   preferred_label: placenta tissue context
   definition: Placenta tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - placenta_tissue_context
 - id: xrm:2100214
   preferred_label: adrenal tissue context
   definition: Adrenal tissue framing.
   parents:
-  - xrm:2100000
+  - xrm:2100011
   synonyms:
   - adrenal_tissue_context
 - id: xrm:2100215
   preferred_label: rabbit species context
   definition: Rabbit species framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - rabbit_species_context
 - id: xrm:2100216
   preferred_label: minipig species context
   definition: Minipig species framing.
   parents:
-  - xrm:2100000
+  - xrm:2100012
   synonyms:
   - minipig_species_context
 - id: xrm:2100217
   preferred_label: serum matrix context
   definition: Serum matrix framing.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100301
   synonyms:
   - serum_matrix_context
 - id: xrm:2100218
   preferred_label: whole blood matrix context
   definition: Whole-blood matrix framing.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100301
   synonyms:
   - whole_blood_matrix_context
 - id: xrm:2100219
   preferred_label: tissue homogenate matrix
   definition: Tissue homogenate incubation matrix.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100310
   synonyms:
   - tissue_homogenate_matrix
 - id: xrm:2100220
   preferred_label: recombinant enzyme matrix
   definition: Recombinant enzyme incubation matrix.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100310
   synonyms:
   - recombinant_enzyme_matrix
 - id: xrm:2100221
   preferred_label: supersome matrix context
   definition: Insect-cell supersome matrix.
   parents:
-  - xrm:2100000
+  - xrm:2100013
+  - xrm:2100310
   synonyms:
   - supersome_matrix_context
+  - Supersomes
+  - baculosome-related recombinant membranes
 - id: xrm:2100222
   preferred_label: lysosome compartment
   definition: Lysosomal compartment framing.
@@ -4578,8 +4663,8 @@ concepts:
   - fasted_state_context
 - id: xrm:2200000
   preferred_label: leaving group
-  definition: Fragment or moiety that departs in a cleavage / substitution / dealkylation / hydrolysis
-    step. Med-chem handle for soft-spot design.
+  definition: Fragment or moiety that departs in a cleavage / substitution / dealkylation / 
+    hydrolysis step. Med-chem handle for soft-spot design.
   synonyms: *id013
   parents:
   - xrm:0000000
@@ -4757,8 +4842,8 @@ concepts:
   - non-cleaving transformation
 - id: xrm:2300000
   preferred_label: pharmacological role
-  definition: Metabolism-specific pharmacological framing of parent or metabolite (not a full activity
-    ontology).
+  definition: Metabolism-specific pharmacological framing of parent or metabolite (not a full 
+    activity ontology).
   parents:
   - xrm:0000000
   synonyms:
@@ -4880,8 +4965,8 @@ concepts:
   - xrm:2400000
 - id: xrm:6000000
   preferred_label: ambiguity and underspecification
-  definition: Cross-cutting spine for incomplete, conflicting, or underdetermined naming evidence. Prefer
-    specific ambiguity subtypes; tag alongside positive terms rather than replacing them.
+  definition: Cross-cutting spine for incomplete, conflicting, or underdetermined naming evidence. 
+    Prefer specific ambiguity subtypes; tag alongside positive terms rather than replacing them.
   parents:
   - xrm:0000000
 - id: xrm:6000001
@@ -4919,8 +5004,8 @@ concepts:
   - xrm:6000000
 - id: xrm:6000021
   preferred_label: competing-type ambiguity
-  definition: Two or more named types actively compete (e.g. epoxidation vs aromatic hydroxylation via
-    arene oxide).
+  definition: Two or more named types actively compete (e.g. epoxidation vs aromatic hydroxylation 
+    via arene oxide).
   parents:
   - xrm:6000000
   - xrm:6000020
@@ -4928,7 +5013,8 @@ concepts:
   - xrm:6000001
 - id: xrm:6000022
   preferred_label: mechanism ambiguity
-  definition: Overall type may be clear but the mechanistic path is not (e.g. NIH-shift vs direct insertion).
+  definition: Overall type may be clear but the mechanistic path is not (e.g. NIH-shift vs direct 
+    insertion).
   parents:
   - xrm:6000000
   - xrm:6000020
@@ -4977,7 +5063,8 @@ concepts:
   - xrm:6000000
 - id: xrm:6000051
   preferred_label: forest-map correspondence ambiguity
-  definition: Chemist typing and Metabolic Forest rule/pattern correspondence are unresolved or conflicting.
+  definition: Chemist typing and Metabolic Forest rule/pattern correspondence are unresolved or 
+    conflicting.
   parents:
   - xrm:6000000
   - xrm:6000001
@@ -4985,7 +5072,8 @@ concepts:
   - xrm:6000001
 - id: xrm:6000052
   preferred_label: external-ontology alignment ambiguity
-  definition: Mapping to MeSH/MOP/KEGG (or similar) is uncertain; keep XRM term and mark alignment soft.
+  definition: Mapping to MeSH/MOP/KEGG (or similar) is uncertain; keep XRM term and mark alignment 
+    soft.
   parents:
   - xrm:6000000
   - xrm:6000001
@@ -5144,7 +5232,8 @@ concepts:
   - xrm:0000013
 - id: xrm:7200003
   preferred_label: bond order change
-  definition: Bond order increases or decreases without heavy-atom count change (dehydrogenation, hydrogenation).
+  definition: Bond order increases or decreases without heavy-atom count change (dehydrogenation, 
+    hydrogenation).
   parents:
   - xrm:7200000
   related_match:
@@ -5324,8 +5413,8 @@ concepts:
   - xrm:7600000
 - id: xrm:7700000
   preferred_label: formula-delta class
-  definition: Cross-cutting spine keyed to heavy-atom formula change; highly automatable from reactant/product
-    formulas.
+  definition: Cross-cutting spine keyed to heavy-atom formula change; highly automatable from 
+    reactant/product formulas.
   parents:
   - xrm:1700000
 - id: xrm:7700001
@@ -5347,7 +5436,8 @@ concepts:
   - xrm:7700000
 - id: xrm:7700003
   preferred_label: hydrogenation delta
-  definition: Net +H₂ equivalent without other heavy-atom change (often inferred with bond-order change).
+  definition: Net +H₂ equivalent without other heavy-atom change (often inferred with bond-order 
+    change).
   parents:
   - xrm:7700000
   related_match:
@@ -5397,7 +5487,8 @@ concepts:
   - xrm:0000210
 - id: xrm:7700010
   preferred_label: no heavy-atom delta
-  definition: Heavy-atom formula unchanged (tautomer, many dehydrogenations if H ignored, rearrangements).
+  definition: Heavy-atom formula unchanged (tautomer, many dehydrogenations if H ignored, 
+    rearrangements).
   parents:
   - xrm:7700000
   related_match:
@@ -5455,8 +5546,8 @@ concepts:
   - xrm:0000308
 - id: xrm:7900003
   preferred_label: preparatory intermediate step
-  definition: Intermediate that enables a subsequent defining step (e.g. hydroxylation before quinone
-    formation).
+  definition: Intermediate that enables a subsequent defining step (e.g. hydroxylation before 
+    quinone formation).
   parents:
   - xrm:7900000
   related_match:
@@ -5498,8 +5589,8 @@ concepts:
   - xrm:0000315
 - id: xrm:8000003
   preferred_label: aromatic ring substitution impact
-  definition: Substitution on an aromatic ring that preserves the aromatic sextet (e.g. phenolic hydroxylation
-    after NIH shift).
+  definition: Substitution on an aromatic ring that preserves the aromatic sextet (e.g. phenolic 
+    hydroxylation after NIH shift).
   parents:
   - xrm:8000000
   related_match:
@@ -5508,8 +5599,8 @@ concepts:
   - xrm:0004004
 - id: xrm:8000004
   preferred_label: conjugated π-system engagement
-  definition: Reactions whose defining impact is engagement of a conjugated acceptor or donor (Michael
-    acceptors, quinoids, extended enones).
+  definition: Reactions whose defining impact is engagement of a conjugated acceptor or donor 
+    (Michael acceptors, quinoids, extended enones).
   parents:
   - xrm:8000000
   related_match:
@@ -5518,8 +5609,8 @@ concepts:
   - xrm:0001031
 - id: xrm:8000005
   preferred_label: quinoid π-system formation
-  definition: Formation of quinone, quinone-imine, quinone-methide, or imine-methide π-systems from aromatic
-    or conjugated precursors.
+  definition: Formation of quinone, quinone-imine, quinone-methide, or imine-methide π-systems from 
+    aromatic or conjugated precursors.
   parents:
   - xrm:8000000
   related_match:
@@ -5529,8 +5620,8 @@ concepts:
   - xrm:0000306
 - id: xrm:8000006
   preferred_label: heteroaromatic oxidation impact
-  definition: Oxidation paths that specifically perturb heteroaromatic rings (e.g. thiophene S-oxidation
-    or epoxidation).
+  definition: Oxidation paths that specifically perturb heteroaromatic rings (e.g. thiophene 
+    S-oxidation or epoxidation).
   parents:
   - xrm:8000000
   related_match:
@@ -5547,8 +5638,8 @@ concepts:
   - xrm:0004005
 - id: xrm:8000008
   preferred_label: conjugated adduct formation
-  definition: Conjugation (e.g. GSH) that captures a conjugated electrophile without requiring the reaction
-    type hierarchy.
+  definition: Conjugation (e.g. GSH) that captures a conjugated electrophile without requiring the 
+    reaction type hierarchy.
   parents:
   - xrm:8000000
   related_match:
@@ -5558,8 +5649,8 @@ concepts:
 - id: xrm:9000000
   preferred_label: Metabolic Forest map
   synonyms: *id014
-  definition: Alias / mapping spine for Metabolic Forest rulesets → rules → patterns. Opaque forest.*
-    CURIEs only; not the chemist backbone.
+  definition: Alias / mapping spine for Metabolic Forest rulesets → rules → patterns. Opaque 
+    forest.* CURIEs only; not the chemist backbone.
   parents:
   - xrm:0000000
 - id: xrm:9000010
@@ -5567,8 +5658,8 @@ concepts:
   synonyms:
   - Forest stable oxygenation
   - SO ruleset
-  definition: Metabolic Forest ruleset alias for stable oxygenation (opaque forest.ruleset:SO). Not the
-    chemist Rainbow class.
+  definition: Metabolic Forest ruleset alias for stable oxygenation (opaque forest.ruleset:SO). Not 
+    the chemist Rainbow class.
   parents:
   - xrm:9000000
   - xrm:9000018
@@ -5579,8 +5670,8 @@ concepts:
   synonyms:
   - Forest unstable oxygenation
   - UO ruleset
-  definition: Metabolic Forest ruleset alias for unstable oxygenation (opaque forest.ruleset:UO). Not
-    the chemist Rainbow class.
+  definition: Metabolic Forest ruleset alias for unstable oxygenation (opaque forest.ruleset:UO). 
+    Not the chemist Rainbow class.
   parents:
   - xrm:9000000
   - xrm:9000018
@@ -5588,29 +5679,29 @@ concepts:
   - forest.ruleset:UO
 - id: xrm:9000012
   preferred_label: dehydrogenation ruleset
-  definition: Forest ruleset containing the Dehydrogenation rule (quinone formation is a separate Forest
-    ruleset). Full name only; localized abbreviations are not XRM labels.
+  definition: Forest ruleset containing the Dehydrogenation rule (quinone formation is a separate 
+    Forest ruleset). Full name only; localized abbreviations are not XRM labels.
   parents:
   - xrm:9000000
   - xrm:9000018
 - id: xrm:9000013
   preferred_label: hydrolysis ruleset
-  definition: Forest ruleset for Hydrolysis, EpoxideOpening, Dephosphorylation (and AzoSplitting in Full).
-    Full name only; localized abbreviations are not XRM labels.
+  definition: Forest ruleset for Hydrolysis, EpoxideOpening, Dephosphorylation (and AzoSplitting in 
+    Full). Full name only; localized abbreviations are not XRM labels.
   parents:
   - xrm:9000000
   - xrm:9000018
 - id: xrm:9000014
   preferred_label: reduction ruleset
-  definition: Forest ruleset for hydrogenation, dehydration, nitrogen/oxygen/sulfur reduction, reductive
-    dehalogenation. Full name only; localized abbreviations are not XRM labels.
+  definition: Forest ruleset for hydrogenation, dehydration, nitrogen/oxygen/sulfur reduction, 
+    reductive dehalogenation. Full name only; localized abbreviations are not XRM labels.
   parents:
   - xrm:9000000
   - xrm:9000018
 - id: xrm:9000015
   preferred_label: quinone formation ruleset
-  definition: Forest ruleset for quinone / quinone-imine / quinone-methide structure enumeration. Full
-    name only; localized abbreviations are not XRM labels.
+  definition: Forest ruleset for quinone / quinone-imine / quinone-methide structure enumeration. 
+    Full name only; localized abbreviations are not XRM labels.
   parents:
   - xrm:9000000
 - id: xrm:9000016
@@ -5621,19 +5712,21 @@ concepts:
   - xrm:9000000
 - id: xrm:9000017
   preferred_label: tautomerization ruleset
-  definition: Forest tautomerization ruleset. Full name only; localized abbreviations are not XRM labels.
+  definition: Forest tautomerization ruleset. Full name only; localized abbreviations are not XRM 
+    labels.
   parents:
   - xrm:9000000
 - id: xrm:9000018
   preferred_label: phase I ruleset
-  definition: Forest Phase I aggregate ruleset (stable/unstable oxygenation, dehydrogenation, hydrolysis,
-    reduction). Full name only; localized abbreviations are not XRM labels.
+  definition: Forest Phase I aggregate ruleset (stable/unstable oxygenation, dehydrogenation, 
+    hydrolysis, reduction). Full name only; localized abbreviations are not XRM labels.
   parents:
   - xrm:9000000
 - id: xrm:9000019
   preferred_label: bioactivation ruleset
-  definition: Forest convenience ruleset for common bioactivation routes (quinone, epoxidation, nitroaromatic
-    reduction, thiophene S-oxidation). Full name only; localized abbreviations are not XRM labels.
+  definition: Forest convenience ruleset for common bioactivation routes (quinone, epoxidation, 
+    nitroaromatic reduction, thiophene S-oxidation). Full name only; localized abbreviations are not
+    XRM labels.
   parents:
   - xrm:9000000
 - id: xrm:9100100
@@ -6454,3 +6547,674 @@ concepts:
   definition: Metabolic Forest PatternInfo `isocyanate` under rule `Glutathionation`.
   parents:
   - xrm:9101030
+- id: xrm:1500230
+  preferred_label: macromolecule binding
+  synonyms:
+  - macromolecular adduct formation
+  - covalent macromolecule binding
+  definition: 'Reactive-metabolite outcome: covalent or tight binding to biological macromolecules.'
+  parents:
+  - xrm:1500000
+- id: xrm:1500231
+  preferred_label: DNA binding
+  synonyms:
+  - DNA adduct formation
+  - nucleic acid binding
+  - DNA adduct
+  definition: Reactive metabolite binding/adduct formation on DNA (AMD RXNCLASS in scope).
+  parents:
+  - xrm:1500230
+  - xrm:1500000
+- id: xrm:1500232
+  preferred_label: RNA binding
+  synonyms:
+  - RNA adduct
+  definition: Reactive metabolite binding/adduct formation on RNA.
+  parents:
+  - xrm:1500230
+- id: xrm:1500233
+  preferred_label: protein binding
+  synonyms:
+  - protein adduct formation
+  - protein adduct
+  definition: Reactive metabolite binding/adduct formation on protein (AMD RXNCLASS in scope).
+  parents:
+  - xrm:1500230
+  - xrm:1500000
+- id: xrm:1500234
+  preferred_label: covalent binding
+  synonyms:
+  - covalent adduct formation
+  - covalent macromolecule adduct
+  definition: Generic covalent binding of a reactive metabolite to biomolecules.
+  parents:
+  - xrm:1500230
+  - xrm:1500000
+  related_match:
+  - xrm:1500231
+  - xrm:1500233
+- id: xrm:1500235
+  preferred_label: lipid binding
+  synonyms:
+  - lipid adduct
+  definition: Reactive metabolite binding to lipids.
+  parents:
+  - xrm:1500230
+- id: xrm:1500236
+  preferred_label: CoA binding
+  synonyms:
+  - acyl-CoA adduct
+  - CoA adduct
+  definition: Binding/adduct involving coenzyme A (often acyl-CoA related).
+  parents:
+  - xrm:1500230
+  related_match:
+  - xrm:0001061
+- id: xrm:0000600
+  preferred_label: cyanidation
+  synonyms:
+  - cyano addition
+  - nitrile formation
+  - cyanide incorporation
+  definition: Introduction of a cyano/cyanide group (reactive/toxicophore-relevant).
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:2200037
+  - xrm:1500000
+  - xrm:0000601
+- id: xrm:0000601
+  preferred_label: decyanidation
+  synonyms:
+  - cyano loss
+  - nitrile cleavage
+  - cyanide release
+  definition: Loss/cleavage of a cyano/cyanide group. Antonym of cyanidation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000600
+  - xrm:0000409
+  - xrm:2200037
+- id: xrm:0000610
+  preferred_label: alkylation
+  synonyms:
+  - alkyl transfer
+  - alkyl conjugation
+  definition: Addition of an alkyl group. Antonym of dealkylation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000200
+- id: xrm:0000611
+  preferred_label: N-alkylation
+  synonyms:
+  - nitrogen alkylation
+  definition: Alkylation at nitrogen. Antonym of N-dealkylation.
+  parents:
+  - xrm:0000610
+  related_match:
+  - xrm:0000201
+- id: xrm:0000612
+  preferred_label: O-alkylation
+  synonyms:
+  - oxygen alkylation
+  - ether formation
+  definition: Alkylation at oxygen. Antonym of O-dealkylation.
+  parents:
+  - xrm:0000610
+  related_match:
+  - xrm:0000202
+- id: xrm:0000613
+  preferred_label: S-alkylation
+  synonyms:
+  - sulfur alkylation
+  - thioether formation
+  definition: Alkylation at sulfur. Antonym of S-dealkylation.
+  parents:
+  - xrm:0000610
+  related_match:
+  - xrm:0000203
+- id: xrm:0000614
+  preferred_label: C-alkylation
+  synonyms:
+  - carbon alkylation
+  definition: Alkylation at carbon. Antonym of C-dealkylation.
+  parents:
+  - xrm:0000610
+  related_match:
+  - xrm:0000204
+- id: xrm:0000620
+  preferred_label: decarboxylation
+  synonyms:
+  - CO2 loss
+  - carboxyl loss
+  - C-decarboxylation
+  - N-decarboxylation
+  definition: Loss of CO2 from a carboxylic acid (distinct from decarbonylation).
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0002007
+  - xrm:0000621
+- id: xrm:0000621
+  preferred_label: carboxylation
+  synonyms:
+  - CO2 addition
+  - carboxyl formation
+  - C-carboxylation
+  - N-carboxylation
+  definition: Introduction of a carboxyl group. Antonym of decarboxylation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000620
+- id: xrm:0000630
+  preferred_label: esterification
+  synonyms:
+  - ester formation
+  definition: Formation of an ester. Antonym of ester hydrolysis.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000401
+- id: xrm:0000631
+  preferred_label: transesterification
+  synonyms:
+  - ester exchange
+  definition: Exchange of ester alkoxy groups.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000630
+  - xrm:0000401
+- id: xrm:0000632
+  preferred_label: lactonization
+  synonyms:
+  - lactone formation
+  - intramolecular esterification
+  definition: Intramolecular ester formation to a lactone. Antonym of lactone hydrolysis.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000403
+  - xrm:0000630
+- id: xrm:0000633
+  preferred_label: lactamization
+  synonyms:
+  - lactam formation
+  - intramolecular amidation
+  definition: Intramolecular amide formation to a lactam. Antonym of lactam hydrolysis.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000404
+- id: xrm:0000640
+  preferred_label: cyclization
+  synonyms:
+  - ring-forming cyclization
+  - annulation
+  definition: Formation of a new ring by cyclization.
+  parents:
+  - xrm:1100000
+  - xrm:0004000
+- id: xrm:0000650
+  preferred_label: dehydroxylation
+  synonyms:
+  - dehydroxy
+  - OH loss
+  - aromatic dehydroxylation
+  - N-dehydroxylation
+  definition: Loss of a hydroxyl group. Antonym of hydroxylation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000100
+- id: xrm:0000660
+  preferred_label: halogenation
+  synonyms:
+  - halide addition
+  definition: Introduction of halogen. Antonym of dehalogenation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:1100014
+- id: xrm:0000661
+  preferred_label: amination
+  synonyms:
+  - amino group introduction
+  definition: Introduction of an amino group. Antonym of deamination.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:1100013
+- id: xrm:0000670
+  preferred_label: formylation
+  synonyms:
+  - N-formylation
+  - formyl conjugation
+  definition: Introduction of a formyl group (often N-formylation).
+  parents:
+  - xrm:1100000
+  - xrm:1300000
+  related_match:
+  - xrm:0001020
+  - xrm:0000671
+- id: xrm:0000671
+  preferred_label: deformylation
+  synonyms:
+  - N-deformylation
+  - formyl loss
+  definition: Loss of a formyl group. Antonym of formylation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000670
+- id: xrm:0000680
+  preferred_label: N-nitrosation
+  synonyms:
+  - nitrosation
+  - N-nitroso formation
+  definition: Formation of an N-nitroso species (reactive-metabolite relevant).
+  parents:
+  - xrm:1100000
+  - xrm:1500000
+  related_match:
+  - xrm:0000123
+  - xrm:1500110
+  - xrm:0000681
+- id: xrm:0000690
+  preferred_label: desulfuration
+  synonyms:
+  - oxidative desulfuration
+  - desulfurization
+  - P=S to P=O
+  definition: Removal/replacement of sulfur (e.g. phosphorothioate oxidative desulfuration).
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000130
+  - xrm:0000691
+- id: xrm:0000691
+  preferred_label: sulfuration
+  synonyms:
+  - thionation
+  - S introduction
+  definition: Introduction of sulfur. Antonym of desulfuration (not synonymous with sulfation).
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000690
+- id: xrm:0000700
+  preferred_label: deglucuronidation
+  synonyms:
+  - O-deglucuronidation
+  - glucuronide hydrolysis
+  - N-deglucuronidation
+  - S-deglucuronidation
+  definition: Hydrolytic removal of a glucuronide. Antonym of glucuronidation.
+  parents:
+  - xrm:1100000
+  - xrm:0000013
+  related_match:
+  - xrm:0001000
+  - xrm:0001001
+- id: xrm:0000701
+  preferred_label: desulfation
+  synonyms:
+  - sulfate hydrolysis
+  - O-desulfation
+  definition: Hydrolytic removal of a sulfate. Antonym of sulfation.
+  parents:
+  - xrm:1100000
+  - xrm:0000013
+  related_match:
+  - xrm:0001010
+  - xrm:0001011
+- id: xrm:0000702
+  preferred_label: deglycosidation
+  synonyms:
+  - O-deglycosidation
+  - N-deglycosidation
+  - deglucosidation
+  - glycoside hydrolysis
+  definition: Cleavage of a glycoside. Antonym of glycosylation.
+  parents:
+  - xrm:1100000
+  - xrm:0000013
+  related_match:
+  - xrm:0001060
+  - xrm:0000407
+- id: xrm:0000703
+  preferred_label: deglutathionation
+  synonyms:
+  - GSH adduct cleavage
+  - glutathione adduct hydrolysis
+  definition: Removal of a glutathione adduct. Antonym of glutathionation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0001030
+- id: xrm:0000704
+  preferred_label: decysteination
+  synonyms:
+  - cysteine adduct cleavage
+  definition: Removal of a cysteine conjugate. Antonym of cysteine conjugation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:1300010
+- id: xrm:0000710
+  preferred_label: Se-methylation
+  synonyms:
+  - selenium methylation
+  definition: Methylation at selenium (distinct from S-methylation).
+  parents:
+  - xrm:0001040
+  related_match:
+  - xrm:0001043
+- id: xrm:0000720
+  preferred_label: dearylation
+  synonyms:
+  - O-dearylation
+  - N-dearylation
+  - aryl ether cleavage
+  definition: Cleavage removing an aryl group from N/O/S (related to dealkylation).
+  parents:
+  - xrm:0000200
+  related_match:
+  - xrm:0000201
+  - xrm:0000202
+  - xrm:0000730
+- id: xrm:0000721
+  preferred_label: alpha-hydroxylation
+  synonyms:
+  - α-hydroxylation
+  - alpha hydroxylation of carbonyl
+  definition: Hydroxylation at a carbon alpha to a carbonyl or heteroatom.
+  parents:
+  - xrm:0000100
+  related_match:
+  - xrm:0000102
+- id: xrm:1600200
+  preferred_label: alicyclic site
+  synonyms:
+  - alicyclic carbon
+  - cycloalkyl site
+  definition: Site on an alicyclic (saturated ring) carbon.
+  parents:
+  - xrm:1600000
+- id: xrm:1600201
+  preferred_label: fused benzene site
+  synonyms:
+  - fused aromatic ring site
+  definition: Aromatic carbon on a fused benzene ring system.
+  parents:
+  - xrm:1600013
+- id: xrm:0000681
+  preferred_label: denitrosation
+  synonyms:
+  - N-denitrosation
+  - N-nitroso cleavage
+  definition: Removal of an N-nitroso group. Antonym of N-nitrosation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000680
+- id: xrm:0000217
+  preferred_label: S-demethylation
+  synonyms:
+  - oxidative S-demethylation
+  definition: Oxidative removal of an S-methyl group.
+  parents:
+  - xrm:0000203
+  related_match:
+  - xrm:0001043
+- id: xrm:0000730
+  preferred_label: arylation
+  synonyms:
+  - aryl transfer
+  definition: Addition of an aryl group. Antonym of dearylation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0000720
+- id: xrm:0000731
+  preferred_label: carbonylation
+  synonyms:
+  - CO insertion
+  - carbonyl insertion
+  definition: Introduction of a carbonyl via carbonylation (distinct from carboxylation). Antonym of
+    decarbonylation.
+  parents:
+  - xrm:1100000
+  related_match:
+  - xrm:0002007
+- id: xrm:0000732
+  preferred_label: deconjugation
+  synonyms:
+  - conjugate cleavage
+  - phase II deconjugation
+  definition: Generic removal of a phase II conjugate (umbrella over deglucuronidation, desulfation,
+    …).
+  parents:
+  - xrm:1100000
+  - xrm:0000013
+  related_match:
+  - xrm:0000024
+  - xrm:0000700
+  - xrm:0000701
+- id: xrm:1400200
+  preferred_label: structural alert
+  synonyms:
+  - toxicophore
+  - structural toxicophore
+  - medchem structural alert
+  definition: Medchem structural alert / toxicophore motif associated with bioactivation or 
+    reactive-metabolite risk. Orthogonal to site_type (where the edit occurs) and soft-spot 
+    liability (metabolic vulnerability). Seed set; expand later.
+  parents:
+  - xrm:1400000
+- id: xrm:1400201
+  preferred_label: furan structural alert
+  synonyms:
+  - furan toxicophore
+  - furan alert
+  definition: Furan ring as a structural alert for oxidative bioactivation.
+  parents:
+  - xrm:1400200
+  related_match:
+  - xrm:1600110
+  - xrm:1500000
+- id: xrm:1400202
+  preferred_label: thiophene structural alert
+  synonyms:
+  - thiophene toxicophore
+  - thiophene alert
+  - thiohene structural alert
+  definition: Thiophene ring as a structural alert for S-oxidation / bioactivation.
+  parents:
+  - xrm:1400200
+  related_match:
+  - xrm:1600111
+  - xrm:0000133
+  - xrm:1500000
+- id: xrm:1400203
+  preferred_label: triple bond structural alert
+  synonyms:
+  - alkyne structural alert
+  - acetylene alert
+  - triple-bond toxicophore
+  definition: Terminal or internal alkyne / triple bond as a structural alert.
+  parents:
+  - xrm:1400200
+  related_match:
+  - xrm:1500000
+  - xrm:1600210
+- id: xrm:1600210
+  preferred_label: alkyne site
+  synonyms:
+  - triple bond site
+  - acetylene site
+  definition: Alkyne / carbon–carbon triple bond site environment.
+  parents:
+  - xrm:1600000
+- id: xrm:2100300
+  preferred_label: experimental setting
+  synonyms:
+  - study setting
+  - in vivo vs in vitro framing
+  definition: Whether observations come from an in-vivo organism study or an in-vitro experimental 
+    system. Orthogonal to tissue, species, matrix, and assay system.
+  parents:
+  - xrm:2100000
+- id: xrm:2100301
+  preferred_label: in vivo setting
+  synonyms:
+  - in vivo
+  - whole-animal study
+  definition: In-vivo experimental setting (metabolites often reported in plasma, urine, bile, 
+    feces, tissues).
+  parents:
+  - xrm:2100300
+  related_match:
+  - xrm:2000112
+- id: xrm:2100302
+  preferred_label: in vitro setting
+  synonyms:
+  - in vitro
+  - ex vivo incubation
+  definition: In-vitro / ex-vivo experimental setting (cells, subcellular fractions, recombinants).
+  parents:
+  - xrm:2100300
+  related_match:
+  - xrm:2000111
+- id: xrm:2100310
+  preferred_label: assay system
+  synonyms:
+  - incubation system
+  - metabolism assay system
+  definition: Experimental assay system used to generate or detect metabolites (hepatocytes, 
+    microsomes, baculosomes/recombinants, S9, …).
+  parents:
+  - xrm:2100000
+  - xrm:2100302
+- id: xrm:2100311
+  preferred_label: hepatocyte assay
+  synonyms:
+  - hepatocytes
+  - primary hepatocytes
+  - hepatocyte incubation system
+  definition: Intact hepatocyte incubation (Phase I + II competent when fresh/cryopreserved).
+  parents:
+  - xrm:2100310
+  - xrm:2100125
+  related_match:
+  - xrm:2000018
+  - xrm:2000120
+  - xrm:2100109
+- id: xrm:2100312
+  preferred_label: microsome assay
+  synonyms:
+  - microsomes
+  - liver microsomes
+  - HLM
+  - RLM
+  definition: 'Microsomal fraction incubation (ER enzymes: CYPs, UGTs, FMOs, …).'
+  parents:
+  - xrm:2100310
+  - xrm:2100123
+  related_match:
+  - xrm:2000119
+- id: xrm:2100313
+  preferred_label: baculosome assay
+  synonyms:
+  - baculosomes
+  - Baculovirus insect-cell membranes
+  - insect-cell recombinant membranes
+  definition: Baculovirus/insect-cell expressed enzyme membrane preparations (often single CYP/UGT).
+  parents:
+  - xrm:2100310
+  - xrm:2100220
+  related_match:
+  - xrm:2100221
+- id: xrm:2100314
+  preferred_label: S9 assay
+  synonyms:
+  - S9 fraction
+  - liver S9
+  definition: Post-mitochondrial S9 fraction (microsomes + cytosol enzymes).
+  parents:
+  - xrm:2100310
+  related_match:
+  - xrm:2000118
+- id: xrm:2100315
+  preferred_label: cytosol assay
+  synonyms:
+  - cytosolic fraction
+  - liver cytosol
+  definition: Cytosolic fraction incubation (SULTs, NATs, GSTs, AO partly, …).
+  parents:
+  - xrm:2100310
+  - xrm:2100124
+- id: xrm:2100316
+  preferred_label: tissue slice assay
+  synonyms:
+  - precision-cut tissue slices
+  - liver slices
+  definition: Precision-cut tissue slice incubations.
+  parents:
+  - xrm:2100310
+- id: xrm:2100317
+  preferred_label: homogenate assay
+  synonyms:
+  - tissue homogenate incubation
+  definition: Crude tissue homogenate incubation.
+  parents:
+  - xrm:2100310
+  - xrm:2100219
+- id: xrm:2100318
+  preferred_label: recombinant enzyme assay
+  synonyms:
+  - rCYP
+  - recombinant CYP/UGT
+  - Supersomes
+  definition: Purified or membrane-bound recombinant enzyme incubations (incl. Supersomes).
+  parents:
+  - xrm:2100310
+  - xrm:2100220
+  - xrm:2100221
+- id: xrm:2100320
+  preferred_label: guinea pig species context
+  synonyms:
+  - guinea pig
+  - cavia
+  definition: Guinea pig species framing (common metabolism species).
+  parents:
+  - xrm:2100012
+- id: xrm:2100321
+  preferred_label: pig species context
+  synonyms:
+  - pig
+  - swine
+  - porcine
+  definition: Pig / porcine species framing.
+  parents:
+  - xrm:2100012
+- id: xrm:2100322
+  preferred_label: hamster species context
+  synonyms:
+  - hamster
+  definition: Hamster species framing.
+  parents:
+  - xrm:2100012
+- id: xrm:2100323
+  preferred_label: cynomolgus monkey species context
+  synonyms:
+  - cynomolgus
+  - Macaca fascicularis
+  - cyno
+  definition: Cynomolgus monkey (common NHP metabolism species).
+  parents:
+  - xrm:2100012
+  - xrm:2100118

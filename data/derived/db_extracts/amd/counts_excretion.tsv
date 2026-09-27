@@ -1,0 +1,889 @@
+term	count	field
+(null)	211108	EXCRETION
+Urine	86545	EXCRETION
+Plasma	50776	EXCRETION
+Bile	15444	EXCRETION
+Feces	15428	EXCRETION
+Liver	9712	EXCRETION
+Blood	6045	EXCRETION
+Serum	5992	EXCRETION
+Kidney	3887	EXCRETION
+Feces; Urine	3658	EXCRETION
+Brain	3187	EXCRETION
+Lung	3075	EXCRETION
+Heart	1622	EXCRETION
+Spleen	1158	EXCRETION
+Hair	1113	EXCRETION
+Muscle	967	EXCRETION
+Expired Air	865	EXCRETION
+Red Blood Cells	841	EXCRETION
+Perfusate	796	EXCRETION
+Feces + Urine	761	EXCRETION
+Tumor	689	EXCRETION
+Skin	624	EXCRETION
+Plasma; Urine	599	EXCRETION
+Small Intestine	541	EXCRETION
+Bile; Urine	499	EXCRETION
+Erythrocytes	483	EXCRETION
+Adipose	473	EXCRETION
+Saliva	438	EXCRETION
+Stomach	436	EXCRETION
+Tissue	431	EXCRETION
+Cerebrospinal Fluid	422	EXCRETION
+Colon	421	EXCRETION
+Milk	413	EXCRETION
+Meconium, Neonatal	410	EXCRETION
+Fat	405	EXCRETION
+Intestine	359	EXCRETION
+Bile; Feces; Urine	359	EXCRETION
+Feces; Plasma; Urine	320	EXCRETION
+Bladder	294	EXCRETION
+Feces; Lung; Urine	277	EXCRETION
+Testes	274	EXCRETION
+Pancreas	262	EXCRETION
+Bone Marrow	248	EXCRETION
+Plasma, Maternal	242	EXCRETION
+Oral Fluid	239	EXCRETION
+Mammary Tissue	228	EXCRETION
+Peripheral Blood Mononuclear Cells	219	EXCRETION
+Striatum	203	EXCRETION
+Amniotic Fluid	195	EXCRETION
+Epidermis	189	EXCRETION
+Lung; Urine	172	EXCRETION
+Large Intestine	172	EXCRETION
+Whole Body	170	EXCRETION
+Embryo	169	EXCRETION
+Bile + Plasma + Urine	160	EXCRETION
+Plasma + Urine	156	EXCRETION
+Cerebellum	152	EXCRETION
+Aqueous Elimination	152	EXCRETION
+Serum, Maternal	144	EXCRETION
+Thymus	144	EXCRETION
+Plasma, Fetal	142	EXCRETION
+Placenta	141	EXCRETION
+Cecum	140	EXCRETION
+Bile + Feces + Plasma + Urine	139	EXCRETION
+Stomach Contents	136	EXCRETION
+Uterus	135	EXCRETION
+Adrenal Glands	135	EXCRETION
+Liver Cytosol	126	EXCRETION
+Serum; Urine	124	EXCRETION
+Gastrointestinal Tract	123	EXCRETION
+Ovary	122	EXCRETION
+Plasma, Umbilical Cord	120	EXCRETION
+Vitreous Humor	118	EXCRETION
+Blubber	115	EXCRETION
+Liver Microsomes	114	EXCRETION
+Prostate	114	EXCRETION
+Cortex	108	EXCRETION
+Sweat	105	EXCRETION
+Feces + Plasma + Urine	105	EXCRETION
+Carcass	102	EXCRETION
+Breast Milk	96	EXCRETION
+Serum, Fetal	95	EXCRETION
+Egg, Yolk	95	EXCRETION
+Skeletal Muscle	89	EXCRETION
+Egg	89	EXCRETION
+Bile; Plasma; Urine	86	EXCRETION
+Blood; Urine	85	EXCRETION
+Small Intestine Contents	85	EXCRETION
+Bone	84	EXCRETION
+Blood Cells	84	EXCRETION
+Intestinal Contents	84	EXCRETION
+Fetus	79	EXCRETION
+Urine, Neonatal	78	EXCRETION
+Urine, Maternal	77	EXCRETION
+Liver, Fetal	76	EXCRETION
+Excreta	76	EXCRETION
+Forestomach	76	EXCRETION
+Jejunum	74	EXCRETION
+White Blood Cells	72	EXCRETION
+Duodenum	71	EXCRETION
+Ileum	71	EXCRETION
+Duodenum Contents	69	EXCRETION
+Bile + Urine	68	EXCRETION
+Lymphocytes	67	EXCRETION
+Mucosa	67	EXCRETION
+Nasal Mucosa	66	EXCRETION
+Liver Mitochondria	65	EXCRETION
+Fat + Skin	65	EXCRETION
+Cecum Contents	63	EXCRETION
+Gastric Contents	62	EXCRETION
+Hypothalamus	62	EXCRETION
+Glandular Stomach	60	EXCRETION
+Brain Dialysate	60	EXCRETION
+Striatum Dialysate	60	EXCRETION
+Culture Medium	58	EXCRETION
+Cerebrum	57	EXCRETION
+Leukemic Cells	57	EXCRETION
+Urine, Postmortem	56	EXCRETION
+Leukocytes	55	EXCRETION
+Urine (Acidic)	55	EXCRETION
+Intestinal Mucosa	55	EXCRETION
+Eye	54	EXCRETION
+Ileostomy Fluid	53	EXCRETION
+Spinal Cord	52	EXCRETION
+Olfactory Mucosa	52	EXCRETION
+Blood, Postmortem	51	EXCRETION
+Umbilical Cord	51	EXCRETION
+Brain, Fetal	50	EXCRETION
+Esophagus	50	EXCRETION
+Blood Mononuclear Cells	50	EXCRETION
+Nail	49	EXCRETION
+Ileum Contents	48	EXCRETION
+Cerebral Cortex	47	EXCRETION
+Aorta	47	EXCRETION
+Aqueous Humor	47	EXCRETION
+Blood + Feces + Urine	47	EXCRETION
+Hippocampus	46	EXCRETION
+Allantoic Fluid	45	EXCRETION
+Plasma, Portal Vein	45	EXCRETION
+Ileal Fluid	45	EXCRETION
+Vitreous Humor, Postmortem	43	EXCRETION
+Oral Mucosa	43	EXCRETION
+Brain, Neonatal	42	EXCRETION
+Synovial Fluid	41	EXCRETION
+Plasma, Neonatal	40	EXCRETION
+Lymph Nodes	40	EXCRETION
+Colon Contents	40	EXCRETION
+Dialysate	39	EXCRETION
+Gastrointestinal Contents	39	EXCRETION
+Kidney Cortex	39	EXCRETION
+Gall Bladder	38	EXCRETION
+Respiratory Mucosa	38	EXCRETION
+Bile + Feces	38	EXCRETION
+Kidney Cytosol	37	EXCRETION
+Bile; Feces; Plasma; Urine	37	EXCRETION
+Breast Muscle	36	EXCRETION
+Trachea	36	EXCRETION
+Feces + Gastrointestinal Tract	35	EXCRETION
+Rectum	35	EXCRETION
+Bile; Blood; Feces; Urine	35	EXCRETION
+Lymph	34	EXCRETION
+Fat, Abdominal	34	EXCRETION
+Hair, Neonatal	33	EXCRETION
+Tumor, Implanted	33	EXCRETION
+Pituitary	33	EXCRETION
+Blood + Urine	32	EXCRETION
+Gonads	32	EXCRETION
+Large Intestine Contents	32	EXCRETION
+Liver, Neonatal	31	EXCRETION
+Blood, Dried Spot	31	EXCRETION
+Thyroid	31	EXCRETION
+Bile; Feces; Lung; Urine	30	EXCRETION
+Luminal Contents	30	EXCRETION
+Intestinal Smooth Muscle	30	EXCRETION
+Blood, Fetal	29	EXCRETION
+Thigh Muscle	29	EXCRETION
+Liver, Maternal	29	EXCRETION
+Epididymis	29	EXCRETION
+Gill	29	EXCRETION
+Eye Anterior Part	29	EXCRETION
+Bile + Feces + Urine	29	EXCRETION
+Blood, Heart	28	EXCRETION
+Colon Mucosa	28	EXCRETION
+Retina	28	EXCRETION
+Blubber + Muscle	28	EXCRETION
+Sciatic Nerve	28	EXCRETION
+Eye Posterior Part	27	EXCRETION
+Serum, Umbilical Cord	26	EXCRETION
+Kidney Papilla	26	EXCRETION
+Kidney + Liver	26	EXCRETION
+Brain; Plasma	25	EXCRETION
+Kidney, Fetal	25	EXCRETION
+Seminal Plasma	25	EXCRETION
+Bladder Contents	25	EXCRETION
+Endometrium	25	EXCRETION
+Peritoneal Fluid	24	EXCRETION
+Submaxillary Glands	24	EXCRETION
+Semen	24	EXCRETION
+Kidney; Liver; Plasma	24	EXCRETION
+Tibia Bone	24	EXCRETION
+Kidney, Neonatal	23	EXCRETION
+Blood, Maternal	23	EXCRETION
+Mesentery	23	EXCRETION
+Perfusate, Intestinal	23	EXCRETION
+Kidney Medulla	23	EXCRETION
+Brain Extracellular Fluid	22	EXCRETION
+Cytosol	22	EXCRETION
+Cornea	22	EXCRETION
+Serosa	22	EXCRETION
+Cage Rinse	22	EXCRETION
+Subcutaneous Tissue	21	EXCRETION
+Salivary Glands	21	EXCRETION
+Intestine + Intestinal Contents	21	EXCRETION
+Hepatocytes	21	EXCRETION
+Intestinal Lumen	20	EXCRETION
+Hair, Maternal	20	EXCRETION
+Vagina	20	EXCRETION
+Oral Cavity Tissue	20	EXCRETION
+Plasma; Tissue	19	EXCRETION
+Blood; Feces; Urine	19	EXCRETION
+Bile; Feces; Tissue; Urine	19	EXCRETION
+Ocular Tissue	19	EXCRETION
+Lung, Fetal	18	EXCRETION
+Gastric Fluid	18	EXCRETION
+Mesencephalon	18	EXCRETION
+Liver Nuclei	18	EXCRETION
+Brain, Maternal	18	EXCRETION
+Blood, Umbilical Cord	18	EXCRETION
+Kidney Microsomes	18	EXCRETION
+Egg, White	18	EXCRETION
+Blood Leukocytes	18	EXCRETION
+Cervical Mucosa	18	EXCRETION
+Tumor, Breast	18	EXCRETION
+Flesh	18	EXCRETION
+Bile; Feces; Plasma; Tissue; Urine	17	EXCRETION
+Tooth	17	EXCRETION
+Vitreous Fluid	17	EXCRETION
+Bile; Perfusate	17	EXCRETION
+Homogenate	17	EXCRETION
+Blood Dialysate	17	EXCRETION
+Whole Body, Neonatal	17	EXCRETION
+Bronchial Excretions	16	EXCRETION
+Serum, Neonatal	16	EXCRETION
+Feces; Plasma; Tissue; Urine	16	EXCRETION
+Epithelial Lining Fluid	16	EXCRETION
+Organs	16	EXCRETION
+Muscle + Skin	16	EXCRETION
+Tumor, Lung	16	EXCRETION
+Brain; Heart; Liver; Plasma	16	EXCRETION
+Plasma, Jugular Vein	16	EXCRETION
+Olfactory Bulb	15	EXCRETION
+Brain; Plasma; Urine	15	EXCRETION
+Erythrocyte Lysate	15	EXCRETION
+Breast Cyst Fluid	15	EXCRETION
+Kidney, Maternal	15	EXCRETION
+Blood + Plasma	15	EXCRETION
+Kidney Mitochondria	15	EXCRETION
+Harderian Gland	15	EXCRETION
+Perfused Kidney Urine	15	EXCRETION
+Iris-Ciliary Body	15	EXCRETION
+Diencephalon + Midbrain	15	EXCRETION
+Feces + Serum + Urine	15	EXCRETION
+Tumor, Brain	14	EXCRETION
+Blood, Neonatal	14	EXCRETION
+Thalamus	14	EXCRETION
+Viscera	14	EXCRETION
+Seminal Vesicle	14	EXCRETION
+Brain; Feces; Plasma; Urine	14	EXCRETION
+Tears	14	EXCRETION
+Vitreous Body	14	EXCRETION
+Pineal Gland	14	EXCRETION
+Small Intestine Mucosa	14	EXCRETION
+Hair, Head	13	EXCRETION
+Myocardium	13	EXCRETION
+Egg, Ovulated	13	EXCRETION
+Cecum + Colon	13	EXCRETION
+Bile; Liver Cytosol	13	EXCRETION
+Colorectum	13	EXCRETION
+Olfactory Epithelium	13	EXCRETION
+Liver Supernatant	13	EXCRETION
+Gastrointestinal Tissue	12	EXCRETION
+Perfusate, Fetal	12	EXCRETION
+Exudate	12	EXCRETION
+Plasma, Hepatic Vein	12	EXCRETION
+Plasma, Femoral Vein	12	EXCRETION
+Urinary Calculi	12	EXCRETION
+Brain, Cortex	12	EXCRETION
+Striatum Extracellular Fluid	12	EXCRETION
+Brainstem	12	EXCRETION
+Olfactory Tissue	12	EXCRETION
+Ciliary Body	12	EXCRETION
+Ileum + Jejunum	12	EXCRETION
+Hemodialysate	11	EXCRETION
+Fat, Subcutaneous	11	EXCRETION
+Reticulocytes	11	EXCRETION
+Blood; Brain	11	EXCRETION
+Breast Tissue	11	EXCRETION
+Cervix	11	EXCRETION
+Yolk Sac	11	EXCRETION
+Urinary Bladder	11	EXCRETION
+Pituitary Gland	11	EXCRETION
+Bronchoalveolar Lavage Fluid	11	EXCRETION
+Plasma Low-Density Lipoprotein	11	EXCRETION
+Perfusate, Maternal	10	EXCRETION
+Blood; Plasma; Urine	10	EXCRETION
+Placenta, Fetal	10	EXCRETION
+Liver Homogenate	10	EXCRETION
+Neutrophils	10	EXCRETION
+Tissue, Fetal	10	EXCRETION
+Brain; Fat; Plasma	10	EXCRETION
+Hair, Root	10	EXCRETION
+Plasma; Tissue; Urine	10	EXCRETION
+Jejunum Contents	10	EXCRETION
+Tumor, Colorectum	10	EXCRETION
+Amniotic Fluid, Fetal	10	EXCRETION
+Uroepithelium Mitochondria	10	EXCRETION
+Uroepithelium Nuclei	10	EXCRETION
+Testes, Fetal	10	EXCRETION
+Intestine + Stomach	10	EXCRETION
+Rumen	10	EXCRETION
+Abomasum	10	EXCRETION
+Blood, Femoral Vein, Postmortem	9	EXCRETION
+Blood, Cord, Fetal	9	EXCRETION
+Muscle, Fetal	9	EXCRETION
+Heart, Fetal	9	EXCRETION
+Saliva; Urine	9	EXCRETION
+Skin Dialysate	9	EXCRETION
+Sputum	9	EXCRETION
+Amnion	9	EXCRETION
+Blood; Brain; Urine	9	EXCRETION
+Bile; Liver; Uterus	9	EXCRETION
+Hair, Pigmented	9	EXCRETION
+Small Intestine + Small Intestine Contents	9	EXCRETION
+Oral Cavity Rinse Fluid	9	EXCRETION
+Tumor Dialysate	9	EXCRETION
+Tongue	9	EXCRETION
+Nasal Cavity	9	EXCRETION
+Plasma, Abdominal Aorta	9	EXCRETION
+Skin, Dose Site	9	EXCRETION
+Edible Tissue	9	EXCRETION
+Lung, Maternal	9	EXCRETION
+Fat, Brown	9	EXCRETION
+Suprarenal Glands	9	EXCRETION
+Respiratory Epithelium	9	EXCRETION
+Peritoneal Dialysate	9	EXCRETION
+Gastric Juice	9	EXCRETION
+Gastric Mucosa	9	EXCRETION
+Microsomes	9	EXCRETION
+Small Intestine + Stomach	9	EXCRETION
+Gastrointestinal Contents + Gastrointestinal Tract	9	EXCRETION
+Brain; Serum	8	EXCRETION
+Hemofiltrate	8	EXCRETION
+Duodenum + Stomach	8	EXCRETION
+Blood, Venous	8	EXCRETION
+Vena Cava	8	EXCRETION
+Lateral Nasal Glands	8	EXCRETION
+Blood; Plasma	8	EXCRETION
+Plasma + Serum	8	EXCRETION
+Perfusate, Luminal	8	EXCRETION
+Feces; Plasma	8	EXCRETION
+Tumor, Colon	8	EXCRETION
+Interstitial Fluid	8	EXCRETION
+Intestinal Fluid	8	EXCRETION
+Hair, Shaft	8	EXCRETION
+Seminal Fluid	8	EXCRETION
+Liver Nucleus Chromatin	8	EXCRETION
+Liver Nucleus Heterochromatin	8	EXCRETION
+Fat, Perirenal; Urine	8	EXCRETION
+Fat, Perirenal	8	EXCRETION
+Perfusate; Fetus	8	EXCRETION
+Hair, Pubic	8	EXCRETION
+Bladder Epithelium	8	EXCRETION
+Plasma, Venous	8	EXCRETION
+Blood, Portal Vein	8	EXCRETION
+Nonedible Tissue	8	EXCRETION
+Exocoelomic Fluid	8	EXCRETION
+Esophageal Mucosa	8	EXCRETION
+Respiratory Mucosa, Nasal	8	EXCRETION
+Feces + Plasma	8	EXCRETION
+Rectum Contents	8	EXCRETION
+Spleen, Fetal	7	EXCRETION
+Urine, Fetal	7	EXCRETION
+Gizzard	7	EXCRETION
+Blood; Tissue; Urine	7	EXCRETION
+Transudate	7	EXCRETION
+Fat, Fetal	7	EXCRETION
+Brain; Liver; Plasma	7	EXCRETION
+Myometrium	7	EXCRETION
+Carcass + Tissue	7	EXCRETION
+Diaphragm	7	EXCRETION
+Cerebral Cortex, Neonatal	7	EXCRETION
+Head Kidney	7	EXCRETION
+Intestinal Epithelium	7	EXCRETION
+Plasma, Systemic	7	EXCRETION
+Lymphoblasts	7	EXCRETION
+Brain, Frontal Cortex	7	EXCRETION
+Brain, Prefrontal Cortex	7	EXCRETION
+Spermatozoa	7	EXCRETION
+Hair, Beard	7	EXCRETION
+Bile; Feces	7	EXCRETION
+Glioma	7	EXCRETION
+Blood, Mesenteric Vein	7	EXCRETION
+Femur	7	EXCRETION
+Perfusion Medium, Extraluminal	7	EXCRETION
+Perfusion Medium, Intraluminal	7	EXCRETION
+Gut Contents	7	EXCRETION
+Adrenal Glands + Kidney	7	EXCRETION
+Choroid + Retina	6	EXCRETION
+Alveolar Macrophages	6	EXCRETION
+Medulla	6	EXCRETION
+Placenta, Maternal	6	EXCRETION
+Feces; Lung	6	EXCRETION
+Carcass + Feces + Tissue + Urine	6	EXCRETION
+Heart, Neonatal	6	EXCRETION
+Perfusate, Vascular	6	EXCRETION
+Blood, Femoral Vein	6	EXCRETION
+Urine (Alkaline)	6	EXCRETION
+Feces; Tissue; Urine	6	EXCRETION
+Feces; Serum; Tissue; Urine	6	EXCRETION
+Trigeminal Nerve	6	EXCRETION
+Lung Cytosol	6	EXCRETION
+Blood; Feces; Plasma; Urine	6	EXCRETION
+Blood; Follicular Fluid	6	EXCRETION
+Plasma, Mesenteric	6	EXCRETION
+Muscle, Maternal	6	EXCRETION
+Fat, Maternal	6	EXCRETION
+Buccal Cells	6	EXCRETION
+Blood; Expired Air; Feces; Tissue; Urine	6	EXCRETION
+Extraembryonic Fluid	6	EXCRETION
+Fat, Visceral	6	EXCRETION
+Oocytes	6	EXCRETION
+Iris	6	EXCRETION
+Ureter	6	EXCRETION
+Kidney Dialysate	6	EXCRETION
+Testis Homogenate	6	EXCRETION
+Liver, Postmortem	5	EXCRETION
+Brain, Postmortem	5	EXCRETION
+Bile; Lung; Urine	5	EXCRETION
+Quill	5	EXCRETION
+Vexillum	5	EXCRETION
+Blister Fluid	5	EXCRETION
+Hair, Brown	5	EXCRETION
+Hair, Colorless	5	EXCRETION
+Blood, Intestine Portal Vein	5	EXCRETION
+Bronchi	5	EXCRETION
+Sweat, Hand	5	EXCRETION
+Feces; Sweat	5	EXCRETION
+Bile; Plasma; Tissue; Urine	5	EXCRETION
+Serum + Urine	5	EXCRETION
+Mononuclear Cells	5	EXCRETION
+Pericardial Fluid	5	EXCRETION
+Nipple Aspirate Fluid	5	EXCRETION
+Serum; Tissue	5	EXCRETION
+Liver; Uterus	5	EXCRETION
+Ovary + Uterus	5	EXCRETION
+Pleural Fluid	5	EXCRETION
+Bronchoalveolar Lavage Cells	5	EXCRETION
+Hair, White	5	EXCRETION
+Liver; Serum	5	EXCRETION
+Bile; Plasma	5	EXCRETION
+Plasma, Aortic	5	EXCRETION
+Amygdala	5	EXCRETION
+Parotid Glands	5	EXCRETION
+Expired Air; Feces; Tissue; Urine	5	EXCRETION
+Brain Cytosol	5	EXCRETION
+Peritoneal Lavage Fluid	5	EXCRETION
+Aqueous Humor Dialysate	5	EXCRETION
+Tracheal Fluid	5	EXCRETION
+Adrenal Glands, Neonatal	5	EXCRETION
+Intraperitoneal L-1210 Cells	5	EXCRETION
+Fat + Feces	5	EXCRETION
+Metastasis, Liver	5	EXCRETION
+Intestine Homogenate	5	EXCRETION
+Adrenal Gland Homogenate	5	EXCRETION
+Serum; Synovial Fluid; Urine	4	EXCRETION
+Liver Dialysate	4	EXCRETION
+Larva	4	EXCRETION
+Femoral Artery	4	EXCRETION
+Mesenteric Bed	4	EXCRETION
+Saliva + Urine	4	EXCRETION
+Paw	4	EXCRETION
+Kidney Nuclei	4	EXCRETION
+Cerebellum, Fetal	4	EXCRETION
+Milk; Plasma	4	EXCRETION
+Blood, Hepatic Vein	4	EXCRETION
+Enterocytes	4	EXCRETION
+Ocular Fluid	4	EXCRETION
+Left Ventricle	4	EXCRETION
+Bile; Liver; Urine	4	EXCRETION
+Intracellular Medium	4	EXCRETION
+Lymphocytes + Monocytes	4	EXCRETION
+Pancreatic Fluid	4	EXCRETION
+Tissue; Urine	4	EXCRETION
+Colostrum	4	EXCRETION
+Hair, Nonpigmented	4	EXCRETION
+Follicular Fluid	4	EXCRETION
+Hypothalamus + Midbrain + Thalamus	4	EXCRETION
+Tumor, Prostate	4	EXCRETION
+Fat, White	4	EXCRETION
+Bile; Brain; Plasma; Urine	4	EXCRETION
+Intestine; Liver	4	EXCRETION
+Chorion	4	EXCRETION
+Granulocytes	4	EXCRETION
+Hair, Axillary	4	EXCRETION
+Duodenum + Jejunum	4	EXCRETION
+Liver; Lung	4	EXCRETION
+Small Intestine, Fetal	4	EXCRETION
+Brain; Cerebrospinal Fluid; Plasma	4	EXCRETION
+Blood; Liver; Kidney; Muscle	4	EXCRETION
+Plasma Membranes	4	EXCRETION
+Subcutis	4	EXCRETION
+Retina, Fetal	4	EXCRETION
+Retina Pigment Epithelium, Fetal	4	EXCRETION
+Perfusate, Nasal	4	EXCRETION
+Nasal Epithelium	4	EXCRETION
+Brain + Plasma	4	EXCRETION
+Peripheral Blood Mononuclear Cell Extract	4	EXCRETION
+Bile + Feces + Liver + Plasma + Urine	4	EXCRETION
+Bone Marrow, Postmortem, Putrefied	4	EXCRETION
+Viscera, Postmortem, Putrefied	4	EXCRETION
+Genitals	4	EXCRETION
+Bile + Brain + Urine	4	EXCRETION
+Brain + Feces + Liver + Plasma + Urine	4	EXCRETION
+Fat, Mammary	4	EXCRETION
+Reticulum	4	EXCRETION
+Omasum	4	EXCRETION
+Rumen Contents	4	EXCRETION
+Kidney + Liver + Plasma	4	EXCRETION
+Brainstem + Midbrain	3	EXCRETION
+Breast Milk; Plasma	3	EXCRETION
+Blood; Brain; Liver	3	EXCRETION
+Hypophysis	3	EXCRETION
+Breast Mitochondria	3	EXCRETION
+Breast Nuclei	3	EXCRETION
+Erythrocytes; Plasma	3	EXCRETION
+Nasal Lavage Fluid	3	EXCRETION
+Intestinal Contents, Neonatal	3	EXCRETION
+Tissue (Injection Site)	3	EXCRETION
+Bile, Fetal	3	EXCRETION
+Heart, Maternal	3	EXCRETION
+Plasma, Placental	3	EXCRETION
+Plasma, Fetal, Umbilical Vein	3	EXCRETION
+Plasma, Fetal, Umbilical Artery	3	EXCRETION
+Ovule	3	EXCRETION
+Blood; Feces; Tissue; Urine	3	EXCRETION
+Spleen Lymphocytes	3	EXCRETION
+Reproductive Organs	3	EXCRETION
+Bile + Gall Bladder	3	EXCRETION
+Pleura	3	EXCRETION
+Feces; Liver	3	EXCRETION
+Temporal Muscle	3	EXCRETION
+Feces; Serum; Urine	3	EXCRETION
+Sebum	3	EXCRETION
+Intestine, Fetal	3	EXCRETION
+Vernix Caseosa, Neonatal	3	EXCRETION
+Hemolymph; Urine; Feces	3	EXCRETION
+Bronchoalveolar Cells	3	EXCRETION
+Fat, Kidney	3	EXCRETION
+Pons/Medulla	3	EXCRETION
+Abdominal Cavity Fluid	3	EXCRETION
+Expired Air; Liver; Urine	3	EXCRETION
+Preputial Gland	3	EXCRETION
+Serosa, Peritoneal	3	EXCRETION
+Tumor; Urine	3	EXCRETION
+Lipid Extract	3	EXCRETION
+Tumor, Bladder	3	EXCRETION
+Luminal Fluid; Tissue	3	EXCRETION
+Cerebrospinal Fluid; Plasma	3	EXCRETION
+Skeletal Muscle Extracellular Fluid	3	EXCRETION
+Lymphocytes, CD4+	3	EXCRETION
+Blood Mononuclear Cells, Umbilical Cord	3	EXCRETION
+Bile; Feces; Liver; Plasma; Urine	3	EXCRETION
+Liver Epithelium	3	EXCRETION
+Colon Epithelium	3	EXCRETION
+Blood Platelets; Erythrocytes; Plasma	3	EXCRETION
+Lung Stem Cells	3	EXCRETION
+Parietal Cortex	3	EXCRETION
+Perfusate, Brain	3	EXCRETION
+Extracellular Medium	3	EXCRETION
+Colorectal Mucosa	3	EXCRETION
+Roots; Shoots	3	EXCRETION
+Appendix	3	EXCRETION
+Peripheral Blood Mononuclear Cells, Umbilical Cord	3	EXCRETION
+Tracheal Fluid, Fetal	3	EXCRETION
+Plasma, Arterial	3	EXCRETION
+Heart Mitochondria	3	EXCRETION
+Heart Cytosol	3	EXCRETION
+Blood Vessels	3	EXCRETION
+Blood, Renal Vein	3	EXCRETION
+Articular Soft Tissue	3	EXCRETION
+Tumor, Kidney	3	EXCRETION
+Duodenum Fluid	3	EXCRETION
+Feces + Serum	3	EXCRETION
+Intestine S9 Fraction	3	EXCRETION
+Eyeball	3	EXCRETION
+Brain Homogenate	3	EXCRETION
+Plasma, Postmortem	2	EXCRETION
+Bile, Postmortem	2	EXCRETION
+Intestine, Neonatal	2	EXCRETION
+Saliva; Serum; Urine	2	EXCRETION
+Blood; Tissue	2	EXCRETION
+Septum	2	EXCRETION
+Pons/Medulla Oblongata	2	EXCRETION
+Perfusion Medium	2	EXCRETION
+Cervix; Uterus; Vagina	2	EXCRETION
+Feces + Gastrointestinal Contents + Gastrointestinal Tract	2	EXCRETION
+Motor Cortex	2	EXCRETION
+Choroid Plexus	2	EXCRETION
+Adrenal Gland Mucosa	2	EXCRETION
+Liver Microsomes + Mitochondria	2	EXCRETION
+Stomach Nuclei	2	EXCRETION
+Stomach Microsomes + Mitochondria	2	EXCRETION
+Stomach Cytosol	2	EXCRETION
+Kidney Microsomes + Mitochondria	2	EXCRETION
+Blood + Brain + Kidney + Urine	2	EXCRETION
+Medulla, Fetal	2	EXCRETION
+Hair, Fetal	2	EXCRETION
+Venous Tissue	2	EXCRETION
+Arterial Tissue	2	EXCRETION
+Synovium	2	EXCRETION
+Cartilage	2	EXCRETION
+Sweat, Torso	2	EXCRETION
+Milk; Urine	2	EXCRETION
+Lateral Nasal Gland Microsomes	2	EXCRETION
+Lateral Nasal Gland Cytosol	2	EXCRETION
+Cerebrospinal Fluid; Leukemic Cells	2	EXCRETION
+Plasma; Tissue; Tumor	2	EXCRETION
+Atria	2	EXCRETION
+Right Ventricle	2	EXCRETION
+Blood; Brain; Fat; Heart; Kidney; Liver; Lung; Urine	2	EXCRETION
+Erythrocytes; Feces; Plasma; Urine	2	EXCRETION
+Mammary Gland Epithelium	2	EXCRETION
+Peripheral Blood Lymphocytes	2	EXCRETION
+Intestinal Epithelium, Regenerated	2	EXCRETION
+Bile; Serum	2	EXCRETION
+Sweat, Fingerprint	2	EXCRETION
+Blood + Brain + Kidney + Liver + Plasma + Serum + Urine	2	EXCRETION
+CNS Dialysate	2	EXCRETION
+Blood, Left Ventricle	2	EXCRETION
+Blood, Right Ventricle	2	EXCRETION
+Blood, Femoral Artery	2	EXCRETION
+Bile; Blood; Plasma; Urine	2	EXCRETION
+Milk; Serum	2	EXCRETION
+Plasma; Tumor Cytosol	2	EXCRETION
+Peritoneum	2	EXCRETION
+Nucleus Accumbens	2	EXCRETION
+Prefrontal Cortex	2	EXCRETION
+Nail, Neonatal	2	EXCRETION
+Precardial Fluid	2	EXCRETION
+Hair, Senile White	2	EXCRETION
+Hair; Plasma	2	EXCRETION
+Brain, Occipital-Temporal Cortex	2	EXCRETION
+Hair, Black	2	EXCRETION
+Testis Microsomes	2	EXCRETION
+Efferent Ducts	2	EXCRETION
+Lung Homogenate	2	EXCRETION
+Nonparenchymal Cells	2	EXCRETION
+Bile; Tissue	2	EXCRETION
+Blood; Brain; Plasma	2	EXCRETION
+Median Tissue	2	EXCRETION
+Subcutaneous Cells	2	EXCRETION
+Expired Air; Feces; Plasma; Urine	2	EXCRETION
+Brain; Genital Tract; Serum	2	EXCRETION
+Hair, Chest	2	EXCRETION
+Kidney, Postmortem	2	EXCRETION
+Blood, Clot, Postmortem	2	EXCRETION
+Gastric Lavage	2	EXCRETION
+Abomasal Fluid	2	EXCRETION
+Blood Platelets	2	EXCRETION
+Cerebrospinal Fluid; Plasma; Urine	2	EXCRETION
+Cecum Contents + Colon Contents	2	EXCRETION
+Seminal Mononuclear Cells	2	EXCRETION
+Peripheral Blood Leukocytes	2	EXCRETION
+Frontal Cortex, Fetal	2	EXCRETION
+Thalamus, Fetal	2	EXCRETION
+Aspirate, Brain	2	EXCRETION
+Substantia Nigra	2	EXCRETION
+Submandibular Gland	2	EXCRETION
+Brain; Erythrocytes; Intestine; Liver; Plasma	2	EXCRETION
+Blood; Liver; Urine	2	EXCRETION
+Pancreatic Juice	2	EXCRETION
+Red Blood Cells, Maternal	2	EXCRETION
+Red Blood Cells, Fetal	2	EXCRETION
+Bile; Feces; Liver; Lung; Muscle; Urine	2	EXCRETION
+Blood; Liver	2	EXCRETION
+Bile; Blood	2	EXCRETION
+Blood; Embryo; Urine	2	EXCRETION
+Cervicovaginal Lavage Fluid	2	EXCRETION
+Spleen, Neonatal	2	EXCRETION
+Jejunum Contents (Upper)	2	EXCRETION
+Jejunum Contents (Middle)	2	EXCRETION
+Jejunum Contents (Lower)	2	EXCRETION
+Nuclei	2	EXCRETION
+Microsomes + Mitochondria	2	EXCRETION
+Alveolar Cells	2	EXCRETION
+Feather	2	EXCRETION
+Epididymis Cytosol	2	EXCRETION
+Ovary, Neonatal	2	EXCRETION
+Testes, Neonatal	2	EXCRETION
+Craw	2	EXCRETION
+Parathyroid	2	EXCRETION
+Sinus Fluid	2	EXCRETION
+Bile + Tissue + Urine	2	EXCRETION
+Blood + Feces + Tissue	2	EXCRETION
+Skin Perfusate	2	EXCRETION
+Liver Microsomes + Nuclei	2	EXCRETION
+Marrow	2	EXCRETION
+Blood, Donor	2	EXCRETION
+Blood, Recipient	2	EXCRETION
+Lung, Transplant	2	EXCRETION
+Amniotic Fluid + Plasma + Urine	2	EXCRETION
+Spinal Cord Extracellular Fluid	2	EXCRETION
+Tumor, Esophagus	2	EXCRETION
+Wrist Tissue	2	EXCRETION
+Chest Fluid	2	EXCRETION
+Pyloric Cecum	2	EXCRETION
+Cecum + Large Intestine	2	EXCRETION
+Conjunctiva	2	EXCRETION
+Plasma, Cecal	2	EXCRETION
+Plasma, Heart	2	EXCRETION
+Diencephalon	2	EXCRETION
+Liver Membranes	2	EXCRETION
+Intestine Cytosol	2	EXCRETION
+Brain + Heart + Lung + Muscle + Spleen + Stomach + Testes	2	EXCRETION
+Cervical Lymph Nodes	2	EXCRETION
+Mesenteric Lymph Nodes	2	EXCRETION
+Blood + Brain + Plasma	2	EXCRETION
+Adrenal Gland Cell Debris + Nuclei	2	EXCRETION
+Adrenal Gland Mitochondria	2	EXCRETION
+Adrenal Gland Microsomes	2	EXCRETION
+Adrenal Gland Cytosol	2	EXCRETION
+Serum, Infant	1	EXCRETION
+Paratumorous Cortex	1	EXCRETION
+Vitreous Body, Postmortem	1	EXCRETION
+Cerebrospinal Fluid, Postmortem	1	EXCRETION
+Gastric Contents, Postmortem	1	EXCRETION
+Lung, Neonatal	1	EXCRETION
+Heart; Lung	1	EXCRETION
+Liver Extracellular Fluid	1	EXCRETION
+Gall Bladder Stone	1	EXCRETION
+Brain; Urine	1	EXCRETION
+Blood + Heart + Kidney + Liver + Urine	1	EXCRETION
+Blood; Saliva	1	EXCRETION
+Bile, Bile Recipient	1	EXCRETION
+Uterus, Fetal	1	EXCRETION
+Omentum	1	EXCRETION
+Abdominal Wall	1	EXCRETION
+Bile + Blood Cells + Urine	1	EXCRETION
+Parotid Saliva	1	EXCRETION
+Erythrocytes; Plasma; Urine	1	EXCRETION
+Blood; Kidney; Liver	1	EXCRETION
+Muscle; Urine	1	EXCRETION
+Liver, Embryo	1	EXCRETION
+Ventricle	1	EXCRETION
+Dialysate; Serum; Urine	1	EXCRETION
+Ascites	1	EXCRETION
+Heart Muscle	1	EXCRETION
+Cortical Extracellular Fluid	1	EXCRETION
+Intestine; Serum	1	EXCRETION
+Adrenal Glands; Brain; Heart; Kidney; Lung; Spleen	1	EXCRETION
+Tumor, Endometrium	1	EXCRETION
+Liver; Urine	1	EXCRETION
+Decomposition Fluid, Postmortem	1	EXCRETION
+Stratum Corneum	1	EXCRETION
+Placental Fluid	1	EXCRETION
+Amniotic Fluid; Brain; Plasma; Urine	1	EXCRETION
+Amniotic Fluid; Plasma; Urine	1	EXCRETION
+Serum, Infant, Suckling	1	EXCRETION
+Plasma, Offspring	1	EXCRETION
+Serum, Placental	1	EXCRETION
+Cerebrospinal Fluid, Neonatal	1	EXCRETION
+Airway Surface Liquid	1	EXCRETION
+Feces; Liver; Urine	1	EXCRETION
+Hemolymph; Intestinal Contents; Urine	1	EXCRETION
+Serum; Plasma	1	EXCRETION
+Serum, Postmortem	1	EXCRETION
+Blood, Acidic	1	EXCRETION
+Bile; Blood; Urine	1	EXCRETION
+Urothelial Cells	1	EXCRETION
+Kidney; Liver	1	EXCRETION
+Feces; Liver; Urine; Uterus	1	EXCRETION
+Perfusate, Striatum	1	EXCRETION
+Brain + Kindey + Liver + Muscle	1	EXCRETION
+Hair, Arm	1	EXCRETION
+Hair, Leg	1	EXCRETION
+Hair, Postmortem	1	EXCRETION
+Blood, Dried	1	EXCRETION
+Ruminal Fluid	1	EXCRETION
+Blood + Tissue	1	EXCRETION
+Bronchial Excretions; Urine	1	EXCRETION
+Tumor, Stomach	1	EXCRETION
+Peritoneal Nodules	1	EXCRETION
+Lung Lymph	1	EXCRETION
+Hydatid Cyst Fluid	1	EXCRETION
+Tissue, Postmortem	1	EXCRETION
+Adipocytes	1	EXCRETION
+Serum, Umbilical Vein	1	EXCRETION
+Serum, Umbilical Artery	1	EXCRETION
+Bile; Blood; Feces; Plasma; Tissue; Urine	1	EXCRETION
+Bile; Blood; Feces; Tissue; Urine	1	EXCRETION
+Plasma; Serum	1	EXCRETION
+Hemolymph; Shell	1	EXCRETION
+Palate	1	EXCRETION
+Erythrocytes; Plasma; Tissue	1	EXCRETION
+Blood; Intestine; Liver	1	EXCRETION
+Blood; Kidney; Liver; Lung; Urine	1	EXCRETION
+Skin Supernatant	1	EXCRETION
+Bronchial Excretions; Plasma	1	EXCRETION
+Bronchi + Trachea	1	EXCRETION
+Egg; Tissue	1	EXCRETION
+Bile; Liver; Lung; Muscle; Urine	1	EXCRETION
+Blood; Lung	1	EXCRETION
+Bladder Mucosa	1	EXCRETION
+Blood, Arterial	1	EXCRETION
+Ascitic Fluid	1	EXCRETION
+Midbrain	1	EXCRETION
+Kidney; Liver; Plasma; Urine	1	EXCRETION
+Blood + Intestinal Contents + Intestinal Mucosa	1	EXCRETION
+Erythrocytes, Maternal	1	EXCRETION
+Erythrocytes, Neonatal	1	EXCRETION
+Liver; Lung; Kidney; Plasma; Small Intestine; Spleen; Stomach	1	EXCRETION
+Blister Fluid; Plasma	1	EXCRETION
+Mesenteric Lumen	1	EXCRETION
+Prolarva	1	EXCRETION
+Vomit	1	EXCRETION
+Lung, Central	1	EXCRETION
+Lung, Peripheral	1	EXCRETION
+Cecum Wall	1	EXCRETION
+Myocytes	1	EXCRETION
+Lens	1	EXCRETION
+Epididymis Mitochondria	1	EXCRETION
+Efferent Duct Cytosol	1	EXCRETION
+Efferent Duct Mitochondria	1	EXCRETION
+Stomach + Stomach Contents	1	EXCRETION
+Skin, Fetal	1	EXCRETION
+Pouch Fluid	1	EXCRETION
+Intraperitoneal Fluid	1	EXCRETION
+Ear	1	EXCRETION
+Middle Ear Fluid	1	EXCRETION
+Heart Microsomes	1	EXCRETION
+Polymorphonuclear Leucocytes	1	EXCRETION
+Rostral Hypothalamus	1	EXCRETION
+Blood + Liver + Urine	1	EXCRETION
+Heart Interstitial Fluid	1	EXCRETION
+Vascular Contents	1	EXCRETION
+Blood, Pulmonary Vein, Postmortem	1	EXCRETION
+Blood, Hepatic Vein, Postmortem	1	EXCRETION
+Mandibular Glands	1	EXCRETION
+Uroepithelium	1	EXCRETION
+Uvea	1	EXCRETION
+Uterus Cytosol	1	EXCRETION
+Uterus Nuclei	1	EXCRETION
+Osteoblasts	1	EXCRETION
+Thymus, Fetal	1	EXCRETION
+Respiratory Tissue	1	EXCRETION
+Luminal Fluid	1	EXCRETION
+Duodenum Nuclei	1	EXCRETION
+Duodenum Mitochondria	1	EXCRETION
+Duodenum Microsomes	1	EXCRETION
+Duodenum Cytosol	1	EXCRETION
+Bile Duct	1	EXCRETION
+Chorioallantois	1	EXCRETION
+Pulmonary Epithelial Lining Fluid	1	EXCRETION
+Tissue Chamber Fluid	1	EXCRETION
+Hepatopancreas	1	EXCRETION
+Mouth Contents	1	EXCRETION
+Perilymph	1	EXCRETION
+Pleural Effusion	1	EXCRETION
+Cortex Dialysate	1	EXCRETION
+Hippocampus Dialysate	1	EXCRETION
+Brain + Liver + Lung + Serum	1	EXCRETION
+Intestinal Wall	1	EXCRETION
+Bile + Plasma + Tissue + Urine	1	EXCRETION
+Feces + Small Intestine + Urine	1	EXCRETION
+Choroid	1	EXCRETION
+Intestine Microsomes	1	EXCRETION
+Intestine Mitochondria	1	EXCRETION
+Thoracic Lymph	1	EXCRETION
+Gingiva	1	EXCRETION
+Mandibular Bone	1	EXCRETION
+Dental Follicle	1	EXCRETION
+Dental Pulp	1	EXCRETION
+Choroid + Sclera	1	EXCRETION
+Alveolar Macrophage	1	EXCRETION
+Sclera	1	EXCRETION
+Duodenum Contents + Jejunum Contents	1	EXCRETION
+Temporal Cortex	1	EXCRETION
+Cingulate Cortex	1	EXCRETION

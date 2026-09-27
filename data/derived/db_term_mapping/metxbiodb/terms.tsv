@@ -1,0 +1,285 @@
+source	term	term_norm	count	field
+metxbiodb	O-glucuronidation	o-glucuronidation	262	Reaction Type
+metxbiodb	Aliphatic Hydroxylation	aliphatic hydroxylation	213	Reaction Type
+metxbiodb	Aromatic Hydroxylation	aromatic hydroxylation	117	Reaction Type
+metxbiodb	Aromatic -OH glucuronidation	aromatic -oh glucuronidation	99	Reaction Type
+metxbiodb	Aromatic hydroxylation of fused benzene ring	aromatic hydroxylation of fused benzene ring	68	Reaction Type
+metxbiodb	O-sulfonation	o-sulfonation	58	Reaction Type
+metxbiodb	O-Demethylation	o-demethylation	48	Reaction Type
+metxbiodb	Hydroxylation of alicyclic secondary carbon	hydroxylation of alicyclic secondary carbon	46	Reaction Type
+metxbiodb	N-dealkylation of alicyclic tertiary amine	n-dealkylation of alicyclic tertiary amine	34	Reaction Type
+metxbiodb	N-dealkylation of acyclic tertiary amine	n-dealkylation of acyclic tertiary amine	26	Reaction Type
+metxbiodb	GSH-conjugation	gsh-conjugation	26	Reaction Type
+metxbiodb	N-dealkylation of acyclic secondary amine	n-dealkylation of acyclic secondary amine	25	Reaction Type
+metxbiodb	Aliphatic hydroxylation of methyl carbon adjacent to aromatic ring	aliphatic hydroxylation of methyl carbon adjacent to aromatic ring	25	Reaction Type
+metxbiodb	N-demethylation	n-demethylation	25	Reaction Type
+metxbiodb	p-Hydroxylation of monosubstituted benzene	para-hydroxylation of monosubstituted benzene	24	Reaction Type
+metxbiodb	S-Oxidation	s-oxidation	24	Reaction Type
+metxbiodb	N-Dealkylation	n-dealkylation	24	Reaction Type
+metxbiodb	O-dealkylation	o-dealkylation	22	Reaction Type
+metxbiodb	Epoxidation	epoxidation	22	Reaction Type
+metxbiodb	Hydroxylation of terminal methyl	hydroxylation of terminal methyl	21	Reaction Type
+metxbiodb	N-dealkylation	n-dealkylation	21	Reaction Type
+metxbiodb	O-aryl dealkylation not adjacent to substituted carbon	o-aryl dealkylation not adjacent to substituted carbon	19	Reaction Type
+metxbiodb	Alkyl-OH glucuronidation	alkyl-oh glucuronidation	19	Reaction Type
+metxbiodb	Dehydrogenation	dehydrogenation	18	Reaction Type
+metxbiodb	N-Oxidation	n-oxidation	17	Reaction Type
+metxbiodb	O-demethylation	o-demethylation	17	Reaction Type
+metxbiodb	O-glucuronidation of aliphatic acid	o-glucuronidation of aliphatic acid	17	Reaction Type
+metxbiodb	O-aryl demethylation	o-aryl demethylation	16	Reaction Type
+metxbiodb	N-Demethylation	n-demethylation	14	Reaction Type
+metxbiodb	Alpha hydroxylation of carbonyl group	alpha hydroxylation of carbonyl group	14	Reaction Type
+metxbiodb	Hydroxylation of aromatic carbon ortho to halide group	hydroxylation of aromatic carbon ortho to halide group	14	Reaction Type
+metxbiodb	N-hydroxylation of primary arylamine	n-hydroxylation of primary arylamine	14	Reaction Type
+metxbiodb	EPOXIDATION_OF_12_DISUBSTITUTED_ALKLENE	epoxidation of 12 disubstituted alklene	12	Reaction Type
+metxbiodb	N-acetylation of arylamine	n-acetylation of arylamine	12	Reaction Type
+metxbiodb	Hydroxylation of benzene on carbon para to a strongly electron donating group	hydroxylation of benzene on carbon para to a strongly electron donating group	11	Reaction Type
+metxbiodb	N-glucuronidation of tertiary aliphatic amine	n-glucuronidation of tertiary aliphatic amine	11	Reaction Type
+metxbiodb	Allylic hydroxylation	allylic hydroxylation	10	Reaction Type
+metxbiodb	HYDROXYLATION_OF_AROMATIC_CARBON	hydroxylation of aromatic carbon	10	Reaction Type
+metxbiodb	Hydroxylation of heteroalicyclic secondary carbon	hydroxylation of heteroalicyclic secondary carbon	10	Reaction Type
+metxbiodb	O-aryl dealkylation adjacent to substituted carbon	o-aryl dealkylation adjacent to substituted carbon	10	Reaction Type
+metxbiodb	N-Dementhylation	n-dementhylation	10	Reaction Type
+metxbiodb	N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1; N_DEALKYLATION_OF_ACYCLIC_TERTIARY_AMINES	n-dealkylation of aliphatic tertiary amines pattern1 n-dealkylation of acyclic tertiary amines	9	Reaction Type
+metxbiodb	O-dealkylation of dialkylether	o-dealkylation of dialkylether	9	Reaction Type
+metxbiodb	N-dealkylation of mixed tertiary amine	n-dealkylation of mixed tertiary amine	9	Reaction Type
+metxbiodb	HYDROXYLATION_OF_HETEROAROMATIC_CARBON	hydroxylation of heteroaromatic carbon	9	Reaction Type
+metxbiodb	ARENE_EPOXIDATION	arene epoxidation	8	Reaction Type
+metxbiodb	C-Oxidation	c-oxidation	8	Reaction Type
+metxbiodb	N-dealkylation of tertiary carboxamide	n-dealkylation of tertiary carboxamide	8	Reaction Type
+metxbiodb	Hydroxylation of acyclic aliphatic secondary carbon	hydroxylation of acyclic aliphatic secondary carbon	8	Reaction Type
+metxbiodb	Sulfation of primary alcohol	sulfation of primary alcohol	8	Reaction Type
+metxbiodb	N-acetylation	n-acetylation	8	Reaction Type
+metxbiodb	S-oxidation of sulfoxide to sulfone	s-oxidation of sulfoxide to sulfone	7	Reaction Type
+metxbiodb	Hydroxylation of penultimate aliphatic tertiary carbon	hydroxylation of penultimate aliphatic tertiary carbon	7	Reaction Type
+metxbiodb	Hydroxylation of carbon gamma to conjugated carbonyl	hydroxylation of carbon gamma to conjugated carbonyl	7	Reaction Type
+metxbiodb	Aliphatic hydroxylation of acyclic 1,2-disubstituted alkene	aliphatic hydroxylation of acyclic 1 2-disubstituted alkene	7	Reaction Type
+metxbiodb	Hydroxylation of penultimate aliphatic secondary carbon	hydroxylation of penultimate aliphatic secondary carbon	7	Reaction Type
+metxbiodb	4-OH sulfonation of phenolic compound	4-oh sulfonation of phenolic compound	7	Reaction Type
+metxbiodb	Glucuronidation of primary aromatic amine	glucuronidation of primary aromatic amine	7	Reaction Type
+metxbiodb	O-glucuronidation of aromatic acid	o-glucuronidation of aromatic acid	7	Reaction Type
+metxbiodb	GSH-conjugation of organohalide	gsh-conjugation of organohalide	7	Reaction Type
+metxbiodb	N-glucuronidation	n-glucuronidation	7	Reaction Type
+metxbiodb	N-deisopropylation	n-deisopropylation	6	Reaction Type
+metxbiodb	Dearylation of organphosphosulfur compound	dearylation of organphosphosulfur compound	6	Reaction Type
+metxbiodb	N-desmethylation	n-desmethylation	6	Reaction Type
+metxbiodb	N-oxidation of alicyclic tertiary amine	n-oxidation of alicyclic tertiary amine	6	Reaction Type
+metxbiodb	O-dementhylation	o-dementhylation	6	Reaction Type
+metxbiodb	O-methylation	o-methylation	6	Reaction Type
+metxbiodb	O-acetylation of N-hydroxylarylamine	o-acetylation of n-hydroxylarylamine	6	Reaction Type
+metxbiodb	N-glucuronidation of azole	n-glucuronidation of azole	6	Reaction Type
+metxbiodb	Hydroxylation of benzene on carbon orhto to a strongly electron donating group	hydroxylation of benzene on carbon orhto to a strongly electron donating group	5	Reaction Type
+metxbiodb	Thiophene S-oxidation	thiophene s-oxidation	5	Reaction Type
+metxbiodb	Hydroxlation of methyl carbon adjacent to an aliphatic ring	hydroxylation of methyl carbon adjacent to an aliphatic ring	5	Reaction Type
+metxbiodb	Hydroxylation of aromatic carbon meta to halide group	hydroxylation of aromatic carbon meta to halide group	5	Reaction Type
+metxbiodb	AROMATIC HYDROXYLATION	aromatic hydroxylation	5	Reaction Type
+metxbiodb	Terminal desaturation	terminal desaturation	5	Reaction Type
+metxbiodb	N-DEMETHYLATION	n-demethylation	5	Reaction Type
+metxbiodb	S-oxidation of diarylthioether to sulfoxide	s-oxidation of diarylthioether to sulfoxide	5	Reaction Type
+metxbiodb	N-dementhylation	n-dementhylation	5	Reaction Type
+metxbiodb	N-dechloroethylation	n-dechloroethylation	5	Reaction Type
+metxbiodb	S-oxidation of dialkylthioether to sulfoxide	s-oxidation of dialkylthioether to sulfoxide	5	Reaction Type
+metxbiodb	O-Dementhylation	o-dementhylation	5	Reaction Type
+metxbiodb	N-Glucuronidation	n-glucuronidation	5	Reaction Type
+metxbiodb	Oxidation of halotrifluoroethane	oxidation of halotrifluoroethane	4	Reaction Type
+metxbiodb	Dehydrogenation of 4-aryl substituted 1,4-dihydropyridine	dehydrogenation of 4-aryl substituted 1 4-dihydropyridine	4	Reaction Type
+metxbiodb	3-Hydroxylation of 5-aryl-1,4-benzodiazepine	3-hydroxylation of 5-aryl-1 4-benzodiazepine	4	Reaction Type
+metxbiodb	N-dealkylation of secondary arylalkylamine	n-dealkylation of secondary arylalkylamine	4	Reaction Type
+metxbiodb	m-Hydroxylation of monosubstituted benzene	meta-hydroxylation of monosubstituted benzene	4	Reaction Type
+metxbiodb	N-dealkylation of N-acylurea	n-dealkylation of n-acylurea	4	Reaction Type
+metxbiodb	O-DEMETHYLATION	o-demethylation	4	Reaction Type
+metxbiodb	Hydroxylation of benzene on carbon ortho to an electron donating group	hydroxylation of benzene on carbon ortho to an electron donating group	4	Reaction Type
+metxbiodb	Hydroxylation of benzene on carbon para to an electron donating group	hydroxylation of benzene on carbon para to an electron donating group	4	Reaction Type
+metxbiodb	Oxidation	oxidation	4	Reaction Type
+metxbiodb	Hydroxylation of alkyl methine	hydroxylation of alkyl methine	4	Reaction Type
+metxbiodb	O-desmethylation	o-desmethylation	4	Reaction Type
+metxbiodb	ALKENE_EPXODATION	alkene epxodation	4	Reaction Type
+metxbiodb	3-OH sulfonation of phenolic compound	3-oh sulfonation of phenolic compound	4	Reaction Type
+metxbiodb	Dehydroxylation of catechol	dehydroxylation of catechol	4	Reaction Type
+metxbiodb	Reduction of halotrifluoroethane	reduction of halotrifluoroethane	3	Reaction Type
+metxbiodb	O-Desmethylation	o-desmethylation	3	Reaction Type
+metxbiodb	Hydroxylation of non-terminal aliphatic carbon adjacent to aromatic ring	hydroxylation of non-terminal aliphatic carbon adjacent to aromatic ring	3	Reaction Type
+metxbiodb	HYDROLYSIS_OF_CARBOXYLIC_ESTER	hydrolysis of carboxylic ester	3	Reaction Type
+metxbiodb	ALIPHATIC HYDROXYLATION	aliphatic hydroxylation	3	Reaction Type
+metxbiodb	REDUCTION_OF_NITRO_TO_AMINE	reduction of nitro to amine	3	Reaction Type
+metxbiodb	Bisallylic hydroxylation	bisallylic hydroxylation	3	Reaction Type
+metxbiodb	Desulfuration of organophosphothioates	desulfuration of organophosphothioates	3	Reaction Type
+metxbiodb	N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1	n-dealkylation of aliphatic tertiary amines pattern1	3	Reaction Type
+metxbiodb	N-dealkylation of secondary carboxamide	n-dealkylation of secondary carboxamide	3	Reaction Type
+metxbiodb	Hydroxylation	hydroxylation	3	Reaction Type
+metxbiodb	Hydrogenation	hydrogenation	3	Reaction Type
+metxbiodb	p-Hydroxylation of phenol	para-hydroxylation of phenol	3	Reaction Type
+metxbiodb	Desulfurization of thioamide into amide	desulfurization of thioamide into amide	3	Reaction Type
+metxbiodb	EPOXIDATION	epoxidation	3	Reaction Type
+metxbiodb	N-oxdation of aliphatic tertiary amine	n-oxidation of aliphatic tertiary amine	3	Reaction Type
+metxbiodb	N-dealkoxylation of N-aryl-N-chloroacetamide	n-dealkoxylation of n-aryl-n-chloroacetamide	3	Reaction Type
+metxbiodb	N-demethoxymethylation	n-demethoxymethylation	3	Reaction Type
+metxbiodb	o-Hydroxylation of phenol	ortho-hydroxylation of phenol	3	Reaction Type
+metxbiodb	N-Dealkylatiion	n-dealkylatiion	3	Reaction Type
+metxbiodb	17-OH glucuronidation of sterol	17-oh glucuronidation of sterol	3	Reaction Type
+metxbiodb	Sulfation of secondary alcohol	sulfation of secondary alcohol	3	Reaction Type
+metxbiodb	Hydroxylamine O-sulfonation	hydroxylamine o-sulfonation	3	Reaction Type
+metxbiodb	N-Hydroxylation	n-hydroxylation	2	Reaction Type
+metxbiodb	Methylenedioxy ring opening	methylenedioxy ring opening	2	Reaction Type
+metxbiodb	S-OXIDATION	s-oxidation	2	Reaction Type
+metxbiodb	O-deisopropylation	o-deisopropylation	2	Reaction Type
+metxbiodb	2,4-thiazolidinedione ring opening	2 4-thiazolidinedione ring opening	2	Reaction Type
+metxbiodb	HYDROXYLATION_OF_AROMATIC_CARBON; HYDROXYLATION_OF_BENZENE_PARA_TO_EDG	hydroxylation of aromatic carbon hydroxylation of benzene para to edg	2	Reaction Type
+metxbiodb	N-hydroxylation of primary or secondary aliphatic amine	n-hydroxylation of primary or secondary aliphatic amine	2	Reaction Type
+metxbiodb	N-hydroxylation of secondary arylamide	n-hydroxylation of secondary arylamide	2	Reaction Type
+metxbiodb	O-Deethylation	o-deethylation	2	Reaction Type
+metxbiodb	Reduction	reduction	2	Reaction Type
+metxbiodb	p-Hydroxylation of anilide	para-hydroxylation of anilide	2	Reaction Type
+metxbiodb	Hydroxylation of carbon alpha to conjugated carbonyl	hydroxylation of carbon alpha to conjugated carbonyl	2	Reaction Type
+metxbiodb	N-dealkylation of urea	n-dealkylation of urea	2	Reaction Type
+metxbiodb	2-Hydroxylation of 1,4-disubstituted benzene	2-hydroxylation of 1 4-disubstituted benzene	2	Reaction Type
+metxbiodb	Hydroxylation of  carbon next to amide	hydroxylation of carbon next to amide	2	Reaction Type
+metxbiodb	7-Hydroxylation of coumarin	7-hydroxylation of coumarin	2	Reaction Type
+metxbiodb	N-desalkylation	n-desalkylation	2	Reaction Type
+metxbiodb	Oxidation of primary alcohol to aldehyde	oxidation of primary alcohol to aldehyde	2	Reaction Type
+metxbiodb	4-alkyl hydroxylation of oxoazaphosphorine	4-alkyl hydroxylation of oxoazaphosphorine	2	Reaction Type
+metxbiodb	Oxidation of secondary alcohol to ketone	oxidation of secondary alcohol to ketone	2	Reaction Type
+metxbiodb	OXIDATION_OF_PRIM_ALCOHOL_TO_CARBOXYLIC_ACID	oxidation of prim alcohol to carboxylic acid	2	Reaction Type
+metxbiodb	N-OXIDATION	n-oxidation	2	Reaction Type
+metxbiodb	S-oxidation of alkylarylthioether to sulfoxide	s-oxidation of alkylarylthioether to sulfoxide	2	Reaction Type
+metxbiodb	Oxidation of nitrogen in a strained ring system	oxidation of nitrogen in a strained ring system	2	Reaction Type
+metxbiodb	N-desethylation	n-desethylation	2	Reaction Type
+metxbiodb	Aldehyde oxidation	aldehyde oxidation	2	Reaction Type
+metxbiodb	Unknown reaction	unknown reaction	2	Reaction Type
+metxbiodb	Epoxidation of thiophene	epoxidation of thiophene	2	Reaction Type
+metxbiodb	o-Hydroxylation of monosubstituted benzene	ortho-hydroxylation of monosubstituted benzene	2	Reaction Type
+metxbiodb	N-oxidation of pyrimidine	n-oxidation of pyrimidine	2	Reaction Type
+metxbiodb	N-demethylations	n-demethylations	2	Reaction Type
+metxbiodb	Desulfuration of organophosphorodithioate	desulfuration of organophosphorodithioate	2	Reaction Type
+metxbiodb	C-DE-ESTERIFICATION	c-de-esterification	2	Reaction Type
+metxbiodb	Hydroxylamine O-glucuronidation	hydroxylamine o-glucuronidation	2	Reaction Type
+metxbiodb	N-acetylation of Hydrazine derivative	n-acetylation of hydrazine derivative	2	Reaction Type
+metxbiodb	3-OH glucuronidation of sterol	3-oh glucuronidation of sterol	2	Reaction Type
+metxbiodb	GSH-conjugatoon	gsh-conjugatoon	2	Reaction Type
+metxbiodb	Flavan-3-ol C-ring fission	flavan-3-ol c-ring fission	2	Reaction Type
+metxbiodb	4'-Deydroxylation of substitued benzene	4 -dehydroxylation of substitued benzene	2	Reaction Type
+metxbiodb	Glycoside hydrolysis	glycoside hydrolysis	2	Reaction Type
+metxbiodb	Anthocyanidin C-ring fission	anthocyanidin c-ring fission	2	Reaction Type
+metxbiodb	Reduction of alpha,beta unsaturated carbon-carbon double bond adjacent to an electron withdrawing group	reduction of alpha beta unsaturated carbon-carbon double bond adjacent to an electron withdrawing group	2	Reaction Type
+metxbiodb	Keto hydrolysis	keto hydrolysis	2	Reaction Type
+metxbiodb	Reduction of azobenzene	reduction of azobenzene	2	Reaction Type
+metxbiodb	Lysis of choline to trimethylamine	lysis of choline to trimethylamine	2	Reaction Type
+metxbiodb	Oxidation of p-substituted anilides	oxidation of para-substituted anilides	1	Reaction Type
+metxbiodb	Reduction of terminal aliphatic trihalide	reduction of terminal aliphatic trihalide	1	Reaction Type
+metxbiodb	Alphatic Hydroxylation	alphatic hydroxylation	1	Reaction Type
+metxbiodb	EPOXIDATION_OF_112_TRISUBSTITUTED_ALKLENE	epoxidation of 112 trisubstituted alklene	1	Reaction Type
+metxbiodb	HYDROXYLATION_OF_AROMATIC_CARBON; HYDROXYLATION_OF_BENZENE_ORTHO_TO_EDG	hydroxylation of aromatic carbon hydroxylation of benzene ortho to edg	1	Reaction Type
+metxbiodb	C-DEALKLYATION	c-dealklyation	1	Reaction Type
+metxbiodb	Aliphatic hydroxylation of carbon alpha to secondary or tertiary alkyl-N	aliphatic hydroxylation of carbon alpha to secondary or tertiary alkyl-n	1	Reaction Type
+metxbiodb	N-HYDROXYLATION	n-hydroxylation	1	Reaction Type
+metxbiodb	N_DEHYDROGENATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	n-dehydrogenation of alicyclic tertiary amines pattern1	1	Reaction Type
+metxbiodb	Hydroxylation of aromatic carbon para to halide group	hydroxylation of aromatic carbon para to halide group	1	Reaction Type
+metxbiodb	PYRROLE_EPOXIDATION	pyrrole epoxidation	1	Reaction Type
+metxbiodb	O-Dealklyation	o-dealklyation	1	Reaction Type
+metxbiodb	N-Hydroxylation; N-Oxidation	n-hydroxylation n-oxidation	1	Reaction Type
+metxbiodb	Epoxidation of arene	epoxidation of arene	1	Reaction Type
+metxbiodb	HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON; HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON_PATTERN1	hydroxylation of alicyclic secondary carbon hydroxylation of alicyclic secondary carbon pattern1	1	Reaction Type
+metxbiodb	N-deethylation	n-deethylation	1	Reaction Type
+metxbiodb	N-hydroxylation of anilide	n-hydroxylation of anilide	1	Reaction Type
+metxbiodb	EPOXIDATION_OF_MONOSUBSTITUTED_ALKENE	epoxidation of monosubstituted alkene	1	Reaction Type
+metxbiodb	Epoxidation of vinyl ether	epoxidation of vinyl ether	1	Reaction Type
+metxbiodb	N-dealkylation of hydrazide	n-dealkylation of hydrazide	1	Reaction Type
+metxbiodb	N-dealkylation of hydrazine	n-dealkylation of hydrazine	1	Reaction Type
+metxbiodb	Dehydrogenation of alpha,beta-unsaturated amide	dehydrogenation of alpha beta-unsaturated amide	1	Reaction Type
+metxbiodb	O-Debenzylation	o-debenzylation	1	Reaction Type
+metxbiodb	HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	hydroxylation of aromatic carbon adjacent to n	1	Reaction Type
+metxbiodb	N-oxidation	n-oxidation	1	Reaction Type
+metxbiodb	O-demethylenation	o-demethylenation	1	Reaction Type
+metxbiodb	N-Desalkylation	n-desalkylation	1	Reaction Type
+metxbiodb	S-Dealkylation	s-dealkylation	1	Reaction Type
+metxbiodb	OXIDATIVE_DEAMINATION_OF_TERTIARY_AMINES; N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	oxidative deamination of tertiary amines n-dealkylation of alicyclic tertiary amines pattern1	1	Reaction Type
+metxbiodb	Aliphatic Hydroxylation (14-(R)-hydroxylation)	aliphatic hydroxylation 14- r -hydroxylation	1	Reaction Type
+metxbiodb	O-Detrifluoromethylation	o-detrifluoromethylation	1	Reaction Type
+metxbiodb	N-hydroxylation of aniline to hydroxylamine	n-hydroxylation of aniline to hydroxylamine	1	Reaction Type
+metxbiodb	N-DESISOPROPYLATION	n-desisopropylation	1	Reaction Type
+metxbiodb	Pyridine N-oxidation	pyridine n-oxidation	1	Reaction Type
+metxbiodb	Alipathic Hydroxylation	alipathic hydroxylation	1	Reaction Type
+metxbiodb	ALKYL_HYDROXYLATION	alkyl hydroxylation	1	Reaction Type
+metxbiodb	Oxidization	oxidization	1	Reaction Type
+metxbiodb	oxidative defluorination	oxidative defluorination	1	Reaction Type
+metxbiodb	N-hyroxylation of guanidine or aminohydrazone	n-hyroxylation of guanidine or aminohydrazone	1	Reaction Type
+metxbiodb	Formation of pyridinium from 4-substituted piperidine	formation of pyridinium from 4-substituted piperidine	1	Reaction Type
+metxbiodb	N-Deethylation	n-deethylation	1	Reaction Type
+metxbiodb	O-DEETHYLATION	o-deethylation	1	Reaction Type
+metxbiodb	Ring opening of N-substituted piperidine	ring opening of n-substituted piperidine	1	Reaction Type
+metxbiodb	N-Desmethylation	n-desmethylation	1	Reaction Type
+metxbiodb	N-dehydroxyethylation	n-dehydroxyethylation	1	Reaction Type
+metxbiodb	N_DEALKYLATION	n-dealkylation	1	Reaction Type
+metxbiodb	OXIDATION_OF_METHYL_TO_CARBOXYLIC_ACID	oxidation of methyl to carboxylic acid	1	Reaction Type
+metxbiodb	Aliphatic hydroxylation of methyl carbon adjacent to alkyne ring	aliphatic hydroxylation of methyl carbon adjacent to alkyne ring	1	Reaction Type
+metxbiodb	Nifedipine Oxidation	nifedipine oxidation	1	Reaction Type
+metxbiodb	Oxidation of alkyl formamide	oxidation of alkyl formamide	1	Reaction Type
+metxbiodb	Formation of iminium from pyrrolidine ring	formation of iminium from pyrrolidine ring	1	Reaction Type
+metxbiodb	N_DEALKYLATION_OF_CYCLIC_TERTIARY_AMINES; N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	n-dealkylation of cyclic tertiary amines n-dealkylation of alicyclic tertiary amines pattern1	1	Reaction Type
+metxbiodb	Desulfation	desulfation	1	Reaction Type
+metxbiodb	DIHYDROXYLATION_OF_DOUBLE_BOND	dihydroxylation of double bond	1	Reaction Type
+metxbiodb	Desethylation	desethylation	1	Reaction Type
+metxbiodb	O-deacetylation	o-deacetylation	1	Reaction Type
+metxbiodb	N-Despropylation	n-despropylation	1	Reaction Type
+metxbiodb	S-oxidation of thiocarbamate	s-oxidation of thiocarbamate	1	Reaction Type
+metxbiodb	S-REDUCTION	s-reduction	1	Reaction Type
+metxbiodb	N-depropargylation of secondary or tertiary amine	n-depropargylation of secondary or tertiary amine	1	Reaction Type
+metxbiodb	Unknown Reduction	unknown reduction	1	Reaction Type
+metxbiodb	N-dealkylation of sulfonamide	n-dealkylation of sulfonamide	1	Reaction Type
+metxbiodb	Denitrosation	denitrosation	1	Reaction Type
+metxbiodb	HYDROXYLATION_OF_HETEROAROMATIC_CARBON; HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	hydroxylation of heteroaromatic carbon hydroxylation of aromatic carbon adjacent to n	1	Reaction Type
+metxbiodb	Formation of imminium ion from N-substituted piperidine	formation of imminium ion from n-substituted piperidine	1	Reaction Type
+metxbiodb	Deamino	deamino	1	Reaction Type
+metxbiodb	N-Dealylation	n-dealylation	1	Reaction Type
+metxbiodb	Demethylenation	demethylenation	1	Reaction Type
+metxbiodb	Aromatic Oxidation	aromatic oxidation	1	Reaction Type
+metxbiodb	S-oxidation of dithiocarbamate	s-oxidation of dithiocarbamate	1	Reaction Type
+metxbiodb	N-dealkylation of nitrosodialkylamine	n-dealkylation of nitrosodialkylamine	1	Reaction Type
+metxbiodb	Hydroxylation of sp3-carbon adjacent to N in nitrosamine	hydroxylation of sp3-carbon adjacent to n-in nitrosamine	1	Reaction Type
+metxbiodb	N-dealkylation of N-alkylnitrosamine	n-dealkylation of n-alkylnitrosamine	1	Reaction Type
+metxbiodb	O-deethylation	o-deethylation	1	Reaction Type
+metxbiodb	C-DEALYLATION	c-dealylation	1	Reaction Type
+metxbiodb	Formation of cycloguanide	formation of cycloguanide	1	Reaction Type
+metxbiodb	Hydrogenation;Reduction	hydrogenation reduction	1	Reaction Type
+metxbiodb	Alipathic Hydroxylation (6ÃŽÂ²-hydroxylation)	alipathic hydroxylation 6 -hydroxylation	1	Reaction Type
+metxbiodb	EPOXIDATION_OF_1122_TETRASUBSTITUTED_ALKLENE	epoxidation of 1122 tetrasubstituted alklene	1	Reaction Type
+metxbiodb	Hydroxylation of carbon adjacent to halogen	hydroxylation of carbon adjacent to halogen	1	Reaction Type
+metxbiodb	N-O bond cleavage	n-o-bond cleavage	1	Reaction Type
+metxbiodb	O-Demethylenation	o-demethylenation	1	Reaction Type
+metxbiodb	N-dealkylation of dicarboximide	n-dealkylation of dicarboximide	1	Reaction Type
+metxbiodb	_2_ELECTRON_OXIDATION_OF_P_AMINOPHENOLS_TO_QUINONE_IMINES_PATTERN1	2 electron oxidation of p aminophenols to quinone imines pattern1	1	Reaction Type
+metxbiodb	Oxidation of 4-substituted phenol	oxidation of 4-substituted phenol	1	Reaction Type
+metxbiodb	NS-cleavage	ns-cleavage	1	Reaction Type
+metxbiodb	Oxidation of S adjacent to an aliphatic nitrogen	oxidation of s-adjacent to an aliphatic nitrogen	1	Reaction Type
+metxbiodb	S-oxidation of organosulfurous compounds	s-oxidation of organosulfurous compounds	1	Reaction Type
+metxbiodb	Reduction of nitroimine	reduction of nitroimine	1	Reaction Type
+metxbiodb	Reduction of aldehyde to alcohol	reduction of aldehyde to alcohol	1	Reaction Type
+metxbiodb	HYDROXYLATION_OF_ALIPHATIC_SECONDARY_CARBON	hydroxylation of aliphatic secondary carbon	1	Reaction Type
+metxbiodb	ALIPHATIC_HYDROXYLATION_OF_CARBON_ADJACENT_TO_OXYGEN	aliphatic hydroxylation of carbon adjacent to oxygen	1	Reaction Type
+metxbiodb	ESTERIFICATION	esterification	1	Reaction Type
+metxbiodb	REDUCTION_OF_KETONES_TO_ALCOHOL	reduction of ketones to alcohol	1	Reaction Type
+metxbiodb	N_HYDROXYLATION_OF_ALICYCLIC_TERTIARY_AMINE	n-hydroxylation of alicyclic tertiary amine	1	Reaction Type
+metxbiodb	Dehydroxylation	dehydroxylation	1	Reaction Type
+metxbiodb	Glycination of aromatic acid	glycination of aromatic acid	1	Reaction Type
+metxbiodb	Bile acid C24 acyl glucuronidation	bile acid c24 acyl glucuronidation	1	Reaction Type
+metxbiodb	6-OH glucuronidation of sterol	6-oh glucuronidation of sterol	1	Reaction Type
+metxbiodb	O-acetylation	o-acetylation	1	Reaction Type
+metxbiodb	GSH-conjugation of benzene substituted with an electron donating group	gsh-conjugation of benzene substituted with an electron donating group	1	Reaction Type
+metxbiodb	O-sulfation	o-sulfation	1	Reaction Type
+metxbiodb	3-OH-glucuronidation of a phenolic compound	3-oh-glucuronidation of a phenolic compound	1	Reaction Type
+metxbiodb	GSH-conjugation of epoxide	gsh-conjugation of epoxide	1	Reaction Type
+metxbiodb	Taurine conjugation of aliphatic acid	taurine conjugation of aliphatic acid	1	Reaction Type
+metxbiodb	O-sulfonation oxidation	o-sulfonation oxidation	1	Reaction Type
+metxbiodb	N-hydroxy glucuronidation	n-hydroxy glucuronidation	1	Reaction Type
+metxbiodb	7-O-glucuronidation of isoflavone	7-o-glucuronidation of isoflavone	1	Reaction Type
+metxbiodb	Aromatic O-glucuronidation	aromatic o-glucuronidation	1	Reaction Type
+metxbiodb	3-OH-sulfation of sterol	3-oh-sulfation of sterol	1	Reaction Type
+metxbiodb	GSH-conjugation of apha,beta-unsaturated carbonyl	gsh-conjugation of apha beta-unsaturated carbonyl	1	Reaction Type
+metxbiodb	Dehydration of isoflavanone	dehydration of isoflavanone	1	Reaction Type
+metxbiodb	Isoflavan-4-ol dehydroxylation	isoflavan-4-ol dehydroxylation	1	Reaction Type
+metxbiodb	Rhamnohydrolysis of alpha-L-rhamnoside	rhamnohydrolysis of alpha-l-rhamnoside	1	Reaction Type
+metxbiodb	Flavonoid C-ring reduction	flavonoid c-ring reduction	1	Reaction Type
+metxbiodb	3'-Deydroxylation of substitued benzene	3 -dehydroxylation of substitued benzene	1	Reaction Type
+metxbiodb	Alpha-oxidation of carboxylic acid	alpha-oxidation of carboxylic acid	1	Reaction Type
+metxbiodb	Reduction of isoflavone to isoflavanone	reduction of isoflavone to isoflavanone	1	Reaction Type
+metxbiodb	Isoflavanone C-ring fission	isoflavanone c-ring fission	1	Reaction Type

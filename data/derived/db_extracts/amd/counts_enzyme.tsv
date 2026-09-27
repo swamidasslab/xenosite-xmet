@@ -1,0 +1,1535 @@
+term	count	field
+Cytochrome P450	78668	ENZ_NAME
+UDP-Glucuronosyltransferase	16237	ENZ_NAME
+Glutathione Transferase	5614	ENZ_NAME
+Carboxylesterase	3743	ENZ_NAME
+Esterase	3534	ENZ_NAME
+Sulfotransferase	2850	ENZ_NAME
+Epoxide Hydrolase	1952	ENZ_NAME
+Catechol O-Methyltransferase	1861	ENZ_NAME
+N-Acetyltransferase	1436	ENZ_NAME
+Glutathione Peroxidase	1347	ENZ_NAME
+Caspase-3	1223	ENZ_NAME
+Acetylcholinesterase	1193	ENZ_NAME
+Alcohol Dehydrogenase	992	ENZ_NAME
+Aldehyde Oxidase	976	ENZ_NAME
+Aldehyde Dehydrogenase	921	ENZ_NAME
+17beta-Hydroxysteroid Dehydrogenase	886	ENZ_NAME
+Glutathione Reductase	839	ENZ_NAME
+Monoamine Oxidase	787	ENZ_NAME
+11beta-Hydroxysteroid Dehydrogenase	766	ENZ_NAME
+Aldoketoreductase	708	ENZ_NAME
+Flavin-Containing Monooxygenase	619	ENZ_NAME
+Butyrylcholine Esterase	561	ENZ_NAME
+Aromatase	521	ENZ_NAME
+Carbonyl Reductase	520	ENZ_NAME
+Xanthine Oxidase	502	ENZ_NAME
+Cyclooxygenase	482	ENZ_NAME
+Alkaline Phosphatase	438	ENZ_NAME
+Phenol Sulfotransferase	431	ENZ_NAME
+Paraoxonase	424	ENZ_NAME
+gamma-Glutamyltranspeptidase	399	ENZ_NAME
+5alpha-Reductase	371	ENZ_NAME
+Flavoprotein-Linked Monooxygenase	354	ENZ_NAME
+Caspase-9	352	ENZ_NAME
+Cholinesterase	339	ENZ_NAME
+3beta-Hydroxysteroid Dehydrogenase	331	ENZ_NAME
+beta-Glucuronidase	329	ENZ_NAME
+Aminopeptidase	326	ENZ_NAME
+Reductase	308	ENZ_NAME
+Nitric Oxide Synthase	292	ENZ_NAME
+Cytidine Deaminase	285	ENZ_NAME
+Caspase-8	280	ENZ_NAME
+beta-Lyase	279	ENZ_NAME
+Deoxycytidine Kinase	269	ENZ_NAME
+3alpha-Hydroxysteroid Dehydrogenase	264	ENZ_NAME
+NAD(P)H:Quinone Oxidoreductase 1	264	ENZ_NAME
+NAD(P)H:Quinone Oxidoreductase	263	ENZ_NAME
+Amine Oxidase	237	ENZ_NAME
+Thymidine Kinase	237	ENZ_NAME
+Arsenite Methyltransferase	236	ENZ_NAME
+gamma-Glutamyltransferase	228	ENZ_NAME
+Thymidine Phosphorylase	227	ENZ_NAME
+Arylamine N-Acetyltransferase	210	ENZ_NAME
+Dihydropyrimidine Dehydrogenase	185	ENZ_NAME
+Lipoxygenase	182	ENZ_NAME
+Quinone Reductase	180	ENZ_NAME
+Glucose-6-phosphate Dehydrogenase	180	ENZ_NAME
+Ornithine Decarboxylase	176	ENZ_NAME
+Peroxidase	171	ENZ_NAME
+NADPH-Cytochrome P450 Reductase	169	ENZ_NAME
+Peptidase	169	ENZ_NAME
+Na+/K+ ATPase	165	ENZ_NAME
+Phosphatase	164	ENZ_NAME
+Steroid Sulfatase	163	ENZ_NAME
+beta-Glucosidase	153	ENZ_NAME
+Steroid 5alpha-Reductase	153	ENZ_NAME
+NQO1	147	ENZ_NAME
+Nitroreductase	144	ENZ_NAME
+Thiopurine Methyltransferase	143	ENZ_NAME
+Adenosine Deaminase	142	ENZ_NAME
+ATPase	142	ENZ_NAME
+alpha-Glucosidase	139	ENZ_NAME
+Amidase	137	ENZ_NAME
+17alpha-Hydroxylase-C17,20-Lyase	137	ENZ_NAME
+Cytochrome P450 Reductase	136	ENZ_NAME
+Phospholipase D	135	ENZ_NAME
+5-Lipoxygenase	130	ENZ_NAME
+Hydrolase	127	ENZ_NAME
+Acyl-CoA Synthetase	125	ENZ_NAME
+Steroid Acyltransferase	125	ENZ_NAME
+DT-Diaphorase	125	ENZ_NAME
+Aldehyde Reductase	124	ENZ_NAME
+Myeloperoxidase	122	ENZ_NAME
+Dipeptidyl Peptidase IV	121	ENZ_NAME
+Lactate Dehydrogenase	116	ENZ_NAME
+Thiopurine S-Methyltransferase	116	ENZ_NAME
+Angiotensin Converting Enzyme	115	ENZ_NAME
+Proteasome	115	ENZ_NAME
+Semicarbazide-Sensitive Amine Oxidase	114	ENZ_NAME
+Endopeptidase	113	ENZ_NAME
+Caspase-7	110	ENZ_NAME
+Aryl Sulfotransferase	107	ENZ_NAME
+Carboxymethylenebutenolidase	105	ENZ_NAME
+Aminopeptidase M	103	ENZ_NAME
+Arylesterase	99	ENZ_NAME
+Uridine-Cytidine Kinase	98	ENZ_NAME
+Phosphodiesterase	97	ENZ_NAME
+20alpha-Hydroxysteroid Dehydrogenase	93	ENZ_NAME
+Prostaglandin Synthase	91	ENZ_NAME
+Dipeptidase	91	ENZ_NAME
+Adenylate Cyclase	91	ENZ_NAME
+Kinase	90	ENZ_NAME
+Fatty Acid Amide Hydrolase	90	ENZ_NAME
+Adenosine Kinase	87	ENZ_NAME
+Phospholipase A2	87	ENZ_NAME
+Cysteine-S-conjugate beta-Lyase	86	ENZ_NAME
+Acetyltransferase	85	ENZ_NAME
+Nucleoside Diphosphate Kinase	85	ENZ_NAME
+Aryl Hydrocarbon Hydroxylase	85	ENZ_NAME
+Aminopyrine N-Demethylase	84	ENZ_NAME
+Iodothyronine Deiodinase	82	ENZ_NAME
+5'-Nucleotidase	81	ENZ_NAME
+Sulfatase	79	ENZ_NAME
+Thioredoxin Reductase	78	ENZ_NAME
+Thiol S-Methyltransferase	77	ENZ_NAME
+Ethoxyresorufin O-Deethylase	77	ENZ_NAME
+Protease	77	ENZ_NAME
+Glucose 6-Phosphatase	76	ENZ_NAME
+Estrogen Sulfotransferase	75	ENZ_NAME
+Cytosine Deaminase	75	ENZ_NAME
+Phosphoramidase	75	ENZ_NAME
+Lipase	74	ENZ_NAME
+Methyltransferase	74	ENZ_NAME
+delta-Aminolevulinic Acid Dehydratase	74	ENZ_NAME
+Monooxygenase	73	ENZ_NAME
+Succinate Dehydrogenase	73	ENZ_NAME
+Hypoxanthine-Guanine Phosphoribosyltransferase	72	ENZ_NAME
+Estrone Sulfatase	72	ENZ_NAME
+Dehydropeptidase I	71	ENZ_NAME
+delta-Aminolevulinate Dehydratase	70	ENZ_NAME
+Deacetylase	69	ENZ_NAME
+Benzo(a)pyrene Hydroxylase	69	ENZ_NAME
+Cytochrome b5	69	ENZ_NAME
+Tyrosinase	69	ENZ_NAME
+15-Lipoxygenase	69	ENZ_NAME
+Hypoxanthine Phosphoribosyltransferase	68	ENZ_NAME
+Acyl-CoA Oxidase	68	ENZ_NAME
+Flavin Monooxygenase	67	ENZ_NAME
+Hydroxysteroid Sulfotransferase	67	ENZ_NAME
+17beta-Hydroxysteroid Oxidoreductase	65	ENZ_NAME
+Uridine Phosphorylase	65	ENZ_NAME
+beta-D-Glucosidase	65	ENZ_NAME
+Aminopeptidase N	64	ENZ_NAME
+12-Lipoxygenase	62	ENZ_NAME
+Phosphotriesterase	62	ENZ_NAME
+Arsenic (+3 Oxidation State) Methyltransferase	62	ENZ_NAME
+Aldose Reductase	61	ENZ_NAME
+Purine Nucleoside Phosphorylase	60	ENZ_NAME
+Heme Oxygenase	60	ENZ_NAME
+Hydroxylamine Reductase	59	ENZ_NAME
+gamma-Glutamylcysteine Synthetase	58	ENZ_NAME
+Cytochrome b5 Reductase	57	ENZ_NAME
+trans-1,2-Dihydrobenzene-1,2-diol Dehydrogenase	57	ENZ_NAME
+Arylacetamide Deacetylase	54	ENZ_NAME
+Aniline Hydroxylase	54	ENZ_NAME
+25-Hydroxyvitamin D3 24-Hydroxylase	54	ENZ_NAME
+Deaminase	53	ENZ_NAME
+Inosine Monophosphate Dehydrogenase	53	ENZ_NAME
+3alpha-Hydroxysteroid Oxidoreductase	53	ENZ_NAME
+Retinal Dehydrogenase	52	ENZ_NAME
+Folylpolyglutamate Synthetase	51	ENZ_NAME
+Aromatic L-Amino Acid Decarboxylase	50	ENZ_NAME
+Thymidylate Kinase	50	ENZ_NAME
+Glutamine Transaminase K	50	ENZ_NAME
+Acid Phosphatase	49	ENZ_NAME
+Steroid 21-Hydroxylase	48	ENZ_NAME
+Arginase	48	ENZ_NAME
+beta-Galactosidase	47	ENZ_NAME
+Cysteinylglycine Dipeptidase	47	ENZ_NAME
+Fatty Acid Ethyl Ester Synthase	47	ENZ_NAME
+A-Esterase	47	ENZ_NAME
+Nucleoside Triphosphate Diphosphohydrolase	47	ENZ_NAME
+Cathepsin A	47	ENZ_NAME
+Dehydrogenase	46	ENZ_NAME
+O-Acetyltransferase	46	ENZ_NAME
+Adenylate Kinase	46	ENZ_NAME
+Prostaglandin-H Synthase	45	ENZ_NAME
+Thymidylate Synthase	45	ENZ_NAME
+Caspase	45	ENZ_NAME
+Lecithin-Retinol Acyltransferase	44	ENZ_NAME
+Alanine Aminotransferase	42	ENZ_NAME
+5beta-Reductase	41	ENZ_NAME
+Carnitine Palmitoyltransferase	41	ENZ_NAME
+Tyrosine Hydroxylase	41	ENZ_NAME
+Glutathione Synthase	40	ENZ_NAME
+Aspartate Aminotransferase	40	ENZ_NAME
+Acyl-CoA Hydrolase	40	ENZ_NAME
+Caspase-2	40	ENZ_NAME
+Acyl-CoA Dehydrogenase	39	ENZ_NAME
+Deiodinase	39	ENZ_NAME
+Aconitase	39	ENZ_NAME
+Nucleoside Phosphate Kinase	38	ENZ_NAME
+Caspase-6	38	ENZ_NAME
+Ketoreductase	37	ENZ_NAME
+15-Hydroxyprostaglandin Dehydrogenase	37	ENZ_NAME
+Orotate Phosphoribosyltransferase	37	ENZ_NAME
+Dihydropyrimidinase	37	ENZ_NAME
+Acyl-CoA:Cholesterol Acyltransferase	37	ENZ_NAME
+Sphingosine Kinase	37	ENZ_NAME
+D-Amino Acid Oxidase	37	ENZ_NAME
+Dehydroepiandrosterone Sulfotransferase	36	ENZ_NAME
+Dihydrodiol Dehydrogenase	36	ENZ_NAME
+Deoxycytidine Deaminase	36	ENZ_NAME
+N-Methyltransferase	36	ENZ_NAME
+beta-D-Glucuronidase	36	ENZ_NAME
+Dihydroorotase	36	ENZ_NAME
+Acylglycerol O-Acyltransferase	36	ENZ_NAME
+Phospholipase A1	36	ENZ_NAME
+Oxidoreductase	35	ENZ_NAME
+Carnitine O-Acyltransferase	35	ENZ_NAME
+Diamine Oxidase	35	ENZ_NAME
+S-Methyltransferase	35	ENZ_NAME
+Steroid 17alpha-Hydroxylase	35	ENZ_NAME
+7alpha-Hydroxylase	35	ENZ_NAME
+Neuropathy Target Esterase	35	ENZ_NAME
+N-Demethylase	34	ENZ_NAME
+Pseudocholinesterase	34	ENZ_NAME
+Thiosulfate Cyanide Transsulfurase	34	ENZ_NAME
+Cholesterol 7alpha-Hydroxylase	34	ENZ_NAME
+N-Acetyl-beta-D-glucosaminidase	34	ENZ_NAME
+Xanthine Oxidoreductase	33	ENZ_NAME
+Inosine-5'-monophosphate Dehydrogenase	33	ENZ_NAME
+Glutamate Dehydrogenase	33	ENZ_NAME
+3beta-Hydroxysteroid Dehydrogenase-delta5-4-Isomerase	33	ENZ_NAME
+Hexokinase	33	ENZ_NAME
+25-Hydroxyvitamin D3 1alpha-Hydroxylase	33	ENZ_NAME
+Caspase-1	33	ENZ_NAME
+20beta-Hydroxysteroid Dehydrogenase	32	ENZ_NAME
+Thiol Methyltransferase	32	ENZ_NAME
+Aryl Acylamidase	32	ENZ_NAME
+5-Phospho-D-ribosyl alpha-1-Pyrophosphate Synthetase	32	ENZ_NAME
+Creatine Kinase	32	ENZ_NAME
+Matrix Metalloproteinase	32	ENZ_NAME
+Glutamyltransferase	31	ENZ_NAME
+Aldehyde Dehydrogenase(NAD(P)+)	31	ENZ_NAME
+Calpain	31	ENZ_NAME
+Arylsulfatase	30	ENZ_NAME
+Guanosine Monophosphate Synthetase	30	ENZ_NAME
+Glutamine Synthetase	30	ENZ_NAME
+Lactase Phlorizin Hydrolase	30	ENZ_NAME
+Benzamidoxime Reductase	30	ENZ_NAME
+Coumarin 7-Hydroxylase	30	ENZ_NAME
+FOXRED2	30	ENZ_NAME
+Arylsulfatase C	30	ENZ_NAME
+Retinol Dehydrogenase	30	ENZ_NAME
+Spermidine/Spermine N1-Acetyltransferase	30	ENZ_NAME
+Deoxyguanosine Kinase	30	ENZ_NAME
+Cysteinylglycinase	29	ENZ_NAME
+Aminopeptidase A	29	ENZ_NAME
+NAD(P)H:Quinone Reductase	29	ENZ_NAME
+Ca2+ ATPase	29	ENZ_NAME
+delta5-delta4 Isomerase	28	ENZ_NAME
+Tryptophan Hydroxylase	28	ENZ_NAME
+HMG-CoA Reductase	28	ENZ_NAME
+Prolyl Oligopeptidase	28	ENZ_NAME
+Arylamine Acetyltransferase	27	ENZ_NAME
+UMP-CMP Kinase	27	ENZ_NAME
+Aldehyde Dehydrogenase (NAD+)	27	ENZ_NAME
+delta5-Desaturase	27	ENZ_NAME
+LTA4 Hydrolase	27	ENZ_NAME
+Epoxygenase	27	ENZ_NAME
+Squalene Synthase	27	ENZ_NAME
+Leucine Aminopeptidase	27	ENZ_NAME
+7-Ethoxycoumarin O-Deethylase	26	ENZ_NAME
+Epimerase	26	ENZ_NAME
+alpha-Carboxylase	26	ENZ_NAME
+Myrosinase	26	ENZ_NAME
+Glyceryl Ether Monooxygenase	26	ENZ_NAME
+C17,20 Lyase	25	ENZ_NAME
+Xanthine Dehydrogenase	25	ENZ_NAME
+Pyrimidine Nucleoside Phosphorylase	25	ENZ_NAME
+3,20-Hydroxysteroid Dehydrogenase	25	ENZ_NAME
+5-Hydroxyeicosanoid Dehydrogenase	25	ENZ_NAME
+Pentoxyresorufin O-Depentylase	25	ENZ_NAME
+alpha-Amylase	25	ENZ_NAME
+Acylase	25	ENZ_NAME
+Lipoamidase	25	ENZ_NAME
+Phenylalanine Hydroxylase	24	ENZ_NAME
+B-Esterase	24	ENZ_NAME
+N,O-Acetyltransferase	24	ENZ_NAME
+3alpha/beta-Hydroxysteroid Dehydrogenase	24	ENZ_NAME
+Uridine Kinase	24	ENZ_NAME
+delta6-Desaturase	24	ENZ_NAME
+N-Deethylase	24	ENZ_NAME
+Dipeptidyl Carboxypeptidase	24	ENZ_NAME
+Acetohexamide Reductase	23	ENZ_NAME
+Estradiol 2-Hydroxylase	23	ENZ_NAME
+Methionine Sulfoxide Reductase	23	ENZ_NAME
+Aminoacylase	23	ENZ_NAME
+Carboxypeptidase	23	ENZ_NAME
+12S-Lipoxygenase	23	ENZ_NAME
+Formamidase	22	ENZ_NAME
+Morphine 6-Dehydrogenase	22	ENZ_NAME
+Acyltransferase	22	ENZ_NAME
+Benzphetamine N-Demethylase	22	ENZ_NAME
+Protein Kinase	22	ENZ_NAME
+Vitamin K Epoxide Reductase	22	ENZ_NAME
+Acetylesterase	22	ENZ_NAME
+7-Ethoxyresorufin O-Deethylase	22	ENZ_NAME
+Dihydrofolate Reductase	22	ENZ_NAME
+Acyl-CoA Thiolase	22	ENZ_NAME
+Azo Reductase	21	ENZ_NAME
+Catechol Sulfotransferase	21	ENZ_NAME
+Epoxide Hydratase	21	ENZ_NAME
+Aniline 4-Hydroxylase	21	ENZ_NAME
+Ceramide Synthase	21	ENZ_NAME
+UDP-Glucose Dehydrogenase	21	ENZ_NAME
+Thioreductase	21	ENZ_NAME
+Ethylmorphine N-Demethylase	21	ENZ_NAME
+NAD Glycohydrolase	21	ENZ_NAME
+Uroporphyrinogen Decarboxylase	21	ENZ_NAME
+Arsenate Reductase	21	ENZ_NAME
+Aminopeptidase B	21	ENZ_NAME
+Glutathione: Polyol Nitrate Oxidoreductase	20	ENZ_NAME
+Dimethylaniline Monooxidase	20	ENZ_NAME
+Testosterone 6beta-Hydroxylase	20	ENZ_NAME
+delta3,delta2-Enoyl-CoA Isomerase	20	ENZ_NAME
+3beta-Hydroxysteroid Dehydrogenase-Isomerase	20	ENZ_NAME
+Rhodanese	20	ENZ_NAME
+Pyruvate Dehydrogenase	20	ENZ_NAME
+Prostaglandin-E2 Synthase	20	ENZ_NAME
+delta-Aminolevulinate Dehydrogenase	20	ENZ_NAME
+Aryldialkylphosphatase	20	ENZ_NAME
+Citrate Synthase	20	ENZ_NAME
+Isocitrate Dehydrogenase	20	ENZ_NAME
+Retinyl Ester Hydrolase	20	ENZ_NAME
+Long-Chain Acyl-CoA Hydrolase	20	ENZ_NAME
+Neutral Endopeptidase	20	ENZ_NAME
+Choline Acetyltransferase	20	ENZ_NAME
+C-S Lyase	20	ENZ_NAME
+Cysteine-S-conjugate N-Acetyltransferase	19	ENZ_NAME
+Metyrapone Reductase	19	ENZ_NAME
+4-Nitroanisole Demethylase	19	ENZ_NAME
+Phosphoenolpyruvate Carboxykinase	19	ENZ_NAME
+ATP Synthase	19	ENZ_NAME
+Thromboxane Synthase	19	ENZ_NAME
+Erythromycin N-Demethylase	19	ENZ_NAME
+Formaldehyde Dehydrogenase	19	ENZ_NAME
+Cathepsin B	19	ENZ_NAME
+Monoacylglycerol Lipase	19	ENZ_NAME
+NADPH-Cytochrome P450 Oxidoreductase	19	ENZ_NAME
+4-Nitrophenol Hydroxylase	18	ENZ_NAME
+Steroid 11beta-Hydroxylase	18	ENZ_NAME
+Acyl-CoA:Ethanol O-Acyltransferase	18	ENZ_NAME
+NADPH Oxidase	18	ENZ_NAME
+Pyruvate Kinase	18	ENZ_NAME
+Aldosterone Synthase	18	ENZ_NAME
+Kynurenine Aminotransferase	18	ENZ_NAME
+2'-Deoxycytidine Kinase	18	ENZ_NAME
+Bisallylic Hydroxylase	18	ENZ_NAME
+Threonine Synthase	18	ENZ_NAME
+Inositol-1,4,5-triphosphate 5-Phosphatase	18	ENZ_NAME
+Biliverdin Reductase	18	ENZ_NAME
+Glyceraldehyde 3-Phosphate Dehydrogenase	18	ENZ_NAME
+Prolidase	18	ENZ_NAME
+Folylpolyglutamate Synthase	17	ENZ_NAME
+20alpha-Hydroxysteroid Oxidoreductase	17	ENZ_NAME
+Aldehyde Reductase (NADPH)	17	ENZ_NAME
+L-Amino Acid Oxidase	17	ENZ_NAME
+3beta-Hydroxy-delta5-steroid Dehydrogenase	17	ENZ_NAME
+Tyrosine Aminotransferase	17	ENZ_NAME
+Farnesyl Pyrophosphate Synthase	17	ENZ_NAME
+Cyclase II	17	ENZ_NAME
+Medium-Chain Acyl-CoA Synthetase	16	ENZ_NAME
+Thioredoxin	16	ENZ_NAME
+Deamidase	16	ENZ_NAME
+NADH-Cytochrome b5 Reductase	16	ENZ_NAME
+Carnitine Palmitoyltransferase I	16	ENZ_NAME
+Glycine Transferase	16	ENZ_NAME
+Glutamate-Cysteine Ligase	16	ENZ_NAME
+Polyamine Oxidase	16	ENZ_NAME
+Phospholipase	16	ENZ_NAME
+Mg2+ ATPase	16	ENZ_NAME
+Lipoprotein Lipase	16	ENZ_NAME
+Alkylsulfohydrolase	16	ENZ_NAME
+Cytochrome P448	15	ENZ_NAME
+Chloramphenicol Acetyltransferase	15	ENZ_NAME
+Butyrate-CoA Ligase	15	ENZ_NAME
+Glycine Acetyltransferase	15	ENZ_NAME
+Elongase	15	ENZ_NAME
+3beta-Hydroxysteroid Oxidoreductase	15	ENZ_NAME
+Steroid 3beta-Dehydrogenase	15	ENZ_NAME
+Benzoyl-CoA-Glycine N-Acyltransferase	15	ENZ_NAME
+Glycerol-3-phosphate Dehydrogenase	15	ENZ_NAME
+Thromboxane A2 Synthase	15	ENZ_NAME
+5-Oxoprolinase	15	ENZ_NAME
+Acylpeptide Hydrolase	15	ENZ_NAME
+Adenosine Triphosphatase	15	ENZ_NAME
+alpha-Mannosidase	15	ENZ_NAME
+Monomethylarsonic Acid Reductase	15	ENZ_NAME
+Cyclase III	15	ENZ_NAME
+N-Acetylase	15	ENZ_NAME
+Dipeptidyl Peptidase	15	ENZ_NAME
+Phytenoyl-CoA Reductase	15	ENZ_NAME
+S-Mephenytoin 4-Hydroxylase	14	ENZ_NAME
+Arylamidase	14	ENZ_NAME
+Phosphoadenosine Phosphosulfotransferase	14	ENZ_NAME
+Deoxycytidylate Kinase	14	ENZ_NAME
+Ethoxycoumarin O-Deethylase	14	ENZ_NAME
+Steroid Sulfotransferase	14	ENZ_NAME
+Desaturase	14	ENZ_NAME
+N-Deacetylase	14	ENZ_NAME
+Adenine Phosphoribosyltransferase	14	ENZ_NAME
+Methionine Adenosyltransferase	14	ENZ_NAME
+Benzoyl-CoA Synthetase	14	ENZ_NAME
+delta5-Reductase	14	ENZ_NAME
+Transaminase	14	ENZ_NAME
+Remacemide-Glycine Hydrolase	14	ENZ_NAME
+Arylsulfatase B	14	ENZ_NAME
+Sucrase	14	ENZ_NAME
+Caspase-12	14	ENZ_NAME
+Acyl-CoA:Diacylglycerol Acyltransferase	14	ENZ_NAME
+Acyl-CoA-Amino Acid N-Acyltransferase	13	ENZ_NAME
+Palmitoyl-CoA Oxidase	13	ENZ_NAME
+Indoleamine 2,3-Dioxygenase	13	ENZ_NAME
+Acyl-CoA:Retinol O-Acyltransferase	13	ENZ_NAME
+Glutamate Decarboxylase	13	ENZ_NAME
+S-Adenosylmethionine Decarboxylase	13	ENZ_NAME
+gamma-Glutamylcarboxylase	13	ENZ_NAME
+alpha-Ketoglutarate Dehydrogenase	13	ENZ_NAME
+Carnitine Acetyltransferase	13	ENZ_NAME
+3-Hydroxy-3-methylglutaryl-CoA Reductase	13	ENZ_NAME
+Spermidine Synthase	13	ENZ_NAME
+Spermine Synthase	13	ENZ_NAME
+Proglutamyl Aminopeptidase I	13	ENZ_NAME
+Azobenzene Reductase	12	ENZ_NAME
+NADPH-Cytochrome C Reductase	12	ENZ_NAME
+Deoxycytidylate Deaminase	12	ENZ_NAME
+Estrogen Synthetase	12	ENZ_NAME
+Long-Chain Fatty Acid-CoA Synthetase	12	ENZ_NAME
+Prostaglandin-F Synthase	12	ENZ_NAME
+3-Hydroxysteroid Epimerase	12	ENZ_NAME
+Acyl-CoA-Glycine N-Acyltransferase	12	ENZ_NAME
+Phosphobase Methyltransferase	12	ENZ_NAME
+Hydroperoxide Isomerase	12	ENZ_NAME
+Phosphoglucomutase	12	ENZ_NAME
+Cholesterol Acyltransferase	12	ENZ_NAME
+(5S)-Hydroxyeicosanoid Dehydrogenase	12	ENZ_NAME
+Cysteine Conjugate beta-Lyase	12	ENZ_NAME
+Lanosterol 14alpha-Demethylase	12	ENZ_NAME
+5'-Deoxy-5'-methylthioadenosine Phosphorylase	12	ENZ_NAME
+Cathepsin E	12	ENZ_NAME
+Cathepsin D	12	ENZ_NAME
+Hydroxylase	11	ENZ_NAME
+FAD-Containing Monooxygenase	11	ENZ_NAME
+Fatty Acyl-CoA: Estradiol Acyltransferase	11	ENZ_NAME
+delta5-3-Ketosteroid Isomerase	11	ENZ_NAME
+L-Amino Acid Decarboxylase	11	ENZ_NAME
+Nucleoside Monophosphate Kinase	11	ENZ_NAME
+3-Phosphoglycerate Kinase	11	ENZ_NAME
+11-cis-Retinol Dehydrogenase	11	ENZ_NAME
+Nicotinamide N-Methyltransferase	11	ENZ_NAME
+5'-Deiodinase	11	ENZ_NAME
+Nucleotide Kinase	11	ENZ_NAME
+Carnitine Transferase	11	ENZ_NAME
+Carbonic Anhydrase	11	ENZ_NAME
+Arachidonate 12-Lipoxygenase	11	ENZ_NAME
+GTPase	11	ENZ_NAME
+Tyrosine 3-Monooxygenase	11	ENZ_NAME
+Platelet-Activating Factor Acetylhydrolase	11	ENZ_NAME
+3-Mercaptopyruvate Sulfurtransferase	11	ENZ_NAME
+24-Hydroxylase	11	ENZ_NAME
+Vitamin D3 25-Hydroxylase	11	ENZ_NAME
+Peptidylglycine Monooxygenase	11	ENZ_NAME
+gamma-Glutamyl Leukotrienase	11	ENZ_NAME
+Guanylyl Cyclase	11	ENZ_NAME
+NADPH-UQ Reductase	11	ENZ_NAME
+Amidohydrolase	11	ENZ_NAME
+Dipeptidyl Aminopeptidase IV	11	ENZ_NAME
+Acyl-CoA Hydratase	11	ENZ_NAME
+Aminopeptidase P	11	ENZ_NAME
+Lactoperoxidase	11	ENZ_NAME
+Tripeptidyl Peptidase I	11	ENZ_NAME
+Fatty Acid Ethyl Ester Hydrolase	11	ENZ_NAME
+Histone Deacetylase	11	ENZ_NAME
+Phenylethanolamine N-Methyltransferase	10	ENZ_NAME
+11beta-Oxidoreductase	10	ENZ_NAME
+20alpha-Oxidoreductase	10	ENZ_NAME
+Short-Chain Dehydrogenase/Reductase	10	ENZ_NAME
+Acylase I	10	ENZ_NAME
+Long-Chain Acyl-CoA Synthetase	10	ENZ_NAME
+Fatty Acid-CoA Ligase	10	ENZ_NAME
+Long-Chain Fatty Acid-CoA Ligase	10	ENZ_NAME
+17alpha-Hydroxylase	10	ENZ_NAME
+Glucose-1-phosphate Uridylyltransferase	10	ENZ_NAME
+1-Nitropyrene Nitroreductase	10	ENZ_NAME
+Taurine N-Acyltransferase	10	ENZ_NAME
+Prostaglandin-E Synthase	10	ENZ_NAME
+NADPH:Quinone Oxidoreductase	10	ENZ_NAME
+delta9-Desaturase	10	ENZ_NAME
+Choline Phosphate Cytidylyltransferase	10	ENZ_NAME
+NTPDase	10	ENZ_NAME
+H+/K+ ATPase	10	ENZ_NAME
+N-Acetylglucosamine-6-sulfate Sulfatase	10	ENZ_NAME
+Cholesterol 27-Hydroxylase	10	ENZ_NAME
+Malate Dehydrogenase	10	ENZ_NAME
+Farnesyl Diphosphate Synthase	10	ENZ_NAME
+O6-Alkylguanine-DNA Alkyltransferase	10	ENZ_NAME
+beta-Carotene 15,15'-Dioxygenase	10	ENZ_NAME
+Chymotrypsin	10	ENZ_NAME
+Anandamide Amidase	10	ENZ_NAME
+(+)-S-145-CoA Synthetase	10	ENZ_NAME
+Dinucleotide Pyrophosphatase	10	ENZ_NAME
+Histamine N-Methyltransferase	10	ENZ_NAME
+Bile Acid CoA:Amino Acid N-Acyltransferase	10	ENZ_NAME
+Ribonucleotide Reductase	10	ENZ_NAME
+Elastase	10	ENZ_NAME
+Coproporphyrinogen Oxidase	10	ENZ_NAME
+(E)-Phytenoyl-CoA Synthetase	10	ENZ_NAME
+N-Acyltransferase	9	ENZ_NAME
+Decarboxylase	9	ENZ_NAME
+Cytidine-Deoxycytidine Deaminase	9	ENZ_NAME
+Dihydrouracil Dehydrogenase	9	ENZ_NAME
+beta-Ureidopropionase	9	ENZ_NAME
+Phenylalanine 4-Monooxygenase	9	ENZ_NAME
+Dopamine beta-Hydroxylase	9	ENZ_NAME
+Cytochrome C	9	ENZ_NAME
+Tryptophan 2,3-Dioxygenase	9	ENZ_NAME
+N1-Acetylspermidine Transferase	9	ENZ_NAME
+Hexose 6-Phosphate Dehydrogenase	9	ENZ_NAME
+Ornithine Carbamoyltransferase	9	ENZ_NAME
+Pyruvate Carboxylase	9	ENZ_NAME
+Glutaminase	9	ENZ_NAME
+Cytochrome C Reductase	9	ENZ_NAME
+Vitamin K Reductase	9	ENZ_NAME
+Iodothyronine 5'-Deiodinase	9	ENZ_NAME
+Quinone Oxidoreductase	9	ENZ_NAME
+Choline Oxidase	9	ENZ_NAME
+1alpha-Hydroxylase	9	ENZ_NAME
+Hydroxyindole O-Methyltransferase	9	ENZ_NAME
+Monomethylarsonate Methyltransferase	9	ENZ_NAME
+Ubiquinone Reductase	9	ENZ_NAME
+5,10-Methenyltetrahydrofolate Synthetase	9	ENZ_NAME
+beta-Carotene 15,15'-Monooxygenase	9	ENZ_NAME
+Dipeptidyl Carboxypeptidase I	9	ENZ_NAME
+Carboxypeptidase A	9	ENZ_NAME
+Trypsin	9	ENZ_NAME
+Tryptase	9	ENZ_NAME
+Dipeptidase IV	9	ENZ_NAME
+Caspase-4	9	ENZ_NAME
+Fructose 1,6-Bisphosphatase	9	ENZ_NAME
+Pyroglutamyl Aminopeptidase I	9	ENZ_NAME
+Iduronate 2-Sulfatase	9	ENZ_NAME
+Cysteine beta-Lyase	8	ENZ_NAME
+alpha-Rhamnosidase	8	ENZ_NAME
+Ethyltransferase	8	ENZ_NAME
+Guanase	8	ENZ_NAME
+NQO2	8	ENZ_NAME
+Testosterone 16alpha-Hydroxylase	8	ENZ_NAME
+Testosterone 7alpha-Hydroxylase	8	ENZ_NAME
+3alpha-Oxidoreductase	8	ENZ_NAME
+Nucleoside Diphosphokinase	8	ENZ_NAME
+Guanine Deaminase	8	ENZ_NAME
+Retinol Saturase	8	ENZ_NAME
+CoA-Retinol Acyltransferase	8	ENZ_NAME
+Aminotransferase	8	ENZ_NAME
+Maleylacetoacetate Isomerase	8	ENZ_NAME
+Methenyltetrahydrofolate Synthetase	8	ENZ_NAME
+Epoxide Hydroxylase	8	ENZ_NAME
+Phosphoglucoisomerase	8	ENZ_NAME
+11-Oxoreductase	8	ENZ_NAME
+delta3,delta5-trans-2,trans-4-Dienoyl-CoA Isomerase	8	ENZ_NAME
+Transglutaminase	8	ENZ_NAME
+Alanyl Aminopeptidase	8	ENZ_NAME
+Retinal Reductase 1	8	ENZ_NAME
+delta-Aminolevulinic Acid Synthase	8	ENZ_NAME
+Ecto-ATPase	8	ENZ_NAME
+Acetyl-CoA Carboxylase	8	ENZ_NAME
+Pyrimidine 5'-Nucleotidase	8	ENZ_NAME
+3',5'-Cyclic Nucleotide Phosphodiesterase	8	ENZ_NAME
+Dihydropyrimidine Amidohydrolase	8	ENZ_NAME
+3-Hydroxyacyl-CoA Dehydrogenase	8	ENZ_NAME
+Peptidyl Dipeptidase A	8	ENZ_NAME
+Chymase	8	ENZ_NAME
+beta-Hexosaminidase	8	ENZ_NAME
+Estrogen Glucuronidase	8	ENZ_NAME
+S-Nitrosoglutathione Lyase	8	ENZ_NAME
+Diaphorase	8	ENZ_NAME
+Acyl-CoA Hydrogenase	8	ENZ_NAME
+Lactase	8	ENZ_NAME
+Lignoceryl-CoA Ligase	8	ENZ_NAME
+alpha-Galactosidase A	8	ENZ_NAME
+Maltase	8	ENZ_NAME
+Cholanoyl-CoA Amino Acid Transferase	8	ENZ_NAME
+7-Dehydrocholesterol Reductase	8	ENZ_NAME
+Enoyl-CoA Hydratase	7	ENZ_NAME
+20beta-Oxidoreductase	7	ENZ_NAME
+Acetanilide N-Deacetylase	7	ENZ_NAME
+UDP-Glucosyltransferase	7	ENZ_NAME
+Aromatic Amino Acid Decarboxylase	7	ENZ_NAME
+Bufuralol 1'-Hydroxylase	7	ENZ_NAME
+N-Nitrosodimethylamine N-Demethylase	7	ENZ_NAME
+Arylketone Reductase	7	ENZ_NAME
+delta4-3-Ketosteroid 5alpha-Reductase	7	ENZ_NAME
+Pyrimidine Nucleoside Monophosphate Kinase	7	ENZ_NAME
+17-Ketosteroid Reductase	7	ENZ_NAME
+Thymidine Monophosphate Kinase	7	ENZ_NAME
+Phosphocholine Cytidylyltransferase	7	ENZ_NAME
+all-trans-(13,14)-Retinol Saturase	7	ENZ_NAME
+Phosphatidylethanolamine N-Methyltransferase	7	ENZ_NAME
+Phospholipase C	7	ENZ_NAME
+5-Phosphatase	7	ENZ_NAME
+LTC4 Synthase	7	ENZ_NAME
+Chlorzoxazone 6-Hydroxylase	7	ENZ_NAME
+3-Kinase	7	ENZ_NAME
+Vitamin K Epoxidase	7	ENZ_NAME
+Cystathionine gamma-Lyase	7	ENZ_NAME
+Porphobilinogen Deaminase	7	ENZ_NAME
+Ethoxyresorufin O-Dealkylase	7	ENZ_NAME
+Cholesterol Side-Chain Cleavage Enzyme	7	ENZ_NAME
+beta-Mannosidase	7	ENZ_NAME
+dTMP Kinase	7	ENZ_NAME
+Arylsulfatase A	7	ENZ_NAME
+Cyclic Nucleotide Phosphodiesterase	7	ENZ_NAME
+9-cis-Retinol Dehydrogenase	7	ENZ_NAME
+Monomethylarsonic Acid Methyltransferase	7	ENZ_NAME
+Cholesterol Esterase	7	ENZ_NAME
+Flavin Oxidase	7	ENZ_NAME
+Diacylglycerol Cholinephosphotransferase	7	ENZ_NAME
+Carboxypeptidase P	7	ENZ_NAME
+6-Phosphofructo-1-kinase	7	ENZ_NAME
+Aminoacyl-tRNA Synthetase	7	ENZ_NAME
+beta-N-Acetylglucosaminidase	7	ENZ_NAME
+CTP:Phosphoethanolamine Cytidylyltransferase	7	ENZ_NAME
+Lactonase	7	ENZ_NAME
+Caspase-10	7	ENZ_NAME
+beta-D-Fucosidase	7	ENZ_NAME
+Galactose 6-Sulfatase	7	ENZ_NAME
+Dimethylarginine Dimethylaminohydrolase	7	ENZ_NAME
+Catalase	6	ENZ_NAME
+2-Arylpropionyl-CoA Epimerase	6	ENZ_NAME
+Acetylsalicylic Acid Esterase	6	ENZ_NAME
+Amino Acid N-Acyltransferase	6	ENZ_NAME
+Dextromethorphan O-Demethylase	6	ENZ_NAME
+Hydroxysteroid Dehydrogenase	6	ENZ_NAME
+Stearoyl-CoA Desaturase	6	ENZ_NAME
+Estradiol 4-Hydroxylase	6	ENZ_NAME
+Estrogen 4-Hydroxylase	6	ENZ_NAME
+N-Nitrosodimethylamine Demethylase	6	ENZ_NAME
+O6-Methylguanine-DNA Methyltransferase	6	ENZ_NAME
+Long-Chain Fatty Acid Elongase	6	ENZ_NAME
+Fatty Acyl-CoA Synthetase	6	ENZ_NAME
+Testosterone 2alpha-Hydroxylase	6	ENZ_NAME
+Cortisol Sulfotransferase	6	ENZ_NAME
+3alpha-Hydroxysteroid Sulfotransferase	6	ENZ_NAME
+Phenylsulfotransferase	6	ENZ_NAME
+Adenylosuccinate Synthetase	6	ENZ_NAME
+Kynureninase	6	ENZ_NAME
+5-Hydroxytryptophan Decarboxylase	6	ENZ_NAME
+Iodothyronine Sulfotransferase	6	ENZ_NAME
+Propionamidase	6	ENZ_NAME
+Glycine N-Acyltransferase	6	ENZ_NAME
+Retinoid Isomerase	6	ENZ_NAME
+Acetyl-CoA Synthetase	6	ENZ_NAME
+UDP-Glucose Pyrophosphorylase	6	ENZ_NAME
+Glucokinase	6	ENZ_NAME
+Thyroxine 5'-Deiodinase	6	ENZ_NAME
+Benzyloxyresorufin O-Debenzylase	6	ENZ_NAME
+Mono-ADP-Ribosyltransferase	6	ENZ_NAME
+CTP:Phosphocholine Cytidylyltransferase	6	ENZ_NAME
+6-Phosphogluconate Dehydrogenase	6	ENZ_NAME
+Cysteindioxygenase	6	ENZ_NAME
+Thiosulfate Sulfurtransferase	6	ENZ_NAME
+Phosphohydrolase	6	ENZ_NAME
+Ca2+/Mg2+ ATPase	6	ENZ_NAME
+Na+ ATPase	6	ENZ_NAME
+26-Hydroxylase	6	ENZ_NAME
+25-Hydroxylase	6	ENZ_NAME
+Sorbitol Dehydrogenase	6	ENZ_NAME
+Dechlorinase	6	ENZ_NAME
+Dehydrochlorinase	6	ENZ_NAME
+Leukotriene C4 Synthase	6	ENZ_NAME
+Betaine-Homocysteine S-Methyltransferase	6	ENZ_NAME
+Aspartate Transcarbamylase	6	ENZ_NAME
+Phenylvalerate Esterase	6	ENZ_NAME
+Carboxypeptidase H	6	ENZ_NAME
+Endooligopeptidase A	6	ENZ_NAME
+Hypoxanthine-Guanosine Phosphoribosyltransferase	6	ENZ_NAME
+Ceramide Transacylase	6	ENZ_NAME
+Branched-Chain 2-Oxo Acid Dehydrogenase	6	ENZ_NAME
+Dehalogenase	6	ENZ_NAME
+Dipeptidyl Aminopeptidase	6	ENZ_NAME
+Isocitrate Dehydrogenase (NADP)	6	ENZ_NAME
+Nitrate Reductase	6	ENZ_NAME
+3-Oxoacyl-CoA Thiolase	6	ENZ_NAME
+Glutaredoxin	6	ENZ_NAME
+Guanylate Kinase	6	ENZ_NAME
+Protein Kinase A	6	ENZ_NAME
+gamma-Glutamyl Hydrolase	6	ENZ_NAME
+Fatty Aldehyde Dehydrogenase	6	ENZ_NAME
+Bile Acid-CoA:Amino Acid N-Acyltransferase	6	ENZ_NAME
+Bile Acid-CoA Thioesterase	6	ENZ_NAME
+Metalloprotease	6	ENZ_NAME
+Alcohol Reductase	5	ENZ_NAME
+Aminopyrine Demethylase	5	ENZ_NAME
+DNA Polymerase	5	ENZ_NAME
+delta13,14-Reductase	5	ENZ_NAME
+Prostaglandin 9-Ketoreductase	5	ENZ_NAME
+Cocaine Methyl Esterase	5	ENZ_NAME
+3-Hydroxysteroid Dehydrogenase	5	ENZ_NAME
+Steroid 16alpha-Hydroxylase	5	ENZ_NAME
+Chloral Hydrate Dehydrogenase	5	ENZ_NAME
+NDMA N-Demethylase	5	ENZ_NAME
+N-Deacylase	5	ENZ_NAME
+N,O-Acyltransferase	5	ENZ_NAME
+Testosterone 16beta-Hydroxylase	5	ENZ_NAME
+Ketosteroid 3-Reductase	5	ENZ_NAME
+Amidophosphoribosyltransferase	5	ENZ_NAME
+p-Nitroanisole O-Demethylase	5	ENZ_NAME
+Arylamine Sulfotransferase	5	ENZ_NAME
+beta-Glucocerebrosidase	5	ENZ_NAME
+Acyl-CoA:Retinol Acyltransferase	5	ENZ_NAME
+Thymidine Diphosphate Kinase	5	ENZ_NAME
+L-Glutamate Dehydrogenase	5	ENZ_NAME
+Glyoxalase I	5	ENZ_NAME
+Prostaglandin-G/H Synthase	5	ENZ_NAME
+Prostaglandin-G/H Synthase 2	5	ENZ_NAME
+delta(3,5),delta(2,4)-Dienoyl-CoA Isomerase	5	ENZ_NAME
+Prostaglandin-H2 D-Isomerase	5	ENZ_NAME
+Erythromycin Demethylase	5	ENZ_NAME
+Epoxide Hydrase	5	ENZ_NAME
+Aminopeptidase W	5	ENZ_NAME
+Adenosylhomocysteinase	5	ENZ_NAME
+AMP Deaminase	5	ENZ_NAME
+3alpha-Hydroxysteroid Dehydrogenase-Isomerase	5	ENZ_NAME
+delta4-5 Isomerase	5	ENZ_NAME
+NAD(P)H Dehydrogenase (Quinone)	5	ENZ_NAME
+Carnitine O-Acetyltransferase	5	ENZ_NAME
+Cysteine Dioxygenase	5	ENZ_NAME
+5'-Phosphoribosylglycinamide Transformylase	5	ENZ_NAME
+ATP Diphosphohydrolase	5	ENZ_NAME
+Cystathionase	5	ENZ_NAME
+NADPH-Quinone Reductase	5	ENZ_NAME
+Quinone Reductase 2	5	ENZ_NAME
+Chloromuconate Cycloisomerase	5	ENZ_NAME
+trans-Prenyltransferase	5	ENZ_NAME
+Protein Farnesyltransferase	5	ENZ_NAME
+Retinal Reductase	5	ENZ_NAME
+Galactosyltransferase	5	ENZ_NAME
+Superoxide Dismutase	5	ENZ_NAME
+Hydroxymethylglutaryl-CoA Reductase	5	ENZ_NAME
+Thioesterase	5	ENZ_NAME
+Steroid Esterase	5	ENZ_NAME
+Galactose 3-O-Sulfotransferase	5	ENZ_NAME
+Acyl Sulfotransferase	5	ENZ_NAME
+Protein-S-isoprenylcysteine O-Methyltransferase	5	ENZ_NAME
+Aminobutyrate Aminotransferase	5	ENZ_NAME
+Acyl-CoA:Long-Chain Alcohol O-Acyltransferase	5	ENZ_NAME
+Benzoylcholine Esterase	5	ENZ_NAME
+Aminodipeptidase	5	ENZ_NAME
+Cathepsin L	5	ENZ_NAME
+Fatty Acid 2-Hydroxylase	5	ENZ_NAME
+Glyoxalase	5	ENZ_NAME
+Fructose 1,6-Diphosphatase	5	ENZ_NAME
+Chlorite Dismutase	5	ENZ_NAME
+beta-Carotene Oxygenase 2	5	ENZ_NAME
+Phosphoamidase	5	ENZ_NAME
+Hexobarbital Hydroxylase	4	ENZ_NAME
+Tolbutamide Hydroxylase	4	ENZ_NAME
+Nifedipine Oxidase	4	ENZ_NAME
+Monophosphate Kinase	4	ENZ_NAME
+Diphosphate Kinase	4	ENZ_NAME
+Phenacetin Deacetylase	4	ENZ_NAME
+Mephenytoin Hydroxylase	4	ENZ_NAME
+DOPA Decarboxylase	4	ENZ_NAME
+Acyl-CoA Ligase	4	ENZ_NAME
+2-Acetylaminofluorene N-Deacetylase	4	ENZ_NAME
+N-Hydroxy-2-acetylaminofluorene N-Deacetylase	4	ENZ_NAME
+Benzphetamine Demethylase	4	ENZ_NAME
+Cholestenone 5alpha-Reductase	4	ENZ_NAME
+delta4-3-Ketosteroid 5beta-Reductase	4	ENZ_NAME
+Testosterone 2beta-Hydroxylase	4	ENZ_NAME
+3alpha/beta-Hydroxysteroid Oxidoreductase	4	ENZ_NAME
+delta4-Reductase	4	ENZ_NAME
+Progesterone 5alpha-Reductase	4	ENZ_NAME
+Glucose-6-phosphate 1-Dehydrogenase	4	ENZ_NAME
+Androstenedione 16beta-Hydroxylase	4	ENZ_NAME
+Coumarin Hydroxylase	4	ENZ_NAME
+Nitroanisole O-Demethylase	4	ENZ_NAME
+(R)-Warfarin 6-Hydroxylase	4	ENZ_NAME
+Cytochrome P450II	4	ENZ_NAME
+Pyrimidine Nucleoside Diphosphate Kinase	4	ENZ_NAME
+Carbamoyl Phosphate Synthetase	4	ENZ_NAME
+S-Mephenytoin 4'-Hydroxylase	4	ENZ_NAME
+Ketosteroid Isomerase	4	ENZ_NAME
+Steroid Sulfate Sulfohydrolase	4	ENZ_NAME
+Kynurenine 3-Monooxygenase	4	ENZ_NAME
+Kynurenine 3-Hydroxylase	4	ENZ_NAME
+Retinal Oxidase	4	ENZ_NAME
+Arachidonate 5-Lipoxygenase	4	ENZ_NAME
+Prostaglandin-H2 E-Isomerase	4	ENZ_NAME
+Fatty Acid Desaturase	4	ENZ_NAME
+2-trans-Acyl-CoA Reductase	4	ENZ_NAME
+Phosphofructokinase	4	ENZ_NAME
+Glycogen Phosphorylase	4	ENZ_NAME
+1D-myo-Inositol Triphosphate 3-Kinase	4	ENZ_NAME
+Deoxycytidine/Deoxyadenosine Kinase	4	ENZ_NAME
+PRPP Synthetase	4	ENZ_NAME
+ecto 5'-Nucleotidase	4	ENZ_NAME
+Pentoxyresorufin O-Dealkylase	4	ENZ_NAME
+Methoxyresorufin O-Demethylase	4	ENZ_NAME
+Aryl Sulfotransferase IV	4	ENZ_NAME
+NRH: Quinone Oxidoreductase 2	4	ENZ_NAME
+Carnitine O-Palmitoyltransferase	4	ENZ_NAME
+Apyrase	4	ENZ_NAME
+Estrogen Sulfatase	4	ENZ_NAME
+Cholesterol Sulfotransferase	4	ENZ_NAME
+HSD3B7	4	ENZ_NAME
+Andien-beta-Synthase	4	ENZ_NAME
+Enolase	4	ENZ_NAME
+Myokinase	4	ENZ_NAME
+2,4-Dienoyl-CoA Reductase	4	ENZ_NAME
+Muconate Cycloisomerase	4	ENZ_NAME
+Antibody 43C9	4	ENZ_NAME
+Cyclase I	4	ENZ_NAME
+beta,beta-Carotene Monooxygenase	4	ENZ_NAME
+Choline Phosphate Cytidyltransferase	4	ENZ_NAME
+CTP Synthetase	4	ENZ_NAME
+Phosphoribosylpyrophosphate Amidotransferase	4	ENZ_NAME
+3-Hydroxybutyrate Dehydrogenase	4	ENZ_NAME
+Ribonucleotide Transformylase	4	ENZ_NAME
+Guanosine Triphosphatase	4	ENZ_NAME
+2-Alkenal Reductase	4	ENZ_NAME
+Mannose 6-Phosphatase	4	ENZ_NAME
+Endothelin Converting Enzyme	4	ENZ_NAME
+Neutral Sphingomyelinase	4	ENZ_NAME
+4-Hydroxyphenylpyruvate Dioxygenase	4	ENZ_NAME
+Fatty Acid Amidohydrolase	4	ENZ_NAME
+Prolyl Endopeptidase	4	ENZ_NAME
+Enkephalinase	4	ENZ_NAME
+N-Acetyl-beta-glucosaminidase	4	ENZ_NAME
+3beta-Hydroxysteroid delta7-Reductase	4	ENZ_NAME
+Cyclic Inositol Phosphohydrolase	4	ENZ_NAME
+Prolylcarboxypeptidase	4	ENZ_NAME
+3beta-Hydroxysteroid 5-Dehydrogenase	4	ENZ_NAME
+Aliesterase	4	ENZ_NAME
+Propionylcholinesterase	4	ENZ_NAME
+Benzylamine Oxidase	4	ENZ_NAME
+Carboxyamidase	4	ENZ_NAME
+Dipeptidyl Peptidase II	4	ENZ_NAME
+alpha-Methylacyl-CoA Racemase	4	ENZ_NAME
+Homocysteine Thiolactone Hydrolase	4	ENZ_NAME
+NADH Dehydrogenase	4	ENZ_NAME
+Aldolase	4	ENZ_NAME
+Lysyl Oxidase	4	ENZ_NAME
+N-Methylpurine DNA Glycosylase	4	ENZ_NAME
+8-Oxoguanine DNA Glycosylase	4	ENZ_NAME
+Nucleotide Pyrophosphatase/Phosphodiesterase	4	ENZ_NAME
+NAD(P) Glycohydrolase	4	ENZ_NAME
+Cholanoyl-CoA Ligase	4	ENZ_NAME
+Phosphatidic Acid Phosphohydrolase	4	ENZ_NAME
+Carnosinase	4	ENZ_NAME
+N6-Methyl-AMP Aminohydrolase	4	ENZ_NAME
+Sepiapterin Reductase	4	ENZ_NAME
+Membrane Dipeptidase	4	ENZ_NAME
+Acyl-CoA Thioesterase	3	ENZ_NAME
+Amine N-Sulfotransferase	3	ENZ_NAME
+Mephenytoin 4'-Hydroxylase	3	ENZ_NAME
+Tolbutamide Methyl Hydroxylase	3	ENZ_NAME
+Tolbytamide 4-Hydroxylase	3	ENZ_NAME
+Debrisoquine 4-Hydroxylase	3	ENZ_NAME
+Acetaminophen Sulfotransferase	3	ENZ_NAME
+Phenacetin O-Deethylase	3	ENZ_NAME
+Midazolam 1'-Hydroxylase	3	ENZ_NAME
+Nucleoside Phosphorylase	3	ENZ_NAME
+Amidoxime Reductase	3	ENZ_NAME
+Estrogen 2-Hydroxylase	3	ENZ_NAME
+Aniline p-Hydroxylase	3	ENZ_NAME
+Carboxypeptidase G2	3	ENZ_NAME
+Procaine Esterase	3	ENZ_NAME
+N-Hydroxy-2-acetylaminofluorene: 4-Aminoazobenzene N,N-Transacetylase	3	ENZ_NAME
+Nicotinamide Ribonucleoside Kinase	3	ENZ_NAME
+3beta-Hydrogenase	3	ENZ_NAME
+NADH-3alpha-Hydroxysteroid Oxidoreductase	3	ENZ_NAME
+Progesterone 17alpha-Hydroxylase	3	ENZ_NAME
+17-Hydroxylase	3	ENZ_NAME
+Lyase	3	ENZ_NAME
+Dihydrocortisol 3alpha-Oxidoreductase	3	ENZ_NAME
+7beta-Hydroxysteroid Dehydrogenase	3	ENZ_NAME
+6beta-Hydroxylase	3	ENZ_NAME
+11-Hydroxylase	3	ENZ_NAME
+Thioltransferase	3	ENZ_NAME
+17-Oxosteroid Oxidoreductase	3	ENZ_NAME
+Androstenedione 6beta-Hydroxylase	3	ENZ_NAME
+Androstenedione 7alpha-Hydroxylase	3	ENZ_NAME
+Triacylglycerol Hydrolase	3	ENZ_NAME
+4-Nitroanisole O-Demethylase	3	ENZ_NAME
+Amino Acid Decarboxylase	3	ENZ_NAME
+Cytochrome P450I	3	ENZ_NAME
+(S)-Mephenytoin 4'-Hydroxylase	3	ENZ_NAME
+Nucleosidase	3	ENZ_NAME
+Hydroxysteroid Dehydrogenase-Isomerase	3	ENZ_NAME
+6alpha-Hydroxylase	3	ENZ_NAME
+Pyridoxal Kinase	3	ENZ_NAME
+Ethylmorphine Demethylase	3	ENZ_NAME
+Ferredoxin-NADP(+) Reductase	3	ENZ_NAME
+Deoxycytidine Monophosphate Deaminase	3	ENZ_NAME
+Chloroperoxidase	3	ENZ_NAME
+Guanine Phosphoribosyltransferase	3	ENZ_NAME
+Glutamate Oxaloacetate Transaminase	3	ENZ_NAME
+Glutamate Pyruvate Transaminase	3	ENZ_NAME
+Phosphatidylethanolamine Methyltransferase	3	ENZ_NAME
+alpha-Ketoglutarate: Glyoxylate Carboligase	3	ENZ_NAME
+Argininosuccinate Synthase	3	ENZ_NAME
+Argininosuccinate Lyase	3	ENZ_NAME
+Ferritin	3	ENZ_NAME
+Oxoglutarate Dehydrogenase	3	ENZ_NAME
+gamma-Glutamylcysteine Ligase	3	ENZ_NAME
+Ornithine Carbamyltransferase	3	ENZ_NAME
+ATP: D-Hexose 6-Phosphotransferase	3	ENZ_NAME
+Inositol Polyphosphate 4-Phosphatase	3	ENZ_NAME
+p-Nitrophenylacetate Esterase	3	ENZ_NAME
+7-Pentoxyresorufin O-Dealkylase	3	ENZ_NAME
+7-Pentoxyresorufin O-Depentylase	3	ENZ_NAME
+7-Methoxyresorufin O-Demethylase	3	ENZ_NAME
+NADPH-Ferrihemoprotein Reductase	3	ENZ_NAME
+7-Benzyloxyresorufin O-Dealkylase	3	ENZ_NAME
+Sulfate Adenyltransferase	3	ENZ_NAME
+Calcium-Transporting ATPase	3	ENZ_NAME
+ATP Phosphohydrolase	3	ENZ_NAME
+Protein Tyrosine Phosphatase	3	ENZ_NAME
+Estrone 3-Sulfatase	3	ENZ_NAME
+Prostaglandin-I2 Synthase	3	ENZ_NAME
+Cholesterol Monooxygenase (Side-Chain-Cleaving)	3	ENZ_NAME
+5-Amino-4-imidazolecarboxamide Ribotide Transformylase	3	ENZ_NAME
+Fumarase	3	ENZ_NAME
+20-Hydroxylase	3	ENZ_NAME
+Fatty Acid Synthase	3	ENZ_NAME
+Glucosylceramidase	3	ENZ_NAME
+20beta-Hydroxysteroid Oxidoreductase	3	ENZ_NAME
+3beta-Hydroxysteroid Sulfotransferase	3	ENZ_NAME
+Purine Nucleotide Phosphatase	3	ENZ_NAME
+Dehydroascorbate Reductase	3	ENZ_NAME
+delta10-Reductase	3	ENZ_NAME
+12-Hydroxyeicosanoid Dehydrogenase	3	ENZ_NAME
+Leukotriene B4 Hydrolase	3	ENZ_NAME
+Thyroid Peroxidase	3	ENZ_NAME
+Mandelate Racemase	3	ENZ_NAME
+Isopentenyl Diphosphate delta-Isomerase	3	ENZ_NAME
+delta4-Desaturase	3	ENZ_NAME
+Methylenetetrahydrofolate Dehydrogenase	3	ENZ_NAME
+3-Ketoacyl-CoA Thiolase	3	ENZ_NAME
+Cyclohydrolase	3	ENZ_NAME
+(S)-Fluoxetine N-Demethylase	3	ENZ_NAME
+(R)-Fluoxetine N-Demethylase	3	ENZ_NAME
+Glycosyltransferase	3	ENZ_NAME
+Mitochondrial Dehydrogenase	3	ENZ_NAME
+Succinic Acid Dimethylesterase	3	ENZ_NAME
+Fucosyltransferase	3	ENZ_NAME
+13-HODE Dehydrogenase	3	ENZ_NAME
+Alcohol Oxygenase	3	ENZ_NAME
+Orotidine-5'-monophosphate Decarboxylase	3	ENZ_NAME
+Fatty Acyl-CoA Oxidase	3	ENZ_NAME
+Palmitoyl-CoA Hydrolase	3	ENZ_NAME
+Phenylvalerate Hydrolase	3	ENZ_NAME
+N,N-Transacetylase	3	ENZ_NAME
+Mast Cell Protease 4	3	ENZ_NAME
+Serotonin N-Acetyltransferase	3	ENZ_NAME
+NADH:Ubiquinone Oxidoreductase	3	ENZ_NAME
+Phenyl Acetate Esterase	3	ENZ_NAME
+gamma-Aminobutyrate Transaminase	3	ENZ_NAME
+Phosphoglycerate Kinase	3	ENZ_NAME
+Fructose 6-Phosphatase	3	ENZ_NAME
+Ribonucleoside Reductase	3	ENZ_NAME
+15-Prostaglandin Dehydrogenase	3	ENZ_NAME
+Transketolase	3	ENZ_NAME
+Legumain	3	ENZ_NAME
+Cystathionine beta-Synthase	3	ENZ_NAME
+Estrone Sulfotransferase	3	ENZ_NAME
+gamma-Butyrobetaine Hydroxylase	3	ENZ_NAME
+UMP Kinase	3	ENZ_NAME
+Aconitate Hydratase	3	ENZ_NAME
+5-Ketoreductase	3	ENZ_NAME
+C18-C20 Elongase	3	ENZ_NAME
+C20-C22 Elongase	3	ENZ_NAME
+Enoyl-CoA Isomerase	3	ENZ_NAME
+beta-D-Galactosidase	3	ENZ_NAME
+Neutral Endopeptidase 24.11	3	ENZ_NAME
+NADH Oxidase	3	ENZ_NAME
+Matrix Metalloproteinase 9	3	ENZ_NAME
+Inosine Triphosphate Pyrophosphatase	3	ENZ_NAME
+Inosine Triphosphate Pyrophosphohydrolase	3	ENZ_NAME
+dCMP Deaminase	3	ENZ_NAME
+Aspartyl Aminopeptidase	3	ENZ_NAME
+Glutamyl Aminopeptidase	3	ENZ_NAME
+dUTPase	3	ENZ_NAME
+Membrane-type Matrix Metalloproteinase-1	3	ENZ_NAME
+Flavokinase	3	ENZ_NAME
+L-Iduronidase	3	ENZ_NAME
+Serine Hydrolase	3	ENZ_NAME
+Cysteine-Glycine Transpeptidase	2	ENZ_NAME
+Trimethadione N-Demethylase	2	ENZ_NAME
+4-Hydroxylase	2	ENZ_NAME
+Aspirin Esterase	2	ENZ_NAME
+Phenacetin O-Dealkylase	2	ENZ_NAME
+7-Alkoxycoumarin O-Dealkylase	2	ENZ_NAME
+Prostaglandin-E2 9-Ketoreductase	2	ENZ_NAME
+Antipyrine N-Demethylase	2	ENZ_NAME
+p-Nitrophenol Hydroxylase	2	ENZ_NAME
+Uracil Phosphoribosyltransferase	2	ENZ_NAME
+Uracil Reductase	2	ENZ_NAME
+Tamoxifen N-Demethylase	2	ENZ_NAME
+Dehydroisoandrosterone Sulfotransferase	2	ENZ_NAME
+Fluorouracil Phosphoribosyltransferase	2	ENZ_NAME
+Bufuralol Hydroxylase	2	ENZ_NAME
+CoA Ligase	2	ENZ_NAME
+Acyl-CoA-Estradiol Acyltransferase	2	ENZ_NAME
+Arylamine N-Acetyltransferase I	2	ENZ_NAME
+Alcohol Oxidase	2	ENZ_NAME
+N-Dimethylnitrosamine Demethylase	2	ENZ_NAME
+N,N-Dimethylnitrosamine N-Demethylase	2	ENZ_NAME
+Fatty Acid-CoA Synthetase	2	ENZ_NAME
+Lecithin-Cholesterol Acyltransferase	2	ENZ_NAME
+NAD Pyrophosphorylase	2	ENZ_NAME
+Ketosteroid 5alpha-Oxidoreductase	2	ENZ_NAME
+Testosterone Hydroxylase	2	ENZ_NAME
+Testosterone 15alpha-Hydroxylase	2	ENZ_NAME
+Steroid 6alpha-Hydroxylase	2	ENZ_NAME
+6alpha-Hydroxysteroid Dehydrogenase	2	ENZ_NAME
+21-Hydroxylase	2	ENZ_NAME
+3-Oxidoreductase	2	ENZ_NAME
+Cortisol 6-beta-Hydroxylase	2	ENZ_NAME
+Steroid 11beta-Hydrolase	2	ENZ_NAME
+Acetylglucosamine 1-Phosphate Uridylyltransferase	2	ENZ_NAME
+UDP-Glucosamine Epimerase	2	ENZ_NAME
+UDP-Glucose Epimerase	2	ENZ_NAME
+17beta-Oxidoreductase	2	ENZ_NAME
+Androstenedione 16alpha-Hydroxylase	2	ENZ_NAME
+3beta-Reductase	2	ENZ_NAME
+Acetyl-CoA C-Acetyltransferase	2	ENZ_NAME
+Aromatic Hydroxylamine O-Acetyltransferase	2	ENZ_NAME
+O-Demethylase	2	ENZ_NAME
+Dopa Oxidase	2	ENZ_NAME
+Ornithine Aminotransferase	2	ENZ_NAME
+Terfenadine Oxidase	2	ENZ_NAME
+(S)-Mephenytoin N-Demethylase	2	ENZ_NAME
+Cyclosporin Oxidase	2	ENZ_NAME
+Steroid 7alpha-Hydroxylase	2	ENZ_NAME
+Tryptophan Pyrrolase	2	ENZ_NAME
+Hydroxyanthranilate Dioxygenase	2	ENZ_NAME
+3-Hydroxyanthranilate 3,4-Dioxygenase	2	ENZ_NAME
+Benzoyl-CoA Ligase	2	ENZ_NAME
+Bromoperoxidase	2	ENZ_NAME
+Menadione Reductase	2	ENZ_NAME
+Benzoate-CoA Ligase	2	ENZ_NAME
+Glycine Amidotransferase	2	ENZ_NAME
+Anandamide Synthase	2	ENZ_NAME
+alpha-Oxoglutarate Glyoxylate Carboligase	2	ENZ_NAME
+Urease	2	ENZ_NAME
+Phosphoinositidase	2	ENZ_NAME
+delta6-Saturase	2	ENZ_NAME
+Prostaglandin-H2 Reductase	2	ENZ_NAME
+Prostacyclin Synthase	2	ENZ_NAME
+Prostaglandin-D Synthase	2	ENZ_NAME
+Acyl-CoA Elongase	2	ENZ_NAME
+Alanine Transaminase	2	ENZ_NAME
+DOPAchrome Tautomerase	2	ENZ_NAME
+N,N-Dimethylaniline N-Demethylase	2	ENZ_NAME
+delta-Aminolevulinic Acid Dehydrogenase	2	ENZ_NAME
+2-Oxoglutarate Dehydrogenase	2	ENZ_NAME
+Inosine Nucleosidase	2	ENZ_NAME
+Cerebroside Sulphatase	2	ENZ_NAME
+Steroid 11beta-Oxoreductase	2	ENZ_NAME
+11-Oxidoreductase	2	ENZ_NAME
+Succinate: Ubiquinone Oxidoreductase	2	ENZ_NAME
+NADH-Coenzyme Q Reductase	2	ENZ_NAME
+Histidase	2	ENZ_NAME
+Glutamine Transaminase	2	ENZ_NAME
+Poly(ADP-Ribose) Polymerase	2	ENZ_NAME
+Choline Kinase	2	ENZ_NAME
+7-Ethoxy-4-trifluoromethylcoumarin O-Deethylase	2	ENZ_NAME
+Serine Esterase	2	ENZ_NAME
+Glucose 1-Dehydrogenase	2	ENZ_NAME
+Glucose-6-phosphate Isomerase	2	ENZ_NAME
+Spermidine N-Acetyltransferase	2	ENZ_NAME
+Succinate Dehydrogenase (Ubiquinone)	2	ENZ_NAME
+Sarco(endo)plasmic Reticulum Ca2+-ATPase	2	ENZ_NAME
+P-Glycoprotein ATPase	2	ENZ_NAME
+Adenosine Triphosphate Sulfurylase	2	ENZ_NAME
+3'-Phosphoadenosine 5'-Phosphosulfate Synthetase	2	ENZ_NAME
+Calcineurin	2	ENZ_NAME
+Glycolic Acid Oxygenase	2	ENZ_NAME
+Bleomycin Hydrolase	2	ENZ_NAME
+ACAT	2	ENZ_NAME
+Desmolase	2	ENZ_NAME
+Calcitriol 24-Hydroxylase	2	ENZ_NAME
+Serine Hydroxymethyltransferase	2	ENZ_NAME
+5,10-Methenyltetrahydrofolate Reductase	2	ENZ_NAME
+Phosphoenolpyruvate Kinase	2	ENZ_NAME
+Glutathione Reductase (NAD(P)H)	2	ENZ_NAME
+NAD(P)H:Menadione Oxidoreductase	2	ENZ_NAME
+Dicarbonyl/L-Xylulose Reductase	2	ENZ_NAME
+Glycerol Kinase	2	ENZ_NAME
+cGMP Phosphodiesterase	2	ENZ_NAME
+Sialyltransferase	2	ENZ_NAME
+NAD(P)H-Dependent Alkenal/one Oxidoreductase	2	ENZ_NAME
+UDP-GlcNAc Pyrophosphorylase	2	ENZ_NAME
+Haloalkane Dehalogenase	2	ENZ_NAME
+Pepsin	2	ENZ_NAME
+Methionine Synthase	2	ENZ_NAME
+Laccase	2	ENZ_NAME
+alpha-L-Fucosidase	2	ENZ_NAME
+Lignin Peroxidase	2	ENZ_NAME
+Biotinidase	2	ENZ_NAME
+beta,beta-Carotene Dioxygenase	2	ENZ_NAME
+Cholesterol Ester Hydrolase	2	ENZ_NAME
+10-11 Reductase	2	ENZ_NAME
+Acyl-CoA L-Glutamine N-Acyltransferase	2	ENZ_NAME
+dCMP Kinase	2	ENZ_NAME
+Long-Chain Acyl-CoA Ligase	2	ENZ_NAME
+Nafenopin-CoA Ligase	2	ENZ_NAME
+Guanylate Cyclase	2	ENZ_NAME
+Hydroxymethylglutaryl-CoA Reductase (NADPH)	2	ENZ_NAME
+beta-Ketothiolase	2	ENZ_NAME
+beta-N-Acetylhexosaminidase	2	ENZ_NAME
+Histamine Methyltransferase	2	ENZ_NAME
+NAD(P)H Oxidase	2	ENZ_NAME
+NADH Dehydrogenase (Ubiquinone)	2	ENZ_NAME
+L-Alanine-Glyoxylate Aminotransferase II	2	ENZ_NAME
+5-Aminolevulinic Acid Synthase	2	ENZ_NAME
+ADPase	2	ENZ_NAME
+Aspartate Transaminase	2	ENZ_NAME
+Squalene Monooxygenase	2	ENZ_NAME
+delta5,7-Sterol delta7-Reductase	2	ENZ_NAME
+2,3-Oxidosqualene Cyclase	2	ENZ_NAME
+Diacylglycerol Acyltransferase	2	ENZ_NAME
+N6-Adenine DNA Methyltransferase	2	ENZ_NAME
+Methylenetetrahydrofolate Reductase	2	ENZ_NAME
+N-Arachidonylethanolamine Amidohydrolase	2	ENZ_NAME
+Dihydroorotate Dehydrogenase	2	ENZ_NAME
+Ferrochelatase	2	ENZ_NAME
+Adenosine 5'-Phosphosulfate Kinase	2	ENZ_NAME
+Ethanolamine Phosphotransferase	2	ENZ_NAME
+Geranylgeranyl Diphosphate Synthase	2	ENZ_NAME
+Protein Geranylgeranyltransferase	2	ENZ_NAME
+Uroporphyrinogen III Synthase	2	ENZ_NAME
+Ceramidase	2	ENZ_NAME
+S-Adenosylhomocysteine Hydrolase	2	ENZ_NAME
+Phosphoesterase	2	ENZ_NAME
+gamma-Butyrobetaine Dioxygenase	2	ENZ_NAME
+Neprilysin	2	ENZ_NAME
+Adenosine Phosphotransferase	2	ENZ_NAME
+gamma-Hydroxybutyrate Dehydrogenase	2	ENZ_NAME
+Succinyl-CoA Synthetase	2	ENZ_NAME
+UDP-Glucosamine 2-Epimerase	2	ENZ_NAME
+N-6 Adenine-Specific DNA Methyltransferase 1	2	ENZ_NAME
+CMP Kinase	2	ENZ_NAME
+Sarcosine Oxidase	2	ENZ_NAME
+Prelamin A Endoprotease	2	ENZ_NAME
+Dioxygenase	2	ENZ_NAME
+Monoamine Phenol Sulfotransferase	2	ENZ_NAME
+Leukotriene D4 Hydrolase	2	ENZ_NAME
+Adenylate Deaminase	2	ENZ_NAME
+8-Oxo-2'-deoxyguanosine Triphosphate Pyrophosphohydrolyase	2	ENZ_NAME
+Cysteine Protease	2	ENZ_NAME
+Carboxylase	2	ENZ_NAME
+3beta-Hydroxysteroid/Dihydrodiol Dehydrogenase	2	ENZ_NAME
+Glutamate Carboxypeptidase II	2	ENZ_NAME
+Isocitrate Dehydrogenase (NAD)	2	ENZ_NAME
+delta6-Reductase	2	ENZ_NAME
+Adenosine Monophosphatase	2	ENZ_NAME
+Acid Sphingomyelinase	2	ENZ_NAME
+Galactocerebroside beta-Galactosidase	2	ENZ_NAME
+10-Formyltetrahydrofolate Dehydrogenase	2	ENZ_NAME
+Glyoxalase II	2	ENZ_NAME
+beta-Hydroxybutyrate Dehydrogenase	2	ENZ_NAME
+L-Methionine gamma-Lyase	2	ENZ_NAME
+gamma-Lyase	2	ENZ_NAME
+Thimet Oligopeptidase	2	ENZ_NAME
+Thioglucoside Glucohydrolase	2	ENZ_NAME
+Maltase-Glucoamylase	2	ENZ_NAME
+Cathepsin G	2	ENZ_NAME
+Phosphorylase	2	ENZ_NAME
+1,5-Anhydro-D-Fructose Reductase	2	ENZ_NAME
+Transacetylase	2	ENZ_NAME
+Diacylglycerol Lipase	2	ENZ_NAME
+Protein Kinase C	2	ENZ_NAME
+Protein Phosphatase-2A	2	ENZ_NAME
+Adrenodoxin Reductase	2	ENZ_NAME
+Methionine Synthase Reductase	2	ENZ_NAME
+Diflavin Oxidoreductase 1	2	ENZ_NAME
+Cystyl Aminopeptidase	2	ENZ_NAME
+Thyroid Iodotyrosine Dehalogenase	2	ENZ_NAME
+(Z)-Phytenoyl-CoA Synthetase	2	ENZ_NAME
+alpha-L-Rhamnosidase	2	ENZ_NAME
+Crotonase	2	ENZ_NAME
+2-Methyl-3-hydroxybutyryl-CoA Dehydrogenase	2	ENZ_NAME
+Acidic Mammalian Chitinase	2	ENZ_NAME
+Peptidase M	2	ENZ_NAME
+Cysteine-S-conjugate Transaminase	2	ENZ_NAME
+Cholesterol Epoxide Hydrolase	2	ENZ_NAME
+GP-Hydroxylase	1	ENZ_NAME
+Acetyl-CoA Dehydrogenase	1	ENZ_NAME
+Ethinylestradiol 4-Hydroxylase	1	ENZ_NAME
+Ethinylestradiol 2-Hydroxylase	1	ENZ_NAME
+11-Dehydrogenase	1	ENZ_NAME
+Tolbutamide 4'-Hydroxylase	1	ENZ_NAME
+Diazepam 3-Hydroxylase	1	ENZ_NAME
+Debrisoquine Hydroxylase	1	ENZ_NAME
+Acetanilide Hydroxylase	1	ENZ_NAME
+Aminopyrine O-Demethylase	1	ENZ_NAME
+Amidopyrine N-Demethylase	1	ENZ_NAME
+Isoniazid Hydrolase	1	ENZ_NAME
+Naloxone Reductase	1	ENZ_NAME
+Analgin N-Demethylase	1	ENZ_NAME
+Nitrate Ester Reductase	1	ENZ_NAME
+Pyrazinamidase	1	ENZ_NAME
+Cysteine Aminotransferase	1	ENZ_NAME
+Deoxycytidine Monophosphate Kinase	1	ENZ_NAME
+Phosphorylcholine Synthetase	1	ENZ_NAME
+Chloramphenicol O-Acetyltransferase	1	ENZ_NAME
+Prostaglandin-E2 9-Reductase	1	ENZ_NAME
+Aromatic Hydrocarbon Hydroxylase	1	ENZ_NAME
+Benzopyrene Hydroxylase	1	ENZ_NAME
+Benzo(a)pyrene Monooxidase	1	ENZ_NAME
+Atropine Esterase	1	ENZ_NAME
+Orthophosphate Ribosyltransferase	1	ENZ_NAME
+Morphine N-Demethylase	1	ENZ_NAME
+Nitrophenol Hydroxylase	1	ENZ_NAME
+p-Nitrophenol UDP-Glucuronosyltransferase	1	ENZ_NAME
+Uridine Phosphate Kinase	1	ENZ_NAME
+Thymidine Phosphate Kinase	1	ENZ_NAME
+RNA Polymerase	1	ENZ_NAME
+Carboxyltransferase	1	ENZ_NAME
+Cocaine Esterase	1	ENZ_NAME
+Aldehyde Oxidase; Xanthine Oxidase	1	ENZ_NAME
+Aldehyde Oxidoreductase	1	ENZ_NAME
+Pyrimidine Phosphorylase	1	ENZ_NAME
+Estradiol 2alpha-Hydroxylase	1	ENZ_NAME
+Estradiol 16alpha-Hydroxylase	1	ENZ_NAME
+Cyclophosphamide 4-Hydroxylase	1	ENZ_NAME
+Lauric Acid 12-Hydroxylase	1	ENZ_NAME
+Lauric Acid omega-Hydroxylase	1	ENZ_NAME
+Laurate Hydroxylase	1	ENZ_NAME
+Mandelonitrile Lyase	1	ENZ_NAME
+4-Methylumbeliferon UDP-Glucuronosyltransferase	1	ENZ_NAME
+O-Acyltransferase	1	ENZ_NAME
+Testosterone 6alpha-Hydroxylase	1	ENZ_NAME
+Testosterone 15beta-Hydroxylase	1	ENZ_NAME
+11beta-Hydroxylase	1	ENZ_NAME
+Steroid 2alpha-Hydroxylase	1	ENZ_NAME
+3-Oxo-5beta-steroid 4-Dehydrogenase	1	ENZ_NAME
+Glucocorticoid Sulfotransferase	1	ENZ_NAME
+Steroid 6beta-Hydroxylase	1	ENZ_NAME
+Glycogen Glucosyltransferase	1	ENZ_NAME
+4-Hydroxybiphenyl UDP-Glucuronosyltransferase	1	ENZ_NAME
+Transferase	1	ENZ_NAME
+delta102-Aromatase	1	ENZ_NAME
+Androstenedione 5alpha-Reductase	1	ENZ_NAME
+17alpha-Hydroxysteroid Dehydrogenase	1	ENZ_NAME
+L-Aromatic Amino Acid Decarboxylase	1	ENZ_NAME
+Pyrimidine 5'-Nuicleotidase	1	ENZ_NAME
+2'-Deoxythymidine Kinase	1	ENZ_NAME
+Deoxynucleoside Diphosphate Kinase	1	ENZ_NAME
+5alpha-Hydroxysteroid Dehydrogenase	1	ENZ_NAME
+(S)-Mephenytoin Hydroxylase	1	ENZ_NAME
+Omeprazole Oxidase	1	ENZ_NAME
+Adenylosuccinate Lyase	1	ENZ_NAME
+Purine Phosphorylase	1	ENZ_NAME
+20alpha-Reductase	1	ENZ_NAME
+19-Hydroxylase	1	ENZ_NAME
+Aldosterone Syntase	1	ENZ_NAME
+Steroid 5beta-Reductase	1	ENZ_NAME
+Sterol Sulfatase	1	ENZ_NAME
+Kynurenine Formamidase	1	ENZ_NAME
+Arylformamidase	1	ENZ_NAME
+3-Hydroxyanthranilic Acid Oxygenase	1	ENZ_NAME
+Quinolinate Phosphoribosyltransferase	1	ENZ_NAME
+Nicotinate Phosphoribosyltransferase	1	ENZ_NAME
+NAD(+)-Glycohydrolase	1	ENZ_NAME
+Pyridoxine 4-Oxidase	1	ENZ_NAME
+Pyridoxal Oxidase	1	ENZ_NAME
+Acylamidase	1	ENZ_NAME
+Uridylate Kinase	1	ENZ_NAME
+Ribose Phosphate Pyrophosphokinase	1	ENZ_NAME
+Benzoyl-CoA Reductase	1	ENZ_NAME
+Cyclohex-1-enecarboxyl-CoA Hydratase	1	ENZ_NAME
+Amino Acid Acyltransferase	1	ENZ_NAME
+Retinol Oxidase	1	ENZ_NAME
+Retinal Dehydrogenase (NAD(P))	1	ENZ_NAME
+Thymidine Triphosphate Kinase	1	ENZ_NAME
+Estradiol Dehydrogenase	1	ENZ_NAME
+Estrone 2-Hydroxylase	1	ENZ_NAME
+p-Hydroxybenzoate Hydroxylase	1	ENZ_NAME
+Pyruvate Decarboxylase	1	ENZ_NAME
+Sodium pyruvate Dehydrogenase	1	ENZ_NAME
+Ethanolamine Kinase	1	ENZ_NAME
+Tyrosine Transaminase	1	ENZ_NAME
+4-Hydroxyphenylpyruvic Oxidase	1	ENZ_NAME
+Phenylalanine Ammonia Lyase	1	ENZ_NAME
+myo-Inositol 1-Kinase	1	ENZ_NAME
+1-Phosphatidyl Inositol Kinase	1	ENZ_NAME
+1-Phosphatidyl 4-Phosphate Kinase	1	ENZ_NAME
+Phosphoinositidase C	1	ENZ_NAME
+Inositolphosphate 3-Kinase	1	ENZ_NAME
+8-Lipoxygenase	1	ENZ_NAME
+Arachidonate Lipoxygenase	1	ENZ_NAME
+Prostaglandin-G2 Hydroperoxidase	1	ENZ_NAME
+PGH2 9,11-Endoperoxide Reductase	1	ENZ_NAME
+Endoperoxide F2alpha Reductase	1	ENZ_NAME
+Prostaglandin-D2 Synthase	1	ENZ_NAME
+PGD2 Synthase	1	ENZ_NAME
+PGD2 11-Ketoreductase	1	ENZ_NAME
+12R-Lipoxygenase	1	ENZ_NAME
+L-Asparaginase	1	ENZ_NAME
+gamma-Glutamylcyclotransferase	1	ENZ_NAME
+Erythromycin O-Demethylase	1	ENZ_NAME
+Inositol Polyphosphate 3-Kinase	1	ENZ_NAME
+Inositol Polyphosphate 5-Phosphatase	1	ENZ_NAME
+Inositol Polyphosphate 1-Phosphatase	1	ENZ_NAME
+Tyrosine-alpha-Ketoglutarate Transaminase	1	ENZ_NAME
+Dopamine beta-Monooxygenase	1	ENZ_NAME
+Dimethylaniline Monooxygenase	1	ENZ_NAME
+Homoserine Kinase	1	ENZ_NAME
+Glutamic-Oxaloacetic Transaminase	1	ENZ_NAME
+Glutamic-Pyruvic Transaminase	1	ENZ_NAME
+Glutamate Dehydrogenase (NAD+)	1	ENZ_NAME
+3alpha-Hydroxyglycyrrhetinate Dehydrogenase	1	ENZ_NAME
+Transacylase	1	ENZ_NAME
+S-Adenosyl-L-Homocysteine Hydrolase	1	ENZ_NAME
+Myoadenylate Deaminase	1	ENZ_NAME
+AMPase	1	ENZ_NAME
+7-Ethoxyresorufin Deethylase	1	ENZ_NAME
+Thioether S-Methyltransferase	1	ENZ_NAME
+Methoxyresorufin O-Dealkylase	1	ENZ_NAME
+O-Methyltransferase	1	ENZ_NAME
+Quinone Reductase 1	1	ENZ_NAME
+NAD-Quinone Reductase	1	ENZ_NAME
+delta3,delta5-trans-2,trans-6-Dienoyl-CoA Isomerase	1	ENZ_NAME
+Histidine-Pyruvate Aminotransferase	1	ENZ_NAME
+Histidine Decarboxylase	1	ENZ_NAME
+Histidine Ammonia Lyase	1	ENZ_NAME
+Urocanase	1	ENZ_NAME
+7-Benzyloxyresorufin O-Debenzylase	1	ENZ_NAME
+Cytidine Kinase	1	ENZ_NAME
+CDP-Choline: 1,2-Diacylglycerol Choline Phosphotransferase	1	ENZ_NAME
+4-Nitrobenzaldehyde Reductase	1	ENZ_NAME
+7-Ethoxy-4-trifluoromethylcoumarin Deethylase	1	ENZ_NAME
+Myo-inositol-1-phosphate Synthase	1	ENZ_NAME
+Spermine/Spermidine N-Acetyltransferase	1	ENZ_NAME
+N8-Acetylspermidine Transferase	1	ENZ_NAME
+Cystathionine beta-Synthetase	1	ENZ_NAME
+Cysteinsulfinate Decarboxylase	1	ENZ_NAME
+Retinaldehyde Reductase	1	ENZ_NAME
+Catechol 2,3-Dioxygenase	1	ENZ_NAME
+Thiosulfate:Cyanide Sulfotransferase	1	ENZ_NAME
+ATP Phosphatase	1	ENZ_NAME
+Strontium-Substituted Methanol Dehydrogenase	1	ENZ_NAME
+Acylphosphatase	1	ENZ_NAME
+Protein Phosphatase-1	1	ENZ_NAME
+p-Nitrophenylphosphatase	1	ENZ_NAME
+Glycolic Acid Oxidase	1	ENZ_NAME
+all-trans-Retinol:all-trans-13,14-Dihydroretinol Saturase	1	ENZ_NAME
+Prostaglandin-I Synthase	1	ENZ_NAME
+Spermine Oxidase	1	ENZ_NAME
+Cholesterol 26-Hydroxylase	1	ENZ_NAME
+25-Hydroxycholecalciferol 24-Hydroxylase	1	ENZ_NAME
+25-Hydroxyvitamin D3 23-Hydroxylase	1	ENZ_NAME
+Malic Enzyme	1	ENZ_NAME
+Oxalate beta-Decarboxylase	1	ENZ_NAME
+Arylalkylamine N-Acetyltransferase	1	ENZ_NAME
+27-Hydroxycholesterol 7alpha-Hydroxylase	1	ENZ_NAME
+Steroid 11-Oxoreductase	1	ENZ_NAME
+11-Ketoreductase	1	ENZ_NAME
+Steroid 17alpha-Hydrolase	1	ENZ_NAME
+Steroid delta-Isomerase	1	ENZ_NAME
+Bilirubin Glucuronoside Glucuronosyltransferase	1	ENZ_NAME
+LTB4 20-Hydroxylase	1	ENZ_NAME
+Cholesterol Sulfate Sulfatase	1	ENZ_NAME
+Methylthioadenosine Phosphorylase	1	ENZ_NAME
+Cystinyl Aminopeptidase	1	ENZ_NAME
+Fructokinase	1	ENZ_NAME
+Glutaredoxin Thioltranferase	1	ENZ_NAME
+beta-Galactoside alpha-2,6-Sialyltransferase	1	ENZ_NAME
+Cholecalciferol 25-Oxygenase	1	ENZ_NAME
+Cholecalciferol 1alpha-Oxygenase	1	ENZ_NAME
+Leukotriene B4 omega-Hydroxylase	1	ENZ_NAME
+Inositol-1,4,5,6-tetrakisphosphate-3-kinase	1	ENZ_NAME
+12-Hydroxydehydrogenase	1	ENZ_NAME
+delta14-Reductase	1	ENZ_NAME
+Muconolactone delta-Isomerase	1	ENZ_NAME
+Enol-Lactone Hydrolase	1	ENZ_NAME
+Sterol 27-Hydroxylase	1	ENZ_NAME
+PurK	1	ENZ_NAME
+PurE	1	ENZ_NAME
+Deoxypyrimidine Nucleoside Kinase	1	ENZ_NAME
+Triglyceride Lipase	1	ENZ_NAME
+Monomethylarsenous Acid Methyltransferase	1	ENZ_NAME
+Retinal Guanylyl Cyclase	1	ENZ_NAME
+Farnesyl Pyrophosphatase	1	ENZ_NAME
+Farnesyltransferase	1	ENZ_NAME
+Serine Palmitoyltransferase	1	ENZ_NAME
+Hydroxylamine Reductase (NADH)	1	ENZ_NAME
+5'-Thyroxine Deiododinase	1	ENZ_NAME
+Thyrosine 5'-Deiodinase	1	ENZ_NAME
+Lithocholic Acid 6beta-Hydroxylase	1	ENZ_NAME
+1-Acylglycerophosphorylcholine Acyltransferase	1	ENZ_NAME
+23-Hydroxylase	1	ENZ_NAME
+5,10-Methenyltetrahydrofolate Cyclohydrolase	1	ENZ_NAME
+10-Formyltetrahydrofolate Reductase	1	ENZ_NAME
+Glycinamide Ribotide Transformylase	1	ENZ_NAME
+5'-Nucleotidase or Phosphatase	1	ENZ_NAME
+Anhydroerythromycin N-Demethylase	1	ENZ_NAME
+Glucosyltransferase	1	ENZ_NAME
+Guanosine Triphosphatase (intrinsic)	1	ENZ_NAME
+Lysophospholipase	1	ENZ_NAME
+Molybdenum Oxidase	1	ENZ_NAME
+Methoxime Hydrolase	1	ENZ_NAME
+Arginyl Aminopeptidase	1	ENZ_NAME
+Deoxycytidine Kinase; Deoxyguanosine Kinase	1	ENZ_NAME
+Squalene Epoxidase	1	ENZ_NAME
+Dihydroxyphenyl Acetic Acid Reductase	1	ENZ_NAME
+GAR Formyltransferase	1	ENZ_NAME
+Adenine Nucleotide Translocase	1	ENZ_NAME
+Nucleoside Diphosphatase	1	ENZ_NAME
+Aspartate Carbamoyltransferase	1	ENZ_NAME
+Squalene Cyclase	1	ENZ_NAME
+Lanosterol Demethylase	1	ENZ_NAME
+Lipid-Phosphate Phosphatase	1	ENZ_NAME
+Sphingosine 1-Phosphate Phosphohydrolase	1	ENZ_NAME
+Fluoroacetate-Specific Defluorinase	1	ENZ_NAME
+Protein Methylesterase	1	ENZ_NAME
+Folylpoly-gamma-glutamate Synthetase	1	ENZ_NAME
+Cysteine Conjugate S-Oxidase	1	ENZ_NAME
+1-Acylglycerophosphocholine Acyltransferase	1	ENZ_NAME
+Benzoyl-CoA Hydrolase	1	ENZ_NAME
+Sterol delta7-Reductase	1	ENZ_NAME
+Steroid 7-Reductase	1	ENZ_NAME
+Dihydroorotate: Ubiquinone Oxidoreductase	1	ENZ_NAME
+DFPase	1	ENZ_NAME
+Acrosin	1	ENZ_NAME
+3-Hydroxy-3-methylglutaryl CoA Synthetase	1	ENZ_NAME
+GSNO Reductase	1	ENZ_NAME
+Glycerol-3-phosphate Dehydrogenase (NAD+)	1	ENZ_NAME
+Glycerol Phosphate Acyltransferase	1	ENZ_NAME
+NADH:Ubiquinone Reductase	1	ENZ_NAME
+Agmatinase	1	ENZ_NAME
+Hydroxymethylbilane Synthase	1	ENZ_NAME
+Uroporphyrinogen Synthase	1	ENZ_NAME
+Lathosterol 5-Desaturase	1	ENZ_NAME
+Cathepsin H	1	ENZ_NAME
+Ribonucleate Nucleotidyltransferase	1	ENZ_NAME
+Pyridoxal Phosphatase	1	ENZ_NAME
+Cytidyltransferase	1	ENZ_NAME
+Organophosphorus Hydrolase	1	ENZ_NAME
+Ethanolamine Phosphate Cytidyltransferase	1	ENZ_NAME
+GABA-alpha-oxoglutarate Aminotransferase	1	ENZ_NAME
+D-Glucuronate Reductase	1	ENZ_NAME
+Pyridoxal Phosphokinase	1	ENZ_NAME
+GMP Synthase	1	ENZ_NAME
+GABA Transaminase	1	ENZ_NAME
+Succinic Semialdehyde Reductase	1	ENZ_NAME
+Creatine Phosphokinase	1	ENZ_NAME
+Creatinephosphate Kinase	1	ENZ_NAME
+Kynurenine Hydrolase	1	ENZ_NAME
+Ribonucleoside Diphosphate Reductase	1	ENZ_NAME
+NADPH-Diaphorase	1	ENZ_NAME
+Fatty Acid Amide Hydrolase 2	1	ENZ_NAME
+3-O-Methylestradiol O-Demethylase	1	ENZ_NAME
+NADH Ferricyanide Reductase	1	ENZ_NAME
+Collagenase	1	ENZ_NAME
+Acetyl-CoA:Lyso-PAF Acetyltransferase	1	ENZ_NAME
+CDP-Choline:Diacylglycerol Choline Phosphotransferase	1	ENZ_NAME
+Methylmalonyl-CoA Mutase	1	ENZ_NAME
+1-Acylglycerophosphate Acyltransferase	1	ENZ_NAME
+Proteasome Endopeptidase Complex	1	ENZ_NAME
+UDP Kinase	1	ENZ_NAME
+2',3'-Cyclic Nucleotide 3'-Phosphodiesterase	1	ENZ_NAME
+2',3'-Cyclic Nucleotide 3'-Phosphohydrolase	1	ENZ_NAME
+Glutamate Carboxypeptidase	1	ENZ_NAME
+Transhydrogenase	1	ENZ_NAME
+F0F1-ATPase	1	ENZ_NAME
+Glucosidase	1	ENZ_NAME
+Leucyl Aminopeptidase	1	ENZ_NAME
+Proline Endopeptidase	1	ENZ_NAME
+Caspase-11	1	ENZ_NAME
+Fumarate Hydratase	1	ENZ_NAME
+Sulfide:Quinone Reductase	1	ENZ_NAME
+Glutamate Formiminotransferase	1	ENZ_NAME
+5-Formiminotetrahydrofolate Cyclodeaminase	1	ENZ_NAME
+Folylpolyglutamate Hydrolase	1	ENZ_NAME
+Fructose Bisphosphatase	1	ENZ_NAME
+D-Fructose 1,6-Bisphosphatase	1	ENZ_NAME
+Methioninase	1	ENZ_NAME
+N-Acylpeptide Hydrolase	1	ENZ_NAME
+Homogentisate Oxygenase	1	ENZ_NAME
+3-Hydroxyanthranilate Oxygenase	1	ENZ_NAME
+Monoglyceride Lipase	1	ENZ_NAME
+Granzyme A/3	1	ENZ_NAME
+Granzyme B	1	ENZ_NAME
+Granzyme M	1	ENZ_NAME
+Granzyme H	1	ENZ_NAME
+Acyl-CoA Epimerase	1	ENZ_NAME
+Alkaline Phosphodiesterase	1	ENZ_NAME
+Palmitoyl Protein Thioesterase	1	ENZ_NAME
+Acylcarnitine Hydrolase	1	ENZ_NAME
+Cathepsin C	1	ENZ_NAME
+alpha-Galactosidase	1	ENZ_NAME
+Glycogen Phosphorylase a	1	ENZ_NAME
+SAM Methyltransferase	1	ENZ_NAME
+Phloretin Hydrolase	1	ENZ_NAME
+Desulfatase	1	ENZ_NAME
+Phosphoryloxime Hydrolase	1	ENZ_NAME
+Ectonucleotide Pyrophosphatase/Phosphodiesterase	1	ENZ_NAME
+Lipid Hydroperoxidase	1	ENZ_NAME
+Thiol Oxidase	1	ENZ_NAME
+M-Calpain	1	ENZ_NAME
+Isomaltase	1	ENZ_NAME
+Lysophospholipase D	1	ENZ_NAME
+Amylase	1	ENZ_NAME
+Chitotriosidase	1	ENZ_NAME
+Endoprolylpeptidase	1	ENZ_NAME
+Proline Aminopeptidase	1	ENZ_NAME
+S-Formylglutathione Hydrolase	1	ENZ_NAME
+Esterase D	1	ENZ_NAME
+Acyl-Protein Thioesterase 1	1	ENZ_NAME
+2-Enoyl-CoA Hydratase	1	ENZ_NAME
+Amylo-1,6-glucosidase	1	ENZ_NAME
+Autotaxin	1	ENZ_NAME
+Matrix Metalloproteinase 3	1	ENZ_NAME
+Short-Chain Enoyl-CoA Hydratase	1	ENZ_NAME
+Cathepsin K	1	ENZ_NAME
+alpha-Fucosidase	1	ENZ_NAME
+Pyroglutamyl Peptidase II	1	ENZ_NAME
+Protein Disulfide Isomerase	1	ENZ_NAME
+Caspase-5	1	ENZ_NAME
+Dihydropteridine Reductase	1	ENZ_NAME
+Acetylpolyamine Oxidase	1	ENZ_NAME
+Trehalase	1	ENZ_NAME
+Iodotyrosine Deiodinase	1	ENZ_NAME
+Short-Chain Acyl-CoA Synthetase	1	ENZ_NAME
+Ferredoxin Reductase	1	ENZ_NAME
+5-Methyltetrahydrofolate-Homocysteine Methyltransferase Reductase	1	ENZ_NAME
+Naringenase	1	ENZ_NAME
+N6AMT1	1	ENZ_NAME

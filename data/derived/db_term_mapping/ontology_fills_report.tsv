@@ -1,0 +1,40 @@
+xrm_id	preferred_label	status
+xrm:1500230	macromolecule binding	added
+xrm:1500231	DNA binding	added
+xrm:1500232	RNA binding	added
+xrm:1500233	protein binding	added
+xrm:1500234	covalent binding	added
+xrm:1500235	lipid binding	added
+xrm:1500236	CoA binding	added
+xrm:0000600	cyanidation	added
+xrm:0000601	decyanidation	added
+xrm:0000610	alkylation	added
+xrm:0000611	N-alkylation	added
+xrm:0000612	O-alkylation	added
+xrm:0000613	S-alkylation	added
+xrm:0000614	C-alkylation	added
+xrm:0000620	decarboxylation	added
+xrm:0000621	carboxylation	added
+xrm:0000630	esterification	added
+xrm:0000631	transesterification	added
+xrm:0000632	lactonization	added
+xrm:0000633	lactamization	added
+xrm:0000640	cyclization	added
+xrm:0000650	dehydroxylation	added
+xrm:0000660	halogenation	added
+xrm:0000661	amination	added
+xrm:0000670	formylation	added
+xrm:0000671	deformylation	added
+xrm:0000680	N-nitrosation	added
+xrm:0000690	desulfuration	added
+xrm:0000691	sulfuration	added
+xrm:0000700	deglucuronidation	added
+xrm:0000701	desulfation	added
+xrm:0000702	deglycosidation	added
+xrm:0000703	deglutathionation	added
+xrm:0000704	decysteination	added
+xrm:0000710	Se-methylation	added
+xrm:0000720	dearylation	added
+xrm:0000721	alpha-hydroxylation	added
+xrm:1600200	alicyclic site	added
+xrm:1600201	fused benzene site	added

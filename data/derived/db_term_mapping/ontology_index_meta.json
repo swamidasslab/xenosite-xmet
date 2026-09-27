@@ -1,0 +1,3093 @@
+{
+  "n_labels": 1118,
+  "n_concepts": 615,
+  "match_spines": [
+    "chemical transformation",
+    "leaving group",
+    "medchem liability",
+    "metabolism phase",
+    "pharmacological role",
+    "phase I reaction family",
+    "phase II conjugation family",
+    "reactive metabolite family",
+    "site type",
+    "structural delta"
+  ],
+  "concepts": {
+    "xrm:0000001": {
+      "preferred_label": "phase I",
+      "spine": "metabolism phase",
+      "definition": "Functionalization: oxidation, reduction, hydrolysis, and related edits that introduce or expose polar groups."
+    },
+    "xrm:0000002": {
+      "preferred_label": "phase II",
+      "spine": "metabolism phase",
+      "definition": "Conjugation with hydrophilic moieties (glucuronide, sulfate, glutathione, acetyl, methyl, amino acids, \u2026)."
+    },
+    "xrm:0000003": {
+      "preferred_label": "phase III transport",
+      "spine": "metabolism phase",
+      "definition": "Transporter-mediated disposition related to xenobiotic handling; related to metabolism naming but not a primary reaction label."
+    },
+    "xrm:0000010": {
+      "preferred_label": "stable oxygenation",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow Phase I class: oxygenation that yields a stable oxygenated metabolite (aromatic/aliphatic hydroxylation, epoxidation, N-oxidation, S-oxidation)."
+    },
+    "xrm:0000011": {
+      "preferred_label": "unstable oxygenation",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow Phase I class: oxygenation that triggers cleavage or rearrangement (N-/O-/S-/C-dealkylation, oxidative deamination, oxidative dehalogenation)."
+    },
+    "xrm:0000012": {
+      "preferred_label": "dehydrogenation",
+      "spine": "chemical transformation",
+      "definition": "Phase I class that extracts hydrogen(s) to form a multiple bond, iminium, or quinoid (alcohol\u2192carbonyl, bond unsaturation, quinone/imine/methide formation, iminium formation). Maps to the Metabolic Forest / Rainbow dehydrogenation ruleset; "
+    },
+    "xrm:0000013": {
+      "preferred_label": "hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "Phase I class in which water addition cleaves amide, ester, ether, or related bonds (including cyanide/nitrile hydrolysis). Maps to the Metabolic Forest / Rainbow hydrolysis ruleset; prefer this full name over localized abbreviations."
+    },
+    "xrm:0000014": {
+      "preferred_label": "reduction",
+      "spine": "chemical transformation",
+      "definition": "Phase I class that removes oxygen or adds hydrogen(s) (nitro, carbonyl, and sulfo reduction; reductive dehalogenation; hydrogenation). Maps to the Metabolic Forest / Rainbow reduction ruleset; prefer this full name over localized abbreviati"
+    },
+    "xrm:0000020": {
+      "preferred_label": "oxidation",
+      "spine": "chemical transformation",
+      "definition": "Phase I oxidations broadly (carbon and heteroatom)."
+    },
+    "xrm:0000021": {
+      "preferred_label": "carbon oxidation",
+      "spine": "chemical transformation",
+      "definition": "Oxidation at carbon (hydroxylation, epoxidation, alcohol/aldehyde oxidation)."
+    },
+    "xrm:0000022": {
+      "preferred_label": "heteroatom oxidation",
+      "spine": "chemical transformation",
+      "definition": "Direct oxidation of N, S (and related heteroatoms)."
+    },
+    "xrm:0000023": {
+      "preferred_label": "carbon\u2013heteroatom oxidative cleavage",
+      "spine": "chemical transformation",
+      "definition": "\u03b1-Carbon hydroxylation followed by C\u2013X cleavage (N-/O-/S-dealkylation, oxidative deamination)."
+    },
+    "xrm:0000024": {
+      "preferred_label": "conjugation",
+      "spine": "chemical transformation",
+      "definition": "Attachment of a hydrophilic moiety (Metabolic Forest conjugation ruleset: acetylation, glucuronidation, glutathionation, sulfation, and related Phase II paths)."
+    },
+    "xrm:0000100": {
+      "preferred_label": "hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Introduction of a hydroxyl group, typically at carbon."
+    },
+    "xrm:0000101": {
+      "preferred_label": "aromatic hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways."
+    },
+    "xrm:0000102": {
+      "preferred_label": "aliphatic hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Hydroxylation of an aliphatic carbon."
+    },
+    "xrm:0000103": {
+      "preferred_label": "para-hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Aromatic hydroxylation at the para position of a substituted benzene."
+    },
+    "xrm:0000104": {
+      "preferred_label": "ortho-hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "ortho-hydroxylation: xenobiotic-metabolism term under aromatic hydroxylation."
+    },
+    "xrm:0000105": {
+      "preferred_label": "meta-hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "meta-hydroxylation: xenobiotic-metabolism term under aromatic hydroxylation."
+    },
+    "xrm:0000106": {
+      "preferred_label": "benzylic hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Hydroxylation at a carbon adjacent to an aromatic ring."
+    },
+    "xrm:0000107": {
+      "preferred_label": "allylic hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Hydroxylation at a carbon adjacent to a C=C bond."
+    },
+    "xrm:0000108": {
+      "preferred_label": "\u03c9-hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "\u03c9-hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation."
+    },
+    "xrm:0000109": {
+      "preferred_label": "\u03c9-1 hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "\u03c9-1 hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation."
+    },
+    "xrm:0000110": {
+      "preferred_label": "epoxidation",
+      "spine": "chemical transformation",
+      "definition": "Formation of a three-membered epoxide ring."
+    },
+    "xrm:0000111": {
+      "preferred_label": "alkene epoxidation",
+      "spine": "chemical transformation",
+      "definition": "alkene epoxidation: xenobiotic-metabolism term under epoxidation."
+    },
+    "xrm:0000112": {
+      "preferred_label": "arene oxide formation",
+      "spine": "chemical transformation",
+      "definition": "Epoxidation of an aromatic \u03c0-system to an arene oxide intermediate."
+    },
+    "xrm:0000113": {
+      "preferred_label": "thiophene epoxidation",
+      "spine": "chemical transformation",
+      "definition": "thiophene epoxidation: xenobiotic-metabolism term under epoxidation, heteroaromatic oxidation impact."
+    },
+    "xrm:0000120": {
+      "preferred_label": "nitrogen oxidation",
+      "spine": "chemical transformation",
+      "definition": "nitrogen oxidation: xenobiotic-metabolism term under heteroatom oxidation, stable oxygenation."
+    },
+    "xrm:0000121": {
+      "preferred_label": "N-oxide formation",
+      "spine": "chemical transformation",
+      "definition": "N-oxide formation: xenobiotic-metabolism term under nitrogen oxidation."
+    },
+    "xrm:0000122": {
+      "preferred_label": "hydroxylamine formation",
+      "spine": "chemical transformation",
+      "definition": "hydroxylamine formation: xenobiotic-metabolism term under nitrogen oxidation."
+    },
+    "xrm:0000123": {
+      "preferred_label": "nitroso formation",
+      "spine": "chemical transformation",
+      "definition": "nitroso formation: xenobiotic-metabolism term under nitrogen oxidation."
+    },
+    "xrm:0000124": {
+      "preferred_label": "primary amine N-oxidation",
+      "spine": "chemical transformation",
+      "definition": "primary amine N-oxidation: xenobiotic-metabolism term under nitrogen oxidation."
+    },
+    "xrm:0000125": {
+      "preferred_label": "aromatic amine N-oxidation",
+      "spine": "chemical transformation",
+      "definition": "aromatic amine N-oxidation: xenobiotic-metabolism term under nitrogen oxidation."
+    },
+    "xrm:0000130": {
+      "preferred_label": "sulfur oxidation",
+      "spine": "chemical transformation",
+      "definition": "sulfur oxidation: xenobiotic-metabolism term under heteroatom oxidation, stable oxygenation."
+    },
+    "xrm:0000131": {
+      "preferred_label": "sulfoxidation",
+      "spine": "chemical transformation",
+      "definition": "sulfoxidation: xenobiotic-metabolism term under sulfur oxidation."
+    },
+    "xrm:0000132": {
+      "preferred_label": "sulfone formation",
+      "spine": "chemical transformation",
+      "definition": "sulfone formation: xenobiotic-metabolism term under sulfur oxidation."
+    },
+    "xrm:0000133": {
+      "preferred_label": "thiophene S-oxidation",
+      "spine": "chemical transformation",
+      "definition": "S-oxidation of a thiophene ring; a dearomatizing path to S-oxides."
+    },
+    "xrm:0000134": {
+      "preferred_label": "thiol oxidation",
+      "spine": "chemical transformation",
+      "definition": "thiol oxidation: xenobiotic-metabolism term under sulfur oxidation."
+    },
+    "xrm:0000135": {
+      "preferred_label": "disulfide formation",
+      "spine": "chemical transformation",
+      "definition": "disulfide formation: xenobiotic-metabolism term under sulfur oxidation."
+    },
+    "xrm:0000140": {
+      "preferred_label": "primary carbon hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "primary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation."
+    },
+    "xrm:0000141": {
+      "preferred_label": "secondary carbon hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "secondary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation."
+    },
+    "xrm:0000142": {
+      "preferred_label": "tertiary carbon hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "tertiary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation."
+    },
+    "xrm:0000143": {
+      "preferred_label": "alicyclic hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Hydroxylation of a saturated ring carbon."
+    },
+    "xrm:0000200": {
+      "preferred_label": "dealkylation",
+      "spine": "chemical transformation",
+      "definition": "Oxidative removal of an alkyl group from N, O, S, or C via \u03b1-carbon hydroxylation."
+    },
+    "xrm:0000201": {
+      "preferred_label": "N-dealkylation",
+      "spine": "chemical transformation",
+      "definition": "N-dealkylation: xenobiotic-metabolism term under dealkylation."
+    },
+    "xrm:0000202": {
+      "preferred_label": "O-dealkylation",
+      "spine": "chemical transformation",
+      "definition": "O-dealkylation: xenobiotic-metabolism term under dealkylation."
+    },
+    "xrm:0000203": {
+      "preferred_label": "S-dealkylation",
+      "spine": "chemical transformation",
+      "definition": "S-dealkylation: xenobiotic-metabolism term under dealkylation."
+    },
+    "xrm:0000204": {
+      "preferred_label": "C-dealkylation",
+      "spine": "chemical transformation",
+      "definition": "C-dealkylation: xenobiotic-metabolism term under dealkylation."
+    },
+    "xrm:0000205": {
+      "preferred_label": "N-demethylation",
+      "spine": "chemical transformation",
+      "definition": "N-dealkylation that releases formaldehyde."
+    },
+    "xrm:0000206": {
+      "preferred_label": "N-deethylation",
+      "spine": "chemical transformation",
+      "definition": "N-deethylation: xenobiotic-metabolism term under N-dealkylation."
+    },
+    "xrm:0000207": {
+      "preferred_label": "N-depropylation",
+      "spine": "chemical transformation",
+      "definition": "N-depropylation: xenobiotic-metabolism term under N-dealkylation."
+    },
+    "xrm:0000208": {
+      "preferred_label": "oxidative deamination",
+      "spine": "chemical transformation",
+      "definition": "\u03b1-Carbon hydroxylation of a primary (or suitable) amine releasing ammonia/amine and a carbonyl."
+    },
+    "xrm:0000209": {
+      "preferred_label": "O-demethylation",
+      "spine": "chemical transformation",
+      "definition": "O-demethylation: xenobiotic-metabolism term under O-dealkylation."
+    },
+    "xrm:0000210": {
+      "preferred_label": "oxidative dehalogenation",
+      "spine": "chemical transformation",
+      "definition": "Replacement of halogen by oxygen via oxidative pathways."
+    },
+    "xrm:0000211": {
+      "preferred_label": "O-deethylation",
+      "spine": "chemical transformation",
+      "definition": "O-deethylation: xenobiotic-metabolism term under O-dealkylation."
+    },
+    "xrm:0000212": {
+      "preferred_label": "aromatic O-dealkylation",
+      "spine": "chemical transformation",
+      "definition": "Cleavage of an aryl\u2013O\u2013alkyl ether (e.g. anisole \u2192 phenol)."
+    },
+    "xrm:0000213": {
+      "preferred_label": "aliphatic O-dealkylation",
+      "spine": "chemical transformation",
+      "definition": "aliphatic O-dealkylation: xenobiotic-metabolism term under O-dealkylation."
+    },
+    "xrm:0000214": {
+      "preferred_label": "oxidative defluorination",
+      "spine": "chemical transformation",
+      "definition": "oxidative defluorination: xenobiotic-metabolism term under oxidative dehalogenation."
+    },
+    "xrm:0000215": {
+      "preferred_label": "oxidative dechlorination",
+      "spine": "chemical transformation",
+      "definition": "oxidative dechlorination: xenobiotic-metabolism term under oxidative dehalogenation."
+    },
+    "xrm:0000216": {
+      "preferred_label": "oxidative debromination",
+      "spine": "chemical transformation",
+      "definition": "oxidative debromination: xenobiotic-metabolism term under oxidative dehalogenation."
+    },
+    "xrm:0000300": {
+      "preferred_label": "quinone formation",
+      "spine": "metabolism phase",
+      "definition": "Formation of a quinone species by metabolic oxidation (quinone, quinone-imine, quinone-methide, or imine-methide), in one or two metabolic steps. From the quinone-formation and Metabolic Forest papers; under dehydrogenation in the Forest-ma"
+    },
+    "xrm:0000301": {
+      "preferred_label": "ortho-quinone formation",
+      "spine": "metabolism phase",
+      "definition": "ortho-quinone formation: xenobiotic-metabolism term under quinone formation."
+    },
+    "xrm:0000302": {
+      "preferred_label": "para-quinone formation",
+      "spine": "metabolism phase",
+      "definition": "para-quinone formation: xenobiotic-metabolism term under quinone formation."
+    },
+    "xrm:0000303": {
+      "preferred_label": "quinone-imine formation",
+      "spine": "metabolism phase",
+      "definition": "quinone-imine formation: xenobiotic-metabolism term under quinone formation."
+    },
+    "xrm:0000304": {
+      "preferred_label": "quinone-methide formation",
+      "spine": "metabolism phase",
+      "definition": "quinone-methide formation: xenobiotic-metabolism term under quinone formation."
+    },
+    "xrm:0000305": {
+      "preferred_label": "iminium ion formation",
+      "spine": "chemical transformation",
+      "definition": "iminium ion formation: xenobiotic-metabolism term under dehydrogenation."
+    },
+    "xrm:0000306": {
+      "preferred_label": "imine-methide formation",
+      "spine": "metabolism phase",
+      "definition": "Formation of an imine-methide quinoid species (quinone-formation paper subtype alongside quinone, quinone-imine, and quinone-methide)."
+    },
+    "xrm:0000307": {
+      "preferred_label": "one-step quinone formation",
+      "spine": "metabolism phase",
+      "definition": "Direct dehydrogenation of the parent to a quinone species without a prior hydroxylation intermediate (quinone-formation / Rainbow papers)."
+    },
+    "xrm:0000308": {
+      "preferred_label": "two-step quinone formation",
+      "spine": "metabolism phase",
+      "definition": "Quinone species formed after an intermediate hydroxylation (or related) step followed by dehydrogenation (quinone-formation / Metabolic Forest papers)."
+    },
+    "xrm:0000310": {
+      "preferred_label": "alcohol oxidation",
+      "spine": "chemical transformation",
+      "definition": "alcohol oxidation: xenobiotic-metabolism term under dehydrogenation, carbon oxidation."
+    },
+    "xrm:0000311": {
+      "preferred_label": "primary alcohol oxidation",
+      "spine": "chemical transformation",
+      "definition": "Oxidation of a primary alcohol toward aldehyde (and often further to acid)."
+    },
+    "xrm:0000312": {
+      "preferred_label": "secondary alcohol oxidation",
+      "spine": "chemical transformation",
+      "definition": "Oxidation of a secondary alcohol to a ketone."
+    },
+    "xrm:0000313": {
+      "preferred_label": "aldehyde oxidation",
+      "spine": "chemical transformation",
+      "definition": "aldehyde oxidation: xenobiotic-metabolism term under carbon oxidation."
+    },
+    "xrm:0000314": {
+      "preferred_label": "alkene formation",
+      "spine": "chemical transformation",
+      "definition": "alkene formation: xenobiotic-metabolism term under dehydrogenation."
+    },
+    "xrm:0000315": {
+      "preferred_label": "aromatization",
+      "spine": "chemical transformation",
+      "definition": "Formation or restoration of an aromatic system."
+    },
+    "xrm:0000316": {
+      "preferred_label": "single- to double-bond dehydrogenation",
+      "spine": "chemical transformation",
+      "definition": "Dehydrogenation that converts a single bond into a double bond (Rainbow Table 1)."
+    },
+    "xrm:0000317": {
+      "preferred_label": "double- to triple-bond dehydrogenation",
+      "spine": "chemical transformation",
+      "definition": "Dehydrogenation that converts a double bond into a triple bond (Rainbow Table 1)."
+    },
+    "xrm:0000400": {
+      "preferred_label": "epoxide opening",
+      "spine": "chemical transformation",
+      "definition": "epoxide opening: xenobiotic-metabolism term under hydrolysis."
+    },
+    "xrm:0000401": {
+      "preferred_label": "ester hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "ester hydrolysis: xenobiotic-metabolism term under hydrolysis."
+    },
+    "xrm:0000402": {
+      "preferred_label": "amide hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "amide hydrolysis: xenobiotic-metabolism term under hydrolysis."
+    },
+    "xrm:0000403": {
+      "preferred_label": "lactone hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "lactone hydrolysis: xenobiotic-metabolism term under ester hydrolysis."
+    },
+    "xrm:0000404": {
+      "preferred_label": "lactam hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "lactam hydrolysis: xenobiotic-metabolism term under amide hydrolysis."
+    },
+    "xrm:0000405": {
+      "preferred_label": "carbamate hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "carbamate hydrolysis: xenobiotic-metabolism term under hydrolysis."
+    },
+    "xrm:0000406": {
+      "preferred_label": "urea hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "urea hydrolysis: xenobiotic-metabolism term under hydrolysis."
+    },
+    "xrm:0000407": {
+      "preferred_label": "ether cleavage",
+      "spine": "chemical transformation",
+      "definition": "Hydrolytic or solvolytic cleavage of ethers (distinct from oxidative O-dealkylation)."
+    },
+    "xrm:0000408": {
+      "preferred_label": "ether hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from oxidative O-dealkylation)."
+    },
+    "xrm:0000409": {
+      "preferred_label": "cyanide hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "Hydrolysis at a cyanide/nitrile center (Rainbow Table 1 hydrolysis type)."
+    },
+    "xrm:0000410": {
+      "preferred_label": "dephosphorylation",
+      "spine": "chemical transformation",
+      "definition": "dephosphorylation: xenobiotic-metabolism term under hydrolysis."
+    },
+    "xrm:0000411": {
+      "preferred_label": "nitrile hydrolysis",
+      "spine": "chemical transformation",
+      "definition": "Hydrolysis of a nitrile / cyanide group."
+    },
+    "xrm:0000412": {
+      "preferred_label": "azo cleavage",
+      "spine": "chemical transformation",
+      "definition": "azo cleavage: xenobiotic-metabolism term under hydrolysis, reduction."
+    },
+    "xrm:0000500": {
+      "preferred_label": "hydrogenation",
+      "spine": "chemical transformation",
+      "definition": "hydrogenation: xenobiotic-metabolism term under reduction."
+    },
+    "xrm:0000501": {
+      "preferred_label": "alkene hydrogenation",
+      "spine": "chemical transformation",
+      "definition": "alkene hydrogenation: xenobiotic-metabolism term under hydrogenation."
+    },
+    "xrm:0000502": {
+      "preferred_label": "alkyne hydrogenation",
+      "spine": "chemical transformation",
+      "definition": "alkyne hydrogenation: xenobiotic-metabolism term under hydrogenation."
+    },
+    "xrm:0000510": {
+      "preferred_label": "nitrogen reduction",
+      "spine": "chemical transformation",
+      "definition": "nitrogen reduction: xenobiotic-metabolism term under reduction."
+    },
+    "xrm:0000511": {
+      "preferred_label": "nitro reduction",
+      "spine": "chemical transformation",
+      "definition": "Reduction of a nitro group toward nitroso, hydroxylamine, and/or amine."
+    },
+    "xrm:0000512": {
+      "preferred_label": "nitro to amine reduction",
+      "spine": "chemical transformation",
+      "definition": "nitro to amine reduction: xenobiotic-metabolism term under nitro reduction."
+    },
+    "xrm:0000513": {
+      "preferred_label": "nitroaromatic reduction",
+      "spine": "chemical transformation",
+      "definition": "nitroaromatic reduction: xenobiotic-metabolism term under nitro reduction."
+    },
+    "xrm:0000514": {
+      "preferred_label": "azo reduction",
+      "spine": "chemical transformation",
+      "definition": "azo reduction: xenobiotic-metabolism term under nitrogen reduction."
+    },
+    "xrm:0000515": {
+      "preferred_label": "N-oxide reduction",
+      "spine": "chemical transformation",
+      "definition": "N-oxide reduction: xenobiotic-metabolism term under nitrogen reduction."
+    },
+    "xrm:0000516": {
+      "preferred_label": "oxime reduction",
+      "spine": "chemical transformation",
+      "definition": "oxime reduction: xenobiotic-metabolism term under nitrogen reduction."
+    },
+    "xrm:0000520": {
+      "preferred_label": "oxygen reduction",
+      "spine": "chemical transformation",
+      "definition": "oxygen reduction: xenobiotic-metabolism term under reduction."
+    },
+    "xrm:0000521": {
+      "preferred_label": "ketone reduction",
+      "spine": "chemical transformation",
+      "definition": "ketone reduction: xenobiotic-metabolism term under oxygen reduction."
+    },
+    "xrm:0000522": {
+      "preferred_label": "aldehyde reduction",
+      "spine": "chemical transformation",
+      "definition": "aldehyde reduction: xenobiotic-metabolism term under oxygen reduction."
+    },
+    "xrm:0000523": {
+      "preferred_label": "quinone reduction",
+      "spine": "chemical transformation",
+      "definition": "quinone reduction: xenobiotic-metabolism term under oxygen reduction, reduction."
+    },
+    "xrm:0000524": {
+      "preferred_label": "carbonyl reduction",
+      "spine": "chemical transformation",
+      "definition": "Reduction of a carbonyl to an alcohol (Rainbow Table 1 reduction type)."
+    },
+    "xrm:0000530": {
+      "preferred_label": "sulfur reduction",
+      "spine": "chemical transformation",
+      "definition": "sulfur reduction: xenobiotic-metabolism term under reduction."
+    },
+    "xrm:0000531": {
+      "preferred_label": "sulfoxide reduction",
+      "spine": "chemical transformation",
+      "definition": "sulfoxide reduction: xenobiotic-metabolism term under sulfur reduction."
+    },
+    "xrm:0000532": {
+      "preferred_label": "disulfide reduction",
+      "spine": "chemical transformation",
+      "definition": "disulfide reduction: xenobiotic-metabolism term under sulfur reduction."
+    },
+    "xrm:0000533": {
+      "preferred_label": "sulfo reduction",
+      "spine": "chemical transformation",
+      "definition": "Reduction of a sulfo / sulfoxide center (Rainbow Table 1 reduction type)."
+    },
+    "xrm:0000540": {
+      "preferred_label": "reductive dehalogenation",
+      "spine": "chemical transformation",
+      "definition": "reductive dehalogenation: xenobiotic-metabolism term under reduction."
+    },
+    "xrm:0000541": {
+      "preferred_label": "reductive defluorination",
+      "spine": "chemical transformation",
+      "definition": "reductive defluorination: xenobiotic-metabolism term under reductive dehalogenation."
+    },
+    "xrm:0000542": {
+      "preferred_label": "reductive dechlorination",
+      "spine": "chemical transformation",
+      "definition": "reductive dechlorination: xenobiotic-metabolism term under reductive dehalogenation."
+    },
+    "xrm:0000550": {
+      "preferred_label": "dehydration",
+      "spine": "chemical transformation",
+      "definition": "Loss of water (often accompanying reductive or elimination paths)."
+    },
+    "xrm:0001000": {
+      "preferred_label": "glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "glucuronidation: xenobiotic-metabolism term under phase II, phase II conjugation family."
+    },
+    "xrm:0001001": {
+      "preferred_label": "O-glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "O-glucuronidation: xenobiotic-metabolism term under glucuronidation."
+    },
+    "xrm:0001002": {
+      "preferred_label": "phenolic glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "phenolic glucuronidation: xenobiotic-metabolism term under O-glucuronidation."
+    },
+    "xrm:0001003": {
+      "preferred_label": "alcoholic glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "alcoholic glucuronidation: xenobiotic-metabolism term under O-glucuronidation."
+    },
+    "xrm:0001004": {
+      "preferred_label": "acyl glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "Glucuronidation of a carboxylic acid to an acyl glucuronide (often reactive)."
+    },
+    "xrm:0001005": {
+      "preferred_label": "N-glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "N-glucuronidation: xenobiotic-metabolism term under glucuronidation."
+    },
+    "xrm:0001006": {
+      "preferred_label": "quaternary N-glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "quaternary N-glucuronidation: xenobiotic-metabolism term under N-glucuronidation."
+    },
+    "xrm:0001007": {
+      "preferred_label": "S-glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "S-glucuronidation: xenobiotic-metabolism term under glucuronidation."
+    },
+    "xrm:0001008": {
+      "preferred_label": "C-glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "C-glucuronidation: xenobiotic-metabolism term under glucuronidation."
+    },
+    "xrm:0001009": {
+      "preferred_label": "carbamoyl glucuronidation",
+      "spine": "metabolism phase",
+      "definition": "carbamoyl glucuronidation: xenobiotic-metabolism term under glucuronidation."
+    },
+    "xrm:0001010": {
+      "preferred_label": "sulfation",
+      "spine": "metabolism phase",
+      "definition": "sulfation: xenobiotic-metabolism term under phase II, phase II conjugation family."
+    },
+    "xrm:0001011": {
+      "preferred_label": "O-sulfation",
+      "spine": "metabolism phase",
+      "definition": "O-sulfation: xenobiotic-metabolism term under sulfation."
+    },
+    "xrm:0001012": {
+      "preferred_label": "phenolic sulfation",
+      "spine": "metabolism phase",
+      "definition": "phenolic sulfation: xenobiotic-metabolism term under O-sulfation."
+    },
+    "xrm:0001013": {
+      "preferred_label": "alcoholic sulfation",
+      "spine": "metabolism phase",
+      "definition": "alcoholic sulfation: xenobiotic-metabolism term under O-sulfation."
+    },
+    "xrm:0001014": {
+      "preferred_label": "N-sulfation",
+      "spine": "metabolism phase",
+      "definition": "N-sulfation: xenobiotic-metabolism term under sulfation."
+    },
+    "xrm:0001020": {
+      "preferred_label": "acetylation",
+      "spine": "metabolism phase",
+      "definition": "acetylation: xenobiotic-metabolism term under phase II, phase II conjugation family."
+    },
+    "xrm:0001021": {
+      "preferred_label": "N-acetylation",
+      "spine": "metabolism phase",
+      "definition": "N-acetylation: xenobiotic-metabolism term under acetylation."
+    },
+    "xrm:0001022": {
+      "preferred_label": "O-acetylation",
+      "spine": "metabolism phase",
+      "definition": "O-acetylation: xenobiotic-metabolism term under acetylation."
+    },
+    "xrm:0001023": {
+      "preferred_label": "deacetylation",
+      "spine": "metabolism phase",
+      "definition": "Hydrolytic removal of an acetyl group (often esterase/amidase)."
+    },
+    "xrm:0001030": {
+      "preferred_label": "glutathionation",
+      "spine": "metabolism phase",
+      "definition": "glutathionation: xenobiotic-metabolism term under phase II, phase II conjugation family."
+    },
+    "xrm:0001031": {
+      "preferred_label": "Michael glutathionation",
+      "spine": "metabolism phase",
+      "definition": "Glutathione addition at a Michael acceptor."
+    },
+    "xrm:0001032": {
+      "preferred_label": "epoxide glutathionation",
+      "spine": "metabolism phase",
+      "definition": "epoxide glutathionation: xenobiotic-metabolism term under glutathionation."
+    },
+    "xrm:0001033": {
+      "preferred_label": "halide displacement glutathionation",
+      "spine": "metabolism phase",
+      "definition": "halide displacement glutathionation: xenobiotic-metabolism term under glutathionation."
+    },
+    "xrm:0001034": {
+      "preferred_label": "isocyanate glutathionation",
+      "spine": "metabolism phase",
+      "definition": "isocyanate glutathionation: xenobiotic-metabolism term under glutathionation."
+    },
+    "xrm:0001035": {
+      "preferred_label": "aziridine glutathionation",
+      "spine": "metabolism phase",
+      "definition": "aziridine glutathionation: xenobiotic-metabolism term under glutathionation."
+    },
+    "xrm:0001036": {
+      "preferred_label": "quinone glutathionation",
+      "spine": "metabolism phase",
+      "definition": "quinone glutathionation: xenobiotic-metabolism term under glutathionation."
+    },
+    "xrm:0001037": {
+      "preferred_label": "mercapturic acid formation",
+      "spine": "metabolism phase",
+      "definition": "Downstream processing of GSH conjugates to N-acetylcysteine (mercapturate) adducts."
+    },
+    "xrm:0001040": {
+      "preferred_label": "methylation",
+      "spine": "metabolism phase",
+      "definition": "methylation: xenobiotic-metabolism term under phase II, phase II conjugation family."
+    },
+    "xrm:0001041": {
+      "preferred_label": "O-methylation",
+      "spine": "metabolism phase",
+      "definition": "O-methylation: xenobiotic-metabolism term under methylation."
+    },
+    "xrm:0001042": {
+      "preferred_label": "N-methylation",
+      "spine": "metabolism phase",
+      "definition": "N-methylation: xenobiotic-metabolism term under methylation."
+    },
+    "xrm:0001043": {
+      "preferred_label": "S-methylation",
+      "spine": "metabolism phase",
+      "definition": "S-methylation: xenobiotic-metabolism term under methylation."
+    },
+    "xrm:0001050": {
+      "preferred_label": "amino acid conjugation",
+      "spine": "metabolism phase",
+      "definition": "amino acid conjugation: xenobiotic-metabolism term under phase II, phase II conjugation family."
+    },
+    "xrm:0001051": {
+      "preferred_label": "glycine conjugation",
+      "spine": "metabolism phase",
+      "definition": "glycine conjugation: xenobiotic-metabolism term under amino acid conjugation, phase II conjugation family, phase II."
+    },
+    "xrm:0001052": {
+      "preferred_label": "glutamine conjugation",
+      "spine": "metabolism phase",
+      "definition": "glutamine conjugation: xenobiotic-metabolism term under amino acid conjugation."
+    },
+    "xrm:0001053": {
+      "preferred_label": "taurine conjugation",
+      "spine": "metabolism phase",
+      "definition": "taurine conjugation: xenobiotic-metabolism term under amino acid conjugation, phase II conjugation family, phase II."
+    },
+    "xrm:0001054": {
+      "preferred_label": "serine conjugation",
+      "spine": "metabolism phase",
+      "definition": "serine conjugation: xenobiotic-metabolism term under amino acid conjugation."
+    },
+    "xrm:0001060": {
+      "preferred_label": "glycosylation",
+      "spine": "metabolism phase",
+      "definition": "Conjugation with sugars other than glucuronic acid."
+    },
+    "xrm:0001061": {
+      "preferred_label": "CoA conjugation",
+      "spine": "metabolism phase",
+      "definition": "Activation of carboxylic acids as CoA thioesters (often preceding amino acid conjugation)."
+    },
+    "xrm:0002000": {
+      "preferred_label": "tautomerization",
+      "spine": "chemical transformation",
+      "definition": "Tautomer interconversion; often peripheral to labeled metabolism."
+    },
+    "xrm:0002001": {
+      "preferred_label": "keto\u2013enol tautomerization",
+      "spine": "chemical transformation",
+      "definition": "keto\u2013enol tautomerization: xenobiotic-metabolism term under tautomerization."
+    },
+    "xrm:0002002": {
+      "preferred_label": "imine\u2013enamine tautomerization",
+      "spine": "chemical transformation",
+      "definition": "imine\u2013enamine tautomerization: xenobiotic-metabolism term under tautomerization."
+    },
+    "xrm:0002003": {
+      "preferred_label": "isomerization",
+      "spine": "chemical transformation",
+      "definition": "Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; Metabolic Forest treats related rearrangements separately from the five Phase I classes)."
+    },
+    "xrm:0002004": {
+      "preferred_label": "rearrangement",
+      "spine": "chemical transformation",
+      "definition": "Skeletal or substituent rearrangement in a metabolic pathway (Rainbow excluded remainder)."
+    },
+    "xrm:0002005": {
+      "preferred_label": "deacylation",
+      "spine": "metabolism phase",
+      "definition": "Removal of an acyl group (Rainbow excluded phase I remainder; related to hydrolysis/deacetylation)."
+    },
+    "xrm:0002006": {
+      "preferred_label": "denitrogenation",
+      "spine": "metabolism phase",
+      "definition": "Metabolic loss of nitrogen from the scaffold (Rainbow excluded phase I remainder)."
+    },
+    "xrm:0002007": {
+      "preferred_label": "decarbonylation",
+      "spine": "metabolism phase",
+      "definition": "Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder)."
+    },
+    "xrm:0003000": {
+      "preferred_label": "bioactivation",
+      "spine": "medchem liability",
+      "definition": "Role facet: formation of a more reactive/toxic metabolite."
+    },
+    "xrm:0003001": {
+      "preferred_label": "detoxication",
+      "spine": "medchem liability",
+      "definition": "Role facet: conversion toward less reactive, more excretable products."
+    },
+    "xrm:0003002": {
+      "preferred_label": "reactive metabolite formation",
+      "spine": "medchem liability",
+      "definition": "reactive metabolite formation: xenobiotic-metabolism term under bioactivation."
+    },
+    "xrm:0004000": {
+      "preferred_label": "process facet",
+      "spine": "chemical transformation",
+      "definition": "Cross-cutting process-mechanism facets (NIH shift, ipso, carbinolamine cleavage, acyl migration, \u2026). Orthogonal to reaction-type, Forest-map, and impact spines."
+    },
+    "xrm:0004001": {
+      "preferred_label": "dearomatization",
+      "spine": "chemical transformation",
+      "definition": "Loss of aromatic character (arene oxide, quinone, thiophene S-oxide, cis-dihydrodiol, etc.)."
+    },
+    "xrm:0004002": {
+      "preferred_label": "rearomatization",
+      "spine": "chemical transformation",
+      "definition": "Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol formation)."
+    },
+    "xrm:0004003": {
+      "preferred_label": "NIH shift",
+      "spine": "chemical transformation",
+      "definition": "1,2-Migration of H/halogen/substituent during aromatic hydroxylation via arene oxide."
+    },
+    "xrm:0004004": {
+      "preferred_label": "ipso substitution",
+      "spine": "chemical transformation",
+      "definition": "Substitution at a substituted aromatic carbon (ipso), often displacing alkyl/halogen/alkoxy."
+    },
+    "xrm:0004005": {
+      "preferred_label": "arene oxide rearrangement",
+      "spine": "chemical transformation",
+      "definition": "arene oxide rearrangement: xenobiotic-metabolism term under process facet, arene oxide pathway."
+    },
+    "xrm:0004006": {
+      "preferred_label": "carbinolamine cleavage",
+      "spine": "chemical transformation",
+      "definition": "Spontaneous collapse of an \u03b1-hydroxy amine to amine + carbonyl; mechanism shared by N-dealkylation and oxidative deamination."
+    },
+    "xrm:0004007": {
+      "preferred_label": "hemiacetal cleavage",
+      "spine": "chemical transformation",
+      "definition": "hemiacetal cleavage: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004008": {
+      "preferred_label": "ring opening",
+      "spine": "chemical transformation",
+      "definition": "ring opening: xenobiotic-metabolism term under process facet, chemical transformation."
+    },
+    "xrm:0004009": {
+      "preferred_label": "ring expansion",
+      "spine": "chemical transformation",
+      "definition": "ring expansion: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004010": {
+      "preferred_label": "ring contraction",
+      "spine": "chemical transformation",
+      "definition": "ring contraction: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004011": {
+      "preferred_label": "cis-dihydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Addition of two hydroxyls across an aromatic bond (often dioxygenase); a dearomatizing path."
+    },
+    "xrm:0004012": {
+      "preferred_label": "hydration",
+      "spine": "chemical transformation",
+      "definition": "hydration: xenobiotic-metabolism term under process facet, hydrolysis, chemical transformation."
+    },
+    "xrm:0004013": {
+      "preferred_label": "hydration of carbonyl",
+      "spine": "chemical transformation",
+      "definition": "hydration of carbonyl: xenobiotic-metabolism term under hydration."
+    },
+    "xrm:0004014": {
+      "preferred_label": "conjugate addition",
+      "spine": "chemical transformation",
+      "definition": "conjugate addition: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004015": {
+      "preferred_label": "nucleophilic aromatic substitution",
+      "spine": "chemical transformation",
+      "definition": "nucleophilic aromatic substitution: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004016": {
+      "preferred_label": "radical recombination metabolite",
+      "spine": "chemical transformation",
+      "definition": "radical recombination metabolite: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004017": {
+      "preferred_label": "acyl migration",
+      "spine": "chemical transformation",
+      "definition": "Intramolecular migration of an acyl group (notable for acyl glucuronides)."
+    },
+    "xrm:0004018": {
+      "preferred_label": "transacylation",
+      "spine": "chemical transformation",
+      "definition": "transacylation: xenobiotic-metabolism term under process facet."
+    },
+    "xrm:0004019": {
+      "preferred_label": "radical formation",
+      "spine": "chemical transformation",
+      "definition": "Formation of a radical metabolite intermediate (Rainbow excluded phase I remainder)."
+    },
+    "xrm:1000000": {
+      "preferred_label": "metabolism phase",
+      "spine": "metabolism phase",
+      "definition": "Phase framing for xenobiotic biotransformation (I / II / III)."
+    },
+    "xrm:1000100": {
+      "preferred_label": "sequential metabolism",
+      "spine": "metabolism phase",
+      "definition": "Multi-step metabolic sequence rather than a single transformation."
+    },
+    "xrm:1000101": {
+      "preferred_label": "intermediate metabolite formation",
+      "spine": "metabolism phase",
+      "definition": "Formation of a non-terminal metabolic intermediate."
+    },
+    "xrm:1000102": {
+      "preferred_label": "first-pass metabolism",
+      "spine": "metabolism phase",
+      "definition": "Pathway role associated with first-pass metabolic clearance."
+    },
+    "xrm:1100000": {
+      "preferred_label": "chemical transformation",
+      "spine": "chemical transformation",
+      "definition": "Enzyme-independent chemical edit class (oxidation, reduction, \u2026)."
+    },
+    "xrm:1100013": {
+      "preferred_label": "deamination",
+      "spine": "chemical transformation",
+      "definition": "Removal of an amino group."
+    },
+    "xrm:1100014": {
+      "preferred_label": "dehalogenation",
+      "spine": "chemical transformation",
+      "definition": "Removal of a halogen atom."
+    },
+    "xrm:1100016": {
+      "preferred_label": "ring oxidation",
+      "spine": "chemical transformation",
+      "definition": "Oxidation on a ring framework."
+    },
+    "xrm:1200000": {
+      "preferred_label": "phase I reaction family",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow-anchored Phase I reaction classes and detailed types."
+    },
+    "xrm:1200100": {
+      "preferred_label": "aromatic epoxidation",
+      "spine": "phase I reaction family",
+      "definition": "Epoxidation on an aromatic system."
+    },
+    "xrm:1200101": {
+      "preferred_label": "aliphatic epoxidation",
+      "spine": "phase I reaction family",
+      "definition": "Epoxidation of an aliphatic alkene."
+    },
+    "xrm:1200102": {
+      "preferred_label": "N-oxidation",
+      "spine": "phase I reaction family",
+      "definition": "Oxidation at nitrogen."
+    },
+    "xrm:1200103": {
+      "preferred_label": "S-oxidation",
+      "spine": "phase I reaction family",
+      "definition": "Oxidation at sulfur."
+    },
+    "xrm:1200104": {
+      "preferred_label": "oxidative deamination class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow UO class member: oxidative deamination."
+    },
+    "xrm:1200105": {
+      "preferred_label": "alcohol dehydrogenation",
+      "spine": "phase I reaction family",
+      "definition": "Dehydrogenation of an alcohol to carbonyl."
+    },
+    "xrm:1200106": {
+      "preferred_label": "amine dehydrogenation",
+      "spine": "phase I reaction family",
+      "definition": "Dehydrogenation at an amine (iminium-forming path)."
+    },
+    "xrm:1200107": {
+      "preferred_label": "ester hydrolysis class",
+      "spine": "phase I reaction family",
+      "definition": "Hydrolytic cleavage of an ester."
+    },
+    "xrm:1200108": {
+      "preferred_label": "amide hydrolysis class",
+      "spine": "phase I reaction family",
+      "definition": "Hydrolytic cleavage of an amide."
+    },
+    "xrm:1200109": {
+      "preferred_label": "carbonyl reduction class",
+      "spine": "phase I reaction family",
+      "definition": "Reduction of a carbonyl to alcohol."
+    },
+    "xrm:1200110": {
+      "preferred_label": "nitro reduction class",
+      "spine": "phase I reaction family",
+      "definition": "Reduction of a nitro group."
+    },
+    "xrm:1200111": {
+      "preferred_label": "reductive dehalogenation class",
+      "spine": "phase I reaction family",
+      "definition": "Reductive removal of halogen."
+    },
+    "xrm:1200112": {
+      "preferred_label": "hydrogenation class",
+      "spine": "phase I reaction family",
+      "definition": "Addition of hydrogen across unsaturation."
+    },
+    "xrm:1200113": {
+      "preferred_label": "aldehyde formation class",
+      "spine": "phase I reaction family",
+      "definition": "Phase I path that forms an aldehyde."
+    },
+    "xrm:1200200": {
+      "preferred_label": "aromatic hydroxylation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow SO: aromatic hydroxylation class."
+    },
+    "xrm:1200201": {
+      "preferred_label": "aliphatic hydroxylation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow SO: aliphatic hydroxylation class."
+    },
+    "xrm:1200202": {
+      "preferred_label": "N-dealkylation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow UO: N-dealkylation class."
+    },
+    "xrm:1200203": {
+      "preferred_label": "O-dealkylation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow UO: O-dealkylation class."
+    },
+    "xrm:1200204": {
+      "preferred_label": "S-dealkylation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow UO: S-dealkylation class."
+    },
+    "xrm:1200205": {
+      "preferred_label": "C-dealkylation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow UO: C-dealkylation class."
+    },
+    "xrm:1200206": {
+      "preferred_label": "oxidative dehalogenation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow UO: oxidative dehalogenation class."
+    },
+    "xrm:1200207": {
+      "preferred_label": "quinone formation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow DH-adjacent / Forest QF: quinone formation class."
+    },
+    "xrm:1200208": {
+      "preferred_label": "iminium formation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow DH: iminium formation class."
+    },
+    "xrm:1200209": {
+      "preferred_label": "single-to-double bond dehydrogenation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow DH: single\u2192double bond class."
+    },
+    "xrm:1200210": {
+      "preferred_label": "double-to-triple bond dehydrogenation class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow DH: double\u2192triple bond class."
+    },
+    "xrm:1200211": {
+      "preferred_label": "ether hydrolysis class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow HD: ether hydrolysis class."
+    },
+    "xrm:1200212": {
+      "preferred_label": "cyanide hydrolysis class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow HD: cyanide hydrolysis class."
+    },
+    "xrm:1200213": {
+      "preferred_label": "sulfo reduction class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow RD: sulfo reduction class."
+    },
+    "xrm:1200214": {
+      "preferred_label": "oxygen reduction class",
+      "spine": "phase I reaction family",
+      "definition": "Rainbow RD: oxygen/carbonyl reduction class."
+    },
+    "xrm:1300000": {
+      "preferred_label": "phase II conjugation family",
+      "spine": "phase II conjugation family",
+      "definition": "Conjugation families typical of Phase II xenobiotic metabolism."
+    },
+    "xrm:1300010": {
+      "preferred_label": "cysteine conjugation",
+      "spine": "phase II conjugation family",
+      "definition": "Phase II conjugation family: cysteine conjugation."
+    },
+    "xrm:1300011": {
+      "preferred_label": "N-acetylcysteine conjugation",
+      "spine": "phase II conjugation family",
+      "definition": "Phase II conjugation family: N-acetylcysteine conjugation."
+    },
+    "xrm:1300012": {
+      "preferred_label": "phosphorylation",
+      "spine": "phase II conjugation family",
+      "definition": "Phase II conjugation family: phosphorylation."
+    },
+    "xrm:1300100": {
+      "preferred_label": "O-glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Glucuronidation at oxygen."
+    },
+    "xrm:1300101": {
+      "preferred_label": "N-glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Glucuronidation at nitrogen."
+    },
+    "xrm:1300102": {
+      "preferred_label": "acyl glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Glucuronidation of a carboxylic acid."
+    },
+    "xrm:1300103": {
+      "preferred_label": "O-sulfation class",
+      "spine": "phase II conjugation family",
+      "definition": "Sulfation at oxygen."
+    },
+    "xrm:1300104": {
+      "preferred_label": "N-sulfation class",
+      "spine": "phase II conjugation family",
+      "definition": "Sulfation at nitrogen."
+    },
+    "xrm:1300105": {
+      "preferred_label": "GSH conjugation class",
+      "spine": "phase II conjugation family",
+      "definition": "Glutathione conjugation family."
+    },
+    "xrm:1300106": {
+      "preferred_label": "O-methylation class",
+      "spine": "phase II conjugation family",
+      "definition": "Methylation at oxygen."
+    },
+    "xrm:1300107": {
+      "preferred_label": "N-methylation class",
+      "spine": "phase II conjugation family",
+      "definition": "Methylation at nitrogen."
+    },
+    "xrm:1300108": {
+      "preferred_label": "S-methylation class",
+      "spine": "phase II conjugation family",
+      "definition": "Methylation at sulfur."
+    },
+    "xrm:1300109": {
+      "preferred_label": "N-acetylation class",
+      "spine": "phase II conjugation family",
+      "definition": "Acetylation at nitrogen."
+    },
+    "xrm:1300110": {
+      "preferred_label": "O-acetylation class",
+      "spine": "phase II conjugation family",
+      "definition": "Acetylation at oxygen."
+    },
+    "xrm:1300111": {
+      "preferred_label": "glycine conjugation class",
+      "spine": "phase II conjugation family",
+      "definition": "Amino-acid conjugation with glycine."
+    },
+    "xrm:1300112": {
+      "preferred_label": "taurine conjugation class",
+      "spine": "phase II conjugation family",
+      "definition": "Amino-acid conjugation with taurine."
+    },
+    "xrm:1300113": {
+      "preferred_label": "glutamine conjugation class",
+      "spine": "phase II conjugation family",
+      "definition": "Amino-acid conjugation with glutamine."
+    },
+    "xrm:1300114": {
+      "preferred_label": "phosphorylation conjugation",
+      "spine": "phase II conjugation family",
+      "definition": "Phase II-like phosphorylation of a xenobiotic."
+    },
+    "xrm:1300115": {
+      "preferred_label": "carbamoyl glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Carbamoyl glucuronide formation."
+    },
+    "xrm:1300116": {
+      "preferred_label": "quaternary N-glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Quaternary ammonium N-glucuronide formation."
+    },
+    "xrm:1300117": {
+      "preferred_label": "epoxide GSH conjugation",
+      "spine": "phase II conjugation family",
+      "definition": "GSH attack on an epoxide."
+    },
+    "xrm:1300118": {
+      "preferred_label": "Michael GSH conjugation",
+      "spine": "phase II conjugation family",
+      "definition": "GSH attack on a Michael acceptor."
+    },
+    "xrm:1300119": {
+      "preferred_label": "halide-displacement GSH conjugation",
+      "spine": "phase II conjugation family",
+      "definition": "GSH displacement of a halide."
+    },
+    "xrm:1300120": {
+      "preferred_label": "S-glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Phase II glucuronidation attaching through sulfur."
+    },
+    "xrm:1300121": {
+      "preferred_label": "C-glucuronidation class",
+      "spine": "phase II conjugation family",
+      "definition": "Phase II glucuronidation attaching through carbon."
+    },
+    "xrm:1400000": {
+      "preferred_label": "medchem liability",
+      "spine": "medchem liability",
+      "definition": "Medicinal-chemistry liability and design handles for a reaction."
+    },
+    "xrm:1400010": {
+      "preferred_label": "metabolic soft spot",
+      "spine": "medchem liability",
+      "definition": "Site or motif that is readily metabolized."
+    },
+    "xrm:1400011": {
+      "preferred_label": "clearance liability",
+      "spine": "medchem liability",
+      "definition": "Transformation that drives metabolic clearance."
+    },
+    "xrm:1400012": {
+      "preferred_label": "bioactivation",
+      "spine": "medchem liability",
+      "definition": "Formation of a more reactive or toxic species."
+    },
+    "xrm:1400013": {
+      "preferred_label": "detoxification",
+      "spine": "medchem liability",
+      "definition": "Transformation that reduces reactive/toxic liability."
+    },
+    "xrm:1400014": {
+      "preferred_label": "reactive metabolite",
+      "spine": "medchem liability",
+      "definition": "Product with electrophilic or trapping liability."
+    },
+    "xrm:1400015": {
+      "preferred_label": "stable metabolite",
+      "spine": "medchem liability",
+      "definition": "Product expected to be chemically stable."
+    },
+    "xrm:1400016": {
+      "preferred_label": "unstable intermediate",
+      "spine": "medchem liability",
+      "definition": "Transient intermediate along a metabolic path."
+    },
+    "xrm:1400017": {
+      "preferred_label": "masked liability",
+      "spine": "medchem liability",
+      "definition": "Liability revealed only after a preparatory step."
+    },
+    "xrm:1400018": {
+      "preferred_label": "metabolic blocking opportunity",
+      "spine": "medchem liability",
+      "definition": "Site where blocking could reduce metabolism."
+    },
+    "xrm:1400019": {
+      "preferred_label": "bioactivation risk",
+      "spine": "medchem liability",
+      "definition": "Elevated risk of bioactivation at this site/path."
+    },
+    "xrm:1400020": {
+      "preferred_label": "clearance pathway",
+      "spine": "medchem liability",
+      "definition": "Dominant clearance-oriented conjugation or oxidation path."
+    },
+    "xrm:1400021": {
+      "preferred_label": "polarity increasing",
+      "spine": "medchem liability",
+      "definition": "Transformation that increases polarity / solubility."
+    },
+    "xrm:1400022": {
+      "preferred_label": "aldehyde forming",
+      "spine": "medchem liability",
+      "definition": "Path that produces an aldehyde product or intermediate."
+    },
+    "xrm:1400030": {
+      "preferred_label": "forms reactive conjugate",
+      "spine": "medchem liability",
+      "definition": "Transformation yields or proceeds via a reactive conjugate (e.g. acyl glucuronide, GSH-trappable adduct precursor)."
+    },
+    "xrm:1400100": {
+      "preferred_label": "aromatic soft spot",
+      "spine": "medchem liability",
+      "definition": "Aromatic site that is a metabolic soft spot."
+    },
+    "xrm:1400101": {
+      "preferred_label": "benzylic soft spot",
+      "spine": "medchem liability",
+      "definition": "Benzylic metabolic soft spot."
+    },
+    "xrm:1400102": {
+      "preferred_label": "amine soft spot",
+      "spine": "medchem liability",
+      "definition": "Amine metabolic soft spot."
+    },
+    "xrm:1400103": {
+      "preferred_label": "ether soft spot",
+      "spine": "medchem liability",
+      "definition": "Ether metabolic soft spot (O-dealkylation risk)."
+    },
+    "xrm:1400104": {
+      "preferred_label": "thioether soft spot",
+      "spine": "medchem liability",
+      "definition": "Thioether metabolic soft spot."
+    },
+    "xrm:1400105": {
+      "preferred_label": "ester soft spot",
+      "spine": "medchem liability",
+      "definition": "Ester metabolic soft spot (hydrolysis risk)."
+    },
+    "xrm:1400106": {
+      "preferred_label": "amide soft spot",
+      "spine": "medchem liability",
+      "definition": "Amide metabolic soft spot."
+    },
+    "xrm:1400107": {
+      "preferred_label": "clearance hotspot",
+      "spine": "medchem liability",
+      "definition": "Site dominating metabolic clearance."
+    },
+    "xrm:1400108": {
+      "preferred_label": "bioactivation hotspot",
+      "spine": "medchem liability",
+      "definition": "Site associated with bioactivation risk."
+    },
+    "xrm:1400109": {
+      "preferred_label": "detoxification pathway",
+      "spine": "medchem liability",
+      "definition": "Pathway framed as detoxifying."
+    },
+    "xrm:1400110": {
+      "preferred_label": "GSH trapping opportunity",
+      "spine": "medchem liability",
+      "definition": "Site/path amenable to GSH trapping assays."
+    },
+    "xrm:1400111": {
+      "preferred_label": "metabolic blocking vector",
+      "spine": "medchem liability",
+      "definition": "Suggested vector for metabolic blocking."
+    },
+    "xrm:1400112": {
+      "preferred_label": "fluorine blocking",
+      "spine": "medchem liability",
+      "definition": "Fluorine substitution as a blocking strategy."
+    },
+    "xrm:1400113": {
+      "preferred_label": "methyl blocking",
+      "spine": "medchem liability",
+      "definition": "Methyl / alkyl blocking strategy."
+    },
+    "xrm:1400114": {
+      "preferred_label": "scaffold hop opportunity",
+      "spine": "medchem liability",
+      "definition": "Liability suggesting scaffold change."
+    },
+    "xrm:1400115": {
+      "preferred_label": "polarity decreasing",
+      "spine": "medchem liability",
+      "definition": "Transformation that decreases polarity."
+    },
+    "xrm:1400116": {
+      "preferred_label": "lipophilicity decreasing",
+      "spine": "medchem liability",
+      "definition": "Transformation that decreases lipophilicity."
+    },
+    "xrm:1400117": {
+      "preferred_label": "reactive intermediate risk",
+      "spine": "medchem liability",
+      "definition": "Risk of forming a reactive intermediate."
+    },
+    "xrm:1400118": {
+      "preferred_label": "idiosyncratic toxicity risk",
+      "spine": "medchem liability",
+      "definition": "Liability framed toward idiosyncratic toxicity."
+    },
+    "xrm:1400119": {
+      "preferred_label": "time-dependent inhibition risk",
+      "spine": "medchem liability",
+      "definition": "Liability framed toward TDI."
+    },
+    "xrm:1400120": {
+      "preferred_label": "quinone risk",
+      "spine": "medchem liability",
+      "definition": "Risk of quinone / quinone-imine formation."
+    },
+    "xrm:1400121": {
+      "preferred_label": "acyl glucuronide risk",
+      "spine": "medchem liability",
+      "definition": "Risk of reactive acyl glucuronide."
+    },
+    "xrm:1400122": {
+      "preferred_label": "aldehyde risk",
+      "spine": "medchem liability",
+      "definition": "Risk of aldehyde formation."
+    },
+    "xrm:1400123": {
+      "preferred_label": "iminium risk",
+      "spine": "medchem liability",
+      "definition": "Risk of iminium formation."
+    },
+    "xrm:1400124": {
+      "preferred_label": "epoxide risk",
+      "spine": "medchem liability",
+      "definition": "Risk of epoxide formation."
+    },
+    "xrm:1400125": {
+      "preferred_label": "stable circulating metabolite",
+      "spine": "medchem liability",
+      "definition": "Stable metabolite likely to circulate."
+    },
+    "xrm:1400126": {
+      "preferred_label": "active metabolite opportunity",
+      "spine": "medchem liability",
+      "definition": "Path that may yield an active metabolite."
+    },
+    "xrm:1400127": {
+      "preferred_label": "prodrug activation",
+      "spine": "medchem liability",
+      "definition": "Metabolic activation of a prodrug."
+    },
+    "xrm:1400128": {
+      "preferred_label": "metabolic switching risk",
+      "spine": "medchem liability",
+      "definition": "Blocking one site may switch metabolism elsewhere."
+    },
+    "xrm:1400129": {
+      "preferred_label": "species-difference risk",
+      "spine": "medchem liability",
+      "definition": "Liability sensitive to species differences."
+    },
+    "xrm:1500000": {
+      "preferred_label": "reactive metabolite family",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive or trapping-prone metabolite product families."
+    },
+    "xrm:1500010": {
+      "preferred_label": "quinone",
+      "spine": "reactive metabolite family",
+      "definition": "Quinone reactive metabolite."
+    },
+    "xrm:1500011": {
+      "preferred_label": "quinone imine",
+      "spine": "reactive metabolite family",
+      "definition": "Quinone-imine reactive metabolite."
+    },
+    "xrm:1500012": {
+      "preferred_label": "epoxide",
+      "spine": "reactive metabolite family",
+      "definition": "Epoxide reactive metabolite."
+    },
+    "xrm:1500013": {
+      "preferred_label": "aldehyde",
+      "spine": "reactive metabolite family",
+      "definition": "Aldehyde reactive metabolite."
+    },
+    "xrm:1500014": {
+      "preferred_label": "iminium",
+      "spine": "reactive metabolite family",
+      "definition": "Iminium reactive metabolite."
+    },
+    "xrm:1500015": {
+      "preferred_label": "acyl glucuronide",
+      "spine": "reactive metabolite family",
+      "definition": "Acyl glucuronide reactive conjugate."
+    },
+    "xrm:1500016": {
+      "preferred_label": "Michael acceptor",
+      "spine": "reactive metabolite family",
+      "definition": "Michael-acceptor electrophile."
+    },
+    "xrm:1500017": {
+      "preferred_label": "nitroso",
+      "spine": "reactive metabolite family",
+      "definition": "Nitroso reactive metabolite."
+    },
+    "xrm:1500018": {
+      "preferred_label": "hydroxylamine",
+      "spine": "reactive metabolite family",
+      "definition": "Hydroxylamine reactive metabolite."
+    },
+    "xrm:1500019": {
+      "preferred_label": "GSH-trappable metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Metabolite that forms a glutathione adduct."
+    },
+    "xrm:1500030": {
+      "preferred_label": "reactive conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Conjugate product class that is chemically reactive (acyl glucuronide, etc.)."
+    },
+    "xrm:1500031": {
+      "preferred_label": "stable conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Conjugate product class expected to be chemically stable."
+    },
+    "xrm:1500100": {
+      "preferred_label": "quinone-like reactive metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Broad class of quinoid reactive metabolites."
+    },
+    "xrm:1500101": {
+      "preferred_label": "ortho-quinone",
+      "spine": "reactive metabolite family",
+      "definition": "Ortho-quinone reactive metabolite."
+    },
+    "xrm:1500102": {
+      "preferred_label": "para-quinone",
+      "spine": "reactive metabolite family",
+      "definition": "Para-quinone reactive metabolite."
+    },
+    "xrm:1500103": {
+      "preferred_label": "quinone methide",
+      "spine": "reactive metabolite family",
+      "definition": "Quinone-methide reactive metabolite."
+    },
+    "xrm:1500104": {
+      "preferred_label": "imine methide",
+      "spine": "reactive metabolite family",
+      "definition": "Imine-methide reactive metabolite."
+    },
+    "xrm:1500105": {
+      "preferred_label": "arene oxide",
+      "spine": "reactive metabolite family",
+      "definition": "Arene oxide reactive intermediate."
+    },
+    "xrm:1500106": {
+      "preferred_label": "thiophene epoxide",
+      "spine": "reactive metabolite family",
+      "definition": "Thiophene S-oxide/epoxide-like reactive intermediate."
+    },
+    "xrm:1500107": {
+      "preferred_label": "acyl glucuronide reactive",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive acyl glucuronide."
+    },
+    "xrm:1500108": {
+      "preferred_label": "isocyanate",
+      "spine": "reactive metabolite family",
+      "definition": "Isocyanate reactive metabolite."
+    },
+    "xrm:1500109": {
+      "preferred_label": "ketene",
+      "spine": "reactive metabolite family",
+      "definition": "Ketene reactive metabolite."
+    },
+    "xrm:1500110": {
+      "preferred_label": "nitroso metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Nitroso metabolite class."
+    },
+    "xrm:1500111": {
+      "preferred_label": "hydroxylamine metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Hydroxylamine metabolite class."
+    },
+    "xrm:1500112": {
+      "preferred_label": "nitrene",
+      "spine": "reactive metabolite family",
+      "definition": "Nitrene reactive species."
+    },
+    "xrm:1500113": {
+      "preferred_label": "free radical metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Radical metabolite species."
+    },
+    "xrm:1500114": {
+      "preferred_label": "GSH adduct",
+      "spine": "reactive metabolite family",
+      "definition": "Glutathione adduct product class."
+    },
+    "xrm:1500115": {
+      "preferred_label": "mercapturic acid",
+      "spine": "reactive metabolite family",
+      "definition": "Mercapturic acid product class."
+    },
+    "xrm:1500116": {
+      "preferred_label": "glucuronide conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Glucuronide conjugate product class."
+    },
+    "xrm:1500117": {
+      "preferred_label": "sulfate conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfate conjugate product class."
+    },
+    "xrm:1500118": {
+      "preferred_label": "phenol metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Phenolic metabolite product class."
+    },
+    "xrm:1500119": {
+      "preferred_label": "catechol metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Catechol metabolite product class."
+    },
+    "xrm:1500120": {
+      "preferred_label": "alcohol metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Alcohol metabolite product class."
+    },
+    "xrm:1500121": {
+      "preferred_label": "carboxylic acid metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Carboxylic acid metabolite product class."
+    },
+    "xrm:1500122": {
+      "preferred_label": "N-oxide metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "N-oxide metabolite product class."
+    },
+    "xrm:1500123": {
+      "preferred_label": "sulfoxide metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfoxide metabolite product class."
+    },
+    "xrm:1500124": {
+      "preferred_label": "sulfone metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfone metabolite product class."
+    },
+    "xrm:1500125": {
+      "preferred_label": "imine metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Imine metabolite product class."
+    },
+    "xrm:1500126": {
+      "preferred_label": "carbinolamine intermediate",
+      "spine": "reactive metabolite family",
+      "definition": "Carbinolamine intermediate class."
+    },
+    "xrm:1500127": {
+      "preferred_label": "hemiacetal intermediate",
+      "spine": "reactive metabolite family",
+      "definition": "Hemiacetal intermediate class."
+    },
+    "xrm:1500128": {
+      "preferred_label": "epoxide metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Epoxide metabolite product class."
+    },
+    "xrm:1500129": {
+      "preferred_label": "aldehyde metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Aldehyde metabolite product class."
+    },
+    "xrm:1500130": {
+      "preferred_label": "iminium metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Iminium metabolite product class."
+    },
+    "xrm:1500131": {
+      "preferred_label": "Michael acceptor metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Michael-acceptor metabolite class."
+    },
+    "xrm:1500132": {
+      "preferred_label": "aziridine metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Aziridine reactive metabolite."
+    },
+    "xrm:1500133": {
+      "preferred_label": "sulfenic acid metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfenic acid intermediate/product."
+    },
+    "xrm:1500134": {
+      "preferred_label": "nitro anion radical",
+      "spine": "reactive metabolite family",
+      "definition": "Nitro anion radical intermediate."
+    },
+    "xrm:1500200": {
+      "preferred_label": "hydroquinone metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Hydroquinone product class."
+    },
+    "xrm:1500201": {
+      "preferred_label": "aminophenol metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Aminophenol product class."
+    },
+    "xrm:1500202": {
+      "preferred_label": "nitrosoarenes",
+      "spine": "reactive metabolite family",
+      "definition": "Nitrosoarene metabolite class."
+    },
+    "xrm:1500203": {
+      "preferred_label": "nitrenium ion",
+      "spine": "reactive metabolite family",
+      "definition": "Nitrenium reactive intermediate."
+    },
+    "xrm:1500204": {
+      "preferred_label": "carbocation intermediate",
+      "spine": "reactive metabolite family",
+      "definition": "Carbocation metabolic intermediate."
+    },
+    "xrm:1500205": {
+      "preferred_label": "benzylic radical",
+      "spine": "reactive metabolite family",
+      "definition": "Benzylic radical intermediate."
+    },
+    "xrm:1500206": {
+      "preferred_label": "thiyl radical",
+      "spine": "reactive metabolite family",
+      "definition": "Thiyl radical intermediate."
+    },
+    "xrm:1500207": {
+      "preferred_label": "sulfenic acid",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfenic acid intermediate/product."
+    },
+    "xrm:1500208": {
+      "preferred_label": "sulfinic acid metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfinic acid metabolite."
+    },
+    "xrm:1500209": {
+      "preferred_label": "sulfonic acid metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfonic acid metabolite."
+    },
+    "xrm:1500210": {
+      "preferred_label": "disulfide metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Disulfide metabolite product."
+    },
+    "xrm:1500211": {
+      "preferred_label": "lactam metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Lactam ring metabolite."
+    },
+    "xrm:1500212": {
+      "preferred_label": "lactone metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Lactone ring metabolite."
+    },
+    "xrm:1500213": {
+      "preferred_label": "carboxylic acid glucuronide",
+      "spine": "reactive metabolite family",
+      "definition": "Acyl-linked glucuronide of a carboxylic acid."
+    },
+    "xrm:1500214": {
+      "preferred_label": "ether glucuronide",
+      "spine": "reactive metabolite family",
+      "definition": "O-glucuronide of an alcohol/phenol."
+    },
+    "xrm:1500215": {
+      "preferred_label": "N-glucuronide",
+      "spine": "reactive metabolite family",
+      "definition": "N-linked glucuronide product."
+    },
+    "xrm:1500216": {
+      "preferred_label": "quaternary ammonium glucuronide",
+      "spine": "reactive metabolite family",
+      "definition": "Quaternary N-glucuronide product."
+    },
+    "xrm:1500217": {
+      "preferred_label": "sulfate ester metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Sulfate ester conjugate product."
+    },
+    "xrm:1500218": {
+      "preferred_label": "cysteine adduct",
+      "spine": "reactive metabolite family",
+      "definition": "Cysteine conjugate / adduct product."
+    },
+    "xrm:1500219": {
+      "preferred_label": "N-acetylcysteine adduct",
+      "spine": "reactive metabolite family",
+      "definition": "NAC / mercapturate-path adduct."
+    },
+    "xrm:1500220": {
+      "preferred_label": "glycine conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Glycine-conjugated metabolite."
+    },
+    "xrm:1500221": {
+      "preferred_label": "taurine conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Taurine-conjugated metabolite."
+    },
+    "xrm:1500222": {
+      "preferred_label": "CoA conjugate",
+      "spine": "reactive metabolite family",
+      "definition": "Coenzyme A conjugate intermediate/product."
+    },
+    "xrm:1500223": {
+      "preferred_label": "methylated metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Methyl-conjugated metabolite product."
+    },
+    "xrm:1500224": {
+      "preferred_label": "acetylated metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Acetyl-conjugated metabolite product."
+    },
+    "xrm:1500225": {
+      "preferred_label": "dealkylated amine",
+      "spine": "reactive metabolite family",
+      "definition": "Amine product after N-dealkylation."
+    },
+    "xrm:1500226": {
+      "preferred_label": "dealkylated phenol",
+      "spine": "reactive metabolite family",
+      "definition": "Phenol product after O-dealkylation."
+    },
+    "xrm:1500227": {
+      "preferred_label": "nor-metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "N- or O-dealkylated nor-metabolite."
+    },
+    "xrm:1500228": {
+      "preferred_label": "carboxylic acid from alcohol",
+      "spine": "reactive metabolite family",
+      "definition": "Carboxylic acid from alcohol oxidation cascade."
+    },
+    "xrm:1500229": {
+      "preferred_label": "ketone metabolite",
+      "spine": "reactive metabolite family",
+      "definition": "Ketone metabolite product class."
+    },
+    "xrm:1600000": {
+      "preferred_label": "site type",
+      "spine": "site type",
+      "definition": "Where on the molecule the transformation is localized."
+    },
+    "xrm:1600010": {
+      "preferred_label": "atom site",
+      "spine": "site type",
+      "definition": "Transformation localized to an atom."
+    },
+    "xrm:1600011": {
+      "preferred_label": "bond site",
+      "spine": "site type",
+      "definition": "Transformation localized to a bond."
+    },
+    "xrm:1600012": {
+      "preferred_label": "ring site",
+      "spine": "site type",
+      "definition": "Transformation localized to a ring."
+    },
+    "xrm:1600013": {
+      "preferred_label": "aromatic site",
+      "spine": "site type",
+      "definition": "Site on an aromatic system."
+    },
+    "xrm:1600014": {
+      "preferred_label": "benzylic site",
+      "spine": "site type",
+      "definition": "Benzylic carbon site."
+    },
+    "xrm:1600015": {
+      "preferred_label": "allylic site",
+      "spine": "site type",
+      "definition": "Allylic carbon site."
+    },
+    "xrm:1600016": {
+      "preferred_label": "heteroatom site",
+      "spine": "site type",
+      "definition": "Site at N/O/S/halogen heteroatom."
+    },
+    "xrm:1600017": {
+      "preferred_label": "alpha to heteroatom",
+      "spine": "site type",
+      "definition": "Carbon alpha to a heteroatom."
+    },
+    "xrm:1600018": {
+      "preferred_label": "terminal alkyl",
+      "spine": "site type",
+      "definition": "Terminal alkyl carbon site."
+    },
+    "xrm:1600019": {
+      "preferred_label": "stereocenter",
+      "spine": "site type",
+      "definition": "Stereogenic site."
+    },
+    "xrm:1600020": {
+      "preferred_label": "ambiguous site",
+      "spine": "site type",
+      "definition": "Site localization is ambiguous."
+    },
+    "xrm:1600021": {
+      "preferred_label": "tertiary amine site",
+      "spine": "site type",
+      "definition": "Tertiary amine nitrogen soft spot."
+    },
+    "xrm:1600022": {
+      "preferred_label": "phenolic site",
+      "spine": "site type",
+      "definition": "Phenolic oxygen site."
+    },
+    "xrm:1600100": {
+      "preferred_label": "benzylic carbon",
+      "spine": "site type",
+      "definition": "Benzylic carbon environment."
+    },
+    "xrm:1600101": {
+      "preferred_label": "allylic carbon",
+      "spine": "site type",
+      "definition": "Allylic carbon environment."
+    },
+    "xrm:1600102": {
+      "preferred_label": "phenol",
+      "spine": "site type",
+      "definition": "Phenolic site environment."
+    },
+    "xrm:1600103": {
+      "preferred_label": "aniline",
+      "spine": "site type",
+      "definition": "Aniline / aromatic amine site."
+    },
+    "xrm:1600104": {
+      "preferred_label": "tertiary amine",
+      "spine": "site type",
+      "definition": "Tertiary amine nitrogen environment."
+    },
+    "xrm:1600105": {
+      "preferred_label": "secondary amine",
+      "spine": "site type",
+      "definition": "Secondary amine nitrogen environment."
+    },
+    "xrm:1600106": {
+      "preferred_label": "primary amine",
+      "spine": "site type",
+      "definition": "Primary amine nitrogen environment."
+    },
+    "xrm:1600107": {
+      "preferred_label": "electron-rich arene",
+      "spine": "site type",
+      "definition": "Electron-rich aromatic ring environment."
+    },
+    "xrm:1600108": {
+      "preferred_label": "electron-poor arene",
+      "spine": "site type",
+      "definition": "Electron-poor aromatic ring environment."
+    },
+    "xrm:1600109": {
+      "preferred_label": "heteroarene",
+      "spine": "site type",
+      "definition": "Heteroaromatic ring environment."
+    },
+    "xrm:1600110": {
+      "preferred_label": "furan",
+      "spine": "site type",
+      "definition": "Furan ring site environment."
+    },
+    "xrm:1600111": {
+      "preferred_label": "thiophene",
+      "spine": "site type",
+      "definition": "Thiophene ring site environment."
+    },
+    "xrm:1600112": {
+      "preferred_label": "imidazole",
+      "spine": "site type",
+      "definition": "Imidazole ring site environment."
+    },
+    "xrm:1600113": {
+      "preferred_label": "indole",
+      "spine": "site type",
+      "definition": "Indole ring site environment."
+    },
+    "xrm:1600114": {
+      "preferred_label": "pyridine",
+      "spine": "site type",
+      "definition": "Pyridine ring site environment."
+    },
+    "xrm:1600115": {
+      "preferred_label": "pyrimidine",
+      "spine": "site type",
+      "definition": "Pyrimidine ring site environment."
+    },
+    "xrm:1600116": {
+      "preferred_label": "alkyl ether",
+      "spine": "site type",
+      "definition": "Alkyl ether oxygen environment."
+    },
+    "xrm:1600117": {
+      "preferred_label": "aryl ether",
+      "spine": "site type",
+      "definition": "Aryl ether oxygen environment."
+    },
+    "xrm:1600118": {
+      "preferred_label": "thioether",
+      "spine": "site type",
+      "definition": "Thioether sulfur environment."
+    },
+    "xrm:1600119": {
+      "preferred_label": "thiol",
+      "spine": "site type",
+      "definition": "Thiol sulfur environment."
+    },
+    "xrm:1600120": {
+      "preferred_label": "carboxylic acid",
+      "spine": "site type",
+      "definition": "Carboxylic acid site environment."
+    },
+    "xrm:1600121": {
+      "preferred_label": "ester",
+      "spine": "site type",
+      "definition": "Ester site environment."
+    },
+    "xrm:1600122": {
+      "preferred_label": "amide",
+      "spine": "site type",
+      "definition": "Amide site environment."
+    },
+    "xrm:1600123": {
+      "preferred_label": "carbamate",
+      "spine": "site type",
+      "definition": "Carbamate site environment."
+    },
+    "xrm:1600124": {
+      "preferred_label": "urea",
+      "spine": "site type",
+      "definition": "Urea site environment."
+    },
+    "xrm:1600125": {
+      "preferred_label": "nitrile",
+      "spine": "site type",
+      "definition": "Nitrile site environment."
+    },
+    "xrm:1600126": {
+      "preferred_label": "nitroarene",
+      "spine": "site type",
+      "definition": "Nitroaromatic site environment."
+    },
+    "xrm:1600127": {
+      "preferred_label": "alkyl halide",
+      "spine": "site type",
+      "definition": "Alkyl halide site environment."
+    },
+    "xrm:1600128": {
+      "preferred_label": "aryl halide",
+      "spine": "site type",
+      "definition": "Aryl halide site environment."
+    },
+    "xrm:1600129": {
+      "preferred_label": "terminal methyl",
+      "spine": "site type",
+      "definition": "Terminal methyl carbon environment."
+    },
+    "xrm:1600130": {
+      "preferred_label": "omega carbon",
+      "spine": "site type",
+      "definition": "\u03c9-carbon of an alkyl chain."
+    },
+    "xrm:1600131": {
+      "preferred_label": "omega-1 carbon",
+      "spine": "site type",
+      "definition": "\u03c9-1 carbon of an alkyl chain."
+    },
+    "xrm:1600132": {
+      "preferred_label": "para aromatic carbon",
+      "spine": "site type",
+      "definition": "Para position on an aromatic ring."
+    },
+    "xrm:1600133": {
+      "preferred_label": "ortho aromatic carbon",
+      "spine": "site type",
+      "definition": "Ortho position on an aromatic ring."
+    },
+    "xrm:1600134": {
+      "preferred_label": "meta aromatic carbon",
+      "spine": "site type",
+      "definition": "Meta position on an aromatic ring."
+    },
+    "xrm:1600135": {
+      "preferred_label": "attachment atom O",
+      "spine": "site type",
+      "definition": "Conjugation attachment at oxygen."
+    },
+    "xrm:1600136": {
+      "preferred_label": "attachment atom N",
+      "spine": "site type",
+      "definition": "Conjugation attachment at nitrogen."
+    },
+    "xrm:1600137": {
+      "preferred_label": "attachment atom S",
+      "spine": "site type",
+      "definition": "Conjugation attachment at sulfur."
+    },
+    "xrm:1600138": {
+      "preferred_label": "attachment atom C",
+      "spine": "site type",
+      "definition": "Conjugation attachment at carbon."
+    },
+    "xrm:1600139": {
+      "preferred_label": "acyl attachment",
+      "spine": "site type",
+      "definition": "Conjugation via acyl attachment."
+    },
+    "xrm:1600140": {
+      "preferred_label": "alpha to nitrogen",
+      "spine": "site type",
+      "definition": "Carbon alpha to nitrogen."
+    },
+    "xrm:1600141": {
+      "preferred_label": "alpha to oxygen",
+      "spine": "site type",
+      "definition": "Carbon alpha to oxygen."
+    },
+    "xrm:1600142": {
+      "preferred_label": "alpha to sulfur",
+      "spine": "site type",
+      "definition": "Carbon alpha to sulfur."
+    },
+    "xrm:1700000": {
+      "preferred_label": "structural delta",
+      "spine": "structural delta",
+      "definition": "Structural / formula / aromaticity / bond-order change facets."
+    },
+    "xrm:1700010": {
+      "preferred_label": "formula delta",
+      "spine": "structural delta",
+      "definition": "Elemental composition change."
+    },
+    "xrm:1700011": {
+      "preferred_label": "mass shift",
+      "spine": "structural delta",
+      "definition": "Nominal or exact mass difference."
+    },
+    "xrm:1700012": {
+      "preferred_label": "atom added",
+      "spine": "structural delta",
+      "definition": "Net atom addition."
+    },
+    "xrm:1700013": {
+      "preferred_label": "atom removed",
+      "spine": "structural delta",
+      "definition": "Net atom removal."
+    },
+    "xrm:1700014": {
+      "preferred_label": "bond order change",
+      "spine": "structural delta",
+      "definition": "Bond order increased or decreased."
+    },
+    "xrm:1700015": {
+      "preferred_label": "aromaticity change",
+      "spine": "structural delta",
+      "definition": "Aromaticity gained or lost."
+    },
+    "xrm:1700016": {
+      "preferred_label": "charge change",
+      "spine": "structural delta",
+      "definition": "Formal charge / protonation change."
+    },
+    "xrm:1700017": {
+      "preferred_label": "stereochemical change",
+      "spine": "structural delta",
+      "definition": "Stereo configuration change."
+    },
+    "xrm:1700018": {
+      "preferred_label": "conjugate moiety added",
+      "spine": "structural delta",
+      "definition": "Conjugate group attached."
+    },
+    "xrm:1700100": {
+      "preferred_label": "monooxygenation",
+      "spine": "structural delta",
+      "definition": "Net addition of one oxygen atom."
+    },
+    "xrm:1700101": {
+      "preferred_label": "dioxygenation",
+      "spine": "structural delta",
+      "definition": "Net addition of two oxygen atoms."
+    },
+    "xrm:1700102": {
+      "preferred_label": "demethylation delta",
+      "spine": "structural delta",
+      "definition": "Net loss of CH2 (demethylation mass shift)."
+    },
+    "xrm:1700103": {
+      "preferred_label": "deethylation delta",
+      "spine": "structural delta",
+      "definition": "Net loss of C2H4."
+    },
+    "xrm:1700104": {
+      "preferred_label": "glucuronide mass shift",
+      "spine": "structural delta",
+      "definition": "Mass shift for glucuronide conjugation."
+    },
+    "xrm:1700105": {
+      "preferred_label": "sulfate mass shift",
+      "spine": "structural delta",
+      "definition": "Mass shift for sulfate conjugation."
+    },
+    "xrm:1700106": {
+      "preferred_label": "GSH mass shift",
+      "spine": "structural delta",
+      "definition": "Mass shift for glutathione conjugation."
+    },
+    "xrm:1700107": {
+      "preferred_label": "aromaticity loss delta",
+      "spine": "structural delta",
+      "definition": "Loss of aromaticity."
+    },
+    "xrm:1700108": {
+      "preferred_label": "aromaticity gain delta",
+      "spine": "structural delta",
+      "definition": "Gain of aromaticity."
+    },
+    "xrm:1700109": {
+      "preferred_label": "bond order increase",
+      "spine": "structural delta",
+      "definition": "Increase in bond order."
+    },
+    "xrm:1700110": {
+      "preferred_label": "bond order decrease",
+      "spine": "structural delta",
+      "definition": "Decrease in bond order."
+    },
+    "xrm:1700111": {
+      "preferred_label": "ring expansion delta",
+      "spine": "structural delta",
+      "definition": "Ring size increase."
+    },
+    "xrm:1700112": {
+      "preferred_label": "ring contraction delta",
+      "spine": "structural delta",
+      "definition": "Ring size decrease."
+    },
+    "xrm:2200000": {
+      "preferred_label": "leaving group",
+      "spine": "leaving group",
+      "definition": "Fragment or moiety that departs in a cleavage / substitution / dealkylation / hydrolysis step. Med-chem handle for soft-spot design."
+    },
+    "xrm:2200010": {
+      "preferred_label": "methyl leaving group",
+      "spine": "leaving group",
+      "definition": "Methyl fragment departing (typical N-/O-demethylation)."
+    },
+    "xrm:2200011": {
+      "preferred_label": "ethyl leaving group",
+      "spine": "leaving group",
+      "definition": "Ethyl fragment departing (typical N-/O-deethylation)."
+    },
+    "xrm:2200012": {
+      "preferred_label": "propyl leaving group",
+      "spine": "leaving group",
+      "definition": "Propyl fragment departing."
+    },
+    "xrm:2200013": {
+      "preferred_label": "isopropyl leaving group",
+      "spine": "leaving group",
+      "definition": "Isopropyl fragment departing."
+    },
+    "xrm:2200014": {
+      "preferred_label": "benzyl leaving group",
+      "spine": "leaving group",
+      "definition": "Benzyl fragment departing."
+    },
+    "xrm:2200015": {
+      "preferred_label": "allyl leaving group",
+      "spine": "leaving group",
+      "definition": "Allyl fragment departing."
+    },
+    "xrm:2200016": {
+      "preferred_label": "halide leaving group",
+      "spine": "leaving group",
+      "definition": "Halide ion / halogen departing."
+    },
+    "xrm:2200017": {
+      "preferred_label": "fluoride leaving group",
+      "spine": "leaving group",
+      "definition": "Fluoride departing."
+    },
+    "xrm:2200018": {
+      "preferred_label": "chloride leaving group",
+      "spine": "leaving group",
+      "definition": "Chloride departing."
+    },
+    "xrm:2200019": {
+      "preferred_label": "bromide leaving group",
+      "spine": "leaving group",
+      "definition": "Bromide departing."
+    },
+    "xrm:2200020": {
+      "preferred_label": "iodide leaving group",
+      "spine": "leaving group",
+      "definition": "Iodide departing."
+    },
+    "xrm:2200021": {
+      "preferred_label": "alcohol leaving fragment",
+      "spine": "leaving group",
+      "definition": "Alcohol / alkoxide fragment from ether cleavage or hydrolysis."
+    },
+    "xrm:2200022": {
+      "preferred_label": "amine leaving fragment",
+      "spine": "leaving group",
+      "definition": "Amine fragment from amide/urea hydrolysis or N-dealkylation path."
+    },
+    "xrm:2200023": {
+      "preferred_label": "phenol leaving fragment",
+      "spine": "leaving group",
+      "definition": "Phenol / phenoxide fragment departing."
+    },
+    "xrm:2200024": {
+      "preferred_label": "thiol leaving fragment",
+      "spine": "leaving group",
+      "definition": "Thiol / thiolate fragment departing."
+    },
+    "xrm:2200025": {
+      "preferred_label": "carboxylate leaving group",
+      "spine": "leaving group",
+      "definition": "Carboxylate departing (e.g. ester hydrolysis)."
+    },
+    "xrm:2200026": {
+      "preferred_label": "phosphate leaving group",
+      "spine": "leaving group",
+      "definition": "Phosphate / phosphoryl leaving group."
+    },
+    "xrm:2200027": {
+      "preferred_label": "sulfate leaving group",
+      "spine": "leaving group",
+      "definition": "Sulfate leaving group."
+    },
+    "xrm:2200028": {
+      "preferred_label": "water leaving group",
+      "spine": "leaving group",
+      "definition": "Water departing (dehydration / condensation reverse)."
+    },
+    "xrm:2200029": {
+      "preferred_label": "hydrogen leaving group",
+      "spine": "leaving group",
+      "definition": "Hydride / proton framing for dehydrogenation ends."
+    },
+    "xrm:2200030": {
+      "preferred_label": "formaldehyde leaving fragment",
+      "spine": "leaving group",
+      "definition": "Formaldehyde-equivalent from demethylation carbinolamine cleavage."
+    },
+    "xrm:2200031": {
+      "preferred_label": "acetaldehyde leaving fragment",
+      "spine": "leaving group",
+      "definition": "Acetaldehyde-equivalent from deethylation path."
+    },
+    "xrm:2200032": {
+      "preferred_label": "small alkyl leaving group",
+      "spine": "leaving group",
+      "definition": "Generic small alkyl departing group."
+    },
+    "xrm:2200033": {
+      "preferred_label": "aryl leaving group",
+      "spine": "leaving group",
+      "definition": "Aryl fragment departing (less common)."
+    },
+    "xrm:2200034": {
+      "preferred_label": "mesylate leaving group",
+      "spine": "leaving group",
+      "definition": "Mesylate / sulfonate ester leaving group."
+    },
+    "xrm:2200035": {
+      "preferred_label": "tosylate leaving group",
+      "spine": "leaving group",
+      "definition": "Tosylate leaving group."
+    },
+    "xrm:2200036": {
+      "preferred_label": "isocyanate leaving fragment",
+      "spine": "leaving group",
+      "definition": "Isocyanate fragment in carbamate/urea chemistry."
+    },
+    "xrm:2200037": {
+      "preferred_label": "cyanide leaving group",
+      "spine": "leaving group",
+      "definition": "Cyanide departing (nitrile hydrolysis / related)."
+    },
+    "xrm:2200038": {
+      "preferred_label": "nitrogen gas leaving group",
+      "spine": "leaving group",
+      "definition": "N2 departing (azo / diazo paths)."
+    },
+    "xrm:2200039": {
+      "preferred_label": "no leaving group",
+      "spine": "leaving group",
+      "definition": "Transformation without a discrete departing fragment."
+    },
+    "xrm:2300000": {
+      "preferred_label": "pharmacological role",
+      "spine": "pharmacological role",
+      "definition": "Metabolism-specific pharmacological framing of parent or metabolite (not a full activity ontology)."
+    },
+    "xrm:2300010": {
+      "preferred_label": "pharmacologically active metabolite",
+      "spine": "pharmacological role",
+      "definition": "Metabolite that retains or gains pharmacological activity."
+    },
+    "xrm:2300011": {
+      "preferred_label": "pharmacologically inactive metabolite",
+      "spine": "pharmacological role",
+      "definition": "Metabolite lacking relevant pharmacological activity."
+    },
+    "xrm:2300012": {
+      "preferred_label": "prodrug",
+      "spine": "pharmacological role",
+      "definition": "Parent administered in inactive/less-active form requiring metabolic activation."
+    },
+    "xrm:2300014": {
+      "preferred_label": "active parent",
+      "spine": "pharmacological role",
+      "definition": "Parent compound that is pharmacologically active as administered."
+    },
+    "xrm:2300015": {
+      "preferred_label": "inactive parent",
+      "spine": "pharmacological role",
+      "definition": "Parent that is inactive until metabolized (typical prodrug parent)."
+    },
+    "xrm:2300016": {
+      "preferred_label": "equipotent metabolite",
+      "spine": "pharmacological role",
+      "definition": "Metabolite with activity comparable to the parent."
+    },
+    "xrm:2300017": {
+      "preferred_label": "more active metabolite",
+      "spine": "pharmacological role",
+      "definition": "Metabolite more active than the parent."
+    },
+    "xrm:2300018": {
+      "preferred_label": "less active metabolite",
+      "spine": "pharmacological role",
+      "definition": "Metabolite less active than the parent."
+    },
+    "xrm:2300019": {
+      "preferred_label": "toxicophore-bearing metabolite",
+      "spine": "pharmacological role",
+      "definition": "Metabolite carrying a toxicophore (activity framed as toxicity)."
+    },
+    "xrm:7000000": {
+      "preferred_label": "redox polarity",
+      "spine": "structural delta",
+      "definition": "Cross-cutting spine: net redox character of the transformation, independent of named reaction type."
+    },
+    "xrm:7000001": {
+      "preferred_label": "net oxidation",
+      "spine": "structural delta",
+      "definition": "Net loss of electrons / gain of oxygen or unsaturation."
+    },
+    "xrm:7000002": {
+      "preferred_label": "net reduction",
+      "spine": "structural delta",
+      "definition": "Net gain of electrons / loss of oxygen or gain of saturation."
+    },
+    "xrm:7000003": {
+      "preferred_label": "redox-neutral",
+      "spine": "structural delta",
+      "definition": "No net redox change (e.g. many conjugations, tautomerizations, hydrolyses)."
+    },
+    "xrm:7000004": {
+      "preferred_label": "redox polarity unspecified",
+      "spine": "structural delta",
+      "definition": "Redox polarity not determined from available evidence."
+    },
+    "xrm:7100000": {
+      "preferred_label": "site atom class",
+      "spine": "site type",
+      "definition": "Cross-cutting spine: principal element class at the site of metabolism."
+    },
+    "xrm:7100001": {
+      "preferred_label": "carbon site",
+      "spine": "site type",
+      "definition": "Primary SOM involves carbon."
+    },
+    "xrm:7100002": {
+      "preferred_label": "nitrogen site",
+      "spine": "site type",
+      "definition": "Primary SOM involves nitrogen (lone pair or C\u2013N)."
+    },
+    "xrm:7100003": {
+      "preferred_label": "oxygen site",
+      "spine": "site type",
+      "definition": "Primary SOM involves oxygen (lone pair or C\u2013O)."
+    },
+    "xrm:7100004": {
+      "preferred_label": "sulfur site",
+      "spine": "site type",
+      "definition": "Primary SOM involves sulfur."
+    },
+    "xrm:7100005": {
+      "preferred_label": "halogen site",
+      "spine": "site type",
+      "definition": "Primary SOM involves halogen."
+    },
+    "xrm:7100006": {
+      "preferred_label": "phosphorus site",
+      "spine": "site type",
+      "definition": "Primary SOM involves phosphorus."
+    },
+    "xrm:7100007": {
+      "preferred_label": "multi-element site",
+      "spine": "site type",
+      "definition": "SOM spans more than one heavy-element class (e.g. C\u2013X cleavage)."
+    },
+    "xrm:7100008": {
+      "preferred_label": "site atom class unspecified",
+      "spine": "site type",
+      "definition": "Site element class not asserted."
+    },
+    "xrm:7200000": {
+      "preferred_label": "bond-edit topology",
+      "spine": "structural delta",
+      "definition": "Cross-cutting spine: graph-edit shape of the transformation."
+    },
+    "xrm:7200001": {
+      "preferred_label": "atom addition",
+      "spine": "structural delta",
+      "definition": "Heavy atom(s) added without bond cleavage of the scaffold (e.g. hydroxylation)."
+    },
+    "xrm:7200002": {
+      "preferred_label": "bond cleavage",
+      "spine": "structural delta",
+      "definition": "A heavy-atom bond is broken (dealkylation, hydrolysis, dehalogenation)."
+    },
+    "xrm:7200003": {
+      "preferred_label": "bond order change",
+      "spine": "structural delta",
+      "definition": "Bond order increases or decreases without heavy-atom count change (dehydrogenation, hydrogenation)."
+    },
+    "xrm:7200004": {
+      "preferred_label": "substitution",
+      "spine": "structural delta",
+      "definition": "One substituent replaces another at a site."
+    },
+    "xrm:7200005": {
+      "preferred_label": "rearrangement topology",
+      "spine": "structural delta",
+      "definition": "Atom connectivity is reshuffled (NIH shift, acyl migration, skeletal rearrangement)."
+    },
+    "xrm:7200006": {
+      "preferred_label": "ring closure",
+      "spine": "structural delta",
+      "definition": "A new ring is formed."
+    },
+    "xrm:7200007": {
+      "preferred_label": "ring opening topology",
+      "spine": "structural delta",
+      "definition": "A ring bond is opened."
+    },
+    "xrm:7200008": {
+      "preferred_label": "bond-edit topology unspecified",
+      "spine": "structural delta",
+      "definition": "Graph-edit class not asserted."
+    },
+    "xrm:7300000": {
+      "preferred_label": "metabolite cardinality",
+      "spine": "structural delta",
+      "definition": "Cross-cutting spine: whether the reaction yields one observed metabolite or fragments into more."
+    },
+    "xrm:7300001": {
+      "preferred_label": "single-metabolite transformation",
+      "spine": "structural delta",
+      "definition": "One principal product retains the scaffold (Rainbow stable-oxygenation style outcome)."
+    },
+    "xrm:7300002": {
+      "preferred_label": "fragmenting transformation",
+      "spine": "structural delta",
+      "definition": "Scaffold cleavage yields two (or more) products (dealkylation, hydrolysis)."
+    },
+    "xrm:7300003": {
+      "preferred_label": "metabolite cardinality unspecified",
+      "spine": "structural delta",
+      "definition": "Whether the reaction fragments is not asserted."
+    },
+    "xrm:7400000": {
+      "preferred_label": "oxygenation outcome",
+      "spine": "structural delta",
+      "definition": "Cross-cutting chemist spine for oxygenation fate: stable oxygen addition versus oxygen-triggered cleavage. Distinct from the Metabolic Forest map nodes."
+    },
+    "xrm:7400001": {
+      "preferred_label": "stable oxygen addition",
+      "spine": "structural delta",
+      "definition": "Oxygen is retained in a single observable oxygenated metabolite."
+    },
+    "xrm:7400002": {
+      "preferred_label": "oxygen-triggered cleavage",
+      "spine": "structural delta",
+      "definition": "Oxygenation precipitates heavy-bond cleavage (unstable oxygenation outcome)."
+    },
+    "xrm:7400003": {
+      "preferred_label": "non-oxygenative transformation",
+      "spine": "structural delta",
+      "definition": "No oxygenation step defines the outcome."
+    },
+    "xrm:7400004": {
+      "preferred_label": "oxygenation outcome unspecified",
+      "spine": "structural delta",
+      "definition": "Oxygenation fate not asserted."
+    },
+    "xrm:7500000": {
+      "preferred_label": "electrophile role",
+      "spine": "reactive metabolite family",
+      "definition": "Cross-cutting spine: relationship of the step to electrophilic reactivity / soft-hard capture."
+    },
+    "xrm:7500001": {
+      "preferred_label": "electrophile generation",
+      "spine": "reactive metabolite family",
+      "definition": "Forms or unmasks an electrophilic metabolite."
+    },
+    "xrm:7500002": {
+      "preferred_label": "electrophile consumption",
+      "spine": "reactive metabolite family",
+      "definition": "Captures or quenches an electrophile (e.g. GSH conjugation)."
+    },
+    "xrm:7500003": {
+      "preferred_label": "nucleophile exposure",
+      "spine": "reactive metabolite family",
+      "definition": "Exposes a nucleophilic handle for later conjugation."
+    },
+    "xrm:7500004": {
+      "preferred_label": "reactivity-neutral step",
+      "spine": "reactive metabolite family",
+      "definition": "Neither generates nor consumes a notable electrophile in the usual sense."
+    },
+    "xrm:7500005": {
+      "preferred_label": "electrophile role unspecified",
+      "spine": "reactive metabolite family",
+      "definition": "Electrophile role not asserted."
+    },
+    "xrm:7600000": {
+      "preferred_label": "ring fate",
+      "spine": "structural delta",
+      "definition": "Cross-cutting spine: effect on ring systems."
+    },
+    "xrm:7600001": {
+      "preferred_label": "ring preserved",
+      "spine": "structural delta",
+      "definition": "Existing rings unchanged in membership."
+    },
+    "xrm:7600002": {
+      "preferred_label": "ring opened",
+      "spine": "structural delta",
+      "definition": "A ring is opened."
+    },
+    "xrm:7600003": {
+      "preferred_label": "ring formed",
+      "spine": "structural delta",
+      "definition": "A new ring is formed (e.g. epoxide)."
+    },
+    "xrm:7600004": {
+      "preferred_label": "ring expanded",
+      "spine": "structural delta",
+      "definition": "Ring size increases."
+    },
+    "xrm:7600005": {
+      "preferred_label": "ring contracted",
+      "spine": "structural delta",
+      "definition": "Ring size decreases."
+    },
+    "xrm:7600006": {
+      "preferred_label": "ring fate unspecified",
+      "spine": "structural delta",
+      "definition": "Ring fate not asserted."
+    },
+    "xrm:7700000": {
+      "preferred_label": "formula-delta class",
+      "spine": "structural delta",
+      "definition": "Cross-cutting spine keyed to heavy-atom formula change; highly automatable from reactant/product formulas."
+    },
+    "xrm:7700001": {
+      "preferred_label": "oxygen gain",
+      "spine": "structural delta",
+      "definition": "Net +O (and no other heavy-atom change, unless further specialized)."
+    },
+    "xrm:7700002": {
+      "preferred_label": "oxygen loss",
+      "spine": "structural delta",
+      "definition": "Net \u2212O."
+    },
+    "xrm:7700003": {
+      "preferred_label": "hydrogenation delta",
+      "spine": "structural delta",
+      "definition": "Net +H\u2082 equivalent without other heavy-atom change (often inferred with bond-order change)."
+    },
+    "xrm:7700004": {
+      "preferred_label": "dehydrogenation delta",
+      "spine": "structural delta",
+      "definition": "Net \u2212H\u2082 equivalent without other heavy-atom change."
+    },
+    "xrm:7700005": {
+      "preferred_label": "water addition delta",
+      "spine": "structural delta",
+      "definition": "Net +H\u2082O."
+    },
+    "xrm:7700006": {
+      "preferred_label": "water loss delta",
+      "spine": "structural delta",
+      "definition": "Net \u2212H\u2082O."
+    },
+    "xrm:7700007": {
+      "preferred_label": "alkyl loss delta",
+      "spine": "structural delta",
+      "definition": "Net loss of carbon(s) consistent with dealkylation/fragmentation."
+    },
+    "xrm:7700008": {
+      "preferred_label": "conjugate gain delta",
+      "spine": "structural delta",
+      "definition": "Net gain matching a conjugation adduct formula class (when known)."
+    },
+    "xrm:7700009": {
+      "preferred_label": "halogen loss delta",
+      "spine": "structural delta",
+      "definition": "Net loss of halogen."
+    },
+    "xrm:7700010": {
+      "preferred_label": "no heavy-atom delta",
+      "spine": "structural delta",
+      "definition": "Heavy-atom formula unchanged (tautomer, many dehydrogenations if H ignored, rearrangements)."
+    },
+    "xrm:7700011": {
+      "preferred_label": "formula-delta unspecified",
+      "spine": "structural delta",
+      "definition": "Formula delta class not asserted."
+    },
+    "xrm:7800000": {
+      "preferred_label": "site aromaticity",
+      "spine": "site type",
+      "definition": "Cross-cutting spine: aromatic character of the mapped site on the reactant."
+    },
+    "xrm:7800001": {
+      "preferred_label": "aromatic site",
+      "spine": "site type",
+      "definition": "Mapped site atom(s) are aromatic on the reactant."
+    },
+    "xrm:7800002": {
+      "preferred_label": "aliphatic site",
+      "spine": "site type",
+      "definition": "Mapped site atom(s) are non-aromatic on the reactant."
+    },
+    "xrm:7800003": {
+      "preferred_label": "site aromaticity unspecified",
+      "spine": "site type",
+      "definition": "Aromaticity of the site was not determined (no map / no probe)."
+    },
+    "xrm:7900000": {
+      "preferred_label": "pathway-step role",
+      "spine": "structural delta",
+      "definition": "Cross-cutting spine: role of this step in a multi-step metabolic path."
+    },
+    "xrm:7900001": {
+      "preferred_label": "direct one-step transformation",
+      "spine": "structural delta",
+      "definition": "Observed product arises in a single metabolic step from the named parent."
+    },
+    "xrm:7900002": {
+      "preferred_label": "multi-step pathway member",
+      "spine": "structural delta",
+      "definition": "Step participates in a path of depth \u2265 2 (e.g. two-step quinone formation)."
+    },
+    "xrm:7900003": {
+      "preferred_label": "preparatory intermediate step",
+      "spine": "structural delta",
+      "definition": "Intermediate that enables a subsequent defining step (e.g. hydroxylation before quinone formation)."
+    },
+    "xrm:7900004": {
+      "preferred_label": "terminal observable step",
+      "spine": "structural delta",
+      "definition": "Last enumerated step yielding the reported metabolite."
+    },
+    "xrm:7900005": {
+      "preferred_label": "pathway-step role unspecified",
+      "spine": "structural delta",
+      "definition": "Step role in a path is not asserted."
+    },
+    "xrm:8000000": {
+      "preferred_label": "aromatic and conjugated-system impact",
+      "spine": "structural delta",
+      "definition": "Parallel hierarchy focused on how a transformation impacts aromatic and conjugated \u03c0-systems: loss or gain of aromaticity, engagement of conjugated acceptors, and rearrangements within those systems. Orthogonal to both the chemist reaction-"
+    },
+    "xrm:8000001": {
+      "preferred_label": "aromaticity loss",
+      "spine": "structural delta",
+      "definition": "Transformations that destroy or interrupt an aromatic system."
+    },
+    "xrm:8000002": {
+      "preferred_label": "aromaticity gain",
+      "spine": "structural delta",
+      "definition": "Transformations that form or restore an aromatic system."
+    },
+    "xrm:8000003": {
+      "preferred_label": "aromatic ring substitution impact",
+      "spine": "structural delta",
+      "definition": "Substitution on an aromatic ring that preserves the aromatic sextet (e.g. phenolic hydroxylation after NIH shift)."
+    },
+    "xrm:8000004": {
+      "preferred_label": "conjugated \u03c0-system engagement",
+      "spine": "structural delta",
+      "definition": "Reactions whose defining impact is engagement of a conjugated acceptor or donor (Michael acceptors, quinoids, extended enones)."
+    },
+    "xrm:8000005": {
+      "preferred_label": "quinoid \u03c0-system formation",
+      "spine": "structural delta",
+      "definition": "Formation of quinone, quinone-imine, quinone-methide, or imine-methide \u03c0-systems from aromatic or conjugated precursors."
+    },
+    "xrm:8000006": {
+      "preferred_label": "heteroaromatic oxidation impact",
+      "spine": "structural delta",
+      "definition": "Oxidation paths that specifically perturb heteroaromatic rings (e.g. thiophene S-oxidation or epoxidation)."
+    },
+    "xrm:8000007": {
+      "preferred_label": "arene oxide pathway",
+      "spine": "structural delta",
+      "definition": "Passage through an arene oxide / NIH-shift manifold on an aromatic ring."
+    },
+    "xrm:8000008": {
+      "preferred_label": "conjugated adduct formation",
+      "spine": "structural delta",
+      "definition": "Conjugation (e.g. GSH) that captures a conjugated electrophile without requiring the reaction type hierarchy."
+    },
+    "xrm:1500230": {
+      "preferred_label": "macromolecule binding",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive-metabolite outcome: covalent or tight binding to biological macromolecules."
+    },
+    "xrm:1500231": {
+      "preferred_label": "DNA binding",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive metabolite binding/adduct formation on DNA (AMD RXNCLASS in scope)."
+    },
+    "xrm:1500232": {
+      "preferred_label": "RNA binding",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive metabolite binding/adduct formation on RNA."
+    },
+    "xrm:1500233": {
+      "preferred_label": "protein binding",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive metabolite binding/adduct formation on protein (AMD RXNCLASS in scope)."
+    },
+    "xrm:1500234": {
+      "preferred_label": "covalent binding",
+      "spine": "reactive metabolite family",
+      "definition": "Generic covalent binding of a reactive metabolite to biomolecules."
+    },
+    "xrm:1500235": {
+      "preferred_label": "lipid binding",
+      "spine": "reactive metabolite family",
+      "definition": "Reactive metabolite binding to lipids."
+    },
+    "xrm:1500236": {
+      "preferred_label": "CoA binding",
+      "spine": "reactive metabolite family",
+      "definition": "Binding/adduct involving coenzyme A (often acyl-CoA related)."
+    },
+    "xrm:0000600": {
+      "preferred_label": "cyanidation",
+      "spine": "chemical transformation",
+      "definition": "Introduction of a cyano/cyanide group (reactive/toxicophore-relevant)."
+    },
+    "xrm:0000601": {
+      "preferred_label": "decyanidation",
+      "spine": "chemical transformation",
+      "definition": "Loss/cleavage of a cyano/cyanide group. Antonym of cyanidation."
+    },
+    "xrm:0000610": {
+      "preferred_label": "alkylation",
+      "spine": "chemical transformation",
+      "definition": "Addition of an alkyl group. Antonym of dealkylation."
+    },
+    "xrm:0000611": {
+      "preferred_label": "N-alkylation",
+      "spine": "chemical transformation",
+      "definition": "Alkylation at nitrogen. Antonym of N-dealkylation."
+    },
+    "xrm:0000612": {
+      "preferred_label": "O-alkylation",
+      "spine": "chemical transformation",
+      "definition": "Alkylation at oxygen. Antonym of O-dealkylation."
+    },
+    "xrm:0000613": {
+      "preferred_label": "S-alkylation",
+      "spine": "chemical transformation",
+      "definition": "Alkylation at sulfur. Antonym of S-dealkylation."
+    },
+    "xrm:0000614": {
+      "preferred_label": "C-alkylation",
+      "spine": "chemical transformation",
+      "definition": "Alkylation at carbon. Antonym of C-dealkylation."
+    },
+    "xrm:0000620": {
+      "preferred_label": "decarboxylation",
+      "spine": "chemical transformation",
+      "definition": "Loss of CO2 from a carboxylic acid (distinct from decarbonylation)."
+    },
+    "xrm:0000621": {
+      "preferred_label": "carboxylation",
+      "spine": "chemical transformation",
+      "definition": "Introduction of a carboxyl group. Antonym of decarboxylation."
+    },
+    "xrm:0000630": {
+      "preferred_label": "esterification",
+      "spine": "chemical transformation",
+      "definition": "Formation of an ester. Antonym of ester hydrolysis."
+    },
+    "xrm:0000631": {
+      "preferred_label": "transesterification",
+      "spine": "chemical transformation",
+      "definition": "Exchange of ester alkoxy groups."
+    },
+    "xrm:0000632": {
+      "preferred_label": "lactonization",
+      "spine": "chemical transformation",
+      "definition": "Intramolecular ester formation to a lactone. Antonym of lactone hydrolysis."
+    },
+    "xrm:0000633": {
+      "preferred_label": "lactamization",
+      "spine": "chemical transformation",
+      "definition": "Intramolecular amide formation to a lactam. Antonym of lactam hydrolysis."
+    },
+    "xrm:0000640": {
+      "preferred_label": "cyclization",
+      "spine": "chemical transformation",
+      "definition": "Formation of a new ring by cyclization."
+    },
+    "xrm:0000650": {
+      "preferred_label": "dehydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Loss of a hydroxyl group. Antonym of hydroxylation."
+    },
+    "xrm:0000660": {
+      "preferred_label": "halogenation",
+      "spine": "chemical transformation",
+      "definition": "Introduction of halogen. Antonym of dehalogenation."
+    },
+    "xrm:0000661": {
+      "preferred_label": "amination",
+      "spine": "chemical transformation",
+      "definition": "Introduction of an amino group. Antonym of deamination."
+    },
+    "xrm:0000670": {
+      "preferred_label": "formylation",
+      "spine": "chemical transformation",
+      "definition": "Introduction of a formyl group (often N-formylation)."
+    },
+    "xrm:0000671": {
+      "preferred_label": "deformylation",
+      "spine": "chemical transformation",
+      "definition": "Loss of a formyl group. Antonym of formylation."
+    },
+    "xrm:0000680": {
+      "preferred_label": "N-nitrosation",
+      "spine": "chemical transformation",
+      "definition": "Formation of an N-nitroso species (reactive-metabolite relevant)."
+    },
+    "xrm:0000690": {
+      "preferred_label": "desulfuration",
+      "spine": "chemical transformation",
+      "definition": "Removal/replacement of sulfur (e.g. phosphorothioate oxidative desulfuration)."
+    },
+    "xrm:0000691": {
+      "preferred_label": "sulfuration",
+      "spine": "chemical transformation",
+      "definition": "Introduction of sulfur. Antonym of desulfuration (not synonymous with sulfation)."
+    },
+    "xrm:0000700": {
+      "preferred_label": "deglucuronidation",
+      "spine": "chemical transformation",
+      "definition": "Hydrolytic removal of a glucuronide. Antonym of glucuronidation."
+    },
+    "xrm:0000701": {
+      "preferred_label": "desulfation",
+      "spine": "chemical transformation",
+      "definition": "Hydrolytic removal of a sulfate. Antonym of sulfation."
+    },
+    "xrm:0000702": {
+      "preferred_label": "deglycosidation",
+      "spine": "chemical transformation",
+      "definition": "Cleavage of a glycoside. Antonym of glycosylation."
+    },
+    "xrm:0000703": {
+      "preferred_label": "deglutathionation",
+      "spine": "chemical transformation",
+      "definition": "Removal of a glutathione adduct. Antonym of glutathionation."
+    },
+    "xrm:0000704": {
+      "preferred_label": "decysteination",
+      "spine": "chemical transformation",
+      "definition": "Removal of a cysteine conjugate. Antonym of cysteine conjugation."
+    },
+    "xrm:0000710": {
+      "preferred_label": "Se-methylation",
+      "spine": "metabolism phase",
+      "definition": "Methylation at selenium (distinct from S-methylation)."
+    },
+    "xrm:0000720": {
+      "preferred_label": "dearylation",
+      "spine": "chemical transformation",
+      "definition": "Cleavage removing an aryl group from N/O/S (related to dealkylation)."
+    },
+    "xrm:0000721": {
+      "preferred_label": "alpha-hydroxylation",
+      "spine": "chemical transformation",
+      "definition": "Hydroxylation at a carbon alpha to a carbonyl or heteroatom."
+    },
+    "xrm:1600200": {
+      "preferred_label": "alicyclic site",
+      "spine": "site type",
+      "definition": "Site on an alicyclic (saturated ring) carbon."
+    },
+    "xrm:1600201": {
+      "preferred_label": "fused benzene site",
+      "spine": "site type",
+      "definition": "Aromatic carbon on a fused benzene ring system."
+    },
+    "xrm:0000681": {
+      "preferred_label": "denitrosation",
+      "spine": "chemical transformation",
+      "definition": "Removal of an N-nitroso group. Antonym of N-nitrosation."
+    },
+    "xrm:0000217": {
+      "preferred_label": "S-demethylation",
+      "spine": "chemical transformation",
+      "definition": "Oxidative removal of an S-methyl group."
+    },
+    "xrm:0000730": {
+      "preferred_label": "arylation",
+      "spine": "chemical transformation",
+      "definition": "Addition of an aryl group. Antonym of dearylation."
+    },
+    "xrm:0000731": {
+      "preferred_label": "carbonylation",
+      "spine": "chemical transformation",
+      "definition": "Introduction of a carbonyl via carbonylation (distinct from carboxylation). Antonym of decarbonylation."
+    },
+    "xrm:0000732": {
+      "preferred_label": "deconjugation",
+      "spine": "chemical transformation",
+      "definition": "Generic removal of a phase II conjugate (umbrella over deglucuronidation, desulfation, \u2026)."
+    },
+    "xrm:1400200": {
+      "preferred_label": "structural alert",
+      "spine": "medchem liability",
+      "definition": "Medchem structural alert / toxicophore motif associated with bioactivation or reactive-metabolite risk. Orthogonal to site_type (where the edit occurs) and soft-spot liability (metabolic vulnerability). Seed set; expand later."
+    },
+    "xrm:1400201": {
+      "preferred_label": "furan structural alert",
+      "spine": "medchem liability",
+      "definition": "Furan ring as a structural alert for oxidative bioactivation."
+    },
+    "xrm:1400202": {
+      "preferred_label": "thiophene structural alert",
+      "spine": "medchem liability",
+      "definition": "Thiophene ring as a structural alert for S-oxidation / bioactivation."
+    },
+    "xrm:1400203": {
+      "preferred_label": "triple bond structural alert",
+      "spine": "medchem liability",
+      "definition": "Terminal or internal alkyne / triple bond as a structural alert."
+    },
+    "xrm:1600210": {
+      "preferred_label": "alkyne site",
+      "spine": "site type",
+      "definition": "Alkyne / carbon\u2013carbon triple bond site environment."
+    }
+  }
+}

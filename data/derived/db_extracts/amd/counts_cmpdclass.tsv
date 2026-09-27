@@ -1,0 +1,677 @@
+term	count	field
+(empty)	59735	CMPDCLASS
+Carboxylic acid ester	1734	CMPDCLASS
+Aromatic alcohol	1537	CMPDCLASS
+Ether	1299	CMPDCLASS
+Halogen compound	1191	CMPDCLASS
+Steroid	1140	CMPDCLASS
+Halogenated aromatic compound	1112	CMPDCLASS
+Alcohol	1105	CMPDCLASS
+Aliphatic amine	1104	CMPDCLASS
+Amine	1098	CMPDCLASS
+Aromatic compound	1068	CMPDCLASS
+Carboxamide	1067	CMPDCLASS
+Carboxylic acid	968	CMPDCLASS
+Pyridine	908	CMPDCLASS
+Ketone	835	CMPDCLASS
+Aliphatic alcohol	815	CMPDCLASS
+Amino acid	752	CMPDCLASS
+Peptide	670	CMPDCLASS
+Aromatic amine	632	CMPDCLASS
+Glycoside	628	CMPDCLASS
+Alkene	580	CMPDCLASS
+Amide	567	CMPDCLASS
+Indole	555	CMPDCLASS
+Piperidine	527	CMPDCLASS
+Pyrimidine	524	CMPDCLASS
+Purine	498	CMPDCLASS
+Piperazine	473	CMPDCLASS
+Naphthalene	468	CMPDCLASS
+Benzopyran	463	CMPDCLASS
+Cycloalkane	436	CMPDCLASS
+Aliphatic carboxylic acid	423	CMPDCLASS
+Quinoline	421	CMPDCLASS
+Nucleoside	421	CMPDCLASS
+Aliphatic carboxylic acid ester	408	CMPDCLASS
+Alkaloid	402	CMPDCLASS
+Ester	383	CMPDCLASS
+Sulfonamide	354	CMPDCLASS
+Phosphate ester	346	CMPDCLASS
+Imidazole	345	CMPDCLASS
+Aromatic ether	334	CMPDCLASS
+Aromatic hydrocarbon	330	CMPDCLASS
+Aromatic nitro compound	324	CMPDCLASS
+Thiazole	319	CMPDCLASS
+Nucleotide	286	CMPDCLASS
+Aromatic amide	284	CMPDCLASS
+Furan	284	CMPDCLASS
+Amino acid ester	277	CMPDCLASS
+Carbamic acid ester	274	CMPDCLASS
+Pyrrolidine	273	CMPDCLASS
+Coumarin	266	CMPDCLASS
+Flavonoid	260	CMPDCLASS
+Aromatic carboxylic acid	248	CMPDCLASS
+Epoxide	244	CMPDCLASS
+Aromatic carboxylic acid ester	241	CMPDCLASS
+Nitrile	234	CMPDCLASS
+Glucoside	226	CMPDCLASS
+Heterocyclic compound	213	CMPDCLASS
+Bicyclic compound	208	CMPDCLASS
+Thioether	204	CMPDCLASS
+Aliphatic amide	196	CMPDCLASS
+Pyrrole	196	CMPDCLASS
+Triazole	191	CMPDCLASS
+Lactone	190	CMPDCLASS
+Amino acid amide	188	CMPDCLASS
+Macrolide	183	CMPDCLASS
+Urea	182	CMPDCLASS
+Nitro compound	182	CMPDCLASS
+Thiophene	180	CMPDCLASS
+Fatty acid	168	CMPDCLASS
+Pyrazole	167	CMPDCLASS
+Phosphonate ester	162	CMPDCLASS
+Terpene	161	CMPDCLASS
+Morpholine	158	CMPDCLASS
+Sulfone	157	CMPDCLASS
+Glucuronide	156	CMPDCLASS
+Benzimidazole	154	CMPDCLASS
+Uracil	148	CMPDCLASS
+Benzofuran	143	CMPDCLASS
+Aldehyde	142	CMPDCLASS
+Halogenated aliphatic hydrocarbon	140	CMPDCLASS
+Carbohydrate	137	CMPDCLASS
+Vitamin	134	CMPDCLASS
+Oxacyclic compound	132	CMPDCLASS
+Oxime	132	CMPDCLASS
+Aminoalcohol	129	CMPDCLASS
+Aromatic ketone	128	CMPDCLASS
+Quinone	128	CMPDCLASS
+Azabicycloalkane	127	CMPDCLASS
+Thioester	125	CMPDCLASS
+Sulfoxide	123	CMPDCLASS
+Unsaturated fatty acid	122	CMPDCLASS
+Sulfide	121	CMPDCLASS
+Isoquinoline	121	CMPDCLASS
+Ammonium salt	119	CMPDCLASS
+Benzodioxole	118	CMPDCLASS
+Guanidine	115	CMPDCLASS
+Halogenated aromatic hydrocarbon	114	CMPDCLASS
+Quinazoline	111	CMPDCLASS
+Dioxaphosphorinan	111	CMPDCLASS
+Flavone	110	CMPDCLASS
+Polycyclic aromatic hydrocarbon	110	CMPDCLASS
+Benzodiazepine	109	CMPDCLASS
+Aliphatic ether	104	CMPDCLASS
+Alkyne	101	CMPDCLASS
+Hydroxylamine	101	CMPDCLASS
+Amidine	98	CMPDCLASS
+Cephalosporin	91	CMPDCLASS
+Amphetamine	90	CMPDCLASS
+Tetrazole	88	CMPDCLASS
+Morphinan	86	CMPDCLASS
+Sulfate ester	86	CMPDCLASS
+Spiro compound	84	CMPDCLASS
+Halogenated aliphatic compound	82	CMPDCLASS
+Cyclic compound	82	CMPDCLASS
+Triazine	82	CMPDCLASS
+Pyran	82	CMPDCLASS
+Phosphonic acid	82	CMPDCLASS
+Benzothiazole	81	CMPDCLASS
+Morphine	80	CMPDCLASS
+Oxirane	80	CMPDCLASS
+Oxazole	79	CMPDCLASS
+Pregnane	78	CMPDCLASS
+Aliphatic ketone	75	CMPDCLASS
+Anthracycline	73	CMPDCLASS
+Isoxazole	72	CMPDCLASS
+Nitrate ester	71	CMPDCLASS
+Halogenated hydrocarbon	71	CMPDCLASS
+Prostaglandin	71	CMPDCLASS
+Thiazolidine	70	CMPDCLASS
+Phosphoramide	70	CMPDCLASS
+Cannabinoid	69	CMPDCLASS
+Aromatic sulfonamide	67	CMPDCLASS
+Isobenzofuran	67	CMPDCLASS
+Nitroso compound	67	CMPDCLASS
+Disulfide	66	CMPDCLASS
+Pyrazine	65	CMPDCLASS
+Phenothiazine	64	CMPDCLASS
+Nitrosamine	64	CMPDCLASS
+Azide	64	CMPDCLASS
+Macrocycle	62	CMPDCLASS
+Oxide	61	CMPDCLASS
+Bile acid	61	CMPDCLASS
+Thymidine	61	CMPDCLASS
+Xanthine	60	CMPDCLASS
+Azetidine	60	CMPDCLASS
+Selenium compound	59	CMPDCLASS
+Thiadiazole	58	CMPDCLASS
+Benzopyrene	58	CMPDCLASS
+Retinoid	56	CMPDCLASS
+Xanthene	56	CMPDCLASS
+Barbiturate	55	CMPDCLASS
+Carboxylic acid amide	55	CMPDCLASS
+Thiol	55	CMPDCLASS
+Phenanthrene	55	CMPDCLASS
+Secocholestane	55	CMPDCLASS
+Lipid	55	CMPDCLASS
+Isoindole	54	CMPDCLASS
+Chromone	54	CMPDCLASS
+Cyclic peptide	54	CMPDCLASS
+Aromatic nitrile	53	CMPDCLASS
+Pyrazolopyrimidine	52	CMPDCLASS
+Fluorene	52	CMPDCLASS
+Indazole	51	CMPDCLASS
+Aromatic carboxylic acid amide	51	CMPDCLASS
+Oxadiazole	51	CMPDCLASS
+Flavanone	51	CMPDCLASS
+Indan	50	CMPDCLASS
+Sulfonic acid	50	CMPDCLASS
+Adamantane	50	CMPDCLASS
+Fatty acid ester	50	CMPDCLASS
+Benzazepine	49	CMPDCLASS
+Taxane	49	CMPDCLASS
+Dibenzazepine	48	CMPDCLASS
+Pyrrolizine	48	CMPDCLASS
+Isoflavone	47	CMPDCLASS
+Pyridoindole	46	CMPDCLASS
+Cytidine	46	CMPDCLASS
+Imidazopyridine	45	CMPDCLASS
+Thiophosphate ester	45	CMPDCLASS
+Dibenzopyran	45	CMPDCLASS
+Anthracene	44	CMPDCLASS
+Pyridazine	44	CMPDCLASS
+Benzothiophene	44	CMPDCLASS
+Aromatic alkene	44	CMPDCLASS
+Benzoquinone	44	CMPDCLASS
+Dibenzocyclic compound	43	CMPDCLASS
+Hydantoin	43	CMPDCLASS
+Indene	43	CMPDCLASS
+Aromatic amidine	43	CMPDCLASS
+Carbazole	43	CMPDCLASS
+Quinoxaline	42	CMPDCLASS
+Hydroxamic acid	42	CMPDCLASS
+Pteridine	42	CMPDCLASS
+Penicillin	42	CMPDCLASS
+Benzanthracene	42	CMPDCLASS
+Hydrazine	41	CMPDCLASS
+Pyrene	41	CMPDCLASS
+Saponin	41	CMPDCLASS
+Sulfonylurea	40	CMPDCLASS
+N-Oxide	40	CMPDCLASS
+Benzoxazine	40	CMPDCLASS
+Polycyclic compound	40	CMPDCLASS
+Cycloalkylphenanthrene	40	CMPDCLASS
+Imidazolidine	39	CMPDCLASS
+Camptothecin	39	CMPDCLASS
+Azepine	38	CMPDCLASS
+Pyridopyrimidine	37	CMPDCLASS
+Pyrethroid	37	CMPDCLASS
+Naphthyridine	36	CMPDCLASS
+Carbapenem	36	CMPDCLASS
+Nitroxide	36	CMPDCLASS
+Tetracycline	35	CMPDCLASS
+Carotenoid	35	CMPDCLASS
+Organometallic compound	35	CMPDCLASS
+Alkane	34	CMPDCLASS
+Phosphamide	34	CMPDCLASS
+Chromenone	34	CMPDCLASS
+Pyrrolotriazine	34	CMPDCLASS
+Azo compound	33	CMPDCLASS
+Imine	33	CMPDCLASS
+Thiourea	33	CMPDCLASS
+Benzoxazole	32	CMPDCLASS
+Acridine	32	CMPDCLASS
+Oligosaccharide	32	CMPDCLASS
+Metal complex	32	CMPDCLASS
+Carbonic acid ester	32	CMPDCLASS
+Naphthacene	31	CMPDCLASS
+Anthraquinone	31	CMPDCLASS
+Fatty acid amide	31	CMPDCLASS
+Peroxide	31	CMPDCLASS
+Arsenic compound	31	CMPDCLASS
+Lactam	31	CMPDCLASS
+Dibenzopyridine	30	CMPDCLASS
+Nicotinic acid	30	CMPDCLASS
+Phthalazine	30	CMPDCLASS
+Naphthacenequinone	30	CMPDCLASS
+Thiocarbamic acid ester	30	CMPDCLASS
+Diterpene	30	CMPDCLASS
+Diazepine	29	CMPDCLASS
+Aromatic aldehyde	29	CMPDCLASS
+Benzocycloalkane	28	CMPDCLASS
+Aliphatic nitrile	28	CMPDCLASS
+Benzacridine	28	CMPDCLASS
+Oxazolidine	27	CMPDCLASS
+Sulfonate ester	27	CMPDCLASS
+Pyridinium salt	27	CMPDCLASS
+Dioxolane	27	CMPDCLASS
+Norbornane	26	CMPDCLASS
+Aliphatic aldehyde	26	CMPDCLASS
+Sesquiterpene	25	CMPDCLASS
+Furobenzopyran	25	CMPDCLASS
+Chrysene	25	CMPDCLASS
+Azasteroid	25	CMPDCLASS
+Phospholipid	25	CMPDCLASS
+Quinuclidine	24	CMPDCLASS
+Adenine	24	CMPDCLASS
+Tropane	23	CMPDCLASS
+Cycloalkylpyrrole	23	CMPDCLASS
+Dithiocarbamic acid ester	23	CMPDCLASS
+Phenanthridine	23	CMPDCLASS
+Indolizinoquinoline	23	CMPDCLASS
+Phenoxazine	23	CMPDCLASS
+Phosphonic acid amide	23	CMPDCLASS
+Acetal	22	CMPDCLASS
+Glucocorticoid	22	CMPDCLASS
+Profene	22	CMPDCLASS
+Thiazabicyclic compound	22	CMPDCLASS
+Biguanide	21	CMPDCLASS
+Imidazoline	21	CMPDCLASS
+Aromatic azo compound	21	CMPDCLASS
+Hydrazide	21	CMPDCLASS
+Aziridine	21	CMPDCLASS
+Indolizine	21	CMPDCLASS
+Dioxane	21	CMPDCLASS
+Carbothioic acid	21	CMPDCLASS
+Benzodioxane	20	CMPDCLASS
+Aromatic sulfone	20	CMPDCLASS
+Aromatic hydroxylamine	20	CMPDCLASS
+Dioxole	20	CMPDCLASS
+Sphingolipid	20	CMPDCLASS
+Thiadiazine	20	CMPDCLASS
+Aliphatic carboxylic acid amide	19	CMPDCLASS
+Benzisoxazole	19	CMPDCLASS
+Unsaturated fatty acid ester	19	CMPDCLASS
+Dibenzoxazepine	19	CMPDCLASS
+Benzothiazine	18	CMPDCLASS
+Diazabicycloalkane	18	CMPDCLASS
+Fatty acid thioester	18	CMPDCLASS
+Flavanoid	18	CMPDCLASS
+Benzoquinolizine	17	CMPDCLASS
+Triazene	17	CMPDCLASS
+Pyrazolopyridine	17	CMPDCLASS
+Naphthofuran	17	CMPDCLASS
+Guanine	17	CMPDCLASS
+Dopamine	17	CMPDCLASS
+Ergoline	17	CMPDCLASS
+Inositol	17	CMPDCLASS
+Cycloalkene	17	CMPDCLASS
+Choline	17	CMPDCLASS
+Porphyrine	17	CMPDCLASS
+Carboxylic acid thioester	17	CMPDCLASS
+Quinolizine	17	CMPDCLASS
+Thienopyridine	17	CMPDCLASS
+Imide	16	CMPDCLASS
+Oxazaphosphorine	16	CMPDCLASS
+Platinum compound	16	CMPDCLASS
+Isothiocyanate	16	CMPDCLASS
+Phosphocholine	16	CMPDCLASS
+Aromatic sulfoxide	16	CMPDCLASS
+Azomethine	16	CMPDCLASS
+Triazolobenzodiazepine	15	CMPDCLASS
+Pyrazolone	15	CMPDCLASS
+Nitrosourea	15	CMPDCLASS
+Amino carboxylic acid	15	CMPDCLASS
+Catechol	15	CMPDCLASS
+Quaternary ammonium compound	15	CMPDCLASS
+Imidazoquinoline	15	CMPDCLASS
+Keto acid	15	CMPDCLASS
+Imidazoquinoxaline	15	CMPDCLASS
+Guanosine	15	CMPDCLASS
+Pyrrolopyrimidine	15	CMPDCLASS
+Triterpene	15	CMPDCLASS
+Aliphatic nitro compound	14	CMPDCLASS
+Indoline	14	CMPDCLASS
+Imidazobenzodiazepine	14	CMPDCLASS
+Secoergostane	14	CMPDCLASS
+Dibenzodioxin	14	CMPDCLASS
+Dibenzothiepine	13	CMPDCLASS
+Benzothiadiazine	13	CMPDCLASS
+Aminoguanidine	13	CMPDCLASS
+Carboline	13	CMPDCLASS
+Folic acid	13	CMPDCLASS
+Dibenzacridine	13	CMPDCLASS
+Oxathiolane	13	CMPDCLASS
+Polychlorinated biphenyl	13	CMPDCLASS
+Dibenzoxazine	13	CMPDCLASS
+Biline	13	CMPDCLASS
+Biotin	13	CMPDCLASS
+Isothiazole	13	CMPDCLASS
+Azacyclic compound	13	CMPDCLASS
+Benzotriazine	12	CMPDCLASS
+Polycyclic aromatic compound	12	CMPDCLASS
+Biphenyl	12	CMPDCLASS
+Dithiane	12	CMPDCLASS
+Betaine	12	CMPDCLASS
+Oxabicyclic compound	12	CMPDCLASS
+Chlorofluorocarbon	11	CMPDCLASS
+Oxazoline	11	CMPDCLASS
+Aromatic thiol	11	CMPDCLASS
+Isosorbide	11	CMPDCLASS
+Triazolopyrimidine	11	CMPDCLASS
+Benzoquinoline	11	CMPDCLASS
+Cyclic polyol	11	CMPDCLASS
+Pyrrolizidine	11	CMPDCLASS
+Benzophenanthrene	11	CMPDCLASS
+Benzofurazane	11	CMPDCLASS
+Azoxy compound	11	CMPDCLASS
+Isocyanate	11	CMPDCLASS
+Secosteroid	11	CMPDCLASS
+Pyranocoumarin	11	CMPDCLASS
+Thioxanthene	10	CMPDCLASS
+Benzothiazepine	10	CMPDCLASS
+Furofuran	10	CMPDCLASS
+Thiomorpholine	10	CMPDCLASS
+Mercury compound	10	CMPDCLASS
+Pyranobenzodioxepine	10	CMPDCLASS
+Thiophosphoramide	10	CMPDCLASS
+Azaspiroalkane	10	CMPDCLASS
+Aromatic ester	10	CMPDCLASS
+Aromatic sulfide	10	CMPDCLASS
+Benzofluorene	10	CMPDCLASS
+Phenazine	10	CMPDCLASS
+Boron compound	10	CMPDCLASS
+Thiobarbiturate	9	CMPDCLASS
+Dibenzoxepine	9	CMPDCLASS
+Dibenzothiazine	9	CMPDCLASS
+Melamine	9	CMPDCLASS
+Xylidine	9	CMPDCLASS
+Rifamycin	9	CMPDCLASS
+Oxazaphosphorane	9	CMPDCLASS
+Dithiocarbamic acid	9	CMPDCLASS
+Arabinose	9	CMPDCLASS
+Thyroid hormone	9	CMPDCLASS
+Thiophosphite ester	9	CMPDCLASS
+Azulene	9	CMPDCLASS
+Isoflavonoid	9	CMPDCLASS
+Dithiolane	9	CMPDCLASS
+Arsenic acid	9	CMPDCLASS
+Pyrazolotriazine	9	CMPDCLASS
+Dipyridodiazepine	9	CMPDCLASS
+Dibenzothiazepine	8	CMPDCLASS
+Thiocarboxylic acid amide	8	CMPDCLASS
+Corticoid	8	CMPDCLASS
+Glucopyranoside	8	CMPDCLASS
+Dibenzocycloalkane	8	CMPDCLASS
+Amidoxime	8	CMPDCLASS
+Benzotriazole	8	CMPDCLASS
+Cardenolide	8	CMPDCLASS
+Oxazabicyclic compound	8	CMPDCLASS
+Aliphatic thiol	8	CMPDCLASS
+Imidazothiazole	8	CMPDCLASS
+Iron compound	8	CMPDCLASS
+Pyrazinoisoquinoline	8	CMPDCLASS
+Phosphinic acid	8	CMPDCLASS
+Nicotinic acid ester	8	CMPDCLASS
+Aromatic imide	7	CMPDCLASS
+Azocine	7	CMPDCLASS
+Cyclitol	7	CMPDCLASS
+Cyclophosphane	7	CMPDCLASS
+Sydnone	7	CMPDCLASS
+Bufanolide	7	CMPDCLASS
+Benzodioxin	7	CMPDCLASS
+Benzisothiazole	7	CMPDCLASS
+Dibenzoquinoline	7	CMPDCLASS
+Dibenzopyrrole	7	CMPDCLASS
+Acyclic nucleoside phosphonate	7	CMPDCLASS
+Picene	7	CMPDCLASS
+Pyrroloindole	7	CMPDCLASS
+Mitomycin	7	CMPDCLASS
+Chromane	7	CMPDCLASS
+Hydroperoxide	7	CMPDCLASS
+Dithiole	7	CMPDCLASS
+Polyphenol	7	CMPDCLASS
+Furocoumarin	7	CMPDCLASS
+Urethane	6	CMPDCLASS
+Aromatic thioamide	6	CMPDCLASS
+Carboxylic acid hydrazide	6	CMPDCLASS
+Benzisoquinoline	6	CMPDCLASS
+Triazolopyridine	6	CMPDCLASS
+Pyranonaphthopyran	6	CMPDCLASS
+Benzoindole	6	CMPDCLASS
+Secocholane	6	CMPDCLASS
+Anthrapyrazole	6	CMPDCLASS
+Imidazotetrazine	6	CMPDCLASS
+Carboxylic acid anhydride	6	CMPDCLASS
+Trichothecene	6	CMPDCLASS
+Radical	6	CMPDCLASS
+Thiocarboxylic acid	6	CMPDCLASS
+Glucosamine	6	CMPDCLASS
+Thiophosphonate ester	6	CMPDCLASS
+Dibenzophenanthrene	6	CMPDCLASS
+Dibenzodiazepine	5	CMPDCLASS
+Dibenzobicyclic compound	5	CMPDCLASS
+Cytosine	5	CMPDCLASS
+Thiosemicarbazone	5	CMPDCLASS
+Pyridocarbazole	5	CMPDCLASS
+Imidazopyrimidine	5	CMPDCLASS
+Benzothiopyran	5	CMPDCLASS
+Benzopyranopyridine	5	CMPDCLASS
+Thienotriazolodiazepine	5	CMPDCLASS
+Thienothiazine	5	CMPDCLASS
+Dibenzanthracene	5	CMPDCLASS
+Thiazepine	5	CMPDCLASS
+Thiopyran	5	CMPDCLASS
+Pyrazinopyridobenzazepine	5	CMPDCLASS
+Pyridobenzazepine	5	CMPDCLASS
+Aromatic hydrazine	5	CMPDCLASS
+Phosphatide	5	CMPDCLASS
+Furopyridine	5	CMPDCLASS
+Pyridopyrazine	5	CMPDCLASS
+Triazolopyridazine	5	CMPDCLASS
+Carborane	5	CMPDCLASS
+Thiazine	4	CMPDCLASS
+Pyrimidopyrimidine	4	CMPDCLASS
+Profen	4	CMPDCLASS
+Isonicotinic acid	4	CMPDCLASS
+Benzopyrrole	4	CMPDCLASS
+Diazonium compound	4	CMPDCLASS
+Dibenzopyrazinoazepine	4	CMPDCLASS
+Ribose	4	CMPDCLASS
+Tetralone	4	CMPDCLASS
+Pyranoindolizinoquinoline	4	CMPDCLASS
+Furanose	4	CMPDCLASS
+Benzoxadiazole	4	CMPDCLASS
+Pyranoquinoline	4	CMPDCLASS
+Pyrrolopyrazine	4	CMPDCLASS
+Oxazine	4	CMPDCLASS
+Phosphonium salt	4	CMPDCLASS
+Arsine oxide	4	CMPDCLASS
+Unsaturated fatty acid amide	4	CMPDCLASS
+Pyridobenzimidazole	4	CMPDCLASS
+Acyclic nucleoside	4	CMPDCLASS
+Naphthopyran	4	CMPDCLASS
+Silicon compound	4	CMPDCLASS
+Siloxane	4	CMPDCLASS
+Thienoimidazole	4	CMPDCLASS
+Oxadiazine	4	CMPDCLASS
+Limonoid	4	CMPDCLASS
+Pyrazoline	3	CMPDCLASS
+Triazenoimidazole	3	CMPDCLASS
+Triazolopyrazine	3	CMPDCLASS
+Benzoxazocine	3	CMPDCLASS
+Thione	3	CMPDCLASS
+Spirocycloalkane	3	CMPDCLASS
+Guaiacol	3	CMPDCLASS
+Oripavine	3	CMPDCLASS
+Pyridobenzoxazine	3	CMPDCLASS
+Benzotriazepine	3	CMPDCLASS
+Sulfite ester	3	CMPDCLASS
+Sulfinic acid	3	CMPDCLASS
+Benzodioxepine	3	CMPDCLASS
+Lipoxin	3	CMPDCLASS
+Maltose	3	CMPDCLASS
+Corrinoid	3	CMPDCLASS
+Thiophosphonic acid	3	CMPDCLASS
+Benzonaphthazepine	3	CMPDCLASS
+Cepham	3	CMPDCLASS
+Carbamic acid amide	3	CMPDCLASS
+Imidazoquinazoline	3	CMPDCLASS
+Perylene	3	CMPDCLASS
+Pyrrolodiazepine	3	CMPDCLASS
+Thiacyclic compound	3	CMPDCLASS
+Naphthoquinone	3	CMPDCLASS
+Isoflavan	3	CMPDCLASS
+Pyrimidopurine	3	CMPDCLASS
+Cinnoline	3	CMPDCLASS
+Chromene	3	CMPDCLASS
+Thiazane	2	CMPDCLASS
+Benzopyrazole	2	CMPDCLASS
+Cinchonane	2	CMPDCLASS
+Benzazocine	2	CMPDCLASS
+Isoidide	2	CMPDCLASS
+Aromatic carboxylic acid hydrazide	2	CMPDCLASS
+Pyridoquinolone	2	CMPDCLASS
+Iminopyrimidine	2	CMPDCLASS
+Diazo compound	2	CMPDCLASS
+Hydroxyurea	2	CMPDCLASS
+Indoloisoquinoline	2	CMPDCLASS
+Indole alkaloid	2	CMPDCLASS
+Naphthoimidazole	2	CMPDCLASS
+Cyclosporin	2	CMPDCLASS
+Enamine	2	CMPDCLASS
+Benzothiadiazole	2	CMPDCLASS
+Ribofuranose	2	CMPDCLASS
+Arotinoid	2	CMPDCLASS
+Dibenzocarbazole	2	CMPDCLASS
+Pyridobenzothiazine	2	CMPDCLASS
+Uronic acid	2	CMPDCLASS
+Benzoxathiole	2	CMPDCLASS
+Tin compound	2	CMPDCLASS
+Vinca alkaloid	2	CMPDCLASS
+Thromboxane	2	CMPDCLASS
+Lysergic acid	2	CMPDCLASS
+Aromatic thioether	2	CMPDCLASS
+Amino acid amine	2	CMPDCLASS
+Silane	2	CMPDCLASS
+Phosphinate ester	2	CMPDCLASS
+Thienobenzisoquinoline	2	CMPDCLASS
+Arsonic acid	2	CMPDCLASS
+Sulfonium salt	2	CMPDCLASS
+Thiocarbamic acid	2	CMPDCLASS
+Phosphite ester	2	CMPDCLASS
+Dioxolobenzodiazepine	2	CMPDCLASS
+Thienobenzodiazepine	2	CMPDCLASS
+Pyridodiazepine	2	CMPDCLASS
+Carbonic acid	2	CMPDCLASS
+Indenoquinoline	2	CMPDCLASS
+Dithietane	2	CMPDCLASS
+Arsonous acid	2	CMPDCLASS
+Pyridothiazepine	2	CMPDCLASS
+Azapurine	2	CMPDCLASS
+Pyrazolopyrazole	2	CMPDCLASS
+Anthocyanin	2	CMPDCLASS
+Iridoid	2	CMPDCLASS
+Phosphine	2	CMPDCLASS
+Benzoxathiin	2	CMPDCLASS
+Nitramine	2	CMPDCLASS
+Sulfenamide	2	CMPDCLASS
+Diazaphenoxazine	1	CMPDCLASS
+Thiaisochroman	1	CMPDCLASS
+Thienobenzothiepine	1	CMPDCLASS
+Thienodiazepine	1	CMPDCLASS
+Cycloalkylimidazolone	1	CMPDCLASS
+Cinchonic acid	1	CMPDCLASS
+Xylene	1	CMPDCLASS
+Phthalazinophthalazine	1	CMPDCLASS
+Picoline	1	CMPDCLASS
+Isomannide	1	CMPDCLASS
+Nitrite ester	1	CMPDCLASS
+Benzomorphan	1	CMPDCLASS
+Isoxazolobenzoxazine	1	CMPDCLASS
+Thiatriazole	1	CMPDCLASS
+Dithioacetal	1	CMPDCLASS
+Orthoester	1	CMPDCLASS
+Pyridazinium salt	1	CMPDCLASS
+Pyranoindole	1	CMPDCLASS
+Sulfamic acid	1	CMPDCLASS
+Thiouracil	1	CMPDCLASS
+Benzisoselenazole	1	CMPDCLASS
+Germanium compound	1	CMPDCLASS
+Mannitol	1	CMPDCLASS
+Azafluorene	1	CMPDCLASS
+Pyridobenzodiazepine	1	CMPDCLASS
+Leucomycin	1	CMPDCLASS
+Phosphine sulfide	1	CMPDCLASS
+Pyrazolodiazepine	1	CMPDCLASS
+Pyrimidoindole	1	CMPDCLASS
+Isonipecotic acid	1	CMPDCLASS
+Isonipecotic acid ester	1	CMPDCLASS
+Imidazoisoindole	1	CMPDCLASS
+Isoxazoloquinazoline	1	CMPDCLASS
+Aromatic hydroxamic acid	1	CMPDCLASS
+Dipyridodiazocine	1	CMPDCLASS
+Benzphetamine	1	CMPDCLASS
+Dulcitol	1	CMPDCLASS
+Aromatic carbamic acid	1	CMPDCLASS
+Formamidine	1	CMPDCLASS
+Carbazic acid ester	1	CMPDCLASS
+Inosine	1	CMPDCLASS
+Glucone	1	CMPDCLASS
+Pyridoquinazoline	1	CMPDCLASS
+Cycloalkylfurofurobenzopyran	1	CMPDCLASS
+Phenoxathiin	1	CMPDCLASS
+Benzisoindoloisoquinoline	1	CMPDCLASS
+Thienothiopyran	1	CMPDCLASS
+Pyridothienotriazolodiazepine	1	CMPDCLASS
+Tetrazine	1	CMPDCLASS
+Benzodithiazole	1	CMPDCLASS
+Vincaleukoblastine	1	CMPDCLASS
+Hydrocyanic acid	1	CMPDCLASS
+Ammonia	1	CMPDCLASS
+Naphthoxazine	1	CMPDCLASS
+Benzoflavone	1	CMPDCLASS
+Aliphatic imine	1	CMPDCLASS
+Thiosulfite ester	1	CMPDCLASS
+Pyridazinodiazepine	1	CMPDCLASS
+Ajmaline	1	CMPDCLASS
+Aromatic thiocarboxylic acid amide	1	CMPDCLASS
+Nitronic acid	1	CMPDCLASS
+Oxaazadisilacycloalkane	1	CMPDCLASS
+Isoprenoid	1	CMPDCLASS
+Phosphoric acid	1	CMPDCLASS
+Arsenous acid	1	CMPDCLASS
+Cyanic acid	1	CMPDCLASS
+Indolocarbazole	1	CMPDCLASS
+Sulfuric acid	1	CMPDCLASS
+Phosphorofluoridic acid	1	CMPDCLASS
+Peroxynitrite	1	CMPDCLASS
+Pyrophosphoric acid	1	CMPDCLASS
+Indenopyridine	1	CMPDCLASS
+Pyrimidocarbazole	1	CMPDCLASS
+Carbonic acid thioester	1	CMPDCLASS
+Furonaphthodioxole	1	CMPDCLASS
+Furofuropyranobenzopyran	1	CMPDCLASS
+Pyrrolothiazepine	1	CMPDCLASS
+Ceramide	1	CMPDCLASS
+Glycosphingolipid	1	CMPDCLASS
+Haloamine	1	CMPDCLASS
+Dioxepine	1	CMPDCLASS
+Nitrous acid	1	CMPDCLASS
+Benzopyridine	1	CMPDCLASS
+Semicarbazone	1	CMPDCLASS
+Dithiarsolane	1	CMPDCLASS
+Oxathiine	1	CMPDCLASS
+Bromic acid	1	CMPDCLASS
+Gallium compound	1	CMPDCLASS
+Imidazotriazine	1	CMPDCLASS
+Sulfamic acid ester	1	CMPDCLASS
+Quinazolinocarboline	1	CMPDCLASS
+Quinolizidine	1	CMPDCLASS
+Oxathiane	1	CMPDCLASS
+Pyrazinobenzazepine	1	CMPDCLASS
+Isoxazolopyridine	1	CMPDCLASS
+Carboxylic acid halogenanhydride	1	CMPDCLASS
+Indenopyrazole	1	CMPDCLASS
+Bismuth compound	1	CMPDCLASS
+Cadmium compound	1	CMPDCLASS
+Fatty alcohol	1	CMPDCLASS
+Tellur compound	1	CMPDCLASS
+Antimony compound	1	CMPDCLASS
+Cephalotaxine	1	CMPDCLASS
+Chromium compound	1	CMPDCLASS
+Phenanthroindolizidine	1	CMPDCLASS
+Chalcone	1	CMPDCLASS
+Oxetane	1	CMPDCLASS
+Thiocyanic acid	1	CMPDCLASS

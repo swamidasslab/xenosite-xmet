@@ -1,0 +1,68 @@
+source	term	decision	adj_xrm_id	adj_preferred_label	spine	adj_note
+amd	Amidation	no_match			chemical transformation	fuzzy wrongly→deamination
+amd	N-Methoxylation	no_match			chemical transformation	not N-methylation
+amd	N-Acetoxylation	no_match			chemical transformation	not N-acetylation
+amd	C-Methoxylation	no_match			chemical transformation	fuzzy_mid wrong
+amd	Aromatic Methoxylation	no_match			chemical transformation	not aromatic hydroxylation
+amd	Aliphatic Peroxidation	no_match			chemical transformation	not aliphatic epoxidation
+amd	Oxidative Deboronation	no_match			chemical transformation	not debromination; B vs Br
+amd	Transformylation	no_match			chemical transformation	matched spine root; useless
+amd	Cleavage	no_match			chemical transformation	too generic; fuzzy→azo cleavage
+amd	Elimination	no_match			chemical transformation	too generic
+amd	Glycination	accept_as	xrm:0001051	glycine conjugation	phase II conjugation family	AMD spelling for glycine conjugation
+amd	Taurination	accept_as	xrm:0001053	taurine conjugation	phase II conjugation family	
+amd	Cysteination	accept_as	xrm:1300010	cysteine conjugation	phase II conjugation family	
+amd	N-Acetylcysteination	accept_as	xrm:1300011	N-acetylcysteine conjugation	phase II conjugation family	
+amd	Acetylcysteination	accept_as	xrm:1300011	N-acetylcysteine conjugation	phase II conjugation family	
+amd	O-Deacetylation	accept_as	xrm:0001023	deacetylation	chemical transformation	
+amd	N-Deacetylation	accept_as	xrm:0001023	deacetylation	chemical transformation	
+amd	S-Deacetylation	accept_as	xrm:0001023	deacetylation	chemical transformation	
+amd	O-Phosphorylation	accept_as	xrm:1300012	phosphorylation	phase II conjugation family	O-attachment via site
+amd	O-Dephosphorylation	accept_as	xrm:0000410	dephosphorylation	chemical transformation	
+amd	Glucosidation	accept_as	xrm:0001060	glycosylation	phase II conjugation family	glucose-specific glycosylation
+amd	N-Glycosidation	accept_as	xrm:0001060	glycosylation	phase II conjugation family	
+amd	O-Glycosidation	accept_as	xrm:0001060	glycosylation	phase II conjugation family	
+amd	N-Deacylation	accept_as	xrm:0002005	deacylation	chemical transformation	
+amd	O-Deacylation	accept_as	xrm:0002005	deacylation	chemical transformation	
+amd	N-Acylation	accept_as	xrm:0001020	acetylation	phase II conjugation family	acylation synonym path; may over-narrow to acetyl
+amd	O-Acylation	accept_as	xrm:0001022	O-acetylation	phase II conjugation family	same caveat
+amd	S-Reduction	accept_as	xrm:0000530	sulfur reduction	chemical transformation	
+amd	O-Dearylation	accept_as	xrm:0000202	O-dealkylation	chemical transformation	aryl ether cleavage family
+amd	N-Dearylation	accept_as	xrm:0000201	N-dealkylation	chemical transformation	
+amd	Dealkenylation	accept_as	xrm:0000200	dealkylation	chemical transformation	
+amd	Dealkoxylation	accept_as	xrm:0000200	dealkylation	chemical transformation	
+amd	Dealkynylation	accept_as	xrm:0000200	dealkylation	chemical transformation	
+amd	Transacetylation	accept_as	xrm:0004018	transacylation	chemical transformation	
+amd	O-Deallylation	accept_as	xrm:0000202	O-dealkylation	chemical transformation	
+amd	Aromatic Dealkylation	accept_as	xrm:0000212	aromatic O-dealkylation	chemical transformation	
+amd	N-Dehalogenation	accept_as	xrm:1100014	dehalogenation	chemical transformation	
+amd	Epimerization	accept_as	xrm:0002003	isomerization	chemical transformation	epimerization as isomerization leaf proxy
+amd	Deamidation	no_match			chemical transformation	≠ deamination; facet gap
+amd	Dimerization	out_of_scope				often non-xenobiotic / aggregation label
+amd	Nucleophilic Substitution	compositional_only				process facet; not primary reaction-type identity
+amd	DNA Binding	accept_as	xrm:1500231	DNA binding	reactive metabolite family	in scope as reactive metabolite
+amd	Protein Binding	accept_as	xrm:1500233	protein binding	reactive metabolite family	in scope as reactive metabolite
+amd	Covalent Binding	accept_as	xrm:1500234	covalent binding	reactive metabolite family	in scope as reactive metabolite
+amd	Optical Resolution	out_of_scope				analytical/chiral separation, not metabolism reaction
+amd	Lipid Binding	accept_as	xrm:1500235	lipid binding	reactive metabolite family	in scope as reactive metabolite
+amd	Nucleic Acid Binding	accept_as	xrm:1500231	DNA binding	reactive metabolite family	synonym path via nucleic acid binding
+amd	RNA Binding	accept_as	xrm:1500232	RNA binding	reactive metabolite family	in scope as reactive metabolite
+amd	CoA Binding	accept_as	xrm:1500236	CoA binding	reactive metabolite family	in scope as reactive metabolite
+amd	Adduct Formation	accept_as	xrm:1500234	covalent binding	reactive metabolite family	generic adduct → covalent binding
+amd	O-Conjugation	accept_as	xrm:0000024	conjugation	metabolism phase	broad umbrella; broadMatch-style
+amd	Quaternization	no_match			chemical transformation	facet gap
+amd	Nitration	no_match			chemical transformation	facet gap / coverage decision
+amd	C-Demethylation	accept_as	xrm:0000204	C-dealkylation	chemical transformation	C-demethyl as C-dealkyl leaf proxy
+amd	Dehydrohalogenation	no_match			chemical transformation	≠ dehydrogenation; facet gap
+amd	Inversion	out_of_scope				too vague
+amd	Condensation	out_of_scope				too vague / non-specific
+amd	Cyanidation	accept_as	xrm:0000600	cyanidation	chemical transformation	cyanide in scope
+amd	Decyanidation	accept_as	xrm:0000601	decyanidation	chemical transformation	antonym of cyanidation
+amd	Thiolation	no_match			chemical transformation	facet gap
+amd	Polyglutamation	no_match			phase II conjugation family	specialty conjugation; coverage decision
+amd	P-Desulfuration	no_match			chemical transformation	
+amd	Aromatic Sulfuration	no_match			chemical transformation	
+amd	Decomplexation	out_of_scope				
+amd	Nucleophilic Addition	compositional_only				process-level, not typed xenobiotic reaction identity
+amd	N-Decarboxylation	accept_as	xrm:0000620	decarboxylation	chemical transformation	N-labeled decarboxylation
+amd	S-Cysteination	accept_as	xrm:1300010	cysteine conjugation	phase II conjugation family	S-cysteine conjugation

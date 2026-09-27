@@ -1,0 +1,1460 @@
+term	count	field
+(empty)	67321	ACTIVITY
+Toxic	1128	ACTIVITY
+Antiinflammatory	905	ACTIVITY
+Cytotoxic	878	ACTIVITY
+Antineoplastic	787	ACTIVITY
+Carcinogenic	714	ACTIVITY
+Antiviral	631	ACTIVITY
+Analgesic	534	ACTIVITY
+Antitumor	496	ACTIVITY
+Antioxidant	464	ACTIVITY
+Antibacterial	433	ACTIVITY
+Anticancer	429	ACTIVITY
+Anticarcinogenic	396	ACTIVITY
+Mutagenic	391	ACTIVITY
+Hepatotoxic	388	ACTIVITY
+Neurotoxic	330	ACTIVITY
+Antiproliferative	325	ACTIVITY
+Antibiotic	313	ACTIVITY
+Genotoxic	293	ACTIVITY
+Antihypertensive	293	ACTIVITY
+Antidepressant	257	ACTIVITY
+Antimicrobial	250	ACTIVITY
+Anticonvulsant	248	ACTIVITY
+Sedative	209	ACTIVITY
+Estrogenic	208	ACTIVITY
+Antimalarial	202	ACTIVITY
+Vasodilator	195	ACTIVITY
+Neuroprotectant	180	ACTIVITY
+Antifungal	172	ACTIVITY
+Antithrombotic	160	ACTIVITY
+Antidiabetic	157	ACTIVITY
+Nephrotoxic	153	ACTIVITY
+Psychoactive	152	ACTIVITY
+Anxiolytic	142	ACTIVITY
+Anesthetic	139	ACTIVITY
+Antiarrhythmic	136	ACTIVITY
+Hypnotic	132	ACTIVITY
+Immunosuppressant	124	ACTIVITY
+Anabolic	122	ACTIVITY
+Antirheumatic	122	ACTIVITY
+Antiallergic	119	ACTIVITY
+Antipyretic	119	ACTIVITY
+Platelet Antiaggregatory	116	ACTIVITY
+Antiepileptic	111	ACTIVITY
+Narcotic	110	ACTIVITY
+Antipsychotic	108	ACTIVITY
+Tranquilizer	106	ACTIVITY
+Cardioprotectant	103	ACTIVITY
+Cytostatic	100	ACTIVITY
+Muscle Relaxant	100	ACTIVITY
+Antiretroviral	100	ACTIVITY
+Antihistaminic	99	ACTIVITY
+beta-Adrenergic Blocker	99	ACTIVITY
+Hypoglycemic	97	ACTIVITY
+Insecticide	97	ACTIVITY
+Anticoagulant	95	ACTIVITY
+Immunomodulator	94	ACTIVITY
+Androgenic	93	ACTIVITY
+Cardiotonic	92	ACTIVITY
+Alkylating Agent	91	ACTIVITY
+Antiasthmatic	90	ACTIVITY
+COX Inhibitor	90	ACTIVITY
+Cardiotoxic	87	ACTIVITY
+Hepatoprotectant	83	ACTIVITY
+Teratogenic	82	ACTIVITY
+Stimulant	80	ACTIVITY
+Antileukemic	79	ACTIVITY
+Anticholinergic	78	ACTIVITY
+Irritant	78	ACTIVITY
+Neuroleptic	76	ACTIVITY
+Nonsteroidal Antiinflammatory Drug	75	ACTIVITY
+Acetylcholinesterase Inhibitor	75	ACTIVITY
+Hematotoxic	74	ACTIVITY
+Calcium Channel Blocker	73	ACTIVITY
+Sympathomimetic	72	ACTIVITY
+Endocrine Disruptor	71	ACTIVITY
+Chemoprotectant	71	ACTIVITY
+Chemotherapeutic	70	ACTIVITY
+Calcium Antagonist	66	ACTIVITY
+Psychotropic	65	ACTIVITY
+Glucocorticoid	64	ACTIVITY
+Cytochrome P450 Inhibitor	63	ACTIVITY
+CNS Stimulant	63	ACTIVITY
+Antiangiogenic	63	ACTIVITY
+Antiestrogenic	63	ACTIVITY
+Hallucinogenic	63	ACTIVITY
+Tumor Initiating	62	ACTIVITY
+Antiulcerative	62	ACTIVITY
+Antiparasitic	61	ACTIVITY
+Vitamin	61	ACTIVITY
+Diuretic	60	ACTIVITY
+Antinociceptive	60	ACTIVITY
+ACE Inhibitor	60	ACTIVITY
+Bronchodilator	58	ACTIVITY
+Herbicide	58	ACTIVITY
+Hypotensive	57	ACTIVITY
+Antiparkinsonian	57	ACTIVITY
+Allergenic	57	ACTIVITY
+Antitussive	57	ACTIVITY
+Reverse Transcriptase Inhibitor	56	ACTIVITY
+Antiemetic	55	ACTIVITY
+Tyrosine Kinase Inhibitor	55	ACTIVITY
+COX-2 Inhibitor	53	ACTIVITY
+Antituberculosis	52	ACTIVITY
+Serotonin Inhibitor	51	ACTIVITY
+MAO Inhibitor	51	ACTIVITY
+Antianginal	50	ACTIVITY
+Lipoxygenase Inhibitor	50	ACTIVITY
+Antiandrogenic	49	ACTIVITY
+Coronary Vasodilator	48	ACTIVITY
+CNS Depressant	47	ACTIVITY
+Antiischemic	47	ACTIVITY
+Serotonin Reuptake Inhibitor	46	ACTIVITY
+5-HT Agonist	44	ACTIVITY
+Radical Scavenging Agent	44	ACTIVITY
+Dopamine Agonist	43	ACTIVITY
+Antiarthritic	43	ACTIVITY
+Anthelmintic	43	ACTIVITY
+Tumorigenic	43	ACTIVITY
+Anorectic	43	ACTIVITY
+Cholinesterase Inhibitor	43	ACTIVITY
+Spasmolytic	42	ACTIVITY
+Progestogenic	42	ACTIVITY
+Antianxiety	41	ACTIVITY
+Cell Proliferation Inhibitor	41	ACTIVITY
+HMG-CoA Reductase Inhibitor	40	ACTIVITY
+Cell Growth Inhibitor	40	ACTIVITY
+Hepatocarcinogenic	39	ACTIVITY
+Antihyperlipidemic	39	ACTIVITY
+Neuroactive	39	ACTIVITY
+Cannabinoid Agonist	39	ACTIVITY
+Antispasmodic	38	ACTIVITY
+Psychostimulant	38	ACTIVITY
+Antipsoriatic	38	ACTIVITY
+Histamine H1 Antagonist	37	ACTIVITY
+Antiglaucoma	36	ACTIVITY
+Dopamine Antagonist	35	ACTIVITY
+HIV-1 Protease Inhibitor	35	ACTIVITY
+RNA Polymerase Inhibitor	35	ACTIVITY
+Opioid Agonist	34	ACTIVITY
+Hypocholesteremic	34	ACTIVITY
+Cardiovascular Agent	34	ACTIVITY
+Chelating Agent (Fe)	34	ACTIVITY
+Sodium Channel Blocker	33	ACTIVITY
+Contraceptive	33	ACTIVITY
+beta-Adrenoceptor Antagonist	33	ACTIVITY
+Apoptosis Inducer	33	ACTIVITY
+Analeptic	33	ACTIVITY
+SERM	33	ACTIVITY
+Phosphodiesterase Inhibitor	33	ACTIVITY
+Vasoconstrictor	33	ACTIVITY
+Angiotensin II Antagonist	33	ACTIVITY
+Aromatase Inhibitor	32	ACTIVITY
+Euphoric	32	ACTIVITY
+Antiinfective	32	ACTIVITY
+Dopaminergic	32	ACTIVITY
+Antimuscarinic	30	ACTIVITY
+Antiatherosclerotic	30	ACTIVITY
+Neuromuscular Blocker	30	ACTIVITY
+Cardiovascular Stimulant	29	ACTIVITY
+Antihypercholesterolemic	29	ACTIVITY
+Antiplatelet	29	ACTIVITY
+Immunotoxic	29	ACTIVITY
+Cytoprotectant	29	ACTIVITY
+Hypolipidemic	29	ACTIVITY
+Hypertensive	28	ACTIVITY
+5-HT Antagonist	27	ACTIVITY
+mu-Opioid Agonist	27	ACTIVITY
+beta2-Adrenoceptor Agonist	27	ACTIVITY
+Topoisomerase I Inhibitor	27	ACTIVITY
+Cell Differentiation Agent	27	ACTIVITY
+Antihyperglycemic	27	ACTIVITY
+Angiotensinase Inhibitor	27	ACTIVITY
+Antiobesity	27	ACTIVITY
+Antimutagenic	27	ACTIVITY
+Dopamine D2 Antagonist	26	ACTIVITY
+Antiprotozoal	26	ACTIVITY
+Pneumotoxic	26	ACTIVITY
+Corticosteroid	25	ACTIVITY
+5alpha-Reductase Inhibitor	25	ACTIVITY
+5-HT3 Antagonist	25	ACTIVITY
+Norepinephrine Reuptake Inhibitor	24	ACTIVITY
+Gestagenic	24	ACTIVITY
+Adrenergic Blocker	24	ACTIVITY
+Embryotoxic	24	ACTIVITY
+Topoisomerase Inhibitor	24	ACTIVITY
+Aldehyde Dehydrogenase Inhibitor	24	ACTIVITY
+Cannabimimetic	24	ACTIVITY
+PPAR Agonist	24	ACTIVITY
+Antiseptic	23	ACTIVITY
+Antitrypanosomal	23	ACTIVITY
+Lipid Regulator	23	ACTIVITY
+NMDA Antagonist	23	ACTIVITY
+GABA Antagonist	23	ACTIVITY
+Antimitotic	23	ACTIVITY
+Mycotoxin	23	ACTIVITY
+Phosphodiesterase 4 Inhibitor	23	ACTIVITY
+Dipeptidyl Peptidase IV Inhibitor	23	ACTIVITY
+Immunostimulant	22	ACTIVITY
+mu-Opioid Antagonist	22	ACTIVITY
+Chelating Agent	22	ACTIVITY
+Antiatherogenic	22	ACTIVITY
+Convulsant	21	ACTIVITY
+Muscarinic M3 Antagonist	21	ACTIVITY
+Calcium Channel Antagonist	21	ACTIVITY
+Hormone	21	ACTIVITY
+Mucolytic	21	ACTIVITY
+Topoisomerase II Inhibitor	21	ACTIVITY
+Antimycotic	21	ACTIVITY
+Neurotransmitter	21	ACTIVITY
+Protease Inhibitor	21	ACTIVITY
+Growth Promoter	20	ACTIVITY
+Histamine Antagonist	20	ACTIVITY
+beta-Blocker	20	ACTIVITY
+Antiherpetic	20	ACTIVITY
+Vasorelaxant	20	ACTIVITY
+HIV Protease Inhibitor	20	ACTIVITY
+Catechol O-Methyltransferase Inhibitor	20	ACTIVITY
+Smooth Muscle Relaxant	19	ACTIVITY
+Noradrenaline Reuptake Inhibitor	19	ACTIVITY
+Pro-inflammatory	19	ACTIVITY
+Ulcerogenic	19	ACTIVITY
+Cardiac Stimulant	19	ACTIVITY
+Platelet Activating Factor Antagonist	19	ACTIVITY
+H1 Antagonist	19	ACTIVITY
+5-HT2 Antagonist	19	ACTIVITY
+Thymidylate Synthase Inhibitor	19	ACTIVITY
+Aldose Reductase Inhibitor	19	ACTIVITY
+Cytochrome P450 Inducer	18	ACTIVITY
+Narcotic Antagonist	18	ACTIVITY
+Respiratory Stimulant	18	ACTIVITY
+Thyroid Inhibitor	18	ACTIVITY
+CoA Reductase Inhibitor	18	ACTIVITY
+Dihydrofolate Reductase Inhibitor	18	ACTIVITY
+5-HT2A Antagonist	18	ACTIVITY
+GABA Agonist	18	ACTIVITY
+Squalene Synthase Inhibitor	18	ACTIVITY
+beta-Adrenoceptor Blocker	17	ACTIVITY
+DNA Synthesis Inhibitor	17	ACTIVITY
+Antidiarrheal	17	ACTIVITY
+Adrenergic	17	ACTIVITY
+alpha-Adrenergic Blocker	17	ACTIVITY
+Inotropic	17	ACTIVITY
+Gastric Antisecretory	17	ACTIVITY
+Proton Pump Inhibitor	17	ACTIVITY
+alpha1-Adrenoceptor Antagonist	17	ACTIVITY
+Radioprotectant	17	ACTIVITY
+Dopamine D2 Agonist	17	ACTIVITY
+Intraocular Pressure Reducer	17	ACTIVITY
+Hsp90 Inhibitor	17	ACTIVITY
+Norepinephrine Uptake Inhibitor	16	ACTIVITY
+Antileishmanial	16	ACTIVITY
+Saluretic	16	ACTIVITY
+Leukotriene Antagonist	16	ACTIVITY
+Psychomotor Stimulant	16	ACTIVITY
+Serotonin Uptake Inhibitor	16	ACTIVITY
+5-HT1A Agonist	16	ACTIVITY
+Lipid Peroxidation Inhibitor	16	ACTIVITY
+Antiaggregatory	16	ACTIVITY
+Protein Kinase Inhibitor	16	ACTIVITY
+Histone Deacetylase Inhibitor	16	ACTIVITY
+Depressant	15	ACTIVITY
+alpha1-Adrenergic Blocker	15	ACTIVITY
+Potassium Channel Blocker	15	ACTIVITY
+Radiosensitizer	15	ACTIVITY
+Laxative	15	ACTIVITY
+CB1 Agonist	15	ACTIVITY
+5-Lipoxygenase Inhibitor	15	ACTIVITY
+HIV-1 Reverse Transcriptase Inhibitor	15	ACTIVITY
+5-HT1A Antagonist	15	ACTIVITY
+EP3 Antagonist	15	ACTIVITY
+Antineuralgic	14	ACTIVITY
+Hemodynamic	14	ACTIVITY
+beta-Adrenergic Antagonist	14	ACTIVITY
+Antischistosomal	14	ACTIVITY
+Peripheral Vasodilator	14	ACTIVITY
+Reproductive Toxic	14	ACTIVITY
+Histamine H2 Antagonist	14	ACTIVITY
+Tonic	14	ACTIVITY
+Trypanocide	14	ACTIVITY
+alpha2-Adrenoceptor Antagonist	14	ACTIVITY
+Gene Transcription Regulator	14	ACTIVITY
+Serotonergic	14	ACTIVITY
+Nitric Oxide Synthase Inhibitor	14	ACTIVITY
+Cholesterol Biosynthesis Inhibitor	14	ACTIVITY
+Phosphodiesterase 5 Inhibitor	14	ACTIVITY
+Choleretic	13	ACTIVITY
+Antileprosy	13	ACTIVITY
+Gastrointestinal Toxic	13	ACTIVITY
+Uricosuric	13	ACTIVITY
+Oncolytic	13	ACTIVITY
+Mydriatic	13	ACTIVITY
+Gastroprokinetic	13	ACTIVITY
+Estrogen Agonist	13	ACTIVITY
+alpha2-Adrenoceptor Agonist	13	ACTIVITY
+Antiosteoporotic	13	ACTIVITY
+Antiapoptotic	13	ACTIVITY
+Anti-HIV	13	ACTIVITY
+Photosensitizer	13	ACTIVITY
+HIV Integrase Inhibitor	13	ACTIVITY
+Muscarinic Antagonist	12	ACTIVITY
+Antipruritic	12	ACTIVITY
+Ribonucleotide Reductase Inhibitor	12	ACTIVITY
+Appetite Suppressant	12	ACTIVITY
+Xanthine Oxidase Inhibitor	12	ACTIVITY
+beta2-Adrenergic Agonist	12	ACTIVITY
+Kinase Inhibitor	12	ACTIVITY
+Nucleoside Reverse Transcriptase Inhibitor	12	ACTIVITY
+DNA Polymerase Inhibitor	12	ACTIVITY
+Vasoactive	12	ACTIVITY
+Butyrylcholinesterase Inhibitor	12	ACTIVITY
+Endothelin Antagonist	12	ACTIVITY
+Factor Xa Inhibitor	12	ACTIVITY
+11beta-Hydroxysteroid Dehydrogenase 1 Inhibitor	12	ACTIVITY
+Antimigraine	11	ACTIVITY
+Inflammatory	11	ACTIVITY
+beta1-Adrenoceptor Antagonist	11	ACTIVITY
+Opioid Antagonist	11	ACTIVITY
+Antifolate	11	ACTIVITY
+Myelotoxic	11	ACTIVITY
+Dopamine Reuptake Inhibitor	11	ACTIVITY
+Antisecretory	11	ACTIVITY
+H+/K+-ATPase Inhibitor	11	ACTIVITY
+Antihyperlipoproteinemic	11	ACTIVITY
+Natriuretic	11	ACTIVITY
+Cognition Enhancer	11	ACTIVITY
+Vitamin D3 Like	11	ACTIVITY
+Growth Factor	11	ACTIVITY
+Nootropic	11	ACTIVITY
+EGFR Inhibitor	11	ACTIVITY
+DNA Alkyltransferase Inhibitor	11	ACTIVITY
+Vitamin E Like	11	ACTIVITY
+Antimetastatic	11	ACTIVITY
+Endothelin A Antagonist	11	ACTIVITY
+Antilipidemic	11	ACTIVITY
+EGFR Tyrosine Kinase Inhibitor	11	ACTIVITY
+SARM	11	ACTIVITY
+CaSR Antagonist	11	ACTIVITY
+Gelatinase Inhibitor	11	ACTIVITY
+Antiphlogistic	10	ACTIVITY
+beta1-Adrenergic Blocker	10	ACTIVITY
+beta-Adrenergic Stimulant	10	ACTIVITY
+P-Glycoprotein Inhibitor	10	ACTIVITY
+Antimetabolite	10	ACTIVITY
+Peroxisome Proliferator	10	ACTIVITY
+Cholinergic	10	ACTIVITY
+Psychotomimetic	10	ACTIVITY
+Benzodiazepine Agonist	10	ACTIVITY
+H2 Antagonist	10	ACTIVITY
+Vasoprotectant	10	ACTIVITY
+CB2 Agonist	10	ACTIVITY
+5-HT1 Agonist	10	ACTIVITY
+Antifertility	10	ACTIVITY
+Chemotactic	10	ACTIVITY
+Fibrinogen Antagonist	10	ACTIVITY
+Neurokinin-1 Antagonist	10	ACTIVITY
+Melatonin Agonist	10	ACTIVITY
+Epoxide Hydrolase Inhibitor	10	ACTIVITY
+Tubulin Polymerization Inhibitor	10	ACTIVITY
+TRPV1 Antagonist	10	ACTIVITY
+Sleep Inducer	9	ACTIVITY
+Serotonin Antagonist	9	ACTIVITY
+Antiaddictive	9	ACTIVITY
+Inosine Monophosphate Dehydrogenase Inhibitor	9	ACTIVITY
+Expectorant	9	ACTIVITY
+Vesicant	9	ACTIVITY
+Antidiuretic	9	ACTIVITY
+Adenosine Antagonist	9	ACTIVITY
+Emetic	9	ACTIVITY
+Glutathione Transferase Inhibitor	9	ACTIVITY
+Rodenticide	9	ACTIVITY
+Disinfectant	9	ACTIVITY
+MAO-A Inhibitor	9	ACTIVITY
+Serotonin Agonist	9	ACTIVITY
+Acaricide	9	ACTIVITY
+Proapoptotic	9	ACTIVITY
+Memory Enhancer	9	ACTIVITY
+Lipid Lowering Agent	9	ACTIVITY
+Antiulcer	9	ACTIVITY
+Tyrosinase Inhibitor	9	ACTIVITY
+Antiplasmodial	9	ACTIVITY
+SGLT2 Inhibitor	9	ACTIVITY
+Non-Nucleoside Reverse Transcriptase Inhibitor	9	ACTIVITY
+TLR7 Agonist	9	ACTIVITY
+Cyclin-Dependent Kinase Inhibitor	9	ACTIVITY
+Neuraminidase Inhibitor	9	ACTIVITY
+Thrombin Inhibitor	9	ACTIVITY
+Anti-HCV	9	ACTIVITY
+Psychotherapeutic	8	ACTIVITY
+Dopamine D1 Antagonist	8	ACTIVITY
+Agranulocytotoxic	8	ACTIVITY
+Antiarteriosclerotic	8	ACTIVITY
+Cholestatic	8	ACTIVITY
+Mineralocorticoid	8	ACTIVITY
+GABA Receptor Modulator	8	ACTIVITY
+alpha2-Adrenergic Agonist	8	ACTIVITY
+Cardiovascular Regulator	8	ACTIVITY
+Opioid Analgesic	8	ACTIVITY
+beta1-Adrenoceptor Blocker	8	ACTIVITY
+Calcium Entry Blocker	8	ACTIVITY
+kappa-Opioid Agonist	8	ACTIVITY
+Urotoxic	8	ACTIVITY
+Abortifacient	8	ACTIVITY
+Antibronchospastic	8	ACTIVITY
+Protein Kinase C Inhibitor	8	ACTIVITY
+Neuromodulator	8	ACTIVITY
+Calcium Regulator	8	ACTIVITY
+alpha-Adrenergic Antagonist	8	ACTIVITY
+Clastogenic	8	ACTIVITY
+PPARgamma Agonist	8	ACTIVITY
+Muscarinic Agonist	8	ACTIVITY
+Vitamin K Like	8	ACTIVITY
+Angiogenic	8	ACTIVITY
+beta3-Adrenoceptor Agonist	8	ACTIVITY
+Erectogenic	8	ACTIVITY
+PI3K Inhibitor	8	ACTIVITY
+VEGFR Inhibitor	8	ACTIVITY
+Antischizophrenic	7	ACTIVITY
+Anxiogenic	7	ACTIVITY
+Antifibrotic	7	ACTIVITY
+Glucocorticoid Agonist	7	ACTIVITY
+Antistaphylococcal	7	ACTIVITY
+Antifibrinolytic	7	ACTIVITY
+5-HT4 Agonist	7	ACTIVITY
+Hyperthermic	7	ACTIVITY
+Aldosterone Antagonist	7	ACTIVITY
+Spermatotoxic	7	ACTIVITY
+Antiglucocorticoid	7	ACTIVITY
+Gastroprotective	7	ACTIVITY
+Vitamin A Like	7	ACTIVITY
+beta-Lactamase Inhibitor	7	ACTIVITY
+Benzodiazepine Antagonist	7	ACTIVITY
+Cholecystokinin Antagonist	7	ACTIVITY
+Angiotensin Receptor Blocker	7	ACTIVITY
+5-HT2 Agonist	7	ACTIVITY
+Phytoestrogen	7	ACTIVITY
+Cholagogic	7	ACTIVITY
+Antiallodynic	7	ACTIVITY
+Neurotrophomodulator	7	ACTIVITY
+GABAA Receptor Modulator	7	ACTIVITY
+Vascular Disrupting Agent	7	ACTIVITY
+S1P Receptor Modulator	7	ACTIVITY
+mGluR5 Modulator	7	ACTIVITY
+Bradykinin B1 Antagonist	7	ACTIVITY
+p38 MAP Kinase Inhibitor	7	ACTIVITY
+Orexin Antagonist	7	ACTIVITY
+METAP2 Inhibitor	7	ACTIVITY
+Dopamine D2/Serotonin 5-HT2 Antagonist	6	ACTIVITY
+Growth Stimulant	6	ACTIVITY
+Tocolytic	6	ACTIVITY
+Opioid	6	ACTIVITY
+Antiamebic	6	ACTIVITY
+Antimycobacterial	6	ACTIVITY
+Antianaphylactic	6	ACTIVITY
+Serotonin-Norepinephrine Reuptake Inhibitor	6	ACTIVITY
+Testicular Toxic	6	ACTIVITY
+Estrogen Antagonist	6	ACTIVITY
+Noradrenergic	6	ACTIVITY
+Tremorgenic	6	ACTIVITY
+ATPase Inhibitor	6	ACTIVITY
+Antihemorrhagic	6	ACTIVITY
+delta-Opioid Agonist	6	ACTIVITY
+Gastrointestinal Motility Stimulant	6	ACTIVITY
+Antihypotensive	6	ACTIVITY
+Angiotensin Antagonist	6	ACTIVITY
+Hypercalcemic	6	ACTIVITY
+Uterotonic	6	ACTIVITY
+5-HT2C Antagonist	6	ACTIVITY
+Capillary Protectant	6	ACTIVITY
+Thrombocyte Aggregation Inhibitor	6	ACTIVITY
+Acyl-CoA:Cholesterol Acyltransferase Inhibitor	6	ACTIVITY
+Vasopressor	6	ACTIVITY
+Androgen Antagonist	6	ACTIVITY
+Chemosensitizer	6	ACTIVITY
+Thyroid Hormone	6	ACTIVITY
+Angiotensin II Receptor Blocker	6	ACTIVITY
+Chemopreventive Agent	6	ACTIVITY
+Esterase Inhibitor	6	ACTIVITY
+Dopamine D1 Agonist	6	ACTIVITY
+Endopeptidase Inhibitor	6	ACTIVITY
+Neutral Endopeptidase Inhibitor	6	ACTIVITY
+5-HT1B/1D Agonist	6	ACTIVITY
+P2Y12 Antagonist	6	ACTIVITY
+P2Y12 Receptor Inhibitor	6	ACTIVITY
+Potassium Channel Opener	6	ACTIVITY
+Glutathione Transferase Inducer	6	ACTIVITY
+HIV Reverse Transcriptase Inhibitor	6	ACTIVITY
+SIRT1 Activator	6	ACTIVITY
+beta3-Adrenergic Agonist	6	ACTIVITY
+Multikinase Inhibitor	6	ACTIVITY
+Cannabinoid Antagonist	6	ACTIVITY
+Integrin alpha4 Antagonist	6	ACTIVITY
+HIV-1 Integrase Inhibitor	6	ACTIVITY
+Prostaglandin D2 Antagonist	6	ACTIVITY
+HCV NS5B Polymerase Inhibitor	6	ACTIVITY
+PARP Inhibitor	6	ACTIVITY
+Sodium-Glucose Cotransporter-2 Inhibitor	6	ACTIVITY
+ALK Inhibitor	6	ACTIVITY
+alpha-Adrenoceptor Antagonist	5	ACTIVITY
+beta-Adrenergic Agonist	5	ACTIVITY
+Miotic	5	ACTIVITY
+Respiratory Depressant	5	ACTIVITY
+Guanylate Cyclase Activator	5	ACTIVITY
+Opiate Agonist	5	ACTIVITY
+Cerebral Vasodilator	5	ACTIVITY
+Myelosuppressant	5	ACTIVITY
+Carbonic Anhydrase Inhibitor	5	ACTIVITY
+Myotropic	5	ACTIVITY
+Bradycardic	5	ACTIVITY
+Gastrointestinal Motility Regulator	5	ACTIVITY
+Thrombolytic	5	ACTIVITY
+Antihyperuricemic	5	ACTIVITY
+Gametocytocide	5	ACTIVITY
+Hemolytic	5	ACTIVITY
+Vitamin K Antagonist	5	ACTIVITY
+Vitamin K Epoxide Reductase Inhibitor	5	ACTIVITY
+AICAR Transformylase Inhibitor	5	ACTIVITY
+MAO-B Inhibitor	5	ACTIVITY
+beta-Adrenoceptor Agonist	5	ACTIVITY
+beta2-Agonist	5	ACTIVITY
+Antimineralocorticoid	5	ACTIVITY
+Antivascular	5	ACTIVITY
+Antirhinitic	5	ACTIVITY
+Antiperistaltic	5	ACTIVITY
+DNA Topoisomerase I Inhibitor	5	ACTIVITY
+Diarrheal	5	ACTIVITY
+Psychedelic	5	ACTIVITY
+Methyltransferase Inhibitor	5	ACTIVITY
+Apoptotic	5	ACTIVITY
+beta2-Adrenergic Blocker	5	ACTIVITY
+Antimicrotubule Agent	5	ACTIVITY
+Calcium Release Agonist	5	ACTIVITY
+HIV-1 Replication Inhibitor	5	ACTIVITY
+Porphyrinogenic	5	ACTIVITY
+5-HT2C Agonist	5	ACTIVITY
+Cell Differentiation Inducer	5	ACTIVITY
+Antiosteolytic	5	ACTIVITY
+Angiogenesis Inhibitor	5	ACTIVITY
+GnRH Antagonist	5	ACTIVITY
+Influenza Virus Inhibitor	5	ACTIVITY
+3-Kinase Inhibitor	5	ACTIVITY
+Thromboxane Synthetase Inhibitor	5	ACTIVITY
+Hypolipemic	5	ACTIVITY
+Polymerase Inhibitor	5	ACTIVITY
+Repellent	5	ACTIVITY
+Cholesterol Absorption Inhibitor	5	ACTIVITY
+Leukotriene A4 Hydrolase Inhibitor	5	ACTIVITY
+Farnesyl Transferase Inhibitor	5	ACTIVITY
+Substance P Antagonist	5	ACTIVITY
+Oxytocin Antagonist	5	ACTIVITY
+Neurokinin Antagonist	5	ACTIVITY
+Matrix Metalloproteinase Inhibitor	5	ACTIVITY
+S1P Agonist	5	ACTIVITY
+MEK Inhibitor	5	ACTIVITY
+Serine Protease Inhibitor	5	ACTIVITY
+c-Met Kinase Inhibitor	5	ACTIVITY
+CBR1 Inverse Agonist	5	ACTIVITY
+Antiedemic	4	ACTIVITY
+Antidopaminergic	4	ACTIVITY
+Prostaglandin Synthase Inhibitor	4	ACTIVITY
+Cardiac Depressant	4	ACTIVITY
+NMDA Receptor Blocker	4	ACTIVITY
+Antianalgesic	4	ACTIVITY
+Morphine Antagonist	4	ACTIVITY
+Hypothermic	4	ACTIVITY
+Uterine Relaxant	4	ACTIVITY
+Non-Opioid Analgesic	4	ACTIVITY
+Myelodepressant	4	ACTIVITY
+Antianemic	4	ACTIVITY
+Oxytocic	4	ACTIVITY
+Ovotoxic	4	ACTIVITY
+Dopamine Uptake Inhibitor	4	ACTIVITY
+Nephroprotectant	4	ACTIVITY
+Gonadotropin Inhibitor	4	ACTIVITY
+Locomotor Stimulant	4	ACTIVITY
+Hypouricemic	4	ACTIVITY
+Ethanol Sensitizer	4	ACTIVITY
+Decongestant	4	ACTIVITY
+Ototoxic	4	ACTIVITY
+Cataleptogenic	4	ACTIVITY
+PPARalpha Agonist	4	ACTIVITY
+Lipidemic	4	ACTIVITY
+Muscle Growth Promoter	4	ACTIVITY
+Phosphodiesterase 3 Inhibitor	4	ACTIVITY
+Antigonadotropic	4	ACTIVITY
+Myotoxic	4	ACTIVITY
+Antiaging	4	ACTIVITY
+Phytotoxic	4	ACTIVITY
+Adrenal Cortex Hormone	4	ACTIVITY
+Progestational	4	ACTIVITY
+Luteinizing Hormone-Releasing Hormone Antagonist	4	ACTIVITY
+Skin Sensitizer	4	ACTIVITY
+alpha2-Adrenergic Antagonist	4	ACTIVITY
+Platelet Activating Factor	4	ACTIVITY
+Secondary Messenger	4	ACTIVITY
+Oxidant	4	ACTIVITY
+Cell Differentiation Calcemic	4	ACTIVITY
+5-HT1D Agonist	4	ACTIVITY
+Calcification Inhibitor	4	ACTIVITY
+Estrogen Agonist/Antagonist	4	ACTIVITY
+Anticytotoxic	4	ACTIVITY
+Spasmogenic	4	ACTIVITY
+GnRH Agonist	4	ACTIVITY
+Thromboxane A2 Antagonist	4	ACTIVITY
+Tumorigenesis Inhibitor	4	ACTIVITY
+Cancer Cell Growth Inhibitor	4	ACTIVITY
+Antiprogesteronic	4	ACTIVITY
+Drug Delivery Enhancer	4	ACTIVITY
+Apoptosis Inhibitor	4	ACTIVITY
+Lacrimator	4	ACTIVITY
+Antimigratory	4	ACTIVITY
+Fibrinolytic	4	ACTIVITY
+Acetylcholine Agonist	4	ACTIVITY
+alpha1-Adrenergic Agonist	4	ACTIVITY
+PPARgamma Activator	4	ACTIVITY
+Calcium Sensitizer	4	ACTIVITY
+Thioredoxin Reductase Inhibitor	4	ACTIVITY
+RGD Peptidomimetic	4	ACTIVITY
+AMPA/Kainate Antagonist	4	ACTIVITY
+Glycoprotein IIb/IIIa Antagonist	4	ACTIVITY
+Adenosine A1 Agonist	4	ACTIVITY
+Progesterone Receptor Modulator	4	ACTIVITY
+Cathepsin K Inhibitor	4	ACTIVITY
+Calcimimetic	4	ACTIVITY
+TNF-alpha Inhibitor	4	ACTIVITY
+Multitargeted Kinase Inhibitor	4	ACTIVITY
+VEGFR-2 Inhibitor	4	ACTIVITY
+Nicotine Agonist	4	ACTIVITY
+Microtubule Inhibitor	4	ACTIVITY
+mGluR5 Antagonist	4	ACTIVITY
+Integrin alpha4beta1/alpha4beta7 Antagonist	4	ACTIVITY
+Ocular Hypotensive	4	ACTIVITY
+CETP Inhibitor	4	ACTIVITY
+Thrombopoietin Agonist	4	ACTIVITY
+p38alpha MAP Kinase Inhibitor	4	ACTIVITY
+mPGES-1 Inhibitor	4	ACTIVITY
+5-HT2A Blocker	3	ACTIVITY
+GABA Transaminase Inhibitor	3	ACTIVITY
+Arrhythmogenic	3	ACTIVITY
+Immunogenic	3	ACTIVITY
+Thyreostatic	3	ACTIVITY
+beta1-Adrenergic Antagonist	3	ACTIVITY
+Arterial Dilator	3	ACTIVITY
+Cardiovascular Protectant	3	ACTIVITY
+Antiadrenergic	3	ACTIVITY
+Immunopotentiator	3	ACTIVITY
+Purine Biosynthesis Inhibitor	3	ACTIVITY
+Secretolytic	3	ACTIVITY
+Appetite Stimulant	3	ACTIVITY
+Nauseant	3	ACTIVITY
+beta-Adrenergic	3	ACTIVITY
+Atherogenic	3	ACTIVITY
+Gastrokinetic	3	ACTIVITY
+Psychomimetic	3	ACTIVITY
+alpha2-Adrenergic Blocker	3	ACTIVITY
+Uricostatic	3	ACTIVITY
+Antifibrogenic	3	ACTIVITY
+Cytokine Antagonist	3	ACTIVITY
+Antirachitic	3	ACTIVITY
+Leukotriene D4 Antagonist	3	ACTIVITY
+Statin	3	ACTIVITY
+Cysteine Protease Inhibitor	3	ACTIVITY
+Thiol Protease Inhibitor	3	ACTIVITY
+Thromboxane Antagonist	3	ACTIVITY
+Cholinomimetic	3	ACTIVITY
+Reductase Inhibitor	3	ACTIVITY
+Ergogenic	3	ACTIVITY
+Nucleic Acid Synthesis Inhibitor	3	ACTIVITY
+Dysrhythmic	3	ACTIVITY
+Antihyperalgesic	3	ACTIVITY
+GABAA Agonist	3	ACTIVITY
+Stomachic	3	ACTIVITY
+Parasympathomimetic	3	ACTIVITY
+Nephrocarcinogenic	3	ACTIVITY
+beta1-Adrenoceptor Agonist	3	ACTIVITY
+Leukotoxic	3	ACTIVITY
+cAMP Phosphodiesterase Inhibitor	3	ACTIVITY
+Calcineurin Inhibitor	3	ACTIVITY
+Testicular Atrophy Promoter	3	ACTIVITY
+DNA Topoisomerase Inhibitor	3	ACTIVITY
+Prolactin Secretion Inhibitor	3	ACTIVITY
+Antigenotoxic	3	ACTIVITY
+Thymidine Kinase Inhibitor	3	ACTIVITY
+alpha1-Adrenoceptor Blocker	3	ACTIVITY
+Gastric Proton Pump Inhibitor	3	ACTIVITY
+Peroxisome Growth Inducer	3	ACTIVITY
+alpha1-Adrenergic Antagonist	3	ACTIVITY
+cGMP Phosphodiesterase Inhibitor	3	ACTIVITY
+Acetylcholine Acetyl Hydrolase Inhibitor	3	ACTIVITY
+Antiscorbutic	3	ACTIVITY
+alpha-Adrenergic Agonist	3	ACTIVITY
+Dihydropyrimidine Dehydrogenase Inhibitor	3	ACTIVITY
+Adenosine Regulator	3	ACTIVITY
+Prostaglandin Biosynthesis Inhibitor	3	ACTIVITY
+Entactogenic	3	ACTIVITY
+AT1 Antagonist	3	ACTIVITY
+PGE2 Antagonist	3	ACTIVITY
+5-HT2 Blocker	3	ACTIVITY
+Purgative	3	ACTIVITY
+Sodium Antagonist	3	ACTIVITY
+Norepinephrine Transporter Inhibitor	3	ACTIVITY
+5-HT3 Agonist	3	ACTIVITY
+Goitrogenic	3	ACTIVITY
+Filaricidal	3	ACTIVITY
+PXR Activator	3	ACTIVITY
+VDR Activator	3	ACTIVITY
+PPARalpha Activator	3	ACTIVITY
+Tubule Blocker	3	ACTIVITY
+O6-Alkylguanine-DNA Alkyltransferase Inhibitor	3	ACTIVITY
+Antihepatotoxic	3	ACTIVITY
+Ergosterol Biosynthesis Inhibitor	3	ACTIVITY
+RNA Synthesis Inhibitor	3	ACTIVITY
+AhR Agonist	3	ACTIVITY
+Semicarbazide-Sensitive Amine Oxidase Inhibitor	3	ACTIVITY
+Carboxylesterase Inhibitor	3	ACTIVITY
+Alcohol Dehydrogenase Inhibitor	3	ACTIVITY
+5-HT2alpha Antagonist	3	ACTIVITY
+Bronchoconstrictor	3	ACTIVITY
+DNA alpha-Polymerase Inhibitor	3	ACTIVITY
+Renin Inhibitor	3	ACTIVITY
+Leukocyte Elastase Inhibitor	3	ACTIVITY
+Dopamine D3 Antagonist	3	ACTIVITY
+Drug Resistance Inhibitor	3	ACTIVITY
+Interferon Inducer	3	ACTIVITY
+Retinoid Receptor Stimulant	3	ACTIVITY
+Growth Hormone Secretagogue	3	ACTIVITY
+NF-kappaB Inhibitor	3	ACTIVITY
+Antiulcerogenic	3	ACTIVITY
+Insulinotropic	3	ACTIVITY
+Potassium Channel Modulator	3	ACTIVITY
+ATP Synthetase Inhibitor	3	ACTIVITY
+Osteogenic	3	ACTIVITY
+Thromboxane A2 Synthetase Inhibitor	3	ACTIVITY
+Monoamine Reuptake Inhibitor	3	ACTIVITY
+Serine/Threonine Kinase Inhibitor	3	ACTIVITY
+Fasciolicide	3	ACTIVITY
+Prostaglandin F2alpha Agonist	3	ACTIVITY
+Histamine H3 Antagonist	3	ACTIVITY
+Protein Kinase C beta Inhibitor	3	ACTIVITY
+Vasopeptidase Inhibitor	3	ACTIVITY
+VLA-4 Antagonist	3	ACTIVITY
+Rho-Kinase Inhibitor	3	ACTIVITY
+Prokinetic	3	ACTIVITY
+Protein Tyrosine Kinase Inhibitor	3	ACTIVITY
+Estrogen Receptor Activator	3	ACTIVITY
+Anticholesterolemic	3	ACTIVITY
+Adenosine A1 Antagonist	3	ACTIVITY
+PDGFR-beta Inhibitor	3	ACTIVITY
+VEGFR-3 Inhibitor	3	ACTIVITY
+Lactamase Inhibitor	3	ACTIVITY
+Proteasome Inhibitor	3	ACTIVITY
+Antitubulin	3	ACTIVITY
+Urokinase Inhibitor	3	ACTIVITY
+Group II mGluR Agonist	3	ACTIVITY
+mGluR2/3 Agonist	3	ACTIVITY
+alpha4beta2 Nicotinic Acetylcholine Agonist	3	ACTIVITY
+Na+/H+ Exchanger Inhibitor	3	ACTIVITY
+alpha-Glucosidase Inhibitor	3	ACTIVITY
+CXCR3 Antagonist	3	ACTIVITY
+alpha7 Nicotinic Acetylcholine Agonist	3	ACTIVITY
+Phospholipase A2alpha Inhibitor	3	ACTIVITY
+Prostaglandin I2 Agonist	3	ACTIVITY
+HCV Protease Inhibitor	3	ACTIVITY
+Aurora Kinase Inhibitor	3	ACTIVITY
+Antinephritic	3	ACTIVITY
+Antitumorigenic	3	ACTIVITY
+Fatty Acid Amide Hydrolase Inhibitor	3	ACTIVITY
+5-HT7 Agonist	3	ACTIVITY
+Phycotoxin	3	ACTIVITY
+Hedgehog Signaling Pathway Inhibitor	3	ACTIVITY
+VEGFR Tyrosine Kinase Inhibitor	3	ACTIVITY
+Janus Kinase Inhibitor	3	ACTIVITY
+alpha-Amylase Inhibitor	3	ACTIVITY
+CRF-1 Antagonist	3	ACTIVITY
+Antivesicant	3	ACTIVITY
+beta-Secretase Inhibitor	3	ACTIVITY
+MDM2-p53 Interaction Inhibitor	3	ACTIVITY
+Glucokinase Activator	3	ACTIVITY
+Tumor Necrosis Factor-alpha Inhibitor	3	ACTIVITY
+Psychosedative	2	ACTIVITY
+Antimanic	2	ACTIVITY
+Muscarinic M1 Antagonist	2	ACTIVITY
+Fatty Acid beta-Oxidation Inhibitor	2	ACTIVITY
+GABA Receptor Sensitizer	2	ACTIVITY
+Dihydropteroate Synthase Inhibitor	2	ACTIVITY
+beta2-Adrenoceptor Antagonist	2	ACTIVITY
+Amnestic	2	ACTIVITY
+MRP-1 Inhibitor	2	ACTIVITY
+Anticoccidial	2	ACTIVITY
+Antitrichomal	2	ACTIVITY
+Hair Growth Promoter	2	ACTIVITY
+Hair Growth Stimulator	2	ACTIVITY
+Gastrotoxic	2	ACTIVITY
+Narcotic Agonist	2	ACTIVITY
+mu-Receptor Agonist	2	ACTIVITY
+Dromotropic	2	ACTIVITY
+Negative Dromotropic	2	ACTIVITY
+Bronchosecretolytic	2	ACTIVITY
+Acetylcholine Antagonist	2	ACTIVITY
+Calcium Influx Inhibitor	2	ACTIVITY
+Spermatogenesis Disruptor	2	ACTIVITY
+Antirickettsial	2	ACTIVITY
+Smooth Muscle Stimulant	2	ACTIVITY
+Antinatriuretic	2	ACTIVITY
+Antidysrhythmic	2	ACTIVITY
+Gyrase Inhibitor	2	ACTIVITY
+Mucoregulator	2	ACTIVITY
+Venotonic	2	ACTIVITY
+Ectoparasiticide	2	ACTIVITY
+Keratolytic	2	ACTIVITY
+Folate Antagonist	2	ACTIVITY
+Depot-neuroleptic	2	ACTIVITY
+Emotive	2	ACTIVITY
+Thymoleptic	2	ACTIVITY
+Adenosine Uptake Inhibitor	2	ACTIVITY
+Cell Protectant	2	ACTIVITY
+Psychoenergetic	2	ACTIVITY
+Spermatogenesis Promoter	2	ACTIVITY
+Sodium Transport Regulator	2	ACTIVITY
+Cholinesterase Reactivator	2	ACTIVITY
+Phosphatase Inhibitor	2	ACTIVITY
+Fungal Growth Regulator	2	ACTIVITY
+Plant Growth Inhibitor	2	ACTIVITY
+Parasympatholytic	2	ACTIVITY
+Anticestodal	2	ACTIVITY
+Antinematodal	2	ACTIVITY
+alpha-Blocker	2	ACTIVITY
+Oncogene	2	ACTIVITY
+Motility Stimulant	2	ACTIVITY
+NMDA Receptor Modulator	2	ACTIVITY
+Tumor Promoter	2	ACTIVITY
+Nitric Oxide Synthase Inducer	2	ACTIVITY
+Thromboxane A2 Inhibitor	2	ACTIVITY
+Mitochondrial Respiration Inhibitor	2	ACTIVITY
+Urate Reabsorption Inhibitor	2	ACTIVITY
+Chelating Agent (Hg)	2	ACTIVITY
+Antianabolic	2	ACTIVITY
+Antihyperammonemial	2	ACTIVITY
+Angiotensin II AT1 Antagonist	2	ACTIVITY
+Coagulant	2	ACTIVITY
+Immunodepressant	2	ACTIVITY
+Antiamnestic	2	ACTIVITY
+5-HT3 Blocker	2	ACTIVITY
+Androgen Receptor Activator	2	ACTIVITY
+Cathartic	2	ACTIVITY
+Catecholamine Antagonist	2	ACTIVITY
+Dopamine D2/Serotonin 5-HT2A Antagonist	2	ACTIVITY
+Dopamine Transporter Inhibitor	2	ACTIVITY
+GABA Reuptake Inhibitor	2	ACTIVITY
+Serotonin Transporter Inhibitor	2	ACTIVITY
+Antilipolytic	2	ACTIVITY
+Vitamin A Precursor	2	ACTIVITY
+Insulin Sensitizer	2	ACTIVITY
+Venoconstrictor	2	ACTIVITY
+Phenol Sulfotransferase Inhibitor	2	ACTIVITY
+Termiticide	2	ACTIVITY
+Dopamine beta-Hydroxylase Inhibitor	2	ACTIVITY
+CTP Synthetase Inhibitor	2	ACTIVITY
+Allyltransferase Inhibitor	2	ACTIVITY
+Retinoid Agonist	2	ACTIVITY
+Glucocorticoid Antagonist	2	ACTIVITY
+Permeability Enhancer	2	ACTIVITY
+Protein Synthesis Inhibitor	2	ACTIVITY
+Cholecystokinin B Antagonist	2	ACTIVITY
+Thrombocytopenic	2	ACTIVITY
+Histamine H3 Agonist	2	ACTIVITY
+Dehydropeptidase Inhibitor	2	ACTIVITY
+Transcriptase Inhibitor	2	ACTIVITY
+AMPA Antagonist	2	ACTIVITY
+Growth Hormone-Releasing Factor	2	ACTIVITY
+Uroprotectant	2	ACTIVITY
+Ion Flux Regulator	2	ACTIVITY
+Na+/K+-ATPase Regulator	2	ACTIVITY
+T Cell Proliferation Inhibitor	2	ACTIVITY
+Collagenase Inhibitor	2	ACTIVITY
+Endothelin-1 Antagonist	2	ACTIVITY
+Testosterone 5alpha-Reductase Inhibitor	2	ACTIVITY
+ErbB2 Inhibitor	2	ACTIVITY
+Cysteinyl Leukotriene-1 Antagonist	2	ACTIVITY
+Tachykinin Antagonist	2	ACTIVITY
+Chelating Agent (Cu)	2	ACTIVITY
+Urease Inhibitor	2	ACTIVITY
+Estradiol Sulfotransferase Inhibitor	2	ACTIVITY
+If Channel Inhibitor	2	ACTIVITY
+Elastase Inhibitor	2	ACTIVITY
+Cysteinyl Leukotriene Antagonist	2	ACTIVITY
+DNA Topoisomerase II Inhibitor	2	ACTIVITY
+mTOR Inhibitor	2	ACTIVITY
+Uterotrophic	2	ACTIVITY
+Leukotriene B4 Antagonist	2	ACTIVITY
+Metalloproteinase Inhibitor	2	ACTIVITY
+Dihydrouracil Dehydrogenase Inhibitor	2	ACTIVITY
+DNA gamma-Polymerase Inhibitor	2	ACTIVITY
+5-HT1 Antagonist	2	ACTIVITY
+Phytoalexin	2	ACTIVITY
+Proestrogenic	2	ACTIVITY
+Farnesyl-Protein Transferase Inhibitor	2	ACTIVITY
+Neurokinin-3 Antagonist	2	ACTIVITY
+Glyoxalase I Inhibitor	2	ACTIVITY
+Protoporphyrinogen Oxidase Inhibitor	2	ACTIVITY
+Insect Growth Regulator	2	ACTIVITY
+Histamine H1 Agonist	2	ACTIVITY
+4-Hydroxyphenylpyruvate Dioxygenase Inhibitor	2	ACTIVITY
+Janus Kinase-3 Inhibitor	2	ACTIVITY
+Bcr-Abl Tyrosine Kinase Inhibitor	2	ACTIVITY
+Signal Transduction Inhibitor	2	ACTIVITY
+ADP Antagonist	2	ACTIVITY
+alphavbeta3 Antagonist	2	ACTIVITY
+Antiexcitotoxic	2	ACTIVITY
+Endothelin ETA Antagonist	2	ACTIVITY
+Steroid Sulfatase Inhibitor	2	ACTIVITY
+Sulfatase Inhibitor	2	ACTIVITY
+Pheromone	2	ACTIVITY
+Matrix Metalloproteinase 2 Inhibitor	2	ACTIVITY
+Integrin alphavbeta3 Antagonist	2	ACTIVITY
+Prostaglandin E2 Agonist	2	ACTIVITY
+PPAR Activator	2	ACTIVITY
+Progesterone Antagonist	2	ACTIVITY
+Antianoxic	2	ACTIVITY
+Osteotropic	2	ACTIVITY
+5-HT2A Agonist	2	ACTIVITY
+Melanocortin Agonist	2	ACTIVITY
+CCR5 Antagonist	2	ACTIVITY
+Anti-HBV	2	ACTIVITY
+Cytidine Deaminase Inhibitor	2	ACTIVITY
+DNA Methyltransferase Inhibitor	2	ACTIVITY
+Neurotropic	2	ACTIVITY
+Cholelitholytic Agent	2	ACTIVITY
+CCR3 Antagonist	2	ACTIVITY
+p38alpha Inhibitor	2	ACTIVITY
+Guanylate Cyclase C Agonist	2	ACTIVITY
+Scavenger Receptor B1 Blocker	2	ACTIVITY
+alpha1A-Adrenergic Antagonist	2	ACTIVITY
+Enkephalinase Inhibitor	2	ACTIVITY
+Src Kinase Inhibitor	2	ACTIVITY
+Thrombin Antagonist	2	ACTIVITY
+5-HT6 Antagonist	2	ACTIVITY
+Telomerase Inhibitor	2	ACTIVITY
+Photocytotoxic	2	ACTIVITY
+JNK Inhibitor	2	ACTIVITY
+PPARgamma Modulator	2	ACTIVITY
+Neuropeptide Y Y5 Antagonist	2	ACTIVITY
+Dopamine D3 Agonist	2	ACTIVITY
+B-RAF Kinase Inhibitor	2	ACTIVITY
+5-HT7 Antagonist	2	ACTIVITY
+Aurora B Kinase Inhibitor	2	ACTIVITY
+Microtubule Stabilizer	2	ACTIVITY
+Matriptase Inhibitor	2	ACTIVITY
+ErbB Receptor Tyrosine Kinase Inhibitor	2	ACTIVITY
+Antihypolipidemic	2	ACTIVITY
+Non-Prostanoid Prostacyclin Agonist	2	ACTIVITY
+Prostacyclin Agonist	2	ACTIVITY
+Fetotoxic	2	ACTIVITY
+VEGFR-2/FGFR-1 Kinase Inhibitor	2	ACTIVITY
+HCV NS3/4A Protease Inhibitor	2	ACTIVITY
+Bruton's Tyrosine Kinase Inhibitor	2	ACTIVITY
+GABAB Agonist	2	ACTIVITY
+Acetylcholinesterase Reactivator	2	ACTIVITY
+Glucokinase Inducer	2	ACTIVITY
+Antiinsomniac	2	ACTIVITY
+MTP Inhibitor	2	ACTIVITY
+Androgen Synthesis Inhibitor	2	ACTIVITY
+Thyroid Hormone Inhibitor	2	ACTIVITY
+Anti-Hantaviral	2	ACTIVITY
+Vasopressin V2 Agonist	2	ACTIVITY
+Vasopressin V2 Antagonist	2	ACTIVITY
+Protein Kinase D Inhibitor	2	ACTIVITY
+beta-Secretase 1 Inhibitor	2	ACTIVITY
+Factor VIIa Inhibitor	2	ACTIVITY
+Kynurenine 3-Monooxygenase Inhibitor	2	ACTIVITY
+Antiprion	2	ACTIVITY
+Ghrelin Agonist	2	ACTIVITY
+Neprilysin Inhibitor	2	ACTIVITY
+BCRP Inhibitor	2	ACTIVITY
+Janus Kinase-1 Inhibitor	2	ACTIVITY
+TR-beta Agonist	2	ACTIVITY
+PAK1 Inhibitor	2	ACTIVITY
+Adiponectin Agonist	2	ACTIVITY
+REV-ERB Agonist	2	ACTIVITY
+DNA Replication Inhibitor	2	ACTIVITY
+Succinate Dehydrogenase Inhibitor	2	ACTIVITY
+Isoprenylation Inhibitor	2	ACTIVITY
+HIV Replication Inhibitor	2	ACTIVITY
+Group II mGluR Antagonist	2	ACTIVITY
+Antihyperaldosterismic	1	ACTIVITY
+Leukocytotoxic	1	ACTIVITY
+Muscarinic M5 Antagonist	1	ACTIVITY
+Antidromotropic	1	ACTIVITY
+Breathing Depressant	1	ACTIVITY
+GABA Level Increasing Agent	1	ACTIVITY
+VMAT2 Inhibitor	1	ACTIVITY
+Ichthyotoxic	1	ACTIVITY
+Ataractic	1	ACTIVITY
+Monooxygenase Inhibitor	1	ACTIVITY
+Antiuratic	1	ACTIVITY
+beta1-Blocker	1	ACTIVITY
+Opiate Antagonist	1	ACTIVITY
+Antiperoxidative	1	ACTIVITY
+Antishivering	1	ACTIVITY
+Antiabortifacient	1	ACTIVITY
+Anterior Pituitary Suppressant	1	ACTIVITY
+Ca-ATPase Inhibitor	1	ACTIVITY
+beta-Agonist	1	ACTIVITY
+Muscle Stimulant	1	ACTIVITY
+Cycloplegic	1	ACTIVITY
+Nicotine Antagonist	1	ACTIVITY
+Amnesic	1	ACTIVITY
+Nutrihypertensive	1	ACTIVITY
+Adrenocorticolytic	1	ACTIVITY
+Gonadostimulant	1	ACTIVITY
+sigma-1 Agonist	1	ACTIVITY
+Cardiorespiratory Depressant	1	ACTIVITY
+GABAA Receptor Activator	1	ACTIVITY
+Peristaltic Stimulant	1	ACTIVITY
+Liver Oxidase Stimulant	1	ACTIVITY
+Estrogen Receptor Modulator	1	ACTIVITY
+Multidrug Resistance Modifier	1	ACTIVITY
+Psychotonic	1	ACTIVITY
+URAT 1 Inhibitor	1	ACTIVITY
+Diaphoretic	1	ACTIVITY
+FMO Inhibitor	1	ACTIVITY
+Vitamin D Like	1	ACTIVITY
+Anti-Hypnozoite	1	ACTIVITY
+Androgen Agonist	1	ACTIVITY
+Antidyskinetic	1	ACTIVITY
+Ganglion Depressant	1	ACTIVITY
+Peroxidase Inducer	1	ACTIVITY
+Antinecrotic	1	ACTIVITY
+Adrenocorticostatic	1	ACTIVITY
+Steroid 11beta-Hydroxylase Inhibitor	1	ACTIVITY
+Folic Acid Antagonist	1	ACTIVITY
+Mineralocorticoid Antagonist	1	ACTIVITY
+Hydrolase A Inhibitor	1	ACTIVITY
+Decarboxylase Inhibitor	1	ACTIVITY
+Antiobsessional	1	ACTIVITY
+Depot-estrogen	1	ACTIVITY
+5-HT2A Receptor Inhibitor	1	ACTIVITY
+Dopamine D2/D3 Receptor Inhibitor	1	ACTIVITY
+Vagotonic	1	ACTIVITY
+kappa2b-Opioid Agonist	1	ACTIVITY
+alpha,beta-Blocker	1	ACTIVITY
+Lipid Peroxidation Activator	1	ACTIVITY
+Cholesterolemic	1	ACTIVITY
+Leukemogenic	1	ACTIVITY
+kappa-Opioid Antagonist	1	ACTIVITY
+cAMP Phosphodiesterase 3 Inhibitor	1	ACTIVITY
+Oncostatic	1	ACTIVITY
+Pineal Hormone	1	ACTIVITY
+Sleep Regulator	1	ACTIVITY
+UDP-Glucuronosyltransferase Inhibitor	1	ACTIVITY
+Antihypermobility	1	ACTIVITY
+Dehydrogenase Inhibitor	1	ACTIVITY
+Luteinizing Hormone	1	ACTIVITY
+Lupus Erythematosus Suppressant	1	ACTIVITY
+Urticant	1	ACTIVITY
+Alanine Racemase Inhibitor	1	ACTIVITY
+MRP-2 Inhibitor	1	ACTIVITY
+LDL Oxidation Inhibitor	1	ACTIVITY
+Microtubule Depolymerizing Agent	1	ACTIVITY
+Excitotoxic	1	ACTIVITY
+Tyrotropin Secretion Inhibitor	1	ACTIVITY
+Cell Proliferation Inducer	1	ACTIVITY
+Glucosidase Inhibitor	1	ACTIVITY
+Saccharase Inhibitor	1	ACTIVITY
+Histaminergic	1	ACTIVITY
+Myeloperoxidase Inhibitor	1	ACTIVITY
+SHBG Agonist	1	ACTIVITY
+alpha-Adrenoceptor Blocker	1	ACTIVITY
+Liver Enzymes Inducer	1	ACTIVITY
+Retinol Oxidation Inhibitor	1	ACTIVITY
+Vitamin B6 Like	1	ACTIVITY
+beta2-Adrenergic Antagonist	1	ACTIVITY
+alpha1-Antagonist	1	ACTIVITY
+15-Hydroxyprostaglandin Dehydrogenase Inhibitor	1	ACTIVITY
+Cytochrome C Reductase Inhibitor	1	ACTIVITY
+Antihypothyreotic	1	ACTIVITY
+Positive Inotropic	1	ACTIVITY
+Thyroid Activation Inhibitor	1	ACTIVITY
+Antipneumocystic	1	ACTIVITY
+Steroid 5alpha-Reductase Inhibitor	1	ACTIVITY
+Gastrin Antagonist	1	ACTIVITY
+Insulin Release Inhibitor	1	ACTIVITY
+Insulin Synthesis Inhibitor	1	ACTIVITY
+Keratinocyte Growth Regulator	1	ACTIVITY
+Antiacidotic	1	ACTIVITY
+Pyruvate Dehydrogenase Inducer	1	ACTIVITY
+Scabicide	1	ACTIVITY
+Antieczematic	1	ACTIVITY
+Hyponatremic	1	ACTIVITY
+Plant Growth Hormone	1	ACTIVITY
+Calcinerin Inhibitor	1	ACTIVITY
+Antihypoxic	1	ACTIVITY
+Acyltransferase Inhibitor	1	ACTIVITY
+HER1 Tyrosine Kinase Inhibitor	1	ACTIVITY
+HER2 Tyrosine Kinase Inhibitor	1	ACTIVITY
+HER4 Tyrosine Kinase Inhibitor	1	ACTIVITY
+Hepatic Monoxygenase Inducer	1	ACTIVITY
+Immunorestorative	1	ACTIVITY
+Antinausea	1	ACTIVITY
+Hypoprolactinemic	1	ACTIVITY
+Progesterone Receptor Activator	1	ACTIVITY
+Nociceptive	1	ACTIVITY
+Thyrolytic	1	ACTIVITY
+Cytochrome P450 Antagonist	1	ACTIVITY
+Antisickling Agent	1	ACTIVITY
+Lipase Inhibitor	1	ACTIVITY
+Mitochondrial Acyl Transmitter	1	ACTIVITY
+Dopamine D2 Blocker	1	ACTIVITY
+Cognition Activator	1	ACTIVITY
+Prolyl 4-Hydroxylase Inhibitor	1	ACTIVITY
+Antiirritant	1	ACTIVITY
+Antinarcoleptic	1	ACTIVITY
+alpha1-Adrenergic Receptor Activator	1	ACTIVITY
+Cytochrome Oxidase Inhibitor	1	ACTIVITY
+Olfactory Toxic	1	ACTIVITY
+Pediculocide	1	ACTIVITY
+GTPase Inhibitor	1	ACTIVITY
+Sterol 27-Hydroxylase Inhibitor	1	ACTIVITY
+CYP3A Inhibitor	1	ACTIVITY
+Anticataract	1	ACTIVITY
+Neutrophils Activator	1	ACTIVITY
+Schizontocidal	1	ACTIVITY
+Adenosine Triphosphatase Inhibitor	1	ACTIVITY
+Cestocide	1	ACTIVITY
+Trematocide	1	ACTIVITY
+Trypsin Inhibitor	1	ACTIVITY
+Luteinizing Hormone-Releasing Factor	1	ACTIVITY
+Cholinergic Channel Activator	1	ACTIVITY
+Phototoxic	1	ACTIVITY
+Estrogen Mimetic	1	ACTIVITY
+Dysmorphogenic	1	ACTIVITY
+Cholinergic Blocker	1	ACTIVITY
+Antiacne	1	ACTIVITY
+Antiuterotrophic	1	ACTIVITY
+TAT Inhibitor	1	ACTIVITY
+Biomediator	1	ACTIVITY
+Nitrogen Species Scavenger	1	ACTIVITY
+Alkyltransferase Inhibitor	1	ACTIVITY
+DNA Repair Protein Inactivator	1	ACTIVITY
+Xanthine Dehydrogenase Inhibitor	1	ACTIVITY
+Morphine Agonist	1	ACTIVITY
+Phosphoribosylpyrophosphate Synthetase Inhibitor	1	ACTIVITY
+Hypercholeretic	1	ACTIVITY
+Sterol Synthesis Inhibitor	1	ACTIVITY
+M1 Agonist	1	ACTIVITY
+Muscarinic M1 Agonist	1	ACTIVITY
+Tumor Modulator	1	ACTIVITY
+alpha1-Adrenoceptor Agonist	1	ACTIVITY
+Negative Inotropic	1	ACTIVITY
+Antimitogenic	1	ACTIVITY
+Myotonolytic	1	ACTIVITY
+DNA Synthesis Stimulator	1	ACTIVITY
+Cerebrotonic	1	ACTIVITY
+Hypothalamus Regulator	1	ACTIVITY
+Anticonflict	1	ACTIVITY
+Fatty Acid Amidohydrolase Inhibitor	1	ACTIVITY
+Hypothermal	1	ACTIVITY
+Luteinizing Hormone-Releasing Hormone Agonist	1	ACTIVITY
+Miticidal	1	ACTIVITY
+Arylhydrocarbon Hydroxylase Inducer	1	ACTIVITY
+Adenosine Deaminase Inhibitor	1	ACTIVITY
+Renal Vasodilator	1	ACTIVITY
+Lipoxygenase Antagonist	1	ACTIVITY
+Cortisol Oxidation Inhibitor	1	ACTIVITY
+Neuropathy Target Enzyme Inhibitor	1	ACTIVITY
+Angiotensin I Receptor Blocker	1	ACTIVITY
+Bile Salt Export Pump Inhibitor	1	ACTIVITY
+Dihydroorotate Dehydrogenase Inhibitor	1	ACTIVITY
+Amino Acid Antagonist	1	ACTIVITY
+Pyruvate Dehydrogenase Activator	1	ACTIVITY
+Histamine Agonist	1	ACTIVITY
+Gelatinase A Inhibitor	1	ACTIVITY
+Pyruvate Dehydrogenase Kinase Inhibitor	1	ACTIVITY
+Growth Hormone Inhibitor	1	ACTIVITY
+Hydroxylase Inhibitor	1	ACTIVITY
+Enterokinetic	1	ACTIVITY
+Neurotic	1	ACTIVITY
+Serotonergic Antagonist	1	ACTIVITY
+Calmodulin Antagonist	1	ACTIVITY
+Aldehyde Oxidase Inhibitor	1	ACTIVITY
+Nonpeptidyl Growth Hormone Secretagogue	1	ACTIVITY
+Motility Inhibitor	1	ACTIVITY
+Trematocidal	1	ACTIVITY
+Mitotic	1	ACTIVITY
+P2Y Agonist	1	ACTIVITY
+Lipoprotein Lipase Inductor	1	ACTIVITY
+Dihydropteridine Reductase Inhibitor	1	ACTIVITY
+Cholinergic Agonist	1	ACTIVITY
+Purine Nucleoside Phosphorylase Inhibitor	1	ACTIVITY
+Potassium Channel Activator	1	ACTIVITY
+Platelet ADP Antagonist	1	ACTIVITY
+Retinoid Receptor Modulator	1	ACTIVITY
+Nucleotide Phosphodiesterase Inhibitor	1	ACTIVITY
+Growth Hormone	1	ACTIVITY
+Hemoglobiniferous	1	ACTIVITY
+Thymocyte Differentiation Promoter	1	ACTIVITY
+Molluscicide	1	ACTIVITY
+Catecholamine Agonist	1	ACTIVITY
+Antiprogestin	1	ACTIVITY
+Cataract Formation Inhibitor	1	ACTIVITY
+beta2-Sympathomimetic	1	ACTIVITY
+Purine Nucleotide Interconversion Inhibitor	1	ACTIVITY
+HER1/EGER Inhibitor	1	ACTIVITY
+cGMP Phosphodiesterase 5 Inhibitor	1	ACTIVITY
+Glutathione Reductase Inhibitor	1	ACTIVITY
+Pyruvate Dehydrogenase Inhibitor	1	ACTIVITY
+Carnitine Palmitoyltransferase I Inhibitor	1	ACTIVITY
+Sternutatory	1	ACTIVITY
+Antiresorptive	1	ACTIVITY
+Quinone Reductase Inhibitor	1	ACTIVITY
+Antiflogistic	1	ACTIVITY
+Chronotropic	1	ACTIVITY
+Heart Rate Lowering Agent	1	ACTIVITY
+Ryanodine Receptor Sensitizer	1	ACTIVITY
+Apoptogenic	1	ACTIVITY
+Choline Transporter Inhibitor	1	ACTIVITY
+Prolyl Endopeptidase Inhibitor	1	ACTIVITY
+Insulin Secretagogue	1	ACTIVITY
+Endectocide	1	ACTIVITY
+Estrogen Receptor alpha Antagonist	1	ACTIVITY
+Juvenile Hormone Mimic	1	ACTIVITY
+Ceramide Synthase Inhibitor	1	ACTIVITY
+alpha1A-Adrenoceptor Agonist	1	ACTIVITY
+Dopamine D4 Antagonist	1	ACTIVITY
+Ornithine Decarboxylase Inhibitor	1	ACTIVITY
+Trypanostatic	1	ACTIVITY
+Peripheral Blood Flow Enhancer	1	ACTIVITY
+DNA beta-Polymerase Inhibitor	1	ACTIVITY
+Epileptogen	1	ACTIVITY
+Adipogenic	1	ACTIVITY
+gamma-Butyrobetaine Hydroxylase Inhibitor	1	ACTIVITY
+Acetolactate Synthase Inhibitor	1	ACTIVITY
+Neurokinin-2 Antagonist	1	ACTIVITY
+Pro-oxidant	1	ACTIVITY
+Orotate Phosphoribosyltransferase Inhibitor	1	ACTIVITY
+Glycine/NMDA Antagonist	1	ACTIVITY
+Inodilator	1	ACTIVITY
+alpha-Adrenergic	1	ACTIVITY
+Aldosterone Blocker	1	ACTIVITY
+Bronchospasmolytic	1	ACTIVITY
+Glutamine Synthetase Inhibitor	1	ACTIVITY
+Rhinovirus 3C Protease Inhibitor	1	ACTIVITY
+Muscarinic M2 Antagonist	1	ACTIVITY
+Presynaptic Norepinephrine Transporter Inhibitor	1	ACTIVITY
+PDGFR Kinase Inhibitor	1	ACTIVITY
+Topoisomerase IIbeta Inhibitor	1	ACTIVITY
+Osteoblast Differentiation Promoter	1	ACTIVITY
+MAP-Erk Kinase Inhibitor	1	ACTIVITY
+Tyrosine Phosphatase Inhibitor	1	ACTIVITY
+P2Y2 Agonist	1	ACTIVITY
+CXCR2 Antagonist	1	ACTIVITY
+Calcium Agonist	1	ACTIVITY
+Motilin Antagonist	1	ACTIVITY
+delta5-Desaturase Inhibitor	1	ACTIVITY
+beta1-Adrenergic Agonist	1	ACTIVITY
+K-ATP Blocker	1	ACTIVITY
+Matrix Metalloproteinase 13 Inhibitor	1	ACTIVITY
+3beta-Hydroxysteroid Dehydrogenase-delta5-Isomerase Inhibitor	1	ACTIVITY
+Na+/K+-ATPase Inhibitor	1	ACTIVITY
+PDGFR-alpha Inhibitor	1	ACTIVITY
+VEGFR-1 Inhibitor	1	ACTIVITY
+VEGFR/PDGFR Kinase Inhibitor	1	ACTIVITY
+Prostaglandin EP2 Agonist	1	ACTIVITY
+Chemokine CXCL8 Inhibitor	1	ACTIVITY
+Interleukin-8/CXCL8 Inhibitor	1	ACTIVITY
+Chymotrypsin Inhibitor	1	ACTIVITY
+Retinal Toxic	1	ACTIVITY
+SPRM	1	ACTIVITY
+Paraplegic	1	ACTIVITY
+Cytocidal	1	ACTIVITY
+Cell Cycle Inhibitor	1	ACTIVITY
+Dipeptidyl Peptidase Inhibitor	1	ACTIVITY
+KDR Kinase Inhibitor	1	ACTIVITY
+Kinase Insert Domain-Containing Receptor Inhibitor	1	ACTIVITY
+Multidrug Resistance Reversing Drug	1	ACTIVITY
+Necrogenic	1	ACTIVITY
+DNA Methylation Inhibitor	1	ACTIVITY
+alpha1A-Adrenoceptor Antagonist	1	ACTIVITY
+IKKbeta Inhibitor	1	ACTIVITY
+IKK2 Inhibitor	1	ACTIVITY
+Kinin B1 Antagonist	1	ACTIVITY
+Procollagen C-Proteinase Inhibitor	1	ACTIVITY
+Cerebrovascular Agent	1	ACTIVITY
+Peptidyl Transferase Inhibitor	1	ACTIVITY
+Progesterone Agonist	1	ACTIVITY
+Chelating Agent (Zn)	1	ACTIVITY
+5-HT5A Agonist	1	ACTIVITY
+Choline Acetyltransferase Inhibitor	1	ACTIVITY
+Glucagon Antagonist	1	ACTIVITY
+Adenosine 2A Agonist	1	ACTIVITY
+Progestin	1	ACTIVITY
+14,15-Epoxyeicosatrienoic Acid Agonist	1	ACTIVITY
+Potassium Channel Antagonist	1	ACTIVITY
+Caspase Inhibitor	1	ACTIVITY
+Angiotensin I Antagonist	1	ACTIVITY
+Tryptase Inhibitor	1	ACTIVITY
+Dopamine Transporter Ligand	1	ACTIVITY
+Luteolytic	1	ACTIVITY
+ALK5 Inhibitor	1	ACTIVITY
+Lathosterol Oxidase Inhibitor	1	ACTIVITY
+CXCR1 Inhibitor	1	ACTIVITY
+CXCR2 Inhibitor	1	ACTIVITY
+Antishock	1	ACTIVITY
+Melanocortin-4 Agonist	1	ACTIVITY
+VEGFR-2 Antagonist	1	ACTIVITY
+Dihydroceramide Desaturase Inhibitor	1	ACTIVITY
+Antinicotinic	1	ACTIVITY
+sigma-1 Antagonist	1	ACTIVITY
+CGRP Antagonist	1	ACTIVITY
+5-HT1B Agonist	1	ACTIVITY
+5-HT3A Antagonist	1	ACTIVITY
+beta1-Antagonist	1	ACTIVITY
+LFA-1 Antagonist	1	ACTIVITY
+Aminopeptidase Inhibitor	1	ACTIVITY
+TGR5 Agonist	1	ACTIVITY
+Antiedematogenic	1	ACTIVITY
+gamma-Secretase Inhibitor	1	ACTIVITY
+Kinesin Spindle Protein Inhibitor	1	ACTIVITY
+Estrogen Receptor beta Agonist	1	ACTIVITY
+Selective Estrogen Receptor beta Agonist	1	ACTIVITY
+Luteinizing Hormone Secretion Inhibitor	1	ACTIVITY
+Antiatherothrombotic	1	ACTIVITY
+Multichannel Blocker	1	ACTIVITY
+5-HT1B Antagonist	1	ACTIVITY
+CETP Modulator	1	ACTIVITY
+Serotonin Reuptake Blocker	1	ACTIVITY
+5-HT6 Agonist	1	ACTIVITY
+Topoisomerase IIalpha Inhibitor	1	ACTIVITY
+VEGFR-2/FGFR-1 Inhibitor	1	ACTIVITY
+Adenosine A1/A2 Inhibitor	1	ACTIVITY
+Bradykinin Antagonist	1	ACTIVITY
+alpha7 Neuronal Nicotinic Agonist	1	ACTIVITY
+Angiokinase Inhibitor	1	ACTIVITY
+Growth Factor Inhibitor	1	ACTIVITY
+Microsomal Triglyceride Transfer Protein Inhibitor	1	ACTIVITY
+Met Kinase Inhibitor	1	ACTIVITY
+PAR-1 Antagonist	1	ACTIVITY
+Arylhydrocarbon Hydroxylase Inhibitor	1	ACTIVITY
+mGluR7 Agonist	1	ACTIVITY
+Cardioinotropic	1	ACTIVITY
+PPARdelta Agonist	1	ACTIVITY
+Adenosine A2A/A1 Antagonist	1	ACTIVITY
+COX-1 Inhibitor	1	ACTIVITY
+Anticholestatic	1	ACTIVITY
+Glucagon-Like Peptide 1 Agonist	1	ACTIVITY
+Anti-Sepsis	1	ACTIVITY
+Thyromimetic	1	ACTIVITY
+GnRH Blocker	1	ACTIVITY
+CFTR Potentiator	1	ACTIVITY
+Nonsteroidal Progesterone Antagonist	1	ACTIVITY
+c-Fos/Activator Protein-1 Inhibitor	1	ACTIVITY
+Telomerase Activator	1	ACTIVITY
+HCV Nucleoside Polymerase Inhibitor	1	ACTIVITY
+Phytotoxin	1	ACTIVITY
+Angiotensin II AT1 Receptor Blocker	1	ACTIVITY
+beta-Amyloid Protein Aggregation Inhibitor	1	ACTIVITY
+CB1 Antagonist	1	ACTIVITY
+Antiacidic	1	ACTIVITY
+Calcium Channel Activator	1	ACTIVITY
+GPR119 Agonist	1	ACTIVITY
+PPARgamma Antagonist	1	ACTIVITY
+ErbB Blocker	1	ACTIVITY
+c-Myc/Max Dimerization Inhibitor	1	ACTIVITY
+Phosphodiesterase 10A Inhibitor	1	ACTIVITY
+Janus Kinase-2 Inhibitor	1	ACTIVITY
+GPR40 Agonist	1	ACTIVITY
+Myoanabolic	1	ACTIVITY
+Dopaminergic Stabilizer	1	ACTIVITY
+D-Amino Acid Oxidase Inhibitor	1	ACTIVITY
+Antihyperprolactinemic	1	ACTIVITY
+Tubulin Antagonist	1	ACTIVITY
+Glutamate Antagonist	1	ACTIVITY
+Larvicide	1	ACTIVITY
+Glutamate Carboxypeptidase II Inhibitor	1	ACTIVITY
+5-HT1A Receptor Ligand	1	ACTIVITY
+Glycine Transpoter 1 Inhibitor	1	ACTIVITY
+NO-Donor	1	ACTIVITY
+Protein Translation Inhibitor	1	ACTIVITY
+NS3/4A Protease Inhibitor	1	ACTIVITY
+HM74a Agonist	1	ACTIVITY
+GLP-1 Receptor Modulator	1	ACTIVITY
+c-Kit Tyrosine Kinase Inhibitor	1	ACTIVITY
+HBV Replication Inhibitor	1	ACTIVITY
+Hedgehog Signaling Pathway Antagonist	1	ACTIVITY
+Anti-Atopic Dermatitis Agent	1	ACTIVITY
+HER2/EGFR Inhibitor	1	ACTIVITY
+Antistress	1	ACTIVITY
+Boron Delivery Agent	1	ACTIVITY
+RAF Kinase Inhibitor	1	ACTIVITY
+Cardioactive	1	ACTIVITY
+GSK-3 Inhibitor	1	ACTIVITY
+GluN2B Antagonist	1	ACTIVITY
+Prenyl Transferase Inhibitor	1	ACTIVITY
+Antichagasic	1	ACTIVITY
+HCV NS3/4 Protease Inhibitor	1	ACTIVITY
+Phospholipase A2 Inhibitor	1	ACTIVITY
+Arginase Inhibitor	1	ACTIVITY
+DOT1L Histone Methyltransferase Inhibitor	1	ACTIVITY
+DOT1L Inhibitor	1	ACTIVITY
+Spermicidal	1	ACTIVITY
+BET Bromodomain Inhibitor	1	ACTIVITY
+Chk1 Inhibitor	1	ACTIVITY
+Adenosine 2A Antagonist	1	ACTIVITY
+Adenosine A2A Antagonist	1	ACTIVITY
+Vasopressin 1a Antagonist	1	ACTIVITY
+HGFR Inhibitor	1	ACTIVITY
+Antibotulinic	1	ACTIVITY
+CB2 Inverse Agonist	1	ACTIVITY
+5-HT4 Antagonist	1	ACTIVITY
+BACE1 Inhibitor	1	ACTIVITY
+Empathogenic	1	ACTIVITY
+CSF-1R Kinase Inhibitor	1	ACTIVITY
+PLK1 Inhibitor	1	ACTIVITY
+Angiotensin Receptor Neprilysin Inhibitor	1	ACTIVITY
+Estrogen Receptor gamma Agonist	1	ACTIVITY
+AhR Antagonist	1	ACTIVITY
+Profibrinolytic	1	ACTIVITY
+Kynurenine Aminotransferase Inhibitor	1	ACTIVITY
+Peptide Deformylase Inhibitor	1	ACTIVITY
+PI3Kdelta Inhibitor	1	ACTIVITY
+TRPV1 Inhibitor	1	ACTIVITY
+Thymidine Phosphorylase Inhibitor	1	ACTIVITY
+NS3 Protease Inhibitor	1	ACTIVITY
+PRMT5 Inhibitor	1	ACTIVITY
+Anti-Influenza	1	ACTIVITY
+FtsZ Inhibitor	1	ACTIVITY
+GABAB Receptor Modulator	1	ACTIVITY
+HIF-Prolyl Hydrolase Inhibitor	1	ACTIVITY
+HCV Polymerase Inhibitor	1	ACTIVITY
+IGF-1R/IR Inhibitor	1	ACTIVITY
+Cardiac Myosin Activator	1	ACTIVITY
+Sphingosine-1-phosphate Agonist	1	ACTIVITY
+Protein Kinase C epsilon Inhibitor	1	ACTIVITY
+Ubiquitin Specific Peptidase Inhibitor	1	ACTIVITY
+PRMT Inhibitor	1	ACTIVITY
+Guanylate Cyclase Stimulator	1	ACTIVITY
+Prolyl Oligopeptidase Inhibitor	1	ACTIVITY
+RNA Polymerase II Inhibitor	1	ACTIVITY
+Neutrophil Elastase Inhibitor	1	ACTIVITY
+STAT3 Inhibitor	1	ACTIVITY
+5-HT2B Agonist	1	ACTIVITY
+Cytidine-Deoxycytidine Deaminase Inhibitor	1	ACTIVITY
+S-Phase Inhibitor	1	ACTIVITY
+Nonvirostatic	1	ACTIVITY
+Prostaglandin E2 Synthesis Inhibitor	1	ACTIVITY
+Osteolathyrogenic	1	ACTIVITY
+DNA Primase Inhibitor	1	ACTIVITY
+Glucosylceramide Synthase Inhibitor	1	ACTIVITY
+Vitronectin Binding Inhibitor	1	ACTIVITY
+Metalloendopeptidase Inhibitor	1	ACTIVITY
+Nucleoside Transport Inhibitor	1	ACTIVITY
+Phospholipid Metabolism Inhibitor	1	ACTIVITY
+Hydrothermic	1	ACTIVITY
+Vitamin C Like	1	ACTIVITY
+S1P Antagonist	1	ACTIVITY
+Sphingosine Kinase Inhibitor	1	ACTIVITY
+Interferon Stimulant	1	ACTIVITY
+Antispermatogenic	1	ACTIVITY
+Aminopeptidase A Inhibitor	1	ACTIVITY

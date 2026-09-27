@@ -1,0 +1,20 @@
+{
+  "n_strong_terms": 98,
+  "n_nonstrong_terms": 186,
+  "strong_occurrences": 1161,
+  "total_occurrences": 2110,
+  "strong_occurrence_fraction": 0.5502,
+  "by_final_status": {
+    "strong": 98,
+    "compositional_held": 129,
+    "unmatched": 50,
+    "uncertain": 3,
+    "rejected": 4
+  },
+  "auto_strong_bins": [
+    "alias",
+    "exact_pref",
+    "exact_synonym",
+    "fuzzy_high"
+  ]
+}

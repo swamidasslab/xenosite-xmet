@@ -277,7 +277,8 @@
         "xrm:7300001",
         "xrm:7400001",
         "xrm:7700001",
-        "xrm:2400012"
+        "xrm:2400012",
+        "xrm:0000650"
       ]
     },
     {
@@ -444,6 +445,9 @@
       "prefLabel": "thiophene epoxidation",
       "inScheme": "xrm:scheme",
       "definition": "thiophene epoxidation: xenobiotic-metabolism term under epoxidation, heteroaromatic oxidation impact.",
+      "altLabel": [
+        "thiohene epoxidation"
+      ],
       "broader": [
         "xrm:0000110",
         "xrm:8000006"
@@ -559,6 +563,10 @@
       "prefLabel": "thiophene S-oxidation",
       "inScheme": "xrm:scheme",
       "definition": "S-oxidation of a thiophene ring; a dearomatizing path to S-oxides.",
+      "altLabel": [
+        "Thiohene S-oxidation",
+        "thiohene S-oxidation"
+      ],
       "broader": [
         "xrm:0000130",
         "xrm:0004001",
@@ -635,7 +643,8 @@
         "xrm:7300002",
         "xrm:7400002",
         "xrm:7100007",
-        "xrm:2200032"
+        "xrm:2200032",
+        "xrm:0000610"
       ]
     },
     {
@@ -655,7 +664,8 @@
         "xrm:7100007",
         "xrm:1400022",
         "xrm:1500129",
-        "xrm:1500013"
+        "xrm:1500013",
+        "xrm:0000611"
       ]
     },
     {
@@ -670,7 +680,8 @@
       "broader": "xrm:0000200",
       "relatedMatch": [
         "xrm:7100003",
-        "xrm:7100007"
+        "xrm:7100007",
+        "xrm:0000612"
       ]
     },
     {
@@ -682,7 +693,8 @@
       "broader": "xrm:0000200",
       "relatedMatch": [
         "xrm:7100004",
-        "xrm:7100007"
+        "xrm:7100007",
+        "xrm:0000613"
       ]
     },
     {
@@ -694,7 +706,8 @@
       "altLabel": [
         "carbon–carbon dealkylation"
       ],
-      "broader": "xrm:0000200"
+      "broader": "xrm:0000200",
+      "relatedMatch": "xrm:0000614"
     },
     {
       "id": "xrm:0000205",
@@ -832,6 +845,18 @@
       "inScheme": "xrm:scheme",
       "definition": "oxidative debromination: xenobiotic-metabolism term under oxidative dehalogenation.",
       "broader": "xrm:0000210"
+    },
+    {
+      "id": "xrm:0000217",
+      "type": "skos:Concept",
+      "prefLabel": "S-demethylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Oxidative removal of an S-methyl group.",
+      "altLabel": [
+        "oxidative S-demethylation"
+      ],
+      "broader": "xrm:0000203",
+      "relatedMatch": "xrm:0001043"
     },
     {
       "id": "xrm:0000300",
@@ -1071,8 +1096,16 @@
       "prefLabel": "ester hydrolysis",
       "inScheme": "xrm:scheme",
       "definition": "ester hydrolysis: xenobiotic-metabolism term under hydrolysis.",
+      "altLabel": [
+        "de-esterification",
+        "C-de-esterification",
+        "deesterification"
+      ],
       "broader": "xrm:0000013",
-      "relatedMatch": "xrm:2200025"
+      "relatedMatch": [
+        "xrm:2200025",
+        "xrm:0000630"
+      ]
     },
     {
       "id": "xrm:0000402",
@@ -1089,7 +1122,8 @@
       "prefLabel": "lactone hydrolysis",
       "inScheme": "xrm:scheme",
       "definition": "lactone hydrolysis: xenobiotic-metabolism term under ester hydrolysis.",
-      "broader": "xrm:0000401"
+      "broader": "xrm:0000401",
+      "relatedMatch": "xrm:0000632"
     },
     {
       "id": "xrm:0000404",
@@ -1097,7 +1131,8 @@
       "prefLabel": "lactam hydrolysis",
       "inScheme": "xrm:scheme",
       "definition": "lactam hydrolysis: xenobiotic-metabolism term under amide hydrolysis.",
-      "broader": "xrm:0000402"
+      "broader": "xrm:0000402",
+      "relatedMatch": "xrm:0000633"
     },
     {
       "id": "xrm:0000405",
@@ -1410,6 +1445,517 @@
       "relatedMatch": "xrm:9100501"
     },
     {
+      "id": "xrm:0000600",
+      "type": "skos:Concept",
+      "prefLabel": "cyanidation",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of a cyano/cyanide group (reactive/toxicophore-relevant).",
+      "altLabel": [
+        "cyano addition",
+        "nitrile formation",
+        "cyanide incorporation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": [
+        "xrm:2200037",
+        "xrm:1500000",
+        "xrm:0000601"
+      ]
+    },
+    {
+      "id": "xrm:0000601",
+      "type": "skos:Concept",
+      "prefLabel": "decyanidation",
+      "inScheme": "xrm:scheme",
+      "definition": "Loss/cleavage of a cyano/cyanide group. Antonym of cyanidation.",
+      "altLabel": [
+        "cyano loss",
+        "nitrile cleavage",
+        "cyanide release"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": [
+        "xrm:0000600",
+        "xrm:0000409",
+        "xrm:2200037"
+      ]
+    },
+    {
+      "id": "xrm:0000610",
+      "type": "skos:Concept",
+      "prefLabel": "alkylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Addition of an alkyl group. Antonym of dealkylation.",
+      "altLabel": [
+        "alkyl transfer",
+        "alkyl conjugation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000200"
+    },
+    {
+      "id": "xrm:0000611",
+      "type": "skos:Concept",
+      "prefLabel": "N-alkylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Alkylation at nitrogen. Antonym of N-dealkylation.",
+      "altLabel": [
+        "nitrogen alkylation"
+      ],
+      "broader": "xrm:0000610",
+      "relatedMatch": "xrm:0000201"
+    },
+    {
+      "id": "xrm:0000612",
+      "type": "skos:Concept",
+      "prefLabel": "O-alkylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Alkylation at oxygen. Antonym of O-dealkylation.",
+      "altLabel": [
+        "oxygen alkylation",
+        "ether formation"
+      ],
+      "broader": "xrm:0000610",
+      "relatedMatch": "xrm:0000202"
+    },
+    {
+      "id": "xrm:0000613",
+      "type": "skos:Concept",
+      "prefLabel": "S-alkylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Alkylation at sulfur. Antonym of S-dealkylation.",
+      "altLabel": [
+        "sulfur alkylation",
+        "thioether formation"
+      ],
+      "broader": "xrm:0000610",
+      "relatedMatch": "xrm:0000203"
+    },
+    {
+      "id": "xrm:0000614",
+      "type": "skos:Concept",
+      "prefLabel": "C-alkylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Alkylation at carbon. Antonym of C-dealkylation.",
+      "altLabel": [
+        "carbon alkylation"
+      ],
+      "broader": "xrm:0000610",
+      "relatedMatch": "xrm:0000204"
+    },
+    {
+      "id": "xrm:0000620",
+      "type": "skos:Concept",
+      "prefLabel": "decarboxylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Loss of CO2 from a carboxylic acid (distinct from decarbonylation).",
+      "altLabel": [
+        "CO2 loss",
+        "carboxyl loss",
+        "C-decarboxylation",
+        "N-decarboxylation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": [
+        "xrm:0002007",
+        "xrm:0000621"
+      ]
+    },
+    {
+      "id": "xrm:0000621",
+      "type": "skos:Concept",
+      "prefLabel": "carboxylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of a carboxyl group. Antonym of decarboxylation.",
+      "altLabel": [
+        "CO2 addition",
+        "carboxyl formation",
+        "C-carboxylation",
+        "N-carboxylation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000620"
+    },
+    {
+      "id": "xrm:0000630",
+      "type": "skos:Concept",
+      "prefLabel": "esterification",
+      "inScheme": "xrm:scheme",
+      "definition": "Formation of an ester. Antonym of ester hydrolysis.",
+      "altLabel": [
+        "ester formation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000401"
+    },
+    {
+      "id": "xrm:0000631",
+      "type": "skos:Concept",
+      "prefLabel": "transesterification",
+      "inScheme": "xrm:scheme",
+      "definition": "Exchange of ester alkoxy groups.",
+      "altLabel": [
+        "ester exchange"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": [
+        "xrm:0000630",
+        "xrm:0000401"
+      ]
+    },
+    {
+      "id": "xrm:0000632",
+      "type": "skos:Concept",
+      "prefLabel": "lactonization",
+      "inScheme": "xrm:scheme",
+      "definition": "Intramolecular ester formation to a lactone. Antonym of lactone hydrolysis.",
+      "altLabel": [
+        "lactone formation",
+        "intramolecular esterification"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": [
+        "xrm:0000403",
+        "xrm:0000630"
+      ]
+    },
+    {
+      "id": "xrm:0000633",
+      "type": "skos:Concept",
+      "prefLabel": "lactamization",
+      "inScheme": "xrm:scheme",
+      "definition": "Intramolecular amide formation to a lactam. Antonym of lactam hydrolysis.",
+      "altLabel": [
+        "lactam formation",
+        "intramolecular amidation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000404"
+    },
+    {
+      "id": "xrm:0000640",
+      "type": "skos:Concept",
+      "prefLabel": "cyclization",
+      "inScheme": "xrm:scheme",
+      "definition": "Formation of a new ring by cyclization.",
+      "altLabel": [
+        "ring-forming cyclization",
+        "annulation"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:0004000"
+      ]
+    },
+    {
+      "id": "xrm:0000650",
+      "type": "skos:Concept",
+      "prefLabel": "dehydroxylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Loss of a hydroxyl group. Antonym of hydroxylation.",
+      "altLabel": [
+        "dehydroxy",
+        "OH loss",
+        "aromatic dehydroxylation",
+        "N-dehydroxylation"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000100"
+    },
+    {
+      "id": "xrm:0000660",
+      "type": "skos:Concept",
+      "prefLabel": "halogenation",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of halogen. Antonym of dehalogenation.",
+      "altLabel": [
+        "halide addition"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:1100014"
+    },
+    {
+      "id": "xrm:0000661",
+      "type": "skos:Concept",
+      "prefLabel": "amination",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of an amino group. Antonym of deamination.",
+      "altLabel": [
+        "amino group introduction"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:1100013"
+    },
+    {
+      "id": "xrm:0000670",
+      "type": "skos:Concept",
+      "prefLabel": "formylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of a formyl group (often N-formylation).",
+      "altLabel": [
+        "N-formylation",
+        "formyl conjugation"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:1300000"
+      ],
+      "relatedMatch": [
+        "xrm:0001020",
+        "xrm:0000671"
+      ]
+    },
+    {
+      "id": "xrm:0000671",
+      "type": "skos:Concept",
+      "prefLabel": "deformylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Loss of a formyl group. Antonym of formylation.",
+      "altLabel": [
+        "N-deformylation",
+        "formyl loss"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000670"
+    },
+    {
+      "id": "xrm:0000680",
+      "type": "skos:Concept",
+      "prefLabel": "N-nitrosation",
+      "inScheme": "xrm:scheme",
+      "definition": "Formation of an N-nitroso species (reactive-metabolite relevant).",
+      "altLabel": [
+        "nitrosation",
+        "N-nitroso formation"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:1500000"
+      ],
+      "relatedMatch": [
+        "xrm:0000123",
+        "xrm:1500110",
+        "xrm:0000681"
+      ]
+    },
+    {
+      "id": "xrm:0000681",
+      "type": "skos:Concept",
+      "prefLabel": "denitrosation",
+      "inScheme": "xrm:scheme",
+      "definition": "Removal of an N-nitroso group. Antonym of N-nitrosation.",
+      "altLabel": [
+        "N-denitrosation",
+        "N-nitroso cleavage"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000680"
+    },
+    {
+      "id": "xrm:0000690",
+      "type": "skos:Concept",
+      "prefLabel": "desulfuration",
+      "inScheme": "xrm:scheme",
+      "definition": "Removal/replacement of sulfur (e.g. phosphorothioate oxidative desulfuration).",
+      "altLabel": [
+        "oxidative desulfuration",
+        "desulfurization",
+        "P=S to P=O"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": [
+        "xrm:0000130",
+        "xrm:0000691"
+      ]
+    },
+    {
+      "id": "xrm:0000691",
+      "type": "skos:Concept",
+      "prefLabel": "sulfuration",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of sulfur. Antonym of desulfuration (not synonymous with sulfation).",
+      "altLabel": [
+        "thionation",
+        "S introduction"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000690"
+    },
+    {
+      "id": "xrm:0000700",
+      "type": "skos:Concept",
+      "prefLabel": "deglucuronidation",
+      "inScheme": "xrm:scheme",
+      "definition": "Hydrolytic removal of a glucuronide. Antonym of glucuronidation.",
+      "altLabel": [
+        "O-deglucuronidation",
+        "glucuronide hydrolysis",
+        "N-deglucuronidation",
+        "S-deglucuronidation"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:0000013"
+      ],
+      "relatedMatch": [
+        "xrm:0001000",
+        "xrm:0001001"
+      ]
+    },
+    {
+      "id": "xrm:0000701",
+      "type": "skos:Concept",
+      "prefLabel": "desulfation",
+      "inScheme": "xrm:scheme",
+      "definition": "Hydrolytic removal of a sulfate. Antonym of sulfation.",
+      "altLabel": [
+        "sulfate hydrolysis",
+        "O-desulfation"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:0000013"
+      ],
+      "relatedMatch": [
+        "xrm:0001010",
+        "xrm:0001011"
+      ]
+    },
+    {
+      "id": "xrm:0000702",
+      "type": "skos:Concept",
+      "prefLabel": "deglycosidation",
+      "inScheme": "xrm:scheme",
+      "definition": "Cleavage of a glycoside. Antonym of glycosylation.",
+      "altLabel": [
+        "O-deglycosidation",
+        "N-deglycosidation",
+        "deglucosidation",
+        "glycoside hydrolysis"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:0000013"
+      ],
+      "relatedMatch": [
+        "xrm:0001060",
+        "xrm:0000407"
+      ]
+    },
+    {
+      "id": "xrm:0000703",
+      "type": "skos:Concept",
+      "prefLabel": "deglutathionation",
+      "inScheme": "xrm:scheme",
+      "definition": "Removal of a glutathione adduct. Antonym of glutathionation.",
+      "altLabel": [
+        "GSH adduct cleavage",
+        "glutathione adduct hydrolysis"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0001030"
+    },
+    {
+      "id": "xrm:0000704",
+      "type": "skos:Concept",
+      "prefLabel": "decysteination",
+      "inScheme": "xrm:scheme",
+      "definition": "Removal of a cysteine conjugate. Antonym of cysteine conjugation.",
+      "altLabel": [
+        "cysteine adduct cleavage"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:1300010"
+    },
+    {
+      "id": "xrm:0000710",
+      "type": "skos:Concept",
+      "prefLabel": "Se-methylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Methylation at selenium (distinct from S-methylation).",
+      "altLabel": [
+        "selenium methylation"
+      ],
+      "broader": "xrm:0001040",
+      "relatedMatch": "xrm:0001043"
+    },
+    {
+      "id": "xrm:0000720",
+      "type": "skos:Concept",
+      "prefLabel": "dearylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Cleavage removing an aryl group from N/O/S (related to dealkylation).",
+      "altLabel": [
+        "O-dearylation",
+        "N-dearylation",
+        "aryl ether cleavage"
+      ],
+      "broader": "xrm:0000200",
+      "relatedMatch": [
+        "xrm:0000201",
+        "xrm:0000202",
+        "xrm:0000730"
+      ]
+    },
+    {
+      "id": "xrm:0000721",
+      "type": "skos:Concept",
+      "prefLabel": "alpha-hydroxylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Hydroxylation at a carbon alpha to a carbonyl or heteroatom.",
+      "altLabel": [
+        "α-hydroxylation",
+        "alpha hydroxylation of carbonyl"
+      ],
+      "broader": "xrm:0000100",
+      "relatedMatch": "xrm:0000102"
+    },
+    {
+      "id": "xrm:0000730",
+      "type": "skos:Concept",
+      "prefLabel": "arylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Addition of an aryl group. Antonym of dearylation.",
+      "altLabel": [
+        "aryl transfer"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000720"
+    },
+    {
+      "id": "xrm:0000731",
+      "type": "skos:Concept",
+      "prefLabel": "carbonylation",
+      "inScheme": "xrm:scheme",
+      "definition": "Introduction of a carbonyl via carbonylation (distinct from carboxylation). Antonym of decarbonylation.",
+      "altLabel": [
+        "CO insertion",
+        "carbonyl insertion"
+      ],
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0002007"
+    },
+    {
+      "id": "xrm:0000732",
+      "type": "skos:Concept",
+      "prefLabel": "deconjugation",
+      "inScheme": "xrm:scheme",
+      "definition": "Generic removal of a phase II conjugate (umbrella over deglucuronidation, desulfation, …).",
+      "altLabel": [
+        "conjugate cleavage",
+        "phase II deconjugation"
+      ],
+      "broader": [
+        "xrm:1100000",
+        "xrm:0000013"
+      ],
+      "relatedMatch": [
+        "xrm:0000024",
+        "xrm:0000700",
+        "xrm:0000701"
+      ]
+    },
+    {
       "id": "xrm:0001000",
       "type": "skos:Concept",
       "prefLabel": "glucuronidation",
@@ -1432,7 +1978,8 @@
         "xrm:7000003",
         "xrm:7500003",
         "xrm:7700008",
-        "xrm:1500116"
+        "xrm:1500116",
+        "xrm:0000700"
       ]
     },
     {
@@ -1442,7 +1989,10 @@
       "inScheme": "xrm:scheme",
       "definition": "O-glucuronidation: xenobiotic-metabolism term under glucuronidation.",
       "broader": "xrm:0001000",
-      "relatedMatch": "xrm:1600135"
+      "relatedMatch": [
+        "xrm:1600135",
+        "xrm:0000700"
+      ]
     },
     {
       "id": "xrm:0001002",
@@ -1558,7 +2108,8 @@
       ],
       "relatedMatch": [
         "xrm:9101010",
-        "xrm:1500117"
+        "xrm:1500117",
+        "xrm:0000701"
       ]
     },
     {
@@ -1568,7 +2119,10 @@
       "inScheme": "xrm:scheme",
       "definition": "O-sulfation: xenobiotic-metabolism term under sulfation.",
       "broader": "xrm:0001010",
-      "relatedMatch": "xrm:1600135"
+      "relatedMatch": [
+        "xrm:1600135",
+        "xrm:0000701"
+      ]
     },
     {
       "id": "xrm:0001012",
@@ -1659,7 +2213,8 @@
         "xrm:7500002",
         "xrm:7000003",
         "xrm:1500114",
-        "xrm:1500019"
+        "xrm:1500019",
+        "xrm:0000703"
       ]
     },
     {
@@ -1809,7 +2364,10 @@
         "thiol methylation"
       ],
       "broader": "xrm:0001040",
-      "relatedMatch": "xrm:1600137"
+      "relatedMatch": [
+        "xrm:1600137",
+        "xrm:0000217"
+      ]
     },
     {
       "id": "xrm:0001050",
@@ -1882,12 +2440,18 @@
       "inScheme": "xrm:scheme",
       "definition": "Conjugation with sugars other than glucuronic acid.",
       "altLabel": [
-        "glycosidation"
+        "glycosidation",
+        "O-glycosidation",
+        "N-glycosidation",
+        "glucosidation",
+        "O-glucosidation",
+        "N-glucosidation"
       ],
       "broader": [
         "xrm:0000002",
         "xrm:1300000"
-      ]
+      ],
+      "relatedMatch": "xrm:0000702"
     },
     {
       "id": "xrm:0001061",
@@ -1978,7 +2542,8 @@
       "prefLabel": "decarbonylation",
       "inScheme": "xrm:scheme",
       "definition": "Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder).",
-      "broader": "xrm:0000001"
+      "broader": "xrm:0000001",
+      "relatedMatch": "xrm:0000731"
     },
     {
       "id": "xrm:0003000",
@@ -2340,7 +2905,8 @@
       "prefLabel": "deamination",
       "inScheme": "xrm:scheme",
       "definition": "Removal of an amino group.",
-      "broader": "xrm:1100000"
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000661"
     },
     {
       "id": "xrm:1100014",
@@ -2348,7 +2914,8 @@
       "prefLabel": "dehalogenation",
       "inScheme": "xrm:scheme",
       "definition": "Removal of a halogen atom.",
-      "broader": "xrm:1100000"
+      "broader": "xrm:1100000",
+      "relatedMatch": "xrm:0000660"
     },
     {
       "id": "xrm:1100016",
@@ -2673,12 +3240,15 @@
       "inScheme": "xrm:scheme",
       "definition": "Phase II conjugation family: cysteine conjugation.",
       "altLabel": [
-        "cysteine_conjugation"
+        "cysteine_conjugation",
+        "S-cysteination",
+        "cysteination"
       ],
       "broader": [
         "xrm:1300000",
         "xrm:0000002"
-      ]
+      ],
+      "relatedMatch": "xrm:0000704"
     },
     {
       "id": "xrm:1300011",
@@ -3539,6 +4109,70 @@
         "species_difference_risk"
       ],
       "broader": "xrm:1400000"
+    },
+    {
+      "id": "xrm:1400200",
+      "type": "skos:Concept",
+      "prefLabel": "structural alert",
+      "inScheme": "xrm:scheme",
+      "definition": "Medchem structural alert / toxicophore motif associated with bioactivation or reactive-metabolite risk. Orthogonal to site_type (where the edit occurs) and soft-spot liability (metabolic vulnerability). Seed set; expand later.",
+      "altLabel": [
+        "toxicophore",
+        "structural toxicophore",
+        "medchem structural alert"
+      ],
+      "broader": "xrm:1400000"
+    },
+    {
+      "id": "xrm:1400201",
+      "type": "skos:Concept",
+      "prefLabel": "furan structural alert",
+      "inScheme": "xrm:scheme",
+      "definition": "Furan ring as a structural alert for oxidative bioactivation.",
+      "altLabel": [
+        "furan toxicophore",
+        "furan alert"
+      ],
+      "broader": "xrm:1400200",
+      "relatedMatch": [
+        "xrm:1600110",
+        "xrm:1500000"
+      ]
+    },
+    {
+      "id": "xrm:1400202",
+      "type": "skos:Concept",
+      "prefLabel": "thiophene structural alert",
+      "inScheme": "xrm:scheme",
+      "definition": "Thiophene ring as a structural alert for S-oxidation / bioactivation.",
+      "altLabel": [
+        "thiophene toxicophore",
+        "thiophene alert",
+        "thiohene structural alert"
+      ],
+      "broader": "xrm:1400200",
+      "relatedMatch": [
+        "xrm:1600111",
+        "xrm:0000133",
+        "xrm:1500000"
+      ]
+    },
+    {
+      "id": "xrm:1400203",
+      "type": "skos:Concept",
+      "prefLabel": "triple bond structural alert",
+      "inScheme": "xrm:scheme",
+      "definition": "Terminal or internal alkyne / triple bond as a structural alert.",
+      "altLabel": [
+        "alkyne structural alert",
+        "acetylene alert",
+        "triple-bond toxicophore"
+      ],
+      "broader": "xrm:1400200",
+      "relatedMatch": [
+        "xrm:1500000",
+        "xrm:1600210"
+      ]
     },
     {
       "id": "xrm:1500000",
@@ -4441,6 +5075,103 @@
       "broader": "xrm:1500000"
     },
     {
+      "id": "xrm:1500230",
+      "type": "skos:Concept",
+      "prefLabel": "macromolecule binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Reactive-metabolite outcome: covalent or tight binding to biological macromolecules.",
+      "altLabel": [
+        "macromolecular adduct formation",
+        "covalent macromolecule binding"
+      ],
+      "broader": "xrm:1500000"
+    },
+    {
+      "id": "xrm:1500231",
+      "type": "skos:Concept",
+      "prefLabel": "DNA binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Reactive metabolite binding/adduct formation on DNA (AMD RXNCLASS in scope).",
+      "altLabel": [
+        "DNA adduct formation",
+        "nucleic acid binding",
+        "DNA adduct"
+      ],
+      "broader": [
+        "xrm:1500230",
+        "xrm:1500000"
+      ]
+    },
+    {
+      "id": "xrm:1500232",
+      "type": "skos:Concept",
+      "prefLabel": "RNA binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Reactive metabolite binding/adduct formation on RNA.",
+      "altLabel": [
+        "RNA adduct"
+      ],
+      "broader": "xrm:1500230"
+    },
+    {
+      "id": "xrm:1500233",
+      "type": "skos:Concept",
+      "prefLabel": "protein binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Reactive metabolite binding/adduct formation on protein (AMD RXNCLASS in scope).",
+      "altLabel": [
+        "protein adduct formation",
+        "protein adduct"
+      ],
+      "broader": [
+        "xrm:1500230",
+        "xrm:1500000"
+      ]
+    },
+    {
+      "id": "xrm:1500234",
+      "type": "skos:Concept",
+      "prefLabel": "covalent binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Generic covalent binding of a reactive metabolite to biomolecules.",
+      "altLabel": [
+        "covalent adduct formation",
+        "covalent macromolecule adduct"
+      ],
+      "broader": [
+        "xrm:1500230",
+        "xrm:1500000"
+      ],
+      "relatedMatch": [
+        "xrm:1500231",
+        "xrm:1500233"
+      ]
+    },
+    {
+      "id": "xrm:1500235",
+      "type": "skos:Concept",
+      "prefLabel": "lipid binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Reactive metabolite binding to lipids.",
+      "altLabel": [
+        "lipid adduct"
+      ],
+      "broader": "xrm:1500230"
+    },
+    {
+      "id": "xrm:1500236",
+      "type": "skos:Concept",
+      "prefLabel": "CoA binding",
+      "inScheme": "xrm:scheme",
+      "definition": "Binding/adduct involving coenzyme A (often acyl-CoA related).",
+      "altLabel": [
+        "acyl-CoA adduct",
+        "CoA adduct"
+      ],
+      "broader": "xrm:1500230",
+      "relatedMatch": "xrm:0001061"
+    },
+    {
       "id": "xrm:1600000",
       "type": "skos:Concept",
       "prefLabel": "site type",
@@ -4719,6 +5450,9 @@
       "prefLabel": "thiophene",
       "inScheme": "xrm:scheme",
       "definition": "Thiophene ring site environment.",
+      "altLabel": [
+        "thiohene"
+      ],
       "broader": "xrm:1600000"
     },
     {
@@ -5029,6 +5763,41 @@
       "definition": "Carbon alpha to sulfur.",
       "altLabel": [
         "alpha_to_sulfur"
+      ],
+      "broader": "xrm:1600000"
+    },
+    {
+      "id": "xrm:1600200",
+      "type": "skos:Concept",
+      "prefLabel": "alicyclic site",
+      "inScheme": "xrm:scheme",
+      "definition": "Site on an alicyclic (saturated ring) carbon.",
+      "altLabel": [
+        "alicyclic carbon",
+        "cycloalkyl site"
+      ],
+      "broader": "xrm:1600000"
+    },
+    {
+      "id": "xrm:1600201",
+      "type": "skos:Concept",
+      "prefLabel": "fused benzene site",
+      "inScheme": "xrm:scheme",
+      "definition": "Aromatic carbon on a fused benzene ring system.",
+      "altLabel": [
+        "fused aromatic ring site"
+      ],
+      "broader": "xrm:1600013"
+    },
+    {
+      "id": "xrm:1600210",
+      "type": "skos:Concept",
+      "prefLabel": "alkyne site",
+      "inScheme": "xrm:scheme",
+      "definition": "Alkyne / carbon–carbon triple bond site environment.",
+      "altLabel": [
+        "triple bond site",
+        "acetylene site"
       ],
       "broader": "xrm:1600000"
     },
@@ -6235,7 +7004,7 @@
       "altLabel": [
         "liver_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100110",
@@ -6246,7 +7015,7 @@
       "altLabel": [
         "intestine_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100111",
@@ -6257,7 +7026,7 @@
       "altLabel": [
         "kidney_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100112",
@@ -6268,7 +7037,7 @@
       "altLabel": [
         "lung_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100113",
@@ -6279,7 +7048,7 @@
       "altLabel": [
         "brain_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100114",
@@ -6288,9 +7057,11 @@
       "inScheme": "xrm:scheme",
       "definition": "Human species framing.",
       "altLabel": [
-        "human_species_context"
+        "human_species_context",
+        "Human",
+        "human"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100115",
@@ -6299,9 +7070,11 @@
       "inScheme": "xrm:scheme",
       "definition": "Rat species framing.",
       "altLabel": [
-        "rat_species_context"
+        "rat_species_context",
+        "Rat",
+        "rat"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100116",
@@ -6310,9 +7083,11 @@
       "inScheme": "xrm:scheme",
       "definition": "Mouse species framing.",
       "altLabel": [
-        "mouse_species_context"
+        "mouse_species_context",
+        "Mouse",
+        "mouse"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100117",
@@ -6321,9 +7096,11 @@
       "inScheme": "xrm:scheme",
       "definition": "Dog species framing.",
       "altLabel": [
-        "dog_species_context"
+        "dog_species_context",
+        "Dog",
+        "dog"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100118",
@@ -6333,9 +7110,12 @@
       "definition": "Nonhuman primate framing.",
       "altLabel": [
         "NHP species context",
-        "monkey_species_context"
+        "monkey_species_context",
+        "Monkey",
+        "monkey",
+        "non-human primate"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100119",
@@ -6346,7 +7126,10 @@
       "altLabel": [
         "plasma_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100301"
+      ]
     },
     {
       "id": "xrm:2100120",
@@ -6357,7 +7140,10 @@
       "altLabel": [
         "urine_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100301"
+      ]
     },
     {
       "id": "xrm:2100121",
@@ -6368,7 +7154,10 @@
       "altLabel": [
         "bile_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100301"
+      ]
     },
     {
       "id": "xrm:2100122",
@@ -6379,7 +7168,10 @@
       "altLabel": [
         "feces_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100301"
+      ]
     },
     {
       "id": "xrm:2100123",
@@ -6388,9 +7180,14 @@
       "inScheme": "xrm:scheme",
       "definition": "Microsome incubation matrix.",
       "altLabel": [
-        "microsome_matrix_context"
+        "microsome_matrix_context",
+        "microsomes",
+        "liver microsomes"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100310"
+      ]
     },
     {
       "id": "xrm:2100124",
@@ -6401,7 +7198,10 @@
       "altLabel": [
         "cytosol_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100310"
+      ]
     },
     {
       "id": "xrm:2100125",
@@ -6410,9 +7210,13 @@
       "inScheme": "xrm:scheme",
       "definition": "Hepatocyte incubation matrix.",
       "altLabel": [
-        "hepatocyte_matrix_context"
+        "hepatocyte_matrix_context",
+        "hepatocytes"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100310"
+      ]
     },
     {
       "id": "xrm:2100126",
@@ -6600,7 +7404,7 @@
       "altLabel": [
         "skin_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100213",
@@ -6611,7 +7415,7 @@
       "altLabel": [
         "placenta_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100214",
@@ -6622,7 +7426,7 @@
       "altLabel": [
         "adrenal_tissue_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100011"
     },
     {
       "id": "xrm:2100215",
@@ -6633,7 +7437,7 @@
       "altLabel": [
         "rabbit_species_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100216",
@@ -6644,7 +7448,7 @@
       "altLabel": [
         "minipig_species_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": "xrm:2100012"
     },
     {
       "id": "xrm:2100217",
@@ -6655,7 +7459,10 @@
       "altLabel": [
         "serum_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100301"
+      ]
     },
     {
       "id": "xrm:2100218",
@@ -6666,7 +7473,10 @@
       "altLabel": [
         "whole_blood_matrix_context"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100301"
+      ]
     },
     {
       "id": "xrm:2100219",
@@ -6677,7 +7487,10 @@
       "altLabel": [
         "tissue_homogenate_matrix"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100310"
+      ]
     },
     {
       "id": "xrm:2100220",
@@ -6688,7 +7501,10 @@
       "altLabel": [
         "recombinant_enzyme_matrix"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100310"
+      ]
     },
     {
       "id": "xrm:2100221",
@@ -6697,9 +7513,14 @@
       "inScheme": "xrm:scheme",
       "definition": "Insect-cell supersome matrix.",
       "altLabel": [
-        "supersome_matrix_context"
+        "supersome_matrix_context",
+        "Supersomes",
+        "baculosome-related recombinant membranes"
       ],
-      "broader": "xrm:2100000"
+      "broader": [
+        "xrm:2100013",
+        "xrm:2100310"
+      ]
     },
     {
       "id": "xrm:2100222",
@@ -6810,6 +7631,238 @@
         "fasted_state_context"
       ],
       "broader": "xrm:2100000"
+    },
+    {
+      "id": "xrm:2100300",
+      "type": "skos:Concept",
+      "prefLabel": "experimental setting",
+      "inScheme": "xrm:scheme",
+      "definition": "Whether observations come from an in-vivo organism study or an in-vitro experimental system. Orthogonal to tissue, species, matrix, and assay system.",
+      "altLabel": [
+        "study setting",
+        "in vivo vs in vitro framing"
+      ],
+      "broader": "xrm:2100000"
+    },
+    {
+      "id": "xrm:2100301",
+      "type": "skos:Concept",
+      "prefLabel": "in vivo setting",
+      "inScheme": "xrm:scheme",
+      "definition": "In-vivo experimental setting (metabolites often reported in plasma, urine, bile, feces, tissues).",
+      "altLabel": [
+        "in vivo",
+        "whole-animal study"
+      ],
+      "broader": "xrm:2100300",
+      "relatedMatch": "xrm:2000112"
+    },
+    {
+      "id": "xrm:2100302",
+      "type": "skos:Concept",
+      "prefLabel": "in vitro setting",
+      "inScheme": "xrm:scheme",
+      "definition": "In-vitro / ex-vivo experimental setting (cells, subcellular fractions, recombinants).",
+      "altLabel": [
+        "in vitro",
+        "ex vivo incubation"
+      ],
+      "broader": "xrm:2100300",
+      "relatedMatch": "xrm:2000111"
+    },
+    {
+      "id": "xrm:2100310",
+      "type": "skos:Concept",
+      "prefLabel": "assay system",
+      "inScheme": "xrm:scheme",
+      "definition": "Experimental assay system used to generate or detect metabolites (hepatocytes, microsomes, baculosomes/recombinants, S9, …).",
+      "altLabel": [
+        "incubation system",
+        "metabolism assay system"
+      ],
+      "broader": [
+        "xrm:2100000",
+        "xrm:2100302"
+      ]
+    },
+    {
+      "id": "xrm:2100311",
+      "type": "skos:Concept",
+      "prefLabel": "hepatocyte assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Intact hepatocyte incubation (Phase I + II competent when fresh/cryopreserved).",
+      "altLabel": [
+        "hepatocytes",
+        "primary hepatocytes",
+        "hepatocyte incubation system"
+      ],
+      "broader": [
+        "xrm:2100310",
+        "xrm:2100125"
+      ],
+      "relatedMatch": [
+        "xrm:2000018",
+        "xrm:2000120",
+        "xrm:2100109"
+      ]
+    },
+    {
+      "id": "xrm:2100312",
+      "type": "skos:Concept",
+      "prefLabel": "microsome assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Microsomal fraction incubation (ER enzymes: CYPs, UGTs, FMOs, …).",
+      "altLabel": [
+        "microsomes",
+        "liver microsomes",
+        "HLM",
+        "RLM"
+      ],
+      "broader": [
+        "xrm:2100310",
+        "xrm:2100123"
+      ],
+      "relatedMatch": "xrm:2000119"
+    },
+    {
+      "id": "xrm:2100313",
+      "type": "skos:Concept",
+      "prefLabel": "baculosome assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Baculovirus/insect-cell expressed enzyme membrane preparations (often single CYP/UGT).",
+      "altLabel": [
+        "baculosomes",
+        "Baculovirus insect-cell membranes",
+        "insect-cell recombinant membranes"
+      ],
+      "broader": [
+        "xrm:2100310",
+        "xrm:2100220"
+      ],
+      "relatedMatch": "xrm:2100221"
+    },
+    {
+      "id": "xrm:2100314",
+      "type": "skos:Concept",
+      "prefLabel": "S9 assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Post-mitochondrial S9 fraction (microsomes + cytosol enzymes).",
+      "altLabel": [
+        "S9 fraction",
+        "liver S9"
+      ],
+      "broader": "xrm:2100310",
+      "relatedMatch": "xrm:2000118"
+    },
+    {
+      "id": "xrm:2100315",
+      "type": "skos:Concept",
+      "prefLabel": "cytosol assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Cytosolic fraction incubation (SULTs, NATs, GSTs, AO partly, …).",
+      "altLabel": [
+        "cytosolic fraction",
+        "liver cytosol"
+      ],
+      "broader": [
+        "xrm:2100310",
+        "xrm:2100124"
+      ]
+    },
+    {
+      "id": "xrm:2100316",
+      "type": "skos:Concept",
+      "prefLabel": "tissue slice assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Precision-cut tissue slice incubations.",
+      "altLabel": [
+        "precision-cut tissue slices",
+        "liver slices"
+      ],
+      "broader": "xrm:2100310"
+    },
+    {
+      "id": "xrm:2100317",
+      "type": "skos:Concept",
+      "prefLabel": "homogenate assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Crude tissue homogenate incubation.",
+      "altLabel": [
+        "tissue homogenate incubation"
+      ],
+      "broader": [
+        "xrm:2100310",
+        "xrm:2100219"
+      ]
+    },
+    {
+      "id": "xrm:2100318",
+      "type": "skos:Concept",
+      "prefLabel": "recombinant enzyme assay",
+      "inScheme": "xrm:scheme",
+      "definition": "Purified or membrane-bound recombinant enzyme incubations (incl. Supersomes).",
+      "altLabel": [
+        "rCYP",
+        "recombinant CYP/UGT",
+        "Supersomes"
+      ],
+      "broader": [
+        "xrm:2100310",
+        "xrm:2100220",
+        "xrm:2100221"
+      ]
+    },
+    {
+      "id": "xrm:2100320",
+      "type": "skos:Concept",
+      "prefLabel": "guinea pig species context",
+      "inScheme": "xrm:scheme",
+      "definition": "Guinea pig species framing (common metabolism species).",
+      "altLabel": [
+        "guinea pig",
+        "cavia"
+      ],
+      "broader": "xrm:2100012"
+    },
+    {
+      "id": "xrm:2100321",
+      "type": "skos:Concept",
+      "prefLabel": "pig species context",
+      "inScheme": "xrm:scheme",
+      "definition": "Pig / porcine species framing.",
+      "altLabel": [
+        "pig",
+        "swine",
+        "porcine"
+      ],
+      "broader": "xrm:2100012"
+    },
+    {
+      "id": "xrm:2100322",
+      "type": "skos:Concept",
+      "prefLabel": "hamster species context",
+      "inScheme": "xrm:scheme",
+      "definition": "Hamster species framing.",
+      "altLabel": [
+        "hamster"
+      ],
+      "broader": "xrm:2100012"
+    },
+    {
+      "id": "xrm:2100323",
+      "type": "skos:Concept",
+      "prefLabel": "cynomolgus monkey species context",
+      "inScheme": "xrm:scheme",
+      "definition": "Cynomolgus monkey (common NHP metabolism species).",
+      "altLabel": [
+        "cynomolgus",
+        "Macaca fascicularis",
+        "cyno"
+      ],
+      "broader": [
+        "xrm:2100012",
+        "xrm:2100118"
+      ]
     },
     {
       "id": "xrm:2200000",

@@ -1,0 +1,23 @@
+source_term	xrm_id	preferred_label	note
+O-sulfonation	xrm:0001011	O-sulfation	MetX spelling variant of O-sulfation
+GSH-conjugation	xrm:0001030	glutathionation	hyphenated GSH form
+GSH conjugation	xrm:0001030	glutathionation	spacing variant
+C-Hydroxylation	xrm:0000100	hydroxylation	AMD label; already synonym of hydroxylation
+C-Oxidation	xrm:0000021	carbon oxidation	AMD umbrella → carbon oxidation
+N-Reduction	xrm:0000510	nitrogen reduction	AMD heteroatom reduction class
+S-Oxidation	xrm:0000130	sulfur oxidation	already synonym; alias for robustness
+N-Oxidation	xrm:0000120	nitrogen oxidation	already synonym; alias for robustness
+O-Glucuronidation	xrm:0001001	O-glucuronidation	casing
+O-Sulfation	xrm:0001011	O-sulfation	casing
+O-Demethylation	xrm:0000209	O-demethylation	casing
+N-Demethylation	xrm:0000205	N-demethylation	casing
+N-Dealkylation	xrm:0000201	N-dealkylation	casing
+O-Dealkylation	xrm:0000202	O-dealkylation	casing
+S-Dealkylation	xrm:0000203	S-dealkylation	casing
+Glutathionation	xrm:0001030	glutathionation	casing
+Epoxidation	xrm:0000110	epoxidation	casing
+Hydrolysis	xrm:0000013	hydrolysis	casing
+Reduction	xrm:0000014	reduction	casing
+Oxidation	xrm:0000020	oxidation	casing
+Aromatic Hydroxylation	xrm:0000101	aromatic hydroxylation	casing
+Aliphatic Hydroxylation	xrm:0000102	aliphatic hydroxylation	casing
