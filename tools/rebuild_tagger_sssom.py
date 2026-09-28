@@ -44,14 +44,21 @@ def rules_dir() -> Path:
 
 
 def load_remap(live: set[str]) -> dict[str, str]:
+    """Resolve stale emits via remap ledger (renumbered/merged/moved) + renumber TSV."""
     remap: dict[str, str] = {}
-    if not REMAP_PATH.exists():
-        return remap
-    with REMAP_PATH.open() as fh:
-        for row in csv.DictReader(fh, delimiter="\t"):
-            old, new, ctype = row.get("old_id", ""), row.get("new_id", ""), row.get("change_type", "")
-            if old and new and new in live and ctype in ("merged", "moved"):
-                remap[old] = new
+    renumber_path = ROOT / "data/mappings/xmet-id-renumber.tsv"
+    if renumber_path.exists():
+        with renumber_path.open() as fh:
+            for row in csv.DictReader(fh, delimiter="\t"):
+                old, new = row.get("old_id", ""), row.get("new_id", "")
+                if old and new and new in live:
+                    remap[old] = new
+    if REMAP_PATH.exists():
+        with REMAP_PATH.open() as fh:
+            for row in csv.DictReader(fh, delimiter="\t"):
+                old, new, ctype = row.get("old_id", ""), row.get("new_id", ""), row.get("change_type", "")
+                if old and new and new in live and ctype in ("merged", "moved", "renumbered"):
+                    remap[old] = new
     return remap
 
 

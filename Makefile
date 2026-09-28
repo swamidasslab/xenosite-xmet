@@ -1,6 +1,6 @@
 # xenosite-xmet — ontology authoring targets
 
-.PHONY: ontology-stats ontology-export ontology-tree ontology-fuzzy-audit db-term-mapping validate-redesign rebuild-tagger-sssom help
+.PHONY: ontology-stats ontology-export ontology-tree ontology-fuzzy-audit db-term-mapping validate-redesign rebuild-tagger-sssom sync-tagger-emits help
 
 ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 UV ?= uv
@@ -17,6 +17,7 @@ help:
 	@echo "  make db-term-mapping     MetXBioDB/AMD term → XMET mapping workflow"
 	@echo "  make validate-redesign   Redesign v1 adherence (Forest/tagger SSSOM, spines, remap)"
 	@echo "  make rebuild-tagger-sssom  Refresh xmet-tagger.sssom.tsv from tagger SMARTS emits"
+	@echo "  make sync-tagger-emits     Rewrite sibling tagger emits from xmet-tagger.sssom"
 
 ontology-stats:
 	@$(PY) $(ROOT)/tools/ontology_stats.py
@@ -36,6 +37,9 @@ db-term-mapping:
 
 validate-redesign:
 	@$(PY) $(ROOT)/tools/validate_redesign_v1.py
+
+sync-tagger-emits:
+	@$(PY) $(ROOT)/tools/sync_tagger_emits_from_sssom.py
 
 rebuild-tagger-sssom:
 	@$(PY) $(ROOT)/tools/rebuild_tagger_sssom.py

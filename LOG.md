@@ -2,6 +2,15 @@
 
 ## 2026-09-28
 
+- Tagger emit sync from `xmet-tagger.sssom` (`make sync-tagger-emits`): SMARTS
+  rules emit live `4000xxxx` reaction-class homes (+ YAML `always_with`); dropped
+  non-live/wiped-spine co-emits; restored chemistry tag bridges from Forest SSSOM;
+  removed ambiguity/about/pharmacology tag helpers (spines wiped). Runtime spines
+  in tagger retargeted to disposition/RC/descriptor/LG. Checkpoint parent commit
+  `cbce71e` before this cut for revert.
+
+## 2026-09-28
+
 - Opaque dense renumber of all 406 live concepts to ``xmet:4000000``…``xmet:4000405`` via ``tools/renumber_xmet_ids.py`` (two-phase placeholders; no hierarchy in IDs). Covered ontology + all mapping SSSOM/views/expectations; ledger in ``xmet-id-renumber.tsv``. Chose ``4000000+`` because ``1000000+`` overlapped live ``1xxxxxx`` IDs. Tagger rule emits on main still use pre-redesign CURIEs — separate sync needed.
 
 
