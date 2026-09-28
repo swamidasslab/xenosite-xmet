@@ -40,6 +40,7 @@ xmet:4000338	skos:exactMatch	rule:struct-carbon-oxidation	semapv:ManualMappingCu
 xmet:4000205	skos:exactMatch	rule:struct-carbonyl-hydration	semapv:ManualMappingCuration	hydration of carbonyl	struct-carbonyl-hydration
 xmet:4000146	skos:exactMatch	rule:struct-carbonylation	semapv:ManualMappingCuration	carbonylation	struct-carbonylation
 xmet:4000122	skos:exactMatch	rule:struct-carboxylation	semapv:ManualMappingCuration	carboxylation	struct-carboxylation
+xmet:4000406	skos:exactMatch	rule:struct-conjugated-system-remodeling	semapv:ManualMappingCuration	conjugated-system remodeling	struct-conjugated-system-remodeling
 xmet:4000203	skos:exactMatch	rule:struct-cis-dihydroxylation	semapv:ManualMappingCuration	cis-diol formation	struct-cis-dihydroxylation
 xmet:4000114	skos:exactMatch	rule:struct-cyanidation	semapv:ManualMappingCuration	cyanidation	struct-cyanidation
 xmet:4000217	skos:exactMatch	rule:struct-cysteine-conjugation	semapv:ManualMappingCuration	cysteine conjugation	struct-cysteine-conjugation

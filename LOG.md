@@ -2,6 +2,12 @@
 
 ## 2026-09-28
 
+- Tagger SMARTS ``rule:struct-conjugated-system-remodeling``: same phenol→carbonyl
+  SMARTS as quinone-like formation, **without** ``aromaticity_change: dearomatize``;
+  SSSOM ``exactMatch`` to conjugated-system remodeling (``xmet:4000406``) alongside
+  Forest ``QuinoneFormation``. Quinone-like (``4000059`` / struct-quinone-formation)
+  keeps the dearomatize gate.
+
 - Parent crate patch bump ``0.6.1``→``0.6.2`` with soft-link cleanup commit.
 
 - Dropped halide LG → dehalogenation ``suggests`` (wrong direction). Keep

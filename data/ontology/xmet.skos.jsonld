@@ -4247,7 +4247,7 @@
       "type": "skos:Concept",
       "prefLabel": "conjugated-system remodeling",
       "inScheme": "xmet:scheme",
-      "definition": "Coordinated multi-site remodeling that builds or extends a conjugated π-system (Forest rule QuinoneFormation). Broader than aromatic quinoid collapse; current Forest patterns only cover aromatic→quinoid endpoints. Children distinguish quinone-like species formation, quinone-like endpoint transformations, and nonaromatic conjugated-system remodeling.",
+      "definition": "Coordinated multi-site remodeling that builds or extends a conjugated π-system (Forest rule QuinoneFormation; tagger struct-conjugated-system-remodeling). Broader than aromatic quinoid collapse; current Forest patterns only cover aromatic→quinoid endpoints. Tagger SMARTS mirrors quinone-like phenol→carbonyl without a dearomatize gate. Children distinguish quinone-like species formation, quinone-like endpoint transformations, and nonaromatic conjugated-system remodeling.",
       "altLabel": [
         "conjugated π-system remodeling",
         "conjugated-system transformation",
