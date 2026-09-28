@@ -1317,7 +1317,10 @@
       "inScheme": "xmet:scheme",
       "definition": "nitroaromatic reduction: xenobiotic-metabolism term under nitro reduction.",
       "broader": "xmet:0000511",
-      "relatedMatch": "xmet:0003000"
+      "relatedMatch": [
+        "xmet:0003000",
+        "xmet:9100511"
+      ]
     },
     {
       "id": "xmet:0000514",
@@ -1342,6 +1345,15 @@
       "inScheme": "xmet:scheme",
       "definition": "oxime reduction: xenobiotic-metabolism term under nitrogen reduction.",
       "broader": "xmet:0000510"
+    },
+    {
+      "id": "xmet:0000517",
+      "type": "skos:Concept",
+      "prefLabel": "benzodioxole reduction",
+      "inScheme": "xmet:scheme",
+      "definition": "benzodioxole reduction: reductive cleavage of a methylenedioxy bridge.",
+      "broader": "xmet:0000510",
+      "relatedMatch": "xmet:9100541"
     },
     {
       "id": "xmet:0000520",
@@ -9571,7 +9583,7 @@
       "altLabel": [
         "ThiopheneSulfurOxidation"
       ],
-      "broader": "xmet:9000010",
+      "broader": "xmet:9100130",
       "relatedMatch": "xmet:0000133"
     },
     {
@@ -9595,7 +9607,7 @@
       "altLabel": [
         "NDealkylation"
       ],
-      "broader": "xmet:9000011",
+      "broader": "xmet:9100200",
       "relatedMatch": "xmet:0000201"
     },
     {
@@ -9643,7 +9655,7 @@
       "altLabel": [
         "EpoxideOpening"
       ],
-      "broader": "xmet:9000013",
+      "broader": "xmet:9100400",
       "relatedMatch": "xmet:0000400"
     },
     {
@@ -9655,7 +9667,7 @@
       "altLabel": [
         "Dephosphorylation"
       ],
-      "broader": "xmet:9000013",
+      "broader": "xmet:9100400",
       "relatedMatch": "xmet:0000410"
     },
     {
@@ -9667,7 +9679,7 @@
       "altLabel": [
         "AzoSplitting"
       ],
-      "broader": "xmet:9000013",
+      "broader": "xmet:9100400",
       "relatedMatch": "xmet:0000412"
     },
     {
@@ -9679,7 +9691,7 @@
       "altLabel": [
         "EpoxideHydration"
       ],
-      "broader": "xmet:9000013",
+      "broader": "xmet:9100400",
       "relatedMatch": "xmet:0000400"
     },
     {
@@ -9717,6 +9729,21 @@
       ],
       "broader": "xmet:9000014",
       "relatedMatch": "xmet:0000510"
+    },
+    {
+      "id": "xmet:9100511",
+      "type": "skos:Concept",
+      "prefLabel": "NitroaromaticReduction rule",
+      "inScheme": "xmet:scheme",
+      "definition": "Metabolic Forest rule `NitroaromaticReduction` in the Forest-map hierarchy.",
+      "altLabel": [
+        "NitroaromaticReduction"
+      ],
+      "broader": [
+        "xmet:9100510",
+        "xmet:9000019"
+      ],
+      "relatedMatch": "xmet:0000513"
     },
     {
       "id": "xmet:9100520",
@@ -9763,7 +9790,8 @@
       "altLabel": [
         "BenzodioxoleReduction"
       ],
-      "broader": "xmet:9000014"
+      "broader": "xmet:9100510",
+      "relatedMatch": "xmet:0000517"
     },
     {
       "id": "xmet:9100600",

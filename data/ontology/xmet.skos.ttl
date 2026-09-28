@@ -878,7 +878,8 @@ xmet:0000513 a skos:Concept ;
   skos:definition "nitroaromatic reduction: xenobiotic-metabolism term under nitro reduction." ;
   skos:inScheme xmet:scheme ;
   skos:broader xmet:0000511 ;
-  skos:relatedMatch xmet:0003000 .
+  skos:relatedMatch xmet:0003000 ;
+  skos:relatedMatch xmet:9100511 .
 
 xmet:0000514 a skos:Concept ;
   skos:prefLabel "azo reduction" ;
@@ -897,6 +898,13 @@ xmet:0000516 a skos:Concept ;
   skos:definition "oxime reduction: xenobiotic-metabolism term under nitrogen reduction." ;
   skos:inScheme xmet:scheme ;
   skos:broader xmet:0000510 .
+
+xmet:0000517 a skos:Concept ;
+  skos:prefLabel "benzodioxole reduction" ;
+  skos:definition "benzodioxole reduction: reductive cleavage of a methylenedioxy bridge." ;
+  skos:inScheme xmet:scheme ;
+  skos:broader xmet:0000510 ;
+  skos:relatedMatch xmet:9100541 .
 
 xmet:0000520 a skos:Concept ;
   skos:prefLabel "oxygen reduction" ;
@@ -6445,7 +6453,7 @@ xmet:9100131 a skos:Concept ;
   skos:definition "Metabolic Forest rule `ThiopheneSulfurOxidation` in the Forest-map hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "ThiopheneSulfurOxidation" ;
-  skos:broader xmet:9000010 ;
+  skos:broader xmet:9100130 ;
   skos:relatedMatch xmet:0000133 .
 
 xmet:9100200 a skos:Concept ;
@@ -6461,7 +6469,7 @@ xmet:9100201 a skos:Concept ;
   skos:definition "Metabolic Forest rule `NDealkylation` in the Forest-map hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "NDealkylation" ;
-  skos:broader xmet:9000011 ;
+  skos:broader xmet:9100200 ;
   skos:relatedMatch xmet:0000201 .
 
 xmet:9100210 a skos:Concept ;
@@ -6493,7 +6501,7 @@ xmet:9100401 a skos:Concept ;
   skos:definition "Metabolic Forest rule `EpoxideOpening` in the Forest-map hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "EpoxideOpening" ;
-  skos:broader xmet:9000013 ;
+  skos:broader xmet:9100400 ;
   skos:relatedMatch xmet:0000400 .
 
 xmet:9100402 a skos:Concept ;
@@ -6501,7 +6509,7 @@ xmet:9100402 a skos:Concept ;
   skos:definition "Metabolic Forest rule `Dephosphorylation` in the Forest-map hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "Dephosphorylation" ;
-  skos:broader xmet:9000013 ;
+  skos:broader xmet:9100400 ;
   skos:relatedMatch xmet:0000410 .
 
 xmet:9100403 a skos:Concept ;
@@ -6509,7 +6517,7 @@ xmet:9100403 a skos:Concept ;
   skos:definition "Metabolic Forest rule `AzoSplitting` in the Forest-map hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "AzoSplitting" ;
-  skos:broader xmet:9000013 ;
+  skos:broader xmet:9100400 ;
   skos:relatedMatch xmet:0000412 .
 
 xmet:9100404 a skos:Concept ;
@@ -6517,7 +6525,7 @@ xmet:9100404 a skos:Concept ;
   skos:definition "Metabolic Forest rule `EpoxideHydration` in the Forest-map hierarchy (alkene to vicinal diol; elementary plan Epoxidation then EpoxideOpening)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "EpoxideHydration" ;
-  skos:broader xmet:9000013 ;
+  skos:broader xmet:9100400 ;
   skos:relatedMatch xmet:0000400 .
 
 xmet:9100500 a skos:Concept ;
@@ -6543,6 +6551,15 @@ xmet:9100510 a skos:Concept ;
   skos:altLabel "NitrogenReduction" ;
   skos:broader xmet:9000014 ;
   skos:relatedMatch xmet:0000510 .
+
+xmet:9100511 a skos:Concept ;
+  skos:prefLabel "NitroaromaticReduction rule" ;
+  skos:definition "Metabolic Forest rule `NitroaromaticReduction` in the Forest-map hierarchy." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "NitroaromaticReduction" ;
+  skos:broader xmet:9100510 ;
+  skos:broader xmet:9000019 ;
+  skos:relatedMatch xmet:0000513 .
 
 xmet:9100520 a skos:Concept ;
   skos:prefLabel "OxygenReduction rule" ;
@@ -6573,7 +6590,8 @@ xmet:9100541 a skos:Concept ;
   skos:definition "Metabolic Forest rule `BenzodioxoleReduction` in the Forest-map hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "BenzodioxoleReduction" ;
-  skos:broader xmet:9000014 .
+  skos:broader xmet:9100510 ;
+  skos:relatedMatch xmet:0000517 .
 
 xmet:9100600 a skos:Concept ;
   skos:prefLabel "QuinoneFormation rule" ;

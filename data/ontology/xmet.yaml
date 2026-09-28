@@ -1014,6 +1014,7 @@ concepts:
   - xmet:0000511
   related_match:
   - xmet:0003000
+  - xmet:9100511
   definition: 'nitroaromatic reduction: xenobiotic-metabolism term under nitro reduction.'
 - id: xmet:0000514
   preferred_label: azo reduction
@@ -1030,6 +1031,13 @@ concepts:
   parents:
   - xmet:0000510
   definition: 'oxime reduction: xenobiotic-metabolism term under nitrogen reduction.'
+- id: xmet:0000517
+  preferred_label: benzodioxole reduction
+  parents:
+  - xmet:0000510
+  related_match:
+  - xmet:9100541
+  definition: 'benzodioxole reduction: reductive cleavage of a methylenedioxy bridge.'
 - id: xmet:0000520
   preferred_label: oxygen reduction
   synonyms:
@@ -5852,7 +5860,7 @@ concepts:
   - ThiopheneSulfurOxidation
   definition: Metabolic Forest rule `ThiopheneSulfurOxidation` in the Forest-map hierarchy.
   parents:
-  - xmet:9000010
+  - xmet:9100130
   related_match:
   - xmet:0000133
 - id: xmet:9100200
@@ -5870,7 +5878,7 @@ concepts:
   - NDealkylation
   definition: Metabolic Forest rule `NDealkylation` in the Forest-map hierarchy.
   parents:
-  - xmet:9000011
+  - xmet:9100200
   related_match:
   - xmet:0000201
 - id: xmet:9100210
@@ -5906,7 +5914,7 @@ concepts:
   - EpoxideOpening
   definition: Metabolic Forest rule `EpoxideOpening` in the Forest-map hierarchy.
   parents:
-  - xmet:9000013
+  - xmet:9100400
   related_match:
   - xmet:0000400
 - id: xmet:9100402
@@ -5915,7 +5923,7 @@ concepts:
   - Dephosphorylation
   definition: Metabolic Forest rule `Dephosphorylation` in the Forest-map hierarchy.
   parents:
-  - xmet:9000013
+  - xmet:9100400
   related_match:
   - xmet:0000410
 - id: xmet:9100403
@@ -5924,7 +5932,7 @@ concepts:
   - AzoSplitting
   definition: Metabolic Forest rule `AzoSplitting` in the Forest-map hierarchy.
   parents:
-  - xmet:9000013
+  - xmet:9100400
   related_match:
   - xmet:0000412
 - id: xmet:9100404
@@ -5934,7 +5942,7 @@ concepts:
   definition: Metabolic Forest rule `EpoxideHydration` in the Forest-map hierarchy (alkene to vicinal
     diol; elementary plan Epoxidation then EpoxideOpening).
   parents:
-  - xmet:9000013
+  - xmet:9100400
   related_match:
   - xmet:0000400
 - id: xmet:9100500
@@ -5964,6 +5972,16 @@ concepts:
   - xmet:9000014
   related_match:
   - xmet:0000510
+- id: xmet:9100511
+  preferred_label: NitroaromaticReduction rule
+  synonyms:
+  - NitroaromaticReduction
+  definition: Metabolic Forest rule `NitroaromaticReduction` in the Forest-map hierarchy.
+  parents:
+  - xmet:9100510
+  - xmet:9000019
+  related_match:
+  - xmet:0000513
 - id: xmet:9100520
   preferred_label: OxygenReduction rule
   synonyms:
@@ -5997,7 +6015,9 @@ concepts:
   - BenzodioxoleReduction
   definition: Metabolic Forest rule `BenzodioxoleReduction` in the Forest-map hierarchy.
   parents:
-  - xmet:9000014
+  - xmet:9100510
+  related_match:
+  - xmet:0000517
 - id: xmet:9100600
   preferred_label: QuinoneFormation rule
   synonyms:

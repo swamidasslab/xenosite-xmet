@@ -13,6 +13,26 @@ xmet:0000110	skos:relatedMatch	forest.rule:Epoxidation	semapv:ManualMappingCurat
 xmet:0000201	skos:relatedMatch	forest.rule:NDealkylation	semapv:ManualMappingCuration	N-dealkylation	NDealkylation
 xmet:0000300	skos:relatedMatch	forest.rule:QuinoneFormation	semapv:ManualMappingCuration	quinone formation	QuinoneFormation
 xmet:0001000	skos:relatedMatch	forest.rule:Glucuronidation	semapv:ManualMappingCuration	glucuronidation	Glucuronidation
+xmet:0000012	skos:relatedMatch	forest.rule:Dehydrogenation	semapv:ManualMappingCuration	dehydrogenation	Dehydrogenation
+xmet:0000013	skos:relatedMatch	forest.rule:Hydrolysis	semapv:ManualMappingCuration	hydrolysis	Hydrolysis
+xmet:0000120	skos:relatedMatch	forest.rule:NitrogenOxidation	semapv:ManualMappingCuration	nitrogen oxidation	NitrogenOxidation
+xmet:0000130	skos:relatedMatch	forest.rule:SulfurOxidation	semapv:ManualMappingCuration	sulfur oxidation	SulfurOxidation
+xmet:0000200	skos:relatedMatch	forest.rule:Dealkylation	semapv:ManualMappingCuration	dealkylation	Dealkylation
+xmet:0000210	skos:relatedMatch	forest.rule:OxidativeDehalogenation	semapv:ManualMappingCuration	oxidative dehalogenation	OxidativeDehalogenation
+xmet:0000400	skos:relatedMatch	forest.rule:EpoxideOpening	semapv:ManualMappingCuration	epoxide opening	EpoxideOpening
+xmet:0000410	skos:relatedMatch	forest.rule:Dephosphorylation	semapv:ManualMappingCuration	dephosphorylation	Dephosphorylation
+xmet:0000412	skos:relatedMatch	forest.rule:AzoSplitting	semapv:ManualMappingCuration	azo cleavage	AzoSplitting
+xmet:0000500	skos:relatedMatch	forest.rule:Hydrogenation	semapv:ManualMappingCuration	hydrogenation	Hydrogenation
+xmet:0000510	skos:relatedMatch	forest.rule:NitrogenReduction	semapv:ManualMappingCuration	nitrogen reduction	NitrogenReduction
+xmet:0000517	skos:relatedMatch	forest.rule:BenzodioxoleReduction	semapv:ManualMappingCuration	benzodioxole reduction	BenzodioxoleReduction
+xmet:0000520	skos:relatedMatch	forest.rule:OxygenReduction	semapv:ManualMappingCuration	oxygen reduction	OxygenReduction
+xmet:0000530	skos:relatedMatch	forest.rule:SulfurReduction	semapv:ManualMappingCuration	sulfur reduction	SulfurReduction
+xmet:0000540	skos:relatedMatch	forest.rule:ReductiveDehalogenation	semapv:ManualMappingCuration	reductive dehalogenation	ReductiveDehalogenation
+xmet:0000550	skos:relatedMatch	forest.rule:Dehydration	semapv:ManualMappingCuration	dehydration	Dehydration
+xmet:0001010	skos:relatedMatch	forest.rule:Sulfation	semapv:ManualMappingCuration	sulfation	Sulfation
+xmet:0001020	skos:relatedMatch	forest.rule:Acetylation	semapv:ManualMappingCuration	acetylation	Acetylation
+xmet:0001030	skos:relatedMatch	forest.rule:Glutathionation	semapv:ManualMappingCuration	glutathionation	Glutathionation
+xmet:0002000	skos:relatedMatch	forest.rule:Tautomerization	semapv:ManualMappingCuration	tautomerization	Tautomerization
 xmet:0001031	skos:relatedMatch	forest.pattern:Glutathionation/michael	semapv:ManualMappingCuration	Michael glutathionation	michael
 xmet:9000012	skos:exactMatch	forest.ruleset:DH	semapv:ManualMappingCuration	dehydrogenation ruleset	DH
 xmet:9000013	skos:exactMatch	forest.ruleset:HD	semapv:ManualMappingCuration	hydrolysis ruleset	HD
@@ -41,6 +61,8 @@ xmet:0000400	skos:relatedMatch	forest.rule:EpoxideHydration	semapv:ManualMapping
 xmet:9100500	skos:exactMatch	forest.rule:Hydrogenation	semapv:ManualMappingCuration	Hydrogenation rule	Hydrogenation
 xmet:9100501	skos:exactMatch	forest.rule:Dehydration	semapv:ManualMappingCuration	Dehydration rule	Dehydration
 xmet:9100510	skos:exactMatch	forest.rule:NitrogenReduction	semapv:ManualMappingCuration	NitrogenReduction rule	NitrogenReduction
+xmet:0000513	skos:relatedMatch	forest.rule:NitroaromaticReduction	semapv:ManualMappingCuration	nitroaromatic reduction	NitroaromaticReduction
+xmet:9100511	skos:exactMatch	forest.rule:NitroaromaticReduction	semapv:ManualMappingCuration	NitroaromaticReduction rule	NitroaromaticReduction
 xmet:9100520	skos:exactMatch	forest.rule:OxygenReduction	semapv:ManualMappingCuration	OxygenReduction rule	OxygenReduction
 xmet:9100530	skos:exactMatch	forest.rule:SulfurReduction	semapv:ManualMappingCuration	SulfurReduction rule	SulfurReduction
 xmet:9100540	skos:exactMatch	forest.rule:ReductiveDehalogenation	semapv:ManualMappingCuration	ReductiveDehalogenation rule	ReductiveDehalogenation
