@@ -70,7 +70,7 @@ xmet:4000005 a skos:Concept ;
 
 xmet:4000006 a skos:Concept ;
   skos:prefLabel "dehydrogenation" ;
-  skos:definition "Rainbow dehydrogenation color: extract hydrogen(s) to form a multiple bond, iminium, or quinoid. Nested under oxidation." ;
+  skos:definition "Rainbow dehydrogenation color: extract hydrogen(s) to form a multiple bond, iminium, or quinoid. Nested under oxidation. Often an elementary part of conjugated-system remodeling (including quinone-like paths)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "desaturation" ;
   skos:broader xmet:4000009 .
@@ -119,7 +119,7 @@ xmet:4000012 a skos:Concept ;
 
 xmet:4000013 a skos:Concept ;
   skos:prefLabel "aromatic hydroxylation" ;
-  skos:definition "Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways." ;
+  skos:definition "Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways. Often an elementary part of conjugated-system remodeling toward quinone-like species." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aryl hydroxylation" ;
   skos:altLabel "benzene hydroxylation" ;
@@ -429,13 +429,13 @@ xmet:4000058 a skos:Concept ;
 
 xmet:4000059 a skos:Concept ;
   skos:prefLabel "quinone-like species formation" ;
-  skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step routes may be modeled under composite transformation. Forest QuinoneFormation uses this broad sense." ;
+  skos:definition "Aromatic→quinoid remodeling under conjugated-system remodeling: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated quinoid (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step routes may be modeled under composite transformation. Tagger struct-quinone-formation homes here; the broader Forest QuinoneFormation rule homes on conjugated-system remodeling." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid formation" ;
   skos:altLabel "quinoid species formation" ;
   skos:altLabel "quinone-like formation" ;
   skos:altLabel "quinonation" ;
-  skos:broader xmet:4000213 .
+  skos:broader xmet:4000406 .
 
 xmet:4000060 a skos:Concept ;
   skos:prefLabel "ortho-quinone formation" ;
@@ -457,21 +457,21 @@ xmet:4000061 a skos:Concept ;
 
 xmet:4000062 a skos:Concept ;
   skos:prefLabel "quinone-imine formation" ;
-  skos:definition "Formation of a quinone-imine: one or both quinoid ends are C=N rather than C=O. Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid (e.g. NAPQI-type). Sibling of classical quinone formation under quinone-like products." ;
+  skos:definition "Formation of a quinone-imine: one or both quinoid ends are C=N rather than C=O. Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid (e.g. NAPQI-type). Sibling of classical quinone formation under quinone-like species formation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinone imine formation" ;
   skos:altLabel "NAPQI-type formation" ;
   skos:altLabel "quinoid imine formation" ;
-  skos:broader xmet:4000363 .
+  skos:broader xmet:4000059 .
 
 xmet:4000063 a skos:Concept ;
   skos:prefLabel "quinone-methide formation" ;
-  skos:definition "Formation of a quinone-methide: a quinoid with an exocyclic alkylidene/methide end (including imine-methide variants). Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like products." ;
+  skos:definition "Formation of a quinone-methide: a quinoid with an exocyclic alkylidene/methide end (including imine-methide variants). Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like species formation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinone methide formation" ;
   skos:altLabel "quinoid methide formation" ;
   skos:altLabel "imine-methide formation" ;
-  skos:broader xmet:4000363 .
+  skos:broader xmet:4000059 .
 
 xmet:4000064 a skos:Concept ;
   skos:prefLabel "iminium ion formation" ;
@@ -2327,35 +2327,39 @@ xmet:4000326 a skos:Concept ;
   skos:broader xmet:4000325 .
 
 xmet:4000327 a skos:Concept ;
-  skos:prefLabel "quinone-like single-to-double dehydrogenation" ;
-  skos:definition "Forest QuinoneFormation/single_to_double: a ring carbon bound to OH/NH dehydrogenates to a quinoid double bond (one quinoid end), including methide-end variants. Elementary step toward a quinone-like species." ;
+  skos:prefLabel "hydroxy/amino ring-end dehydrogenation" ;
+  skos:definition "Ring carbon bound to OH or NH₂/NHR dehydrogenates to a quinoid C=O or C=NH/C=NR end under quinone-like endpoint transformations (Forest QuinoneFormation/single_to_double SMARTS [#6R:1][#8H,#7D1H2,#7D2H1:2]). Phenolic and anilinic children specialize the heteroatom. Not the shared single_to_double edit used internally by methide, iminium, or dealkylate patterns; not methide-end." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "quinoid single-to-double dehydrogenation" ;
+  skos:altLabel "Forest QuinoneFormation/single_to_double" ;
   skos:altLabel "phenol or aniline to quinoid" ;
   skos:altLabel "quinone C–heteroatom dehydrogenation" ;
+  skos:altLabel "hydroxy/amino quinoid endpoint dehydrogenation" ;
   skos:broader xmet:4000364 .
 
 xmet:4000328 a skos:Concept ;
-  skos:prefLabel "quinone-like carbonyl-oxygen addition" ;
-  skos:definition "Forest QuinoneFormation/add_carbonyl_o: add oxygen to an aromatic CH to form a quinoid carbonyl end on the path to a quinone-like species." ;
+  skos:prefLabel "aromatic CH to quinoid carbonyl" ;
+  skos:definition "Install a quinoid carbonyl end at an aromatic CH (Forest QuinoneFormation/add_carbonyl_o) under quinone-like endpoint transformations. One-hop end state of hydroxylation followed by dehydrogenation (Forest canonical plan; has_part those elementary classes); also used in multi-end paths (e.g. benzene→benzoquinone via two ends)." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "Forest QuinoneFormation/add_carbonyl_o" ;
   skos:altLabel "quinoid carbonyl-oxygen addition" ;
-  skos:altLabel "add carbonyl oxygen to quinoid path" ;
+  skos:altLabel "aromatic CH oxygenation to quinoid carbonyl" ;
   skos:broader xmet:4000364 .
 
 xmet:4000329 a skos:Concept ;
-  skos:prefLabel "quinone-like formation by halide replacement" ;
-  skos:definition "Forest QuinoneFormation/replace_halogen: replace an aryl halide with oxygen on the path to a quinone-like species." ;
+  skos:prefLabel "oxidative dehalogenation to quinoid carbonyl" ;
+  skos:definition "Aryl halide → quinoid carbonyl end with dearomatization (Forest QuinoneFormation/replace_halogen) under quinone-like endpoint transformations. One-hop end state of oxidative dehalogenation followed by dehydrogenation when oxygen must be installed (Forest canonical plan; has_part those elementary classes). Not identical to the elementary oxidative dehalogenation rule alone." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "quinoid formation by halide replacement" ;
-  skos:altLabel "replace halogen to quinoid" ;
+  skos:altLabel "Forest QuinoneFormation/replace_halogen" ;
+  skos:altLabel "quinoid oxidative dehalogenation endpoint" ;
+  skos:altLabel "aryl halide to quinoid carbonyl" ;
   skos:broader xmet:4000364 .
 
 xmet:4000330 a skos:Concept ;
-  skos:prefLabel "dealkylative quinone-like formation" ;
-  skos:definition "Forest QuinoneFormation/dealkylate: cleave an N/O-alkyl on a ring heteroatom while forming a quinone-like species." ;
+  skos:prefLabel "dealkylative quinoid endpoint" ;
+  skos:definition "Cleave an N/O-alkyl on a ring heteroatom while forming a quinoid end (Forest QuinoneFormation/dealkylate) under quinone-like endpoint transformations. Related to dealkylation but scoped as a quinoid-forming endpoint, not the general dealkylation rule." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "dealkylative quinoid formation" ;
+  skos:altLabel "Forest QuinoneFormation/dealkylate" ;
+  skos:altLabel "dealkylative quinone-like formation" ;
   skos:altLabel "quinone formation with dealkylation" ;
   skos:broader xmet:4000364 .
 
@@ -2565,21 +2569,14 @@ xmet:4000362 a skos:Concept ;
   skos:inScheme xmet:scheme ;
   skos:broader xmet:4000261 .
 
-xmet:4000363 a skos:Concept ;
-  skos:prefLabel "quinone-like formation by product type" ;
-  skos:definition "Transformation classes distinguished by quinoid product identity: classical quinone, quinone-imine, and quinone-methide." ;
-  skos:inScheme xmet:scheme ;
-  skos:altLabel "quinone-like products" ;
-  skos:altLabel "quinoid products" ;
-  skos:altLabel "quinone-family products" ;
-  skos:broader xmet:4000059 .
-
 xmet:4000364 a skos:Concept ;
-  skos:prefLabel "quinone-like forming transformations" ;
-  skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. Elementary Forest routes that install or complete a quinoid end (single-to-double dehydrogenation, carbonyl-oxygen addition, halide replacement, dealkylative formation)." ;
+  skos:prefLabel "quinone-like endpoint transformations" ;
+  skos:definition "Pair-endpoint transformations under conjugated-system remodeling that install or complete a quinone-like (quinoid) end (Forest QuinoneFormation patterns). Named by transformation chemistry, not edit ids; some endpoints are one-hop end states of hydroxylation or oxidative dehalogenation followed by dehydrogenation (see has_part on those leaves)." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "quinoid-forming transformations" ;
-  skos:broader xmet:4000059 .
+  skos:altLabel "dehydrogenation endpoint transformations" ;
+  skos:altLabel "quinoid endpoint transformations" ;
+  skos:altLabel "QuinoneFormation endpoint patterns" ;
+  skos:broader xmet:4000406 .
 
 xmet:4000365 a skos:Concept ;
   skos:prefLabel "glutathione and thiol adduct formation" ;
@@ -2771,7 +2768,7 @@ xmet:4000394 a skos:Concept ;
   skos:altLabel "classical quinone formation" ;
   skos:altLabel "diketone quinone formation" ;
   skos:altLabel "benzoquinone-type formation" ;
-  skos:broader xmet:4000363 .
+  skos:broader xmet:4000059 .
 
 xmet:4000395 a skos:Concept ;
   skos:prefLabel "carbon–carbon dehydrogenation" ;
@@ -2857,4 +2854,37 @@ xmet:4000405 a skos:Concept ;
   skos:definition "A new ring is formed." ;
   skos:inScheme xmet:scheme ;
   skos:broader xmet:4000273 .
+
+xmet:4000406 a skos:Concept ;
+  skos:prefLabel "conjugated-system remodeling" ;
+  skos:definition "Coordinated multi-site remodeling that builds or extends a conjugated π-system (Forest rule QuinoneFormation). Broader than aromatic quinoid collapse; current Forest patterns only cover aromatic→quinoid endpoints. Children distinguish quinone-like species formation, quinone-like endpoint transformations, and nonaromatic conjugated-system remodeling." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "conjugated π-system remodeling" ;
+  skos:altLabel "conjugated-system transformation" ;
+  skos:altLabel "Forest QuinoneFormation" ;
+  skos:broader xmet:4000213 .
+
+xmet:4000407 a skos:Concept ;
+  skos:prefLabel "nonaromatic conjugated-system remodeling" ;
+  skos:definition "Conjugated-system remodeling outside aromatic→quinoid collapse. Placement shelf for Forest QuinoneFormation rule breadth that current aromatic patterns do not yet cover." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "nonaromatic conjugated-system transformation" ;
+  skos:altLabel "non-aromatic conjugated π-system remodeling" ;
+  skos:broader xmet:4000406 .
+
+xmet:4000408 a skos:Concept ;
+  skos:prefLabel "phenolic ring-end dehydrogenation" ;
+  skos:definition "Ring carbon–OH dehydrogenates to a quinoid carbonyl end ([#6R][#8H] specialization of hydroxy/amino ring-end dehydrogenation)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "phenol to quinoid carbonyl end" ;
+  skos:altLabel "ring C–OH quinoid dehydrogenation" ;
+  skos:broader xmet:4000327 .
+
+xmet:4000409 a skos:Concept ;
+  skos:prefLabel "anilinic ring-end dehydrogenation" ;
+  skos:definition "Ring carbon–NH₂/NHR dehydrogenates to a quinoid C=NH/C=NR end ([#6R][#7D1H2,#7D2H1] specialization of hydroxy/amino ring-end dehydrogenation). Distinct from tertiary-nitrogen iminium (QuinoneFormation/iminium, #7D3)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "aniline to quinoid imine end" ;
+  skos:altLabel "ring C–NH quinoid dehydrogenation" ;
+  skos:broader xmet:4000327 .
 

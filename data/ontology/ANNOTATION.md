@@ -20,8 +20,10 @@ Hierarchy lives in `parents:` / `skos:broader` only.
 
 Live inventory was renumbered densely to ``xmet:4000000``…``xmet:4000405``
 (see [`../mappings/xmet-id-renumber.tsv`](../mappings/xmet-id-renumber.tsv)).
-New mints continue sequentially from ``xmet:4000406``. Never recycle a retired
-CURIE. Merges/retirements/renumbers: [`../mappings/xmet-id-remap.tsv`](../mappings/xmet-id-remap.tsv).
+New mints continue sequentially from ``xmet:4000410`` (``4000406``–``4000409``
+used for conjugated-system / quinoid endpoint restructure). Never recycle a
+retired CURIE. Merges/retirements/renumbers:
+[`../mappings/xmet-id-remap.tsv`](../mappings/xmet-id-remap.tsv).
 
 ```bash
 uv run python tools/renumber_xmet_ids.py   # already applied; kept for replay docs
@@ -67,8 +69,8 @@ chemical transformation and phase I family).
 
 | `skos:related` / `skos:relatedMatch` | **Not used in YAML.** SSSOM: Forest rulesets only |
 | `xmet:relatedTo` (`related_to:` in YAML) | Soft association across spines (e.g. multistep ↔ composite); not hierarchy |
-| `xmet:suggests` (`suggests:` in YAML) | Often co-applies (weaker than alwaysWith); e.g. halide leaving group → dehalogenation |
-| `xmet:alwaysWith` (`always_with:` in YAML) | Stronger suggests: whenever source applies, target (or a child of a category root) also applies; e.g. dehalogenation → halide leaving group. Nested under suggests in the relation vocab. |
+| `xmet:suggests` (`suggests:` in YAML) | Often co-applies (weaker than alwaysWith); e.g. halide leaving group → dehalogenation. List **family roots only** — do not also list `skos:narrower` descendants of a listed target (parent covers children). |
+| `xmet:alwaysWith` (`always_with:` in YAML) | Stronger suggests: whenever source applies, target (or a child of a category root) also applies; e.g. dehalogenation → halide leaving group. Nested under suggests in the relation vocab. Same no-redundant-descendant rule when listing multiple targets. |
 | `xmet:antonymOf` (`antonyms:` in YAML) | Opposite / inverse transformation pair (symmetric) |
 | `skos:exactMatch` | True identity to an external concept (rare) |
 | `skos:closeMatch` | Similar MeSH/KEGG/Rhea/model term |

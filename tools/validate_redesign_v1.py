@@ -515,6 +515,53 @@ def check_descriptor_orthogonal(
             )
 
 
+def check_redundant_soft_targets(
+    findings: list[Finding],
+    concepts: dict[str, dict[str, Any]],
+    pm: dict[str, list[str]],
+) -> None:
+    """suggests / always_with: do not list a target that is under another listed target.
+
+    Parent covers descendants; enumerating children is redundant fan-out
+    (e.g. halide LG → oxidative dehalogenation already covers ox-dehal leaves).
+    """
+    memo: dict[str, set[str]] = {}
+    for cid, c in concepts.items():
+        for field in ("suggests", "always_with"):
+            vals = c.get(field) or []
+            if len(vals) < 2:
+                continue
+            # detect dupes
+            seen: set[str] = set()
+            for t in vals:
+                if t in seen:
+                    findings.append(
+                        Finding(
+                            "soft_target_redundant",
+                            cid,
+                            f"duplicate {field} target {t}",
+                            t,
+                        )
+                    )
+                seen.add(t)
+            uniq = list(dict.fromkeys(vals))
+            for a in uniq:
+                if a not in concepts:
+                    continue
+                for b in uniq:
+                    if a == b or b not in concepts:
+                        continue
+                    if under_or_equal(b, a, pm, memo):
+                        findings.append(
+                            Finding(
+                                "soft_target_redundant",
+                                cid,
+                                f"{field} target {b} is under listed {a}; keep parent only",
+                                b,
+                            )
+                        )
+
+
 def check_relation_vocab(findings: list[Finding], concepts: dict[str, dict[str, Any]]) -> None:
     required = {
         "xmet:4000282": ("related to", "skos:related"),
@@ -1289,6 +1336,7 @@ def run() -> int:
     check_five_colors_and_conjugation(findings, concepts, pm)
     check_descriptor_orthogonal(findings, concepts, pm)
     check_relation_vocab(findings, concepts)
+    check_redundant_soft_targets(findings, concepts, pm)
     check_forest_phaseone(findings, concepts, pm)
     check_forest_nesting(findings, concepts, pm)
     check_dealkylation_pattern_always_with(findings, concepts, pm)

@@ -561,7 +561,7 @@ xmet:1100016		retired	ring oxidation removed (descriptor-ish; not reaction-class
 	xmet:4000360	minted	unflatten shelf: nitrogen-centered leaving fragment
 	xmet:4000361	minted	unflatten shelf: sulfur-centered leaving fragment
 	xmet:4000362	minted	unflatten shelf: small inorganic leaving group
-	xmet:4000363	minted	unflatten shelf: quinone product class
+	xmet:4000059	minted	was unflatten quinone product-type shelf (xmet:4000363); collapsed into quinone-like species formation
 	xmet:4000364	minted	unflatten shelf: quinone formation mechanism
 	xmet:4000365	minted	unflatten shelf: thiol and glutathione adduct pathway
 	xmet:4000366	minted	unflatten shelf: cyanide adduct pathway
@@ -1001,7 +1001,7 @@ xmet:3001210	xmet:4000359	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001211	xmet:4000360	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001212	xmet:4000361	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001213	xmet:4000362	renumbered	dense opaque renumber to xmet:4000000+
-xmet:3001214	xmet:4000363	renumbered	dense opaque renumber to xmet:4000000+
+xmet:3001214	xmet:4000059	renumbered	was xmet:4000363 product-type shelf; collapsed into quinone-like species formation after dense renumber
 xmet:3001215	xmet:4000364	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001217	xmet:4000365	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001218	xmet:4000366	renumbered	dense opaque renumber to xmet:4000000+
@@ -1044,3 +1044,8 @@ xmet:3001254	xmet:4000402	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001255	xmet:4000403	renumbered	dense opaque renumber to xmet:4000000+
 xmet:3001256	xmet:4000404	renumbered	dense opaque renumber to xmet:4000000+
 xmet:7200006	xmet:4000405	renumbered	dense opaque renumber to xmet:4000000+
+xmet:4000363		retired	quinone-like formation by product type collapsed; children reparented to xmet:4000059
+	xmet:4000406	minted	conjugated-system remodeling (Forest QuinoneFormation rule home)
+	xmet:4000407	minted	nonaromatic conjugated-system remodeling shelf
+	xmet:4000408	minted	phenolic ring-end dehydrogenation under xmet:4000327
+	xmet:4000409	minted	anilinic ring-end dehydrogenation under xmet:4000327

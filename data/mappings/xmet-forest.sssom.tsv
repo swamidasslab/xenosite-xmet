@@ -10,7 +10,7 @@ xmet:4000005	skos:relatedMatch	forest.ruleset:UO	semapv:ManualMappingCuration	un
 xmet:4000012	skos:exactMatch	forest.rule:Hydroxylation	semapv:ManualMappingCuration	hydroxylation	Hydroxylation	
 xmet:4000022	skos:exactMatch	forest.rule:Epoxidation	semapv:ManualMappingCuration	epoxidation	Epoxidation	
 xmet:4000043	skos:exactMatch	forest.rule:NDealkylation	semapv:ManualMappingCuration	N-dealkylation	NDealkylation	
-xmet:4000059	skos:exactMatch	forest.rule:QuinoneFormation	semapv:ManualMappingCuration	quinone-like species formation	QuinoneFormation	
+xmet:4000406	skos:exactMatch	forest.rule:QuinoneFormation	semapv:ManualMappingCuration	conjugated-system remodeling	QuinoneFormation	
 xmet:4000148	skos:exactMatch	forest.rule:Glucuronidation	semapv:ManualMappingCuration	glucuronidation	Glucuronidation	
 xmet:4000006	skos:exactMatch	forest.rule:Dehydrogenation	semapv:ManualMappingCuration	dehydrogenation	Dehydrogenation	
 xmet:4000007	skos:exactMatch	forest.rule:Hydrolysis	semapv:ManualMappingCuration	hydrolysis	Hydrolysis	
@@ -102,10 +102,10 @@ xmet:4000319	skos:exactMatch	forest.pattern:Dehydrogenation/phenol_end	semapv:Ma
 xmet:4000320	skos:exactMatch	forest.pattern:Dehydrogenation/amine_end	semapv:ManualMappingCuration	dehydrogenation to amine	amine_end	
 xmet:4000321	skos:exactMatch	forest.pattern:Dehydrogenation/methide_end	semapv:ManualMappingCuration	dehydrogenation to alkyl methide site	methide_end	
 xmet:4000322	skos:exactMatch	forest.pattern:Hydrogenation/path_end	semapv:ManualMappingCuration	conjugated-path hydrogenation	path_end	
-xmet:4000327	skos:exactMatch	forest.pattern:QuinoneFormation/single_to_double	semapv:ManualMappingCuration	quinone-like single-to-double dehydrogenation	single_to_double	
-xmet:4000328	skos:exactMatch	forest.pattern:QuinoneFormation/add_carbonyl_o	semapv:ManualMappingCuration	quinone-like carbonyl-oxygen addition	add_carbonyl_o	
-xmet:4000329	skos:exactMatch	forest.pattern:QuinoneFormation/replace_halogen	semapv:ManualMappingCuration	quinone-like formation by halide replacement	replace_halogen	
-xmet:4000330	skos:exactMatch	forest.pattern:QuinoneFormation/dealkylate	semapv:ManualMappingCuration	dealkylative quinone-like formation	dealkylate	
+xmet:4000327	skos:exactMatch	forest.pattern:QuinoneFormation/single_to_double	semapv:ManualMappingCuration	hydroxy/amino ring-end dehydrogenation	single_to_double	
+xmet:4000328	skos:exactMatch	forest.pattern:QuinoneFormation/add_carbonyl_o	semapv:ManualMappingCuration	aromatic CH to quinoid carbonyl	add_carbonyl_o	
+xmet:4000329	skos:exactMatch	forest.pattern:QuinoneFormation/replace_halogen	semapv:ManualMappingCuration	oxidative dehalogenation to quinoid carbonyl	replace_halogen	
+xmet:4000330	skos:exactMatch	forest.pattern:QuinoneFormation/dealkylate	semapv:ManualMappingCuration	dealkylative quinoid endpoint	dealkylate	
 xmet:4000062	skos:exactMatch	forest.pattern:QuinoneFormation/iminium	semapv:ManualMappingCuration	quinone-imine formation	iminium	
 xmet:4000063	skos:exactMatch	forest.pattern:QuinoneFormation/methide_end	semapv:ManualMappingCuration	quinone-methide formation	methide_end	
 xmet:4000392	skos:exactMatch	forest.pattern:EpoxideHydration/diol	semapv:ManualMappingCuration	alkene to vicinal diol pathway	diol	

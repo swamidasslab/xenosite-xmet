@@ -2,6 +2,29 @@
 
 ## 2026-09-28
 
+- Quinone hierarchy restructure: minted **conjugated-system remodeling**
+  (`xmet:4000406`) as Forest `QuinoneFormation` rule home; **nonaromatic
+  conjugated-system remodeling** (`4000407`) shelf for rule–pattern gap;
+  kept `4000059` quinone-like as tagger home under the parent. Retired
+  product-type shelf `4000363` (children hang under quinone-like). Renamed
+  `4000364` → quinone-like endpoint transformations; renamed pattern leaves by
+  transformation chemistry (`aromatic CH to quinoid carbonyl`, `oxidative
+  dehalogenation to quinoid carbonyl`, `hydroxy/amino ring-end
+  dehydrogenation` + phenolic/anilinic children `4000408`/`4000409`);
+  `has_part` links for composite end-state edits (OH/ox-dehal + DH). Validator
+  green; hydroquinone→BQ still emits `4000059`. Definitions aligned to remodeling
+  parent / aromatic quinone-like subset / endpoint has_part chemistry. Retargeted
+  ``is_part_of`` for dehydrogenation and aromatic hydroxylation from quinone-like
+  up to conjugated-system remodeling (``related_to`` quinone-like kept).
+  Parent crate patch bump ``0.6.0``→``0.6.1``.
+
+- Trimmed redundant LG ``suggests`` fan-out (halide/F/Cl/Br/I → keep only
+  oxidative / reductive / isoredox dehalogenation roots; drop descendant leaves).
+  Validator ``soft_target_redundant`` enforces parent-covers-children for
+  ``suggests`` / ``always_with``.
+
+## 2026-09-28
+
 - Tagger emit sync from `xmet-tagger.sssom` (`make sync-tagger-emits`): SMARTS
   rules emit live `4000xxxx` reaction-class homes (+ YAML `always_with`); dropped
   non-live/wiped-spine co-emits; restored chemistry tag bridges from Forest SSSOM;

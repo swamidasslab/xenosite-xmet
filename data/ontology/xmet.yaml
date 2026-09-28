@@ -76,11 +76,12 @@ concepts:
   synonyms:
   - desaturation
   definition: 'Rainbow dehydrogenation color: extract hydrogen(s) to form a multiple bond, iminium, or
-    quinoid. Nested under oxidation.'
+    quinoid. Nested under oxidation. Often an elementary part of conjugated-system remodeling (including
+    quinone-like paths).'
   parents:
   - xmet:4000009
   is_part_of:
-  - xmet:4000059
+  - xmet:4000406
   related_to:
   - xmet:4000059
 - id: xmet:4000007
@@ -145,11 +146,12 @@ concepts:
   - arene hydroxylation
   - aromatic hydroxylation to phenol
   - aromatic hydroxylation to phenol or phenolate
-  definition: Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways.
+  definition: Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways. Often an
+    elementary part of conjugated-system remodeling toward quinone-like species.
   parents:
   - xmet:4000012
   is_part_of:
-  - xmet:4000059
+  - xmet:4000406
   related_to:
   - xmet:4000059
 - id: xmet:4000014
@@ -368,9 +370,9 @@ concepts:
   - oxidative C–C cleavage
   - oxidative carbon–carbon cleavage
   - carbon–carbon dealkylation
-  definition: Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic
-    C-dealkylation). Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Forest cc_alcohol /
-    cc_carbonyl share this home; ox-state via alwaysWith. Quaternary site child for cc_quaternary_alcohol.
+  definition: Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic C-dealkylation).
+    Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Forest cc_alcohol / cc_carbonyl share
+    this home; ox-state via alwaysWith. Quaternary site child for cc_quaternary_alcohol.
   parents:
   - xmet:4000042
 - id: xmet:4000047
@@ -453,6 +455,18 @@ concepts:
   definition: Oxidative removal of an S-methyl group.
   parents:
   - xmet:4000344
+- id: xmet:4000406
+  preferred_label: conjugated-system remodeling
+  synonyms:
+  - conjugated π-system remodeling
+  - conjugated-system transformation
+  - Forest QuinoneFormation
+  definition: Coordinated multi-site remodeling that builds or extends a conjugated π-system (Forest rule
+    QuinoneFormation). Broader than aromatic quinoid collapse; current Forest patterns only cover aromatic→quinoid
+    endpoints. Children distinguish quinone-like species formation, quinone-like endpoint transformations,
+    and nonaromatic conjugated-system remodeling.
+  parents:
+  - xmet:4000213
 - id: xmet:4000059
   preferred_label: quinone-like species formation
   synonyms:
@@ -460,17 +474,27 @@ concepts:
   - quinoid species formation
   - quinone-like formation
   - quinonation
-  definition: 'Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated
-    so the ring collapses into a non-aromatic conjugated system (classical quinones, quinone-imines, quinone-methides,
-    imine-methides). Not necessarily a composite pathway — an already hydroxylated precursor may need
-    only terminating dehydrogenation. Specific multi-step routes may be modeled under composite transformation.
-    Forest QuinoneFormation uses this broad sense.'
+  definition: 'Aromatic→quinoid remodeling under conjugated-system remodeling: two distinct sites on an
+    aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated quinoid
+    (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite
+    pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step
+    routes may be modeled under composite transformation. Tagger struct-quinone-formation homes here;
+    the broader Forest QuinoneFormation rule homes on conjugated-system remodeling.'
   parents:
-  - xmet:4000213
+  - xmet:4000406
   related_to:
   - xmet:4000272
   - xmet:4000013
   - xmet:4000006
+- id: xmet:4000407
+  preferred_label: nonaromatic conjugated-system remodeling
+  synonyms:
+  - nonaromatic conjugated-system transformation
+  - non-aromatic conjugated π-system remodeling
+  definition: Conjugated-system remodeling outside aromatic→quinoid collapse. Placement shelf for Forest
+    QuinoneFormation rule breadth that current aromatic patterns do not yet cover.
+  parents:
+  - xmet:4000406
 - id: xmet:4000060
   preferred_label: ortho-quinone formation
   definition: 'Formation of an ortho-quinone (1,2-diketone): two adjacent ring sites are oxidized/dehydrogenated,
@@ -501,9 +525,9 @@ concepts:
   - quinoid imine formation
   definition: 'Formation of a quinone-imine: one or both quinoid ends are C=N rather than C=O. Two distinct
     sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid (e.g.
-    NAPQI-type). Sibling of classical quinone formation under quinone-like products.'
+    NAPQI-type). Sibling of classical quinone formation under quinone-like species formation.'
   parents:
-  - xmet:4000363
+  - xmet:4000059
 - id: xmet:4000063
   preferred_label: quinone-methide formation
   synonyms:
@@ -512,9 +536,10 @@ concepts:
   - imine-methide formation
   definition: 'Formation of a quinone-methide: a quinoid with an exocyclic alkylidene/methide end (including
     imine-methide variants). Two distinct sites are dehydrogenated so an aromatic system collapses into
-    a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like products.'
+    a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like species
+    formation.'
   parents:
-  - xmet:4000363
+  - xmet:4000059
 - id: xmet:4000064
   preferred_label: iminium ion formation
   synonyms:
@@ -1821,55 +1846,33 @@ concepts:
   - xmet:4000051
   - xmet:4000110
   - xmet:4000214
-  - xmet:4000288
-  - xmet:4000289
-  - xmet:4000307
-  - xmet:4000308
-  - xmet:4000309
-  - xmet:4000310
-  - xmet:4000311
-  - xmet:4000312
-  - xmet:4000055
-  - xmet:4000056
-  - xmet:4000057
-  - xmet:4000111
-  - xmet:4000112
-  - xmet:4000312
 - id: xmet:4000237
   preferred_label: fluoride leaving group
   definition: Fluoride departing.
   parents:
   - xmet:4000236
   suggests:
-  - xmet:4000055
-  - xmet:4000111
   - xmet:4000051
   - xmet:4000110
   - xmet:4000214
-  - xmet:4000312
 - id: xmet:4000238
   preferred_label: chloride leaving group
   definition: Chloride departing.
   parents:
   - xmet:4000236
   suggests:
-  - xmet:4000056
-  - xmet:4000112
   - xmet:4000051
   - xmet:4000110
   - xmet:4000214
-  - xmet:4000312
 - id: xmet:4000239
   preferred_label: bromide leaving group
   definition: Bromide departing.
   parents:
   - xmet:4000236
   suggests:
-  - xmet:4000057
   - xmet:4000051
   - xmet:4000110
   - xmet:4000214
-  - xmet:4000312
 - id: xmet:4000240
   preferred_label: iodide leaving group
   definition: Iodide departing.
@@ -1879,7 +1882,6 @@ concepts:
   - xmet:4000051
   - xmet:4000110
   - xmet:4000214
-  - xmet:4000312
 - id: xmet:4000241
   preferred_label: alcohol leaving fragment
   definition: Alcohol / alkanol-equivalent fragment released as a coproduct (e.g. methanol from demethylation
@@ -2488,43 +2490,80 @@ concepts:
   related_to:
   - xmet:4000295
 - id: xmet:4000327
-  preferred_label: quinone-like single-to-double dehydrogenation
+  preferred_label: hydroxy/amino ring-end dehydrogenation
   synonyms:
-  - quinoid single-to-double dehydrogenation
+  - Forest QuinoneFormation/single_to_double
   - phenol or aniline to quinoid
   - quinone C–heteroatom dehydrogenation
-  definition: 'Forest QuinoneFormation/single_to_double: a ring carbon bound to OH/NH dehydrogenates to
-    a quinoid double bond (one quinoid end), including methide-end variants. Elementary step toward a
-    quinone-like species.'
+  - hydroxy/amino quinoid endpoint dehydrogenation
+  definition: Ring carbon bound to OH or NH₂/NHR dehydrogenates to a quinoid C=O or C=NH/C=NR end under
+    quinone-like endpoint transformations (Forest QuinoneFormation/single_to_double SMARTS [#6R:1][#8H,#7D1H2,#7D2H1:2]).
+    Phenolic and anilinic children specialize the heteroatom. Not the shared single_to_double edit used
+    internally by methide, iminium, or dealkylate patterns; not methide-end.
   parents:
   - xmet:4000364
+- id: xmet:4000408
+  preferred_label: phenolic ring-end dehydrogenation
+  synonyms:
+  - phenol to quinoid carbonyl end
+  - ring C–OH quinoid dehydrogenation
+  definition: Ring carbon–OH dehydrogenates to a quinoid carbonyl end ([#6R][#8H] specialization of hydroxy/amino
+    ring-end dehydrogenation).
+  parents:
+  - xmet:4000327
+- id: xmet:4000409
+  preferred_label: anilinic ring-end dehydrogenation
+  synonyms:
+  - aniline to quinoid imine end
+  - ring C–NH quinoid dehydrogenation
+  definition: 'Ring carbon–NH₂/NHR dehydrogenates to a quinoid C=NH/C=NR end ([#6R][#7D1H2,#7D2H1] specialization
+    of hydroxy/amino ring-end dehydrogenation). Distinct from tertiary-nitrogen iminium (QuinoneFormation/iminium,
+    #7D3).'
+  parents:
+  - xmet:4000327
 - id: xmet:4000328
-  preferred_label: quinone-like carbonyl-oxygen addition
+  preferred_label: aromatic CH to quinoid carbonyl
   synonyms:
+  - Forest QuinoneFormation/add_carbonyl_o
   - quinoid carbonyl-oxygen addition
-  - add carbonyl oxygen to quinoid path
-  definition: 'Forest QuinoneFormation/add_carbonyl_o: add oxygen to an aromatic CH to form a quinoid
-    carbonyl end on the path to a quinone-like species.'
+  - aromatic CH oxygenation to quinoid carbonyl
+  definition: Install a quinoid carbonyl end at an aromatic CH (Forest QuinoneFormation/add_carbonyl_o)
+    under quinone-like endpoint transformations. One-hop end state of hydroxylation followed by dehydrogenation
+    (Forest canonical plan; has_part those elementary classes); also used in multi-end paths (e.g. benzene→benzoquinone
+    via two ends).
   parents:
   - xmet:4000364
+  has_part:
+  - xmet:4000012
+  - xmet:4000006
 - id: xmet:4000329
-  preferred_label: quinone-like formation by halide replacement
+  preferred_label: oxidative dehalogenation to quinoid carbonyl
   synonyms:
-  - quinoid formation by halide replacement
-  - replace halogen to quinoid
-  definition: 'Forest QuinoneFormation/replace_halogen: replace an aryl halide with oxygen on the path
-    to a quinone-like species.'
+  - Forest QuinoneFormation/replace_halogen
+  - quinoid oxidative dehalogenation endpoint
+  - aryl halide to quinoid carbonyl
+  definition: Aryl halide → quinoid carbonyl end with dearomatization (Forest QuinoneFormation/replace_halogen)
+    under quinone-like endpoint transformations. One-hop end state of oxidative dehalogenation followed
+    by dehydrogenation when oxygen must be installed (Forest canonical plan; has_part those elementary
+    classes). Not identical to the elementary oxidative dehalogenation rule alone.
   parents:
   - xmet:4000364
+  has_part:
+  - xmet:4000051
+  - xmet:4000006
 - id: xmet:4000330
-  preferred_label: dealkylative quinone-like formation
+  preferred_label: dealkylative quinoid endpoint
   synonyms:
-  - dealkylative quinoid formation
+  - Forest QuinoneFormation/dealkylate
+  - dealkylative quinone-like formation
   - quinone formation with dealkylation
-  definition: 'Forest QuinoneFormation/dealkylate: cleave an N/O-alkyl on a ring heteroatom while forming
-    a quinone-like species.'
+  definition: Cleave an N/O-alkyl on a ring heteroatom while forming a quinoid end (Forest QuinoneFormation/dealkylate)
+    under quinone-like endpoint transformations. Related to dealkylation but scoped as a quinoid-forming
+    endpoint, not the general dealkylation rule.
   parents:
   - xmet:4000364
+  related_to:
+  - xmet:4000042
 - id: xmet:4000405
   preferred_label: ring closure
   definition: A new ring is formed.
@@ -2734,28 +2773,20 @@ concepts:
   definition: Small inorganic leaving groups (hydrogen, cyanide).
   parents:
   - xmet:4000261
-- id: xmet:4000363
-  preferred_label: quinone-like formation by product type
-  definition: 'Transformation classes distinguished by quinoid product identity: classical quinone, quinone-imine,
-    and quinone-methide.'
-  parents:
-  - xmet:4000059
-  synonyms:
-  - quinone-like products
-  - quinoid products
-  - quinone-family products
 - id: xmet:4000364
-  preferred_label: quinone-like forming transformations
-  definition: 'Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated
-    so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines,
-    quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower
-    classical quinone term sits underneath. Elementary Forest routes that install or complete a quinoid
-    end (single-to-double dehydrogenation, carbonyl-oxygen addition, halide replacement, dealkylative
-    formation).'
+  preferred_label: quinone-like endpoint transformations
+  definition: Pair-endpoint transformations under conjugated-system remodeling that install or complete
+    a quinone-like (quinoid) end (Forest QuinoneFormation patterns). Named by transformation chemistry,
+    not edit ids; some endpoints are one-hop end states of hydroxylation or oxidative dehalogenation followed
+    by dehydrogenation (see has_part on those leaves).
   parents:
-  - xmet:4000059
+  - xmet:4000406
   synonyms:
-  - quinoid-forming transformations
+  - dehydrogenation endpoint transformations
+  - quinoid endpoint transformations
+  - QuinoneFormation endpoint patterns
+  related_to:
+  - xmet:4000006
 - id: xmet:4000365
   preferred_label: glutathione and thiol adduct formation
   definition: Adduct formation via GSH, cysteine, N-acetylcysteine, or mercapturic-acid pathways.
@@ -2938,7 +2969,7 @@ concepts:
   - diketone quinone formation
   - benzoquinone-type formation
   parents:
-  - xmet:4000363
+  - xmet:4000059
 - id: xmet:4000395
   preferred_label: carbon–carbon dehydrogenation
   definition: Dehydrogenation that changes the bond order between two carbons (alkane→alkene, or alkene→alkyne).
