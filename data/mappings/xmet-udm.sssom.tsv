@@ -1,5 +1,6 @@
-# exactMatch: label+definition identity; UDM enum present; mop.obo name→id.
-# Excludes placement stubs, Phase-II-scoped methylation, Rainbow colors, bad UDM comments.
+# High-confidence exactMatch only (label + definition review).
+# UDM: https://github.com/PistoiaAlliance/UDM udm_6_0_0_reaction_classes.xsd
+# object_id from mop.obo name lookup (UDM XML comments not trusted).
 subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label
 xmet:0000110	skos:exactMatch	mop:0000671	semapv:ManualMappingCuration	epoxidation	epoxidation
 xmet:1100014	skos:exactMatch	mop:0001550	semapv:ManualMappingCuration	dehalogenation	dehalogenation
@@ -11,10 +12,3 @@ xmet:0000660	skos:exactMatch	mop:0000550	semapv:ManualMappingCuration	halogenati
 xmet:0000661	skos:exactMatch	mop:0000650	semapv:ManualMappingCuration	amination	amination
 xmet:0000670	skos:exactMatch	mop:0000003	semapv:ManualMappingCuration	formylation	formylation
 xmet:0000730	skos:exactMatch	mop:0000411	semapv:ManualMappingCuration	arylation	arylation
-xmet:0000101	skos:closeMatch	mop:0000673	semapv:ManualMappingCuration	aromatic hydroxylation	hydroxylation
-xmet:0000200	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	dealkylation	demethylation
-xmet:0000013	skos:closeMatch	mop:0000402	semapv:ManualMappingCuration	hydrolysis	hydrolysis
-xmet:0001020	skos:closeMatch	mop:0000035	semapv:ManualMappingCuration	acetylation	acetylation
-xmet:0000201	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	N-dealkylation	demethylation
-xmet:0000202	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	O-dealkylation	demethylation
-xmet:1100000	skos:broadMatch	mop:0000000	semapv:ManualMappingCuration	chemical transformation	molecular process

@@ -26,6 +26,12 @@ CONTEXT = {
     "closeMatch": {"@id": "skos:closeMatch", "@type": "@id"},
     "broadMatch": {"@id": "skos:broadMatch", "@type": "@id"},
     "relatedMatch": {"@id": "skos:relatedMatch", "@type": "@id"},
+    "hasPart": {"@id": "dct:hasPart", "@type": "@id"},
+    "isPartOf": {"@id": "dct:isPartOf", "@type": "@id"},
+    "antonymOf": {"@id": "xmet:antonymOf", "@type": "@id"},
+    "relatedTo": {"@id": "xmet:relatedTo", "@type": "@id"},
+    "suggests": {"@id": "xmet:suggests", "@type": "@id"},
+    "alwaysWith": {"@id": "xmet:alwaysWith", "@type": "@id"},
     "inScheme": {"@id": "skos:inScheme", "@type": "@id"},
 }
 
@@ -69,6 +75,12 @@ def main():
             ("close_match", "closeMatch"),
             ("related_match", "relatedMatch"),
             ("broad_match", "broadMatch"),
+            ("has_part", "hasPart"),
+            ("is_part_of", "isPartOf"),
+            ("antonyms", "antonymOf"),
+            ("related_to", "relatedTo"),
+            ("suggests", "suggests"),
+            ("always_with", "alwaysWith"),
         ]:
             if c.get(src):
                 node[dst] = one_or_list(c[src])

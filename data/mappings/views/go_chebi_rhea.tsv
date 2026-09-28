@@ -6,8 +6,4 @@ xmet:1500010	skos:closeMatch	CHEBI:36141	quinone
 xmet:1500011	skos:closeMatch	CHEBI:50106	quinone imine
 xmet:1500012	skos:closeMatch	CHEBI:32955	epoxide
 xmet:1500013	skos:closeMatch	CHEBI:17478	aldehyde
-xmet:1500015	skos:relatedMatch	CHEBI:139518	acyl glucuronide
-xmet:1500019	skos:relatedMatch	CHEBI:57925	GSH-trappable metabolite
-xmet:0001000	skos:relatedMatch	CHEBI:24302	glucuronidation
-xmet:0001010	skos:relatedMatch	CHEBI:26819	sulfation
-xmet:0001030	skos:relatedMatch	CHEBI:57925	glutathionation
+xmet:2300012	skos:exactMatch	CHEBI:50266	prodrug

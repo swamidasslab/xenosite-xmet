@@ -1,0 +1,154 @@
+# Xenosite-tagger SMARTS rules ↔ XMET reaction-class homes.
+# Primary home = first emit CURIE under reaction class (remap-resolved).
+# Object CURIEs are opaque rule:… ids from the tagger RuleSet YAML.
+subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label
+xmet:0000310	skos:exactMatch	rule:alcohol-oxidation	semapv:ManualMappingCuration	alcohol oxidation	alcohol-oxidation
+xmet:0000102	skos:exactMatch	rule:aliphatic-hydroxylation	semapv:ManualMappingCuration	aliphatic hydroxylation	aliphatic-hydroxylation
+xmet:0000101	skos:exactMatch	rule:aromatic-hydroxylation	semapv:ManualMappingCuration	aromatic hydroxylation	aromatic-hydroxylation
+xmet:0000110	skos:exactMatch	rule:epoxidation	semapv:ManualMappingCuration	epoxidation	epoxidation
+xmet:0000100	skos:exactMatch	rule:hydroxylation	semapv:ManualMappingCuration	hydroxylation	hydroxylation
+xmet:0000311	skos:exactMatch	rule:primary-alcohol-oxidation	semapv:ManualMappingCuration	primary alcohol oxidation	primary-alcohol-oxidation
+xmet:0000310	skos:exactMatch	rule:struct-alcohol-oxidation	semapv:ManualMappingCuration	alcohol oxidation	struct-alcohol-oxidation
+xmet:0001003	skos:exactMatch	rule:struct-alcoholic-glucuronidation	semapv:ManualMappingCuration	alcoholic glucuronidation	struct-alcoholic-glucuronidation
+xmet:0001013	skos:exactMatch	rule:struct-alcoholic-sulfation	semapv:ManualMappingCuration	alcoholic sulfation	struct-alcoholic-sulfation
+xmet:0000313	skos:exactMatch	rule:struct-aldehyde-oxidation	semapv:ManualMappingCuration	aldehyde oxidation	struct-aldehyde-oxidation
+xmet:0000522	skos:exactMatch	rule:struct-aldehyde-reduction	semapv:ManualMappingCuration	aldehyde reduction	struct-aldehyde-reduction
+xmet:0000143	skos:exactMatch	rule:struct-alicyclic-hydroxylation	semapv:ManualMappingCuration	alicyclic hydroxylation	struct-alicyclic-hydroxylation
+xmet:0000102	skos:exactMatch	rule:struct-aliphatic-hydroxylation	semapv:ManualMappingCuration	aliphatic hydroxylation	struct-aliphatic-hydroxylation
+xmet:0000213	skos:exactMatch	rule:struct-aliphatic-o-dealkylation	semapv:ManualMappingCuration	aliphatic O-dealkylation	struct-aliphatic-o-dealkylation
+xmet:0000111	skos:exactMatch	rule:struct-alkene-epoxidation	semapv:ManualMappingCuration	alkene epoxidation	struct-alkene-epoxidation
+xmet:0000314	skos:exactMatch	rule:struct-alkene-formation	semapv:ManualMappingCuration	alkene formation	struct-alkene-formation
+xmet:0000502	skos:exactMatch	rule:struct-alkyne-hydrogenation	semapv:ManualMappingCuration	alkyne hydrogenation	struct-alkyne-hydrogenation
+xmet:0000107	skos:exactMatch	rule:struct-allylic-hydroxylation	semapv:ManualMappingCuration	allylic hydroxylation	struct-allylic-hydroxylation
+xmet:0000721	skos:exactMatch	rule:struct-alpha-hydroxylation	semapv:ManualMappingCuration	alpha-hydroxylation	struct-alpha-hydroxylation
+xmet:0000402	skos:exactMatch	rule:struct-amide-hydrolysis	semapv:ManualMappingCuration	amide hydrolysis	struct-amide-hydrolysis
+xmet:0000661	skos:exactMatch	rule:struct-amination	semapv:ManualMappingCuration	amination	struct-amination
+xmet:0000112	skos:exactMatch	rule:struct-arene-oxide-formation	semapv:ManualMappingCuration	arene oxide formation	struct-arene-oxide-formation
+xmet:0000125	skos:exactMatch	rule:struct-aromatic-amine-n-oxidation	semapv:ManualMappingCuration	aromatic amine N-oxidation	struct-aromatic-amine-n-oxidation
+xmet:3001105	skos:exactMatch	rule:struct-aromatic-epoxidation	semapv:ManualMappingCuration	aromatic epoxidation	struct-aromatic-epoxidation
+xmet:0000101	skos:exactMatch	rule:struct-aromatic-hydroxylation	semapv:ManualMappingCuration	aromatic hydroxylation	struct-aromatic-hydroxylation
+xmet:0000212	skos:exactMatch	rule:struct-aromatic-o-dealkylation	semapv:ManualMappingCuration	aromatic O-dealkylation	struct-aromatic-o-dealkylation
+xmet:0000730	skos:exactMatch	rule:struct-arylation	semapv:ManualMappingCuration	arylation	struct-arylation
+xmet:0000412	skos:exactMatch	rule:struct-azo-cleavage	semapv:ManualMappingCuration	azo cleavage	struct-azo-cleavage
+xmet:0000514	skos:exactMatch	rule:struct-azo-reduction	semapv:ManualMappingCuration	azo reduction	struct-azo-reduction
+xmet:0000106	skos:exactMatch	rule:struct-benzylic-hydroxylation	semapv:ManualMappingCuration	benzylic hydroxylation	struct-benzylic-hydroxylation
+xmet:0000614	skos:exactMatch	rule:struct-c-alkylation	semapv:ManualMappingCuration	C-alkylation	struct-c-alkylation
+xmet:0000204	skos:exactMatch	rule:struct-c-dealkylation	semapv:ManualMappingCuration	C-dealkylation	struct-c-dealkylation
+xmet:0001008	skos:exactMatch	rule:struct-c-glucuronidation	semapv:ManualMappingCuration	C-glucuronidation	struct-c-glucuronidation
+xmet:0000405	skos:exactMatch	rule:struct-carbamate-hydrolysis	semapv:ManualMappingCuration	carbamate hydrolysis	struct-carbamate-hydrolysis
+xmet:3001188	skos:exactMatch	rule:struct-carbon-oxidation	semapv:ManualMappingCuration	carbon oxidation	struct-carbon-oxidation
+xmet:0004013	skos:exactMatch	rule:struct-carbonyl-hydration	semapv:ManualMappingCuration	hydration of carbonyl	struct-carbonyl-hydration
+xmet:0000731	skos:exactMatch	rule:struct-carbonylation	semapv:ManualMappingCuration	carbonylation	struct-carbonylation
+xmet:0000621	skos:exactMatch	rule:struct-carboxylation	semapv:ManualMappingCuration	carboxylation	struct-carboxylation
+xmet:0004011	skos:exactMatch	rule:struct-cis-dihydroxylation	semapv:ManualMappingCuration	cis-diol formation	struct-cis-dihydroxylation
+xmet:0000600	skos:exactMatch	rule:struct-cyanidation	semapv:ManualMappingCuration	cyanidation	struct-cyanidation
+xmet:1300010	skos:exactMatch	rule:struct-cysteine-conjugation	semapv:ManualMappingCuration	cysteine conjugation	struct-cysteine-conjugation
+xmet:0001023	skos:exactMatch	rule:struct-deacetylation	semapv:ManualMappingCuration	deacetylation	struct-deacetylation
+xmet:0000200	skos:exactMatch	rule:struct-dealkylation	semapv:ManualMappingCuration	dealkylation	struct-dealkylation
+xmet:0000208	skos:exactMatch	rule:struct-deamination	semapv:ManualMappingCuration	oxidative deamination	struct-deamination
+xmet:0000720	skos:exactMatch	rule:struct-dearylation	semapv:ManualMappingCuration	dearylation	struct-dearylation
+xmet:0000620	skos:exactMatch	rule:struct-decarboxylation	semapv:ManualMappingCuration	decarboxylation	struct-decarboxylation
+xmet:0000732	skos:exactMatch	rule:struct-deconjugation	semapv:ManualMappingCuration	deconjugation	struct-deconjugation
+xmet:0000671	skos:exactMatch	rule:struct-deformylation	semapv:ManualMappingCuration	deformylation	struct-deformylation
+xmet:0000702	skos:exactMatch	rule:struct-deglycosidation	semapv:ManualMappingCuration	deglycosidation	struct-deglycosidation
+xmet:1100014	skos:exactMatch	rule:struct-dehalogenation	semapv:ManualMappingCuration	isoredox dehalogenation	struct-dehalogenation
+xmet:0000650	skos:exactMatch	rule:struct-dehydroxylation	semapv:ManualMappingCuration	dehydroxylation	struct-dehydroxylation
+xmet:0000681	skos:exactMatch	rule:struct-denitrosation	semapv:ManualMappingCuration	denitrosation	struct-denitrosation
+xmet:0000410	skos:exactMatch	rule:struct-dephosphorylation	semapv:ManualMappingCuration	dephosphorylation	struct-dephosphorylation
+xmet:0000690	skos:exactMatch	rule:struct-desulfuration	semapv:ManualMappingCuration	desulfuration	struct-desulfuration
+xmet:3001189	skos:exactMatch	rule:struct-dioxygenation	semapv:ManualMappingCuration	dioxygenation	struct-dioxygenation
+xmet:0000135	skos:exactMatch	rule:struct-disulfide-formation	semapv:ManualMappingCuration	disulfide formation	struct-disulfide-formation
+xmet:0000532	skos:exactMatch	rule:struct-disulfide-reduction	semapv:ManualMappingCuration	disulfide reduction	struct-disulfide-reduction
+xmet:0000317	skos:exactMatch	rule:struct-double-to-triple-dehydrogenation	semapv:ManualMappingCuration	double- to triple-bond dehydrogenation	struct-double-to-triple-dehydrogenation
+xmet:0000110	skos:exactMatch	rule:struct-epoxidation	semapv:ManualMappingCuration	epoxidation	struct-epoxidation
+xmet:0000400	skos:exactMatch	rule:struct-epoxide-opening	semapv:ManualMappingCuration	epoxide opening	struct-epoxide-opening
+xmet:0000401	skos:exactMatch	rule:struct-ester-hydrolysis	semapv:ManualMappingCuration	ester hydrolysis	struct-ester-hydrolysis
+xmet:0000630	skos:exactMatch	rule:struct-esterification	semapv:ManualMappingCuration	esterification	struct-esterification
+xmet:0000407	skos:exactMatch	rule:struct-ether-cleavage	semapv:ManualMappingCuration	ether cleavage	struct-ether-cleavage
+xmet:0000408	skos:exactMatch	rule:struct-ether-hydrolysis	semapv:ManualMappingCuration	ether hydrolysis	struct-ether-hydrolysis
+xmet:0000670	skos:exactMatch	rule:struct-formylation	semapv:ManualMappingCuration	formylation	struct-formylation
+xmet:0001052	skos:exactMatch	rule:struct-glutamine-conjugation	semapv:ManualMappingCuration	glutamine conjugation	struct-glutamine-conjugation
+xmet:0001051	skos:exactMatch	rule:struct-glycine-conjugation	semapv:ManualMappingCuration	glycine conjugation	struct-glycine-conjugation
+xmet:0001060	skos:exactMatch	rule:struct-glycosylation	semapv:ManualMappingCuration	glycosylation	struct-glycosylation
+xmet:0000660	skos:exactMatch	rule:struct-halogenation	semapv:ManualMappingCuration	halogenation	struct-halogenation
+xmet:0004007	skos:exactMatch	rule:struct-hemiacetal-cleavage	semapv:ManualMappingCuration	hemiacetal cleavage	struct-hemiacetal-cleavage
+xmet:0004012	skos:exactMatch	rule:struct-hydration	semapv:ManualMappingCuration	hydration	struct-hydration
+xmet:0000500	skos:exactMatch	rule:struct-hydrogenation	semapv:ManualMappingCuration	hydrogenation	struct-hydrogenation
+xmet:0000013	skos:exactMatch	rule:struct-hydrolysis	semapv:ManualMappingCuration	hydrolysis	struct-hydrolysis
+xmet:0000122	skos:exactMatch	rule:struct-hydroxylamine-formation	semapv:ManualMappingCuration	hydroxylamine formation	struct-hydroxylamine-formation
+xmet:0000100	skos:exactMatch	rule:struct-hydroxylation	semapv:ManualMappingCuration	hydroxylation	struct-hydroxylation
+xmet:0002002	skos:exactMatch	rule:struct-imine-enamine-tautomerization	semapv:ManualMappingCuration	imine–enamine tautomerization	struct-imine-enamine-tautomerization
+xmet:0000305	skos:exactMatch	rule:struct-iminium-formation	semapv:ManualMappingCuration	iminium ion formation	struct-iminium-formation
+xmet:0002001	skos:exactMatch	rule:struct-keto-enol-tautomerization	semapv:ManualMappingCuration	keto–enol tautomerization	struct-keto-enol-tautomerization
+xmet:0000521	skos:exactMatch	rule:struct-ketone-reduction	semapv:ManualMappingCuration	ketone reduction	struct-ketone-reduction
+xmet:0000404	skos:exactMatch	rule:struct-lactam-hydrolysis	semapv:ManualMappingCuration	lactam hydrolysis	struct-lactam-hydrolysis
+xmet:0000633	skos:exactMatch	rule:struct-lactamization	semapv:ManualMappingCuration	lactamization	struct-lactamization
+xmet:0000403	skos:exactMatch	rule:struct-lactone-hydrolysis	semapv:ManualMappingCuration	lactone hydrolysis	struct-lactone-hydrolysis
+xmet:0000632	skos:exactMatch	rule:struct-lactonization	semapv:ManualMappingCuration	lactonization	struct-lactonization
+xmet:0000105	skos:exactMatch	rule:struct-meta-hydroxylation	semapv:ManualMappingCuration	meta-hydroxylation	struct-meta-hydroxylation
+xmet:0001021	skos:exactMatch	rule:struct-n-acetylation	semapv:ManualMappingCuration	N-acetylation	struct-n-acetylation
+xmet:0000611	skos:exactMatch	rule:struct-n-alkylation	semapv:ManualMappingCuration	N-alkylation	struct-n-alkylation
+xmet:3001190	skos:exactMatch	rule:struct-n-dealkylation	semapv:ManualMappingCuration	tertiary N-dealkylation	struct-n-dealkylation
+xmet:3001191	skos:exactMatch	rule:struct-n-dealkylation-secondary	semapv:ManualMappingCuration	secondary N-dealkylation	struct-n-dealkylation-secondary
+xmet:0000206	skos:exactMatch	rule:struct-n-deethylation	semapv:ManualMappingCuration	N-deethylation	struct-n-deethylation
+xmet:3001200	skos:exactMatch	rule:struct-n-demethylation	semapv:ManualMappingCuration	N-demethylation	struct-n-demethylation
+xmet:0000207	skos:exactMatch	rule:struct-n-depropylation	semapv:ManualMappingCuration	N-depropylation	struct-n-depropylation
+xmet:0001005	skos:exactMatch	rule:struct-n-glucuronidation	semapv:ManualMappingCuration	N-glucuronidation	struct-n-glucuronidation
+xmet:0001042	skos:exactMatch	rule:struct-n-methylation	semapv:ManualMappingCuration	N-methylation	struct-n-methylation
+xmet:0000680	skos:exactMatch	rule:struct-n-nitrosation	semapv:ManualMappingCuration	N-nitrosation	struct-n-nitrosation
+xmet:0000120	skos:exactMatch	rule:struct-n-oxidation	semapv:ManualMappingCuration	nitrogen oxidation	struct-n-oxidation
+xmet:0000515	skos:exactMatch	rule:struct-n-oxide-reduction	semapv:ManualMappingCuration	N-oxide reduction	struct-n-oxide-reduction
+xmet:0001014	skos:exactMatch	rule:struct-n-sulfation	semapv:ManualMappingCuration	N-sulfation	struct-n-sulfation
+xmet:1300011	skos:exactMatch	rule:struct-nac-conjugation	semapv:ManualMappingCuration	N-acetylcysteine conjugation	struct-nac-conjugation
+xmet:0001037	skos:exactMatch	rule:struct-nac-mercapturic	semapv:ManualMappingCuration	mercapturic acid formation	struct-nac-mercapturic
+xmet:0000411	skos:exactMatch	rule:struct-nitrile-hydrolysis	semapv:ManualMappingCuration	nitrile hydrolysis	struct-nitrile-hydrolysis
+xmet:0000511	skos:exactMatch	rule:struct-nitro-reduction	semapv:ManualMappingCuration	nitro reduction	struct-nitro-reduction
+xmet:0000510	skos:exactMatch	rule:struct-nitrogen-reduction	semapv:ManualMappingCuration	nitrogen reduction	struct-nitrogen-reduction
+xmet:0000123	skos:exactMatch	rule:struct-nitroso-formation	semapv:ManualMappingCuration	nitroso formation	struct-nitroso-formation
+xmet:0001022	skos:exactMatch	rule:struct-o-acetylation	semapv:ManualMappingCuration	O-acetylation	struct-o-acetylation
+xmet:0000612	skos:exactMatch	rule:struct-o-alkylation	semapv:ManualMappingCuration	O-alkylation	struct-o-alkylation
+xmet:0000202	skos:exactMatch	rule:struct-o-dealkylation	semapv:ManualMappingCuration	O-dealkylation	struct-o-dealkylation
+xmet:0000211	skos:exactMatch	rule:struct-o-deethylation	semapv:ManualMappingCuration	O-deethylation	struct-o-deethylation
+xmet:0001001	skos:exactMatch	rule:struct-o-glucuronidation	semapv:ManualMappingCuration	O-glucuronidation	struct-o-glucuronidation
+xmet:0001041	skos:exactMatch	rule:struct-o-methylation	semapv:ManualMappingCuration	O-methylation	struct-o-methylation
+xmet:0001011	skos:exactMatch	rule:struct-o-sulfation	semapv:ManualMappingCuration	O-sulfation	struct-o-sulfation
+xmet:0000109	skos:exactMatch	rule:struct-omega-1-hydroxylation	semapv:ManualMappingCuration	ω-1 hydroxylation	struct-omega-1-hydroxylation
+xmet:0000104	skos:exactMatch	rule:struct-ortho-hydroxylation	semapv:ManualMappingCuration	ortho-hydroxylation	struct-ortho-hydroxylation
+xmet:0000020	skos:exactMatch	rule:struct-oxidation	semapv:ManualMappingCuration	oxidation	struct-oxidation
+xmet:0000216	skos:exactMatch	rule:struct-oxidative-debromination	semapv:ManualMappingCuration	oxidative debromination	struct-oxidative-debromination
+xmet:0000215	skos:exactMatch	rule:struct-oxidative-dechlorination	semapv:ManualMappingCuration	oxidative dechlorination	struct-oxidative-dechlorination
+xmet:0000214	skos:exactMatch	rule:struct-oxidative-defluorination	semapv:ManualMappingCuration	oxidative defluorination	struct-oxidative-defluorination
+xmet:0000210	skos:exactMatch	rule:struct-oxidative-dehalogenation	semapv:ManualMappingCuration	oxidative dehalogenation	struct-oxidative-dehalogenation
+xmet:0000516	skos:exactMatch	rule:struct-oxime-reduction	semapv:ManualMappingCuration	oxime reduction	struct-oxime-reduction
+xmet:0000103	skos:exactMatch	rule:struct-para-hydroxylation	semapv:ManualMappingCuration	para-hydroxylation	struct-para-hydroxylation
+xmet:0001012	skos:exactMatch	rule:struct-phenolic-sulfation	semapv:ManualMappingCuration	phenolic sulfation	struct-phenolic-sulfation
+xmet:1300012	skos:exactMatch	rule:struct-phosphorylation	semapv:ManualMappingCuration	phosphorylation	struct-phosphorylation
+xmet:0000311	skos:exactMatch	rule:struct-primary-alcohol-oxidation	semapv:ManualMappingCuration	primary alcohol oxidation	struct-primary-alcohol-oxidation
+xmet:0000124	skos:exactMatch	rule:struct-primary-amine-n-oxidation	semapv:ManualMappingCuration	primary amine N-oxidation	struct-primary-amine-n-oxidation
+xmet:0000140	skos:exactMatch	rule:struct-primary-carbon-hydroxylation	semapv:ManualMappingCuration	primary carbon hydroxylation	struct-primary-carbon-hydroxylation
+xmet:0000300	skos:exactMatch	rule:struct-quinone-formation	semapv:ManualMappingCuration	quinone-like species formation	struct-quinone-formation
+xmet:0000523	skos:exactMatch	rule:struct-quinone-reduction	semapv:ManualMappingCuration	quinone-like reduction	struct-quinone-reduction
+xmet:0000014	skos:exactMatch	rule:struct-reduction	semapv:ManualMappingCuration	reduction	struct-reduction
+xmet:0000542	skos:exactMatch	rule:struct-reductive-dechlorination	semapv:ManualMappingCuration	reductive dechlorination	struct-reductive-dechlorination
+xmet:0000541	skos:exactMatch	rule:struct-reductive-defluorination	semapv:ManualMappingCuration	reductive defluorination	struct-reductive-defluorination
+xmet:0000540	skos:exactMatch	rule:struct-reductive-dehalogenation	semapv:ManualMappingCuration	reductive dehalogenation	struct-reductive-dehalogenation
+xmet:0000613	skos:exactMatch	rule:struct-s-alkylation	semapv:ManualMappingCuration	S-alkylation	struct-s-alkylation
+xmet:0000203	skos:exactMatch	rule:struct-s-dealkylation	semapv:ManualMappingCuration	S-dealkylation	struct-s-dealkylation
+xmet:0001007	skos:exactMatch	rule:struct-s-glucuronidation	semapv:ManualMappingCuration	S-glucuronidation	struct-s-glucuronidation
+xmet:0001043	skos:exactMatch	rule:struct-s-methylation	semapv:ManualMappingCuration	S-methylation	struct-s-methylation
+xmet:0000130	skos:exactMatch	rule:struct-s-oxidation	semapv:ManualMappingCuration	sulfur oxidation	struct-s-oxidation
+xmet:0000710	skos:exactMatch	rule:struct-se-methylation	semapv:ManualMappingCuration	Se-methylation	struct-se-methylation
+xmet:0000312	skos:exactMatch	rule:struct-secondary-alcohol-oxidation	semapv:ManualMappingCuration	secondary alcohol oxidation	struct-secondary-alcohol-oxidation
+xmet:0000141	skos:exactMatch	rule:struct-secondary-carbon-hydroxylation	semapv:ManualMappingCuration	secondary carbon hydroxylation	struct-secondary-carbon-hydroxylation
+xmet:0000132	skos:exactMatch	rule:struct-sulfone-formation	semapv:ManualMappingCuration	sulfone formation	struct-sulfone-formation
+xmet:0000131	skos:exactMatch	rule:struct-sulfoxidation	semapv:ManualMappingCuration	sulfoxidation	struct-sulfoxidation
+xmet:0000531	skos:exactMatch	rule:struct-sulfoxide-reduction	semapv:ManualMappingCuration	sulfoxide reduction	struct-sulfoxide-reduction
+xmet:0000530	skos:exactMatch	rule:struct-sulfur-reduction	semapv:ManualMappingCuration	sulfur reduction	struct-sulfur-reduction
+xmet:0000691	skos:exactMatch	rule:struct-sulfuration	semapv:ManualMappingCuration	sulfuration	struct-sulfuration
+xmet:0001053	skos:exactMatch	rule:struct-taurine-conjugation	semapv:ManualMappingCuration	taurine conjugation	struct-taurine-conjugation
+xmet:0000142	skos:exactMatch	rule:struct-tertiary-carbon-hydroxylation	semapv:ManualMappingCuration	tertiary carbon hydroxylation	struct-tertiary-carbon-hydroxylation
+xmet:0000134	skos:exactMatch	rule:struct-thiol-oxidation	semapv:ManualMappingCuration	thiol oxidation	struct-thiol-oxidation
+xmet:0000113	skos:exactMatch	rule:struct-thiophene-epoxidation	semapv:ManualMappingCuration	thiophene epoxidation	struct-thiophene-epoxidation
+xmet:0000133	skos:exactMatch	rule:struct-thiophene-s-oxidation	semapv:ManualMappingCuration	thiophene S-oxidation	struct-thiophene-s-oxidation
+xmet:0000631	skos:exactMatch	rule:struct-transesterification	semapv:ManualMappingCuration	transesterification	struct-transesterification
+xmet:0000406	skos:exactMatch	rule:struct-urea-hydrolysis	semapv:ManualMappingCuration	urea hydrolysis	struct-urea-hydrolysis

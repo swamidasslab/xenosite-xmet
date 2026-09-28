@@ -1,0 +1,4634 @@
+{
+  "draft": "reaction_class Phase I — when + pair + tagger rules",
+  "status": "discussion draft — not applied to xmet.yaml",
+  "depth": "color → rule → pattern → specialize; pair rules also list pattern×pattern combinations",
+  "pair_rules": {
+    "summary": "Some Forest rules (ResonancePairRule / site_kind=atom_pair) match two endpoint patterns at once. XMET should keep endpoint patterns as children and may add pair-combination leaves for ordered cross-role pairs.",
+    "reference": "xenosite-forest docs/forest/PAIR_ORBITS.md"
+  },
+  "legend": {
+    "rule_kind": "single | resonance | pair",
+    "pattern role endpoint": "declared on ResonancePair.endpoints",
+    "pair_combinations": "proposed leaves for simultaneous two-pattern match",
+    "specialize_from_when": "from PatternInfo.when / partner",
+    "tagger_rules": "xenosite-tagger assignment rules (SMARTS/tag) mapped onto Forest rule/pattern slots as achievable specializations"
+  },
+  "phaseone_rules_in_forest": [
+    "Dealkylation",
+    "Dehydration",
+    "Dehydrogenation",
+    "Dephosphorylation",
+    "Epoxidation",
+    "EpoxideOpening",
+    "Hydrogenation",
+    "Hydrolysis",
+    "Hydroxylation",
+    "NitrogenOxidation",
+    "NitrogenReduction",
+    "OxidativeDehalogenation",
+    "OxygenReduction",
+    "ReductiveDehalogenation",
+    "SulfurOxidation",
+    "SulfurReduction"
+  ],
+  "reaction_class": {
+    "proposed_label": "reaction class",
+    "phase_one_colors": [
+      {
+        "xmet_label": "Stable Oxygenation",
+        "forest_ruleset": "forest.ruleset:SO",
+        "mapping": "skos:exactMatch",
+        "extend_leaves": [],
+        "rules": [
+          {
+            "xmet_label": "N-oxidation",
+            "forest_rule": "forest.rule:NitrogenOxidation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "hydroxylamine",
+                "forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "hydroxylamine"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 7,
+                      "h": 1
+                    },
+                    {
+                      "map": 1,
+                      "z": 7,
+                      "h": 2
+                    }
+                  ],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7v3h:1]>>[*:1]O"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "forest nitrogenoxidation_hydroxylamine",
+                  "forest nitrogenreduction_hydroxylamine",
+                  "hydroxylamine formation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:forest-tag-nitrogenoxidation_hydroxylamine",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "other",
+                    "primary_emit": null,
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
+                  },
+                  {
+                    "id": "rule:forest-tag-nitrogenreduction_hydroxylamine",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "other",
+                    "primary_emit": null,
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
+                  },
+                  {
+                    "id": "rule:struct-hydroxylamine-formation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000122",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "nitroso",
+                "forest_pattern": "forest.pattern:NitrogenOxidation/nitroso",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitroso"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7v3H2:1]>>[*:1]=O"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "n oxide",
+                "forest_pattern": "forest.pattern:NitrogenOxidation/n_oxide",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "n_oxide"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7v3H0:1]>>[*&H0&+:1][O-]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": [
+                  "n oxide reduction"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:struct-n-oxide-reduction",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000515",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/n_oxide"
+                  }
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:forest-tag-nitrogenoxidation_hydroxylamine",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
+              },
+              {
+                "id": "rule:forest-tag-nitrogenreduction_hydroxylamine",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
+              },
+              {
+                "id": "rule:struct-n-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000120",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-hydroxylamine-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000122",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
+              },
+              {
+                "id": "rule:struct-carbon-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000021",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-n-oxide-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000515",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/n_oxide"
+              },
+              {
+                "id": "rule:struct-nitroso-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000123",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-aromatic-amine-n-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000125",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-primary-amine-n-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000124",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "S-oxidation",
+            "forest_rule": "forest.rule:SulfurOxidation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "zwitterion",
+                "forest_pattern": "forest.pattern:SulfurOxidation/zwitterion",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "zwitterion"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16;v2,v4:1]>>[*&H0&+:1][O-]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "hydroxy",
+                "forest_pattern": "forest.pattern:SulfurOxidation/hydroxy",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "hydroxy"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16;v2,v4:1]>>[*:1][O]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "oxo",
+                "forest_pattern": "forest.pattern:SulfurOxidation/oxo",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "oxo"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16;v2,v4:1]>>[*:1]=O"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [
+              {
+                "xmet_label": "thiophene S-oxidation",
+                "why": "forest.rule:ThiopheneSulfurOxidation"
+              }
+            ],
+            "tagger_rules": [
+              {
+                "id": "rule:forest-tag-dehydrogenation_sulfoxide",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-sulfation_epoxide_methyl_sulfone",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-sulfurreduction_sulfoxide",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-s-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000130",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-thiophene-s-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000133",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-sulfone-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000132",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-sulfoxide-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000531",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "epoxidation",
+            "forest_rule": "forest.rule:Epoxidation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "resonance",
+            "site_kind": "bond",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "epoxide",
+                "forest_pattern": "forest.pattern:Epoxidation/epoxide",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "epoxide"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 6
+                    },
+                    {
+                      "map": 2,
+                      "z": 7
+                    }
+                  ],
+                  "partners": [
+                    "C",
+                    "N"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]=,:[#6,#7:2]>>[*:1]1-[*:2][O]1"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "partner C",
+                  "partner N"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "partner C",
+                  "partner N",
+                  "aromatic epoxidation",
+                  "aliphatic / alkene epoxidation",
+                  "arene oxide",
+                  "nih shift",
+                  "ipso",
+                  "alkene epoxidation",
+                  "arene oxide formation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:tag-arene-oxide",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000112",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+                  },
+                  {
+                    "id": "rule:tag-nih-shift",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0004003",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+                  },
+                  {
+                    "id": "rule:tag-ipso",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0004004",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+                  },
+                  {
+                    "id": "rule:struct-alkene-epoxidation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000111",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+                  },
+                  {
+                    "id": "rule:struct-aromatic-epoxidation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000110",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+                  },
+                  {
+                    "id": "rule:struct-arene-oxide-formation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000112",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+                  }
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [
+              {
+                "xmet_label": "arene oxide formation",
+                "why": "named aromatic epoxidation path"
+              }
+            ],
+            "tagger_rules": [
+              {
+                "id": "rule:epoxidation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "smarts",
+                "primary_emit": "xmet:0000110",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-epoxidation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000110",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-arene-oxide",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000112",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+              },
+              {
+                "id": "rule:tag-nih-shift",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0004003",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+              },
+              {
+                "id": "rule:tag-ipso",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0004004",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+              },
+              {
+                "id": "rule:struct-epoxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000110",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-alkene-epoxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000111",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+              },
+              {
+                "id": "rule:struct-aromatic-epoxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000110",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+              },
+              {
+                "id": "rule:struct-arene-oxide-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000112",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
+              }
+            ]
+          },
+          {
+            "xmet_label": "hydroxylation",
+            "forest_rule": "forest.rule:Hydroxylation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "h",
+                "forest_pattern": "forest.pattern:Hydroxylation/h",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "h"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 1
+                    }
+                  ],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h1:1]>>[*:1]O"
+                  ]
+                },
+                "specialize_from_when": [
+                  "methine CH"
+                ],
+                "specialize_leaves": [
+                  "methine CH",
+                  "aromatic hydroxylation",
+                  "aliphatic hydroxylation",
+                  "benzylic hydroxylation",
+                  "allylic hydroxylation",
+                  "para hydroxylation",
+                  "ortho hydroxylation",
+                  "meta hydroxylation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:aromatic-hydroxylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "smarts",
+                    "primary_emit": "xmet:0000101",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  },
+                  {
+                    "id": "rule:tag-aromatic-hydroxylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000101",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  },
+                  {
+                    "id": "rule:tag-para-hydroxylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000103",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  },
+                  {
+                    "id": "rule:struct-aromatic-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000101",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  },
+                  {
+                    "id": "rule:struct-ortho-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000104",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  },
+                  {
+                    "id": "rule:struct-para-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000103",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  },
+                  {
+                    "id": "rule:struct-meta-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000105",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "h2",
+                "forest_pattern": "forest.pattern:Hydroxylation/h2",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "h2"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 2
+                    },
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 3
+                    }
+                  ],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h2,#6h3:1]>>[*:1]O"
+                  ]
+                },
+                "specialize_from_when": [
+                  "methylene CH2",
+                  "methyl CH3"
+                ],
+                "specialize_leaves": [
+                  "methylene CH2",
+                  "methyl CH3",
+                  "omega hydroxylation",
+                  "omega-1 hydroxylation",
+                  "aliphatic hydroxylation",
+                  "benzylic hydroxylation",
+                  "allylic hydroxylation",
+                  "omega 1 hydroxylation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:aliphatic-hydroxylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "smarts",
+                    "primary_emit": "xmet:0000102",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  },
+                  {
+                    "id": "rule:tag-benzylic-hydroxylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000106",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  },
+                  {
+                    "id": "rule:tag-omega-hydroxylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000108",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  },
+                  {
+                    "id": "rule:struct-aliphatic-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000102",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  },
+                  {
+                    "id": "rule:struct-allylic-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000107",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  },
+                  {
+                    "id": "rule:struct-benzylic-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000106",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  },
+                  {
+                    "id": "rule:struct-omega-1-hydroxylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000109",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+                  }
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "smarts",
+                "primary_emit": "xmet:0000100",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:aromatic-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "smarts",
+                "primary_emit": "xmet:0000101",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:aliphatic-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "smarts",
+                "primary_emit": "xmet:0000102",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              },
+              {
+                "id": "rule:tag-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000100",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-aromatic-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000101",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:tag-para-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000103",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:tag-benzylic-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000106",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              },
+              {
+                "id": "rule:tag-omega-hydroxylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000108",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              },
+              {
+                "id": "rule:struct-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000100",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-aromatic-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000101",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:struct-aliphatic-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000102",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              },
+              {
+                "id": "rule:struct-allylic-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000107",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              },
+              {
+                "id": "rule:struct-benzylic-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000106",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              },
+              {
+                "id": "rule:struct-ortho-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000104",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:struct-para-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000103",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:struct-meta-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000105",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
+              },
+              {
+                "id": "rule:struct-omega-1-hydroxylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000109",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "xmet_label": "Unstable Oxygenation",
+        "forest_ruleset": "forest.ruleset:UO",
+        "mapping": "skos:exactMatch",
+        "extend_leaves": [],
+        "rules": [
+          {
+            "xmet_label": "dealkylation",
+            "forest_rule": "forest.rule:Dealkylation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "resonance",
+            "site_kind": "directed_bond",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "methyl carboxylic",
+                "forest_pattern": "forest.pattern:Dealkylation/methyl_carboxylic",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methyl_carboxylic"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H3:1][#7,#8H0,#16:2]>>([*:2].[*:1](=O)O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "methyl carbonyl",
+                "forest_pattern": "forest.pattern:Dealkylation/methyl_carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methyl_carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H3:1][#7,#8H0,#16:2]>>([*:2].[*:1]=O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "methyl alcohol",
+                "forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methyl_alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H3:1][#7,#8H0,#16:2]>>([*:2].[*:1]-O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation",
+                  "n demethylation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:tag-n-demethylation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000205",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
+                  },
+                  {
+                    "id": "rule:struct-n-demethylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000205",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "methylene carboxylic",
+                "forest_pattern": "forest.pattern:Dealkylation/methylene_carboxylic",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methylene_carboxylic"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H2:1][#7,#8H0,#16:2]>>([*:2].[*:1](=O)O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "methylene carbonyl",
+                "forest_pattern": "forest.pattern:Dealkylation/methylene_carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methylene_carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H2:1][#7,#8H0,#16:2]>>([*:2].[*:1]=O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "methylene alcohol",
+                "forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methylene_alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H2:1][#7,#8H0,#16:2]>>([*:2].[*:1]-O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation",
+                  "n deethylation",
+                  "n depropylation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:struct-n-deethylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000206",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
+                  },
+                  {
+                    "id": "rule:struct-n-depropylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000207",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "methine carbonyl",
+                "forest_pattern": "forest.pattern:Dealkylation/methine_carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methine_carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H1:1][#7,#8H0,#16:2]>>([*:2].[*:1]=O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "methine alcohol",
+                "forest_pattern": "forest.pattern:Dealkylation/methine_alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "methine_alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H1:1][#7,#8H0,#16:2]>>([*:2].[*:1]-O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "quaternary alcohol",
+                "forest_pattern": "forest.pattern:Dealkylation/quaternary_alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "quaternary_alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H0:1][#7,#8H0,#16:2]>>([*:2].[*:1]-O)"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "cc quaternary alcohol",
+                "forest_pattern": "forest.pattern:Dealkylation/cc_quaternary_alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "cc_quaternary_alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "C"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6H0:1][#6:2]>>(O-[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner C",
+                  "C-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "partner C",
+                  "C-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "cc alcohol",
+                "forest_pattern": "forest.pattern:Dealkylation/cc_alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "cc_alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 1
+                    },
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 2
+                    },
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 3
+                    }
+                  ],
+                  "partners": [
+                    "C"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h:1][#6:2]>>(O-[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "methine CH",
+                  "methylene CH2",
+                  "methyl CH3",
+                  "partner C",
+                  "C-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "methine CH",
+                  "methylene CH2",
+                  "methyl CH3",
+                  "partner C",
+                  "C-dealkylation",
+                  "c dealkylation",
+                  "dearylation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:struct-c-dealkylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000204",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
+                  },
+                  {
+                    "id": "rule:struct-dearylation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000720",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "cc carbonyl",
+                "forest_pattern": "forest.pattern:Dealkylation/cc_carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "cc_carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 1
+                    },
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 2
+                    },
+                    {
+                      "map": 1,
+                      "z": 6,
+                      "h": 3
+                    }
+                  ],
+                  "partners": [
+                    "C"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h:1][#6:2]>>(O=[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "methine CH",
+                  "methylene CH2",
+                  "methyl CH3",
+                  "partner C",
+                  "C-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "methine CH",
+                  "methylene CH2",
+                  "methyl CH3",
+                  "partner C",
+                  "C-dealkylation"
+                ]
+              },
+              {
+                "xmet_label": "hemiaminal",
+                "forest_pattern": "forest.pattern:Dealkylation/hemiaminal",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "hemiaminal"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    },
+                    {
+                      "map": 2,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8H1:3]-[#6:1]-[#7,#8,#16:2]>>([*:3]=[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "N-dealkylation",
+                  "partner O",
+                  "O-dealkylation",
+                  "partner S",
+                  "S-dealkylation",
+                  "oxidative deamination"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:tag-dealkylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000200",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-n-dealkylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000201",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-n-demethylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000205",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
+              },
+              {
+                "id": "rule:tag-oxidative-deamination",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000208",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-o-dealkylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000202",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-o-demethylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000209",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-n-demethylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000205",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
+              },
+              {
+                "id": "rule:struct-o-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000202",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-n-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000201",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-n-dealkylation-secondary",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000201",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-n-deethylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000206",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
+              },
+              {
+                "id": "rule:struct-n-depropylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000207",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
+              },
+              {
+                "id": "rule:struct-o-deethylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000211",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-aromatic-o-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000212",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-s-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000203",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-c-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000204",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
+              },
+              {
+                "id": "rule:struct-dearylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000720",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
+              },
+              {
+                "id": "rule:struct-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000200",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-aliphatic-o-dealkylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000213",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "oxidative dehalogenation",
+            "forest_rule": "forest.rule:OxidativeDehalogenation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "alcohol",
+                "forest_pattern": "forest.pattern:OxidativeDehalogenation/alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6:2]>>[*:1].[*:2]O"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ]
+              },
+              {
+                "xmet_label": "carbonyl",
+                "forest_pattern": "forest.pattern:OxidativeDehalogenation/carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6h1:2]>>[*:1].[*:2]=O"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ]
+              },
+              {
+                "xmet_label": "carboxylic",
+                "forest_pattern": "forest.pattern:OxidativeDehalogenation/carboxylic",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "carboxylic"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6H2:2]>>[*:1].[*:2](O)=O"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ]
+              },
+              {
+                "xmet_label": "rearrange",
+                "forest_pattern": "forest.pattern:OxidativeDehalogenation/rearrange",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "rearrange"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6:2][#6H1:3]>>[*:2](O)[*:3]-[*:1]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ]
+              },
+              {
+                "xmet_label": "gem carboxylic",
+                "forest_pattern": "forest.pattern:OxidativeDehalogenation/gem_carboxylic",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "gem_carboxylic"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6:2]-[#9,#17,#35,#53,#85:3]>>[*:1].[*:2](O)=O.[*:3]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ]
+              },
+              {
+                "xmet_label": "gem hydrate",
+                "forest_pattern": "forest.pattern:OxidativeDehalogenation/gem_hydrate",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "gem_hydrate"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6:2]-[#9,#17,#35,#53,#85:3]>>[*:1].[*:2](O)O.[*:3]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "oxidative defluorination",
+                  "oxidative dechlorination",
+                  "oxidative debromination",
+                  "oxidative deiodination"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:struct-oxidative-dehalogenation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000210",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-oxidative-defluorination",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000214",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-oxidative-dechlorination",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000215",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-oxidative-debromination",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000216",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "xmet_label": "Dehydrogenation",
+        "forest_ruleset": "forest.ruleset:DH",
+        "mapping": "skos:exactMatch",
+        "extend_leaves": [
+          {
+            "xmet_label": "quinone formation (Rainbow DH link)",
+            "why": "composites primary; curated DH link"
+          }
+        ],
+        "rules": [
+          {
+            "xmet_label": "dehydrogenation",
+            "forest_rule": "forest.rule:Dehydrogenation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "pair",
+            "site_kind": "atom_pair",
+            "pair_note": "ResonancePair / atom_pair rule: one emission matches TWO endpoint patterns (see pair_combinations). Same swap_group → unordered; different → ordered.",
+            "patterns": [
+              {
+                "xmet_label": "sulfoxide",
+                "forest_pattern": "forest.pattern:Dehydrogenation/sulfoxide",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "sulfoxide"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16v4:1]-[#8H1:2]>>[*:1]=[*:2]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "alcohol",
+                "forest_pattern": "forest.pattern:Dehydrogenation/alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h:1]-[#8H1:2]>>[*:1]=[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O",
+                  "primary alcohol → aldehyde",
+                  "secondary alcohol → ketone",
+                  "alcohol oxidation",
+                  "primary alcohol oxidation",
+                  "secondary alcohol oxidation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:alcohol-oxidation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "smarts",
+                    "primary_emit": "xmet:0000310",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+                  },
+                  {
+                    "id": "rule:primary-alcohol-oxidation",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "smarts",
+                    "primary_emit": "xmet:0000311",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+                  },
+                  {
+                    "id": "rule:struct-alcohol-oxidation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000310",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+                  },
+                  {
+                    "id": "rule:struct-primary-alcohol-oxidation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000311",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+                  },
+                  {
+                    "id": "rule:struct-secondary-alcohol-oxidation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000312",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "amine",
+                "forest_pattern": "forest.pattern:Dehydrogenation/amine",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "amine"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7,
+                      "h": 2
+                    },
+                    {
+                      "map": 2,
+                      "z": 7,
+                      "h": 1
+                    }
+                  ],
+                  "partners": [
+                    "N"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h:1]-[#7D1H2,#7D2H1:2]>>[*:1]=[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "partner N"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "partner N",
+                  "imine formation",
+                  "iminium ion formation",
+                  "quinone imine",
+                  "imine methide",
+                  "forest quinoneformation_iminium",
+                  "imine enamine tautomerization",
+                  "iminium formation"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:tag-quinone-imine",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000303",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+                  },
+                  {
+                    "id": "rule:tag-imine-methide",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000306",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+                  },
+                  {
+                    "id": "rule:forest-tag-quinoneformation_iminium",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "other",
+                    "primary_emit": null,
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+                  },
+                  {
+                    "id": "rule:struct-imine-enamine-tautomerization",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0002002",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+                  },
+                  {
+                    "id": "rule:struct-iminium-formation",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000305",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "alkyl",
+                "forest_pattern": "forest.pattern:Dehydrogenation/alkyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alkyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 6,
+                      "h": 3
+                    },
+                    {
+                      "map": 2,
+                      "z": 6,
+                      "h": 2
+                    },
+                    {
+                      "map": 2,
+                      "z": 6,
+                      "h": 1
+                    }
+                  ],
+                  "partners": [
+                    "C"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6h:1]-[#6D1H3,#6D2H2,#6D3H1:2]>>[*:1]=[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "methyl CH3",
+                  "methylene CH2",
+                  "methine CH",
+                  "partner C"
+                ],
+                "specialize_leaves": [
+                  "methyl CH3",
+                  "methylene CH2",
+                  "methine CH",
+                  "partner C"
+                ]
+              },
+              {
+                "xmet_label": "phenol end",
+                "forest_pattern": "forest.pattern:Dehydrogenation/phenol_end",
+                "mapping": "skos:closeMatch",
+                "role": "endpoint",
+                "swap_groups": [
+                  "phenol_end"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "endpoints"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]-[#8H:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "amine end",
+                "forest_pattern": "forest.pattern:Dehydrogenation/amine_end",
+                "mapping": "skos:closeMatch",
+                "role": "endpoint",
+                "swap_groups": [
+                  "amine_end"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 7,
+                      "h": 2
+                    },
+                    {
+                      "map": 2,
+                      "z": 7,
+                      "h": 1
+                    }
+                  ],
+                  "partners": [],
+                  "sources": [
+                    "endpoints"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]-[#7D1H2,#7D2H1:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered"
+                ],
+                "specialize_leaves": [
+                  "N-centered"
+                ]
+              },
+              {
+                "xmet_label": "methide end",
+                "forest_pattern": "forest.pattern:Dehydrogenation/methide_end",
+                "mapping": "skos:closeMatch",
+                "role": "endpoint",
+                "swap_groups": [
+                  "methide_end"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 6,
+                      "h": 3
+                    },
+                    {
+                      "map": 2,
+                      "z": 6,
+                      "h": 2
+                    },
+                    {
+                      "map": 2,
+                      "z": 6,
+                      "h": 1
+                    }
+                  ],
+                  "partners": [
+                    "C"
+                  ],
+                  "sources": [
+                    "endpoints"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]-[#6D1H3,#6D2H2,#6D3H1:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "methyl CH3",
+                  "methylene CH2",
+                  "methine CH",
+                  "partner C"
+                ],
+                "specialize_leaves": [
+                  "methyl CH3",
+                  "methylene CH2",
+                  "methine CH",
+                  "partner C"
+                ]
+              }
+            ],
+            "pair_combinations": [
+              {
+                "xmet_label": "phenol end × phenol end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/phenol_end",
+                  "forest.pattern:Dehydrogenation/phenol_end"
+                ],
+                "ordered": false,
+                "note": "same endpoint role → unordered atom-pair site"
+              },
+              {
+                "xmet_label": "phenol end × amine end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/phenol_end",
+                  "forest.pattern:Dehydrogenation/amine_end"
+                ],
+                "ordered": true,
+                "note": "different swap_group/name → ordered pair emission"
+              },
+              {
+                "xmet_label": "amine end × phenol end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/amine_end",
+                  "forest.pattern:Dehydrogenation/phenol_end"
+                ],
+                "ordered": true,
+                "note": "different swap_group/name → ordered pair emission"
+              },
+              {
+                "xmet_label": "phenol end × methide end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/phenol_end",
+                  "forest.pattern:Dehydrogenation/methide_end"
+                ],
+                "ordered": true,
+                "note": "different swap_group/name → ordered pair emission"
+              },
+              {
+                "xmet_label": "methide end × phenol end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/methide_end",
+                  "forest.pattern:Dehydrogenation/phenol_end"
+                ],
+                "ordered": true,
+                "note": "different swap_group/name → ordered pair emission"
+              },
+              {
+                "xmet_label": "amine end × amine end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/amine_end",
+                  "forest.pattern:Dehydrogenation/amine_end"
+                ],
+                "ordered": false,
+                "note": "same endpoint role → unordered atom-pair site"
+              },
+              {
+                "xmet_label": "amine end × methide end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/amine_end",
+                  "forest.pattern:Dehydrogenation/methide_end"
+                ],
+                "ordered": true,
+                "note": "different swap_group/name → ordered pair emission"
+              },
+              {
+                "xmet_label": "methide end × amine end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/methide_end",
+                  "forest.pattern:Dehydrogenation/amine_end"
+                ],
+                "ordered": true,
+                "note": "different swap_group/name → ordered pair emission"
+              },
+              {
+                "xmet_label": "methide end × methide end",
+                "ends": [
+                  "forest.pattern:Dehydrogenation/methide_end",
+                  "forest.pattern:Dehydrogenation/methide_end"
+                ],
+                "ordered": false,
+                "note": "same endpoint role → unordered atom-pair site"
+              }
+            ],
+            "extend_leaves": [
+              {
+                "xmet_label": "aromatization",
+                "why": "named DH path"
+              }
+            ],
+            "tagger_rules": [
+              {
+                "id": "rule:alcohol-oxidation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "smarts",
+                "primary_emit": "xmet:0000310",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+              },
+              {
+                "id": "rule:primary-alcohol-oxidation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "smarts",
+                "primary_emit": "xmet:0000311",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+              },
+              {
+                "id": "rule:tag-dearomatization",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0004001",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-quinone-imine",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000303",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+              },
+              {
+                "id": "rule:tag-imine-methide",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000306",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation_alcohol",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation_alkyl",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation_amine",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation_amine_end",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation_methide_end",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation_phenol_end",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-quinoneformation_iminium",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+              },
+              {
+                "id": "rule:forest-tag-dehydrogenation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-alcohol-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000310",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+              },
+              {
+                "id": "rule:struct-aromatization",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000315",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-alkene-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000314",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-primary-alcohol-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000311",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+              },
+              {
+                "id": "rule:struct-secondary-alcohol-oxidation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000312",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
+              },
+              {
+                "id": "rule:struct-double-to-triple-dehydrogenation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000317",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-imine-enamine-tautomerization",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0002002",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+              },
+              {
+                "id": "rule:struct-iminium-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000305",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "xmet_label": "Hydrolysis",
+        "forest_ruleset": "forest.ruleset:HD",
+        "mapping": "skos:exactMatch",
+        "extend_leaves": [
+          {
+            "xmet_label": "azo cleavage",
+            "why": "Forest Full HD / AzoSplitting"
+          }
+        ],
+        "rules": [
+          {
+            "xmet_label": "dephosphorylation",
+            "forest_rule": "forest.rule:Dephosphorylation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "phosphate ester",
+                "forest_pattern": "forest.pattern:Dephosphorylation/phosphate_ester",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "phosphate_ester"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 15
+                    }
+                  ],
+                  "partners": [
+                    "P"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8;$([#8][#6]):1][#15:2](=[#8:3])([#8:4])[#8:5]>>[*:1].[*:2](=[*:3])([*:4])[*:5]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "P-centered",
+                  "partner P"
+                ],
+                "specialize_leaves": [
+                  "P-centered",
+                  "partner P"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:forest-tag-dephosphorylation_phosphate_ester",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dephosphorylation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-dephosphorylation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000410",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "epoxide opening",
+            "forest_rule": "forest.rule:EpoxideOpening",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "rearrange",
+                "forest_pattern": "forest.pattern:EpoxideOpening/rearrange",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "rearrange"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]1[#8:2][#6:3]1>>([*:2][*:3][*:1])"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "hydrate",
+                "forest_pattern": "forest.pattern:EpoxideOpening/hydrate",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "hydrate"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]1[#8:2][#6:3]1>>([*:2][*:3][*:1]O)"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:struct-epoxide-opening",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000400",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "hydrolysis",
+            "forest_rule": "forest.rule:Hydrolysis",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "add water",
+                "forest_pattern": "forest.pattern:Hydrolysis/add_water",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "add_water"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 3,
+                      "z": 7
+                    },
+                    {
+                      "map": 3,
+                      "z": 8
+                    },
+                    {
+                      "map": 3,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8,#16:1]=[#6:2]-[#7,#8,#16:3]>>([*:1]=[*:2](O).[*:3])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "partner O",
+                  "partner S"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "partner O",
+                  "partner S"
+                ]
+              },
+              {
+                "xmet_label": "cleave",
+                "forest_pattern": "forest.pattern:Hydrolysis/cleave",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "cleave"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 3,
+                      "z": 7
+                    },
+                    {
+                      "map": 3,
+                      "z": 8
+                    },
+                    {
+                      "map": 3,
+                      "z": 16
+                    }
+                  ],
+                  "partners": [
+                    "N",
+                    "O",
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8,#16:1]=[#6:2]-[#7,#8,#16:3]>>([*:1]=[*:2].[*:3])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "partner O",
+                  "partner S"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "O-centered",
+                  "S-centered",
+                  "partner N",
+                  "partner O",
+                  "partner S",
+                  "ester hydrolysis",
+                  "amide hydrolysis",
+                  "carbamate hydrolysis",
+                  "ether hydrolysis",
+                  "nitrile hydrolysis",
+                  "lactamization",
+                  "lactam hydrolysis"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:tag-ether-hydrolysis",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000408",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-ester-hydrolysis",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000401",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-lactamization",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000633",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-amide-hydrolysis",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000402",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-lactam-hydrolysis",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000404",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-carbamate-hydrolysis",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000405",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-nitrile-hydrolysis",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000411",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  },
+                  {
+                    "id": "rule:struct-ether-hydrolysis",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000408",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+                  }
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:tag-ether-hydrolysis",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000408",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-ester-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000401",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000013",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-lactamization",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000633",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-amide-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000402",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-lactam-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000404",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-carbamate-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000405",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-nitrile-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000411",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              },
+              {
+                "id": "rule:struct-ether-hydrolysis",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000408",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "xmet_label": "Reduction",
+        "forest_ruleset": "forest.ruleset:RD",
+        "mapping": "skos:exactMatch",
+        "extend_leaves": [
+          {
+            "xmet_label": "benzodioxole reduction",
+            "why": "Forest Full RD / BenzodioxoleReduction"
+          }
+        ],
+        "rules": [
+          {
+            "xmet_label": "dehydration",
+            "forest_rule": "forest.rule:Dehydration",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "alcohol",
+                "forest_pattern": "forest.pattern:Dehydration/alcohol",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alcohol"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 6
+                    },
+                    {
+                      "map": 1,
+                      "z": 7
+                    }
+                  ],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6,#7:1]-[#8H1:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "beta elimination",
+                "forest_pattern": "forest.pattern:Dehydration/beta_elimination",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "beta_elimination"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:3]-[#6:1]-[#8H1:2]>>[*:3]=[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "carbonyl",
+                "forest_pattern": "forest.pattern:Dehydration/carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 6
+                    },
+                    {
+                      "map": 1,
+                      "z": 7
+                    }
+                  ],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6,#7:1]=[#8:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "partner O"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:forest-tag-dehydration_alcohol",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydration_beta_elimination",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydration_carbonyl",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-epoxidehydration_diol",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-dehydration",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-epoxidehydration",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "hydrogenation",
+            "forest_rule": "forest.rule:Hydrogenation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "pair",
+            "site_kind": "atom_pair",
+            "pair_note": "ResonancePair / atom_pair rule: one emission matches TWO endpoint patterns (see pair_combinations). Same swap_group → unordered; different → ordered.",
+            "patterns": [
+              {
+                "xmet_label": "alkyne",
+                "forest_pattern": "forest.pattern:Hydrogenation/alkyne",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alkyne"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]#[#6:2]>>[*:1]=[*:2]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "alkene",
+                "forest_pattern": "forest.pattern:Hydrogenation/alkene",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alkene"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#6:1]=,:[#6:2]>>[*:1]-[*:2]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              },
+              {
+                "xmet_label": "path end",
+                "forest_pattern": "forest.pattern:Hydrogenation/path_end",
+                "mapping": "skos:closeMatch",
+                "role": "endpoint",
+                "swap_groups": [
+                  "path_end"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [],
+                  "sources": [
+                    "endpoints"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[*:1]"
+                  ]
+                },
+                "specialize_from_when": [],
+                "specialize_leaves": []
+              }
+            ],
+            "pair_combinations": [
+              {
+                "xmet_label": "path end × path end",
+                "ends": [
+                  "forest.pattern:Hydrogenation/path_end",
+                  "forest.pattern:Hydrogenation/path_end"
+                ],
+                "ordered": false,
+                "note": "same endpoint role → unordered atom-pair site"
+              }
+            ],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:forest-tag-hydrogenation_alkene",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-hydrogenation_alkyne",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-hydrogenation_path_end",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:forest-tag-hydrogenation",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-hydrogenation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000500",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-alkyne-hydrogenation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000502",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "nitrogen reduction",
+            "forest_rule": "forest.rule:NitrogenReduction",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "resonance",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "nitro charged",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitro_charged",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitro_charged"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8:3]=[#7+1:1]-[#8-1:2]>>([*:3]=[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "nitro anion",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitro_anion",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitro_anion"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8:3]=[#7:1]-[#8-1:2]>>([*:3]=[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "nitro neutral",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitro_neutral",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitro_neutral"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8:3]=[#7:1]-[#8:2]>>([*:3]=[*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "nitro to amine",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitro_to_amine",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitro_to_amine"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7:1](=[#8:2])-[#8:3]>>([*:1].[*:2].[*:3])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "nitro both",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitro_both",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitro_both"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8:3]=[#7:1]-[#8:2]>>([*:1].[*:2].[*:3])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "hydroxylamine",
+                "forest_pattern": "forest.pattern:NitrogenReduction/hydroxylamine",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "hydroxylamine"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7:1]-,:[#8:2]>>([*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "nitroso",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitroso",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitroso"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7D2:1]=[#8:2]>>([*:1].[*:2])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "nitro both any",
+                "forest_pattern": "forest.pattern:NitrogenReduction/nitro_both_any",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "nitro_both_any"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#7:1](~[#8:2])~[#8:3]>>([*:1].[*:2].[*:3])"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [
+              {
+                "xmet_label": "nitroaromatic reduction",
+                "why": "forest.rule:NitroaromaticReduction"
+              }
+            ],
+            "tagger_rules": [
+              {
+                "id": "rule:tag-nitro-reduction",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000511",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:tag-nitroaromatic-reduction",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000513",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-nitrogen-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000510",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-nitro-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000511",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "oxygen reduction",
+            "forest_rule": "forest.rule:OxygenReduction",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "carbonyl",
+                "forest_pattern": "forest.pattern:OxygenReduction/carbonyl",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "carbonyl"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 6
+                    },
+                    {
+                      "map": 2,
+                      "z": 7
+                    }
+                  ],
+                  "partners": [
+                    "C",
+                    "N"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8:1]=[#6,#7:2]>>[*:1]-[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "N-centered",
+                  "partner C",
+                  "partner N"
+                ],
+                "specialize_leaves": [
+                  "N-centered",
+                  "partner C",
+                  "partner N",
+                  "carbonyl reduction",
+                  "aldehyde reduction",
+                  "ketone reduction"
+                ],
+                "tagger_rules": [
+                  {
+                    "id": "rule:tag-carbonyl-reduction",
+                    "file": "xenobiotic.rules.yaml",
+                    "kind": "tag",
+                    "primary_emit": "xmet:0000524",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
+                  },
+                  {
+                    "id": "rule:struct-aldehyde-reduction",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000522",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
+                  },
+                  {
+                    "id": "rule:struct-ketone-reduction",
+                    "file": "structural.rules.yaml",
+                    "kind": "struct",
+                    "primary_emit": "xmet:0000521",
+                    "maps_relation": "specialize",
+                    "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
+                  }
+                ]
+              },
+              {
+                "xmet_label": "peroxide",
+                "forest_pattern": "forest.pattern:OxygenReduction/peroxide",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "peroxide"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#8:1]-[#8:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:tag-carbonyl-reduction",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "tag",
+                "primary_emit": "xmet:0000524",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
+              },
+              {
+                "id": "rule:struct-aldehyde-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000522",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
+              },
+              {
+                "id": "rule:struct-ketone-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000521",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
+              }
+            ]
+          },
+          {
+            "xmet_label": "reductive dehalogenation",
+            "forest_rule": "forest.rule:ReductiveDehalogenation",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "cleave",
+                "forest_pattern": "forest.pattern:ReductiveDehalogenation/cleave",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "cleave"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "reductive defluorination",
+                  "reductive dechlorination",
+                  "reductive debromination",
+                  "reductive deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "reductive defluorination",
+                  "reductive dechlorination",
+                  "reductive debromination",
+                  "reductive deiodination"
+                ]
+              },
+              {
+                "xmet_label": "alkene",
+                "forest_pattern": "forest.pattern:ReductiveDehalogenation/alkene",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "alkene"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 1,
+                      "z": 9
+                    },
+                    {
+                      "map": 1,
+                      "z": 17
+                    },
+                    {
+                      "map": 1,
+                      "z": 35
+                    },
+                    {
+                      "map": 1,
+                      "z": 53
+                    },
+                    {
+                      "map": 1,
+                      "z": 85
+                    }
+                  ],
+                  "partners": [
+                    "At",
+                    "Br",
+                    "Cl",
+                    "F",
+                    "I"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#9,#17,#35,#53,#85:1]-[#6:2]-[#6:3]>>[*:1].[*:2]=[*:3]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "reductive defluorination",
+                  "reductive dechlorination",
+                  "reductive debromination",
+                  "reductive deiodination"
+                ],
+                "specialize_leaves": [
+                  "halogen F",
+                  "halogen Cl",
+                  "halogen Br",
+                  "halogen I",
+                  "halogen At",
+                  "partner At",
+                  "partner Br",
+                  "partner Cl",
+                  "partner F",
+                  "partner I",
+                  "reductive defluorination",
+                  "reductive dechlorination",
+                  "reductive debromination",
+                  "reductive deiodination"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:struct-reductive-dehalogenation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000540",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-reductive-dechlorination",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000542",
+                "maps_relation": "specialize",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          },
+          {
+            "xmet_label": "sulfur reduction",
+            "forest_rule": "forest.rule:SulfurReduction",
+            "mapping": "skos:closeMatch",
+            "rule_kind": "single",
+            "site_kind": "atom",
+            "pair_note": null,
+            "patterns": [
+              {
+                "xmet_label": "sulfoxide",
+                "forest_pattern": "forest.pattern:SulfurReduction/sulfoxide",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "sulfoxide"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16:1]=[#8:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "partner O"
+                ]
+              },
+              {
+                "xmet_label": "disulfide",
+                "forest_pattern": "forest.pattern:SulfurReduction/disulfide",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "disulfide"
+                ],
+                "pattern_info": {
+                  "when_clauses": [],
+                  "partners": [
+                    "S"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16:1]-[#16:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "partner S"
+                ],
+                "specialize_leaves": [
+                  "partner S"
+                ]
+              },
+              {
+                "xmet_label": "thioether",
+                "forest_pattern": "forest.pattern:SulfurReduction/thioether",
+                "mapping": "skos:closeMatch",
+                "role": "pattern",
+                "swap_groups": [
+                  "thioether"
+                ],
+                "pattern_info": {
+                  "when_clauses": [
+                    {
+                      "map": 2,
+                      "z": 6
+                    },
+                    {
+                      "map": 2,
+                      "z": 8
+                    }
+                  ],
+                  "partners": [
+                    "C",
+                    "O"
+                  ],
+                  "sources": [
+                    "rxns"
+                  ],
+                  "example_smirks_or_smarts": [
+                    "[#16:1]-[#6,#8:2]>>[*:1].[*:2]"
+                  ]
+                },
+                "specialize_from_when": [
+                  "O-centered",
+                  "partner C",
+                  "partner O"
+                ],
+                "specialize_leaves": [
+                  "O-centered",
+                  "partner C",
+                  "partner O"
+                ]
+              }
+            ],
+            "pair_combinations": [],
+            "extend_leaves": [],
+            "tagger_rules": [
+              {
+                "id": "rule:forest-tag-sulfurreduction_disulfide",
+                "file": "xenobiotic.rules.yaml",
+                "kind": "other",
+                "primary_emit": null,
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-sulfur-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000530",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-disulfide-formation",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000135",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              },
+              {
+                "id": "rule:struct-disulfide-reduction",
+                "file": "structural.rules.yaml",
+                "kind": "struct",
+                "primary_emit": "xmet:0000532",
+                "maps_relation": "rule",
+                "maps_to_forest_pattern": null
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "also_peers_not_expanded_here": [
+      "conjugation (transfer vs adduct)",
+      "composite / multistep"
+    ]
+  },
+  "tagger_rules_summary": {
+    "sources": [
+      "crates/xenosite-tagger/data/rules/xenobiotic.rules.yaml",
+      "crates/xenosite-tagger/data/rules/structural.rules.yaml"
+    ],
+    "n_tagger_rules_total": 342,
+    "n_non_delta": 329,
+    "n_attached_to_phase1_rules": 124,
+    "n_unmapped_reactionish": 33,
+    "unmapped_sample": [
+      {
+        "id": "rule:tag-sulfo-reduction",
+        "kind": "tag"
+      },
+      {
+        "id": "rule:tag-cyanide-hydrolysis",
+        "kind": "tag"
+      },
+      {
+        "id": "rule:tag-detoxication",
+        "kind": "tag"
+      },
+      {
+        "id": "rule:tag-forms-reactive-conjugate",
+        "kind": "tag"
+      },
+      {
+        "id": "rule:struct-aldehyde-oxidation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-esterification",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-reduction",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-decarboxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-dehydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-halogenation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-dehalogenation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-carboxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-n-nitrosation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-denitrosation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-transesterification",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-dioxygenation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-desulfuration",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-sulfuration",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-oxidation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-lactone-hydrolysis",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-azo-reduction",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-cis-dihydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-alicyclic-hydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-alpha-hydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-reductive-defluorination",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-sulfoxidation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-thiol-oxidation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-urea-hydrolysis",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-primary-carbon-hydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-secondary-carbon-hydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-tertiary-carbon-hydroxylation",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-oxime-reduction",
+        "kind": "struct"
+      },
+      {
+        "id": "rule:struct-thiophene-epoxidation",
+        "kind": "struct"
+      }
+    ],
+    "by_forest_rule_counts": {
+      "Dealkylation": 19,
+      "Dehydration": 6,
+      "Dehydrogenation": 21,
+      "Dephosphorylation": 3,
+      "Epoxidation": 9,
+      "EpoxideOpening": 1,
+      "Hydrogenation": 6,
+      "Hydrolysis": 9,
+      "Hydroxylation": 17,
+      "NitrogenOxidation": 9,
+      "NitrogenReduction": 4,
+      "OxidativeDehalogenation": 4,
+      "OxygenReduction": 3,
+      "QuinoneFormation": 11,
+      "ReductiveDehalogenation": 2,
+      "SulfurOxidation": 7,
+      "SulfurReduction": 4
+    }
+  }
+}

@@ -1,0 +1,2337 @@
+scheme:
+  id: xmet:scheme
+  preferred_label: XMET xenobiotic metabolism reaction vocabulary
+  iri: https://w3id.org/xenosite/xmet/
+  definition: 'SKOS-first vocabulary for naming and tagging xenobiotic metabolism reactions. XMET separates reaction
+    chemistry from enzymes, species, evidence, publications, database records, and model runs. Site-localized display
+    names are generated from reaction terms plus atom/bond site records outside the ontology.
+
+    '
+  design_rules:
+  - Reaction classes must not be named by enzyme family.
+  - Phase I and Phase II are disposition-stage tags, not hierarchy roots.
+  - Bioactivation is not a generic parent reaction class; use scoped activation assertions.
+  - Reactive-product labels describe chemical potential, not proven toxicity.
+  - Use external ontologies for evidence/provenance/entity grounding whenever practical.
+  - Use parents only for preferred hierarchy. Put sometimes-true or model-suggested relationships in tag_suggestions
+    or mapping_hints.
+  - A tag_suggestion is never a hard inference; downstream software must preserve its confidence/source.
+  - XenoSite-Forest rule-to-term correspondences belong in sidecar SSSOM mapping files, not as preferred ontology
+    hierarchy.
+  - Forest rule IDs and SMARTS can suggest labels, but they are evidence/mapping sources rather than public reaction-class
+    concepts.
+  - Distinguish Phase II metabolic transfer conjugation from reactive-species capture or macromolecular adduct formation;
+    do not infer detoxication from conjugation alone.
+  - Treat time-dependent inhibition as a warning/effect assertion and extraction cue; do not infer a specific covalent
+    adduct or reactive metabolite without supporting evidence.
+  - Represent covalent inhibitors and suicide inhibitors as effect/assertion categories and extraction cues; use
+    reaction/product evidence to connect them to specific adduct chemistry.
+  - Do not repurpose existing XMET IDs when a concept meaning narrows or shifts; mint a new ID and optionally deprecate
+    the old broader concept for new annotation.
+external_reuse_policy:
+  provenance:
+    use:
+    - PROV-O
+    - DCAT
+    - Dublin Core Terms
+    note: Source datasets, file versions, row fingerprints, model runs, and import pipelines belong in XenoBase
+      assertion records.
+  evidence:
+    use:
+    - ECO
+    - OBI
+    note: Evidence type, confidence, assay details, and curation state are assertion properties, not reaction ontology
+      parents.
+  entities:
+    chemicals:
+      use:
+      - PubChem CID
+      - ChEBI
+      - InChIKey
+      - DrugBank when licensed/available
+      - EPA CompTox DTXSID when relevant
+    genes_proteins:
+      use:
+      - HGNC
+      - UniProt
+      - NCBI Gene
+    species:
+      use:
+      - NCBI Taxonomy
+    anatomy_and_matrices:
+      use:
+      - UBERON
+      - BTO
+      - OBI
+      - NCIT
+  deferred_local_spines:
+  - rule provenance
+  - publication evidence
+  - product observation status
+  - detailed source/database versioning
+  - exact enzyme identity namespace
+predicates:
+  broaderByReactionClass:
+    subproperty_of: skos:broader
+    inverse: narrowerByReactionClass
+    definition: Parent relation inside the chemist-facing reaction class hierarchy.
+  broaderByProductFamily:
+    subproperty_of: skos:broader
+    inverse: narrowerByProductFamily
+    definition: Parent relation for product-family concepts.
+  broaderByStructuralLocus:
+    subproperty_of: skos:broader
+    inverse: narrowerByStructuralLocus
+    definition: Parent relation for structural site/locus classes.
+  hasDispositionStage:
+    definition: Conventional ADME/metabolism stage tag. Use as classification metadata, not as a chemical superclass.
+  hasBiologicalEffect:
+    definition: Assertion-level effect/outcome facet, such as pharmacologic activation, reactive-metabolite activation,
+      or detoxication. Do not use as a hard reaction-class parent.
+  nlpCueFor:
+    definition: Text-mining task for which the term is a cue label.
+  suggestsReactiveProductPotential:
+    definition: 'Soft tag suggestion: product class or path often has this reactive-product potential, but this
+      is not a hard inference.'
+  mappingHint:
+    definition: Non-inferential relationship used to suggest labels or external mappings; not a hard semantic assertion.
+concept_schemes:
+  reaction_class:
+    id: xmet:reaction_class_scheme
+    preferred_label: reaction class scheme
+    definition: Chemist-facing hierarchy of reaction transformations.
+  disposition_stage:
+    id: xmet:disposition_stage_scheme
+    preferred_label: disposition stage scheme
+    definition: Small controlled set for Phase I, Phase II, transport, and elimination framing.
+  biological_effect:
+    id: xmet:biological_effect_scheme
+    preferred_label: biological effect scheme
+    definition: Scoped assertion terms for biological or pharmacologic consequences of metabolism. These are not
+      reaction-class parents.
+  reactive_product_potential:
+    id: xmet:reactive_product_potential_scheme
+    preferred_label: reactive product potential scheme
+    definition: Tags for possible electrophilic, radical, covalent-binding, or trapping-prone product chemistry.
+  product_family:
+    id: xmet:product_family_scheme
+    preferred_label: product family scheme
+    definition: Product classes useful for med-chem reaction naming and text mining.
+  structural_locus:
+    id: xmet:structural_locus_scheme
+    preferred_label: structural locus scheme
+    definition: Structural location or motif where a transformation occurs.
+  pathway_role:
+    id: xmet:pathway_role_scheme
+    preferred_label: pathway role scheme
+    definition: Role of a step in a multi-step path from parent to product.
+  text_mining:
+    id: xmet:text_mining_scheme
+    preferred_label: text-mining cue scheme
+    definition: Cue labels for spaCy/LLM extraction of metabolism statements.
+  biological_context:
+    id: xmet:biological_context_scheme
+    preferred_label: biological context cue scheme
+    definition: Enzyme, species, matrix, tissue, and assay terms for extraction and grounding. Not reaction names.
+concepts:
+- id: xmet:0000000
+  pref_label: xenobiotic biotransformation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Chemical alteration of an exogenous compound in a biological system.
+  synonyms:
+  - xenobiotic metabolism
+  - drug metabolism
+  - biotransformation
+- id: xmet:0000001
+  pref_label: Phase I metabolism
+  in_scheme:
+  - xmet:disposition_stage_scheme
+  definition: Conventional disposition-stage tag for functionalization reactions such as oxidation, reduction, and
+    hydrolysis.
+  synonyms:
+  - phase I
+  - phase 1
+  - functionalization phase
+- id: xmet:0000002
+  pref_label: Phase II metabolism
+  in_scheme:
+  - xmet:disposition_stage_scheme
+  definition: Conventional disposition-stage tag for conjugation reactions with endogenous groups.
+  synonyms:
+  - phase II
+  - phase 2
+  - conjugation phase
+- id: xmet:0000003
+  pref_label: Phase III transport
+  in_scheme:
+  - xmet:disposition_stage_scheme
+  definition: Transporter-mediated disposition. Included for text mining and context, not as a reaction class.
+  synonyms:
+  - phase III
+  - phase 3
+  - transport phase
+- id: xmet:0000004
+  pref_label: elimination or excretion
+  in_scheme:
+  - xmet:disposition_stage_scheme
+  definition: Removal of xenobiotic or metabolite through urine, bile, feces, breath, or related routes.
+  synonyms:
+  - excretion
+  - elimination
+- id: xmet:0003000
+  pref_label: metabolic activation language
+  in_scheme:
+  - xmet:biological_effect_scheme
+  - xmet:text_mining_scheme
+  definition: Ambiguous text cue indicating that metabolism increases some form of activity or reactivity. Do not
+    use as a final reaction label without a scoped subtype.
+  synonyms:
+  - bioactivation
+  - metabolic activation
+  - activated by metabolism
+  annotation_guidance: Prefer a narrower biological effect when text or structure permits.
+  preferred_spine: biological_effect
+  parents:
+  - xmet:0002999
+- id: xmet:0003002
+  pref_label: reactive-metabolite activation
+  in_scheme:
+  - xmet:biological_effect_scheme
+  - xmet:text_mining_scheme
+  definition: Metabolic formation of a product with plausible or observed chemical reactivity, trapping, covalent-binding,
+    or toxicity relevance.
+  parents:
+  - xmet:0003000
+  synonyms:
+  - bioactivated to a reactive metabolite
+  - reactive metabolite formation
+  - toxic bioactivation
+  preferred_spine: biological_effect
+- id: xmet:0003003
+  pref_label: pharmacologic metabolic activation
+  in_scheme:
+  - xmet:biological_effect_scheme
+  - xmet:text_mining_scheme
+  definition: Metabolic formation of a pharmacologically active or more active metabolite, including prodrug activation.
+  parents:
+  - xmet:0003000
+  synonyms:
+  - active metabolite formation
+  - prodrug activation
+  - converted to active metabolite
+  preferred_spine: biological_effect
+- id: xmet:0003004
+  pref_label: detoxication assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  - xmet:text_mining_scheme
+  definition: Assertion that metabolism reduces chemical reactivity, toxicity, or exposure. This is context dependent
+    and belongs on assertions.
+  synonyms:
+  - detoxication
+  - detoxification
+  - bioinactivation
+  preferred_spine: biological_effect
+  parents:
+  - xmet:0002999
+- id: xmet:0003005
+  pref_label: metabolic activation effect unspecified
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Metabolic activation is mentioned, but the text does not distinguish pharmacologic activation from
+    reactive-metabolite activation.
+  preferred_spine: biological_effect
+  parents:
+  - xmet:0002999
+- id: xmet:1100000
+  pref_label: reaction class
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Enzyme-independent chemical transformation class.
+  parents:
+  - xmet:0000000
+- id: xmet:0000020
+  pref_label: oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Reaction class involving net oxidation or oxygen insertion.
+  parents:
+  - xmet:0000005
+  hasDispositionStage:
+  - xmet:0000001
+- id: xmet:0000014
+  pref_label: reduction
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Reaction class involving net reduction, hydrogenation, or reductive cleavage.
+  parents:
+  - xmet:0000005
+  hasDispositionStage:
+  - xmet:0000001
+- id: xmet:0000013
+  pref_label: hydrolysis
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Bond cleavage by water addition or hydrolytic opening.
+  parents:
+  - xmet:0000006
+  hasDispositionStage:
+  - xmet:0000001
+- id: xmet:0000024
+  pref_label: conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Formation of a covalent conjugate or adduct. Use narrower branches to distinguish metabolic transfer
+    conjugation from reactive-species capture or macromolecular adduct formation.
+  parents:
+  - xmet:0000007
+  hasDispositionStage:
+  - xmet:0000002
+  annotation_guidance: Do not infer detoxication from conjugation alone. Phase II transfer conjugation and adduct-forming
+    conjugation are separate branches.
+- id: xmet:0000012
+  pref_label: dehydrogenation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Removal of hydrogen atoms to form a carbonyl, iminium, unsaturated bond, aromatic system, or quinoid
+    system.
+  parents:
+  - xmet:0000023
+  hasDispositionStage:
+  - xmet:0000001
+- id: xmet:0000100
+  pref_label: hydroxylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Addition or replacement leading to a hydroxylated product.
+  parents:
+  - xmet:0000021
+  hasDispositionStage:
+  - xmet:0000001
+- id: xmet:0000101
+  pref_label: aromatic hydroxylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Hydroxylation on an aromatic or heteroaromatic system.
+  parents:
+  - xmet:0000100
+  mapping_hints:
+  - predicate: relatedStructuralLocus
+    object: xmet:1600013
+    certainty: usually_true
+- id: xmet:0000102
+  pref_label: aliphatic hydroxylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Hydroxylation on a non-aromatic carbon site.
+  parents:
+  - xmet:0000100
+  mapping_hints:
+  - predicate: relatedStructuralLocus
+    object: xmet:1600300
+    certainty: usually_true
+- id: xmet:0000110
+  pref_label: epoxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation of an alkene or aromatic system to an epoxide/arene oxide product.
+  parents:
+  - xmet:0000021
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500101
+    certainty: context_dependent
+- id: xmet:0000112
+  pref_label: arene oxide formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Formation of an arene oxide intermediate or product from an aromatic ring.
+  parents:
+  - xmet:0000110
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500101
+    certainty: context_dependent
+- id: xmet:0000120
+  pref_label: N-oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation at nitrogen to N-oxide, hydroxylamine, nitroso, or related nitrogen-oxygen product.
+  parents:
+  - xmet:0000021
+- id: xmet:0000130
+  pref_label: S-oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation at sulfur to sulfoxide, sulfone, S-oxide, or related sulfur-oxygen product.
+  parents:
+  - xmet:0000021
+- id: xmet:0000133
+  pref_label: thiophene S-oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation of thiophene or related sulfur heteroaromatic systems; may perturb aromaticity and yield
+    trapping-prone products.
+  parents:
+  - xmet:0000130
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0000200
+  pref_label: dealkylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Removal of an alkyl group from N, O, S, or C, often after alpha-carbon oxidation.
+  parents:
+  - xmet:0000022
+  hasDispositionStage:
+  - xmet:0000001
+- id: xmet:0000201
+  pref_label: N-dealkylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000200
+  definition: Dealkylation at nitrogen.
+  synonyms:
+  - oxidative N-dealkylation
+- id: xmet:0000202
+  pref_label: O-dealkylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000200
+  definition: Dealkylation at oxygen, commonly aryl or alkyl ether cleavage.
+  synonyms:
+  - oxidative O-dealkylation
+- id: xmet:0000203
+  pref_label: S-dealkylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000200
+  definition: Dealkylation at sulfur.
+- id: xmet:0000205
+  pref_label: N-demethylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000201
+  definition: N-dealkylation removing a methyl group, often with formaldehyde-equivalent coproduct.
+  synonyms:
+  - oxidative N-demethylation
+- id: xmet:0000209
+  pref_label: O-demethylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000202
+  definition: O-dealkylation removing a methyl group.
+  synonyms:
+  - aryl methyl ether cleavage
+- id: xmet:0000210
+  pref_label: oxidative dehalogenation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidative replacement or loss of halogen from a xenobiotic.
+  parents:
+  - xmet:0000022
+- id: xmet:0000300
+  pref_label: quinoid formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Formation of a quinone, quinone imine, quinone methide, or related quinoid pi-system. This term does
+    not assert toxicity by itself.
+  parents:
+  - xmet:0000012
+  synonyms:
+  - quinone formation
+  - quinone-like formation
+  - quinoid metabolite formation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0000301
+  pref_label: ortho-quinone formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000300
+  definition: Formation of an ortho-quinone product or product substructure.
+- id: xmet:0000302
+  pref_label: para-quinone formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000300
+  definition: Formation of a para-quinone product or product substructure.
+- id: xmet:0000303
+  pref_label: quinone imine formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000300
+  definition: Formation of a quinone imine product or product substructure. Use reactive-product-potential tags
+    for reactivity; do not use broad bioactivation as the parent.
+  synonyms:
+  - quinone-imine formation
+  - iminoquinone formation
+  - NAPQI-type formation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0000304
+  pref_label: quinone methide formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000300
+  definition: Formation of a quinone methide product or product substructure.
+  synonyms:
+  - quinone-methide formation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0000305
+  pref_label: iminium ion formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000012
+  definition: Dehydrogenation or oxidation yielding an iminium product or intermediate.
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0000310
+  pref_label: alcohol oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000012
+  definition: Oxidation/dehydrogenation of alcohol to aldehyde, ketone, or further oxidized product.
+- id: xmet:0000315
+  pref_label: aromatization
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000012
+  definition: Formation or restoration of an aromatic system.
+- id: xmet:0000400
+  pref_label: epoxide opening
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000013
+  definition: Hydrolytic or nucleophilic opening of an epoxide or arene oxide.
+- id: xmet:0000401
+  pref_label: ester hydrolysis
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000013
+  definition: Hydrolysis of an ester or lactone bond.
+- id: xmet:0000402
+  pref_label: amide hydrolysis
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000013
+  definition: Hydrolysis of an amide or lactam bond.
+- id: xmet:0000411
+  pref_label: nitrile hydrolysis
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000013
+  definition: Hydrolysis of a nitrile/cyano group.
+  synonyms:
+  - cyanide hydrolysis
+- id: xmet:0000412
+  pref_label: azo cleavage
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000014
+  definition: Cleavage/reduction of an azo linkage.
+  synonyms:
+  - azo reduction
+  - azo splitting
+- id: xmet:0000500
+  pref_label: hydrogenation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000014
+  definition: Addition of hydrogen across unsaturated bonds or reduction of pi bonds.
+- id: xmet:0000511
+  pref_label: nitro reduction
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000014
+  definition: Reduction of a nitro group toward nitroso, hydroxylamine, or amine products.
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0000550
+  pref_label: dehydration
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0000008
+  definition: Loss of water to form unsaturation or rearranged product.
+- id: xmet:0001000
+  pref_label: glucuronidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001008
+  definition: Conjugation with glucuronic acid.
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:0001004
+  pref_label: acyl glucuronidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001000
+  definition: Glucuronidation of a carboxylic acid to form an acyl glucuronide.
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500102
+    certainty: context_dependent
+- id: xmet:0001010
+  pref_label: sulfation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001009
+  definition: Conjugation with sulfate.
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:0001020
+  pref_label: acetylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001009
+  definition: Conjugation or transfer of an acetyl group.
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:0001030
+  pref_label: glutathione conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001017
+  definition: Conjugation with glutathione, often reflecting electrophile capture. May be GST-mediated or nonenzymatic;
+    enzyme mediation belongs in biological context, not the reaction-class parent.
+  hasDispositionStage:
+  - xmet:0000002
+  synonyms:
+  - GSH adduct formation
+  - GSH conjugation
+  - GSH trapping
+  - glutathionation
+  - glutathione adduct formation
+  - glutathione trapping
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500103
+    certainty: context_dependent
+  annotation_guidance: Treat GSH conjugation as a reactive-species warning cue unless evidence supports a narrower
+    detoxication assertion.
+  mass_spectrometry_hints: &id001
+    status: evidence_hint_not_required_or_sufficient
+    common_nominal_parent_to_product_shift: about +305 Da for many oxidative GSH adducts relative to the reduced
+      parent; direct addition to an already formed electrophile may appear closer to +307 Da depending on reaction
+      stoichiometry
+    diagnostic_neutral_losses:
+    - 129 Da is common for GSH conjugates; this is probably the number meant by "127"
+    - 75 Da glycine loss and other pathway-dependent losses may also occur
+    diagnostic_product_ions:
+    - m/z 272
+    - m/z 254
+    - m/z 179
+    - m/z 162
+    - m/z 130, depending on ionization mode and instrument method
+    curation_note: Use mass-shift and MS/MS clues to prioritize candidate GSH adducts, but confirm with formula,
+      isotope pattern, fragments, retention, and structure/path consistency.
+- id: xmet:0001031
+  pref_label: Michael glutathione conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001030
+  definition: Glutathione addition to a Michael acceptor or conjugated electrophile.
+- id: xmet:0001032
+  pref_label: epoxide glutathione conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001030
+  definition: Glutathione conjugation by epoxide opening.
+- id: xmet:0001036
+  pref_label: quinone glutathione conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001030
+  definition: Glutathione conjugation to a quinone, quinone imine, quinone methide, or related quinoid electrophile.
+- id: xmet:0001040
+  pref_label: methylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001009
+  definition: Transfer or conjugation of a methyl group.
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:0001050
+  pref_label: amino acid conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001016
+  definition: Conjugation with amino acids such as glycine, taurine, glutamine, or serine.
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:0001060
+  pref_label: glycosylation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  parents:
+  - xmet:0001008
+  definition: Conjugation with a sugar moiety other than glucuronide where specifically known.
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:2500000
+  pref_label: metabolite product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product classes useful for metabolite naming and extraction.
+- id: xmet:1500000
+  pref_label: potentially reactive product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product families often associated with electrophilicity, trapping, covalent binding, radical chemistry,
+    or instability. This does not prove toxicity.
+  parents:
+  - xmet:2500000
+  synonyms:
+  - reactive metabolite family
+  - trapping-prone product family
+- id: xmet:1500010
+  pref_label: quinone product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500100
+  definition: Product containing a quinone substructure.
+- id: xmet:1500011
+  pref_label: quinone imine product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500100
+  definition: Product containing a quinone imine substructure.
+- id: xmet:1500012
+  pref_label: quinone methide product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500100
+  definition: Product containing a quinone methide substructure.
+- id: xmet:1500014
+  pref_label: iminium product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500103
+  definition: Product or intermediate containing an iminium center.
+- id: xmet:1500015
+  pref_label: acyl glucuronide product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500102
+  definition: Acyl glucuronide conjugate product.
+- id: xmet:1500016
+  pref_label: epoxide or arene oxide product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500101
+  definition: Product containing epoxide or arene oxide functionality.
+- id: xmet:1500017
+  pref_label: nitroso or hydroxylamine product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500103
+  definition: Product containing nitroso or hydroxylamine functionality.
+- id: xmet:1500018
+  pref_label: aldehyde product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500110
+  definition: Product containing aldehyde functionality.
+- id: xmet:1500020
+  pref_label: glucuronide conjugate
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500122
+  definition: Product containing a glucuronide conjugate moiety.
+- id: xmet:1500021
+  pref_label: sulfate conjugate
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500122
+  definition: Product containing a sulfate conjugate moiety.
+- id: xmet:1500022
+  pref_label: glutathione conjugate
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500121
+  definition: Product containing a glutathione conjugate moiety.
+  synonyms:
+  - GSH adduct
+  - GSH conjugate
+  - glutathione adduct
+  mass_spectrometry_hints: *id001
+- id: xmet:1500023
+  pref_label: mercapturic acid product
+  in_scheme:
+  - xmet:product_family_scheme
+  parents:
+  - xmet:1500121
+  definition: N-acetylcysteine-derived product downstream of glutathione conjugation.
+- id: xmet:7500000
+  pref_label: reactive product potential
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Assertion/facet describing possible chemical reactivity of a product or step.
+- id: xmet:7500100
+  pref_label: possibly electrophilic reactive product
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  parents:
+  - xmet:7500010
+  definition: Product class is plausibly electrophilic or trapping-prone based on structure or reaction class, but
+    reactivity is not experimentally proven by this tag alone.
+  synonyms:
+  - possibly electrophilic
+  - possible reactive metabolite
+  - GSH-trappable potential
+- id: xmet:7500101
+  pref_label: possible epoxide-like reactive product
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  parents:
+  - xmet:7500100
+  definition: Product or intermediate may react through epoxide/arene oxide chemistry.
+- id: xmet:7500102
+  pref_label: possible acyl-transfer reactive conjugate
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  parents:
+  - xmet:7500100
+  definition: Product may undergo acyl transfer or covalent adduct formation, as with some acyl glucuronides.
+- id: xmet:7500103
+  pref_label: electrophile capture or quenching step
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  parents:
+  - xmet:7500011
+  definition: Reaction likely captures or quenches an electrophile, such as glutathione conjugation.
+- id: xmet:7500104
+  pref_label: reactivity not asserted
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  parents:
+  - xmet:7500012
+  definition: No reactive-product potential is asserted.
+- id: xmet:1600000
+  pref_label: structural locus
+  in_scheme:
+  - xmet:structural_locus_scheme
+  definition: Structural site or motif where the transformation is localized.
+- id: xmet:1600013
+  pref_label: aromatic site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600001
+  definition: Transformation localized to aromatic or heteroaromatic atom(s).
+- id: xmet:1600101
+  pref_label: benzylic carbon site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600001
+  definition: Transformation localized to carbon adjacent to an aromatic ring.
+- id: xmet:1600102
+  pref_label: allylic carbon site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600001
+  definition: Transformation localized to carbon adjacent to an alkene.
+- id: xmet:1600103
+  pref_label: heteroatom alpha carbon site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600001
+  definition: Transformation localized to carbon alpha to N, O, S, or other heteroatom.
+- id: xmet:1600104
+  pref_label: nitrogen site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600002
+  definition: Transformation localized to nitrogen.
+- id: xmet:1600105
+  pref_label: oxygen site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600002
+  definition: Transformation localized to oxygen.
+- id: xmet:1600106
+  pref_label: sulfur site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600002
+  definition: Transformation localized to sulfur.
+- id: xmet:1600107
+  pref_label: carboxylate or acyl site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600003
+  definition: Transformation localized to carboxylate, acyl, ester, amide, or related carbonyl center.
+- id: xmet:1600300
+  pref_label: aliphatic carbon site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  parents:
+  - xmet:1600001
+  definition: Transformation localized to non-aromatic carbon.
+- id: xmet:7900000
+  pref_label: pathway-step role
+  in_scheme:
+  - xmet:pathway_role_scheme
+  definition: Role of a transformation in a multi-step path from parent to product.
+- id: xmet:7900001
+  pref_label: direct one-step transformation
+  in_scheme:
+  - xmet:pathway_role_scheme
+  parents:
+  - xmet:7900010
+  definition: Product arises by one enumerated transformation from the parent.
+- id: xmet:7900002
+  pref_label: multi-step pathway member
+  in_scheme:
+  - xmet:pathway_role_scheme
+  parents:
+  - xmet:7900010
+  definition: Step is part of a multi-step path to the observed or predicted product.
+- id: xmet:7900003
+  pref_label: preparatory intermediate step
+  in_scheme:
+  - xmet:pathway_role_scheme
+  parents:
+  - xmet:7900011
+  definition: Step enables a later defining transformation, such as hydroxylation before quinoid formation.
+- id: xmet:7900004
+  pref_label: terminal product-forming step
+  in_scheme:
+  - xmet:pathway_role_scheme
+  parents:
+  - xmet:7900011
+  definition: Last enumerated transformation yielding the reported or predicted product.
+- id: xmet:3000000
+  pref_label: metabolism text-mining cue
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Label used to support NLP extraction. These concepts cue assertions and are not necessarily reaction
+    names.
+- id: xmet:3000010
+  pref_label: metabolite identification statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000001
+  definition: Text states or implies that a metabolite was identified, detected, characterized, or proposed.
+  synonyms:
+  - metabolite identified
+  - metabolite detected
+  - metabolite observed
+  - putative metabolite
+- id: xmet:3000011
+  pref_label: metabolic pathway statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000001
+  definition: Text describes a pathway or sequence of metabolic transformations.
+  synonyms:
+  - metabolic pathway
+  - metabolized to
+  - converted to
+  - transformed to
+- id: xmet:3000012
+  pref_label: prodrug statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000002
+  definition: Text states or implies that a parent compound is a prodrug or requires metabolic activation.
+  synonyms:
+  - prodrug
+  - pro-drug
+  - bioprecursor
+  - activated in vivo
+  nlpCueFor:
+  - prodrug_extraction
+- id: xmet:3000013
+  pref_label: active metabolite statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000002
+  definition: Text states or implies that a metabolite is pharmacologically active.
+  synonyms:
+  - active metabolite
+  - pharmacologically active metabolite
+  - more active metabolite
+  nlpCueFor:
+  - active_metabolite_extraction
+- id: xmet:3000014
+  pref_label: reactive metabolite statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000002
+  definition: Text states or implies reactive metabolite, trapping, covalent binding, or toxicity-relevant chemical
+    reactivity.
+  synonyms:
+  - DNA adduct
+  - GSH adduct
+  - GSH-trapped
+  - covalent binding
+  - cyanide adduct
+  - cyanide trapping adduct
+  - cyanide-trapped adduct
+  - glutathione adduct
+  - protein adduct
+  - reactive metabolite
+  nlpCueFor:
+  - reactive_metabolite_extraction
+- id: xmet:3000015
+  pref_label: enzyme attribution statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000003
+  definition: Text attributes formation, clearance, or reaction to an enzyme, isoform, inhibitor, inducer, or recombinant
+    system.
+  synonyms:
+  - mediated by
+  - catalyzed by
+  - formed by
+  - CYP-mediated
+  - UGT-mediated
+- id: xmet:3000016
+  pref_label: experimental system statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  parents:
+  - xmet:3000003
+  definition: Text identifies an in vitro, ex vivo, in vivo, recombinant, microsomal, cellular, or matrix context.
+  synonyms:
+  - incubated with
+  - microsomes
+  - hepatocytes
+  - recombinant enzyme
+  - plasma
+  - urine
+  - bile
+- id: xmet:2100000
+  pref_label: biological context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Contextual term for text mining and entity grounding. These terms must not be used as reaction class
+    parents.
+- id: xmet:2100010
+  pref_label: enzyme family mention cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100001
+  definition: Generic text-mining cue for an enzyme-family mention. Ground the family to an HGNC/UniProt/NCBI Gene
+    slim rather than minting a local XMET enzyme concept.
+  synonyms:
+  - enzyme family
+  - CYP family
+  - UGT family
+- id: xmet:2100011
+  pref_label: enzyme isoform mention cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100001
+  definition: Generic text-mining cue for an enzyme isoform, gene, or protein mention. Ground exact symbols to HGNC,
+    UniProt, or NCBI Gene.
+  synonyms:
+  - enzyme isoform
+  - gene symbol
+  - protein mention
+- id: xmet:2100012
+  pref_label: species cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100002
+  definition: Species context mentioned in a metabolism statement.
+- id: xmet:2100013
+  pref_label: tissue or organ cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100002
+  definition: Tissue or organ context mentioned in a metabolism statement.
+- id: xmet:2100014
+  pref_label: biological matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100002
+  definition: Biological fluid, excreta, incubation fraction, or analytical matrix.
+- id: xmet:2100015
+  pref_label: experimental system cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100003
+  definition: Experimental system used to observe, generate, or infer metabolism.
+- id: xmet:2100300
+  pref_label: human context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100308
+  definition: Human species context; ground to NCBI Taxonomy 9606.
+  external_grounding:
+  - NCBITaxon:9606
+  synonyms:
+  - human
+  - humans
+  - Homo sapiens
+- id: xmet:2100301
+  pref_label: rat context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100309
+  definition: Rat species context; ground more specifically when strain/species is known.
+  synonyms:
+  - rat
+  - rats
+  - Rattus
+- id: xmet:2100302
+  pref_label: mouse context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100309
+  definition: Mouse species context.
+  synonyms:
+  - mouse
+  - mice
+  - Mus musculus
+- id: xmet:2100303
+  pref_label: dog context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100310
+  synonyms:
+  - dog
+  - canine
+  - beagle
+  definition: Text-mining cue for dog context cue.
+- id: xmet:2100304
+  pref_label: nonhuman primate context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100308
+  synonyms:
+  - monkey
+  - cynomolgus monkey
+  - rhesus monkey
+  - NHP
+  - non-human primate
+  definition: Text-mining cue for nonhuman primate context cue.
+- id: xmet:2100500
+  pref_label: plasma matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100520
+  synonyms:
+  - plasma
+  definition: Text-mining cue for plasma matrix cue.
+- id: xmet:2100501
+  pref_label: serum matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100520
+  synonyms:
+  - serum
+  definition: Text-mining cue for serum matrix cue.
+- id: xmet:2100502
+  pref_label: blood matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100520
+  synonyms:
+  - blood
+  - whole blood
+  definition: Text-mining cue for blood matrix cue.
+- id: xmet:2100503
+  pref_label: urine matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100521
+  synonyms:
+  - urine
+  - urinary
+  definition: Text-mining cue for urine matrix cue.
+- id: xmet:2100504
+  pref_label: bile matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100521
+  synonyms:
+  - bile
+  - biliary
+  definition: Text-mining cue for bile matrix cue.
+- id: xmet:2100505
+  pref_label: feces matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100521
+  synonyms:
+  - feces
+  - faeces
+  - fecal
+  - faecal
+  definition: Text-mining cue for feces matrix cue.
+- id: xmet:2100600
+  pref_label: liver microsome system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100619
+  definition: Microsomal incubation system; species should be captured separately.
+  synonyms:
+  - liver microsomes
+  - microsomes
+  - HLM
+  - RLM
+  - MLM
+- id: xmet:2100601
+  pref_label: S9 fraction system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100619
+  synonyms:
+  - S9
+  - S9 fraction
+  - liver S9
+  definition: Text-mining cue for S9 fraction system.
+- id: xmet:2100602
+  pref_label: cytosol system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100619
+  synonyms:
+  - cytosol
+  - cytosolic fraction
+  definition: Text-mining cue for cytosol system.
+- id: xmet:2100603
+  pref_label: hepatocyte system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100620
+  synonyms:
+  - hepatocyte
+  - hepatocytes
+  - primary hepatocytes
+  - plated hepatocytes
+  - suspended hepatocytes
+  definition: Text-mining cue for hepatocyte system.
+- id: xmet:2100604
+  pref_label: recombinant enzyme system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100621
+  synonyms:
+  - recombinant enzyme
+  - recombinant CYP
+  - recombinant UGT
+  definition: Text-mining cue for recombinant enzyme system.
+- id: xmet:2100605
+  pref_label: Supersomes or Baculosomes system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100621
+  synonyms:
+  - Supersomes
+  - Baculosomes
+  - baculovirus-expressed enzyme
+  definition: Text-mining cue for Supersomes or Baculosomes system.
+- id: xmet:2100606
+  pref_label: purified enzyme system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100621
+  synonyms:
+  - purified enzyme
+  - isolated enzyme
+  definition: Text-mining cue for purified enzyme system.
+- id: xmet:2100607
+  pref_label: gut microbiome incubation system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100620
+  synonyms:
+  - gut microbiome
+  - intestinal microbiota
+  - fecal incubation
+  - anaerobic fecal incubation
+  definition: Text-mining cue for gut microbiome incubation system.
+- id: xmet:2100608
+  pref_label: in vivo system
+  in_scheme:
+  - xmet:biological_context_scheme
+  parents:
+  - xmet:2100622
+  synonyms:
+  - in vivo
+  - administered to
+  - dosed to
+  definition: Text-mining cue for in vivo system.
+- id: xmet:0000005
+  pref_label: redox reaction
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Reaction class involving net oxidation or reduction.
+  parents:
+  - xmet:1100000
+- id: xmet:0000006
+  pref_label: bond cleavage reaction
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Reaction class whose defining edit cleaves a bond.
+  parents:
+  - xmet:1100000
+- id: xmet:0000007
+  pref_label: group transfer or conjugation reaction
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Reaction class whose defining edit transfers or attaches a group.
+  parents:
+  - xmet:1100000
+- id: xmet:0000008
+  pref_label: elimination reaction
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Reaction class involving loss of a small molecule or group to form unsaturation or rearranged product.
+  parents:
+  - xmet:1100000
+- id: xmet:1500100
+  pref_label: quinoid product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Potentially reactive product family containing quinone, quinone imine, quinone methide, or related
+    quinoid systems.
+  parents:
+  - xmet:1500000
+- id: xmet:1500101
+  pref_label: epoxide-like product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Potentially reactive product family containing epoxide or arene oxide functionality.
+  parents:
+  - xmet:1500000
+- id: xmet:1500102
+  pref_label: reactive conjugate product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Conjugate product family with possible acyl-transfer, electrophilic, or trapping-prone chemistry.
+  parents:
+  - xmet:1500000
+- id: xmet:1500103
+  pref_label: nitrogen-centered reactive product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Potentially reactive product family centered on iminium, nitroso, hydroxylamine, nitrenium, or related
+    nitrogen chemistry.
+  parents:
+  - xmet:1500000
+- id: xmet:1600001
+  pref_label: carbon site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  definition: Structural locus centered on carbon.
+  parents:
+  - xmet:1600000
+- id: xmet:1600002
+  pref_label: heteroatom site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  definition: Structural locus centered on nitrogen, oxygen, sulfur, or another heteroatom.
+  parents:
+  - xmet:1600000
+- id: xmet:1600003
+  pref_label: carbonyl or acyl site
+  in_scheme:
+  - xmet:structural_locus_scheme
+  definition: Structural locus centered on carbonyl, carboxylate, acyl, ester, amide, or related functionality.
+  parents:
+  - xmet:1600000
+- id: xmet:2100016
+  pref_label: specific enzyme cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Generic text-mining cue for a specific enzyme isoform, gene, or protein mention. Ground exact symbols
+    to HGNC, UniProt, or NCBI Gene.
+  parents:
+  - xmet:2100001
+  synonyms:
+  - specific enzyme
+  - enzyme isoform
+  - gene symbol
+  - protein mention
+- id: xmet:1500110
+  pref_label: carbonyl product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product family containing aldehyde, ketone, carboxyl, acyl, or related carbonyl-containing metabolites.
+  parents:
+  - xmet:2500000
+- id: xmet:1500120
+  pref_label: conjugated product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product family formed by addition or transfer of endogenous conjugating groups.
+  parents:
+  - xmet:2500000
+  synonyms:
+  - phase II conjugate product family
+- id: xmet:1500121
+  pref_label: glutathione-derived conjugate product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Conjugated product family containing glutathione adducts and downstream cysteine or mercapturic acid
+    products.
+  parents:
+  - xmet:1500123
+  synonyms:
+  - GSH-derived conjugate product family
+- id: xmet:7500010
+  pref_label: intrinsic reactive-product potential
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Soft assertion that a product class or path has structural features associated with intrinsic chemical
+    reactivity.
+  parents:
+  - xmet:7500000
+- id: xmet:7500011
+  pref_label: reactive-product capture or quenching potential
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Soft assertion that a reaction or product is associated with trapping, capture, conjugation, or quenching
+    of a reactive species.
+  parents:
+  - xmet:7500000
+- id: xmet:7500012
+  pref_label: reactivity assertion status
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Status term for whether reactive-product potential is asserted, unasserted, or unknown.
+  parents:
+  - xmet:7500000
+- id: xmet:7900010
+  pref_label: path length role
+  in_scheme:
+  - xmet:pathway_role_scheme
+  definition: Role describing whether a transformation is a direct one-step event or part of a multi-step path.
+  parents:
+  - xmet:7900000
+- id: xmet:7900011
+  pref_label: path position role
+  in_scheme:
+  - xmet:pathway_role_scheme
+  definition: Role describing the position or function of a step within a multi-step metabolic path.
+  parents:
+  - xmet:7900000
+- id: xmet:3000001
+  pref_label: metabolite report cue
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Text-mining cue group for statements that report metabolites, pathways, or transformations.
+  parents:
+  - xmet:3000000
+- id: xmet:3000002
+  pref_label: metabolic effect cue
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Text-mining cue group for prodrug, active-metabolite, reactive-metabolite, or activation language.
+  parents:
+  - xmet:3000000
+- id: xmet:3000003
+  pref_label: biological context attribution cue
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Text-mining cue group for statements assigning enzyme, species, system, tissue, matrix, or route context.
+  parents:
+  - xmet:3000000
+- id: xmet:2100001
+  pref_label: molecular actor context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Biological context cue group for enzyme, gene, protein, transporter, or other molecular actor mentions.
+    Exact entities should be grounded through external ontology slims.
+  parents:
+  - xmet:2100000
+- id: xmet:2100002
+  pref_label: organism and sample context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Biological context cue group for species, tissue, organ, matrix, route, or sample-source mentions.
+  parents:
+  - xmet:2100000
+- id: xmet:2100003
+  pref_label: experimental system context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Biological context cue group for assay system, incubation, in vitro, in vivo, and recombinant system
+    mentions.
+  parents:
+  - xmet:2100000
+- id: xmet:0000021
+  pref_label: oxygen-incorporating oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation reaction in which oxygen is incorporated into the substrate or a heteroatom oxidation state
+    is increased.
+  parents:
+  - xmet:0000020
+  synonyms:
+  - oxygenation
+- id: xmet:0000022
+  pref_label: oxidative substituent cleavage
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation coupled to cleavage or loss of an alkyl, halogen, or related substituent.
+  parents:
+  - xmet:0000020
+- id: xmet:0000023
+  pref_label: electron-transfer oxidation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Oxidation described primarily by electron or hydrogen loss rather than addition of an endogenous conjugating
+    group.
+  parents:
+  - xmet:0000020
+- id: xmet:0001008
+  pref_label: sugar or glycosyl conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Conjugation with glucuronic acid, sugar, or glycosyl groups.
+  parents:
+  - xmet:0000999
+- id: xmet:0001009
+  pref_label: small-group transfer conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Conjugation by transfer of small endogenous groups such as sulfate, acetyl, or methyl groups.
+  parents:
+  - xmet:0000999
+- id: xmet:0001018
+  pref_label: amino acid or thiol conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Legacy broad conjugation grouping for amino-acid and thiol-derived conjugation. Prefer the narrower
+    children for new annotations.
+  parents:
+  - xmet:0000024
+  synonyms:
+  - amino acid/thiol conjugation
+  deprecated_for_new_annotation: true
+  replaced_by:
+  - xmet:0001016
+  - xmet:0001017
+- id: xmet:0002999
+  pref_label: biological effect assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion-level facet describing biological, pharmacologic, toxicity, or detoxication consequences
+    attributed to metabolism.
+- id: xmet:2100308
+  pref_label: primate species cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Species cue group for human and nonhuman primate contexts.
+  parents:
+  - xmet:2100012
+- id: xmet:2100309
+  pref_label: rodent species cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Species cue group for rodent contexts commonly used in metabolism studies.
+  parents:
+  - xmet:2100012
+- id: xmet:2100310
+  pref_label: nonrodent mammal species cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Species cue group for nonrodent mammalian preclinical contexts.
+  parents:
+  - xmet:2100012
+- id: xmet:2100311
+  pref_label: nonmammalian model species cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Species cue group for nonmammalian model systems.
+  parents:
+  - xmet:2100012
+- id: xmet:2100305
+  pref_label: rabbit context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Rabbit species context; ground to NCBI Taxonomy during entity linking.
+  parents:
+  - xmet:2100310
+  synonyms:
+  - rabbit
+  - rabbits
+- id: xmet:2100306
+  pref_label: minipig context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Pig or minipig species context; ground strain or breed more specifically when available.
+  parents:
+  - xmet:2100310
+  synonyms:
+  - pig
+  - minipig
+  - mini-pig
+  - "G\xF6ttingen minipig"
+- id: xmet:2100307
+  pref_label: zebrafish context cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Zebrafish model species context.
+  parents:
+  - xmet:2100311
+  synonyms:
+  - zebrafish
+  - Danio rerio
+- id: xmet:2100700
+  pref_label: hepatic tissue cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Liver or hepatic tissue context cue.
+  parents:
+  - xmet:2100013
+  synonyms:
+  - liver
+  - hepatic
+- id: xmet:2100701
+  pref_label: intestinal tissue cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Intestine or gut tissue context cue.
+  parents:
+  - xmet:2100013
+  synonyms:
+  - intestine
+  - intestinal
+  - gut
+  - GI tract
+  - gastrointestinal
+- id: xmet:2100702
+  pref_label: renal tissue cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Kidney or renal tissue context cue.
+  parents:
+  - xmet:2100013
+  synonyms:
+  - kidney
+  - renal
+- id: xmet:2100703
+  pref_label: pulmonary tissue cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Lung or pulmonary tissue context cue.
+  parents:
+  - xmet:2100013
+  synonyms:
+  - lung
+  - pulmonary
+- id: xmet:2100704
+  pref_label: skin tissue cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Skin or dermal tissue context cue.
+  parents:
+  - xmet:2100013
+  synonyms:
+  - skin
+  - dermal
+- id: xmet:2100520
+  pref_label: circulating biofluid matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Matrix cue group for blood-derived circulating biofluids.
+  parents:
+  - xmet:2100014
+- id: xmet:2100521
+  pref_label: excreted matrix cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Matrix cue group for urine, bile, feces, or other excreted sample types.
+  parents:
+  - xmet:2100014
+- id: xmet:2100619
+  pref_label: subcellular fraction system cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: In vitro system cue group for microsomes, S9, cytosol, and related subcellular fractions.
+  parents:
+  - xmet:2100015
+- id: xmet:2100620
+  pref_label: cellular incubation system cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: In vitro system cue group for hepatocyte, cell, or microbiome incubation systems.
+  parents:
+  - xmet:2100015
+- id: xmet:2100621
+  pref_label: isolated enzyme system cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: In vitro system cue group for recombinant, expressed, or purified enzyme systems.
+  parents:
+  - xmet:2100015
+- id: xmet:2100622
+  pref_label: whole-organism system cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Experimental system cue group for in vivo or whole-organism studies.
+  parents:
+  - xmet:2100015
+- id: xmet:0000999
+  pref_label: metabolic transfer conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Enzymatic or enzyme-associated transfer of endogenous functional groups to a xenobiotic or metabolite,
+    often discussed as Phase II metabolism. Detoxication or clearance should be asserted separately, not inferred.
+  parents:
+  - xmet:0000024
+  synonyms:
+  - Phase II conjugation
+  - phase 2 conjugation
+  - metabolic conjugation
+  hasDispositionStage:
+  - xmet:0000002
+- id: xmet:0001017
+  pref_label: reactive-species capture conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Conjugation or adduct formation that captures an electrophile or other reactive species. This is a
+    warning-sign branch for reactive-metabolite chemistry, regardless of whether an enzyme such as GST contributed.
+  parents:
+  - xmet:0000024
+  synonyms:
+  - electrophile trapping
+  - reactive metabolite trapping
+  - adduct-forming conjugation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500103
+    certainty: context_dependent
+- id: xmet:0001070
+  pref_label: protein adduct formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Covalent adduct formation between a xenobiotic-derived reactive species and a protein or peptide nucleophile.
+    Treat as evidence of reactive chemistry, not as ordinary Phase II detoxication.
+  parents:
+  - xmet:0001017
+  synonyms:
+  - protein conjugation
+  - protein covalent binding
+  - protein adduction
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0001071
+  pref_label: DNA adduct formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Covalent adduct formation between a xenobiotic-derived reactive species and DNA. Treat as evidence
+    of reactive chemistry and potential genotoxicity context, not as ordinary Phase II detoxication.
+  parents:
+  - xmet:0001017
+  synonyms:
+  - DNA conjugation
+  - DNA covalent binding
+  - DNA adduction
+  - nucleobase adduct formation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500100
+    certainty: context_dependent
+- id: xmet:0001072
+  pref_label: cyanide trapping adduct formation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Formation of a cyanide trapping adduct, commonly used as evidence for iminium or related reactive
+    intermediate formation.
+  parents:
+  - xmet:0001017
+  synonyms:
+  - CN trapping
+  - cyanide adduct formation
+  - cyanide adduction
+  - cyanide trapping
+  - cyanide trapping adduct
+  - cyanide-trapped adduct
+  - cyano adduct formation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500103
+    certainty: context_dependent
+  mass_spectrometry_hints: &id002
+    status: evidence_hint_not_required_or_sufficient
+    common_nominal_adduct_shift: about +26 Da for cyano addition to an electrophilic/iminium intermediate; parent-to-product
+      shift depends on oxidation state and hydrogen accounting
+    curation_note: Cyanide trapping is strong evidence for iminium or related electrophilic intermediates, but should
+      be recorded as assay/evidence context rather than a hard product-family inference by itself.
+- id: xmet:1500122
+  pref_label: metabolic transfer conjugate product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Conjugated product family formed by metabolic transfer of endogenous groups, commonly in Phase II
+    metabolism. Detoxication is not inferred automatically.
+  parents:
+  - xmet:1500120
+  synonyms:
+  - Phase II conjugate product family
+- id: xmet:1500123
+  pref_label: reactive capture or macromolecular adduct product family
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product family for glutathione-derived, protein, DNA, cyanide-trapped, or related adducts that indicate
+    capture of a reactive species.
+  parents:
+  - xmet:1500120
+  synonyms:
+  - reactive adduct product family
+  - covalent adduct product family
+- id: xmet:1500024
+  pref_label: protein adduct product
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product containing a covalent protein or peptide adduct of a xenobiotic-derived reactive species.
+  parents:
+  - xmet:1500123
+  synonyms:
+  - protein conjugate
+  - protein covalent adduct
+- id: xmet:1500025
+  pref_label: DNA adduct product
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product containing a covalent DNA or nucleobase adduct of a xenobiotic-derived reactive species.
+  parents:
+  - xmet:1500123
+  synonyms:
+  - DNA conjugate
+  - DNA covalent adduct
+  - nucleobase adduct
+- id: xmet:1500026
+  pref_label: cyanide trapping adduct product
+  in_scheme:
+  - xmet:product_family_scheme
+  definition: Product containing a cyanide trapping adduct used to infer a reactive iminium or related intermediate.
+  parents:
+  - xmet:1500123
+  synonyms:
+  - CN adduct
+  - cyanide adduct
+  - cyanide trapping adduct
+  - cyanide-trapped adduct
+  - cyano adduct
+  mass_spectrometry_hints: *id002
+- id: xmet:7500105
+  pref_label: possible macromolecular covalent-binding product
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Soft tag suggestion that a product or pathway may involve covalent binding to protein, DNA, peptide,
+    or other macromolecular nucleophiles.
+  parents:
+  - xmet:7500100
+  synonyms:
+  - possible protein/DNA adduct risk
+  - possible covalent binding risk
+- id: xmet:0003010
+  pref_label: enzyme inhibition effect assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion-level facet for metabolism-related enzyme inhibition or inactivation. This is an effect
+    claim, not a reaction-class parent.
+  parents:
+  - xmet:0002999
+  synonyms:
+  - enzyme inhibition
+  - enzyme inactivation
+- id: xmet:0003011
+  pref_label: time-dependent enzyme inhibition assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion that enzyme inhibition increases with preincubation time, cofactor exposure, or turnover
+    conditions. This is a med-chem warning sign and may suggest mechanism-based inactivation or reactive-intermediate
+    chemistry, but is not by itself proof of covalent adduction.
+  parents:
+  - xmet:0003010
+  synonyms:
+  - TDI
+  - time-dependent inhibition
+  - time dependent inhibition
+  - preincubation-dependent inhibition
+  - NADPH-dependent inhibition
+  - time-dependent inhibitor
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500106
+    certainty: context_dependent
+- id: xmet:0003012
+  pref_label: mechanism-based enzyme inactivation assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion that a compound or metabolite causes mechanism-based enzyme inactivation, commonly through
+    catalytic turnover to an inhibitory species. Evidence details should be captured on the assertion.
+  parents:
+  - xmet:0003013
+  synonyms:
+  - MBI
+  - mechanism-based inhibition
+  - mechanism based inhibition
+  - mechanism-based inactivation
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500106
+    certainty: context_dependent
+- id: xmet:7500106
+  pref_label: possible time-dependent enzyme inactivation liability
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Soft warning tag that a reaction path, product, or literature assertion may involve time-dependent
+    enzyme inhibition, mechanism-based inactivation, covalent enzyme modification, or related turnover-dependent
+    liability.
+  parents:
+  - xmet:7500105
+  synonyms:
+  - possible TDI liability
+  - possible mechanism-based inhibition liability
+  - possible enzyme inactivation liability
+- id: xmet:3000017
+  pref_label: time-dependent inhibition statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Text states or implies time-dependent inhibition, preincubation-dependent inhibition, NADPH-dependent
+    inhibition, or mechanism-based inactivation.
+  parents:
+  - xmet:3000002
+  synonyms:
+  - TDI
+  - time-dependent inhibition
+  - time dependent inhibition
+  - preincubation-dependent inhibition
+  - NADPH-dependent inhibition
+  - mechanism-based inhibition
+  - mechanism-based inactivation
+  - MBI
+  nlpCueFor:
+  - tdi_extraction
+  - mechanism_based_inhibition_extraction
+  - reactive_metabolite_warning_extraction
+- id: xmet:2100623
+  pref_label: time-dependent inhibition assay cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Experimental assay context cue for time-dependent inhibition or mechanism-based inactivation studies,
+    including preincubation and cofactor-dependence assays.
+  parents:
+  - xmet:2100003
+  synonyms:
+  - TDI assay
+  - time-dependent inhibition assay
+  - preincubation assay
+  - NADPH-dependent inhibition assay
+  - mechanism-based inhibition assay
+- id: xmet:0003013
+  pref_label: covalent enzyme inhibition assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion that a compound or metabolite inhibits an enzyme through covalent modification or covalent
+    adduct formation. This may be reversible or irreversible and should be supported by assay or structural evidence.
+  parents:
+  - xmet:0003010
+  synonyms:
+  - covalent inhibition
+  - covalent inhibitor
+  - irreversible covalent inhibition
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500107
+    certainty: context_dependent
+- id: xmet:0003014
+  pref_label: suicide inhibitor assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion that catalytic turnover converts an inhibitor into an enzyme-inactivating species, classically
+    causing irreversible or quasi-irreversible mechanism-based inactivation.
+  parents:
+  - xmet:0003012
+  synonyms:
+  - suicide inhibitor
+  - suicide substrate
+  - suicide inactivator
+  - mechanism-based suicide inhibitor
+  tag_suggestions:
+  - predicate: suggestsReactiveProductPotential
+    object: xmet:7500107
+    certainty: context_dependent
+- id: xmet:0003015
+  pref_label: reversible covalent inhibitor assertion
+  in_scheme:
+  - xmet:biological_effect_scheme
+  definition: Assertion that enzyme inhibition involves reversible covalent bond formation rather than irreversible
+    inactivation.
+  parents:
+  - xmet:0003013
+  synonyms:
+  - reversible covalent inhibitor
+  - reversible covalent inhibition
+- id: xmet:7500107
+  pref_label: possible covalent enzyme inhibitor liability
+  in_scheme:
+  - xmet:reactive_product_potential_scheme
+  definition: Soft warning tag that a product, pathway, or assertion may involve covalent enzyme inhibition, suicide
+    inhibition, or mechanism-based enzyme inactivation.
+  parents:
+  - xmet:7500106
+  synonyms:
+  - possible suicide inhibitor liability
+  - possible covalent inhibitor liability
+- id: xmet:3000018
+  pref_label: covalent inhibitor statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Text states or implies covalent enzyme inhibition, irreversible covalent inhibition, reversible covalent
+    inhibition, or enzyme covalent modification.
+  parents:
+  - xmet:3000002
+  synonyms:
+  - covalent inhibitor
+  - covalent inhibition
+  - irreversible inhibitor
+  - irreversible inhibition
+  - reversible covalent inhibitor
+  - enzyme covalent modification
+  nlpCueFor:
+  - covalent_inhibitor_extraction
+  - reactive_metabolite_warning_extraction
+- id: xmet:3000019
+  pref_label: suicide inhibitor statement
+  in_scheme:
+  - xmet:text_mining_scheme
+  definition: Text states or implies suicide inhibition, suicide substrate behavior, or mechanism-based suicide
+    inactivation.
+  parents:
+  - xmet:3000017
+  synonyms:
+  - suicide inhibitor
+  - suicide substrate
+  - suicide inactivator
+  - mechanism-based suicide inhibitor
+  nlpCueFor:
+  - suicide_inhibitor_extraction
+  - mechanism_based_inhibition_extraction
+- id: xmet:2100017
+  pref_label: transporter mention cue
+  in_scheme:
+  - xmet:biological_context_scheme
+  definition: Generic text-mining cue for transporter mentions. Ground exact transporters to HGNC, UniProt, or NCBI
+    Gene.
+  parents:
+  - xmet:2100001
+  synonyms:
+  - transporter
+  - ABC transporter
+  - SLC transporter
+- id: xmet:0001016
+  pref_label: amino acid transfer conjugation
+  in_scheme:
+  - xmet:reaction_class_scheme
+  definition: Metabolic transfer conjugation with amino acid groups such as glycine, taurine, glutamine, or related
+    endogenous amino acid conjugates.
+  parents:
+  - xmet:0000999
+  synonyms:
+  - amino acid conjugation branch
+automation_hints:
+  spacy_first_pass:
+    entity_patterns:
+    - source: preferred_label
+    - source: synonyms
+    - source: gene_symbol
+    recommended_labels:
+    - REACTION_CLASS
+    - DISPOSITION_STAGE
+    - ACTIVATION_MEANING
+    - REACTIVE_PRODUCT_POTENTIAL
+    - PRODUCT_FAMILY
+    - ENZYME_CONTEXT
+    - EXPERIMENTAL_SYSTEM
+    - BIOLOGICAL_MATRIX
+    - SPECIES_CONTEXT
+    - TISSUE_CONTEXT
+    cleanup_notes:
+    - Treat "bioactivation" as ambiguous until classified as reactive-metabolite activation or pharmacologic activation.
+    - Enzyme mentions should create context assertions, not reaction class labels.
+    - Matrix mentions such as urine/plasma/bile require role disambiguation: detected-in, excreted-in, incubated-in,
+        or sampled-from.
+  xenosite_forest_path_labeling:
+    required_inputs:
+    - reactant_structure
+    - product_structure
+    - atom_map_or_canonical_site_map
+    - fired_ruleset
+    - fired_rule
+    - fired_smarts_pattern
+    - path_dependency_graph
+    suggested_outputs:
+    - reaction_class_terms
+    - product_family_terms
+    - reactive_product_potential_terms
+    - structural_locus_terms
+    - disposition_stage_terms
+    - pathway_role_terms
+    mapping_order:
+    - exact Forest rule to reaction class when unambiguous
+    - structure delta / product family confirmation
+    - path-depth and pathway-role tagging
+    - reactive-product-potential tagging
+    - disposition-stage tagging
+    - ambiguity tag if multiple labels remain plausible
+external_extraction_hierarchies:
+  principle: Use XMET for reaction/facet labels and use imported or referenced external hierarchies for entities,
+    assays, tissues, species, evidence, and provenance. Resolve exact external IDs during curation rather than inventing
+    local stand-ins.
+  chemicals_and_metabolites:
+    sources:
+    - PubChem
+    - ChEBI
+    - MeSH
+    - DrugBank where licensed
+    - EPA CompTox Dashboard where relevant
+    include:
+    - xenobiotics
+    - drugs and investigational compounds
+    - metabolites
+    - reactive metabolite terms
+    - conjugates
+    - trapping agents such as glutathione and cyanide
+    grounding_targets:
+    - PubChem CID
+    - InChIKey
+    - ChEBI ID
+    - DrugBank ID
+    - DTXSID
+    notes: Use structure-aware grounding when names are ambiguous; do not let chemical class imply observed toxicity.
+  enzymes_genes_and_transporters:
+    sources:
+    - HGNC gene families
+    - NCBI Gene
+    - UniProt
+    - MeSH enzyme headings
+    include_families:
+    - CYP
+    - UGT
+    - SULT
+    - GST
+    - NAT
+    - FMO
+    - CES
+    - AOX
+    - MAO
+    - ADH
+    - ALDH
+    - AKR/CBR
+    - EPHX
+    - NQO
+    - COMT
+    - TPMT
+    - ABCB
+    - ABCC
+    - ABCG
+    - SLC/SLCO
+    grounding_targets:
+    - HGNC ID
+    - NCBI Gene ID
+    - UniProt accession
+    notes: Use these as biological context tags, never as reaction-class names.
+    implementation_note: Do not mint XMET concepts for these exact enzymes. Export an extraction slim from HGNC/UniProt/NCBI
+      Gene and use XMET only for the context facet and extracted assertion type.
+  species_and_strains:
+    sources:
+    - NCBI Taxonomy
+    include:
+    - human
+    - rat
+    - mouse
+    - dog
+    - monkey/nonhuman primate
+    - rabbit
+    - minipig
+    - zebrafish
+    - bacterial systems when metabolism is microbial
+    grounding_targets:
+    - NCBI Taxonomy ID
+  tissues_cells_matrices_and_routes:
+    sources:
+    - UBERON
+    - BTO
+    - CL
+    - OBI
+    - NCIT
+    include:
+    - liver
+    - intestine
+    - kidney
+    - lung
+    - skin
+    - plasma
+    - serum
+    - blood
+    - urine
+    - bile
+    - feces
+    - microsomes
+    - S9 fraction
+    - cytosol
+    - hepatocytes
+    - recombinant enzyme systems
+    route_terms:
+    - urinary excretion
+    - biliary excretion
+    - fecal excretion
+    - plasma exposure
+    grounding_targets:
+    - UBERON ID
+    - BTO ID
+    - CL ID
+    - OBI ID
+    - NCIT code
+  assays_methods_and_evidence:
+    sources:
+    - OBI
+    - ECO
+    - BAO
+    - NCIT
+    - PSI-MS where useful
+    include:
+    - LC-MS/MS
+    - high-resolution mass spectrometry
+    - radiolabeled mass balance
+    - GSH trapping
+    - cyanide trapping
+    - microsomal stability
+    - hepatocyte incubation
+    - recombinant enzyme assay
+    - enzyme inhibition assay
+    - time-dependent inhibition assay
+    - mechanism-based inhibition assay
+    - preincubation-dependent inhibition
+    - NADPH-dependent inhibition
+    - covalent inhibition assay
+    - irreversible inhibition assay
+    - reversible covalent inhibition
+    - suicide inhibitor statement
+    notes: Evidence and assay terms should annotate extraction assertions; they should not be local XMET reaction
+      terms.
+  publications_and_dataset_sources:
+    sources:
+    - PubMed
+    - PubMed Central
+    - DOI/Crossref
+    - DataCite
+    - PROV-O
+    - DCAT
+    - Dublin Core Terms
+    include:
+    - article
+    - figure
+    - table
+    - scheme
+    - supplementary table
+    - dataset version
+    - model version
+    notes: Citations and source versions live on assertion records and mapping sets.
+mapping_sets:
+  xenosite_forest_sssom:
+    file: xmet-forest.sssom.tsv
+    format: SSSOM TSV
+    subject_namespace: forest
+    object_namespace: xmet
+    default_predicate: skos:closeMatch
+    scope: Operational mapping from XenoSite-Forest rulesets/rules/SMARTS-derived labels to XMET reaction and product
+      terms.
+    rule: Use skos:exactMatch only when the Forest rule semantics and XMET term semantics are intentionally identical;
+      otherwise prefer closeMatch, broadMatch, narrowMatch, or relatedMatch with comments.

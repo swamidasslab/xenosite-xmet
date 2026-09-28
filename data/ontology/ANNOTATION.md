@@ -49,8 +49,13 @@ chemical transformation and phase I family).
 
 | Link | Use |
 | --- | --- |
-| `skos:broader` / `skos:narrower` | Within a spine |
-| `skos:related` / `skos:relatedMatch` | Loose cross-spine association |
+| `skos:broader` / `skos:narrower` | Within a spine. **Single parent only** — no multi-inheritance. Cross-axis links use `related_to` / `antonyms`, not a second broader. Representation/encoding variants share one chemical home (multiple SSSOM objects → one subject OK; each object still has one home). |
+
+| `skos:related` / `skos:relatedMatch` | **Not used in YAML.** SSSOM: Forest rulesets only |
+| `xmet:relatedTo` (`related_to:` in YAML) | Soft association across spines (e.g. multistep ↔ composite); not hierarchy |
+| `xmet:suggests` (`suggests:` in YAML) | Often co-applies (weaker than alwaysWith); e.g. halide leaving group → dehalogenation |
+| `xmet:alwaysWith` (`always_with:` in YAML) | Stronger suggests: whenever source applies, target (or a child of a category root) also applies; e.g. dehalogenation → halide leaving group. Nested under suggests in the relation vocab. |
+| `xmet:antonymOf` (`antonyms:` in YAML) | Opposite / inverse transformation pair (symmetric) |
 | `skos:exactMatch` | True identity to an external concept (rare) |
 | `skos:closeMatch` | Similar MeSH/KEGG/Rhea/model term |
 | `skos:broadMatch` / `skos:narrowMatch` | Legacy/model terms broader/narrower than XMET |
