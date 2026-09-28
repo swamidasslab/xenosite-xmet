@@ -19,67 +19,67 @@ YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 REMAP_PATH = ROOT / "data/mappings/xmet-id-remap.tsv"
 
 # Redesign-generation IDs (xmet:3xxxxxx)
-ID_REACTION_DESCRIPTOR = "xmet:3000000"
-ID_CONCEPT_RELATION = "xmet:3001000"
-ID_ELIMINATION = "xmet:3000004"
-ID_TRANSFER_CONJ = "xmet:3000100"
-ID_ADDUCT_FORMATION = "xmet:3000200"
-ID_PROTEIN_ADDUCT = "xmet:3000201"
-ID_DNA_ADDUCT = "xmet:3000202"
-ID_CYANIDE_CONJ = "xmet:3000203"
-ID_SKELETAL_REARR = "xmet:3000300"
-ID_COMPOSITE = "xmet:3000400"
-ID_RING_EFFECT = "xmet:3000500"
+ID_REACTION_DESCRIPTOR = "xmet:4000263"
+ID_CONCEPT_RELATION = "xmet:4000281"
+ID_ELIMINATION = "xmet:4000264"
+ID_TRANSFER_CONJ = "xmet:4000266"
+ID_ADDUCT_FORMATION = "xmet:4000267"
+ID_PROTEIN_ADDUCT = "xmet:4000268"
+ID_DNA_ADDUCT = "xmet:4000269"
+ID_CYANIDE_CONJ = "xmet:4000270"
+ID_SKELETAL_REARR = "xmet:4000271"
+ID_COMPOSITE = "xmet:4000272"
+ID_RING_EFFECT = "xmet:4000273"
 # Reuse existing ring/aromatization concepts where present (avoid duplicate labels).
-EXISTING_RING_OPENING = "xmet:0004008"
-EXISTING_RING_CLOSURE = "xmet:7200006"
-EXISTING_AROMATIZATION = "xmet:0000315"
-EXISTING_DEAROMATIZATION = "xmet:0004001"
-ID_AROM_EFFECT = "xmet:3000510"
-ID_CLEAVAGE = "xmet:3000520"
-ID_CLEAVAGE_RING = "xmet:3000521"
-ID_CLEAVAGE_LEAVING = "xmet:3000522"
-ID_CLEAVAGE_FRAG = "xmet:3000523"
-ID_NL_GSH_129 = "xmet:3000600"
-ID_NL_CN_27 = "xmet:3000601"
-ID_REL_RELATED = "xmet:3001100"
-ID_REL_SUGGESTS = "xmet:3001101"
-ID_REL_ALWAYS = "xmet:3001102"
-ID_REL_HAS_PART = "xmet:3001103"
-ID_REL_IS_PART = "xmet:3001104"
+EXISTING_RING_OPENING = "xmet:4000200"
+EXISTING_RING_CLOSURE = "xmet:4000405"
+EXISTING_AROMATIZATION = "xmet:4000074"
+EXISTING_DEAROMATIZATION = "xmet:4000194"
+ID_AROM_EFFECT = "xmet:4000274"
+ID_CLEAVAGE = "xmet:4000275"
+ID_CLEAVAGE_RING = "xmet:4000276"
+ID_CLEAVAGE_LEAVING = "xmet:4000277"
+ID_CLEAVAGE_FRAG = "xmet:4000278"
+ID_NL_GSH_129 = "xmet:4000279"
+ID_NL_CN_27 = "xmet:4000280"
+ID_REL_RELATED = "xmet:4000282"
+ID_REL_SUGGESTS = "xmet:4000283"
+ID_REL_ALWAYS = "xmet:4000284"
+ID_REL_HAS_PART = "xmet:4000285"
+ID_REL_IS_PART = "xmet:4000286"
 
-DISPOSITION = "xmet:1000000"
-REACTION_CLASS = "xmet:1100000"
+DISPOSITION = "xmet:4000212"
+REACTION_CLASS = "xmet:4000213"
 PHASE_I_FAMILY = "xmet:1200000"
 PHASE_II_FAMILY = "xmet:1300000"
-STRUCT_DELTA = "xmet:1700000"
-LEAVING_GROUP = "xmet:2200000"
-OXIDATION = "xmet:0000020"
-SO = "xmet:0000010"
-UO = "xmet:0000011"
-DH = "xmet:0000012"
-HD = "xmet:0000013"
-RD = "xmet:0000014"
-CONJUGATION = "xmet:0000024"
-REARRANGEMENT = "xmet:0002004"
-TAUTOMERIZATION = "xmet:0002000"
-ISOMERIZATION = "xmet:0002003"
-PHASE_I = "xmet:0000001"
-PHASE_II = "xmet:0000002"
-PHASE_III = "xmet:0000003"
-GSH = "xmet:0001030"
-GLUCURONIDATION = "xmet:0001000"
-SULFATION = "xmet:0001010"
-ACETYLATION = "xmet:0001020"
-METHYLATION = "xmet:0001040"
-AA_CONJ = "xmet:0001050"
-GLYCOSYLATION = "xmet:0001060"
-COA = "xmet:0001061"
-FORMYLATION = "xmet:0000670"
-CYS_CONJ = "xmet:1300010"
-NAC_CONJ = "xmet:1300011"
-PHOSPHORYLATION = "xmet:1300012"
-MERCAPTURIC = "xmet:0001037"
+STRUCT_DELTA = "xmet:4000220"
+LEAVING_GROUP = "xmet:4000229"
+OXIDATION = "xmet:4000009"
+SO = "xmet:4000004"
+UO = "xmet:4000005"
+DH = "xmet:4000006"
+HD = "xmet:4000007"
+RD = "xmet:4000008"
+CONJUGATION = "xmet:4000011"
+REARRANGEMENT = "xmet:4000190"
+TAUTOMERIZATION = "xmet:4000186"
+ISOMERIZATION = "xmet:4000189"
+PHASE_I = "xmet:4000001"
+PHASE_II = "xmet:4000002"
+PHASE_III = "xmet:4000003"
+GSH = "xmet:4000167"
+GLUCURONIDATION = "xmet:4000148"
+SULFATION = "xmet:4000158"
+ACETYLATION = "xmet:4000163"
+METHYLATION = "xmet:4000175"
+AA_CONJ = "xmet:4000179"
+GLYCOSYLATION = "xmet:4000184"
+COA = "xmet:4000185"
+FORMYLATION = "xmet:4000131"
+CYS_CONJ = "xmet:4000217"
+NAC_CONJ = "xmet:4000218"
+PHOSPHORYLATION = "xmet:4000219"
+MERCAPTURIC = "xmet:4000174"
 
 
 def concept(
@@ -323,7 +323,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
         "Peer of oxidation and isoredox under reaction class."
     )
 
-    ID_ISOREDOX = "xmet:3000005"
+    ID_ISOREDOX = "xmet:4000265"
     if ID_ISOREDOX not in by_id:
         mint(
             concept(
@@ -406,8 +406,8 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
         COA,
         FORMYLATION,
         PHOSPHORYLATION,
-        "xmet:0001053",  # taurine
-        "xmet:0001051",  # glycine
+        "xmet:4000182",  # taurine
+        "xmet:4000180",  # glycine
     }
     # All direct children of phase II family that are not GSH/mercapturic/NAC/cys adduct-like
     adduct_ids = {GSH, MERCAPTURIC, CYS_CONJ, NAC_CONJ}
@@ -545,7 +545,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
                 "reaction descriptor",
                 "Orthogonal descriptors (leaving group, ring/aromaticity effect, "
                 "cleavage, mass shift) used alongside reaction class.",
-                parents=["xmet:0000000"],
+                parents=["xmet:4000000"],
                 synonyms=["reaction_descriptor"],
             ),
             "moved",
@@ -652,7 +652,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
         )
 
     # Mass-shift / NL seeds under existing mass shift if present
-    mass_shift = by_id.get("xmet:1700011")
+    mass_shift = by_id.get("xmet:4000221")
     if mass_shift:
         set_parents(mass_shift, [STRUCT_DELTA])
     if ID_NL_GSH_129 not in by_id:
@@ -662,7 +662,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
                 "GSH pyroglutamate neutral loss",
                 "Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting "
                 "glutathione conjugation / GSH adduct.",
-                parents=["xmet:1700011"] if "xmet:1700011" in by_id else [STRUCT_DELTA],
+                parents=["xmet:4000221"] if "xmet:4000221" in by_id else [STRUCT_DELTA],
                 synonyms=["NL 129", "pyroglutamate neutral loss"],
             ),
             "moved",
@@ -676,7 +676,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
                 "cyanide neutral loss",
                 "Characteristic MS neutral loss / mass cue of ~27 Da (HCN) suggesting "
                 "cyanide conjugation / trapping.",
-                parents=["xmet:1700011"] if "xmet:1700011" in by_id else [STRUCT_DELTA],
+                parents=["xmet:4000221"] if "xmet:4000221" in by_id else [STRUCT_DELTA],
                 synonyms=["NL 27", "HCN neutral loss"],
             ),
             "moved",
@@ -686,9 +686,9 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
 
     # Soft links from mass shifts to conjugations
     for mid, target in [
-        ("xmet:1700104", GLUCURONIDATION),
-        ("xmet:1700105", SULFATION),
-        ("xmet:1700106", GSH),
+        ("xmet:4000226", GLUCURONIDATION),
+        ("xmet:4000227", SULFATION),
+        ("xmet:4000228", GSH),
     ]:
         if mid in by_id:
             add_related(mid, target)
@@ -700,7 +700,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
                 ID_CONCEPT_RELATION,
                 "concept relation",
                 "Parent for the small relation vocabulary used across XMET spines.",
-                parents=["xmet:0000000"],
+                parents=["xmet:4000000"],
             ),
             "moved",
             "relation vocabulary root",
@@ -770,8 +770,8 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
     add_related(ID_CLEAVAGE_RING, EXISTING_RING_OPENING)
 
     # Legacy family spines: hang under root but not used as chem parents
-    set_parents(by_id[PHASE_I_FAMILY], ["xmet:0000000"])
-    set_parents(by_id[PHASE_II_FAMILY], ["xmet:0000000"])
+    set_parents(by_id[PHASE_I_FAMILY], ["xmet:4000000"])
+    set_parents(by_id[PHASE_II_FAMILY], ["xmet:4000000"])
 
     # Record spine renames in remap
     for oid, note in [

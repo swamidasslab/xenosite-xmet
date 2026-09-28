@@ -37,17 +37,17 @@ DROP = {
     "xmet:8000006",
     "xmet:8000007",
     "xmet:8000008",
-    "xmet:3000510",  # empty aromaticity effect; duplicate of delta + process facet
+    "xmet:4000274",  # empty aromaticity effect; duplicate of delta + process facet
 }
 
 # Chemist rehomes (replace parents entirely with these; drop 8xxxxx)
 REHOME: dict[str, list[str]] = {
-    "xmet:0000113": ["xmet:0000110"],  # thiophene epoxidation → epoxidation
-    "xmet:0000133": ["xmet:0000130", "xmet:0004001"],  # thiophene S-ox → S-ox + dearomatization
-    "xmet:0004001": ["xmet:0004000"],  # dearomatization → process facet only
-    "xmet:0004002": ["xmet:0004000"],  # rearomatization
-    "xmet:0004003": ["xmet:0000112", "xmet:0004000"],  # NIH shift → arene oxide + process facet
-    "xmet:0004005": ["xmet:0000112", "xmet:0004000"],  # arene oxide rearrangement
+    "xmet:4000025": ["xmet:4000022"],  # thiophene epoxidation → epoxidation
+    "xmet:4000035": ["xmet:4000032", "xmet:4000194"],  # thiophene S-ox → S-ox + dearomatization
+    "xmet:4000194": ["xmet:0004000"],  # dearomatization → process facet only
+    "xmet:4000195": ["xmet:0004000"],  # rearomatization
+    "xmet:4000197": ["xmet:4000024", "xmet:0004000"],  # NIH shift → arene oxide + process facet
+    "xmet:4000197": ["xmet:4000024", "xmet:0004000"],  # arene oxide rearrangement
 }
 
 REF_KEYS = (

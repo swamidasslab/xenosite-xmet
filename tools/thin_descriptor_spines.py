@@ -32,14 +32,14 @@ SSSOM_PATHS = [
     ROOT / "data/mappings/xmet-tagger.sssom.tsv",
 ]
 
-RD = "xmet:3000000"
-SD = "xmet:1700000"
-MS = "xmet:1700011"
-RING = "xmet:3000500"
+RD = "xmet:4000263"
+SD = "xmet:4000220"
+MS = "xmet:4000221"
+RING = "xmet:4000273"
 PF = "xmet:0004000"  # process facet
 
 # Restore aromaticity effect (was retired earlier as 3000510 — reuse id)
-AROM = "xmet:3000510"
+AROM = "xmet:4000274"
 
 REF_KEYS = (
     "parents",
@@ -186,24 +186,24 @@ def main() -> int:
         )
 
     # Move dearomatization / rearomatization under aromaticity effect
-    by["xmet:0004001"]["parents"] = [AROM]
-    by["xmet:0004002"]["parents"] = [AROM]
+    by["xmet:4000194"]["parents"] = [AROM]
+    by["xmet:4000195"]["parents"] = [AROM]
     # aromatization stays under rearomatization
     # thiophene S-oxidation: chemistry parent only (drop dearomatization parent)
-    tso = by["xmet:0000133"]
-    tso["parents"] = [p for p in (tso.get("parents") or []) if p != "xmet:0004001"]
-    if "xmet:0000130" not in tso["parents"]:
-        tso["parents"].insert(0, "xmet:0000130")
+    tso = by["xmet:4000035"]
+    tso["parents"] = [p for p in (tso.get("parents") or []) if p != "xmet:4000194"]
+    if "xmet:4000032" not in tso["parents"]:
+        tso["parents"].insert(0, "xmet:4000032")
     rm = list(tso.get("related_match") or [])
-    if "xmet:0004001" not in rm:
-        rm.append("xmet:0004001")
+    if "xmet:4000194" not in rm:
+        rm.append("xmet:4000194")
     tso["related_match"] = rm
 
     # Merge flat aromaticity deltas into aromaticity effect (retire)
     merges: dict[str, str] = {
-        "xmet:1700015": AROM,  # aromaticity change
-        "xmet:1700107": "xmet:0004001",  # loss → dearomatization
-        "xmet:1700108": "xmet:0004002",  # gain → rearomatization
+        "xmet:4000274": AROM,  # aromaticity change
+        "xmet:4000194": "xmet:4000194",  # loss → dearomatization
+        "xmet:4000195": "xmet:4000195",  # gain → rearomatization
     }
 
     # --- 2) mass shift: sibling of structural delta under RD ---
@@ -215,50 +215,50 @@ def main() -> int:
 
     # Nest / relabel keepers under mass shift
     keep_ms = {
-        "xmet:1700106": (  # GSH mass shift
+        "xmet:4000228": (  # GSH mass shift
             MS,
             "GSH mass shift",
             "Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathionation.",
             ["+305 Da", "glutathione mass shift"],
         ),
-        "xmet:3000600": (  # NL 129
-            "xmet:1700106",
+        "xmet:4000279": (  # NL 129
+            "xmet:4000228",
             "GSH pyroglutamate neutral loss",
             "Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting "
             "glutathione conjugation / GSH adduct.",
             ["129 Da neutral loss", "pyroglutamate neutral loss"],
         ),
-        "xmet:1700104": (
+        "xmet:4000226": (
             MS,
             "glucuronide mass shift",
             "Nominal +176 Da for glucuronide conjugation. Suggests glucuronidation.",
             ["+176 Da", "GlcA mass shift"],
         ),
-        "xmet:1700105": (
+        "xmet:4000227": (
             MS,
             "sulfate mass shift",
             "Nominal +80 Da for sulfate conjugation. Suggests sulfation.",
             ["+80 Da", "sulfate conjugation mass shift"],
         ),
-        "xmet:3000601": (
+        "xmet:4000280": (
             MS,
             "cyanide mass shift",
             "Mass cue / neutral loss of ~27 Da (HCN) suggesting cyanide conjugation / trapping.",
             ["~27 Da", "HCN neutral loss", "cyanide neutral loss"],
         ),
-        "xmet:1700102": (
+        "xmet:4000224": (
             MS,
             "demethylation mass shift",
             "Nominal −14 Da (loss of CH₂). Suggests N-/O-/S-demethylation.",
             ["−14 Da", "demethylation delta"],
         ),
-        "xmet:1700103": (
+        "xmet:4000225": (
             MS,
             "deethylation mass shift",
             "Nominal −28 Da (loss of C₂H₄). Suggests N-/O-deethylation.",
             ["−28 Da", "deethylation delta"],
         ),
-        "xmet:1700100": (
+        "xmet:4000223": (
             MS,
             "oxygenation mass shift",
             "Nominal +16 Da (monooxygenation). Suggests hydroxylation / other +O paths; "
@@ -273,18 +273,18 @@ def main() -> int:
         c["definition"] = defn
         c["synonyms"] = list(dict.fromkeys([*(c.get("synonyms") or []), *syns]))
 
-    merges["xmet:1700101"] = "xmet:1700100"  # dioxygenation → oxygenation mass shift
+    merges["xmet:4000223"] = "xmet:4000223"  # dioxygenation → oxygenation mass shift
 
     # suggests soft links on mass shifts (related_match to chemistry)
     suggests = {
-        "xmet:1700106": ["xmet:0001030"],  # GSH → glutathione conjugation
-        "xmet:3000600": ["xmet:0001030"],
-        "xmet:1700104": ["xmet:0001000"],
-        "xmet:1700105": ["xmet:0001010"],
-        "xmet:3000601": ["xmet:3000203"] if "xmet:3000203" in by else ["xmet:0000600"],
-        "xmet:1700102": ["xmet:0000205", "xmet:0000200"],
-        "xmet:1700103": ["xmet:0000200"],
-        "xmet:1700100": ["xmet:0000100", "xmet:0000010"],
+        "xmet:4000228": ["xmet:4000167"],  # GSH → glutathione conjugation
+        "xmet:4000279": ["xmet:4000167"],
+        "xmet:4000226": ["xmet:4000148"],
+        "xmet:4000227": ["xmet:4000158"],
+        "xmet:4000280": ["xmet:4000270"] if "xmet:4000270" in by else ["xmet:4000114"],
+        "xmet:4000224": ["xmet:4000349", "xmet:4000042"],
+        "xmet:4000225": ["xmet:4000042"],
+        "xmet:4000223": ["xmet:4000012", "xmet:4000004"],
     }
     for cid, targets in suggests.items():
         rm = [t for t in targets if t in by]
@@ -292,18 +292,18 @@ def main() -> int:
         by[cid]["related_match"] = list(dict.fromkeys(rm + existing))
 
     # --- 3) ring expansion/contraction deltas → ring effect ---
-    if "xmet:1700111" in by:
-        by["xmet:1700111"]["parents"] = [RING]
-        by["xmet:1700111"]["preferred_label"] = "ring expansion"
+    if "xmet:4000201" in by:
+        by["xmet:4000201"]["parents"] = [RING]
+        by["xmet:4000201"]["preferred_label"] = "ring expansion"
         # avoid clash if ring expansion already exists under skeletal
-    if "xmet:1700112" in by:
-        by["xmet:1700112"]["parents"] = [RING]
-        by["xmet:1700112"]["preferred_label"] = "ring contraction"
+    if "xmet:4000202" in by:
+        by["xmet:4000202"]["parents"] = [RING]
+        by["xmet:4000202"]["preferred_label"] = "ring contraction"
 
     # --- 4) structural delta: keep only stereochemical change (medchem discourse) ---
-    keep_under_sd = {"xmet:1700017"}  # stereochemical change
-    if "xmet:1700017" in by:
-        by["xmet:1700017"]["parents"] = [SD]
+    keep_under_sd = {"xmet:4000222"}  # stereochemical change
+    if "xmet:4000222" in by:
+        by["xmet:4000222"]["parents"] = [SD]
         by[SD]["definition"] = (
             "Thin shelf for structural-edit descriptors common in med-chem discourse "
             "(not engine topology / formula-delta taxonomies). Mass cues live under "
@@ -330,7 +330,7 @@ def main() -> int:
     # Flat SD peers not kept / not moved to MS / ring / arom
     ch = children_map(concepts)
     for cid in list(ch.get(SD, [])):
-        if cid in (MS, *keep_under_sd, "xmet:1700111", "xmet:1700112"):
+        if cid in (MS, *keep_under_sd, "xmet:4000201", "xmet:4000202"):
             continue
         if cid in keep_ms or cid in merges:
             continue
@@ -369,13 +369,13 @@ def main() -> int:
         MS,
         AROM,
         RING,
-        "xmet:0004001",
-        "xmet:0004002",
-        "xmet:0000315",
+        "xmet:4000194",
+        "xmet:4000195",
+        "xmet:4000074",
         *keep_ms.keys(),
         *keep_under_sd,
-        "xmet:1700111",
-        "xmet:1700112",
+        "xmet:4000201",
+        "xmet:4000202",
     }
     drop -= protect
     # merge targets stay

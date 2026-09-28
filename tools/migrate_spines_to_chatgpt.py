@@ -145,16 +145,16 @@ def rewrite_forest_parents(by_id):
     # Reparent Forest rules that hung under chemist Rainbow IDs.
     for cid, node in list(by_id.items()):
         parents = get_broader(node)
-        if "xmet:0000010" in parents:
-            parents = ["xmet:9000010" if p == "xmet:0000010" else p for p in parents]
+        if "xmet:4000004" in parents:
+            parents = ["xmet:9000010" if p == "xmet:4000004" else p for p in parents]
             set_broader(node, parents)
-        if "xmet:0000011" in parents:
-            parents = ["xmet:9000011" if p == "xmet:0000011" else p for p in parents]
+        if "xmet:4000005" in parents:
+            parents = ["xmet:9000011" if p == "xmet:4000005" else p for p in parents]
             set_broader(node, parents)
 
     # Rainbow chemist classes (same IDs, new parents).
-    by_id["xmet:0000010"] = concept(
-        "xmet:0000010",
+    by_id["xmet:4000004"] = concept(
+        "xmet:4000004",
         "stable oxygenation",
         broader=["xmet:1200000"],
         definition=(
@@ -166,8 +166,8 @@ def rewrite_forest_parents(by_id):
         related=["xmet:9000010"],
         spines=["phase I reaction family"],
     )
-    by_id["xmet:0000011"] = concept(
-        "xmet:0000011",
+    by_id["xmet:4000005"] = concept(
+        "xmet:4000005",
         "unstable oxygenation",
         broader=["xmet:1200000"],
         definition=(
@@ -184,13 +184,13 @@ def rewrite_forest_parents(by_id):
 def add_core_spines(by_id):
     spines = [
         (
-            "xmet:1000000",
+            "xmet:4000212",
             "metabolism phase",
             "Phase framing for xenobiotic biotransformation (I / II / III).",
             ["metabolism_phase", "phase"],
         ),
         (
-            "xmet:1100000",
+            "xmet:4000213",
             "chemical transformation",
             "Enzyme-independent chemical edit class (oxidation, reduction, …).",
             ["chemical_transformation", "transformation"],
@@ -226,7 +226,7 @@ def add_core_spines(by_id):
             ["site_type", "site class"],
         ),
         (
-            "xmet:1700000",
+            "xmet:4000220",
             "structural delta",
             "Structural / formula / aromaticity / bond-order change facets.",
             ["structural_delta", "delta"],
@@ -260,7 +260,7 @@ def add_core_spines(by_id):
         by_id[cid] = concept(
             cid,
             pref,
-            broader="xmet:0000000",
+            broader="xmet:4000000",
             definition=definition,
             alt=alts,
             spines=[pref],
@@ -268,9 +268,9 @@ def add_core_spines(by_id):
 
     # Ambiguity + Forest map stay under root (already present).
     if "xmet:6000000" in by_id:
-        set_broader(by_id["xmet:6000000"], "xmet:0000000")
+        set_broader(by_id["xmet:6000000"], "xmet:4000000")
     if "xmet:9000000" in by_id:
-        set_broader(by_id["xmet:9000000"], "xmet:0000000")
+        set_broader(by_id["xmet:9000000"], "xmet:4000000")
         by_id["xmet:9000000"]["definition"] = (
             "Alias / mapping spine for Metabolic Forest rulesets → rules → "
             "patterns. Opaque forest.* CURIEs only; not the chemist backbone."
@@ -279,12 +279,12 @@ def add_core_spines(by_id):
 
 def reparent_phase_and_transformations(by_id):
     # phase I / II under metabolism phase
-    set_broader(by_id["xmet:0000001"], ["xmet:1000000"])
-    set_broader(by_id["xmet:0000002"], ["xmet:1000000"])
-    by_id["xmet:0000003"] = concept(
-        "xmet:0000003",
+    set_broader(by_id["xmet:4000001"], ["xmet:4000212"])
+    set_broader(by_id["xmet:4000002"], ["xmet:4000212"])
+    by_id["xmet:4000003"] = concept(
+        "xmet:4000003",
         "phase III transport",
-        broader="xmet:1000000",
+        broader="xmet:4000212",
         definition=(
             "Transporter-mediated disposition related to xenobiotic handling; "
             "related to metabolism naming but not a primary reaction label."
@@ -295,38 +295,38 @@ def reparent_phase_and_transformations(by_id):
 
     # Chemical transformation top terms (polyhierarchy with phase children).
     chem_roots = {
-        "xmet:0000020": "oxidation",
-        "xmet:0000014": "reduction",
-        "xmet:0000013": "hydrolysis",
-        "xmet:0000012": "dehydrogenation",
-        "xmet:0000024": "conjugation",
-        "xmet:0002000": "tautomerization",
-        "xmet:0002003": "isomerization",
-        "xmet:0002004": "rearrangement",
+        "xmet:4000009": "oxidation",
+        "xmet:4000008": "reduction",
+        "xmet:4000007": "hydrolysis",
+        "xmet:4000006": "dehydrogenation",
+        "xmet:4000011": "conjugation",
+        "xmet:4000186": "tautomerization",
+        "xmet:4000189": "isomerization",
+        "xmet:4000190": "rearrangement",
     }
     for cid, _label in chem_roots.items():
         if cid not in by_id:
             continue
         parents = get_broader(by_id[cid])
         # Drop direct root attachment; attach to chemical_transformation.
-        parents = [p for p in parents if p != "xmet:0000000"]
-        if "xmet:1100000" not in parents:
-            parents.insert(0, "xmet:1100000")
+        parents = [p for p in parents if p != "xmet:4000000"]
+        if "xmet:4000213" not in parents:
+            parents.insert(0, "xmet:4000213")
         # Keep phase parents when already present.
         set_broader(by_id[cid], parents)
 
     # Extra chemical_transformation leaves from ChatGPT list.
     extras = [
-        ("xmet:1100010", "hydration", ["xmet:1100000"], "Addition of water across a bond."),
-        ("xmet:1100011", "dehydration", ["xmet:1100000", "xmet:0000014"], "Loss of water."),
-        ("xmet:1100012", "dealkylation", ["xmet:1100000"], "Cleavage of an alkyl group from a heteroatom or carbon."),
-        ("xmet:1100013", "deamination", ["xmet:1100000"], "Removal of an amino group."),
-        ("xmet:1100014", "dehalogenation", ["xmet:1100000"], "Removal of a halogen atom."),
-        ("xmet:1100015", "epoxidation", ["xmet:1100000"], "Formation of an epoxide."),
-        ("xmet:1100016", "ring oxidation", ["xmet:1100000"], "Oxidation on a ring framework."),
-        ("xmet:1100017", "ring opening", ["xmet:1100000"], "Cleavage that opens a ring."),
-        ("xmet:1100018", "aromatization", ["xmet:1100000"], "Gain of aromaticity."),
-        ("xmet:1100019", "dearomatization", ["xmet:1100000"], "Loss of aromaticity."),
+        ("xmet:1100010", "hydration", ["xmet:4000213"], "Addition of water across a bond."),
+        ("xmet:1100011", "dehydration", ["xmet:4000213", "xmet:4000008"], "Loss of water."),
+        ("xmet:1100012", "dealkylation", ["xmet:4000213"], "Cleavage of an alkyl group from a heteroatom or carbon."),
+        ("xmet:4000049", "deamination", ["xmet:4000213"], "Removal of an amino group."),
+        ("xmet:4000214", "dehalogenation", ["xmet:4000213"], "Removal of a halogen atom."),
+        ("xmet:1100015", "epoxidation", ["xmet:4000213"], "Formation of an epoxide."),
+        ("xmet:1100016", "ring oxidation", ["xmet:4000213"], "Oxidation on a ring framework."),
+        ("xmet:1100017", "ring opening", ["xmet:4000213"], "Cleavage that opens a ring."),
+        ("xmet:1100018", "aromatization", ["xmet:4000213"], "Gain of aromaticity."),
+        ("xmet:1100019", "dearomatization", ["xmet:4000213"], "Loss of aromaticity."),
     ]
     for cid, pref, broader, definition in extras:
         # Prefer existing concepts with same prefLabel when present.
@@ -337,41 +337,41 @@ def reparent_phase_and_transformations(by_id):
                 break
         if existing:
             parents = get_broader(by_id[existing])
-            if "xmet:1100000" not in parents:
-                parents.append("xmet:1100000")
+            if "xmet:4000213" not in parents:
+                parents.append("xmet:4000213")
             set_broader(by_id[existing], parents)
         else:
             by_id[cid] = concept(cid, pref, broader=broader, definition=definition, spines=["chemical transformation"])
 
     # Link detailed phase I leaves also under phase I reaction family via Rainbow classes.
     rainbow_children = {
-        "xmet:0000010": [  # stable oxygenation
-            "xmet:0000100",  # hydroxylation
-            "xmet:0000110",  # epoxidation
-            "xmet:0000120",  # nitrogen oxidation
-            "xmet:0000130",  # sulfur oxidation
+        "xmet:4000004": [  # stable oxygenation
+            "xmet:4000012",  # hydroxylation
+            "xmet:4000022",  # epoxidation
+            "xmet:4000026",  # nitrogen oxidation
+            "xmet:4000032",  # sulfur oxidation
         ],
-        "xmet:0000011": [  # unstable oxygenation
-            "xmet:0000200",  # dealkylation
-            "xmet:0000208",  # oxidative deamination
-            "xmet:0000210",  # oxidative dehalogenation
+        "xmet:4000005": [  # unstable oxygenation
+            "xmet:4000042",  # dealkylation
+            "xmet:4000049",  # oxidative deamination
+            "xmet:4000051",  # oxidative dehalogenation
         ],
-        "xmet:0000012": [  # dehydrogenation already exists; also under family
+        "xmet:4000006": [  # dehydrogenation already exists; also under family
         ],
     }
     # Hang Rainbow classes + DH/HD/RD chemist concepts under phase I reaction family.
-    for cid in ["xmet:0000010", "xmet:0000011"]:
+    for cid in ["xmet:4000004", "xmet:4000005"]:
         set_broader(by_id[cid], ["xmet:1200000"])
-    for cid in ["xmet:0000012", "xmet:0000013", "xmet:0000014"]:
+    for cid in ["xmet:4000006", "xmet:4000007", "xmet:4000008"]:
         parents = get_broader(by_id[cid])
         if "xmet:1200000" not in parents:
             parents.append("xmet:1200000")
         # Keep phase I if present
-        if "xmet:0000001" not in parents and cid != "xmet:0000012":
+        if "xmet:4000001" not in parents and cid != "xmet:4000006":
             # dehydrogenation/hydrolysis/reduction already under phase I typically
             pass
-        if "xmet:0000001" not in parents:
-            parents.append("xmet:0000001")
+        if "xmet:4000001" not in parents:
+            parents.append("xmet:4000001")
         set_broader(by_id[cid], parents)
 
     for rainbow, kids in rainbow_children.items():
@@ -385,7 +385,7 @@ def reparent_phase_and_transformations(by_id):
 
     # phase II conjugation family: hang phase II children also under 1300000
     for cid, node in list(by_id.items()):
-        if "xmet:0000002" in get_broader(node) and cid != "xmet:1300000":
+        if "xmet:4000002" in get_broader(node) and cid != "xmet:1300000":
             parents = get_broader(node)
             if "xmet:1300000" not in parents:
                 parents.append("xmet:1300000")
@@ -393,24 +393,24 @@ def reparent_phase_and_transformations(by_id):
 
     # Explicit ChatGPT phase II family terms (alias existing when present).
     p2_terms = [
-        ("glucuronidation", "xmet:0001000"),
-        ("sulfation", "xmet:0001010"),
+        ("glucuronidation", "xmet:4000148"),
+        ("sulfation", "xmet:4000158"),
         ("glutathione conjugation", None),
         ("cysteine conjugation", None),
         ("N-acetylcysteine conjugation", None),
-        ("mercapturic acid formation", "xmet:0001037"),
-        ("acetylation", "xmet:0001020"),
-        ("methylation", "xmet:0001040"),
-        ("amino acid conjugation", "xmet:0001050"),
-        ("glycine conjugation", "xmet:0001051"),
-        ("taurine conjugation", "xmet:0001053"),
+        ("mercapturic acid formation", "xmet:4000174"),
+        ("acetylation", "xmet:4000163"),
+        ("methylation", "xmet:4000175"),
+        ("amino acid conjugation", "xmet:4000179"),
+        ("glycine conjugation", "xmet:4000180"),
+        ("taurine conjugation", "xmet:4000182"),
         ("phosphorylation", None),
     ]
     next_id = 1300010
     for pref, existing in p2_terms:
         if existing and existing in by_id:
             parents = get_broader(by_id[existing])
-            for p in ("xmet:1300000", "xmet:0000002"):
+            for p in ("xmet:1300000", "xmet:4000002"):
                 if p not in parents:
                     parents.append(p)
             set_broader(by_id[existing], parents)
@@ -425,16 +425,16 @@ def reparent_phase_and_transformations(by_id):
                 break
         if pref == "glutathione conjugation":
             # alias glutathionation
-            if "xmet:0001030" in by_id:
-                alts = as_list(by_id["xmet:0001030"].get("altLabel"))
+            if "xmet:4000167" in by_id:
+                alts = as_list(by_id["xmet:4000167"].get("altLabel"))
                 if "glutathione conjugation" not in alts:
                     alts.append("glutathione conjugation")
-                by_id["xmet:0001030"]["altLabel"] = alts
-                parents = get_broader(by_id["xmet:0001030"])
-                for p in ("xmet:1300000", "xmet:0000002"):
+                by_id["xmet:4000167"]["altLabel"] = alts
+                parents = get_broader(by_id["xmet:4000167"])
+                for p in ("xmet:1300000", "xmet:4000002"):
                     if p not in parents:
                         parents.append(p)
-                set_broader(by_id["xmet:0001030"], parents)
+                set_broader(by_id["xmet:4000167"], parents)
             continue
         if found:
             parents = get_broader(by_id[found])
@@ -447,7 +447,7 @@ def reparent_phase_and_transformations(by_id):
         by_id[cid] = concept(
             cid,
             pref,
-            broader=["xmet:1300000", "xmet:0000002"],
+            broader=["xmet:1300000", "xmet:4000002"],
             definition=f"Phase II conjugation family: {pref}.",
             spines=["phase II conjugation family"],
         )
@@ -509,13 +509,13 @@ def add_medchem_and_reactive(by_id):
         )
     # Relate existing quinone/epoxide chemist terms.
     for existing, new in [
-        ("xmet:0000300", "xmet:1500010"),
-        ("xmet:0000303", "xmet:1500011"),
-        ("xmet:0000110", "xmet:1500012"),
-        ("xmet:0000305", "xmet:1500014"),
-        ("xmet:0001004", "xmet:1500015"),
-        ("xmet:0000123", "xmet:1500017"),
-        ("xmet:0000122", "xmet:1500018"),
+        ("xmet:4000059", "xmet:1500010"),
+        ("xmet:4000062", "xmet:1500011"),
+        ("xmet:4000022", "xmet:1500012"),
+        ("xmet:4000064", "xmet:1500014"),
+        ("xmet:4000152", "xmet:1500015"),
+        ("xmet:4000029", "xmet:1500017"),
+        ("xmet:4000028", "xmet:1500018"),
     ]:
         if existing in by_id:
             rel = as_list(by_id[existing].get("relatedMatch"))
@@ -561,24 +561,24 @@ def add_site_structural_product_evidence(by_id):
         "xmet:7900000",
     ]:
         if old in by_id:
-            set_broader(by_id[old], ["xmet:1700000"])
+            set_broader(by_id[old], ["xmet:4000220"])
     if "xmet:7500000" in by_id:
         set_broader(by_id["xmet:7500000"], ["xmet:1500000"])
 
     delta_terms = [
         ("xmet:1700010", "formula delta", "Elemental composition change."),
-        ("xmet:1700011", "mass shift", "Nominal or exact mass difference."),
+        ("xmet:4000221", "mass shift", "Nominal or exact mass difference."),
         ("xmet:1700012", "atom added", "Net atom addition."),
         ("xmet:1700013", "atom removed", "Net atom removal."),
         ("xmet:1700014", "bond order change", "Bond order increased or decreased."),
-        ("xmet:1700015", "aromaticity change", "Aromaticity gained or lost."),
+        ("xmet:4000274", "aromaticity change", "Aromaticity gained or lost."),
         ("xmet:1700016", "charge change", "Formal charge / protonation change."),
-        ("xmet:1700017", "stereochemical change", "Stereo configuration change."),
+        ("xmet:4000222", "stereochemical change", "Stereo configuration change."),
         ("xmet:1700018", "conjugate moiety added", "Conjugate group attached."),
     ]
     for cid, pref, definition in delta_terms:
         by_id[cid] = concept(
-            cid, pref, broader="xmet:1700000", definition=definition, spines=["structural delta"]
+            cid, pref, broader="xmet:4000220", definition=definition, spines=["structural delta"]
         )
 
     product = [
@@ -642,7 +642,7 @@ def add_site_structural_product_evidence(by_id):
 
     # process facet stays useful; hang under chemical transformation
     if "xmet:0004000" in by_id:
-        set_broader(by_id["xmet:0004000"], ["xmet:1100000"])
+        set_broader(by_id["xmet:0004000"], ["xmet:4000213"])
 
 
 def update_scheme_blurb(by_id):
@@ -660,11 +660,11 @@ def update_scheme_blurb(by_id):
 def export_jsonld(data, by_id):
     # Preserve scheme first, then root, then others sorted by id.
     graph = []
-    for cid in ["xmet:scheme", "xmet:0000000"]:
+    for cid in ["xmet:scheme", "xmet:4000000"]:
         if cid in by_id:
             graph.append(by_id[cid])
     for cid in sorted(by_id.keys()):
-        if cid in ("xmet:scheme", "xmet:0000000"):
+        if cid in ("xmet:scheme", "xmet:4000000"):
             continue
         graph.append(by_id[cid])
     out = {"@context": data["@context"], "@graph": graph}
@@ -674,14 +674,14 @@ def export_jsonld(data, by_id):
 def export_yaml(by_id):
     """Authoring YAML: spines first, then concepts with stable fields."""
     spine_ids = [
-        "xmet:1000000",
-        "xmet:1100000",
+        "xmet:4000212",
+        "xmet:4000213",
         "xmet:1200000",
         "xmet:1300000",
         "xmet:1400000",
         "xmet:1500000",
         "xmet:1600000",
-        "xmet:1700000",
+        "xmet:4000220",
         "xmet:1800000",
         "xmet:1900000",
         "xmet:2000000",
@@ -746,14 +746,14 @@ def patch_forest_sssom():
     text = FOREST_SSSOM.read_text()
     # Move exactMatch for SO/UO from chemist Rainbow IDs to Forest ruleset IDs.
     text = text.replace(
-        "xmet:0000010\tskos:exactMatch\tforest.ruleset:SO\tsemapv:ManualMappingCuration\tstable oxygenation\tSO",
+        "xmet:4000004\tskos:exactMatch\tforest.ruleset:SO\tsemapv:ManualMappingCuration\tstable oxygenation\tSO",
         "xmet:9000010\tskos:exactMatch\tforest.ruleset:SO\tsemapv:ManualMappingCuration\tstable oxygenation ruleset\tSO\n"
-        "xmet:0000010\tskos:relatedMatch\tforest.ruleset:SO\tsemapv:ManualMappingCuration\tstable oxygenation\tSO",
+        "xmet:4000004\tskos:relatedMatch\tforest.ruleset:SO\tsemapv:ManualMappingCuration\tstable oxygenation\tSO",
     )
     text = text.replace(
-        "xmet:0000011\tskos:exactMatch\tforest.ruleset:UO\tsemapv:ManualMappingCuration\tunstable oxygenation\tUO",
+        "xmet:4000005\tskos:exactMatch\tforest.ruleset:UO\tsemapv:ManualMappingCuration\tunstable oxygenation\tUO",
         "xmet:9000011\tskos:exactMatch\tforest.ruleset:UO\tsemapv:ManualMappingCuration\tunstable oxygenation ruleset\tUO\n"
-        "xmet:0000011\tskos:relatedMatch\tforest.ruleset:UO\tsemapv:ManualMappingCuration\tunstable oxygenation\tUO",
+        "xmet:4000005\tskos:relatedMatch\tforest.ruleset:UO\tsemapv:ManualMappingCuration\tunstable oxygenation\tUO",
     )
     FOREST_SSSOM.write_text(text)
 
@@ -797,21 +797,21 @@ def patch_assignments():
         eid = obj.get("id", "")
         extra = []
         if eid in ("asg:hydroxylation", "asg:aromatic-hydroxylation", "asg:aliphatic-hydroxylation", "asg:tag-hydroxylation", "asg:tag-aromatic-hydroxylation", "asg:tag-para-hydroxylation", "asg:tag-benzylic-hydroxylation", "asg:tag-omega-hydroxylation"):
-            extra += ["xmet:0000010", "xmet:1200000", "xmet:1400010", "xmet:1400015", "xmet:1900010"]
+            extra += ["xmet:4000004", "xmet:1200000", "xmet:1400010", "xmet:1400015", "xmet:1900010"]
         if eid in ("asg:epoxidation", "asg:tag-epoxidation", "asg:tag-arene-oxide"):
-            extra += ["xmet:0000010", "xmet:1200000", "xmet:1500012", "xmet:1400014", "xmet:1400019"]
+            extra += ["xmet:4000004", "xmet:1200000", "xmet:1500012", "xmet:1400014", "xmet:1400019"]
         if eid in ("asg:tag-dealkylation", "asg:tag-n-dealkylation", "asg:tag-n-demethylation", "asg:tag-oxidative-deamination", "asg:tag-o-dealkylation", "asg:tag-o-demethylation"):
-            extra += ["xmet:0000011", "xmet:1200000", "xmet:1400010", "xmet:1400011"]
+            extra += ["xmet:4000005", "xmet:1200000", "xmet:1400010", "xmet:1400011"]
         if eid in ("asg:tag-n-dealkylation", "asg:tag-n-demethylation", "asg:tag-oxidative-deamination"):
             extra += ["xmet:1400022", "xmet:1600021", "xmet:1400019"]
         if eid in ("asg:alcohol-oxidation", "asg:primary-alcohol-oxidation"):
-            extra += ["xmet:0000012", "xmet:1200000", "xmet:1400022", "xmet:1500013"]
+            extra += ["xmet:4000006", "xmet:1200000", "xmet:1400022", "xmet:1500013"]
         if eid.startswith("asg:tag-glucuronidation") or eid in ("asg:tag-phenolic-glucuronidation", "asg:tag-n-glucuronidation", "asg:tag-acyl-glucuronidation"):
             extra += ["xmet:1300000", "xmet:1400020", "xmet:1400021"]
         if eid == "asg:tag-acyl-glucuronidation":
             extra += ["xmet:1500015", "xmet:1400014", "xmet:1400019"]
         if eid in ("asg:tag-quinone", "asg:tag-quinone-imine", "asg:tag-quinone-methide", "asg:tag-imine-methide", "asg:tag-one-step-quinone", "asg:tag-two-step-quinone", "asg:tag-three-step-quinone"):
-            extra += ["xmet:1500010", "xmet:1400014", "xmet:1400012", "xmet:1400019", "xmet:0000012"]
+            extra += ["xmet:1500010", "xmet:1400014", "xmet:1400012", "xmet:1400019", "xmet:4000006"]
         if eid == "asg:tag-quinone-imine":
             extra += ["xmet:1500011"]
         if eid in ("asg:tag-gsh-michael",):
@@ -827,7 +827,7 @@ def patch_assignments():
         if eid == "asg:delta-oxygen-gain":
             extra += ["xmet:1700010", "xmet:1700012", "xmet:1900011"]
         if eid.startswith("asg:delta-"):
-            extra += ["xmet:1700000", "xmet:1900011"]
+            extra += ["xmet:4000220", "xmet:1900011"]
         if extra:
             emits = obj.get("emit", [])
             for e in extra:
@@ -868,7 +868,7 @@ def patch_assignments_preserve_comments():
             "asg:tag-omega-hydroxylation",
         ):
             extra += [
-                "xmet:0000010",
+                "xmet:4000004",
                 "xmet:1200000",
                 "xmet:1400010",
                 "xmet:1400015",
@@ -876,7 +876,7 @@ def patch_assignments_preserve_comments():
             ]
         if eid in ("asg:epoxidation", "asg:tag-epoxidation", "asg:tag-arene-oxide"):
             extra += [
-                "xmet:0000010",
+                "xmet:4000004",
                 "xmet:1200000",
                 "xmet:1500012",
                 "xmet:1400014",
@@ -890,7 +890,7 @@ def patch_assignments_preserve_comments():
             "asg:tag-o-dealkylation",
             "asg:tag-o-demethylation",
         ):
-            extra += ["xmet:0000011", "xmet:1200000", "xmet:1400010", "xmet:1400011"]
+            extra += ["xmet:4000005", "xmet:1200000", "xmet:1400010", "xmet:1400011"]
         if eid in (
             "asg:tag-n-dealkylation",
             "asg:tag-n-demethylation",
@@ -898,7 +898,7 @@ def patch_assignments_preserve_comments():
         ):
             extra += ["xmet:1400022", "xmet:1600021", "xmet:1400019"]
         if eid in ("asg:alcohol-oxidation", "asg:primary-alcohol-oxidation"):
-            extra += ["xmet:0000012", "xmet:1200000", "xmet:1400022", "xmet:1500013"]
+            extra += ["xmet:4000006", "xmet:1200000", "xmet:1400022", "xmet:1500013"]
         if eid in (
             "asg:tag-glucuronidation",
             "asg:tag-phenolic-glucuronidation",
@@ -939,7 +939,7 @@ def patch_assignments_preserve_comments():
         if eid == "asg:delta-oxygen-gain":
             extra += ["xmet:1700010", "xmet:1700012", "xmet:1900011"]
         if eid.startswith("asg:delta-"):
-            extra += ["xmet:1700000", "xmet:1900011"]
+            extra += ["xmet:4000220", "xmet:1900011"]
         if eid.startswith("asg:tag-") and "ambiguity" not in eid and eid.startswith("asg:tag-"):
             # caller-tag provenance for tag-driven rules
             if not eid.startswith("asg:tag-fully") and "ambiguity" not in eid and "underspec" not in eid and "competing" not in eid and "phase-ambiguity" not in eid and "forest" not in eid and "external" not in eid and "aromatic-impact" not in eid and "electrophile-role" not in eid and "provenance" not in eid and "som" not in eid and "regio" not in eid and "stereo" not in eid and "type-ambiguity" not in eid and "mechanism" not in eid and "structure" not in eid and "mapping" not in eid and "formula-only" not in eid and "pathway" not in eid and "intermediate" not in eid and "ambiguous" not in eid:
@@ -1084,7 +1084,7 @@ def main():
         for p in get_broader(n):
             children[p].append(cid)
     print("Root children:")
-    for cid in sorted(children["xmet:0000000"], key=lambda x: by_id[x].get("prefLabel", x)):
+    for cid in sorted(children["xmet:4000000"], key=lambda x: by_id[x].get("prefLabel", x)):
         print(f"  {cid}  {by_id[cid].get('prefLabel')}  n={len(children[cid])}")
     print(f"Wrote {SKOS_PATH}")
     print(f"Wrote {YAML_PATH}")

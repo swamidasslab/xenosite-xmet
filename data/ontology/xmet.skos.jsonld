@@ -70,7 +70,7 @@
       "definition": "Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a full chemical ontology. Site-localized display names use templates outside the concept scheme. SSSOM maps to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO."
     },
     {
-      "id": "xmet:0000000",
+      "id": "xmet:4000000",
       "type": "skos:Concept",
       "prefLabel": "xenobiotic biotransformation",
       "inScheme": "xmet:scheme",
@@ -83,7 +83,7 @@
       "topConcept": true
     },
     {
-      "id": "xmet:0000001",
+      "id": "xmet:4000001",
       "type": "skos:Concept",
       "prefLabel": "phase I",
       "inScheme": "xmet:scheme",
@@ -95,10 +95,10 @@
         "phase 1 metabolism",
         "functionalization phase"
       ],
-      "broader": "xmet:1000000"
+      "broader": "xmet:4000212"
     },
     {
-      "id": "xmet:0000002",
+      "id": "xmet:4000002",
       "type": "skos:Concept",
       "prefLabel": "phase II",
       "inScheme": "xmet:scheme",
@@ -110,10 +110,10 @@
         "phase 2 metabolism",
         "conjugation phase"
       ],
-      "broader": "xmet:1000000"
+      "broader": "xmet:4000212"
     },
     {
-      "id": "xmet:0000003",
+      "id": "xmet:4000003",
       "type": "skos:Concept",
       "prefLabel": "phase III",
       "inScheme": "xmet:scheme",
@@ -123,10 +123,10 @@
         "phase III",
         "transport phase"
       ],
-      "broader": "xmet:1000000"
+      "broader": "xmet:4000212"
     },
     {
-      "id": "xmet:0000010",
+      "id": "xmet:4000004",
       "type": "skos:Concept",
       "prefLabel": "stable oxygenation",
       "inScheme": "xmet:scheme",
@@ -138,10 +138,10 @@
         "SO class (full name)",
         "stable_oxygenation"
       ],
-      "broader": "xmet:0000020"
+      "broader": "xmet:4000009"
     },
     {
-      "id": "xmet:0000011",
+      "id": "xmet:4000005",
       "type": "skos:Concept",
       "prefLabel": "unstable oxygenation",
       "inScheme": "xmet:scheme",
@@ -153,10 +153,10 @@
         "UO class (full name)",
         "unstable_oxygenation"
       ],
-      "broader": "xmet:0000020"
+      "broader": "xmet:4000009"
     },
     {
-      "id": "xmet:0000012",
+      "id": "xmet:4000006",
       "type": "skos:Concept",
       "prefLabel": "dehydrogenation",
       "inScheme": "xmet:scheme",
@@ -164,30 +164,30 @@
       "altLabel": [
         "desaturation"
       ],
-      "broader": "xmet:0000020",
-      "isPartOf": "xmet:0000300",
-      "relatedTo": "xmet:0000300"
+      "broader": "xmet:4000009",
+      "isPartOf": "xmet:4000059",
+      "relatedTo": "xmet:4000059"
     },
     {
-      "id": "xmet:0000013",
+      "id": "xmet:4000007",
       "type": "skos:Concept",
       "prefLabel": "hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "Rainbow hydrolysis color: water addition cleaves amide, ester, ether, or related bonds. Nested under isoredox (redox-neutral).",
-      "broader": "xmet:3000005",
-      "relatedTo": "xmet:0000400"
+      "broader": "xmet:4000265",
+      "relatedTo": "xmet:4000077"
     },
     {
-      "id": "xmet:0000014",
+      "id": "xmet:4000008",
       "type": "skos:Concept",
       "prefLabel": "reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction class (Rainbow reduction color): remove oxygen or add hydrogen(s) (nitro, carbonyl, sulfo reduction; reductive dehalogenation; hydrogenation). Peer of oxidation and isoredox under reaction class.",
-      "broader": "xmet:1100000",
-      "relatedTo": "xmet:0000550"
+      "broader": "xmet:4000213",
+      "relatedTo": "xmet:4000113"
     },
     {
-      "id": "xmet:0000020",
+      "id": "xmet:4000009",
       "type": "skos:Concept",
       "prefLabel": "oxidation",
       "inScheme": "xmet:scheme",
@@ -195,28 +195,28 @@
       "altLabel": [
         "oxidative metabolism"
       ],
-      "broader": "xmet:1100000"
+      "broader": "xmet:4000213"
     },
     {
-      "id": "xmet:0000022",
+      "id": "xmet:4000010",
       "type": "skos:Concept",
       "prefLabel": "heteroatom oxidation",
       "inScheme": "xmet:scheme",
       "definition": "Direct oxidation of N, S (and related heteroatoms).",
-      "broader": "xmet:0000010"
+      "broader": "xmet:4000004"
     },
     {
-      "id": "xmet:0000024",
+      "id": "xmet:4000011",
       "type": "skos:Concept",
       "prefLabel": "conjugation",
       "inScheme": "xmet:scheme",
       "definition": "Addition of an endogenous or trapping moiety. Split into transfer conjugation (clearance-oriented) and adduct formation (electrophile capture).",
-      "broader": "xmet:1100000",
-      "closeMatch": "xmet:0000002",
-      "antonymOf": "xmet:0000732"
+      "broader": "xmet:4000213",
+      "closeMatch": "xmet:4000002",
+      "antonymOf": "xmet:4000147"
     },
     {
-      "id": "xmet:0000100",
+      "id": "xmet:4000012",
       "type": "skos:Concept",
       "prefLabel": "hydroxylation",
       "inScheme": "xmet:scheme",
@@ -227,12 +227,12 @@
         "hydroxylation to alcohol",
         "hydroxylation to alcohol or oxide"
       ],
-      "broader": "xmet:0000010",
-      "antonymOf": "xmet:0000650",
-      "relatedTo": "xmet:0004011"
+      "broader": "xmet:4000004",
+      "antonymOf": "xmet:4000128",
+      "relatedTo": "xmet:4000203"
     },
     {
-      "id": "xmet:0000101",
+      "id": "xmet:4000013",
       "type": "skos:Concept",
       "prefLabel": "aromatic hydroxylation",
       "inScheme": "xmet:scheme",
@@ -244,12 +244,12 @@
         "aromatic hydroxylation to phenol",
         "aromatic hydroxylation to phenol or phenolate"
       ],
-      "broader": "xmet:0000100",
-      "isPartOf": "xmet:0000300",
-      "relatedTo": "xmet:0000300"
+      "broader": "xmet:4000012",
+      "isPartOf": "xmet:4000059",
+      "relatedTo": "xmet:4000059"
     },
     {
-      "id": "xmet:0000102",
+      "id": "xmet:4000014",
       "type": "skos:Concept",
       "prefLabel": "aliphatic hydroxylation",
       "inScheme": "xmet:scheme",
@@ -257,34 +257,34 @@
       "altLabel": [
         "alkyl hydroxylation"
       ],
-      "broader": "xmet:3001232"
+      "broader": "xmet:4000380"
     },
     {
-      "id": "xmet:0000103",
+      "id": "xmet:4000015",
       "type": "skos:Concept",
       "prefLabel": "para-hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Para-regioselective aromatic hydroxylation.",
-      "broader": "xmet:0000101"
+      "broader": "xmet:4000013"
     },
     {
-      "id": "xmet:0000104",
+      "id": "xmet:4000016",
       "type": "skos:Concept",
       "prefLabel": "ortho-hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Ortho-regioselective aromatic hydroxylation.",
-      "broader": "xmet:0000101"
+      "broader": "xmet:4000013"
     },
     {
-      "id": "xmet:0000105",
+      "id": "xmet:4000017",
       "type": "skos:Concept",
       "prefLabel": "meta-hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Meta-regioselective aromatic hydroxylation.",
-      "broader": "xmet:0000101"
+      "broader": "xmet:4000013"
     },
     {
-      "id": "xmet:0000106",
+      "id": "xmet:4000018",
       "type": "skos:Concept",
       "prefLabel": "benzylic hydroxylation",
       "inScheme": "xmet:scheme",
@@ -292,18 +292,18 @@
       "altLabel": [
         "toluene side-chain hydroxylation"
       ],
-      "broader": "xmet:3001231"
+      "broader": "xmet:4000379"
     },
     {
-      "id": "xmet:0000107",
+      "id": "xmet:4000019",
       "type": "skos:Concept",
       "prefLabel": "allylic hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation at a carbon adjacent to a C=C bond (allylic). Under hydroxylation of activated carbons; not restricted to methine sites.",
-      "broader": "xmet:3001231"
+      "broader": "xmet:4000379"
     },
     {
-      "id": "xmet:0000108",
+      "id": "xmet:4000020",
       "type": "skos:Concept",
       "prefLabel": "ω-hydroxylation",
       "inScheme": "xmet:scheme",
@@ -312,10 +312,10 @@
         "omega-hydroxylation",
         "terminal methyl hydroxylation"
       ],
-      "broader": "xmet:3001230"
+      "broader": "xmet:4000378"
     },
     {
-      "id": "xmet:0000109",
+      "id": "xmet:4000021",
       "type": "skos:Concept",
       "prefLabel": "ω-1 hydroxylation",
       "inScheme": "xmet:scheme",
@@ -324,10 +324,10 @@
         "omega-1 hydroxylation",
         "penultimate carbon hydroxylation"
       ],
-      "broader": "xmet:3001230"
+      "broader": "xmet:4000378"
     },
     {
-      "id": "xmet:0000110",
+      "id": "xmet:4000022",
       "type": "skos:Concept",
       "prefLabel": "epoxidation",
       "inScheme": "xmet:scheme",
@@ -335,18 +335,18 @@
       "altLabel": [
         "oxirane formation"
       ],
-      "broader": "xmet:0000010"
+      "broader": "xmet:4000004"
     },
     {
-      "id": "xmet:0000111",
+      "id": "xmet:4000023",
       "type": "skos:Concept",
       "prefLabel": "alkene epoxidation",
       "inScheme": "xmet:scheme",
       "definition": "alkene epoxidation: xenobiotic-metabolism term under epoxidation.",
-      "broader": "xmet:0000110"
+      "broader": "xmet:4000022"
     },
     {
-      "id": "xmet:0000112",
+      "id": "xmet:4000024",
       "type": "skos:Concept",
       "prefLabel": "arene oxide formation",
       "inScheme": "xmet:scheme",
@@ -354,15 +354,15 @@
       "altLabel": [
         "arene oxide"
       ],
-      "broader": "xmet:3001108",
+      "broader": "xmet:4000290",
       "isPartOf": [
-        "xmet:3001151",
-        "xmet:3001152"
+        "xmet:4000323",
+        "xmet:4000324"
       ],
-      "relatedTo": "xmet:0004005"
+      "relatedTo": "xmet:4000197"
     },
     {
-      "id": "xmet:0000113",
+      "id": "xmet:4000025",
       "type": "skos:Concept",
       "prefLabel": "thiophene epoxidation",
       "inScheme": "xmet:scheme",
@@ -370,10 +370,10 @@
       "altLabel": [
         "thiohene epoxidation"
       ],
-      "broader": "xmet:0000110"
+      "broader": "xmet:4000022"
     },
     {
-      "id": "xmet:0000120",
+      "id": "xmet:4000026",
       "type": "skos:Concept",
       "prefLabel": "nitrogen oxidation",
       "inScheme": "xmet:scheme",
@@ -381,10 +381,10 @@
       "altLabel": [
         "N-oxidation"
       ],
-      "broader": "xmet:0000022"
+      "broader": "xmet:4000010"
     },
     {
-      "id": "xmet:0000121",
+      "id": "xmet:4000027",
       "type": "skos:Concept",
       "prefLabel": "N-oxide formation",
       "inScheme": "xmet:scheme",
@@ -392,10 +392,10 @@
       "altLabel": [
         "tertiary amine N-oxidation"
       ],
-      "broader": "xmet:0000120"
+      "broader": "xmet:4000026"
     },
     {
-      "id": "xmet:0000122",
+      "id": "xmet:4000028",
       "type": "skos:Concept",
       "prefLabel": "hydroxylamine formation",
       "inScheme": "xmet:scheme",
@@ -403,34 +403,34 @@
       "altLabel": [
         "N-hydroxylation"
       ],
-      "broader": "xmet:0000120"
+      "broader": "xmet:4000026"
     },
     {
-      "id": "xmet:0000123",
+      "id": "xmet:4000029",
       "type": "skos:Concept",
       "prefLabel": "nitroso formation",
       "inScheme": "xmet:scheme",
       "definition": "Formation of a nitroso group by N-oxidation of a primary amine (–NH2 → –N=O).",
-      "broader": "xmet:0000120"
+      "broader": "xmet:4000026"
     },
     {
-      "id": "xmet:0000124",
+      "id": "xmet:4000030",
       "type": "skos:Concept",
       "prefLabel": "primary amine N-oxidation",
       "inScheme": "xmet:scheme",
       "definition": "N-oxidation of a primary amine, typically yielding a hydroxylamine (or further nitroso).",
-      "broader": "xmet:0000122"
+      "broader": "xmet:4000028"
     },
     {
-      "id": "xmet:0000125",
+      "id": "xmet:4000031",
       "type": "skos:Concept",
       "prefLabel": "aromatic amine N-oxidation",
       "inScheme": "xmet:scheme",
       "definition": "N-oxidation of an aromatic amine, typically yielding an aryl hydroxylamine.",
-      "broader": "xmet:0000122"
+      "broader": "xmet:4000028"
     },
     {
-      "id": "xmet:0000130",
+      "id": "xmet:4000032",
       "type": "skos:Concept",
       "prefLabel": "sulfur oxidation",
       "inScheme": "xmet:scheme",
@@ -438,10 +438,10 @@
       "altLabel": [
         "S-oxidation"
       ],
-      "broader": "xmet:0000022"
+      "broader": "xmet:4000010"
     },
     {
-      "id": "xmet:0000131",
+      "id": "xmet:4000033",
       "type": "skos:Concept",
       "prefLabel": "sulfoxidation",
       "inScheme": "xmet:scheme",
@@ -449,18 +449,18 @@
       "altLabel": [
         "sulfoxide formation"
       ],
-      "broader": "xmet:3001117"
+      "broader": "xmet:4000299"
     },
     {
-      "id": "xmet:0000132",
+      "id": "xmet:4000034",
       "type": "skos:Concept",
       "prefLabel": "sulfone formation",
       "inScheme": "xmet:scheme",
       "definition": "sulfone formation: xenobiotic-metabolism term under sulfur oxidation.",
-      "broader": "xmet:3001117"
+      "broader": "xmet:4000299"
     },
     {
-      "id": "xmet:0000133",
+      "id": "xmet:4000035",
       "type": "skos:Concept",
       "prefLabel": "thiophene S-oxidation",
       "inScheme": "xmet:scheme",
@@ -469,58 +469,58 @@
         "Thiohene S-oxidation",
         "thiohene S-oxidation"
       ],
-      "broader": "xmet:0000130"
+      "broader": "xmet:4000032"
     },
     {
-      "id": "xmet:0000134",
+      "id": "xmet:4000036",
       "type": "skos:Concept",
       "prefLabel": "thiol oxidation",
       "inScheme": "xmet:scheme",
       "definition": "thiol oxidation: xenobiotic-metabolism term under sulfur oxidation.",
-      "broader": "xmet:3001116"
+      "broader": "xmet:4000298"
     },
     {
-      "id": "xmet:0000135",
+      "id": "xmet:4000037",
       "type": "skos:Concept",
       "prefLabel": "disulfide formation",
       "inScheme": "xmet:scheme",
       "definition": "Formation of a disulfide (R–S–S–R′) by sulfur oxidation / oxidative coupling. Does not require an S=O (sulfur oxo) bond.",
-      "broader": "xmet:0000130"
+      "broader": "xmet:4000032"
     },
     {
-      "id": "xmet:0000140",
+      "id": "xmet:4000038",
       "type": "skos:Concept",
       "prefLabel": "primary carbon hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "primary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.",
-      "broader": "xmet:3001230"
+      "broader": "xmet:4000378"
     },
     {
-      "id": "xmet:0000141",
+      "id": "xmet:4000039",
       "type": "skos:Concept",
       "prefLabel": "secondary carbon hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "secondary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.",
-      "broader": "xmet:3001230"
+      "broader": "xmet:4000378"
     },
     {
-      "id": "xmet:0000142",
+      "id": "xmet:4000040",
       "type": "skos:Concept",
       "prefLabel": "tertiary carbon hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "tertiary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.",
-      "broader": "xmet:3001109"
+      "broader": "xmet:4000291"
     },
     {
-      "id": "xmet:0000143",
+      "id": "xmet:4000041",
       "type": "skos:Concept",
       "prefLabel": "alicyclic hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation of a saturated ring carbon.",
-      "broader": "xmet:3001232"
+      "broader": "xmet:4000380"
     },
     {
-      "id": "xmet:0000200",
+      "id": "xmet:4000042",
       "type": "skos:Concept",
       "prefLabel": "dealkylation",
       "inScheme": "xmet:scheme",
@@ -529,11 +529,11 @@
         "oxidative dealkylation",
         "carbon–heteroatom oxidative cleavage"
       ],
-      "broader": "xmet:0000011",
-      "antonymOf": "xmet:0000610"
+      "broader": "xmet:4000005",
+      "antonymOf": "xmet:4000116"
     },
     {
-      "id": "xmet:0000201",
+      "id": "xmet:4000043",
       "type": "skos:Concept",
       "prefLabel": "N-dealkylation",
       "inScheme": "xmet:scheme",
@@ -542,10 +542,10 @@
         "oxidative N-dealkylation",
         "N-dealkylative cleavage"
       ],
-      "broader": "xmet:0000200"
+      "broader": "xmet:4000042"
     },
     {
-      "id": "xmet:0000202",
+      "id": "xmet:4000044",
       "type": "skos:Concept",
       "prefLabel": "O-dealkylation",
       "inScheme": "xmet:scheme",
@@ -553,18 +553,18 @@
       "altLabel": [
         "oxidative O-dealkylation"
       ],
-      "broader": "xmet:0000200"
+      "broader": "xmet:4000042"
     },
     {
-      "id": "xmet:0000203",
+      "id": "xmet:4000045",
       "type": "skos:Concept",
       "prefLabel": "S-dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "S-dealkylation: xenobiotic-metabolism term under dealkylation.",
-      "broader": "xmet:0000200"
+      "broader": "xmet:4000042"
     },
     {
-      "id": "xmet:0000204",
+      "id": "xmet:4000046",
       "type": "skos:Concept",
       "prefLabel": "C-dealkylation",
       "inScheme": "xmet:scheme",
@@ -574,26 +574,26 @@
         "oxidative carbon–carbon cleavage",
         "carbon–carbon dealkylation"
       ],
-      "broader": "xmet:0000200"
+      "broader": "xmet:4000042"
     },
     {
-      "id": "xmet:0000206",
+      "id": "xmet:4000047",
       "type": "skos:Concept",
       "prefLabel": "N-deethylation",
       "inScheme": "xmet:scheme",
       "definition": "N-deethylation: xenobiotic-metabolism term under N-dealkylation.",
-      "broader": "xmet:3001201"
+      "broader": "xmet:4000350"
     },
     {
-      "id": "xmet:0000207",
+      "id": "xmet:4000048",
       "type": "skos:Concept",
       "prefLabel": "N-depropylation",
       "inScheme": "xmet:scheme",
       "definition": "N-depropylation: xenobiotic-metabolism term under N-dealkylation.",
-      "broader": "xmet:3001201"
+      "broader": "xmet:4000350"
     },
     {
-      "id": "xmet:0000208",
+      "id": "xmet:4000049",
       "type": "skos:Concept",
       "prefLabel": "oxidative deamination",
       "inScheme": "xmet:scheme",
@@ -601,10 +601,10 @@
       "altLabel": [
         "deamination"
       ],
-      "broader": "xmet:3001146"
+      "broader": "xmet:4000318"
     },
     {
-      "id": "xmet:0000209",
+      "id": "xmet:4000050",
       "type": "skos:Concept",
       "prefLabel": "O-demethylation",
       "inScheme": "xmet:scheme",
@@ -613,10 +613,10 @@
         "aryl methyl ether cleavage",
         "oxidative O-demethylation"
       ],
-      "broader": "xmet:3001194"
+      "broader": "xmet:4000344"
     },
     {
-      "id": "xmet:0000210",
+      "id": "xmet:4000051",
       "type": "skos:Concept",
       "prefLabel": "oxidative dehalogenation",
       "inScheme": "xmet:scheme",
@@ -624,63 +624,63 @@
       "altLabel": [
         "oxidative dehalogenation"
       ],
-      "broader": "xmet:0000011",
-      "relatedTo": "xmet:1100014",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000005",
+      "relatedTo": "xmet:4000214",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:0000211",
+      "id": "xmet:4000052",
       "type": "skos:Concept",
       "prefLabel": "O-deethylation",
       "inScheme": "xmet:scheme",
       "definition": "O-deethylation: xenobiotic-metabolism term under O-dealkylation.",
-      "broader": "xmet:3001195"
+      "broader": "xmet:4000345"
     },
     {
-      "id": "xmet:0000212",
+      "id": "xmet:4000053",
       "type": "skos:Concept",
       "prefLabel": "aromatic O-dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "Cleavage of an aryl–O–alkyl ether (e.g. anisole → phenol).",
-      "broader": "xmet:0000202"
+      "broader": "xmet:4000044"
     },
     {
-      "id": "xmet:0000213",
+      "id": "xmet:4000054",
       "type": "skos:Concept",
       "prefLabel": "aliphatic O-dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "aliphatic O-dealkylation: xenobiotic-metabolism term under O-dealkylation.",
-      "broader": "xmet:0000202"
+      "broader": "xmet:4000044"
     },
     {
-      "id": "xmet:0000214",
+      "id": "xmet:4000055",
       "type": "skos:Concept",
       "prefLabel": "oxidative defluorination",
       "inScheme": "xmet:scheme",
       "definition": "oxidative defluorination: xenobiotic-metabolism term under oxidative dehalogenation.",
-      "broader": "xmet:3001125",
-      "alwaysWith": "xmet:2200017"
+      "broader": "xmet:4000307",
+      "alwaysWith": "xmet:4000237"
     },
     {
-      "id": "xmet:0000215",
+      "id": "xmet:4000056",
       "type": "skos:Concept",
       "prefLabel": "oxidative dechlorination",
       "inScheme": "xmet:scheme",
       "definition": "oxidative dechlorination: xenobiotic-metabolism term under oxidative dehalogenation.",
-      "broader": "xmet:3001125",
-      "alwaysWith": "xmet:2200018"
+      "broader": "xmet:4000307",
+      "alwaysWith": "xmet:4000238"
     },
     {
-      "id": "xmet:0000216",
+      "id": "xmet:4000057",
       "type": "skos:Concept",
       "prefLabel": "oxidative debromination",
       "inScheme": "xmet:scheme",
       "definition": "oxidative debromination: xenobiotic-metabolism term under oxidative dehalogenation.",
-      "broader": "xmet:3001125",
-      "alwaysWith": "xmet:2200019"
+      "broader": "xmet:4000307",
+      "alwaysWith": "xmet:4000239"
     },
     {
-      "id": "xmet:0000217",
+      "id": "xmet:4000058",
       "type": "skos:Concept",
       "prefLabel": "S-demethylation",
       "inScheme": "xmet:scheme",
@@ -688,10 +688,10 @@
       "altLabel": [
         "oxidative S-demethylation"
       ],
-      "broader": "xmet:3001194"
+      "broader": "xmet:4000344"
     },
     {
-      "id": "xmet:0000300",
+      "id": "xmet:4000059",
       "type": "skos:Concept",
       "prefLabel": "quinone-like species formation",
       "inScheme": "xmet:scheme",
@@ -702,15 +702,15 @@
         "quinone-like formation",
         "quinonation"
       ],
-      "broader": "xmet:1100000",
+      "broader": "xmet:4000213",
       "relatedTo": [
-        "xmet:3000400",
-        "xmet:0000101",
-        "xmet:0000012"
+        "xmet:4000272",
+        "xmet:4000013",
+        "xmet:4000006"
       ]
     },
     {
-      "id": "xmet:0000301",
+      "id": "xmet:4000060",
       "type": "skos:Concept",
       "prefLabel": "ortho-quinone formation",
       "inScheme": "xmet:scheme",
@@ -720,10 +720,10 @@
         "1,2-quinone formation",
         "ortho-quinoid formation"
       ],
-      "broader": "xmet:3001246"
+      "broader": "xmet:4000394"
     },
     {
-      "id": "xmet:0000302",
+      "id": "xmet:4000061",
       "type": "skos:Concept",
       "prefLabel": "para-quinone formation",
       "inScheme": "xmet:scheme",
@@ -733,10 +733,10 @@
         "1,4-quinone formation",
         "para-quinoid formation"
       ],
-      "broader": "xmet:3001246"
+      "broader": "xmet:4000394"
     },
     {
-      "id": "xmet:0000303",
+      "id": "xmet:4000062",
       "type": "skos:Concept",
       "prefLabel": "quinone-imine formation",
       "inScheme": "xmet:scheme",
@@ -746,10 +746,10 @@
         "NAPQI-type formation",
         "quinoid imine formation"
       ],
-      "broader": "xmet:3001214"
+      "broader": "xmet:4000363"
     },
     {
-      "id": "xmet:0000304",
+      "id": "xmet:4000063",
       "type": "skos:Concept",
       "prefLabel": "quinone-methide formation",
       "inScheme": "xmet:scheme",
@@ -759,10 +759,10 @@
         "quinoid methide formation",
         "imine-methide formation"
       ],
-      "broader": "xmet:3001214"
+      "broader": "xmet:4000363"
     },
     {
-      "id": "xmet:0000305",
+      "id": "xmet:4000064",
       "type": "skos:Concept",
       "prefLabel": "iminium ion formation",
       "inScheme": "xmet:scheme",
@@ -770,10 +770,10 @@
       "altLabel": [
         "iminium formation"
       ],
-      "broader": "xmet:1200106"
+      "broader": "xmet:4000216"
     },
     {
-      "id": "xmet:0000306",
+      "id": "xmet:4000065",
       "type": "skos:Concept",
       "prefLabel": "imine-methide formation",
       "inScheme": "xmet:scheme",
@@ -781,10 +781,10 @@
       "altLabel": [
         "imine methide formation"
       ],
-      "broader": "xmet:1200106"
+      "broader": "xmet:4000216"
     },
     {
-      "id": "xmet:0000307",
+      "id": "xmet:4000066",
       "type": "skos:Concept",
       "prefLabel": "one-step",
       "inScheme": "xmet:scheme",
@@ -798,10 +798,10 @@
         "direct quinone-like species formation",
         "one-step quinone formation"
       ],
-      "broader": "xmet:3001245"
+      "broader": "xmet:4000393"
     },
     {
-      "id": "xmet:0000308",
+      "id": "xmet:4000067",
       "type": "skos:Concept",
       "prefLabel": "two-step",
       "inScheme": "xmet:scheme",
@@ -813,10 +813,10 @@
         "2-step quinone-like species formation",
         "two-step quinone formation"
       ],
-      "broader": "xmet:3001245"
+      "broader": "xmet:4000393"
     },
     {
-      "id": "xmet:0000309",
+      "id": "xmet:4000068",
       "type": "skos:Concept",
       "prefLabel": "three-step",
       "inScheme": "xmet:scheme",
@@ -829,10 +829,10 @@
         "3-step quinone-like species formation",
         "three-step quinone formation"
       ],
-      "broader": "xmet:3001245"
+      "broader": "xmet:4000393"
     },
     {
-      "id": "xmet:0000310",
+      "id": "xmet:4000069",
       "type": "skos:Concept",
       "prefLabel": "alcohol oxidation",
       "inScheme": "xmet:scheme",
@@ -841,26 +841,26 @@
         "alcohol dehydrogenation",
         "alcohol to aldehyde"
       ],
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:0000311",
+      "id": "xmet:4000070",
       "type": "skos:Concept",
       "prefLabel": "primary alcohol oxidation",
       "inScheme": "xmet:scheme",
       "definition": "Dehydrogenation of a primary alcohol to an aldehyde.",
-      "broader": "xmet:0000310"
+      "broader": "xmet:4000069"
     },
     {
-      "id": "xmet:0000312",
+      "id": "xmet:4000071",
       "type": "skos:Concept",
       "prefLabel": "secondary alcohol oxidation",
       "inScheme": "xmet:scheme",
       "definition": "Dehydrogenation of a secondary alcohol to a ketone.",
-      "broader": "xmet:0000310"
+      "broader": "xmet:4000069"
     },
     {
-      "id": "xmet:0000313",
+      "id": "xmet:4000072",
       "type": "skos:Concept",
       "prefLabel": "aldehyde oxidation",
       "inScheme": "xmet:scheme",
@@ -868,10 +868,10 @@
       "altLabel": [
         "aldehyde to carboxylic acid"
       ],
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:0000314",
+      "id": "xmet:4000073",
       "type": "skos:Concept",
       "prefLabel": "alkene formation",
       "inScheme": "xmet:scheme",
@@ -879,19 +879,19 @@
       "altLabel": [
         "desaturation to alkene"
       ],
-      "broader": "xmet:3001120"
+      "broader": "xmet:4000302"
     },
     {
-      "id": "xmet:0000315",
+      "id": "xmet:4000074",
       "type": "skos:Concept",
       "prefLabel": "aromatization",
       "inScheme": "xmet:scheme",
       "definition": "Formation or restoration of an aromatic system.",
-      "broader": "xmet:3000510",
-      "antonymOf": "xmet:0004001"
+      "broader": "xmet:4000274",
+      "antonymOf": "xmet:4000194"
     },
     {
-      "id": "xmet:0000316",
+      "id": "xmet:4000075",
       "type": "skos:Concept",
       "prefLabel": "single- to double-bond dehydrogenation",
       "inScheme": "xmet:scheme",
@@ -899,10 +899,10 @@
       "altLabel": [
         "bond unsaturation to alkene"
       ],
-      "broader": "xmet:3001120"
+      "broader": "xmet:4000302"
     },
     {
-      "id": "xmet:0000317",
+      "id": "xmet:4000076",
       "type": "skos:Concept",
       "prefLabel": "double- to triple-bond dehydrogenation",
       "inScheme": "xmet:scheme",
@@ -910,10 +910,10 @@
       "altLabel": [
         "bond unsaturation to alkyne"
       ],
-      "broader": "xmet:3001247"
+      "broader": "xmet:4000395"
     },
     {
-      "id": "xmet:0000400",
+      "id": "xmet:4000077",
       "type": "skos:Concept",
       "prefLabel": "epoxide opening",
       "inScheme": "xmet:scheme",
@@ -921,11 +921,11 @@
       "altLabel": [
         "epoxide hydrolysis"
       ],
-      "broader": "xmet:3000005",
-      "relatedTo": "xmet:0000013"
+      "broader": "xmet:4000265",
+      "relatedTo": "xmet:4000007"
     },
     {
-      "id": "xmet:0000401",
+      "id": "xmet:4000078",
       "type": "skos:Concept",
       "prefLabel": "ester hydrolysis",
       "inScheme": "xmet:scheme",
@@ -935,50 +935,50 @@
         "C-de-esterification",
         "deesterification"
       ],
-      "broader": "xmet:3001203"
+      "broader": "xmet:4000352"
     },
     {
-      "id": "xmet:0000402",
+      "id": "xmet:4000079",
       "type": "skos:Concept",
       "prefLabel": "amide hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "amide hydrolysis: xenobiotic-metabolism term under hydrolysis.",
-      "broader": "xmet:3001204"
+      "broader": "xmet:4000353"
     },
     {
-      "id": "xmet:0000403",
+      "id": "xmet:4000080",
       "type": "skos:Concept",
       "prefLabel": "lactone hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "lactone hydrolysis: xenobiotic-metabolism term under ester hydrolysis.",
-      "broader": "xmet:3001203"
+      "broader": "xmet:4000352"
     },
     {
-      "id": "xmet:0000404",
+      "id": "xmet:4000081",
       "type": "skos:Concept",
       "prefLabel": "lactam hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "lactam hydrolysis: xenobiotic-metabolism term under amide hydrolysis.",
-      "broader": "xmet:3001204"
+      "broader": "xmet:4000353"
     },
     {
-      "id": "xmet:0000405",
+      "id": "xmet:4000082",
       "type": "skos:Concept",
       "prefLabel": "carbamate hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "carbamate hydrolysis: xenobiotic-metabolism term under hydrolysis.",
-      "broader": "xmet:3001204"
+      "broader": "xmet:4000353"
     },
     {
-      "id": "xmet:0000406",
+      "id": "xmet:4000083",
       "type": "skos:Concept",
       "prefLabel": "urea hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "urea hydrolysis: xenobiotic-metabolism term under hydrolysis.",
-      "broader": "xmet:3001204"
+      "broader": "xmet:4000353"
     },
     {
-      "id": "xmet:0000407",
+      "id": "xmet:4000084",
       "type": "skos:Concept",
       "prefLabel": "ether cleavage",
       "inScheme": "xmet:scheme",
@@ -986,27 +986,27 @@
       "altLabel": [
         "hydrolytic ether cleavage"
       ],
-      "broader": "xmet:3001205"
+      "broader": "xmet:4000354"
     },
     {
-      "id": "xmet:0000408",
+      "id": "xmet:4000085",
       "type": "skos:Concept",
       "prefLabel": "ether hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from oxidative O-dealkylation).",
-      "broader": "xmet:3001205"
+      "broader": "xmet:4000354"
     },
     {
-      "id": "xmet:0000409",
+      "id": "xmet:4000086",
       "type": "skos:Concept",
       "prefLabel": "cyanide hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolysis at a cyanide/nitrile center (Rainbow Table 1 hydrolysis type).",
-      "broader": "xmet:3001206",
-      "closeMatch": "xmet:0000411"
+      "broader": "xmet:4000355",
+      "closeMatch": "xmet:4000088"
     },
     {
-      "id": "xmet:0000410",
+      "id": "xmet:4000087",
       "type": "skos:Concept",
       "prefLabel": "dephosphorylation",
       "inScheme": "xmet:scheme",
@@ -1014,19 +1014,19 @@
       "altLabel": [
         "phosphate ester hydrolysis"
       ],
-      "broader": "xmet:0000013",
-      "antonymOf": "xmet:1300012"
+      "broader": "xmet:4000007",
+      "antonymOf": "xmet:4000219"
     },
     {
-      "id": "xmet:0000411",
+      "id": "xmet:4000088",
       "type": "skos:Concept",
       "prefLabel": "nitrile hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolysis of a nitrile / cyanide group.",
-      "broader": "xmet:3001206"
+      "broader": "xmet:4000355"
     },
     {
-      "id": "xmet:0000412",
+      "id": "xmet:4000089",
       "type": "skos:Concept",
       "prefLabel": "azo cleavage",
       "inScheme": "xmet:scheme",
@@ -1035,10 +1035,10 @@
         "azo splitting",
         "azo reduction/cleavage"
       ],
-      "broader": "xmet:3001228"
+      "broader": "xmet:4000376"
     },
     {
-      "id": "xmet:0000500",
+      "id": "xmet:4000090",
       "type": "skos:Concept",
       "prefLabel": "hydrogenation",
       "inScheme": "xmet:scheme",
@@ -1047,90 +1047,90 @@
         "alkene hydrogenation",
         "reductive saturation"
       ],
-      "broader": "xmet:0000014"
+      "broader": "xmet:4000008"
     },
     {
-      "id": "xmet:0000501",
+      "id": "xmet:4000091",
       "type": "skos:Concept",
       "prefLabel": "alkene hydrogenation",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a C=C bond to a C–C single bond by addition of hydrogen.",
-      "broader": "xmet:0000500"
+      "broader": "xmet:4000090"
     },
     {
-      "id": "xmet:0000502",
+      "id": "xmet:4000092",
       "type": "skos:Concept",
       "prefLabel": "alkyne hydrogenation",
       "inScheme": "xmet:scheme",
       "definition": "Partial reduction of a C≡C bond to a C=C bond by addition of hydrogen.",
-      "broader": "xmet:0000500"
+      "broader": "xmet:4000090"
     },
     {
-      "id": "xmet:0000510",
+      "id": "xmet:4000093",
       "type": "skos:Concept",
       "prefLabel": "nitrogen reduction",
       "inScheme": "xmet:scheme",
       "definition": "nitrogen reduction: xenobiotic-metabolism term under reduction.",
-      "broader": "xmet:0000014"
+      "broader": "xmet:4000008"
     },
     {
-      "id": "xmet:0000511",
+      "id": "xmet:4000094",
       "type": "skos:Concept",
       "prefLabel": "nitro reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a nitro group toward nitroso, hydroxylamine, and/or amine.",
-      "broader": "xmet:0000512"
+      "broader": "xmet:4000095"
     },
     {
-      "id": "xmet:0000512",
+      "id": "xmet:4000095",
       "type": "skos:Concept",
       "prefLabel": "nitro to amine reduction",
       "inScheme": "xmet:scheme",
       "definition": "Complete reduction of a nitro group to an amine (–NO2 → –NH2).",
-      "broader": "xmet:3001227"
+      "broader": "xmet:4000375"
     },
     {
-      "id": "xmet:0000513",
+      "id": "xmet:4000096",
       "type": "skos:Concept",
       "prefLabel": "nitroaromatic reduction",
       "inScheme": "xmet:scheme",
       "definition": "nitroaromatic reduction: xenobiotic-metabolism term under nitro reduction.",
-      "broader": "xmet:0000512"
+      "broader": "xmet:4000095"
     },
     {
-      "id": "xmet:0000514",
+      "id": "xmet:4000097",
       "type": "skos:Concept",
       "prefLabel": "azo reduction",
       "inScheme": "xmet:scheme",
       "definition": "azo reduction: xenobiotic-metabolism term under nitrogen reduction.",
-      "broader": "xmet:3001228"
+      "broader": "xmet:4000376"
     },
     {
-      "id": "xmet:0000515",
+      "id": "xmet:4000098",
       "type": "skos:Concept",
       "prefLabel": "N-oxide reduction",
       "inScheme": "xmet:scheme",
       "definition": "N-oxide reduction: xenobiotic-metabolism term under nitrogen reduction.",
-      "broader": "xmet:3001229"
+      "broader": "xmet:4000377"
     },
     {
-      "id": "xmet:0000516",
+      "id": "xmet:4000099",
       "type": "skos:Concept",
       "prefLabel": "oxime reduction",
       "inScheme": "xmet:scheme",
       "definition": "oxime reduction: xenobiotic-metabolism term under nitrogen reduction.",
-      "broader": "xmet:3001229"
+      "broader": "xmet:4000377"
     },
     {
-      "id": "xmet:0000517",
+      "id": "xmet:4000100",
       "type": "skos:Concept",
       "prefLabel": "benzodioxole reduction",
       "inScheme": "xmet:scheme",
       "definition": "benzodioxole reduction: reductive cleavage of a methylenedioxy bridge.",
-      "broader": "xmet:0000014"
+      "broader": "xmet:4000008"
     },
     {
-      "id": "xmet:0000520",
+      "id": "xmet:4000101",
       "type": "skos:Concept",
       "prefLabel": "oxygen reduction",
       "inScheme": "xmet:scheme",
@@ -1139,26 +1139,26 @@
         "carbonyl reduction",
         "ketone/aldehyde reduction"
       ],
-      "broader": "xmet:0000014"
+      "broader": "xmet:4000008"
     },
     {
-      "id": "xmet:0000521",
+      "id": "xmet:4000102",
       "type": "skos:Concept",
       "prefLabel": "ketone reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a ketone carbonyl to a secondary alcohol.",
-      "broader": "xmet:0000524"
+      "broader": "xmet:4000105"
     },
     {
-      "id": "xmet:0000522",
+      "id": "xmet:4000103",
       "type": "skos:Concept",
       "prefLabel": "aldehyde reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of an aldehyde carbonyl to a primary alcohol.",
-      "broader": "xmet:0000524"
+      "broader": "xmet:4000105"
     },
     {
-      "id": "xmet:0000523",
+      "id": "xmet:4000104",
       "type": "skos:Concept",
       "prefLabel": "quinone-like reduction",
       "inScheme": "xmet:scheme",
@@ -1167,42 +1167,42 @@
         "quinoid reduction",
         "quinone reduction"
       ],
-      "broader": "xmet:0000524"
+      "broader": "xmet:4000105"
     },
     {
-      "id": "xmet:0000524",
+      "id": "xmet:4000105",
       "type": "skos:Concept",
       "prefLabel": "carbonyl reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a carbonyl (C=O) to the corresponding alcohol by addition of hydrogen across the double bond.",
-      "broader": "xmet:0000520"
+      "broader": "xmet:4000101"
     },
     {
-      "id": "xmet:0000530",
+      "id": "xmet:4000106",
       "type": "skos:Concept",
       "prefLabel": "sulfur reduction",
       "inScheme": "xmet:scheme",
       "definition": "sulfur reduction: xenobiotic-metabolism term under reduction.",
-      "broader": "xmet:0000014"
+      "broader": "xmet:4000008"
     },
     {
-      "id": "xmet:0000531",
+      "id": "xmet:4000107",
       "type": "skos:Concept",
       "prefLabel": "sulfoxide reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation).",
-      "broader": "xmet:0000530"
+      "broader": "xmet:4000106"
     },
     {
-      "id": "xmet:0000532",
+      "id": "xmet:4000108",
       "type": "skos:Concept",
       "prefLabel": "disulfide reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reductive cleavage of a disulfide S–S bond to thiols (or equivalent).",
-      "broader": "xmet:0000530"
+      "broader": "xmet:4000106"
     },
     {
-      "id": "xmet:0000533",
+      "id": "xmet:4000109",
       "type": "skos:Concept",
       "prefLabel": "sulfo reduction",
       "inScheme": "xmet:scheme",
@@ -1211,48 +1211,48 @@
         "sulfoxide reduction",
         "S-oxide reduction"
       ],
-      "broader": "xmet:0000530",
-      "closeMatch": "xmet:0000531"
+      "broader": "xmet:4000106",
+      "closeMatch": "xmet:4000107"
     },
     {
-      "id": "xmet:0000540",
+      "id": "xmet:4000110",
       "type": "skos:Concept",
       "prefLabel": "reductive dehalogenation",
       "inScheme": "xmet:scheme",
       "definition": "Reductive removal of halogen. Under reduction; related to isoredox dehalogenation (not a subtype of it).",
-      "broader": "xmet:0000014",
-      "relatedTo": "xmet:1100014",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000008",
+      "relatedTo": "xmet:4000214",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:0000541",
+      "id": "xmet:4000111",
       "type": "skos:Concept",
       "prefLabel": "reductive defluorination",
       "inScheme": "xmet:scheme",
       "definition": "reductive defluorination: xenobiotic-metabolism term under reductive dehalogenation.",
-      "broader": "xmet:3001106",
-      "alwaysWith": "xmet:2200017"
+      "broader": "xmet:4000288",
+      "alwaysWith": "xmet:4000237"
     },
     {
-      "id": "xmet:0000542",
+      "id": "xmet:4000112",
       "type": "skos:Concept",
       "prefLabel": "reductive dechlorination",
       "inScheme": "xmet:scheme",
       "definition": "reductive dechlorination: xenobiotic-metabolism term under reductive dehalogenation.",
-      "broader": "xmet:3001106",
-      "alwaysWith": "xmet:2200018"
+      "broader": "xmet:4000288",
+      "alwaysWith": "xmet:4000238"
     },
     {
-      "id": "xmet:0000550",
+      "id": "xmet:4000113",
       "type": "skos:Concept",
       "prefLabel": "dehydration",
       "inScheme": "xmet:scheme",
       "definition": "Loss of water, typically via elimination (alcohol dehydration, beta-elimination, carbonyl dehydration). Chemically non-redox / elimination-like; not a subtype of reduction. Forest may still catalog Dehydration with the RD ruleset operationally.",
-      "broader": "xmet:3000005",
-      "relatedTo": "xmet:0000014"
+      "broader": "xmet:4000265",
+      "relatedTo": "xmet:4000008"
     },
     {
-      "id": "xmet:0000600",
+      "id": "xmet:4000114",
       "type": "skos:Concept",
       "prefLabel": "cyanidation",
       "inScheme": "xmet:scheme",
@@ -1262,11 +1262,11 @@
         "nitrile formation",
         "cyanide incorporation"
       ],
-      "broader": "xmet:3001218",
-      "antonymOf": "xmet:0000601"
+      "broader": "xmet:4000366",
+      "antonymOf": "xmet:4000115"
     },
     {
-      "id": "xmet:0000601",
+      "id": "xmet:4000115",
       "type": "skos:Concept",
       "prefLabel": "decyanidation",
       "inScheme": "xmet:scheme",
@@ -1276,11 +1276,11 @@
         "nitrile cleavage",
         "cyanide release"
       ],
-      "broader": "xmet:3001206",
-      "antonymOf": "xmet:0000600"
+      "broader": "xmet:4000355",
+      "antonymOf": "xmet:4000114"
     },
     {
-      "id": "xmet:0000610",
+      "id": "xmet:4000116",
       "type": "skos:Concept",
       "prefLabel": "alkylation",
       "inScheme": "xmet:scheme",
@@ -1289,11 +1289,11 @@
         "alkyl transfer",
         "alkyl conjugation"
       ],
-      "broader": "xmet:3001208",
-      "antonymOf": "xmet:0000200"
+      "broader": "xmet:4000357",
+      "antonymOf": "xmet:4000042"
     },
     {
-      "id": "xmet:0000611",
+      "id": "xmet:4000117",
       "type": "skos:Concept",
       "prefLabel": "N-alkylation",
       "inScheme": "xmet:scheme",
@@ -1301,10 +1301,10 @@
       "altLabel": [
         "nitrogen alkylation"
       ],
-      "broader": "xmet:0000610"
+      "broader": "xmet:4000116"
     },
     {
-      "id": "xmet:0000612",
+      "id": "xmet:4000118",
       "type": "skos:Concept",
       "prefLabel": "O-alkylation",
       "inScheme": "xmet:scheme",
@@ -1313,10 +1313,10 @@
         "oxygen alkylation",
         "ether formation"
       ],
-      "broader": "xmet:0000610"
+      "broader": "xmet:4000116"
     },
     {
-      "id": "xmet:0000613",
+      "id": "xmet:4000119",
       "type": "skos:Concept",
       "prefLabel": "S-alkylation",
       "inScheme": "xmet:scheme",
@@ -1325,10 +1325,10 @@
         "sulfur alkylation",
         "thioether formation"
       ],
-      "broader": "xmet:0000610"
+      "broader": "xmet:4000116"
     },
     {
-      "id": "xmet:0000614",
+      "id": "xmet:4000120",
       "type": "skos:Concept",
       "prefLabel": "C-alkylation",
       "inScheme": "xmet:scheme",
@@ -1336,10 +1336,10 @@
       "altLabel": [
         "carbon alkylation"
       ],
-      "broader": "xmet:0000610"
+      "broader": "xmet:4000116"
     },
     {
-      "id": "xmet:0000620",
+      "id": "xmet:4000121",
       "type": "skos:Concept",
       "prefLabel": "decarboxylation",
       "inScheme": "xmet:scheme",
@@ -1350,11 +1350,11 @@
         "C-decarboxylation",
         "N-decarboxylation"
       ],
-      "broader": "xmet:3001209",
-      "antonymOf": "xmet:0000621"
+      "broader": "xmet:4000358",
+      "antonymOf": "xmet:4000122"
     },
     {
-      "id": "xmet:0000621",
+      "id": "xmet:4000122",
       "type": "skos:Concept",
       "prefLabel": "carboxylation",
       "inScheme": "xmet:scheme",
@@ -1365,11 +1365,11 @@
         "C-carboxylation",
         "N-carboxylation"
       ],
-      "broader": "xmet:3001208",
-      "antonymOf": "xmet:0000620"
+      "broader": "xmet:4000357",
+      "antonymOf": "xmet:4000121"
     },
     {
-      "id": "xmet:0000630",
+      "id": "xmet:4000123",
       "type": "skos:Concept",
       "prefLabel": "esterification",
       "inScheme": "xmet:scheme",
@@ -1377,10 +1377,10 @@
       "altLabel": [
         "ester formation"
       ],
-      "broader": "xmet:3001208"
+      "broader": "xmet:4000357"
     },
     {
-      "id": "xmet:0000631",
+      "id": "xmet:4000124",
       "type": "skos:Concept",
       "prefLabel": "transesterification",
       "inScheme": "xmet:scheme",
@@ -1388,10 +1388,10 @@
       "altLabel": [
         "ester exchange"
       ],
-      "broader": "xmet:0000630"
+      "broader": "xmet:4000123"
     },
     {
-      "id": "xmet:0000632",
+      "id": "xmet:4000125",
       "type": "skos:Concept",
       "prefLabel": "lactonization",
       "inScheme": "xmet:scheme",
@@ -1400,10 +1400,10 @@
         "lactone formation",
         "intramolecular esterification"
       ],
-      "broader": "xmet:0000640"
+      "broader": "xmet:4000127"
     },
     {
-      "id": "xmet:0000633",
+      "id": "xmet:4000126",
       "type": "skos:Concept",
       "prefLabel": "lactamization",
       "inScheme": "xmet:scheme",
@@ -1412,10 +1412,10 @@
         "lactam formation",
         "intramolecular amidation"
       ],
-      "broader": "xmet:0000640"
+      "broader": "xmet:4000127"
     },
     {
-      "id": "xmet:0000640",
+      "id": "xmet:4000127",
       "type": "skos:Concept",
       "prefLabel": "cyclization",
       "inScheme": "xmet:scheme",
@@ -1424,10 +1424,10 @@
         "ring-forming cyclization",
         "annulation"
       ],
-      "broader": "xmet:3000300"
+      "broader": "xmet:4000271"
     },
     {
-      "id": "xmet:0000650",
+      "id": "xmet:4000128",
       "type": "skos:Concept",
       "prefLabel": "dehydroxylation",
       "inScheme": "xmet:scheme",
@@ -1438,11 +1438,11 @@
         "aromatic dehydroxylation",
         "N-dehydroxylation"
       ],
-      "broader": "xmet:3001209",
-      "antonymOf": "xmet:0000100"
+      "broader": "xmet:4000358",
+      "antonymOf": "xmet:4000012"
     },
     {
-      "id": "xmet:0000660",
+      "id": "xmet:4000129",
       "type": "skos:Concept",
       "prefLabel": "halogenation",
       "inScheme": "xmet:scheme",
@@ -1450,11 +1450,11 @@
       "altLabel": [
         "halide addition"
       ],
-      "broader": "xmet:3001208",
-      "antonymOf": "xmet:1100014"
+      "broader": "xmet:4000357",
+      "antonymOf": "xmet:4000214"
     },
     {
-      "id": "xmet:0000661",
+      "id": "xmet:4000130",
       "type": "skos:Concept",
       "prefLabel": "amination",
       "inScheme": "xmet:scheme",
@@ -1462,10 +1462,10 @@
       "altLabel": [
         "amino group introduction"
       ],
-      "broader": "xmet:3001208"
+      "broader": "xmet:4000357"
     },
     {
-      "id": "xmet:0000670",
+      "id": "xmet:4000131",
       "type": "skos:Concept",
       "prefLabel": "formylation",
       "inScheme": "xmet:scheme",
@@ -1474,11 +1474,11 @@
         "N-formylation",
         "formyl conjugation"
       ],
-      "broader": "xmet:3001221",
-      "antonymOf": "xmet:0000671"
+      "broader": "xmet:4000369",
+      "antonymOf": "xmet:4000132"
     },
     {
-      "id": "xmet:0000671",
+      "id": "xmet:4000132",
       "type": "skos:Concept",
       "prefLabel": "deformylation",
       "inScheme": "xmet:scheme",
@@ -1487,11 +1487,11 @@
         "N-deformylation",
         "formyl loss"
       ],
-      "broader": "xmet:3001207",
-      "antonymOf": "xmet:0000670"
+      "broader": "xmet:4000356",
+      "antonymOf": "xmet:4000131"
     },
     {
-      "id": "xmet:0000680",
+      "id": "xmet:4000133",
       "type": "skos:Concept",
       "prefLabel": "N-nitrosation",
       "inScheme": "xmet:scheme",
@@ -1500,10 +1500,10 @@
         "nitrosation",
         "N-nitroso formation"
       ],
-      "broader": "xmet:0000120"
+      "broader": "xmet:4000026"
     },
     {
-      "id": "xmet:0000681",
+      "id": "xmet:4000134",
       "type": "skos:Concept",
       "prefLabel": "denitrosation",
       "inScheme": "xmet:scheme",
@@ -1512,10 +1512,10 @@
         "N-denitrosation",
         "N-nitroso cleavage"
       ],
-      "broader": "xmet:3001229"
+      "broader": "xmet:4000377"
     },
     {
-      "id": "xmet:0000690",
+      "id": "xmet:4000135",
       "type": "skos:Concept",
       "prefLabel": "desulfuration",
       "inScheme": "xmet:scheme",
@@ -1525,11 +1525,11 @@
         "desulfurization",
         "P=S to P=O"
       ],
-      "broader": "xmet:0000130",
-      "antonymOf": "xmet:0000691"
+      "broader": "xmet:4000032",
+      "antonymOf": "xmet:4000136"
     },
     {
-      "id": "xmet:0000691",
+      "id": "xmet:4000136",
       "type": "skos:Concept",
       "prefLabel": "sulfuration",
       "inScheme": "xmet:scheme",
@@ -1538,11 +1538,11 @@
         "thionation",
         "S introduction"
       ],
-      "broader": "xmet:3001208",
-      "antonymOf": "xmet:0000690"
+      "broader": "xmet:4000357",
+      "antonymOf": "xmet:4000135"
     },
     {
-      "id": "xmet:0000700",
+      "id": "xmet:4000137",
       "type": "skos:Concept",
       "prefLabel": "deglucuronidation",
       "inScheme": "xmet:scheme",
@@ -1553,11 +1553,11 @@
         "N-deglucuronidation",
         "S-deglucuronidation"
       ],
-      "broader": "xmet:0000732",
-      "antonymOf": "xmet:0001000"
+      "broader": "xmet:4000147",
+      "antonymOf": "xmet:4000148"
     },
     {
-      "id": "xmet:0000701",
+      "id": "xmet:4000138",
       "type": "skos:Concept",
       "prefLabel": "desulfation",
       "inScheme": "xmet:scheme",
@@ -1566,10 +1566,10 @@
         "sulfate hydrolysis",
         "O-desulfation"
       ],
-      "broader": "xmet:0000732"
+      "broader": "xmet:4000147"
     },
     {
-      "id": "xmet:0000702",
+      "id": "xmet:4000139",
       "type": "skos:Concept",
       "prefLabel": "deglycosidation",
       "inScheme": "xmet:scheme",
@@ -1580,10 +1580,10 @@
         "deglucosidation",
         "glycoside hydrolysis"
       ],
-      "broader": "xmet:0000732"
+      "broader": "xmet:4000147"
     },
     {
-      "id": "xmet:0000703",
+      "id": "xmet:4000140",
       "type": "skos:Concept",
       "prefLabel": "deglutathionation",
       "inScheme": "xmet:scheme",
@@ -1592,10 +1592,10 @@
         "GSH adduct cleavage",
         "glutathione adduct hydrolysis"
       ],
-      "broader": "xmet:0000732"
+      "broader": "xmet:4000147"
     },
     {
-      "id": "xmet:0000704",
+      "id": "xmet:4000141",
       "type": "skos:Concept",
       "prefLabel": "decysteination",
       "inScheme": "xmet:scheme",
@@ -1603,10 +1603,10 @@
       "altLabel": [
         "cysteine adduct cleavage"
       ],
-      "broader": "xmet:0000732"
+      "broader": "xmet:4000147"
     },
     {
-      "id": "xmet:0000710",
+      "id": "xmet:4000142",
       "type": "skos:Concept",
       "prefLabel": "Se-methylation",
       "inScheme": "xmet:scheme",
@@ -1614,10 +1614,10 @@
       "altLabel": [
         "selenium methylation"
       ],
-      "broader": "xmet:0001040"
+      "broader": "xmet:4000175"
     },
     {
-      "id": "xmet:0000720",
+      "id": "xmet:4000143",
       "type": "skos:Concept",
       "prefLabel": "dearylation",
       "inScheme": "xmet:scheme",
@@ -1627,11 +1627,11 @@
         "N-dearylation",
         "aryl ether cleavage"
       ],
-      "broader": "xmet:0000200",
-      "antonymOf": "xmet:0000730"
+      "broader": "xmet:4000042",
+      "antonymOf": "xmet:4000145"
     },
     {
-      "id": "xmet:0000721",
+      "id": "xmet:4000144",
       "type": "skos:Concept",
       "prefLabel": "alpha-hydroxylation",
       "inScheme": "xmet:scheme",
@@ -1640,10 +1640,10 @@
         "α-hydroxylation",
         "alpha hydroxylation of carbonyl"
       ],
-      "broader": "xmet:3001231"
+      "broader": "xmet:4000379"
     },
     {
-      "id": "xmet:0000730",
+      "id": "xmet:4000145",
       "type": "skos:Concept",
       "prefLabel": "arylation",
       "inScheme": "xmet:scheme",
@@ -1651,11 +1651,11 @@
       "altLabel": [
         "aryl transfer"
       ],
-      "broader": "xmet:3001208",
-      "antonymOf": "xmet:0000720"
+      "broader": "xmet:4000357",
+      "antonymOf": "xmet:4000143"
     },
     {
-      "id": "xmet:0000731",
+      "id": "xmet:4000146",
       "type": "skos:Concept",
       "prefLabel": "carbonylation",
       "inScheme": "xmet:scheme",
@@ -1664,11 +1664,11 @@
         "CO insertion",
         "carbonyl insertion"
       ],
-      "broader": "xmet:3001208",
-      "antonymOf": "xmet:0002007"
+      "broader": "xmet:4000357",
+      "antonymOf": "xmet:4000193"
     },
     {
-      "id": "xmet:0000732",
+      "id": "xmet:4000147",
       "type": "skos:Concept",
       "prefLabel": "deconjugation",
       "inScheme": "xmet:scheme",
@@ -1677,11 +1677,11 @@
         "conjugate cleavage",
         "phase II deconjugation"
       ],
-      "broader": "xmet:1100000",
-      "antonymOf": "xmet:0000024"
+      "broader": "xmet:4000213",
+      "antonymOf": "xmet:4000011"
     },
     {
-      "id": "xmet:0001000",
+      "id": "xmet:4000148",
       "type": "skos:Concept",
       "prefLabel": "glucuronidation",
       "inScheme": "xmet:scheme",
@@ -1694,28 +1694,28 @@
         "glucuronide conjugation",
         "UDP-glucuronosyl conjugation"
       ],
-      "broader": "xmet:3001222",
-      "antonymOf": "xmet:0000700"
+      "broader": "xmet:4000370",
+      "antonymOf": "xmet:4000137"
     },
     {
-      "id": "xmet:0001001",
+      "id": "xmet:4000149",
       "type": "skos:Concept",
       "prefLabel": "O-glucuronidation",
       "inScheme": "xmet:scheme",
       "definition": "O-glucuronidation at hydroxy (phenolic or alcoholic). Does not include acyl (carboxylate) glucuronidation.",
-      "broader": "xmet:0001000"
+      "broader": "xmet:4000148"
     },
     {
-      "id": "xmet:0001002",
+      "id": "xmet:4000150",
       "type": "skos:Concept",
       "prefLabel": "phenolic glucuronidation",
       "inScheme": "xmet:scheme",
       "definition": "phenolic glucuronidation: xenobiotic-metabolism term under O-glucuronidation.",
-      "broader": "xmet:0001001",
-      "isPartOf": "xmet:3001152"
+      "broader": "xmet:4000149",
+      "isPartOf": "xmet:4000324"
     },
     {
-      "id": "xmet:0001003",
+      "id": "xmet:4000151",
       "type": "skos:Concept",
       "prefLabel": "alcoholic glucuronidation",
       "inScheme": "xmet:scheme",
@@ -1723,10 +1723,10 @@
       "altLabel": [
         "aliphatic O-glucuronidation"
       ],
-      "broader": "xmet:0001001"
+      "broader": "xmet:4000149"
     },
     {
-      "id": "xmet:0001004",
+      "id": "xmet:4000152",
       "type": "skos:Concept",
       "prefLabel": "acyl glucuronidation",
       "inScheme": "xmet:scheme",
@@ -1734,18 +1734,18 @@
       "altLabel": [
         "acyl glucuronide formation"
       ],
-      "broader": "xmet:0001000"
+      "broader": "xmet:4000148"
     },
     {
-      "id": "xmet:0001005",
+      "id": "xmet:4000153",
       "type": "skos:Concept",
       "prefLabel": "N-glucuronidation",
       "inScheme": "xmet:scheme",
       "definition": "Glucuronidation at nitrogen, including quaternary ammonium N-glucuronides.",
-      "broader": "xmet:0001000"
+      "broader": "xmet:4000148"
     },
     {
-      "id": "xmet:0001006",
+      "id": "xmet:4000154",
       "type": "skos:Concept",
       "prefLabel": "quaternary N-glucuronidation",
       "inScheme": "xmet:scheme",
@@ -1753,26 +1753,26 @@
       "altLabel": [
         "N+-glucuronidation"
       ],
-      "broader": "xmet:0001005"
+      "broader": "xmet:4000153"
     },
     {
-      "id": "xmet:0001007",
+      "id": "xmet:4000155",
       "type": "skos:Concept",
       "prefLabel": "S-glucuronidation",
       "inScheme": "xmet:scheme",
       "definition": "S-glucuronidation: xenobiotic-metabolism term under glucuronidation.",
-      "broader": "xmet:0001000"
+      "broader": "xmet:4000148"
     },
     {
-      "id": "xmet:0001008",
+      "id": "xmet:4000156",
       "type": "skos:Concept",
       "prefLabel": "C-glucuronidation",
       "inScheme": "xmet:scheme",
       "definition": "C-glucuronidation: xenobiotic-metabolism term under glucuronidation.",
-      "broader": "xmet:0001000"
+      "broader": "xmet:4000148"
     },
     {
-      "id": "xmet:0001009",
+      "id": "xmet:4000157",
       "type": "skos:Concept",
       "prefLabel": "carbamoyl glucuronidation",
       "inScheme": "xmet:scheme",
@@ -1780,10 +1780,10 @@
       "altLabel": [
         "N-carbamoyl glucuronidation"
       ],
-      "broader": "xmet:0001005"
+      "broader": "xmet:4000153"
     },
     {
-      "id": "xmet:0001010",
+      "id": "xmet:4000158",
       "type": "skos:Concept",
       "prefLabel": "sulfation",
       "inScheme": "xmet:scheme",
@@ -1793,43 +1793,43 @@
         "sulfate conjugation",
         "sulfo-conjugation"
       ],
-      "broader": "xmet:3001222"
+      "broader": "xmet:4000370"
     },
     {
-      "id": "xmet:0001011",
+      "id": "xmet:4000159",
       "type": "skos:Concept",
       "prefLabel": "O-sulfation",
       "inScheme": "xmet:scheme",
       "definition": "Sulfation at oxygen (phenols or alcohols).",
-      "broader": "xmet:0001010"
+      "broader": "xmet:4000158"
     },
     {
-      "id": "xmet:0001012",
+      "id": "xmet:4000160",
       "type": "skos:Concept",
       "prefLabel": "phenolic sulfation",
       "inScheme": "xmet:scheme",
       "definition": "phenolic sulfation: xenobiotic-metabolism term under O-sulfation.",
-      "broader": "xmet:0001011",
-      "isPartOf": "xmet:3001152"
+      "broader": "xmet:4000159",
+      "isPartOf": "xmet:4000324"
     },
     {
-      "id": "xmet:0001013",
+      "id": "xmet:4000161",
       "type": "skos:Concept",
       "prefLabel": "alcoholic sulfation",
       "inScheme": "xmet:scheme",
       "definition": "alcoholic sulfation: xenobiotic-metabolism term under O-sulfation.",
-      "broader": "xmet:0001011"
+      "broader": "xmet:4000159"
     },
     {
-      "id": "xmet:0001014",
+      "id": "xmet:4000162",
       "type": "skos:Concept",
       "prefLabel": "N-sulfation",
       "inScheme": "xmet:scheme",
       "definition": "N-sulfation: xenobiotic-metabolism term under sulfation.",
-      "broader": "xmet:0001010"
+      "broader": "xmet:4000158"
     },
     {
-      "id": "xmet:0001020",
+      "id": "xmet:4000163",
       "type": "skos:Concept",
       "prefLabel": "acetylation",
       "inScheme": "xmet:scheme",
@@ -1838,36 +1838,36 @@
         "N-acetylation",
         "acylation"
       ],
-      "broader": "xmet:3001221",
-      "antonymOf": "xmet:0001023"
+      "broader": "xmet:4000369",
+      "antonymOf": "xmet:4000166"
     },
     {
-      "id": "xmet:0001021",
+      "id": "xmet:4000164",
       "type": "skos:Concept",
       "prefLabel": "N-acetylation",
       "inScheme": "xmet:scheme",
       "definition": "N-acetylation: xenobiotic-metabolism term under acetylation.",
-      "broader": "xmet:0001020"
+      "broader": "xmet:4000163"
     },
     {
-      "id": "xmet:0001022",
+      "id": "xmet:4000165",
       "type": "skos:Concept",
       "prefLabel": "O-acetylation",
       "inScheme": "xmet:scheme",
       "definition": "O-acetylation: xenobiotic-metabolism term under acetylation.",
-      "broader": "xmet:0001020"
+      "broader": "xmet:4000163"
     },
     {
-      "id": "xmet:0001023",
+      "id": "xmet:4000166",
       "type": "skos:Concept",
       "prefLabel": "deacetylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolytic removal of an acetyl group (often esterase/amidase).",
-      "broader": "xmet:3001207",
-      "antonymOf": "xmet:0001020"
+      "broader": "xmet:4000356",
+      "antonymOf": "xmet:4000163"
     },
     {
-      "id": "xmet:0001030",
+      "id": "xmet:4000167",
       "type": "skos:Concept",
       "prefLabel": "glutathione conjugation",
       "inScheme": "xmet:scheme",
@@ -1880,10 +1880,10 @@
         "glutathionation",
         "GSH adduct formation"
       ],
-      "broader": "xmet:3001217"
+      "broader": "xmet:4000365"
     },
     {
-      "id": "xmet:0001031",
+      "id": "xmet:4000168",
       "type": "skos:Concept",
       "prefLabel": "Michael glutathionation",
       "inScheme": "xmet:scheme",
@@ -1891,10 +1891,10 @@
       "altLabel": [
         "GSH Michael addition"
       ],
-      "broader": "xmet:3001224"
+      "broader": "xmet:4000372"
     },
     {
-      "id": "xmet:0001032",
+      "id": "xmet:4000169",
       "type": "skos:Concept",
       "prefLabel": "epoxide glutathionation",
       "inScheme": "xmet:scheme",
@@ -1902,10 +1902,10 @@
       "altLabel": [
         "GSH epoxide conjugation"
       ],
-      "broader": "xmet:3001223"
+      "broader": "xmet:4000371"
     },
     {
-      "id": "xmet:0001033",
+      "id": "xmet:4000170",
       "type": "skos:Concept",
       "prefLabel": "halide displacement glutathionation",
       "inScheme": "xmet:scheme",
@@ -1913,26 +1913,26 @@
       "altLabel": [
         "GSH nucleophilic aromatic/aliphatic substitution"
       ],
-      "broader": "xmet:3001225"
+      "broader": "xmet:4000373"
     },
     {
-      "id": "xmet:0001034",
+      "id": "xmet:4000171",
       "type": "skos:Concept",
       "prefLabel": "isocyanate glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "isocyanate glutathionation: xenobiotic-metabolism term under glutathionation.",
-      "broader": "xmet:3001225"
+      "broader": "xmet:4000373"
     },
     {
-      "id": "xmet:0001035",
+      "id": "xmet:4000172",
       "type": "skos:Concept",
       "prefLabel": "aziridine glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "aziridine glutathionation: xenobiotic-metabolism term under glutathionation.",
-      "broader": "xmet:3001223"
+      "broader": "xmet:4000371"
     },
     {
-      "id": "xmet:0001036",
+      "id": "xmet:4000173",
       "type": "skos:Concept",
       "prefLabel": "quinone-like glutathionation",
       "inScheme": "xmet:scheme",
@@ -1942,10 +1942,10 @@
         "quinone glutathionation",
         "GSH addition to quinone-like species"
       ],
-      "broader": "xmet:3001226"
+      "broader": "xmet:4000374"
     },
     {
-      "id": "xmet:0001037",
+      "id": "xmet:4000174",
       "type": "skos:Concept",
       "prefLabel": "mercapturic acid formation",
       "inScheme": "xmet:scheme",
@@ -1953,10 +1953,10 @@
       "altLabel": [
         "mercapturic_acid_formation"
       ],
-      "broader": "xmet:3001217"
+      "broader": "xmet:4000365"
     },
     {
-      "id": "xmet:0001040",
+      "id": "xmet:4000175",
       "type": "skos:Concept",
       "prefLabel": "methylation",
       "inScheme": "xmet:scheme",
@@ -1964,10 +1964,10 @@
       "altLabel": [
         "methyl conjugation"
       ],
-      "broader": "xmet:3001222"
+      "broader": "xmet:4000370"
     },
     {
-      "id": "xmet:0001041",
+      "id": "xmet:4000176",
       "type": "skos:Concept",
       "prefLabel": "O-methylation",
       "inScheme": "xmet:scheme",
@@ -1975,18 +1975,18 @@
       "altLabel": [
         "catechol O-methylation"
       ],
-      "broader": "xmet:0001040"
+      "broader": "xmet:4000175"
     },
     {
-      "id": "xmet:0001042",
+      "id": "xmet:4000177",
       "type": "skos:Concept",
       "prefLabel": "N-methylation",
       "inScheme": "xmet:scheme",
       "definition": "N-methylation: xenobiotic-metabolism term under methylation.",
-      "broader": "xmet:0001040"
+      "broader": "xmet:4000175"
     },
     {
-      "id": "xmet:0001043",
+      "id": "xmet:4000178",
       "type": "skos:Concept",
       "prefLabel": "S-methylation",
       "inScheme": "xmet:scheme",
@@ -1994,10 +1994,10 @@
       "altLabel": [
         "thiol methylation"
       ],
-      "broader": "xmet:0001040"
+      "broader": "xmet:4000175"
     },
     {
-      "id": "xmet:0001050",
+      "id": "xmet:4000179",
       "type": "skos:Concept",
       "prefLabel": "amino acid conjugation",
       "inScheme": "xmet:scheme",
@@ -2005,10 +2005,10 @@
       "altLabel": [
         "amino_acid_conjugation"
       ],
-      "broader": "xmet:3001222"
+      "broader": "xmet:4000370"
     },
     {
-      "id": "xmet:0001051",
+      "id": "xmet:4000180",
       "type": "skos:Concept",
       "prefLabel": "glycine conjugation",
       "inScheme": "xmet:scheme",
@@ -2018,18 +2018,18 @@
         "benzoyl glycine conjugation",
         "glycine_conjugation"
       ],
-      "broader": "xmet:0001050"
+      "broader": "xmet:4000179"
     },
     {
-      "id": "xmet:0001052",
+      "id": "xmet:4000181",
       "type": "skos:Concept",
       "prefLabel": "glutamine conjugation",
       "inScheme": "xmet:scheme",
       "definition": "glutamine conjugation: xenobiotic-metabolism term under amino acid conjugation.",
-      "broader": "xmet:0001050"
+      "broader": "xmet:4000179"
     },
     {
-      "id": "xmet:0001053",
+      "id": "xmet:4000182",
       "type": "skos:Concept",
       "prefLabel": "taurine conjugation",
       "inScheme": "xmet:scheme",
@@ -2037,18 +2037,18 @@
       "altLabel": [
         "taurine_conjugation"
       ],
-      "broader": "xmet:0001050"
+      "broader": "xmet:4000179"
     },
     {
-      "id": "xmet:0001054",
+      "id": "xmet:4000183",
       "type": "skos:Concept",
       "prefLabel": "serine conjugation",
       "inScheme": "xmet:scheme",
       "definition": "serine conjugation: xenobiotic-metabolism term under amino acid conjugation.",
-      "broader": "xmet:0001050"
+      "broader": "xmet:4000179"
     },
     {
-      "id": "xmet:0001060",
+      "id": "xmet:4000184",
       "type": "skos:Concept",
       "prefLabel": "glycosylation",
       "inScheme": "xmet:scheme",
@@ -2061,10 +2061,10 @@
         "O-glucosidation",
         "N-glucosidation"
       ],
-      "broader": "xmet:3001222"
+      "broader": "xmet:4000370"
     },
     {
-      "id": "xmet:0001061",
+      "id": "xmet:4000185",
       "type": "skos:Concept",
       "prefLabel": "CoA conjugation",
       "inScheme": "xmet:scheme",
@@ -2073,104 +2073,104 @@
         "acyl-CoA formation",
         "coa_conjugation"
       ],
-      "broader": "xmet:3001221"
+      "broader": "xmet:4000369"
     },
     {
-      "id": "xmet:0002000",
+      "id": "xmet:4000186",
       "type": "skos:Concept",
       "prefLabel": "tautomerization",
       "inScheme": "xmet:scheme",
       "definition": "Tautomer interconversion; often peripheral to labeled metabolism.",
-      "broader": "xmet:0002004"
+      "broader": "xmet:4000190"
     },
     {
-      "id": "xmet:0002001",
+      "id": "xmet:4000187",
       "type": "skos:Concept",
       "prefLabel": "keto–enol tautomerization",
       "inScheme": "xmet:scheme",
       "definition": "keto–enol tautomerization: xenobiotic-metabolism term under tautomerization.",
-      "broader": "xmet:0002000"
+      "broader": "xmet:4000186"
     },
     {
-      "id": "xmet:0002002",
+      "id": "xmet:4000188",
       "type": "skos:Concept",
       "prefLabel": "imine–enamine tautomerization",
       "inScheme": "xmet:scheme",
       "definition": "imine–enamine tautomerization: xenobiotic-metabolism term under tautomerization.",
-      "broader": "xmet:0002000"
+      "broader": "xmet:4000186"
     },
     {
-      "id": "xmet:0002003",
+      "id": "xmet:4000189",
       "type": "skos:Concept",
       "prefLabel": "isomerization",
       "inScheme": "xmet:scheme",
       "definition": "Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; Metabolic Forest treats related rearrangements separately from the five Phase I classes).",
-      "broader": "xmet:0002004"
+      "broader": "xmet:4000190"
     },
     {
-      "id": "xmet:0002004",
+      "id": "xmet:4000190",
       "type": "skos:Concept",
       "prefLabel": "rearrangement",
       "inScheme": "xmet:scheme",
       "definition": "Non–enzyme-mediated molecular rearrangement shelf (tautomerization, isomerization, skeletal rearrangement). Not a Rainbow reaction color.",
-      "broader": "xmet:1100000"
+      "broader": "xmet:4000213"
     },
     {
-      "id": "xmet:0002005",
+      "id": "xmet:4000191",
       "type": "skos:Concept",
       "prefLabel": "deacylation",
       "inScheme": "xmet:scheme",
       "definition": "Removal of an acyl group (Rainbow excluded phase I remainder; related to hydrolysis/deacetylation).",
-      "broader": "xmet:3001207"
+      "broader": "xmet:4000356"
     },
     {
-      "id": "xmet:0002006",
+      "id": "xmet:4000192",
       "type": "skos:Concept",
       "prefLabel": "denitrogenation",
       "inScheme": "xmet:scheme",
       "definition": "Metabolic loss of nitrogen from the scaffold (Rainbow excluded phase I remainder).",
-      "broader": "xmet:3000300"
+      "broader": "xmet:4000271"
     },
     {
-      "id": "xmet:0002007",
+      "id": "xmet:4000193",
       "type": "skos:Concept",
       "prefLabel": "decarbonylation",
       "inScheme": "xmet:scheme",
       "definition": "Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder).",
-      "broader": "xmet:3001209",
-      "antonymOf": "xmet:0000731"
+      "broader": "xmet:4000358",
+      "antonymOf": "xmet:4000146"
     },
     {
-      "id": "xmet:0004001",
+      "id": "xmet:4000194",
       "type": "skos:Concept",
       "prefLabel": "dearomatization",
       "inScheme": "xmet:scheme",
       "definition": "Loss of aromatic character (arene oxide, quinone-like/quinoid products, thiophene S-oxide, cis-dihydrodiol, etc.).",
-      "broader": "xmet:3000510",
+      "broader": "xmet:4000274",
       "antonymOf": [
-        "xmet:0000315",
-        "xmet:0004002"
+        "xmet:4000074",
+        "xmet:4000195"
       ]
     },
     {
-      "id": "xmet:0004002",
+      "id": "xmet:4000195",
       "type": "skos:Concept",
       "prefLabel": "rearomatization",
       "inScheme": "xmet:scheme",
       "definition": "Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol formation).",
-      "broader": "xmet:0000315",
-      "antonymOf": "xmet:0004001"
+      "broader": "xmet:4000074",
+      "antonymOf": "xmet:4000194"
     },
     {
-      "id": "xmet:0004004",
+      "id": "xmet:4000196",
       "type": "skos:Concept",
       "prefLabel": "ipso substitution",
       "inScheme": "xmet:scheme",
       "definition": "Substitution at a substituted aromatic carbon (ipso), often displacing alkyl/halogen/alkoxy.",
-      "broader": "xmet:0000101"
+      "broader": "xmet:4000013"
     },
     {
-      "id": "xmet:0004005",
+      "id": "xmet:4000197",
       "type": "skos:Concept",
       "prefLabel": "arene oxide rearrangement to phenol",
       "inScheme": "xmet:scheme",
@@ -2182,52 +2182,52 @@
         "arene oxide to phenol",
         "arenol formation via arene oxide"
       ],
-      "broader": "xmet:0002004",
-      "isPartOf": "xmet:3001152",
-      "relatedTo": "xmet:0000112"
+      "broader": "xmet:4000190",
+      "isPartOf": "xmet:4000324",
+      "relatedTo": "xmet:4000024"
     },
     {
-      "id": "xmet:0004006",
+      "id": "xmet:4000198",
       "type": "skos:Concept",
       "prefLabel": "carbinolamine cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Spontaneous collapse of an α-hydroxy amine to amine + carbonyl; mechanism shared by N-dealkylation and oxidative deamination.",
-      "broader": "xmet:3001146"
+      "broader": "xmet:4000318"
     },
     {
-      "id": "xmet:0004007",
+      "id": "xmet:4000199",
       "type": "skos:Concept",
       "prefLabel": "hemiacetal cleavage",
       "inScheme": "xmet:scheme",
       "definition": "hemiacetal cleavage: xenobiotic-metabolism term under process facet.",
-      "broader": "xmet:0000202"
+      "broader": "xmet:4000044"
     },
     {
-      "id": "xmet:0004008",
+      "id": "xmet:4000200",
       "type": "skos:Concept",
       "prefLabel": "ring opening",
       "inScheme": "xmet:scheme",
       "definition": "ring opening: xenobiotic-metabolism term under process facet, chemical transformation.",
-      "broader": "xmet:3000500"
+      "broader": "xmet:4000273"
     },
     {
-      "id": "xmet:0004009",
+      "id": "xmet:4000201",
       "type": "skos:Concept",
       "prefLabel": "ring expansion",
       "inScheme": "xmet:scheme",
       "definition": "ring expansion: xenobiotic-metabolism term under process facet.",
-      "broader": "xmet:3000300"
+      "broader": "xmet:4000271"
     },
     {
-      "id": "xmet:0004010",
+      "id": "xmet:4000202",
       "type": "skos:Concept",
       "prefLabel": "ring contraction",
       "inScheme": "xmet:scheme",
       "definition": "ring contraction: xenobiotic-metabolism term under process facet.",
-      "broader": "xmet:3000300"
+      "broader": "xmet:4000271"
     },
     {
-      "id": "xmet:0004011",
+      "id": "xmet:4000203",
       "type": "skos:Concept",
       "prefLabel": "cis-diol formation",
       "inScheme": "xmet:scheme",
@@ -2237,27 +2237,27 @@
         "cis-dihydroxylation",
         "cis-dihydrodiol formation"
       ],
-      "broader": "xmet:3001153",
-      "relatedTo": "xmet:0000100"
+      "broader": "xmet:4000325",
+      "relatedTo": "xmet:4000012"
     },
     {
-      "id": "xmet:0004012",
+      "id": "xmet:4000204",
       "type": "skos:Concept",
       "prefLabel": "hydration",
       "inScheme": "xmet:scheme",
       "definition": "Addition of water to a substrate (IUPAC hydration). May or may not cleave a bond; does not imply hydrolytic solvolysis by itself.",
-      "broader": "xmet:0000013"
+      "broader": "xmet:4000007"
     },
     {
-      "id": "xmet:0004013",
+      "id": "xmet:4000205",
       "type": "skos:Concept",
       "prefLabel": "hydration of carbonyl",
       "inScheme": "xmet:scheme",
       "definition": "hydration of carbonyl: xenobiotic-metabolism term under hydration.",
-      "broader": "xmet:0004012"
+      "broader": "xmet:4000204"
     },
     {
-      "id": "xmet:0004014",
+      "id": "xmet:4000206",
       "type": "skos:Concept",
       "prefLabel": "conjugate addition",
       "inScheme": "xmet:scheme",
@@ -2265,50 +2265,50 @@
       "altLabel": [
         "Michael addition"
       ],
-      "broader": "xmet:3001220"
+      "broader": "xmet:4000368"
     },
     {
-      "id": "xmet:0004015",
+      "id": "xmet:4000207",
       "type": "skos:Concept",
       "prefLabel": "nucleophilic aromatic substitution",
       "inScheme": "xmet:scheme",
       "definition": "nucleophilic aromatic substitution: xenobiotic-metabolism term under process facet.",
-      "broader": "xmet:3001220"
+      "broader": "xmet:4000368"
     },
     {
-      "id": "xmet:0004016",
+      "id": "xmet:4000208",
       "type": "skos:Concept",
       "prefLabel": "radical recombination metabolite",
       "inScheme": "xmet:scheme",
       "definition": "radical recombination metabolite: xenobiotic-metabolism term under process facet.",
-      "broader": "xmet:3000300"
+      "broader": "xmet:4000271"
     },
     {
-      "id": "xmet:0004017",
+      "id": "xmet:4000209",
       "type": "skos:Concept",
       "prefLabel": "acyl migration",
       "inScheme": "xmet:scheme",
       "definition": "Intramolecular migration of an acyl group (notable for acyl glucuronides).",
-      "broader": "xmet:0002004"
+      "broader": "xmet:4000190"
     },
     {
-      "id": "xmet:0004018",
+      "id": "xmet:4000210",
       "type": "skos:Concept",
       "prefLabel": "transacylation",
       "inScheme": "xmet:scheme",
       "definition": "transacylation: xenobiotic-metabolism term under process facet.",
-      "broader": "xmet:3001221"
+      "broader": "xmet:4000369"
     },
     {
-      "id": "xmet:0004019",
+      "id": "xmet:4000211",
       "type": "skos:Concept",
       "prefLabel": "radical formation",
       "inScheme": "xmet:scheme",
       "definition": "Formation of a radical metabolite intermediate. Under rearrangement as a sparse xenobiotic path remainder — not a skeletal connectivity rearrangement.",
-      "broader": "xmet:0002004"
+      "broader": "xmet:4000190"
     },
     {
-      "id": "xmet:1000000",
+      "id": "xmet:4000212",
       "type": "skos:Concept",
       "prefLabel": "disposition stage",
       "inScheme": "xmet:scheme",
@@ -2318,10 +2318,10 @@
         "metabolism phase",
         "phase"
       ],
-      "broader": "xmet:0000000"
+      "broader": "xmet:4000000"
     },
     {
-      "id": "xmet:1100000",
+      "id": "xmet:4000213",
       "type": "skos:Concept",
       "prefLabel": "reaction class",
       "inScheme": "xmet:scheme",
@@ -2331,10 +2331,10 @@
         "chemical transformation",
         "transformation"
       ],
-      "broader": "xmet:0000000"
+      "broader": "xmet:4000000"
     },
     {
-      "id": "xmet:1100014",
+      "id": "xmet:4000214",
       "type": "skos:Concept",
       "prefLabel": "isoredox dehalogenation",
       "inScheme": "xmet:scheme",
@@ -2344,16 +2344,16 @@
         "non-redox dehalogenation",
         "redox-neutral dehalogenation"
       ],
-      "broader": "xmet:3001209",
-      "antonymOf": "xmet:0000660",
+      "broader": "xmet:4000358",
+      "antonymOf": "xmet:4000129",
       "relatedTo": [
-        "xmet:0000210",
-        "xmet:0000540"
+        "xmet:4000051",
+        "xmet:4000110"
       ],
-      "alwaysWith": "xmet:2200016"
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:1200101",
+      "id": "xmet:4000215",
       "type": "skos:Concept",
       "prefLabel": "aliphatic epoxidation",
       "inScheme": "xmet:scheme",
@@ -2361,10 +2361,10 @@
       "altLabel": [
         "aliphatic_epoxidation"
       ],
-      "broader": "xmet:3001108"
+      "broader": "xmet:4000290"
     },
     {
-      "id": "xmet:1200106",
+      "id": "xmet:4000216",
       "type": "skos:Concept",
       "prefLabel": "amine dehydrogenation",
       "inScheme": "xmet:scheme",
@@ -2372,10 +2372,10 @@
       "altLabel": [
         "amine_dehydrogenation"
       ],
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:1300010",
+      "id": "xmet:4000217",
       "type": "skos:Concept",
       "prefLabel": "cysteine conjugation",
       "inScheme": "xmet:scheme",
@@ -2385,10 +2385,10 @@
         "S-cysteination",
         "cysteination"
       ],
-      "broader": "xmet:3001217"
+      "broader": "xmet:4000365"
     },
     {
-      "id": "xmet:1300011",
+      "id": "xmet:4000218",
       "type": "skos:Concept",
       "prefLabel": "N-acetylcysteine conjugation",
       "inScheme": "xmet:scheme",
@@ -2396,19 +2396,19 @@
       "altLabel": [
         "n_acetylcysteine_conjugation"
       ],
-      "broader": "xmet:3001217"
+      "broader": "xmet:4000365"
     },
     {
-      "id": "xmet:1300012",
+      "id": "xmet:4000219",
       "type": "skos:Concept",
       "prefLabel": "phosphorylation",
       "inScheme": "xmet:scheme",
       "definition": "Phase II conjugation family: phosphorylation.",
-      "broader": "xmet:3001222",
-      "antonymOf": "xmet:0000410"
+      "broader": "xmet:4000370",
+      "antonymOf": "xmet:4000087"
     },
     {
-      "id": "xmet:1700000",
+      "id": "xmet:4000220",
       "type": "skos:Concept",
       "prefLabel": "structural delta",
       "inScheme": "xmet:scheme",
@@ -2417,26 +2417,26 @@
         "structural_delta",
         "delta"
       ],
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:1700011",
+      "id": "xmet:4000221",
       "type": "skos:Concept",
       "prefLabel": "mass shift",
       "inScheme": "xmet:scheme",
       "definition": "High-signal MS mass difference or neutral-loss cues used in drug-metabolism structure elucidation (not a dump of all formula deltas).",
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:1700017",
+      "id": "xmet:4000222",
       "type": "skos:Concept",
       "prefLabel": "stereochemical change",
       "inScheme": "xmet:scheme",
       "definition": "Stereo configuration change.",
-      "broader": "xmet:1700000"
+      "broader": "xmet:4000220"
     },
     {
-      "id": "xmet:1700100",
+      "id": "xmet:4000223",
       "type": "skos:Concept",
       "prefLabel": "oxygenation mass shift",
       "inScheme": "xmet:scheme",
@@ -2447,10 +2447,10 @@
         "monooxygenation",
         "oxygen gain mass shift"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:1700102",
+      "id": "xmet:4000224",
       "type": "skos:Concept",
       "prefLabel": "demethylation mass shift",
       "inScheme": "xmet:scheme",
@@ -2460,10 +2460,10 @@
         "−14 Da",
         "demethylation delta"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:1700103",
+      "id": "xmet:4000225",
       "type": "skos:Concept",
       "prefLabel": "deethylation mass shift",
       "inScheme": "xmet:scheme",
@@ -2473,10 +2473,10 @@
         "−28 Da",
         "deethylation delta"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:1700104",
+      "id": "xmet:4000226",
       "type": "skos:Concept",
       "prefLabel": "glucuronide mass shift",
       "inScheme": "xmet:scheme",
@@ -2486,10 +2486,10 @@
         "+176 Da",
         "GlcA mass shift"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:1700105",
+      "id": "xmet:4000227",
       "type": "skos:Concept",
       "prefLabel": "sulfate mass shift",
       "inScheme": "xmet:scheme",
@@ -2499,10 +2499,10 @@
         "+80 Da",
         "sulfate conjugation mass shift"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:1700106",
+      "id": "xmet:4000228",
       "type": "skos:Concept",
       "prefLabel": "GSH mass shift",
       "inScheme": "xmet:scheme",
@@ -2512,10 +2512,10 @@
         "+305 Da",
         "glutathione mass shift"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:2200000",
+      "id": "xmet:4000229",
       "type": "skos:Concept",
       "prefLabel": "leaving group",
       "inScheme": "xmet:scheme",
@@ -2524,10 +2524,10 @@
         "leaving_group",
         "departing group"
       ],
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:2200010",
+      "id": "xmet:4000230",
       "type": "skos:Concept",
       "prefLabel": "methyl leaving group",
       "inScheme": "xmet:scheme",
@@ -2535,50 +2535,50 @@
       "altLabel": [
         "CH3 leaving group"
       ],
-      "broader": "xmet:2200032"
+      "broader": "xmet:4000252"
     },
     {
-      "id": "xmet:2200011",
+      "id": "xmet:4000231",
       "type": "skos:Concept",
       "prefLabel": "ethyl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Ethyl fragment departing (typical N-/O-deethylation).",
-      "broader": "xmet:2200032"
+      "broader": "xmet:4000252"
     },
     {
-      "id": "xmet:2200012",
+      "id": "xmet:4000232",
       "type": "skos:Concept",
       "prefLabel": "propyl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Propyl fragment departing.",
-      "broader": "xmet:2200032"
+      "broader": "xmet:4000252"
     },
     {
-      "id": "xmet:2200013",
+      "id": "xmet:4000233",
       "type": "skos:Concept",
       "prefLabel": "isopropyl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Isopropyl fragment departing.",
-      "broader": "xmet:2200032"
+      "broader": "xmet:4000252"
     },
     {
-      "id": "xmet:2200014",
+      "id": "xmet:4000234",
       "type": "skos:Concept",
       "prefLabel": "benzyl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Benzyl fragment departing.",
-      "broader": "xmet:2200032"
+      "broader": "xmet:4000252"
     },
     {
-      "id": "xmet:2200015",
+      "id": "xmet:4000235",
       "type": "skos:Concept",
       "prefLabel": "allyl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Allyl fragment departing.",
-      "broader": "xmet:2200032"
+      "broader": "xmet:4000252"
     },
     {
-      "id": "xmet:2200016",
+      "id": "xmet:4000236",
       "type": "skos:Concept",
       "prefLabel": "halide leaving group",
       "inScheme": "xmet:scheme",
@@ -2586,234 +2586,234 @@
       "altLabel": [
         "halogen leaving group"
       ],
-      "broader": "xmet:2200000",
+      "broader": "xmet:4000229",
       "suggests": [
-        "xmet:0000210",
-        "xmet:0000540",
-        "xmet:1100014",
-        "xmet:3001106",
-        "xmet:3001107",
-        "xmet:3001125",
-        "xmet:3001126",
-        "xmet:3001127",
-        "xmet:3001128",
-        "xmet:3001129",
-        "xmet:3001130",
-        "xmet:0000214",
-        "xmet:0000215",
-        "xmet:0000216",
-        "xmet:0000541",
-        "xmet:0000542",
-        "xmet:3001130"
+        "xmet:4000051",
+        "xmet:4000110",
+        "xmet:4000214",
+        "xmet:4000288",
+        "xmet:4000289",
+        "xmet:4000307",
+        "xmet:4000308",
+        "xmet:4000309",
+        "xmet:4000310",
+        "xmet:4000311",
+        "xmet:4000312",
+        "xmet:4000055",
+        "xmet:4000056",
+        "xmet:4000057",
+        "xmet:4000111",
+        "xmet:4000112",
+        "xmet:4000312"
       ]
     },
     {
-      "id": "xmet:2200017",
+      "id": "xmet:4000237",
       "type": "skos:Concept",
       "prefLabel": "fluoride leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Fluoride departing.",
-      "broader": "xmet:2200016",
+      "broader": "xmet:4000236",
       "suggests": [
-        "xmet:0000214",
-        "xmet:0000541",
-        "xmet:0000210",
-        "xmet:0000540",
-        "xmet:1100014",
-        "xmet:3001130"
+        "xmet:4000055",
+        "xmet:4000111",
+        "xmet:4000051",
+        "xmet:4000110",
+        "xmet:4000214",
+        "xmet:4000312"
       ]
     },
     {
-      "id": "xmet:2200018",
+      "id": "xmet:4000238",
       "type": "skos:Concept",
       "prefLabel": "chloride leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Chloride departing.",
-      "broader": "xmet:2200016",
+      "broader": "xmet:4000236",
       "suggests": [
-        "xmet:0000215",
-        "xmet:0000542",
-        "xmet:0000210",
-        "xmet:0000540",
-        "xmet:1100014",
-        "xmet:3001130"
+        "xmet:4000056",
+        "xmet:4000112",
+        "xmet:4000051",
+        "xmet:4000110",
+        "xmet:4000214",
+        "xmet:4000312"
       ]
     },
     {
-      "id": "xmet:2200019",
+      "id": "xmet:4000239",
       "type": "skos:Concept",
       "prefLabel": "bromide leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Bromide departing.",
-      "broader": "xmet:2200016",
+      "broader": "xmet:4000236",
       "suggests": [
-        "xmet:0000216",
-        "xmet:0000210",
-        "xmet:0000540",
-        "xmet:1100014",
-        "xmet:3001130"
+        "xmet:4000057",
+        "xmet:4000051",
+        "xmet:4000110",
+        "xmet:4000214",
+        "xmet:4000312"
       ]
     },
     {
-      "id": "xmet:2200020",
+      "id": "xmet:4000240",
       "type": "skos:Concept",
       "prefLabel": "iodide leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Iodide departing.",
-      "broader": "xmet:2200016",
+      "broader": "xmet:4000236",
       "suggests": [
-        "xmet:0000210",
-        "xmet:0000540",
-        "xmet:1100014",
-        "xmet:3001130"
+        "xmet:4000051",
+        "xmet:4000110",
+        "xmet:4000214",
+        "xmet:4000312"
       ]
     },
     {
-      "id": "xmet:2200021",
+      "id": "xmet:4000241",
       "type": "skos:Concept",
       "prefLabel": "alcohol leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Alcohol / alkanol-equivalent fragment released as a coproduct (e.g. methanol from demethylation to alcohol level, ethanol from deethylation), or from ether cleavage / hydrolysis.",
-      "broader": "xmet:3001210"
+      "broader": "xmet:4000359"
     },
     {
-      "id": "xmet:2200022",
+      "id": "xmet:4000242",
       "type": "skos:Concept",
       "prefLabel": "amine leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Amine fragment from amide/urea hydrolysis or N-dealkylation path.",
-      "broader": "xmet:3001211"
+      "broader": "xmet:4000360"
     },
     {
-      "id": "xmet:2200023",
+      "id": "xmet:4000243",
       "type": "skos:Concept",
       "prefLabel": "phenol leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Phenol / phenoxide fragment departing.",
-      "broader": "xmet:3001210"
+      "broader": "xmet:4000359"
     },
     {
-      "id": "xmet:2200024",
+      "id": "xmet:4000244",
       "type": "skos:Concept",
       "prefLabel": "thiol leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Thiol / thiolate fragment departing.",
-      "broader": "xmet:3001212"
+      "broader": "xmet:4000361"
     },
     {
-      "id": "xmet:2200025",
+      "id": "xmet:4000245",
       "type": "skos:Concept",
       "prefLabel": "carboxylate leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Carboxylate departing (e.g. ester hydrolysis).",
-      "broader": "xmet:3001210"
+      "broader": "xmet:4000359"
     },
     {
-      "id": "xmet:2200026",
+      "id": "xmet:4000246",
       "type": "skos:Concept",
       "prefLabel": "phosphate leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Phosphate / phosphoryl leaving group.",
-      "broader": "xmet:3001210"
+      "broader": "xmet:4000359"
     },
     {
-      "id": "xmet:2200027",
+      "id": "xmet:4000247",
       "type": "skos:Concept",
       "prefLabel": "sulfate leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Sulfate leaving group.",
-      "broader": "xmet:3001210"
+      "broader": "xmet:4000359"
     },
     {
-      "id": "xmet:2200028",
+      "id": "xmet:4000248",
       "type": "skos:Concept",
       "prefLabel": "water leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Water departing (dehydration / condensation reverse).",
-      "broader": "xmet:3001210"
+      "broader": "xmet:4000359"
     },
     {
-      "id": "xmet:2200029",
+      "id": "xmet:4000249",
       "type": "skos:Concept",
       "prefLabel": "hydrogen leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Hydride / proton framing for dehydrogenation ends.",
-      "broader": "xmet:3001213"
+      "broader": "xmet:4000362"
     },
     {
-      "id": "xmet:2200030",
+      "id": "xmet:4000250",
       "type": "skos:Concept",
       "prefLabel": "formaldehyde leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Formaldehyde-equivalent leaving fragment from demethylation / carbinolamine cleavage. A specialized aldehyde leaving group.",
-      "broader": "xmet:3001248"
+      "broader": "xmet:4000396"
     },
     {
-      "id": "xmet:2200031",
+      "id": "xmet:4000251",
       "type": "skos:Concept",
       "prefLabel": "acetaldehyde leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Acetaldehyde-equivalent leaving fragment from deethylation. A specialized aldehyde leaving group.",
-      "broader": "xmet:3001248"
+      "broader": "xmet:4000396"
     },
     {
-      "id": "xmet:2200032",
+      "id": "xmet:4000252",
       "type": "skos:Concept",
       "prefLabel": "small alkyl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Small alkyl (or closely related unsaturated alkyl) carbon fragment that departs (methyl, ethyl, propyl, isopropyl, benzyl, allyl, …).",
-      "broader": "xmet:2200000"
+      "broader": "xmet:4000229"
     },
     {
-      "id": "xmet:2200033",
+      "id": "xmet:4000253",
       "type": "skos:Concept",
       "prefLabel": "aryl leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Aryl fragment departing (less common).",
-      "broader": "xmet:2200000"
+      "broader": "xmet:4000229"
     },
     {
-      "id": "xmet:2200034",
+      "id": "xmet:4000254",
       "type": "skos:Concept",
       "prefLabel": "mesylate leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Mesylate / sulfonate ester leaving group.",
-      "broader": "xmet:2200042"
+      "broader": "xmet:4000262"
     },
     {
-      "id": "xmet:2200035",
+      "id": "xmet:4000255",
       "type": "skos:Concept",
       "prefLabel": "tosylate leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Tosylate leaving group.",
-      "broader": "xmet:2200042"
+      "broader": "xmet:4000262"
     },
     {
-      "id": "xmet:2200036",
+      "id": "xmet:4000256",
       "type": "skos:Concept",
       "prefLabel": "isocyanate leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Isocyanate fragment in carbamate/urea chemistry.",
-      "broader": "xmet:3001211"
+      "broader": "xmet:4000360"
     },
     {
-      "id": "xmet:2200037",
+      "id": "xmet:4000257",
       "type": "skos:Concept",
       "prefLabel": "cyanide leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Cyanide departing (nitrile hydrolysis / related).",
-      "broader": "xmet:3001213"
+      "broader": "xmet:4000362"
     },
     {
-      "id": "xmet:2200038",
+      "id": "xmet:4000258",
       "type": "skos:Concept",
       "prefLabel": "nitrogen gas leaving group",
       "inScheme": "xmet:scheme",
       "definition": "N2 departing (azo / diazo paths).",
-      "broader": "xmet:3001211"
+      "broader": "xmet:4000360"
     },
     {
-      "id": "xmet:2200039",
+      "id": "xmet:4000259",
       "type": "skos:Concept",
       "prefLabel": "no leaving group",
       "inScheme": "xmet:scheme",
@@ -2821,10 +2821,10 @@
       "altLabel": [
         "non-cleaving transformation"
       ],
-      "broader": "xmet:2200000"
+      "broader": "xmet:4000229"
     },
     {
-      "id": "xmet:2200040",
+      "id": "xmet:4000260",
       "type": "skos:Concept",
       "prefLabel": "carbonyl leaving fragment",
       "inScheme": "xmet:scheme",
@@ -2833,10 +2833,10 @@
         "aldehyde leaving fragment",
         "carbonyl / aldehyde leaving fragment"
       ],
-      "broader": "xmet:2200000"
+      "broader": "xmet:4000229"
     },
     {
-      "id": "xmet:2200041",
+      "id": "xmet:4000261",
       "type": "skos:Concept",
       "prefLabel": "heteroatom or small-molecule leaving group",
       "inScheme": "xmet:scheme",
@@ -2845,10 +2845,10 @@
         "heteroatom leaving group",
         "small-molecule leaving group"
       ],
-      "broader": "xmet:2200000"
+      "broader": "xmet:4000229"
     },
     {
-      "id": "xmet:2200042",
+      "id": "xmet:4000262",
       "type": "skos:Concept",
       "prefLabel": "sulfonate leaving group",
       "inScheme": "xmet:scheme",
@@ -2857,10 +2857,10 @@
         "sulfonate ester leaving group",
         "activated sulfonate leaving group"
       ],
-      "broader": "xmet:2200000"
+      "broader": "xmet:4000229"
     },
     {
-      "id": "xmet:3000000",
+      "id": "xmet:4000263",
       "type": "skos:Concept",
       "prefLabel": "reaction descriptor",
       "inScheme": "xmet:scheme",
@@ -2868,10 +2868,10 @@
       "altLabel": [
         "reaction_descriptor"
       ],
-      "broader": "xmet:0000000"
+      "broader": "xmet:4000000"
     },
     {
-      "id": "xmet:3000004",
+      "id": "xmet:4000264",
       "type": "skos:Concept",
       "prefLabel": "elimination",
       "inScheme": "xmet:scheme",
@@ -2880,10 +2880,10 @@
         "elimination or excretion",
         "excretion"
       ],
-      "broader": "xmet:1000000"
+      "broader": "xmet:4000212"
     },
     {
-      "id": "xmet:3000005",
+      "id": "xmet:4000265",
       "type": "skos:Concept",
       "prefLabel": "isoredox",
       "inScheme": "xmet:scheme",
@@ -2892,10 +2892,10 @@
         "redox-neutral transformation",
         "isoredox class"
       ],
-      "broader": "xmet:1100000"
+      "broader": "xmet:4000213"
     },
     {
-      "id": "xmet:3000100",
+      "id": "xmet:4000266",
       "type": "skos:Concept",
       "prefLabel": "transfer conjugation",
       "inScheme": "xmet:scheme",
@@ -2904,10 +2904,10 @@
         "metabolic transfer conjugation",
         "Phase II transfer conjugation"
       ],
-      "broader": "xmet:0000024"
+      "broader": "xmet:4000011"
     },
     {
-      "id": "xmet:3000200",
+      "id": "xmet:4000267",
       "type": "skos:Concept",
       "prefLabel": "adduct formation",
       "inScheme": "xmet:scheme",
@@ -2916,10 +2916,10 @@
         "reactive-species capture conjugation",
         "adduct conjugation"
       ],
-      "broader": "xmet:0000024"
+      "broader": "xmet:4000011"
     },
     {
-      "id": "xmet:3000201",
+      "id": "xmet:4000268",
       "type": "skos:Concept",
       "prefLabel": "protein adduct formation",
       "inScheme": "xmet:scheme",
@@ -2928,10 +2928,10 @@
         "protein adduct",
         "protein binding adduct"
       ],
-      "broader": "xmet:3001219"
+      "broader": "xmet:4000367"
     },
     {
-      "id": "xmet:3000202",
+      "id": "xmet:4000269",
       "type": "skos:Concept",
       "prefLabel": "DNA adduct formation",
       "inScheme": "xmet:scheme",
@@ -2939,10 +2939,10 @@
       "altLabel": [
         "DNA adduct"
       ],
-      "broader": "xmet:3001219"
+      "broader": "xmet:4000367"
     },
     {
-      "id": "xmet:3000203",
+      "id": "xmet:4000270",
       "type": "skos:Concept",
       "prefLabel": "cyanide conjugation",
       "inScheme": "xmet:scheme",
@@ -2952,18 +2952,18 @@
         "cyanide adduct formation",
         "CN trapping"
       ],
-      "broader": "xmet:3001218"
+      "broader": "xmet:4000366"
     },
     {
-      "id": "xmet:3000300",
+      "id": "xmet:4000271",
       "type": "skos:Concept",
       "prefLabel": "skeletal rearrangement",
       "inScheme": "xmet:scheme",
       "definition": "Rearrangement that changes atom connectivity of the heavy-atom skeleton (sparse in xenobiotic metabolism).",
-      "broader": "xmet:0002004"
+      "broader": "xmet:4000190"
     },
     {
-      "id": "xmet:3000400",
+      "id": "xmet:4000272",
       "type": "skos:Concept",
       "prefLabel": "composite transformation",
       "inScheme": "xmet:scheme",
@@ -2972,22 +2972,22 @@
         "composite",
         "composite pathway"
       ],
-      "broader": "xmet:1100000",
+      "broader": "xmet:4000213",
       "relatedTo": [
-        "xmet:3001245",
-        "xmet:0000300"
+        "xmet:4000393",
+        "xmet:4000059"
       ]
     },
     {
-      "id": "xmet:3000500",
+      "id": "xmet:4000273",
       "type": "skos:Concept",
       "prefLabel": "ring effect",
       "inScheme": "xmet:scheme",
       "definition": "Ring opening, closure, expansion, or contraction accompanying a reaction.",
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:3000510",
+      "id": "xmet:4000274",
       "type": "skos:Concept",
       "prefLabel": "aromaticity effect",
       "inScheme": "xmet:scheme",
@@ -2996,42 +2996,42 @@
         "aromaticity change",
         "aromaticity descriptor"
       ],
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:3000520",
+      "id": "xmet:4000275",
       "type": "skos:Concept",
       "prefLabel": "cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Directional bond-break cue: ring-opening cleavage, cleavage with leaving group, or fragmenting cleavage (≥2 metabolite products).",
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:3000521",
+      "id": "xmet:4000276",
       "type": "skos:Concept",
       "prefLabel": "ring-opening cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Bond break that opens a ring; always with ring opening.",
-      "broader": "xmet:3000520"
+      "broader": "xmet:4000275"
     },
     {
-      "id": "xmet:3000522",
+      "id": "xmet:4000277",
       "type": "skos:Concept",
       "prefLabel": "cleavage with leaving group",
       "inScheme": "xmet:scheme",
       "definition": "One product is the retained scaffold; the other is a small/generic leaving fragment.",
-      "broader": "xmet:3000520"
+      "broader": "xmet:4000275"
     },
     {
-      "id": "xmet:3000523",
+      "id": "xmet:4000278",
       "type": "skos:Concept",
       "prefLabel": "fragmenting cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Cleavage yields two or more xenobiotic-derived metabolites that each deserve product-level identity (not collapsed to leaving group).",
-      "broader": "xmet:3000520"
+      "broader": "xmet:4000275"
     },
     {
-      "id": "xmet:3000600",
+      "id": "xmet:4000279",
       "type": "skos:Concept",
       "prefLabel": "GSH pyroglutamate neutral loss",
       "inScheme": "xmet:scheme",
@@ -3041,10 +3041,10 @@
         "pyroglutamate neutral loss",
         "129 Da neutral loss"
       ],
-      "broader": "xmet:1700106"
+      "broader": "xmet:4000228"
     },
     {
-      "id": "xmet:3000601",
+      "id": "xmet:4000280",
       "type": "skos:Concept",
       "prefLabel": "cyanide mass shift",
       "inScheme": "xmet:scheme",
@@ -3055,18 +3055,18 @@
         "~27 Da",
         "cyanide neutral loss"
       ],
-      "broader": "xmet:1700011"
+      "broader": "xmet:4000221"
     },
     {
-      "id": "xmet:3001000",
+      "id": "xmet:4000281",
       "type": "skos:Concept",
       "prefLabel": "concept relation",
       "inScheme": "xmet:scheme",
       "definition": "Parent for the small relation vocabulary used across XMET spines.",
-      "broader": "xmet:0000000"
+      "broader": "xmet:4000000"
     },
     {
-      "id": "xmet:3001100",
+      "id": "xmet:4000282",
       "type": "skos:Concept",
       "prefLabel": "related to",
       "inScheme": "xmet:scheme",
@@ -3075,11 +3075,11 @@
         "relatedTo",
         "xmet:relatedTo"
       ],
-      "broader": "xmet:3001000",
+      "broader": "xmet:4000281",
       "exactMatch": "skos:related"
     },
     {
-      "id": "xmet:3001101",
+      "id": "xmet:4000283",
       "type": "skos:Concept",
       "prefLabel": "suggests",
       "inScheme": "xmet:scheme",
@@ -3088,10 +3088,10 @@
         "suggests",
         "xmet:suggests"
       ],
-      "broader": "xmet:3001000"
+      "broader": "xmet:4000281"
     },
     {
-      "id": "xmet:3001102",
+      "id": "xmet:4000284",
       "type": "skos:Concept",
       "prefLabel": "always with",
       "inScheme": "xmet:scheme",
@@ -3100,10 +3100,10 @@
         "alwaysWith",
         "xmet:alwaysWith"
       ],
-      "broader": "xmet:3001101"
+      "broader": "xmet:4000283"
     },
     {
-      "id": "xmet:3001103",
+      "id": "xmet:4000285",
       "type": "skos:Concept",
       "prefLabel": "has part",
       "inScheme": "xmet:scheme",
@@ -3112,11 +3112,11 @@
         "hasPart",
         "xmet:hasPart"
       ],
-      "broader": "xmet:3001000",
+      "broader": "xmet:4000281",
       "exactMatch": "dcterms:hasPart"
     },
     {
-      "id": "xmet:3001104",
+      "id": "xmet:4000286",
       "type": "skos:Concept",
       "prefLabel": "is part of",
       "inScheme": "xmet:scheme",
@@ -3125,11 +3125,11 @@
         "isPartOf",
         "xmet:isPartOf"
       ],
-      "broader": "xmet:3001000",
+      "broader": "xmet:4000281",
       "exactMatch": "dcterms:isPartOf"
     },
     {
-      "id": "xmet:3001105",
+      "id": "xmet:4000287",
       "type": "skos:Concept",
       "prefLabel": "aromatic epoxidation",
       "inScheme": "xmet:scheme",
@@ -3138,247 +3138,247 @@
         "arene epoxidation",
         "aromatic_epoxidation"
       ],
-      "broader": "xmet:3001108"
+      "broader": "xmet:4000290"
     },
     {
-      "id": "xmet:3001106",
+      "id": "xmet:4000288",
       "type": "skos:Concept",
       "prefLabel": "reductive C–halogen cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Reductive cleavage of a carbon–halogen bond with loss of halide and retention of carbon saturation (no new C=C required).",
-      "broader": "xmet:0000540",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000110",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001107",
+      "id": "xmet:4000289",
       "type": "skos:Concept",
       "prefLabel": "reductive dehalogenation to alkene",
       "inScheme": "xmet:scheme",
       "definition": "Reductive loss of halide accompanied by formation of a C=C bond between the halogen-bearing carbon and an adjacent carbon.",
-      "broader": "xmet:0000540",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000110",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001108",
+      "id": "xmet:4000290",
       "type": "skos:Concept",
       "prefLabel": "epoxide ring formation",
       "inScheme": "xmet:scheme",
       "definition": "Formation of a three-membered epoxide ring from a C=C (or C=N) bond by oxygen addition.",
-      "broader": "xmet:0000110"
+      "broader": "xmet:4000022"
     },
     {
-      "id": "xmet:3001109",
+      "id": "xmet:4000291",
       "type": "skos:Concept",
       "prefLabel": "methine hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation at a methine carbon (R3C–H / aromatic CH; Forest Hydroxylation/h matches [#6h1]). Carbon-class shelf under hydroxylation.",
-      "broader": "xmet:0000100"
+      "broader": "xmet:4000012"
     },
     {
-      "id": "xmet:3001110",
+      "id": "xmet:4000292",
       "type": "skos:Concept",
       "prefLabel": "methyl or methylene hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation at a methyl or methylene carbon (RCH3 or R2CH2 → alcohol).",
-      "broader": "xmet:0000100"
+      "broader": "xmet:4000012"
     },
     {
-      "id": "xmet:3001111",
+      "id": "xmet:4000293",
       "type": "skos:Concept",
       "prefLabel": "hydrolytic bond cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolysis that cleaves a bond to N, O, or S adjacent to a carbonyl (or thiocarbonyl), releasing the heteroatom fragment.",
-      "broader": "xmet:0000013"
+      "broader": "xmet:4000007"
     },
     {
-      "id": "xmet:3001112",
+      "id": "xmet:4000294",
       "type": "skos:Concept",
       "prefLabel": "carbonyl hydration with cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Addition of water at a carbonyl (or thiocarbonyl) with cleavage of an adjacent heteroatom bond. A specialized hydration (and hydrolytic cleavage), not the parent of general hydration.",
-      "broader": "xmet:0004012"
+      "broader": "xmet:4000204"
     },
     {
-      "id": "xmet:3001113",
+      "id": "xmet:4000295",
       "type": "skos:Concept",
       "prefLabel": "epoxide hydration",
       "inScheme": "xmet:scheme",
       "definition": "Opening of an epoxide by water to form a 1,2-diol.",
-      "broader": "xmet:0000400",
+      "broader": "xmet:4000077",
       "isPartOf": [
-        "xmet:3001151",
-        "xmet:3001244"
+        "xmet:4000323",
+        "xmet:4000392"
       ],
-      "relatedTo": "xmet:3001154"
+      "relatedTo": "xmet:4000326"
     },
     {
-      "id": "xmet:3001114",
+      "id": "xmet:4000296",
       "type": "skos:Concept",
       "prefLabel": "epoxide rearrangement",
       "inScheme": "xmet:scheme",
       "definition": "Rearrangement accompanying epoxide opening (for example to a phenol or carbonyl).",
-      "broader": "xmet:0000400"
+      "broader": "xmet:4000077"
     },
     {
-      "id": "xmet:3001115",
+      "id": "xmet:4000297",
       "type": "skos:Concept",
       "prefLabel": "sulfur–oxygen zwitterion formation",
       "inScheme": "xmet:scheme",
       "definition": "Oxidation of sulfur to a charge-separated S⁺–O⁻ (zwitterionic) oxide.",
-      "broader": "xmet:0000130"
+      "broader": "xmet:4000032"
     },
     {
-      "id": "xmet:3001116",
+      "id": "xmet:4000298",
       "type": "skos:Concept",
       "prefLabel": "sulfenic acid formation",
       "inScheme": "xmet:scheme",
       "definition": "Oxidation of sulfur introducing an S–OH (sulfenic acid) group.",
-      "broader": "xmet:0000130"
+      "broader": "xmet:4000032"
     },
     {
-      "id": "xmet:3001117",
+      "id": "xmet:4000299",
       "type": "skos:Concept",
       "prefLabel": "sulfur oxo formation",
       "inScheme": "xmet:scheme",
       "definition": "Oxidation forming an S=O bond (sulfoxide pathway, or further to sulfone).",
-      "broader": "xmet:0000130"
+      "broader": "xmet:4000032"
     },
     {
-      "id": "xmet:3001118",
+      "id": "xmet:4000300",
       "type": "skos:Concept",
       "prefLabel": "peroxide reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reductive cleavage of an O–O peroxide bond.",
-      "broader": "xmet:0000520"
+      "broader": "xmet:4000101"
     },
     {
-      "id": "xmet:3001119",
+      "id": "xmet:4000301",
       "type": "skos:Concept",
       "prefLabel": "thioether C–S or O–S cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Reductive cleavage of a sulfur–carbon or sulfur–oxygen bond in a thioether or related context.",
-      "broader": "xmet:0000530"
+      "broader": "xmet:4000106"
     },
     {
-      "id": "xmet:3001120",
+      "id": "xmet:4000302",
       "type": "skos:Concept",
       "prefLabel": "alkane dehydrogenation",
       "inScheme": "xmet:scheme",
       "definition": "Dehydrogenation forming a C=C bond from an alkyl C–C context.",
-      "broader": "xmet:3001247"
+      "broader": "xmet:4000395"
     },
     {
-      "id": "xmet:3001121",
+      "id": "xmet:4000303",
       "type": "skos:Concept",
       "prefLabel": "sulfoxide formation by dehydrogenation",
       "inScheme": "xmet:scheme",
       "definition": "Dehydrogenation of an S–OH species to S=O (sulfoxide).",
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:3001122",
+      "id": "xmet:4000304",
       "type": "skos:Concept",
       "prefLabel": "alcohol dehydration",
       "inScheme": "xmet:scheme",
       "definition": "Loss of water from an alcohol (or related C/N–OH), yielding unsaturation or fragmentation.",
-      "broader": "xmet:0000550"
+      "broader": "xmet:4000113"
     },
     {
-      "id": "xmet:3001123",
+      "id": "xmet:4000305",
       "type": "skos:Concept",
       "prefLabel": "beta-elimination",
       "inScheme": "xmet:scheme",
       "definition": "Beta-elimination of OH forming a C=C bond.",
-      "broader": "xmet:0000550"
+      "broader": "xmet:4000113"
     },
     {
-      "id": "xmet:3001124",
+      "id": "xmet:4000306",
       "type": "skos:Concept",
       "prefLabel": "carbonyl dehydration",
       "inScheme": "xmet:scheme",
       "definition": "Dehydration involving a carbonyl oxygen (loss of water-equivalent from a C=O context).",
-      "broader": "xmet:0000550"
+      "broader": "xmet:4000113"
     },
     {
-      "id": "xmet:3001125",
+      "id": "xmet:4000307",
       "type": "skos:Concept",
       "prefLabel": "oxidative dehalogenation to alcohol",
       "inScheme": "xmet:scheme",
       "definition": "Replacement of carbon-bound halogen by OH with loss of the halide.",
-      "broader": "xmet:0000210",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000051",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001126",
+      "id": "xmet:4000308",
       "type": "skos:Concept",
       "prefLabel": "oxidative dehalogenation to carbonyl",
       "inScheme": "xmet:scheme",
       "definition": "Oxidative loss of halide from a methine halide yielding a carbonyl.",
-      "broader": "xmet:0000210",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000051",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001127",
+      "id": "xmet:4000309",
       "type": "skos:Concept",
       "prefLabel": "oxidative dehalogenation to carboxylic acid",
       "inScheme": "xmet:scheme",
       "definition": "Oxidative loss of halide from a methylene halide yielding a carboxylic acid.",
-      "broader": "xmet:0000210",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000051",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001128",
+      "id": "xmet:4000310",
       "type": "skos:Concept",
       "prefLabel": "1,2-halide migration with hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Oxidative dehalogenation with 1,2-migration of halide onto an adjacent carbon and hydroxylation at the original site.",
-      "broader": "xmet:0000210",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000051",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001129",
+      "id": "xmet:4000311",
       "type": "skos:Concept",
       "prefLabel": "geminal dihalide to carboxylic acid",
       "inScheme": "xmet:scheme",
       "definition": "Oxidative conversion of a geminal dihalide carbon to a carboxylic acid with loss of both halides.",
-      "broader": "xmet:0000210",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000051",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001130",
+      "id": "xmet:4000312",
       "type": "skos:Concept",
       "prefLabel": "geminal dihalide to geminal diol",
       "inScheme": "xmet:scheme",
       "definition": "Oxidative conversion of a geminal dihalide to a geminal diol (hydrate) with loss of both halides.",
-      "broader": "xmet:0000210",
-      "alwaysWith": "xmet:2200016"
+      "broader": "xmet:4000051",
+      "alwaysWith": "xmet:4000236"
     },
     {
-      "id": "xmet:3001131",
+      "id": "xmet:4000313",
       "type": "skos:Concept",
       "prefLabel": "nitro N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Partial reduction of a nitro group by cleavage of an N–O bond (covers charged, anionic, and neutral nitro representations used in matching).",
-      "broader": "xmet:3001227"
+      "broader": "xmet:4000375"
     },
     {
-      "id": "xmet:3001132",
+      "id": "xmet:4000314",
       "type": "skos:Concept",
       "prefLabel": "hydroxylamine N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Reductive cleavage of the N–O bond of a hydroxylamine.",
-      "broader": "xmet:3001227"
+      "broader": "xmet:4000375"
     },
     {
-      "id": "xmet:3001133",
+      "id": "xmet:4000315",
       "type": "skos:Concept",
       "prefLabel": "nitroso reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a nitroso group (N=O).",
-      "broader": "xmet:3001227"
+      "broader": "xmet:4000375"
     },
     {
-      "id": "xmet:3001142",
+      "id": "xmet:4000316",
       "type": "skos:Concept",
       "prefLabel": "quaternary C–heteroatom dealkylation",
       "inScheme": "xmet:scheme",
@@ -3386,10 +3386,10 @@
       "altLabel": [
         "quaternary C–heteroatom dealkylation to alcohol"
       ],
-      "broader": "xmet:3001193"
+      "broader": "xmet:4000343"
     },
     {
-      "id": "xmet:3001145",
+      "id": "xmet:4000317",
       "type": "skos:Concept",
       "prefLabel": "quaternary C-dealkylation",
       "inScheme": "xmet:scheme",
@@ -3398,42 +3398,42 @@
         "quaternary C–C dealkylation",
         "quaternary C-dealkylation to alcohol"
       ],
-      "broader": "xmet:0000204"
+      "broader": "xmet:4000046"
     },
     {
-      "id": "xmet:3001146",
+      "id": "xmet:4000318",
       "type": "skos:Concept",
       "prefLabel": "hemiaminal collapse dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "Dealkylation via hemiaminal/hemiacetal/hemithioacetal collapse. alwaysWith encodes aldehyde-level cleaved carbon and no discrete alkyl leaving group.",
-      "broader": "xmet:3001193"
+      "broader": "xmet:4000343"
     },
     {
-      "id": "xmet:3001147",
+      "id": "xmet:4000319",
       "type": "skos:Concept",
       "prefLabel": "dehydrogenation to phenol",
       "inScheme": "xmet:scheme",
       "definition": "A dehydrogenation path whose product site is a phenol (aromatic or phenolic C–OH), often a precursor to quinone-like oxidation in which a second site is later dehydrogenated and aromaticity collapses.",
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:3001148",
+      "id": "xmet:4000320",
       "type": "skos:Concept",
       "prefLabel": "dehydrogenation to amine",
       "inScheme": "xmet:scheme",
       "definition": "A dehydrogenation path whose product site is a primary or secondary amine.",
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:3001149",
+      "id": "xmet:4000321",
       "type": "skos:Concept",
       "prefLabel": "dehydrogenation to alkyl methide site",
       "inScheme": "xmet:scheme",
       "definition": "A dehydrogenation path whose product site is an alkyl carbon in a methide-forming context (methyl, methylene, or methine).",
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:3001150",
+      "id": "xmet:4000322",
       "type": "skos:Concept",
       "prefLabel": "conjugated-path hydrogenation",
       "inScheme": "xmet:scheme",
@@ -3442,10 +3442,10 @@
         "dearomatizing hydrogenation",
         "resonance-path hydrogenation"
       ],
-      "broader": "xmet:0000500"
+      "broader": "xmet:4000090"
     },
     {
-      "id": "xmet:3001151",
+      "id": "xmet:4000323",
       "type": "skos:Concept",
       "prefLabel": "arene oxide–trans-dihydrodiol pathway",
       "inScheme": "xmet:scheme",
@@ -3455,15 +3455,15 @@
         "epoxidation–hydration to trans-dihydrodiol",
         "arene oxide hydration pathway"
       ],
-      "broader": "xmet:3000400",
+      "broader": "xmet:4000272",
       "hasPart": [
-        "xmet:0000112",
-        "xmet:3001113",
-        "xmet:3001154"
+        "xmet:4000024",
+        "xmet:4000295",
+        "xmet:4000326"
       ]
     },
     {
-      "id": "xmet:3001152",
+      "id": "xmet:4000324",
       "type": "skos:Concept",
       "prefLabel": "arene oxide–arenol conjugation pathway",
       "inScheme": "xmet:scheme",
@@ -3474,16 +3474,16 @@
         "arene oxide rearrangement then phenolic conjugation",
         "NIH shift then phenolic conjugation"
       ],
-      "broader": "xmet:3000400",
+      "broader": "xmet:4000272",
       "hasPart": [
-        "xmet:0000112",
-        "xmet:0004005",
-        "xmet:0001002",
-        "xmet:0001012"
+        "xmet:4000024",
+        "xmet:4000197",
+        "xmet:4000150",
+        "xmet:4000160"
       ]
     },
     {
-      "id": "xmet:3001153",
+      "id": "xmet:4000325",
       "type": "skos:Concept",
       "prefLabel": "diol formation",
       "inScheme": "xmet:scheme",
@@ -3492,10 +3492,10 @@
         "dihydroxylation",
         "1,2-diol formation"
       ],
-      "broader": "xmet:1100000"
+      "broader": "xmet:4000213"
     },
     {
-      "id": "xmet:3001154",
+      "id": "xmet:4000326",
       "type": "skos:Concept",
       "prefLabel": "trans-diol formation",
       "inScheme": "xmet:scheme",
@@ -3505,12 +3505,12 @@
         "trans-1,2-diol formation",
         "epoxide hydration to trans-diol"
       ],
-      "broader": "xmet:3001153",
-      "isPartOf": "xmet:3001151",
-      "relatedTo": "xmet:3001113"
+      "broader": "xmet:4000325",
+      "isPartOf": "xmet:4000323",
+      "relatedTo": "xmet:4000295"
     },
     {
-      "id": "xmet:3001155",
+      "id": "xmet:4000327",
       "type": "skos:Concept",
       "prefLabel": "quinone-like single-to-double dehydrogenation",
       "inScheme": "xmet:scheme",
@@ -3520,10 +3520,10 @@
         "phenol or aniline to quinoid",
         "quinone C–heteroatom dehydrogenation"
       ],
-      "broader": "xmet:3001215"
+      "broader": "xmet:4000364"
     },
     {
-      "id": "xmet:3001156",
+      "id": "xmet:4000328",
       "type": "skos:Concept",
       "prefLabel": "quinone-like carbonyl-oxygen addition",
       "inScheme": "xmet:scheme",
@@ -3532,10 +3532,10 @@
         "quinoid carbonyl-oxygen addition",
         "add carbonyl oxygen to quinoid path"
       ],
-      "broader": "xmet:3001215"
+      "broader": "xmet:4000364"
     },
     {
-      "id": "xmet:3001157",
+      "id": "xmet:4000329",
       "type": "skos:Concept",
       "prefLabel": "quinone-like formation by halide replacement",
       "inScheme": "xmet:scheme",
@@ -3544,10 +3544,10 @@
         "quinoid formation by halide replacement",
         "replace halogen to quinoid"
       ],
-      "broader": "xmet:3001215"
+      "broader": "xmet:4000364"
     },
     {
-      "id": "xmet:3001158",
+      "id": "xmet:4000330",
       "type": "skos:Concept",
       "prefLabel": "dealkylative quinone-like formation",
       "inScheme": "xmet:scheme",
@@ -3556,18 +3556,18 @@
         "dealkylative quinoid formation",
         "quinone formation with dealkylation"
       ],
-      "broader": "xmet:3001215"
+      "broader": "xmet:4000364"
     },
     {
-      "id": "xmet:3001159",
+      "id": "xmet:4000331",
       "type": "skos:Concept",
       "prefLabel": "epoxide methyl-sulfone sulfation",
       "inScheme": "xmet:scheme",
       "definition": "Forest Sulfation/epoxide_methyl_sulfone: sulfation path yielding a methyl-sulfone motif from an epoxide partner.",
-      "broader": "xmet:0001010"
+      "broader": "xmet:4000158"
     },
     {
-      "id": "xmet:3001160",
+      "id": "xmet:4000332",
       "type": "skos:Concept",
       "prefLabel": "thiol glutathionation",
       "inScheme": "xmet:scheme",
@@ -3575,10 +3575,10 @@
       "altLabel": [
         "GSH thiol conjugation"
       ],
-      "broader": "xmet:3001226"
+      "broader": "xmet:4000374"
     },
     {
-      "id": "xmet:3001161",
+      "id": "xmet:4000333",
       "type": "skos:Concept",
       "prefLabel": "alkene glutathionation",
       "inScheme": "xmet:scheme",
@@ -3586,10 +3586,10 @@
       "altLabel": [
         "GSH alkene addition"
       ],
-      "broader": "xmet:3001224"
+      "broader": "xmet:4000372"
     },
     {
-      "id": "xmet:3001162",
+      "id": "xmet:4000334",
       "type": "skos:Concept",
       "prefLabel": "carbonyl glutathionation",
       "inScheme": "xmet:scheme",
@@ -3597,10 +3597,10 @@
       "altLabel": [
         "GSH carbonyl addition"
       ],
-      "broader": "xmet:3001224"
+      "broader": "xmet:4000372"
     },
     {
-      "id": "xmet:3001163",
+      "id": "xmet:4000335",
       "type": "skos:Concept",
       "prefLabel": "mesylate glutathionation",
       "inScheme": "xmet:scheme",
@@ -3608,10 +3608,10 @@
       "altLabel": [
         "GSH mesylate displacement"
       ],
-      "broader": "xmet:3001225"
+      "broader": "xmet:4000373"
     },
     {
-      "id": "xmet:3001174",
+      "id": "xmet:4000336",
       "type": "skos:Concept",
       "prefLabel": "N-quaternary dealkylation",
       "inScheme": "xmet:scheme",
@@ -3619,26 +3619,26 @@
       "altLabel": [
         "N-quaternary dealkylation to alcohol"
       ],
-      "broader": "xmet:3001199"
+      "broader": "xmet:4000348"
     },
     {
-      "id": "xmet:3001175",
+      "id": "xmet:4000337",
       "type": "skos:Concept",
       "prefLabel": "N-hemiaminal collapse dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "Forest NDealkylation/hemiaminal: hemiaminal collapse after N-oxidation / carbinolamine path.",
-      "broader": "xmet:3001199"
+      "broader": "xmet:4000348"
     },
     {
-      "id": "xmet:3001188",
+      "id": "xmet:4000338",
       "type": "skos:Concept",
       "prefLabel": "carbon oxidation",
       "inScheme": "xmet:scheme",
       "definition": "Carbon-centred oxygenation (C/c → C/c–O), Phase I carbon oxidation specialization.",
-      "broader": "xmet:0000020"
+      "broader": "xmet:4000009"
     },
     {
-      "id": "xmet:3001189",
+      "id": "xmet:4000339",
       "type": "skos:Concept",
       "prefLabel": "dioxygenation",
       "inScheme": "xmet:scheme",
@@ -3646,26 +3646,26 @@
       "altLabel": [
         "arene dioxygenation"
       ],
-      "broader": "xmet:0000020"
+      "broader": "xmet:4000009"
     },
     {
-      "id": "xmet:3001190",
+      "id": "xmet:4000340",
       "type": "skos:Concept",
       "prefLabel": "tertiary N-dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "N-dealkylation of tertiary amine nitrogen (D3/H0 → D2/H≥1).",
-      "broader": "xmet:3001198"
+      "broader": "xmet:4000347"
     },
     {
-      "id": "xmet:3001191",
+      "id": "xmet:4000341",
       "type": "skos:Concept",
       "prefLabel": "secondary N-dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "N-dealkylation of secondary amine nitrogen to primary (H1 → H2).",
-      "broader": "xmet:3001198"
+      "broader": "xmet:4000347"
     },
     {
-      "id": "xmet:3001192",
+      "id": "xmet:4000342",
       "type": "skos:Concept",
       "prefLabel": "antonym of",
       "inScheme": "xmet:scheme",
@@ -3675,10 +3675,10 @@
         "xmet:antonymOf",
         "antonym"
       ],
-      "broader": "xmet:3001000"
+      "broader": "xmet:4000281"
     },
     {
-      "id": "xmet:3001193",
+      "id": "xmet:4000343",
       "type": "skos:Concept",
       "prefLabel": "dealkylation of alkyl carbons",
       "inScheme": "xmet:scheme",
@@ -3686,50 +3686,50 @@
       "altLabel": [
         "alkyl-carbon dealkylation"
       ],
-      "broader": "xmet:0000200"
+      "broader": "xmet:4000042"
     },
     {
-      "id": "xmet:3001194",
+      "id": "xmet:4000344",
       "type": "skos:Concept",
       "prefLabel": "demethylation",
       "inScheme": "xmet:scheme",
       "definition": "Oxidative demethylation at N/O/S (heteroatom-general). Forest methyl_* patterns share this home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. O-/S-demethylation specialize by heteroatom underneath.",
-      "broader": "xmet:3001193"
+      "broader": "xmet:4000343"
     },
     {
-      "id": "xmet:3001195",
+      "id": "xmet:4000345",
       "type": "skos:Concept",
       "prefLabel": "methylene dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "Dealkylation at a methylene attached to N/O/S. Forest methylene_* patterns share this home; ox-state/fragment via alwaysWith. O-deethylation specializes underneath.",
-      "broader": "xmet:3001193"
+      "broader": "xmet:4000343"
     },
     {
-      "id": "xmet:3001196",
+      "id": "xmet:4000346",
       "type": "skos:Concept",
       "prefLabel": "methine dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "Dealkylation at a methine attached to N/O/S. Forest methine_* patterns share this home; ox-state via alwaysWith.",
-      "broader": "xmet:3001193"
+      "broader": "xmet:4000343"
     },
     {
-      "id": "xmet:3001198",
+      "id": "xmet:4000347",
       "type": "skos:Concept",
       "prefLabel": "N-dealkylation of secondary and tertiary amines",
       "inScheme": "xmet:scheme",
       "definition": "N-dealkylation distinguished by amine substitution (secondary vs tertiary).",
-      "broader": "xmet:0000201"
+      "broader": "xmet:4000043"
     },
     {
-      "id": "xmet:3001199",
+      "id": "xmet:4000348",
       "type": "skos:Concept",
       "prefLabel": "N-dealkylation of alkyl carbons",
       "inScheme": "xmet:scheme",
       "definition": "N-dealkylation distinguished by which alkyl carbon is lost and the oxidation state of the released fragment.",
-      "broader": "xmet:0000201"
+      "broader": "xmet:4000043"
     },
     {
-      "id": "xmet:3001200",
+      "id": "xmet:4000349",
       "type": "skos:Concept",
       "prefLabel": "N-demethylation",
       "inScheme": "xmet:scheme",
@@ -3738,26 +3738,26 @@
         "N-methyl dealkylation",
         "N-demethylation by fragment oxidation"
       ],
-      "broader": "xmet:3001199"
+      "broader": "xmet:4000348"
     },
     {
-      "id": "xmet:3001201",
+      "id": "xmet:4000350",
       "type": "skos:Concept",
       "prefLabel": "N-methylene dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "N-dealkylation at a methylene carbon attached to nitrogen (includes N-deethylation / N-depropylation site specializations). Forest methylene_* patterns share this home; ox-state / fragment via mapping alwaysWith.",
-      "broader": "xmet:3001199"
+      "broader": "xmet:4000348"
     },
     {
-      "id": "xmet:3001202",
+      "id": "xmet:4000351",
       "type": "skos:Concept",
       "prefLabel": "N-methine dealkylation",
       "inScheme": "xmet:scheme",
       "definition": "N-dealkylation at a methine carbon attached to nitrogen. Forest methine_* patterns share this home; ox-state via mapping alwaysWith.",
-      "broader": "xmet:3001199"
+      "broader": "xmet:4000348"
     },
     {
-      "id": "xmet:3001203",
+      "id": "xmet:4000352",
       "type": "skos:Concept",
       "prefLabel": "carboxylate ester hydrolysis",
       "inScheme": "xmet:scheme",
@@ -3765,10 +3765,10 @@
       "altLabel": [
         "ester hydrolysis family"
       ],
-      "broader": "xmet:3001111"
+      "broader": "xmet:4000293"
     },
     {
-      "id": "xmet:3001204",
+      "id": "xmet:4000353",
       "type": "skos:Concept",
       "prefLabel": "carboxamide hydrolysis",
       "inScheme": "xmet:scheme",
@@ -3776,82 +3776,82 @@
       "altLabel": [
         "amide hydrolysis family"
       ],
-      "broader": "xmet:3001111"
+      "broader": "xmet:4000293"
     },
     {
-      "id": "xmet:3001205",
+      "id": "xmet:4000354",
       "type": "skos:Concept",
       "prefLabel": "ether bond hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolytic ether cleavage / ether hydrolysis.",
-      "broader": "xmet:3001111"
+      "broader": "xmet:4000293"
     },
     {
-      "id": "xmet:3001206",
+      "id": "xmet:4000355",
       "type": "skos:Concept",
       "prefLabel": "nitrile bond hydrolysis",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolysis of nitriles / cyanide-bearing carbonitriles.",
-      "broader": "xmet:3001111"
+      "broader": "xmet:4000293"
     },
     {
-      "id": "xmet:3001207",
+      "id": "xmet:4000356",
       "type": "skos:Concept",
       "prefLabel": "hydrolytic deacylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydrolytic removal of acyl groups (acetyl, formyl, and general acyl).",
-      "broader": "xmet:3001111"
+      "broader": "xmet:4000293"
     },
     {
-      "id": "xmet:3001208",
+      "id": "xmet:4000357",
       "type": "skos:Concept",
       "prefLabel": "isoredox additions",
       "inScheme": "xmet:scheme",
       "definition": "Redox-neutral additions or insertions (alkylation, halogenation, amination, arylation, carbonylation, carboxylation, sulfuration, esterification).",
-      "broader": "xmet:3000005"
+      "broader": "xmet:4000265"
     },
     {
-      "id": "xmet:3001209",
+      "id": "xmet:4000358",
       "type": "skos:Concept",
       "prefLabel": "isoredox removals",
       "inScheme": "xmet:scheme",
       "definition": "Redox-neutral removals or extrusions (dehalogenation, decarboxylation, decarbonylation, dehydroxylation).",
-      "broader": "xmet:3000005"
+      "broader": "xmet:4000265"
     },
     {
-      "id": "xmet:3001210",
+      "id": "xmet:4000359",
       "type": "skos:Concept",
       "prefLabel": "oxygen leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Leaving groups that depart as oxygen-containing fragments (alcohol, phenol, carboxylate, sulfate, phosphate, water).",
-      "broader": "xmet:2200041"
+      "broader": "xmet:4000261"
     },
     {
-      "id": "xmet:3001211",
+      "id": "xmet:4000360",
       "type": "skos:Concept",
       "prefLabel": "nitrogen leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Leaving groups that depart as nitrogen-containing fragments (amine, isocyanate, N₂).",
-      "broader": "xmet:2200041"
+      "broader": "xmet:4000261"
     },
     {
-      "id": "xmet:3001212",
+      "id": "xmet:4000361",
       "type": "skos:Concept",
       "prefLabel": "sulfur leaving fragment",
       "inScheme": "xmet:scheme",
       "definition": "Leaving groups that depart as sulfur-containing fragments (thiol).",
-      "broader": "xmet:2200041"
+      "broader": "xmet:4000261"
     },
     {
-      "id": "xmet:3001213",
+      "id": "xmet:4000362",
       "type": "skos:Concept",
       "prefLabel": "small inorganic leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Small inorganic leaving groups (hydrogen, cyanide).",
-      "broader": "xmet:2200041"
+      "broader": "xmet:4000261"
     },
     {
-      "id": "xmet:3001214",
+      "id": "xmet:4000363",
       "type": "skos:Concept",
       "prefLabel": "quinone-like formation by product type",
       "inScheme": "xmet:scheme",
@@ -3861,10 +3861,10 @@
         "quinoid products",
         "quinone-family products"
       ],
-      "broader": "xmet:0000300"
+      "broader": "xmet:4000059"
     },
     {
-      "id": "xmet:3001215",
+      "id": "xmet:4000364",
       "type": "skos:Concept",
       "prefLabel": "quinone-like forming transformations",
       "inScheme": "xmet:scheme",
@@ -3872,42 +3872,42 @@
       "altLabel": [
         "quinoid-forming transformations"
       ],
-      "broader": "xmet:0000300"
+      "broader": "xmet:4000059"
     },
     {
-      "id": "xmet:3001217",
+      "id": "xmet:4000365",
       "type": "skos:Concept",
       "prefLabel": "glutathione and thiol adduct formation",
       "inScheme": "xmet:scheme",
       "definition": "Adduct formation via GSH, cysteine, N-acetylcysteine, or mercapturic-acid pathways.",
-      "broader": "xmet:3000200"
+      "broader": "xmet:4000267"
     },
     {
-      "id": "xmet:3001218",
+      "id": "xmet:4000366",
       "type": "skos:Concept",
       "prefLabel": "cyanide adduct formation",
       "inScheme": "xmet:scheme",
       "definition": "Adduct formation by cyanide trapping / cyanidation.",
-      "broader": "xmet:3000200"
+      "broader": "xmet:4000267"
     },
     {
-      "id": "xmet:3001219",
+      "id": "xmet:4000367",
       "type": "skos:Concept",
       "prefLabel": "macromolecular adducts",
       "inScheme": "xmet:scheme",
       "definition": "Covalent adducts to macromolecules (protein, DNA).",
-      "broader": "xmet:3000200"
+      "broader": "xmet:4000267"
     },
     {
-      "id": "xmet:3001220",
+      "id": "xmet:4000368",
       "type": "skos:Concept",
       "prefLabel": "adduct-forming additions",
       "inScheme": "xmet:scheme",
       "definition": "Addition mechanisms that form adducts (conjugate addition, nucleophilic aromatic substitution).",
-      "broader": "xmet:3000200"
+      "broader": "xmet:4000267"
     },
     {
-      "id": "xmet:3001221",
+      "id": "xmet:4000369",
       "type": "skos:Concept",
       "prefLabel": "acyl conjugations",
       "inScheme": "xmet:scheme",
@@ -3915,10 +3915,10 @@
       "altLabel": [
         "acyl transfer conjugation"
       ],
-      "broader": "xmet:3000100"
+      "broader": "xmet:4000266"
     },
     {
-      "id": "xmet:3001222",
+      "id": "xmet:4000370",
       "type": "skos:Concept",
       "prefLabel": "heteroatom conjugations",
       "inScheme": "xmet:scheme",
@@ -3926,34 +3926,34 @@
       "altLabel": [
         "heteroatom transfer conjugation"
       ],
-      "broader": "xmet:3000100"
+      "broader": "xmet:4000266"
     },
     {
-      "id": "xmet:3001223",
+      "id": "xmet:4000371",
       "type": "skos:Concept",
       "prefLabel": "glutathionation of epoxides and aziridines",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack on epoxides or aziridines.",
-      "broader": "xmet:0001030"
+      "broader": "xmet:4000167"
     },
     {
-      "id": "xmet:3001224",
+      "id": "xmet:4000372",
       "type": "skos:Concept",
       "prefLabel": "Michael and alkene glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH conjugate addition to Michael acceptors, alkenes, or carbonyl electrophiles.",
-      "broader": "xmet:0001030"
+      "broader": "xmet:4000167"
     },
     {
-      "id": "xmet:3001225",
+      "id": "xmet:4000373",
       "type": "skos:Concept",
       "prefLabel": "glutathionation with leaving-group displacement",
       "inScheme": "xmet:scheme",
       "definition": "GSH displacement of halide, mesylate, or isocyanate leaving groups.",
-      "broader": "xmet:0001030"
+      "broader": "xmet:4000167"
     },
     {
-      "id": "xmet:3001226",
+      "id": "xmet:4000374",
       "type": "skos:Concept",
       "prefLabel": "glutathionation of quinone-like species and thiols",
       "inScheme": "xmet:scheme",
@@ -3962,146 +3962,146 @@
         "glutathionation of quinoids and thiols",
         "glutathionation of quinones and thiols"
       ],
-      "broader": "xmet:0001030"
+      "broader": "xmet:4000167"
     },
     {
-      "id": "xmet:3001227",
+      "id": "xmet:4000375",
       "type": "skos:Concept",
       "prefLabel": "nitro-group reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction along the nitro → nitroso → hydroxylamine → amine manifold, including N–O cleavages.",
-      "broader": "xmet:0000510"
+      "broader": "xmet:4000093"
     },
     {
-      "id": "xmet:3001228",
+      "id": "xmet:4000376",
       "type": "skos:Concept",
       "prefLabel": "azo reduction and cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Reduction or cleavage of azo linkages.",
-      "broader": "xmet:0000510"
+      "broader": "xmet:4000093"
     },
     {
-      "id": "xmet:3001229",
+      "id": "xmet:4000377",
       "type": "skos:Concept",
       "prefLabel": "miscellaneous nitrogen reduction",
       "inScheme": "xmet:scheme",
       "definition": "Nitrogen reductions outside the nitro and azo manifolds (N-oxide, oxime, denitrosation).",
-      "broader": "xmet:0000510"
+      "broader": "xmet:4000093"
     },
     {
-      "id": "xmet:3001230",
+      "id": "xmet:4000378",
       "type": "skos:Concept",
       "prefLabel": "hydroxylation at chain positions",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation at defined chain positions (primary, secondary, ω, ω-1).",
-      "broader": "xmet:0000100"
+      "broader": "xmet:4000012"
     },
     {
-      "id": "xmet:3001231",
+      "id": "xmet:4000379",
       "type": "skos:Concept",
       "prefLabel": "hydroxylation of activated carbons",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation at activated carbons (benzylic, allylic, α-to-heteroatom), regardless of primary/secondary/tertiary H-count.",
-      "broader": "xmet:0000100"
+      "broader": "xmet:4000012"
     },
     {
-      "id": "xmet:3001232",
+      "id": "xmet:4000380",
       "type": "skos:Concept",
       "prefLabel": "aliphatic and alicyclic hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "Hydroxylation of saturated aliphatic or alicyclic frameworks.",
-      "broader": "xmet:0000100"
+      "broader": "xmet:4000012"
     },
     {
-      "id": "xmet:3001233",
+      "id": "xmet:4000381",
       "type": "skos:Concept",
       "prefLabel": "epoxide CH glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack at an epoxide carbon bearing one H (Forest epoxide_ch).",
-      "broader": "xmet:0001032"
+      "broader": "xmet:4000169"
     },
     {
-      "id": "xmet:3001234",
+      "id": "xmet:4000382",
       "type": "skos:Concept",
       "prefLabel": "epoxide CH2 glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack at an epoxide methylene carbon (Forest epoxide_ch2).",
-      "broader": "xmet:0001032"
+      "broader": "xmet:4000169"
     },
     {
-      "id": "xmet:3001235",
+      "id": "xmet:4000383",
       "type": "skos:Concept",
       "prefLabel": "epoxide C glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack at a fully substituted epoxide carbon (Forest epoxide_c).",
-      "broader": "xmet:0001032"
+      "broader": "xmet:4000169"
     },
     {
-      "id": "xmet:3001236",
+      "id": "xmet:4000384",
       "type": "skos:Concept",
       "prefLabel": "aziridine CH glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack at an aziridine carbon bearing one H.",
-      "broader": "xmet:0001035"
+      "broader": "xmet:4000172"
     },
     {
-      "id": "xmet:3001237",
+      "id": "xmet:4000385",
       "type": "skos:Concept",
       "prefLabel": "aziridine CH2 glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack at an aziridine methylene carbon.",
-      "broader": "xmet:0001035"
+      "broader": "xmet:4000172"
     },
     {
-      "id": "xmet:3001238",
+      "id": "xmet:4000386",
       "type": "skos:Concept",
       "prefLabel": "aziridine C glutathionation",
       "inScheme": "xmet:scheme",
       "definition": "GSH attack at a fully substituted aziridine carbon.",
-      "broader": "xmet:0001035"
+      "broader": "xmet:4000172"
     },
     {
-      "id": "xmet:3001239",
+      "id": "xmet:4000387",
       "type": "skos:Concept",
       "prefLabel": "charged nitro N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "N–O cleavage of a charged nitro species.",
-      "broader": "xmet:3001131"
+      "broader": "xmet:4000313"
     },
     {
-      "id": "xmet:3001240",
+      "id": "xmet:4000388",
       "type": "skos:Concept",
       "prefLabel": "nitro-anion N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "N–O cleavage of a nitro anion.",
-      "broader": "xmet:3001131"
+      "broader": "xmet:4000313"
     },
     {
-      "id": "xmet:3001241",
+      "id": "xmet:4000389",
       "type": "skos:Concept",
       "prefLabel": "neutral nitro N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "N–O cleavage of a neutral nitro group.",
-      "broader": "xmet:3001131"
+      "broader": "xmet:4000313"
     },
     {
-      "id": "xmet:3001242",
+      "id": "xmet:4000390",
       "type": "skos:Concept",
       "prefLabel": "dual nitro N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "N–O cleavage covering charged and neutral nitro forms (leave 2 O).",
-      "broader": "xmet:3001131"
+      "broader": "xmet:4000313"
     },
     {
-      "id": "xmet:3001243",
+      "id": "xmet:4000391",
       "type": "skos:Concept",
       "prefLabel": "unspecified nitro N–O cleavage",
       "inScheme": "xmet:scheme",
       "definition": "Broad N–O cleavage matcher for any nitro form.",
-      "broader": "xmet:3001131"
+      "broader": "xmet:4000313"
     },
     {
-      "id": "xmet:3001244",
+      "id": "xmet:4000392",
       "type": "skos:Concept",
       "prefLabel": "alkene to vicinal diol pathway",
       "inScheme": "xmet:scheme",
@@ -4110,15 +4110,15 @@
         "epoxide hydration composite",
         "alkene dihydrodiol pathway"
       ],
-      "broader": "xmet:3000400",
+      "broader": "xmet:4000272",
       "hasPart": [
-        "xmet:0000110",
-        "xmet:0000400",
-        "xmet:3001113"
+        "xmet:4000022",
+        "xmet:4000077",
+        "xmet:4000295"
       ]
     },
     {
-      "id": "xmet:3001245",
+      "id": "xmet:4000393",
       "type": "skos:Concept",
       "prefLabel": "step count",
       "inScheme": "xmet:scheme",
@@ -4128,11 +4128,11 @@
         "reaction step count",
         "number of steps"
       ],
-      "broader": "xmet:3000000",
-      "relatedTo": "xmet:3000400"
+      "broader": "xmet:4000263",
+      "relatedTo": "xmet:4000272"
     },
     {
-      "id": "xmet:3001246",
+      "id": "xmet:4000394",
       "type": "skos:Concept",
       "prefLabel": "quinone formation",
       "inScheme": "xmet:scheme",
@@ -4142,10 +4142,10 @@
         "diketone quinone formation",
         "benzoquinone-type formation"
       ],
-      "broader": "xmet:3001214"
+      "broader": "xmet:4000363"
     },
     {
-      "id": "xmet:3001247",
+      "id": "xmet:4000395",
       "type": "skos:Concept",
       "prefLabel": "carbon–carbon dehydrogenation",
       "inScheme": "xmet:scheme",
@@ -4154,10 +4154,10 @@
         "C–C dehydrogenation",
         "carbon-carbon dehydrogenation"
       ],
-      "broader": "xmet:0000012"
+      "broader": "xmet:4000006"
     },
     {
-      "id": "xmet:3001248",
+      "id": "xmet:4000396",
       "type": "skos:Concept",
       "prefLabel": "aldehyde leaving group",
       "inScheme": "xmet:scheme",
@@ -4167,10 +4167,10 @@
         "alkanals leaving group",
         "aldehyde-equivalent leaving group"
       ],
-      "broader": "xmet:2200040"
+      "broader": "xmet:4000260"
     },
     {
-      "id": "xmet:3001249",
+      "id": "xmet:4000397",
       "type": "skos:Concept",
       "prefLabel": "cleaved-carbon oxidation state",
       "inScheme": "xmet:scheme",
@@ -4179,10 +4179,10 @@
         "cleaved carbon oxidation state",
         "fragment carbon oxidation state"
       ],
-      "broader": "xmet:3000000"
+      "broader": "xmet:4000263"
     },
     {
-      "id": "xmet:3001250",
+      "id": "xmet:4000398",
       "type": "skos:Concept",
       "prefLabel": "alcohol-level cleaved carbon",
       "inScheme": "xmet:scheme",
@@ -4191,10 +4191,10 @@
         "cleaved carbon to alcohol",
         "alcohol-level fragment carbon"
       ],
-      "broader": "xmet:3001249"
+      "broader": "xmet:4000397"
     },
     {
-      "id": "xmet:3001251",
+      "id": "xmet:4000399",
       "type": "skos:Concept",
       "prefLabel": "aldehyde-level cleaved carbon",
       "inScheme": "xmet:scheme",
@@ -4203,10 +4203,10 @@
         "cleaved carbon to aldehyde",
         "aldehyde-level fragment carbon"
       ],
-      "broader": "xmet:3001249"
+      "broader": "xmet:4000397"
     },
     {
-      "id": "xmet:3001252",
+      "id": "xmet:4000400",
       "type": "skos:Concept",
       "prefLabel": "ketone-level cleaved carbon",
       "inScheme": "xmet:scheme",
@@ -4215,10 +4215,10 @@
         "cleaved carbon to ketone",
         "ketone-level fragment carbon"
       ],
-      "broader": "xmet:3001249"
+      "broader": "xmet:4000397"
     },
     {
-      "id": "xmet:3001253",
+      "id": "xmet:4000401",
       "type": "skos:Concept",
       "prefLabel": "carboxylic-level cleaved carbon",
       "inScheme": "xmet:scheme",
@@ -4227,10 +4227,10 @@
         "cleaved carbon to carboxylic acid",
         "carboxylic-level fragment carbon"
       ],
-      "broader": "xmet:3001249"
+      "broader": "xmet:4000397"
     },
     {
-      "id": "xmet:3001254",
+      "id": "xmet:4000402",
       "type": "skos:Concept",
       "prefLabel": "carboxylic acid leaving fragment",
       "inScheme": "xmet:scheme",
@@ -4239,10 +4239,10 @@
         "carboxylic acid leaving group",
         "released carboxylic acid fragment"
       ],
-      "broader": "xmet:2200040"
+      "broader": "xmet:4000260"
     },
     {
-      "id": "xmet:3001255",
+      "id": "xmet:4000403",
       "type": "skos:Concept",
       "prefLabel": "formic acid leaving fragment",
       "inScheme": "xmet:scheme",
@@ -4250,10 +4250,10 @@
       "altLabel": [
         "formic acid leaving group"
       ],
-      "broader": "xmet:3001254"
+      "broader": "xmet:4000402"
     },
     {
-      "id": "xmet:3001256",
+      "id": "xmet:4000404",
       "type": "skos:Concept",
       "prefLabel": "acetic acid leaving fragment",
       "inScheme": "xmet:scheme",
@@ -4261,15 +4261,15 @@
       "altLabel": [
         "acetic acid leaving group"
       ],
-      "broader": "xmet:3001254"
+      "broader": "xmet:4000402"
     },
     {
-      "id": "xmet:7200006",
+      "id": "xmet:4000405",
       "type": "skos:Concept",
       "prefLabel": "ring closure",
       "inScheme": "xmet:scheme",
       "definition": "A new ring is formed.",
-      "broader": "xmet:3000500"
+      "broader": "xmet:4000273"
     }
   ]
 }

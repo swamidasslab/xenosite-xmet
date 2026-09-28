@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 REMAP_PATH = ROOT / "data/mappings/xmet-id-remap.tsv"
 FOREST_SSSOM = ROOT / "data/mappings/xmet-forest.sssom.tsv"
-UNPLACED = "xmet:3000990"
+UNPLACED = "xmet:4000213"
 
 
 def norm_label(s: str) -> str:

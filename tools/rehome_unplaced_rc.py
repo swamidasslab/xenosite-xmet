@@ -19,79 +19,79 @@ ROOT = Path(__file__).resolve().parents[1]
 YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 REMAP_PATH = ROOT / "data/mappings/xmet-id-remap.tsv"
 
-UNPLACED = "xmet:3000990"
+UNPLACED = "xmet:4000213"
 
 # old_id → surviving id (retire old)
 MERGES: dict[str, str] = {
-    "xmet:1100013": "xmet:0000208",  # deamination → oxidative deamination
-    "xmet:0000021": "xmet:0000020",  # carbon oxidation → oxidation
-    "xmet:0000023": "xmet:0000200",  # C–X oxidative cleavage → dealkylation
+    "xmet:4000049": "xmet:4000049",  # deamination → oxidative deamination
+    "xmet:4000009": "xmet:4000009",  # carbon oxidation → oxidation
+    "xmet:4000042": "xmet:4000042",  # C–X oxidative cleavage → dealkylation
 }
 
 # id → new parents (replaces unplaced parent; preserves other non-unplaced parents)
 PLACES: dict[str, list[str]] = {
-    "xmet:0000022": ["xmet:0000010"],  # heteroatom oxidation → SO
-    "xmet:1100016": ["xmet:0000020"],  # ring oxidation
-    "xmet:0000610": ["xmet:3000005"],  # alkylation → isoredox
-    "xmet:0000611": ["xmet:0000610"],
-    "xmet:0000612": ["xmet:0000610"],
-    "xmet:0000613": ["xmet:0000610"],
-    "xmet:0000614": ["xmet:0000610"],
-    "xmet:0000661": ["xmet:3000005"],  # amination
-    "xmet:0000730": ["xmet:3000005"],  # arylation
-    "xmet:0000621": ["xmet:3000005"],  # carboxylation
-    "xmet:0000620": ["xmet:3000005"],  # decarboxylation
-    "xmet:0000731": ["xmet:3000005"],  # carbonylation
-    "xmet:0002007": ["xmet:3000005"],  # decarbonylation
-    "xmet:0000660": ["xmet:3000005"],  # halogenation
-    "xmet:0000650": ["xmet:3000005"],  # dehydroxylation
-    "xmet:0000691": ["xmet:3000005"],  # sulfuration
-    "xmet:0000630": ["xmet:3000005"],  # esterification
-    "xmet:0000631": ["xmet:0000630"],  # transesterification
-    "xmet:0000640": ["xmet:3000300"],  # cyclization → skeletal rearrangement
-    "xmet:0000632": ["xmet:0000640"],  # lactonization
-    "xmet:0000633": ["xmet:0000640"],  # lactamization
-    "xmet:0000412": ["xmet:0000510"],  # azo cleavage → nitrogen reduction
-    "xmet:0004006": ["xmet:3001146"],  # carbinolamine → hemiaminal collapse
-    "xmet:0004007": ["xmet:0000202"],  # hemiacetal → O-dealkylation
-    "xmet:0004011": ["xmet:0000100"],  # cis-dihydroxylation → hydroxylation
-    "xmet:0004014": ["xmet:3000200"],  # conjugate addition → adduct
-    "xmet:0000600": ["xmet:3000200"],  # cyanidation
-    "xmet:0000601": ["xmet:3001111"],  # decyanidation → hydrolytic cleavage
-    "xmet:0001023": ["xmet:3001111"],  # deacetylation
-    "xmet:0002005": ["xmet:3001111"],  # deacylation
-    "xmet:0000671": ["xmet:3001111"],  # deformylation
-    "xmet:0000732": ["xmet:0000024"],  # deconjugation → conjugation
-    "xmet:0000700": ["xmet:0000732"],
-    "xmet:0000701": ["xmet:0000732"],
-    "xmet:0000702": ["xmet:0000732"],
-    "xmet:0000703": ["xmet:0000732"],
-    "xmet:0000704": ["xmet:0000732"],
-    "xmet:1100014": ["xmet:1100000"],  # dehalogenation umbrella
-    "xmet:0002006": ["xmet:3000300"],  # denitrogenation
-    "xmet:0000680": ["xmet:0000120"],  # N-nitrosation → nitrogen oxidation
-    "xmet:0000681": ["xmet:0000510"],  # denitrosation → nitrogen reduction
-    "xmet:0000690": ["xmet:0000130"],  # desulfuration → sulfur oxidation
-    "xmet:0000710": ["xmet:0001040"],  # Se-methylation → methylation
-    "xmet:0004004": ["xmet:0000101"],  # ipso → aromatic hydroxylation
-    "xmet:0004015": ["xmet:3000200"],  # SNAr → adduct
-    "xmet:0004017": ["xmet:0002004"],  # acyl migration → rearrangement
-    "xmet:0004018": ["xmet:3000100"],  # transacylation → transfer
-    "xmet:0004009": ["xmet:3000300"],
-    "xmet:0004010": ["xmet:3000300"],
-    "xmet:0004016": ["xmet:3000300"],
-    "xmet:0004019": ["xmet:3000300"],
-    "xmet:0000307": ["xmet:0000300"],
-    "xmet:0000308": ["xmet:0000300"],
-    "xmet:0000309": ["xmet:0000300"],
-    "xmet:0004000": ["xmet:3000000"],  # process facet → reaction descriptor
+    "xmet:4000010": ["xmet:4000004"],  # heteroatom oxidation → SO
+    "xmet:1100016": ["xmet:4000009"],  # ring oxidation
+    "xmet:4000116": ["xmet:4000265"],  # alkylation → isoredox
+    "xmet:4000117": ["xmet:4000116"],
+    "xmet:4000118": ["xmet:4000116"],
+    "xmet:4000119": ["xmet:4000116"],
+    "xmet:4000120": ["xmet:4000116"],
+    "xmet:4000130": ["xmet:4000265"],  # amination
+    "xmet:4000145": ["xmet:4000265"],  # arylation
+    "xmet:4000122": ["xmet:4000265"],  # carboxylation
+    "xmet:4000121": ["xmet:4000265"],  # decarboxylation
+    "xmet:4000146": ["xmet:4000265"],  # carbonylation
+    "xmet:4000193": ["xmet:4000265"],  # decarbonylation
+    "xmet:4000129": ["xmet:4000265"],  # halogenation
+    "xmet:4000128": ["xmet:4000265"],  # dehydroxylation
+    "xmet:4000136": ["xmet:4000265"],  # sulfuration
+    "xmet:4000123": ["xmet:4000265"],  # esterification
+    "xmet:4000124": ["xmet:4000123"],  # transesterification
+    "xmet:4000127": ["xmet:4000271"],  # cyclization → skeletal rearrangement
+    "xmet:4000125": ["xmet:4000127"],  # lactonization
+    "xmet:4000126": ["xmet:4000127"],  # lactamization
+    "xmet:4000089": ["xmet:4000093"],  # azo cleavage → nitrogen reduction
+    "xmet:4000198": ["xmet:4000318"],  # carbinolamine → hemiaminal collapse
+    "xmet:4000199": ["xmet:4000044"],  # hemiacetal → O-dealkylation
+    "xmet:4000203": ["xmet:4000012"],  # cis-dihydroxylation → hydroxylation
+    "xmet:4000206": ["xmet:4000267"],  # conjugate addition → adduct
+    "xmet:4000114": ["xmet:4000267"],  # cyanidation
+    "xmet:4000115": ["xmet:4000293"],  # decyanidation → hydrolytic cleavage
+    "xmet:4000166": ["xmet:4000293"],  # deacetylation
+    "xmet:4000191": ["xmet:4000293"],  # deacylation
+    "xmet:4000132": ["xmet:4000293"],  # deformylation
+    "xmet:4000147": ["xmet:4000011"],  # deconjugation → conjugation
+    "xmet:4000137": ["xmet:4000147"],
+    "xmet:4000138": ["xmet:4000147"],
+    "xmet:4000139": ["xmet:4000147"],
+    "xmet:4000140": ["xmet:4000147"],
+    "xmet:4000141": ["xmet:4000147"],
+    "xmet:4000214": ["xmet:4000213"],  # dehalogenation umbrella
+    "xmet:4000192": ["xmet:4000271"],  # denitrogenation
+    "xmet:4000133": ["xmet:4000026"],  # N-nitrosation → nitrogen oxidation
+    "xmet:4000134": ["xmet:4000093"],  # denitrosation → nitrogen reduction
+    "xmet:4000135": ["xmet:4000032"],  # desulfuration → sulfur oxidation
+    "xmet:4000142": ["xmet:4000175"],  # Se-methylation → methylation
+    "xmet:4000196": ["xmet:4000013"],  # ipso → aromatic hydroxylation
+    "xmet:4000207": ["xmet:4000267"],  # SNAr → adduct
+    "xmet:4000209": ["xmet:4000190"],  # acyl migration → rearrangement
+    "xmet:4000210": ["xmet:4000266"],  # transacylation → transfer
+    "xmet:4000201": ["xmet:4000271"],
+    "xmet:4000202": ["xmet:4000271"],
+    "xmet:4000208": ["xmet:4000271"],
+    "xmet:4000211": ["xmet:4000271"],
+    "xmet:4000066": ["xmet:4000059"],
+    "xmet:4000067": ["xmet:4000059"],
+    "xmet:4000068": ["xmet:4000059"],
+    "xmet:0004000": ["xmet:4000263"],  # process facet → reaction descriptor
 }
 
 # After placing heteroatom oxidation: N/S oxidation parent SO → heteroatom oxidation
-REPARENT_UNDER_HETEROATOM = ("xmet:0000120", "xmet:0000130")
+REPARENT_UNDER_HETEROATOM = ("xmet:4000026", "xmet:4000032")
 
 # Add dehalogenation as extra parent (keep color parents)
-DEHALOGENATION_CHILDREN = ("xmet:0000210", "xmet:0000540")
+DEHALOGENATION_CHILDREN = ("xmet:4000051", "xmet:4000110")
 
 
 def rewrite_id(value: Any, merges: dict[str, str]) -> Any:
@@ -198,9 +198,9 @@ def main() -> int:
     # 2) heteroatom oxidation nests N/S oxidation
     for cid in REPARENT_UNDER_HETEROATOM:
         c = by[cid]
-        parents = [p for p in (c.get("parents") or []) if p != "xmet:0000010"]
-        if "xmet:0000022" not in parents:
-            parents.insert(0, "xmet:0000022")
+        parents = [p for p in (c.get("parents") or []) if p != "xmet:4000004"]
+        if "xmet:4000010" not in parents:
+            parents.insert(0, "xmet:4000010")
         c["parents"] = parents
         print(f"nest {cid} {labels[cid]} under heteroatom oxidation → {parents}")
 
@@ -208,8 +208,8 @@ def main() -> int:
     for cid in DEHALOGENATION_CHILDREN:
         c = by[cid]
         parents = list(c.get("parents") or [])
-        if "xmet:1100014" not in parents:
-            parents.append("xmet:1100014")
+        if "xmet:4000214" not in parents:
+            parents.append("xmet:4000214")
         c["parents"] = parents
         print(f"umbrella {cid} {labels[cid]} += dehalogenation → {parents}")
 
@@ -308,7 +308,7 @@ def main() -> int:
         remap_rows.append(
             {
                 "old_id": UNPLACED,
-                "new_id": "xmet:1100000",
+                "new_id": "xmet:4000213",
                 "change_type": "retired",
                 "note": "empty unplaced reaction-class shelf after rehome",
             }

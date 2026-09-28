@@ -4,7 +4,7 @@ PREFIX xmet: <https://xenosite.org/ontology/xmet#>
 
 SELECT DISTINCT ?term ?atom WHERE {
   VALUES ?term {
-    xmet:1300100 xmet:1300101 xmet:1300102 xmet:1300120 xmet:1300121
+    xmet:4000149 xmet:4000153 xmet:4000152 xmet:4000155 xmet:4000156
   }
   ?term xmet:hasAttachmentAtomType ?atom .
 }

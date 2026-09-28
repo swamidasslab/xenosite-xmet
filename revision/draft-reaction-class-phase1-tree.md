@@ -37,7 +37,7 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *tagger:* `rule:forest-tag-nitrogenreduction_hydroxylamine` → None
 
-  - *tagger:* `rule:struct-hydroxylamine-formation` → xmet:0000122
+  - *tagger:* `rule:struct-hydroxylamine-formation` → xmet:4000028
 
 - **nitroso** (pattern) ↔ `forest.pattern:NitrogenOxidation/nitroso`
 
@@ -45,7 +45,7 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* n oxide reduction
 
-  - *tagger:* `rule:struct-n-oxide-reduction` → xmet:0000515
+  - *tagger:* `rule:struct-n-oxide-reduction` → xmet:4000098
 
 
 #### S-oxidation  `[single]`
@@ -95,17 +95,17 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* arene oxide formation
 
-  - *tagger:* `rule:tag-arene-oxide` → xmet:0000112
+  - *tagger:* `rule:tag-arene-oxide` → xmet:4000024
 
-  - *tagger:* `rule:tag-nih-shift` → xmet:0004003
+  - *tagger:* `rule:tag-nih-shift` → xmet:4000197
 
-  - *tagger:* `rule:tag-ipso` → xmet:0004004
+  - *tagger:* `rule:tag-ipso` → xmet:4000196
 
-  - *tagger:* `rule:struct-alkene-epoxidation` → xmet:0000111
+  - *tagger:* `rule:struct-alkene-epoxidation` → xmet:4000023
 
-  - *tagger:* `rule:struct-aromatic-epoxidation` → xmet:0000110
+  - *tagger:* `rule:struct-aromatic-epoxidation` → xmet:4000022
 
-  - *tagger:* `rule:struct-arene-oxide-formation` → xmet:0000112
+  - *tagger:* `rule:struct-arene-oxide-formation` → xmet:4000024
 
 
 #### hydroxylation  `[single]`
@@ -134,19 +134,19 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* meta hydroxylation
 
-  - *tagger:* `rule:aromatic-hydroxylation` → xmet:0000101
+  - *tagger:* `rule:aromatic-hydroxylation` → xmet:4000013
 
-  - *tagger:* `rule:tag-aromatic-hydroxylation` → xmet:0000101
+  - *tagger:* `rule:tag-aromatic-hydroxylation` → xmet:4000013
 
-  - *tagger:* `rule:tag-para-hydroxylation` → xmet:0000103
+  - *tagger:* `rule:tag-para-hydroxylation` → xmet:4000015
 
-  - *tagger:* `rule:struct-aromatic-hydroxylation` → xmet:0000101
+  - *tagger:* `rule:struct-aromatic-hydroxylation` → xmet:4000013
 
-  - *tagger:* `rule:struct-ortho-hydroxylation` → xmet:0000104
+  - *tagger:* `rule:struct-ortho-hydroxylation` → xmet:4000016
 
-  - *tagger:* `rule:struct-para-hydroxylation` → xmet:0000103
+  - *tagger:* `rule:struct-para-hydroxylation` → xmet:4000015
 
-  - *tagger:* `rule:struct-meta-hydroxylation` → xmet:0000105
+  - *tagger:* `rule:struct-meta-hydroxylation` → xmet:4000017
 
 - **h2** (pattern) ↔ `forest.pattern:Hydroxylation/h2`
 
@@ -168,19 +168,19 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* omega 1 hydroxylation
 
-  - *tagger:* `rule:aliphatic-hydroxylation` → xmet:0000102
+  - *tagger:* `rule:aliphatic-hydroxylation` → xmet:4000014
 
-  - *tagger:* `rule:tag-benzylic-hydroxylation` → xmet:0000106
+  - *tagger:* `rule:tag-benzylic-hydroxylation` → xmet:4000018
 
-  - *tagger:* `rule:tag-omega-hydroxylation` → xmet:0000108
+  - *tagger:* `rule:tag-omega-hydroxylation` → xmet:4000020
 
-  - *tagger:* `rule:struct-aliphatic-hydroxylation` → xmet:0000102
+  - *tagger:* `rule:struct-aliphatic-hydroxylation` → xmet:4000014
 
-  - *tagger:* `rule:struct-allylic-hydroxylation` → xmet:0000107
+  - *tagger:* `rule:struct-allylic-hydroxylation` → xmet:4000019
 
-  - *tagger:* `rule:struct-benzylic-hydroxylation` → xmet:0000106
+  - *tagger:* `rule:struct-benzylic-hydroxylation` → xmet:4000018
 
-  - *tagger:* `rule:struct-omega-1-hydroxylation` → xmet:0000109
+  - *tagger:* `rule:struct-omega-1-hydroxylation` → xmet:4000021
 
 
 ### Unstable Oxygenation
@@ -261,9 +261,9 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* n demethylation
 
-  - *tagger:* `rule:tag-n-demethylation` → xmet:0000205
+  - *tagger:* `rule:tag-n-demethylation` → xmet:4000349
 
-  - *tagger:* `rule:struct-n-demethylation` → xmet:0000205
+  - *tagger:* `rule:struct-n-demethylation` → xmet:4000349
 
 - **methylene carboxylic** (pattern) ↔ `forest.pattern:Dealkylation/methylene_carboxylic`
 
@@ -335,9 +335,9 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* n depropylation
 
-  - *tagger:* `rule:struct-n-deethylation` → xmet:0000206
+  - *tagger:* `rule:struct-n-deethylation` → xmet:4000047
 
-  - *tagger:* `rule:struct-n-depropylation` → xmet:0000207
+  - *tagger:* `rule:struct-n-depropylation` → xmet:4000048
 
 - **methine carbonyl** (pattern) ↔ `forest.pattern:Dealkylation/methine_carbonyl`
 
@@ -431,9 +431,9 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* dearylation
 
-  - *tagger:* `rule:struct-c-dealkylation` → xmet:0000204
+  - *tagger:* `rule:struct-c-dealkylation` → xmet:4000046
 
-  - *tagger:* `rule:struct-dearylation` → xmet:0000720
+  - *tagger:* `rule:struct-dearylation` → xmet:4000143
 
 - **cc carbonyl** (pattern) ↔ `forest.pattern:Dealkylation/cc_carbonyl`
 
@@ -707,15 +707,15 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* secondary alcohol oxidation
 
-  - *tagger:* `rule:alcohol-oxidation` → xmet:0000310
+  - *tagger:* `rule:alcohol-oxidation` → xmet:4000069
 
-  - *tagger:* `rule:primary-alcohol-oxidation` → xmet:0000311
+  - *tagger:* `rule:primary-alcohol-oxidation` → xmet:4000070
 
-  - *tagger:* `rule:struct-alcohol-oxidation` → xmet:0000310
+  - *tagger:* `rule:struct-alcohol-oxidation` → xmet:4000069
 
-  - *tagger:* `rule:struct-primary-alcohol-oxidation` → xmet:0000311
+  - *tagger:* `rule:struct-primary-alcohol-oxidation` → xmet:4000070
 
-  - *tagger:* `rule:struct-secondary-alcohol-oxidation` → xmet:0000312
+  - *tagger:* `rule:struct-secondary-alcohol-oxidation` → xmet:4000071
 
 - **amine** (pattern) ↔ `forest.pattern:Dehydrogenation/amine`
 
@@ -739,15 +739,15 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* iminium formation
 
-  - *tagger:* `rule:tag-quinone-imine` → xmet:0000303
+  - *tagger:* `rule:tag-quinone-imine` → xmet:4000062
 
-  - *tagger:* `rule:tag-imine-methide` → xmet:0000306
+  - *tagger:* `rule:tag-imine-methide` → xmet:4000065
 
   - *tagger:* `rule:forest-tag-quinoneformation_iminium` → None
 
-  - *tagger:* `rule:struct-imine-enamine-tautomerization` → xmet:0002002
+  - *tagger:* `rule:struct-imine-enamine-tautomerization` → xmet:4000188
 
-  - *tagger:* `rule:struct-iminium-formation` → xmet:0000305
+  - *tagger:* `rule:struct-iminium-formation` → xmet:4000064
 
 - **alkyl** (pattern) ↔ `forest.pattern:Dehydrogenation/alkyl`
 
@@ -890,21 +890,21 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* lactam hydrolysis
 
-  - *tagger:* `rule:tag-ether-hydrolysis` → xmet:0000408
+  - *tagger:* `rule:tag-ether-hydrolysis` → xmet:4000085
 
-  - *tagger:* `rule:struct-ester-hydrolysis` → xmet:0000401
+  - *tagger:* `rule:struct-ester-hydrolysis` → xmet:4000078
 
-  - *tagger:* `rule:struct-lactamization` → xmet:0000633
+  - *tagger:* `rule:struct-lactamization` → xmet:4000126
 
-  - *tagger:* `rule:struct-amide-hydrolysis` → xmet:0000402
+  - *tagger:* `rule:struct-amide-hydrolysis` → xmet:4000079
 
-  - *tagger:* `rule:struct-lactam-hydrolysis` → xmet:0000404
+  - *tagger:* `rule:struct-lactam-hydrolysis` → xmet:4000081
 
-  - *tagger:* `rule:struct-carbamate-hydrolysis` → xmet:0000405
+  - *tagger:* `rule:struct-carbamate-hydrolysis` → xmet:4000082
 
-  - *tagger:* `rule:struct-nitrile-hydrolysis` → xmet:0000411
+  - *tagger:* `rule:struct-nitrile-hydrolysis` → xmet:4000088
 
-  - *tagger:* `rule:struct-ether-hydrolysis` → xmet:0000408
+  - *tagger:* `rule:struct-ether-hydrolysis` → xmet:4000085
 
 
 ### Reduction
@@ -1040,11 +1040,11 @@ Tagger: 329 non-delta rules scanned; 124 attachments onto Phase I Forest rules.
 
   - *specialize:* ketone reduction
 
-  - *tagger:* `rule:tag-carbonyl-reduction` → xmet:0000524
+  - *tagger:* `rule:tag-carbonyl-reduction` → xmet:4000105
 
-  - *tagger:* `rule:struct-aldehyde-reduction` → xmet:0000522
+  - *tagger:* `rule:struct-aldehyde-reduction` → xmet:4000103
 
-  - *tagger:* `rule:struct-ketone-reduction` → xmet:0000521
+  - *tagger:* `rule:struct-ketone-reduction` → xmet:4000102
 
 - **peroxide** (pattern) ↔ `forest.pattern:OxygenReduction/peroxide`
 

@@ -1,99 +1,99 @@
 source	term	term_norm	count	final_status	final_confidence	final_xrm_id	final_preferred_label	final_spine	matched_label	match_method	score	adjudication_note
-metxbiodb	O-glucuronidation	o-glucuronidation	262	strong	alias	xmet:0001001	O-glucuronidation	metabolism phase	O-glucuronidation	alias_table		
-metxbiodb	Aliphatic Hydroxylation	aliphatic hydroxylation	213	strong	alias	xmet:0000102	aliphatic hydroxylation	chemical transformation	Aliphatic Hydroxylation	alias_table		
-metxbiodb	Aromatic Hydroxylation	aromatic hydroxylation	117	strong	alias	xmet:0000101	aromatic hydroxylation	chemical transformation	Aromatic Hydroxylation	alias_table		
-metxbiodb	O-sulfonation	o-sulfonation	58	strong	alias	xmet:0001011	O-sulfation	metabolism phase	O-sulfonation	alias_table		
-metxbiodb	O-Demethylation	o-demethylation	48	strong	alias	xmet:0000209	O-demethylation	chemical transformation	O-Demethylation	alias_table		
-metxbiodb	GSH-conjugation	gsh-conjugation	26	strong	alias	xmet:0001030	glutathionation	metabolism phase	GSH-conjugation	alias_table		
-metxbiodb	N-demethylation	n-demethylation	25	strong	alias	xmet:0000205	N-demethylation	chemical transformation	N-demethylation	alias_table		
-metxbiodb	S-Oxidation	s-oxidation	24	strong	alias	xmet:0000130	sulfur oxidation	chemical transformation	S-Oxidation	alias_table		
-metxbiodb	N-Dealkylation	n-dealkylation	24	strong	alias	xmet:0000201	N-dealkylation	chemical transformation	N-Dealkylation	alias_table		
-metxbiodb	O-dealkylation	o-dealkylation	22	strong	alias	xmet:0000202	O-dealkylation	chemical transformation	O-dealkylation	alias_table		
-metxbiodb	Epoxidation	epoxidation	22	strong	alias	xmet:0000110	epoxidation	chemical transformation	Epoxidation	alias_table		
-metxbiodb	N-dealkylation	n-dealkylation	21	strong	alias	xmet:0000201	N-dealkylation	chemical transformation	N-dealkylation	alias_table		
-metxbiodb	Dehydrogenation	dehydrogenation	18	strong	exact_pref	xmet:0000012	dehydrogenation	chemical transformation	dehydrogenation	exact	100	
-metxbiodb	N-Oxidation	n-oxidation	17	strong	alias	xmet:0000120	nitrogen oxidation	chemical transformation	N-Oxidation	alias_table		
-metxbiodb	O-demethylation	o-demethylation	17	strong	alias	xmet:0000209	O-demethylation	chemical transformation	O-demethylation	alias_table		
-metxbiodb	O-aryl demethylation	o-aryl demethylation	16	strong	adjudicated:accept_as	xmet:0000209	O-demethylation	chemical transformation		none	78.8	aromatic O-demethyl; site via bundle
-metxbiodb	N-Demethylation	n-demethylation	14	strong	alias	xmet:0000205	N-demethylation	chemical transformation	N-Demethylation	alias_table		
-metxbiodb	Allylic hydroxylation	allylic hydroxylation	10	strong	exact_pref	xmet:0000107	allylic hydroxylation	chemical transformation	allylic hydroxylation	exact	100	
-metxbiodb	N-Dementhylation	n-dementhylation	10	strong	adjudicated:accept_as	xmet:0000205	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	typo dementhylation→demethylation
-metxbiodb	ARENE_EPOXIDATION	arene epoxidation	8	strong	exact_synonym	xmet:1200100	aromatic epoxidation	phase I reaction family	arene epoxidation	exact	100	
-metxbiodb	C-Oxidation	c-oxidation	8	strong	alias	xmet:0000021	carbon oxidation	chemical transformation	C-Oxidation	alias_table		
-metxbiodb	N-acetylation	n-acetylation	8	strong	exact_pref	xmet:0001021	N-acetylation	metabolism phase	N-acetylation	exact	100	
-metxbiodb	N-glucuronidation	n-glucuronidation	7	strong	exact_pref	xmet:0001005	N-glucuronidation	metabolism phase	N-glucuronidation	exact	100	
-metxbiodb	N-deisopropylation	n-deisopropylation	6	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-depropylation	fuzzy_token_sort	90.9	specific N-dealkyl; no isopropyl leaf yet
-metxbiodb	N-desmethylation	n-desmethylation	6	strong	adjudicated:accept_as	xmet:0000205	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	casing + des- variant
-metxbiodb	O-dementhylation	o-dementhylation	6	strong	adjudicated:accept_as	xmet:0000209	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	typo
-metxbiodb	O-methylation	o-methylation	6	strong	exact_pref	xmet:0001041	O-methylation	metabolism phase	O-methylation	exact	100	
-metxbiodb	Thiophene S-oxidation	thiophene s-oxidation	5	strong	adjudicated:accept_as	xmet:0000133	thiophene S-oxidation	chemical transformation	thiophene S-oxidation	exact	100	MetX source spelling was Thiohene; normalized in extract
-metxbiodb	AROMATIC HYDROXYLATION	aromatic hydroxylation	5	strong	alias	xmet:0000101	aromatic hydroxylation	chemical transformation	AROMATIC HYDROXYLATION	alias_table		
-metxbiodb	N-DEMETHYLATION	n-demethylation	5	strong	alias	xmet:0000205	N-demethylation	chemical transformation	N-DEMETHYLATION	alias_table		
-metxbiodb	N-dementhylation	n-dementhylation	5	strong	adjudicated:accept_as	xmet:0000205	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	typo dementhylation→demethylation
-metxbiodb	N-dechloroethylation	n-dechloroethylation	5	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-deethylation	fuzzy_token_sort	82.4	specialized N-dealkyl
-metxbiodb	O-Dementhylation	o-dementhylation	5	strong	adjudicated:accept_as	xmet:0000209	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	typo
-metxbiodb	N-Glucuronidation	n-glucuronidation	5	strong	exact_pref	xmet:0001005	N-glucuronidation	metabolism phase	N-glucuronidation	exact	100	
-metxbiodb	O-DEMETHYLATION	o-demethylation	4	strong	alias	xmet:0000209	O-demethylation	chemical transformation	O-DEMETHYLATION	alias_table		
-metxbiodb	Oxidation	oxidation	4	strong	alias	xmet:0000020	oxidation	chemical transformation	Oxidation	alias_table		
-metxbiodb	O-desmethylation	o-desmethylation	4	strong	adjudicated:accept_as	xmet:0000209	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	casing
-metxbiodb	ALKENE_EPXODATION	alkene epxodation	4	strong	adjudicated:accept_as	xmet:0000111	alkene epoxidation	chemical transformation	alkene epoxidation	fuzzy_token_sort	91.4	typo EPXODATION
-metxbiodb	O-Desmethylation	o-desmethylation	3	strong	adjudicated:accept_as	xmet:0000209	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	casing
-metxbiodb	ALIPHATIC HYDROXYLATION	aliphatic hydroxylation	3	strong	alias	xmet:0000102	aliphatic hydroxylation	chemical transformation	ALIPHATIC HYDROXYLATION	alias_table		
-metxbiodb	Bisallylic hydroxylation	bisallylic hydroxylation	3	strong	adjudicated:accept_as	xmet:0000107	allylic hydroxylation	chemical transformation	allylic hydroxylation	fuzzy_token_sort	93.3	near-leaf; optional future bisallylic concept
-metxbiodb	Hydroxylation	hydroxylation	3	strong	exact_pref	xmet:0000100	hydroxylation	chemical transformation	hydroxylation	exact	100	
-metxbiodb	Hydrogenation	hydrogenation	3	strong	exact_pref	xmet:0000500	hydrogenation	chemical transformation	hydrogenation	exact	100	
-metxbiodb	EPOXIDATION	epoxidation	3	strong	alias	xmet:0000110	epoxidation	chemical transformation	EPOXIDATION	alias_table		
-metxbiodb	N-Dealkylatiion	n-dealkylatiion	3	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.6	typo
-metxbiodb	Hydroxylamine O-sulfonation	hydroxylamine o-sulfonation	3	strong	adjudicated:accept_as	xmet:0001011	O-sulfation	phase II conjugation family		none	71.4	attachment atom via site; sulfonation=sulfation
-metxbiodb	N-Hydroxylation	n-hydroxylation	2	strong	exact_synonym	xmet:0000122	hydroxylamine formation	chemical transformation	N-hydroxylation	exact	100	
-metxbiodb	S-OXIDATION	s-oxidation	2	strong	alias	xmet:0000130	sulfur oxidation	chemical transformation	S-OXIDATION	alias_table		
-metxbiodb	O-deisopropylation	o-deisopropylation	2	strong	adjudicated:accept_as	xmet:0000202	O-dealkylation	chemical transformation	N-depropylation	fuzzy_token_sort	84.8	fuzzy wrongly chose N-depropylation
-metxbiodb	O-Deethylation	o-deethylation	2	strong	exact_pref	xmet:0000211	O-deethylation	chemical transformation	O-deethylation	exact	100	
-metxbiodb	Reduction	reduction	2	strong	alias	xmet:0000014	reduction	chemical transformation	Reduction	alias_table		
-metxbiodb	N-desalkylation	n-desalkylation	2	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.6	
-metxbiodb	N-OXIDATION	n-oxidation	2	strong	alias	xmet:0000120	nitrogen oxidation	chemical transformation	N-OXIDATION	alias_table		
-metxbiodb	N-desethylation	n-desethylation	2	strong	adjudicated:accept_as	xmet:0000206	N-deethylation	chemical transformation	N-deethylation	fuzzy_token_sort	96.6	des- spelling; if 0000206 missing use 0000201
-metxbiodb	Aldehyde oxidation	aldehyde oxidation	2	strong	exact_pref	xmet:0000313	aldehyde oxidation	chemical transformation	aldehyde oxidation	exact	100	
-metxbiodb	N-demethylations	n-demethylations	2	strong	adjudicated:accept_as	xmet:0000205	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	plural typo
-metxbiodb	C-DE-ESTERIFICATION	c-de-esterification	2	strong	adjudicated:accept_as	xmet:0000401	ester hydrolysis	chemical transformation	C-de-esterification	exact	100	de-esterification
-metxbiodb	Hydroxylamine O-glucuronidation	hydroxylamine o-glucuronidation	2	strong	adjudicated:accept_as	xmet:0001001	O-glucuronidation	phase II conjugation family		none	74.1	
-metxbiodb	GSH-conjugatoon	gsh-conjugatoon	2	strong	adjudicated:accept_as	xmet:0001030	glutathionation	chemical transformation		none	76.9	typo
-metxbiodb	Glycoside hydrolysis	glycoside hydrolysis	2	strong	adjudicated:accept_as	xmet:0000407	ether cleavage	chemical transformation	glycoside hydrolysis	exact	100	glycoside O-cleavage; nearest leaf
-metxbiodb	Keto hydrolysis	keto hydrolysis	2	strong	adjudicated:accept_as	xmet:0000013	hydrolysis	chemical transformation	hydrolysis	fuzzy_token_sort	80.0	underspecified; keep as hydrolysis pending leaf
-metxbiodb	Alphatic Hydroxylation	alphatic hydroxylation	1	strong	adjudicated:accept_as	xmet:0000102	aliphatic hydroxylation	chemical transformation	aliphatic hydroxylation	fuzzy_token_sort	97.8	typo
-metxbiodb	C-DEALKLYATION	c-dealklyation	1	strong	adjudicated:accept_as	xmet:0000204	C-dealkylation	chemical transformation	C-dealkylation	fuzzy_token_sort	92.9	typo
-metxbiodb	N-HYDROXYLATION	n-hydroxylation	1	strong	exact_synonym	xmet:0000122	hydroxylamine formation	chemical transformation	N-hydroxylation	exact	100	
-metxbiodb	O-Dealklyation	o-dealklyation	1	strong	adjudicated:accept_as	xmet:0000202	O-dealkylation	chemical transformation	O-dealkylation	fuzzy_token_sort	92.9	typo
-metxbiodb	N-deethylation	n-deethylation	1	strong	exact_pref	xmet:0000206	N-deethylation	chemical transformation	N-deethylation	exact	100	
-metxbiodb	O-Debenzylation	o-debenzylation	1	strong	adjudicated:accept_as	xmet:0000202	O-dealkylation	chemical transformation	O-deethylation	fuzzy_token_sort	82.8	fuzzy wrongly chose O-deethylation
-metxbiodb	N-oxidation	n-oxidation	1	strong	alias	xmet:0000120	nitrogen oxidation	chemical transformation	N-oxidation	alias_table		
-metxbiodb	O-demethylenation	o-demethylenation	1	strong	adjudicated:accept_as	xmet:0004008	ring opening	chemical transformation	O-demethylation	fuzzy_token_sort	93.8	methylenedioxy cleavage
-metxbiodb	N-Desalkylation	n-desalkylation	1	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.6	
-metxbiodb	S-Dealkylation	s-dealkylation	1	strong	alias	xmet:0000203	S-dealkylation	chemical transformation	S-Dealkylation	alias_table		
-metxbiodb	N-DESISOPROPYLATION	n-desisopropylation	1	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-depropylation	fuzzy_token_sort	88.2	same
-metxbiodb	Pyridine N-oxidation	pyridine n-oxidation	1	strong	adjudicated:accept_as	xmet:0000120	nitrogen oxidation	chemical transformation		none	76.5	heteroarene N-ox; site via bundle
-metxbiodb	Alipathic Hydroxylation	alipathic hydroxylation	1	strong	adjudicated:accept_as	xmet:0000102	aliphatic hydroxylation	chemical transformation	aliphatic hydroxylation	fuzzy_token_sort	95.7	typo
-metxbiodb	ALKYL_HYDROXYLATION	alkyl hydroxylation	1	strong	exact_synonym	xmet:0000102	aliphatic hydroxylation	chemical transformation	alkyl hydroxylation	exact	100	
-metxbiodb	Oxidization	oxidization	1	strong	adjudicated:accept_as	xmet:0000020	oxidation	chemical transformation	oxidation	fuzzy_token_sort	90.0	spelling variant
-metxbiodb	oxidative defluorination	oxidative defluorination	1	strong	exact_pref	xmet:0000214	oxidative defluorination	chemical transformation	oxidative defluorination	exact	100	
-metxbiodb	N-Deethylation	n-deethylation	1	strong	exact_pref	xmet:0000206	N-deethylation	chemical transformation	N-deethylation	exact	100	
-metxbiodb	O-DEETHYLATION	o-deethylation	1	strong	exact_pref	xmet:0000211	O-deethylation	chemical transformation	O-deethylation	exact	100	
-metxbiodb	N-Desmethylation	n-desmethylation	1	strong	adjudicated:accept_as	xmet:0000205	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	casing + des- variant
-metxbiodb	N-dehydroxyethylation	n-dehydroxyethylation	1	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-dehydroxylation	fuzzy_token_sort	89.5	fuzzy wrongly chose hydroxylamine
-metxbiodb	N_DEALKYLATION	n-dealkylation	1	strong	alias	xmet:0000201	N-dealkylation	chemical transformation	N_DEALKYLATION	alias_table		
-metxbiodb	Desulfation	desulfation	1	strong	adjudicated:accept_as	xmet:0000701	desulfation	chemical transformation	desulfation	exact	100	antonym of sulfation
-metxbiodb	Desethylation	desethylation	1	strong	adjudicated:accept_as	xmet:0000206	N-deethylation	chemical transformation	demethylation	fuzzy_token_sort	92.3	underspecified atom; treat as N-deethyl common case
-metxbiodb	O-deacetylation	o-deacetylation	1	strong	adjudicated:accept_as	xmet:0001023	deacetylation	chemical transformation	O-acetylation	negation_prefix	100	O-selective; map to deacetylation pending leaf
-metxbiodb	N-Despropylation	n-despropylation	1	strong	adjudicated:accept_as	xmet:0000207	N-depropylation	chemical transformation	N-depropylation	fuzzy_token_sort	96.8	if id missing use N-dealkylation
-metxbiodb	S-REDUCTION	s-reduction	1	strong	adjudicated:accept_as	xmet:0000530	sulfur reduction	chemical transformation	reduction	fuzzy_token_sort	90.0	
-metxbiodb	Denitrosation	denitrosation	1	strong	exact_pref	xmet:0000681	denitrosation	chemical transformation	denitrosation	exact	100	
-metxbiodb	N-Dealylation	n-dealylation	1	strong	adjudicated:accept_as	xmet:0000201	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.3	typo
-metxbiodb	Demethylenation	demethylenation	1	strong	adjudicated:accept_as	xmet:0004008	ring opening	chemical transformation	demethylation	fuzzy_token_sort	92.9	methylenedioxy cleavage ≈ ring opening process; refine later
-metxbiodb	Aromatic Oxidation	aromatic oxidation	1	strong	adjudicated:accept_as	xmet:0000021	carbon oxidation	chemical transformation	aromatic epoxidation	fuzzy_token_sort	94.7	broad aromatic C-oxidation
-metxbiodb	O-deethylation	o-deethylation	1	strong	exact_pref	xmet:0000211	O-deethylation	chemical transformation	O-deethylation	exact	100	
-metxbiodb	C-DEALYLATION	c-dealylation	1	strong	adjudicated:accept_as	xmet:0000204	C-dealkylation	chemical transformation	C-dealkylation	fuzzy_token_sort	96.3	typo
-metxbiodb	O-Demethylenation	o-demethylenation	1	strong	adjudicated:accept_as	xmet:0004008	ring opening	chemical transformation	O-demethylation	fuzzy_token_sort	93.8	methylenedioxy cleavage
-metxbiodb	ESTERIFICATION	esterification	1	strong	exact_pref	xmet:0000630	esterification	chemical transformation	esterification	exact	100	
-metxbiodb	Dehydroxylation	dehydroxylation	1	strong	exact_pref	xmet:0000650	dehydroxylation	chemical transformation	dehydroxylation	exact	100	
-metxbiodb	O-acetylation	o-acetylation	1	strong	exact_pref	xmet:0001022	O-acetylation	metabolism phase	O-acetylation	exact	100	
-metxbiodb	O-sulfation	o-sulfation	1	strong	alias	xmet:0001011	O-sulfation	metabolism phase	O-sulfation	alias_table		
+metxbiodb	O-glucuronidation	o-glucuronidation	262	strong	alias	xmet:4000149	O-glucuronidation	metabolism phase	O-glucuronidation	alias_table		
+metxbiodb	Aliphatic Hydroxylation	aliphatic hydroxylation	213	strong	alias	xmet:4000014	aliphatic hydroxylation	chemical transformation	Aliphatic Hydroxylation	alias_table		
+metxbiodb	Aromatic Hydroxylation	aromatic hydroxylation	117	strong	alias	xmet:4000013	aromatic hydroxylation	chemical transformation	Aromatic Hydroxylation	alias_table		
+metxbiodb	O-sulfonation	o-sulfonation	58	strong	alias	xmet:4000159	O-sulfation	metabolism phase	O-sulfonation	alias_table		
+metxbiodb	O-Demethylation	o-demethylation	48	strong	alias	xmet:4000050	O-demethylation	chemical transformation	O-Demethylation	alias_table		
+metxbiodb	GSH-conjugation	gsh-conjugation	26	strong	alias	xmet:4000167	glutathionation	metabolism phase	GSH-conjugation	alias_table		
+metxbiodb	N-demethylation	n-demethylation	25	strong	alias	xmet:4000349	N-demethylation	chemical transformation	N-demethylation	alias_table		
+metxbiodb	S-Oxidation	s-oxidation	24	strong	alias	xmet:4000032	sulfur oxidation	chemical transformation	S-Oxidation	alias_table		
+metxbiodb	N-Dealkylation	n-dealkylation	24	strong	alias	xmet:4000043	N-dealkylation	chemical transformation	N-Dealkylation	alias_table		
+metxbiodb	O-dealkylation	o-dealkylation	22	strong	alias	xmet:4000044	O-dealkylation	chemical transformation	O-dealkylation	alias_table		
+metxbiodb	Epoxidation	epoxidation	22	strong	alias	xmet:4000022	epoxidation	chemical transformation	Epoxidation	alias_table		
+metxbiodb	N-dealkylation	n-dealkylation	21	strong	alias	xmet:4000043	N-dealkylation	chemical transformation	N-dealkylation	alias_table		
+metxbiodb	Dehydrogenation	dehydrogenation	18	strong	exact_pref	xmet:4000006	dehydrogenation	chemical transformation	dehydrogenation	exact	100	
+metxbiodb	N-Oxidation	n-oxidation	17	strong	alias	xmet:4000026	nitrogen oxidation	chemical transformation	N-Oxidation	alias_table		
+metxbiodb	O-demethylation	o-demethylation	17	strong	alias	xmet:4000050	O-demethylation	chemical transformation	O-demethylation	alias_table		
+metxbiodb	O-aryl demethylation	o-aryl demethylation	16	strong	adjudicated:accept_as	xmet:4000050	O-demethylation	chemical transformation		none	78.8	aromatic O-demethyl; site via bundle
+metxbiodb	N-Demethylation	n-demethylation	14	strong	alias	xmet:4000349	N-demethylation	chemical transformation	N-Demethylation	alias_table		
+metxbiodb	Allylic hydroxylation	allylic hydroxylation	10	strong	exact_pref	xmet:4000019	allylic hydroxylation	chemical transformation	allylic hydroxylation	exact	100	
+metxbiodb	N-Dementhylation	n-dementhylation	10	strong	adjudicated:accept_as	xmet:4000349	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	typo dementhylation→demethylation
+metxbiodb	ARENE_EPOXIDATION	arene epoxidation	8	strong	exact_synonym	xmet:4000287	aromatic epoxidation	phase I reaction family	arene epoxidation	exact	100	
+metxbiodb	C-Oxidation	c-oxidation	8	strong	alias	xmet:4000009	carbon oxidation	chemical transformation	C-Oxidation	alias_table		
+metxbiodb	N-acetylation	n-acetylation	8	strong	exact_pref	xmet:4000164	N-acetylation	metabolism phase	N-acetylation	exact	100	
+metxbiodb	N-glucuronidation	n-glucuronidation	7	strong	exact_pref	xmet:4000153	N-glucuronidation	metabolism phase	N-glucuronidation	exact	100	
+metxbiodb	N-deisopropylation	n-deisopropylation	6	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-depropylation	fuzzy_token_sort	90.9	specific N-dealkyl; no isopropyl leaf yet
+metxbiodb	N-desmethylation	n-desmethylation	6	strong	adjudicated:accept_as	xmet:4000349	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	casing + des- variant
+metxbiodb	O-dementhylation	o-dementhylation	6	strong	adjudicated:accept_as	xmet:4000050	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	typo
+metxbiodb	O-methylation	o-methylation	6	strong	exact_pref	xmet:4000176	O-methylation	metabolism phase	O-methylation	exact	100	
+metxbiodb	Thiophene S-oxidation	thiophene s-oxidation	5	strong	adjudicated:accept_as	xmet:4000035	thiophene S-oxidation	chemical transformation	thiophene S-oxidation	exact	100	MetX source spelling was Thiohene; normalized in extract
+metxbiodb	AROMATIC HYDROXYLATION	aromatic hydroxylation	5	strong	alias	xmet:4000013	aromatic hydroxylation	chemical transformation	AROMATIC HYDROXYLATION	alias_table		
+metxbiodb	N-DEMETHYLATION	n-demethylation	5	strong	alias	xmet:4000349	N-demethylation	chemical transformation	N-DEMETHYLATION	alias_table		
+metxbiodb	N-dementhylation	n-dementhylation	5	strong	adjudicated:accept_as	xmet:4000349	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	typo dementhylation→demethylation
+metxbiodb	N-dechloroethylation	n-dechloroethylation	5	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-deethylation	fuzzy_token_sort	82.4	specialized N-dealkyl
+metxbiodb	O-Dementhylation	o-dementhylation	5	strong	adjudicated:accept_as	xmet:4000050	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	typo
+metxbiodb	N-Glucuronidation	n-glucuronidation	5	strong	exact_pref	xmet:4000153	N-glucuronidation	metabolism phase	N-glucuronidation	exact	100	
+metxbiodb	O-DEMETHYLATION	o-demethylation	4	strong	alias	xmet:4000050	O-demethylation	chemical transformation	O-DEMETHYLATION	alias_table		
+metxbiodb	Oxidation	oxidation	4	strong	alias	xmet:4000009	oxidation	chemical transformation	Oxidation	alias_table		
+metxbiodb	O-desmethylation	o-desmethylation	4	strong	adjudicated:accept_as	xmet:4000050	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	casing
+metxbiodb	ALKENE_EPXODATION	alkene epxodation	4	strong	adjudicated:accept_as	xmet:4000023	alkene epoxidation	chemical transformation	alkene epoxidation	fuzzy_token_sort	91.4	typo EPXODATION
+metxbiodb	O-Desmethylation	o-desmethylation	3	strong	adjudicated:accept_as	xmet:4000050	O-demethylation	chemical transformation	O-demethylation	fuzzy_token_sort	96.8	casing
+metxbiodb	ALIPHATIC HYDROXYLATION	aliphatic hydroxylation	3	strong	alias	xmet:4000014	aliphatic hydroxylation	chemical transformation	ALIPHATIC HYDROXYLATION	alias_table		
+metxbiodb	Bisallylic hydroxylation	bisallylic hydroxylation	3	strong	adjudicated:accept_as	xmet:4000019	allylic hydroxylation	chemical transformation	allylic hydroxylation	fuzzy_token_sort	93.3	near-leaf; optional future bisallylic concept
+metxbiodb	Hydroxylation	hydroxylation	3	strong	exact_pref	xmet:4000012	hydroxylation	chemical transformation	hydroxylation	exact	100	
+metxbiodb	Hydrogenation	hydrogenation	3	strong	exact_pref	xmet:4000090	hydrogenation	chemical transformation	hydrogenation	exact	100	
+metxbiodb	EPOXIDATION	epoxidation	3	strong	alias	xmet:4000022	epoxidation	chemical transformation	EPOXIDATION	alias_table		
+metxbiodb	N-Dealkylatiion	n-dealkylatiion	3	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.6	typo
+metxbiodb	Hydroxylamine O-sulfonation	hydroxylamine o-sulfonation	3	strong	adjudicated:accept_as	xmet:4000159	O-sulfation	phase II conjugation family		none	71.4	attachment atom via site; sulfonation=sulfation
+metxbiodb	N-Hydroxylation	n-hydroxylation	2	strong	exact_synonym	xmet:4000028	hydroxylamine formation	chemical transformation	N-hydroxylation	exact	100	
+metxbiodb	S-OXIDATION	s-oxidation	2	strong	alias	xmet:4000032	sulfur oxidation	chemical transformation	S-OXIDATION	alias_table		
+metxbiodb	O-deisopropylation	o-deisopropylation	2	strong	adjudicated:accept_as	xmet:4000044	O-dealkylation	chemical transformation	N-depropylation	fuzzy_token_sort	84.8	fuzzy wrongly chose N-depropylation
+metxbiodb	O-Deethylation	o-deethylation	2	strong	exact_pref	xmet:4000052	O-deethylation	chemical transformation	O-deethylation	exact	100	
+metxbiodb	Reduction	reduction	2	strong	alias	xmet:4000008	reduction	chemical transformation	Reduction	alias_table		
+metxbiodb	N-desalkylation	n-desalkylation	2	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.6	
+metxbiodb	N-OXIDATION	n-oxidation	2	strong	alias	xmet:4000026	nitrogen oxidation	chemical transformation	N-OXIDATION	alias_table		
+metxbiodb	N-desethylation	n-desethylation	2	strong	adjudicated:accept_as	xmet:4000047	N-deethylation	chemical transformation	N-deethylation	fuzzy_token_sort	96.6	des- spelling; if 0000206 missing use 0000201
+metxbiodb	Aldehyde oxidation	aldehyde oxidation	2	strong	exact_pref	xmet:4000072	aldehyde oxidation	chemical transformation	aldehyde oxidation	exact	100	
+metxbiodb	N-demethylations	n-demethylations	2	strong	adjudicated:accept_as	xmet:4000349	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	plural typo
+metxbiodb	C-DE-ESTERIFICATION	c-de-esterification	2	strong	adjudicated:accept_as	xmet:4000078	ester hydrolysis	chemical transformation	C-de-esterification	exact	100	de-esterification
+metxbiodb	Hydroxylamine O-glucuronidation	hydroxylamine o-glucuronidation	2	strong	adjudicated:accept_as	xmet:4000149	O-glucuronidation	phase II conjugation family		none	74.1	
+metxbiodb	GSH-conjugatoon	gsh-conjugatoon	2	strong	adjudicated:accept_as	xmet:4000167	glutathionation	chemical transformation		none	76.9	typo
+metxbiodb	Glycoside hydrolysis	glycoside hydrolysis	2	strong	adjudicated:accept_as	xmet:4000084	ether cleavage	chemical transformation	glycoside hydrolysis	exact	100	glycoside O-cleavage; nearest leaf
+metxbiodb	Keto hydrolysis	keto hydrolysis	2	strong	adjudicated:accept_as	xmet:4000007	hydrolysis	chemical transformation	hydrolysis	fuzzy_token_sort	80.0	underspecified; keep as hydrolysis pending leaf
+metxbiodb	Alphatic Hydroxylation	alphatic hydroxylation	1	strong	adjudicated:accept_as	xmet:4000014	aliphatic hydroxylation	chemical transformation	aliphatic hydroxylation	fuzzy_token_sort	97.8	typo
+metxbiodb	C-DEALKLYATION	c-dealklyation	1	strong	adjudicated:accept_as	xmet:4000046	C-dealkylation	chemical transformation	C-dealkylation	fuzzy_token_sort	92.9	typo
+metxbiodb	N-HYDROXYLATION	n-hydroxylation	1	strong	exact_synonym	xmet:4000028	hydroxylamine formation	chemical transformation	N-hydroxylation	exact	100	
+metxbiodb	O-Dealklyation	o-dealklyation	1	strong	adjudicated:accept_as	xmet:4000044	O-dealkylation	chemical transformation	O-dealkylation	fuzzy_token_sort	92.9	typo
+metxbiodb	N-deethylation	n-deethylation	1	strong	exact_pref	xmet:4000047	N-deethylation	chemical transformation	N-deethylation	exact	100	
+metxbiodb	O-Debenzylation	o-debenzylation	1	strong	adjudicated:accept_as	xmet:4000044	O-dealkylation	chemical transformation	O-deethylation	fuzzy_token_sort	82.8	fuzzy wrongly chose O-deethylation
+metxbiodb	N-oxidation	n-oxidation	1	strong	alias	xmet:4000026	nitrogen oxidation	chemical transformation	N-oxidation	alias_table		
+metxbiodb	O-demethylenation	o-demethylenation	1	strong	adjudicated:accept_as	xmet:4000200	ring opening	chemical transformation	O-demethylation	fuzzy_token_sort	93.8	methylenedioxy cleavage
+metxbiodb	N-Desalkylation	n-desalkylation	1	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.6	
+metxbiodb	S-Dealkylation	s-dealkylation	1	strong	alias	xmet:4000045	S-dealkylation	chemical transformation	S-Dealkylation	alias_table		
+metxbiodb	N-DESISOPROPYLATION	n-desisopropylation	1	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-depropylation	fuzzy_token_sort	88.2	same
+metxbiodb	Pyridine N-oxidation	pyridine n-oxidation	1	strong	adjudicated:accept_as	xmet:4000026	nitrogen oxidation	chemical transformation		none	76.5	heteroarene N-ox; site via bundle
+metxbiodb	Alipathic Hydroxylation	alipathic hydroxylation	1	strong	adjudicated:accept_as	xmet:4000014	aliphatic hydroxylation	chemical transformation	aliphatic hydroxylation	fuzzy_token_sort	95.7	typo
+metxbiodb	ALKYL_HYDROXYLATION	alkyl hydroxylation	1	strong	exact_synonym	xmet:4000014	aliphatic hydroxylation	chemical transformation	alkyl hydroxylation	exact	100	
+metxbiodb	Oxidization	oxidization	1	strong	adjudicated:accept_as	xmet:4000009	oxidation	chemical transformation	oxidation	fuzzy_token_sort	90.0	spelling variant
+metxbiodb	oxidative defluorination	oxidative defluorination	1	strong	exact_pref	xmet:4000055	oxidative defluorination	chemical transformation	oxidative defluorination	exact	100	
+metxbiodb	N-Deethylation	n-deethylation	1	strong	exact_pref	xmet:4000047	N-deethylation	chemical transformation	N-deethylation	exact	100	
+metxbiodb	O-DEETHYLATION	o-deethylation	1	strong	exact_pref	xmet:4000052	O-deethylation	chemical transformation	O-deethylation	exact	100	
+metxbiodb	N-Desmethylation	n-desmethylation	1	strong	adjudicated:accept_as	xmet:4000349	N-demethylation	chemical transformation	N-demethylation	fuzzy_token_sort	96.8	casing + des- variant
+metxbiodb	N-dehydroxyethylation	n-dehydroxyethylation	1	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-dehydroxylation	fuzzy_token_sort	89.5	fuzzy wrongly chose hydroxylamine
+metxbiodb	N_DEALKYLATION	n-dealkylation	1	strong	alias	xmet:4000043	N-dealkylation	chemical transformation	N_DEALKYLATION	alias_table		
+metxbiodb	Desulfation	desulfation	1	strong	adjudicated:accept_as	xmet:4000138	desulfation	chemical transformation	desulfation	exact	100	antonym of sulfation
+metxbiodb	Desethylation	desethylation	1	strong	adjudicated:accept_as	xmet:4000047	N-deethylation	chemical transformation	demethylation	fuzzy_token_sort	92.3	underspecified atom; treat as N-deethyl common case
+metxbiodb	O-deacetylation	o-deacetylation	1	strong	adjudicated:accept_as	xmet:4000166	deacetylation	chemical transformation	O-acetylation	negation_prefix	100	O-selective; map to deacetylation pending leaf
+metxbiodb	N-Despropylation	n-despropylation	1	strong	adjudicated:accept_as	xmet:4000048	N-depropylation	chemical transformation	N-depropylation	fuzzy_token_sort	96.8	if id missing use N-dealkylation
+metxbiodb	S-REDUCTION	s-reduction	1	strong	adjudicated:accept_as	xmet:4000106	sulfur reduction	chemical transformation	reduction	fuzzy_token_sort	90.0	
+metxbiodb	Denitrosation	denitrosation	1	strong	exact_pref	xmet:4000134	denitrosation	chemical transformation	denitrosation	exact	100	
+metxbiodb	N-Dealylation	n-dealylation	1	strong	adjudicated:accept_as	xmet:4000043	N-dealkylation	chemical transformation	N-dealkylation	fuzzy_token_sort	96.3	typo
+metxbiodb	Demethylenation	demethylenation	1	strong	adjudicated:accept_as	xmet:4000200	ring opening	chemical transformation	demethylation	fuzzy_token_sort	92.9	methylenedioxy cleavage ≈ ring opening process; refine later
+metxbiodb	Aromatic Oxidation	aromatic oxidation	1	strong	adjudicated:accept_as	xmet:4000009	carbon oxidation	chemical transformation	aromatic epoxidation	fuzzy_token_sort	94.7	broad aromatic C-oxidation
+metxbiodb	O-deethylation	o-deethylation	1	strong	exact_pref	xmet:4000052	O-deethylation	chemical transformation	O-deethylation	exact	100	
+metxbiodb	C-DEALYLATION	c-dealylation	1	strong	adjudicated:accept_as	xmet:4000046	C-dealkylation	chemical transformation	C-dealkylation	fuzzy_token_sort	96.3	typo
+metxbiodb	O-Demethylenation	o-demethylenation	1	strong	adjudicated:accept_as	xmet:4000200	ring opening	chemical transformation	O-demethylation	fuzzy_token_sort	93.8	methylenedioxy cleavage
+metxbiodb	ESTERIFICATION	esterification	1	strong	exact_pref	xmet:4000123	esterification	chemical transformation	esterification	exact	100	
+metxbiodb	Dehydroxylation	dehydroxylation	1	strong	exact_pref	xmet:4000128	dehydroxylation	chemical transformation	dehydroxylation	exact	100	
+metxbiodb	O-acetylation	o-acetylation	1	strong	exact_pref	xmet:4000165	O-acetylation	metabolism phase	O-acetylation	exact	100	
+metxbiodb	O-sulfation	o-sulfation	1	strong	alias	xmet:4000159	O-sulfation	metabolism phase	O-sulfation	alias_table		

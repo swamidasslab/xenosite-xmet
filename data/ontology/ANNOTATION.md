@@ -13,6 +13,20 @@ let bundles = namer.annotate_smiles("CC", "CCO", &[])?;
 // bundles[i].transformation / phase / site_environment / medchem_interpretation / site_label
 ```
 
+## Identifier policy
+
+IDs are **opaque** CURIEs — do **not** encode spine or chemistry in the number.
+Hierarchy lives in `parents:` / `skos:broader` only.
+
+Live inventory was renumbered densely to ``xmet:4000000``…``xmet:4000405``
+(see [`../mappings/xmet-id-renumber.tsv`](../mappings/xmet-id-renumber.tsv)).
+New mints continue sequentially from ``xmet:4000406``. Never recycle a retired
+CURIE. Merges/retirements/renumbers: [`../mappings/xmet-id-remap.tsv`](../mappings/xmet-id-remap.tsv).
+
+```bash
+uv run python tools/renumber_xmet_ids.py   # already applied; kept for replay docs
+```
+
 ## Inventory guidance (v0.1)
 
 A useful first band is **~350–500** chemist-facing canonical concepts with
@@ -109,8 +123,8 @@ Combinations stay out of the SKOS inventory; bundles attach context via
 
 ```json
 {
-  "transformation": "xmet:0000106",
-  "phase": "xmet:0000001",
+  "transformation": "xmet:4000018",
+  "phase": "xmet:4000001",
   "site_environment": ["xmet:1600014"],
   "structural_delta": ["xmet:1700012"],
   "medchem_interpretation": ["xmet:1400010"],

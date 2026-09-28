@@ -2,25 +2,25 @@ reaction_id	context_id	relation	inherit_children	exclude_reaction_ids	note
 # relation: likely_in | observed_in | unlikely_in
 # inherit_children=true → applies to skos:narrower descendants except exclude_reaction_ids (pipe-separated)
 # This is an expectation / prior for systems biology annotation — not a hard axiom.
-xmet:0000020	xmet:2100312	likely_in	true		Oxidative metabolism common in microsomes
-xmet:0000020	xmet:2100311	likely_in	true		Oxidative metabolism common in hepatocytes
-xmet:0000020	xmet:2100318	likely_in	true		rCYP/Supersomes/baculosomes for CYP oxidations
-xmet:0000020	xmet:2100313	likely_in	true		Baculosome CYP panels
-xmet:0000100	xmet:2100312	likely_in	true		Hydroxylation in microsomes
-xmet:0000100	xmet:2100311	likely_in	true		Hydroxylation in hepatocytes
-xmet:0000200	xmet:2100312	likely_in	true		Oxidative dealkylation in microsomes
-xmet:0001000	xmet:2100311	likely_in	true		Glucuronidation in hepatocytes (UGT)
-xmet:0001000	xmet:2100312	likely_in	true	xmet:0001004	Microsomal UGTs; acyl glucuronidation often called out separately
-xmet:0001000	xmet:2100120	observed_in	true		Glucuronides frequently recovered in urine
-xmet:0001000	xmet:2100119	observed_in	true		Glucuronides in plasma
-xmet:0001000	xmet:2100301	likely_in	true		Phase II conjugates common in vivo
-xmet:0001010	xmet:2100315	likely_in	true		Sulfation primarily cytosolic
-xmet:0001010	xmet:2100311	likely_in	true		Hepatocytes retain SULT activity
-xmet:0001010	xmet:2100312	unlikely_in	true		Classical microsomes lack SULTs
-xmet:0001030	xmet:2100311	likely_in	true		GSH conjugation in hepatocytes
-xmet:0001030	xmet:2100315	likely_in	true		Cytosolic GSTs
-xmet:0000013	xmet:2100311	likely_in	true		Hydrolysis in hepatocytes
-xmet:0000013	xmet:2100312	likely_in	true		CES etc. in microsomes
-xmet:0000013	xmet:2100119	observed_in	true		Ester hydrolysis also in plasma
-xmet:0001020	xmet:2100315	likely_in	true		NAT acetylation cytosolic
-xmet:0001020	xmet:2100312	unlikely_in	true		Not typical microsomal
+xmet:4000009	xmet:2100312	likely_in	true		Oxidative metabolism common in microsomes
+xmet:4000009	xmet:2100311	likely_in	true		Oxidative metabolism common in hepatocytes
+xmet:4000009	xmet:2100318	likely_in	true		rCYP/Supersomes/baculosomes for CYP oxidations
+xmet:4000009	xmet:2100313	likely_in	true		Baculosome CYP panels
+xmet:4000012	xmet:2100312	likely_in	true		Hydroxylation in microsomes
+xmet:4000012	xmet:2100311	likely_in	true		Hydroxylation in hepatocytes
+xmet:4000042	xmet:2100312	likely_in	true		Oxidative dealkylation in microsomes
+xmet:4000148	xmet:2100311	likely_in	true		Glucuronidation in hepatocytes (UGT)
+xmet:4000148	xmet:2100312	likely_in	true	xmet:4000152	Microsomal UGTs; acyl glucuronidation often called out separately
+xmet:4000148	xmet:2100120	observed_in	true		Glucuronides frequently recovered in urine
+xmet:4000148	xmet:2100119	observed_in	true		Glucuronides in plasma
+xmet:4000148	xmet:2100301	likely_in	true		Phase II conjugates common in vivo
+xmet:4000158	xmet:2100315	likely_in	true		Sulfation primarily cytosolic
+xmet:4000158	xmet:2100311	likely_in	true		Hepatocytes retain SULT activity
+xmet:4000158	xmet:2100312	unlikely_in	true		Classical microsomes lack SULTs
+xmet:4000167	xmet:2100311	likely_in	true		GSH conjugation in hepatocytes
+xmet:4000167	xmet:2100315	likely_in	true		Cytosolic GSTs
+xmet:4000007	xmet:2100311	likely_in	true		Hydrolysis in hepatocytes
+xmet:4000007	xmet:2100312	likely_in	true		CES etc. in microsomes
+xmet:4000007	xmet:2100119	observed_in	true		Ester hydrolysis also in plasma
+xmet:4000163	xmet:2100315	likely_in	true		NAT acetylation cytosolic
+xmet:4000163	xmet:2100312	unlikely_in	true		Not typical microsomal

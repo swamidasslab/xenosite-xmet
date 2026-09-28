@@ -9,7 +9,7 @@ prints depth / breadth statistics.
 Examples:
   uv run python tools/print_xmet_tree.py
   uv run python tools/print_xmet_tree.py --root \"reaction class\"
-  uv run python tools/print_xmet_tree.py --root xmet:0000020 --depth 3
+  uv run python tools/print_xmet_tree.py --root xmet:4000009 --depth 3
   make ontology-tree
 """
 
@@ -28,8 +28,8 @@ YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 FOREST_SSSOM = ROOT / "data/mappings/xmet-forest.sssom.tsv"
 TAGGER_SSSOM = ROOT / "data/mappings/xmet-tagger.sssom.tsv"
 
-ONTOLOGY_ROOT = "xmet:0000000"  # xenobiotic biotransformation
-REACTION_DESCRIPTOR = "xmet:3000000"
+ONTOLOGY_ROOT = "xmet:4000000"  # xenobiotic biotransformation
+REACTION_DESCRIPTOR = "xmet:4000263"
 
 
 def load_concepts() -> dict[str, dict[str, Any]]:

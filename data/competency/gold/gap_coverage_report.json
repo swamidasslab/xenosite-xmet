@@ -2,259 +2,259 @@
   "gold_failures_seen": [],
   "related_match_wired": [
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500222",
       "to_label": "CoA conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500117",
       "to_label": "sulfate conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500116",
       "to_label": "glucuronide conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500220",
       "to_label": "glycine conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500030",
       "to_label": "reactive conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500221",
       "to_label": "taurine conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000024",
+      "from": "xmet:4000011",
       "from_label": "conjugation",
       "to": "xmet:1500031",
       "to_label": "stable conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000100",
+      "from": "xmet:4000012",
       "from_label": "hydroxylation",
       "to": "xmet:1500111",
       "to_label": "hydroxylamine metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000108",
+      "from": "xmet:4000020",
       "from_label": "\u03c9-hydroxylation",
       "to": "xmet:1500111",
       "to_label": "hydroxylamine metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000110",
+      "from": "xmet:4000022",
       "from_label": "epoxidation",
       "to": "xmet:1500106",
       "to_label": "thiophene epoxide",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000110",
+      "from": "xmet:4000022",
       "from_label": "epoxidation",
       "to": "xmet:1500128",
       "to_label": "epoxide metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000111",
+      "from": "xmet:4000023",
       "from_label": "alkene epoxidation",
       "to": "xmet:1500012",
       "to_label": "epoxide",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000113",
+      "from": "xmet:4000025",
       "from_label": "thiophene epoxidation",
       "to": "xmet:1500012",
       "to_label": "epoxide",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000113",
+      "from": "xmet:4000025",
       "from_label": "thiophene epoxidation",
       "to": "xmet:1500106",
       "to_label": "thiophene epoxide",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0000131",
+      "from": "xmet:4000033",
       "from_label": "sulfoxidation",
       "to": "xmet:1500123",
       "to_label": "sulfoxide metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001020",
+      "from": "xmet:4000163",
       "from_label": "acetylation",
       "to": "xmet:1500224",
       "to_label": "acetylated metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001020",
+      "from": "xmet:4000163",
       "from_label": "acetylation",
       "to": "xmet:1500219",
       "to_label": "N-acetylcysteine adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001021",
+      "from": "xmet:4000164",
       "from_label": "N-acetylation",
       "to": "xmet:1500219",
       "to_label": "N-acetylcysteine adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001031",
+      "from": "xmet:4000168",
       "from_label": "Michael glutathionation",
       "to": "xmet:1500114",
       "to_label": "GSH adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001031",
+      "from": "xmet:4000168",
       "from_label": "Michael glutathionation",
       "to": "xmet:1500019",
       "to_label": "GSH-trappable metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001032",
+      "from": "xmet:4000169",
       "from_label": "epoxide glutathionation",
       "to": "xmet:1500114",
       "to_label": "GSH adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001032",
+      "from": "xmet:4000169",
       "from_label": "epoxide glutathionation",
       "to": "xmet:1500019",
       "to_label": "GSH-trappable metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001033",
+      "from": "xmet:4000170",
       "from_label": "halide displacement glutathionation",
       "to": "xmet:1500114",
       "to_label": "GSH adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001033",
+      "from": "xmet:4000170",
       "from_label": "halide displacement glutathionation",
       "to": "xmet:1500019",
       "to_label": "GSH-trappable metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001034",
+      "from": "xmet:4000171",
       "from_label": "isocyanate glutathionation",
       "to": "xmet:1500114",
       "to_label": "GSH adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001034",
+      "from": "xmet:4000171",
       "from_label": "isocyanate glutathionation",
       "to": "xmet:1500019",
       "to_label": "GSH-trappable metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001035",
+      "from": "xmet:4000172",
       "from_label": "aziridine glutathionation",
       "to": "xmet:1500114",
       "to_label": "GSH adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001035",
+      "from": "xmet:4000172",
       "from_label": "aziridine glutathionation",
       "to": "xmet:1500019",
       "to_label": "GSH-trappable metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001036",
+      "from": "xmet:4000173",
       "from_label": "quinone glutathionation",
       "to": "xmet:1500114",
       "to_label": "GSH adduct",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001036",
+      "from": "xmet:4000173",
       "from_label": "quinone glutathionation",
       "to": "xmet:1500019",
       "to_label": "GSH-trappable metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001040",
+      "from": "xmet:4000175",
       "from_label": "methylation",
       "to": "xmet:1500223",
       "to_label": "methylated metabolite",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001051",
+      "from": "xmet:4000180",
       "from_label": "glycine conjugation",
       "to": "xmet:1500220",
       "to_label": "glycine conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001053",
+      "from": "xmet:4000182",
       "from_label": "taurine conjugation",
       "to": "xmet:1500221",
       "to_label": "taurine conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:0001061",
+      "from": "xmet:4000185",
       "from_label": "CoA conjugation",
       "to": "xmet:1500222",
       "to_label": "CoA conjugate",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:1200100",
+      "from": "xmet:4000287",
       "from_label": "aromatic epoxidation",
       "to": "xmet:1500012",
       "to_label": "epoxide",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:1200101",
+      "from": "xmet:4000215",
       "from_label": "aliphatic epoxidation",
       "to": "xmet:1500012",
       "to_label": "epoxide",
       "reason": "name-heuristic"
     },
     {
-      "from": "xmet:1200102",
+      "from": "xmet:4000026",
       "from_label": "N-oxidation",
       "to": "xmet:1500122",
       "to_label": "N-oxide metabolite",

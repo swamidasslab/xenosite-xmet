@@ -4,132 +4,132 @@ Generated from local `data/ontology/xmet.yaml` for external review.
 Shows each **spine**, then up to ~15 children, then a short grandchild summary.
 Deeper leaves are collapsed as `+N more`. Cross-spine multi-parents are not duplicated.
 
-**Root:** xenobiotic biotransformation (`xmet:0000000`)
+**Root:** xenobiotic biotransformation (`xmet:4000000`)
 
-## metabolism phase (`xmet:1000000`, ~192 descendants)
+## metabolism phase (`xmet:4000212`, ~192 descendants)
 
 > Phase framing for xenobiotic biotransformation (I / II / III).
 
 - first-pass metabolism (`xmet:1000102`)
 - intermediate metabolite formation (`xmet:1000101`)
-- **phase I** (`xmet:0000001`)
-  - deacetylation (`xmet:0001023`)
-  - deacylation (`xmet:0002005`)
-  - decarbonylation (`xmet:0002007`)
-  - dehydration (`xmet:0000550`)
-  - dehydrogenation (`xmet:0000012`): alcohol oxidation, alkene formation, aromatization, double- to triple-bond dehydrogenation, iminium ion formation, single- to double-bond dehydrogenation
-  - denitrogenation (`xmet:0002006`)
-  - hydrolysis (`xmet:0000013`): amide hydrolysis, azo cleavage, carbamate hydrolysis, cyanide hydrolysis, deacetylation, deconjugation, +11 more
-  - oxidation (`xmet:0000020`): carbon oxidation, carbon–heteroatom oxidative cleavage, heteroatom oxidation, oxidative dehalogenation
+- **phase I** (`xmet:4000001`)
+  - deacetylation (`xmet:4000166`)
+  - deacylation (`xmet:4000191`)
+  - decarbonylation (`xmet:4000193`)
+  - dehydration (`xmet:4000113`)
+  - dehydrogenation (`xmet:4000006`): alcohol oxidation, alkene formation, aromatization, double- to triple-bond dehydrogenation, iminium ion formation, single- to double-bond dehydrogenation
+  - denitrogenation (`xmet:4000192`)
+  - hydrolysis (`xmet:4000007`): amide hydrolysis, azo cleavage, carbamate hydrolysis, cyanide hydrolysis, deacetylation, deconjugation, +11 more
+  - oxidation (`xmet:4000009`): carbon oxidation, carbon–heteroatom oxidative cleavage, heteroatom oxidation, oxidative dehalogenation
   - … +2 more under phase I
-- **phase II** (`xmet:0000002`)
-  - acetylation (`xmet:0001020`): N-acetylation, O-acetylation
-  - acyl glucuronidation class (`xmet:1300102`)
-  - amino acid conjugation (`xmet:0001050`): glutamine conjugation, glycine conjugation, serine conjugation, taurine conjugation
-  - C-glucuronidation class (`xmet:1300121`)
-  - carbamoyl glucuronidation class (`xmet:1300115`)
-  - CoA conjugation (`xmet:0001061`)
-  - cysteine conjugation (`xmet:1300010`)
-  - epoxide GSH conjugation (`xmet:1300117`)
+- **phase II** (`xmet:4000002`)
+  - acetylation (`xmet:4000163`): N-acetylation, O-acetylation
+  - acyl glucuronidation class (`xmet:4000152`)
+  - amino acid conjugation (`xmet:4000179`): glutamine conjugation, glycine conjugation, serine conjugation, taurine conjugation
+  - C-glucuronidation class (`xmet:4000156`)
+  - carbamoyl glucuronidation class (`xmet:4000157`)
+  - CoA conjugation (`xmet:4000185`)
+  - cysteine conjugation (`xmet:4000217`)
+  - epoxide GSH conjugation (`xmet:4000169`)
   - … +28 more under phase II
-- phase III transport (`xmet:0000003`)
+- phase III transport (`xmet:4000003`)
 - sequential metabolism (`xmet:1000100`)
 
-## chemical transformation (`xmet:1100000`, ~164 descendants)
+## chemical transformation (`xmet:4000213`, ~164 descendants)
 
 > Enzyme-independent chemical edit class (oxidation, reduction, …).
 
-- **alkylation** (`xmet:0000610`)
-  - C-alkylation (`xmet:0000614`)
-  - N-alkylation (`xmet:0000611`)
-  - O-alkylation (`xmet:0000612`)
-  - S-alkylation (`xmet:0000613`)
-- amination (`xmet:0000661`)
-- aromatization (`xmet:0000315`)
-- arylation (`xmet:0000730`)
-- carbonylation (`xmet:0000731`)
-- carboxylation (`xmet:0000621`)
-- conjugation (`xmet:0000024`)
-- cyanidation (`xmet:0000600`)
-- cyclization (`xmet:0000640`)
-- **dealkylation** (`xmet:0000200`)
-  - C-dealkylation (`xmet:0000204`)
-  - dearylation (`xmet:0000720`)
-  - N-dealkylation (`xmet:0000201`): N-deethylation, N-demethylation, N-depropylation, oxidative deamination
-  - O-dealkylation (`xmet:0000202`): aliphatic O-dealkylation, aromatic O-dealkylation, O-deethylation, O-demethylation
-  - S-dealkylation (`xmet:0000203`): S-demethylation
-- deamination (`xmet:1100013`)
-- **dearomatization** (`xmet:0004001`)
-  - thiophene S-oxidation (`xmet:0000133`)
-- decarboxylation (`xmet:0000620`)
-- deconjugation (`xmet:0000732`)
-- decyanidation (`xmet:0000601`)
+- **alkylation** (`xmet:4000116`)
+  - C-alkylation (`xmet:4000120`)
+  - N-alkylation (`xmet:4000117`)
+  - O-alkylation (`xmet:4000118`)
+  - S-alkylation (`xmet:4000119`)
+- amination (`xmet:4000130`)
+- aromatization (`xmet:4000074`)
+- arylation (`xmet:4000145`)
+- carbonylation (`xmet:4000146`)
+- carboxylation (`xmet:4000122`)
+- conjugation (`xmet:4000011`)
+- cyanidation (`xmet:4000114`)
+- cyclization (`xmet:4000127`)
+- **dealkylation** (`xmet:4000042`)
+  - C-dealkylation (`xmet:4000046`)
+  - dearylation (`xmet:4000143`)
+  - N-dealkylation (`xmet:4000043`): N-deethylation, N-demethylation, N-depropylation, oxidative deamination
+  - O-dealkylation (`xmet:4000044`): aliphatic O-dealkylation, aromatic O-dealkylation, O-deethylation, O-demethylation
+  - S-dealkylation (`xmet:4000045`): S-demethylation
+- deamination (`xmet:4000049`)
+- **dearomatization** (`xmet:4000194`)
+  - thiophene S-oxidation (`xmet:4000035`)
+- decarboxylation (`xmet:4000121`)
+- deconjugation (`xmet:4000147`)
+- decyanidation (`xmet:4000115`)
 - … +31 more direct children
 
 ## phase I reaction family (`xmet:1200000`, ~136 descendants)
 
 > Rainbow-anchored Phase I reaction classes and detailed types.
 
-- alcohol dehydrogenation (`xmet:1200105`)
-- aldehyde formation class (`xmet:1200113`)
-- aliphatic epoxidation (`xmet:1200101`)
-- aliphatic hydroxylation class (`xmet:1200201`)
-- amide hydrolysis class (`xmet:1200108`)
-- amine dehydrogenation (`xmet:1200106`)
-- aromatic epoxidation (`xmet:1200100`)
-- aromatic hydroxylation class (`xmet:1200200`)
-- C-dealkylation class (`xmet:1200205`)
-- carbonyl reduction class (`xmet:1200109`)
-- cyanide hydrolysis class (`xmet:1200212`)
-- **dehydrogenation** (`xmet:0000012`)
-  - alcohol oxidation (`xmet:0000310`): primary alcohol oxidation, secondary alcohol oxidation
-  - alkene formation (`xmet:0000314`)
-  - aromatization (`xmet:0000315`)
-  - double- to triple-bond dehydrogenation (`xmet:0000317`)
-  - iminium ion formation (`xmet:0000305`)
-  - single- to double-bond dehydrogenation (`xmet:0000316`)
-- double-to-triple bond dehydrogenation class (`xmet:1200210`)
-- ester hydrolysis class (`xmet:1200107`)
-- ether hydrolysis class (`xmet:1200211`)
+- alcohol dehydrogenation (`xmet:4000069`)
+- aldehyde formation class (`xmet:4000069`)
+- aliphatic epoxidation (`xmet:4000215`)
+- aliphatic hydroxylation class (`xmet:4000014`)
+- amide hydrolysis class (`xmet:4000079`)
+- amine dehydrogenation (`xmet:4000216`)
+- aromatic epoxidation (`xmet:4000287`)
+- aromatic hydroxylation class (`xmet:4000013`)
+- C-dealkylation class (`xmet:4000046`)
+- carbonyl reduction class (`xmet:4000105`)
+- cyanide hydrolysis class (`xmet:4000086`)
+- **dehydrogenation** (`xmet:4000006`)
+  - alcohol oxidation (`xmet:4000069`): primary alcohol oxidation, secondary alcohol oxidation
+  - alkene formation (`xmet:4000073`)
+  - aromatization (`xmet:4000074`)
+  - double- to triple-bond dehydrogenation (`xmet:4000076`)
+  - iminium ion formation (`xmet:4000064`)
+  - single- to double-bond dehydrogenation (`xmet:4000075`)
+- double-to-triple bond dehydrogenation class (`xmet:4000076`)
+- ester hydrolysis class (`xmet:4000078`)
+- ether hydrolysis class (`xmet:4000085`)
 - … +19 more direct children
 
 ## phase II conjugation family (`xmet:1300000`, ~64 descendants)
 
 > Conjugation families typical of Phase II xenobiotic metabolism.
 
-- **acetylation** (`xmet:0001020`)
-  - N-acetylation (`xmet:0001021`)
-  - O-acetylation (`xmet:0001022`)
-- acyl glucuronidation class (`xmet:1300102`)
-- **amino acid conjugation** (`xmet:0001050`)
-  - glutamine conjugation (`xmet:0001052`)
-  - glycine conjugation (`xmet:0001051`)
-  - serine conjugation (`xmet:0001054`)
-  - taurine conjugation (`xmet:0001053`)
-- C-glucuronidation class (`xmet:1300121`)
-- carbamoyl glucuronidation class (`xmet:1300115`)
-- CoA conjugation (`xmet:0001061`)
-- cysteine conjugation (`xmet:1300010`)
-- epoxide GSH conjugation (`xmet:1300117`)
-- formylation (`xmet:0000670`)
-- **glucuronidation** (`xmet:0001000`)
-  - C-glucuronidation (`xmet:0001008`)
-  - carbamoyl glucuronidation (`xmet:0001009`)
-  - N-glucuronidation (`xmet:0001005`): quaternary N-glucuronidation
-  - O-glucuronidation (`xmet:0001001`): acyl glucuronidation, alcoholic glucuronidation, phenolic glucuronidation
-  - S-glucuronidation (`xmet:0001007`)
-- glutamine conjugation class (`xmet:1300113`)
-- **glutathionation** (`xmet:0001030`)
-  - aziridine glutathionation (`xmet:0001035`)
-  - epoxide glutathionation (`xmet:0001032`)
-  - halide displacement glutathionation (`xmet:0001033`)
-  - isocyanate glutathionation (`xmet:0001034`)
-  - mercapturic acid formation (`xmet:0001037`)
-  - Michael glutathionation (`xmet:0001031`)
-  - quinone glutathionation (`xmet:0001036`)
-- glycine conjugation (`xmet:0001051`)
-- glycine conjugation class (`xmet:1300111`)
-- glycosylation (`xmet:0001060`)
+- **acetylation** (`xmet:4000163`)
+  - N-acetylation (`xmet:4000164`)
+  - O-acetylation (`xmet:4000165`)
+- acyl glucuronidation class (`xmet:4000152`)
+- **amino acid conjugation** (`xmet:4000179`)
+  - glutamine conjugation (`xmet:4000181`)
+  - glycine conjugation (`xmet:4000180`)
+  - serine conjugation (`xmet:4000183`)
+  - taurine conjugation (`xmet:4000182`)
+- C-glucuronidation class (`xmet:4000156`)
+- carbamoyl glucuronidation class (`xmet:4000157`)
+- CoA conjugation (`xmet:4000185`)
+- cysteine conjugation (`xmet:4000217`)
+- epoxide GSH conjugation (`xmet:4000169`)
+- formylation (`xmet:4000131`)
+- **glucuronidation** (`xmet:4000148`)
+  - C-glucuronidation (`xmet:4000156`)
+  - carbamoyl glucuronidation (`xmet:4000157`)
+  - N-glucuronidation (`xmet:4000153`): quaternary N-glucuronidation
+  - O-glucuronidation (`xmet:4000149`): acyl glucuronidation, alcoholic glucuronidation, phenolic glucuronidation
+  - S-glucuronidation (`xmet:4000155`)
+- glutamine conjugation class (`xmet:4000181`)
+- **glutathionation** (`xmet:4000167`)
+  - aziridine glutathionation (`xmet:4000172`)
+  - epoxide glutathionation (`xmet:4000169`)
+  - halide displacement glutathionation (`xmet:4000170`)
+  - isocyanate glutathionation (`xmet:4000171`)
+  - mercapturic acid formation (`xmet:4000174`)
+  - Michael glutathionation (`xmet:4000168`)
+  - quinone glutathionation (`xmet:4000173`)
+- glycine conjugation (`xmet:4000180`)
+- glycine conjugation class (`xmet:4000180`)
+- glycosylation (`xmet:4000184`)
 - … +22 more direct children
 
 ## medchem liability (`xmet:1400000`, ~51 descendants)
@@ -224,7 +224,7 @@ Deeper leaves are collapsed as `+N more`. Cross-spine multi-parents are not dupl
   - fused benzene site (`xmet:1600201`)
 - … +45 more direct children
 
-## structural delta (`xmet:1700000`, ~86 descendants)
+## structural delta (`xmet:4000220`, ~86 descendants)
 
 > Structural / formula / aromaticity / bond-order change facets.
 
@@ -237,9 +237,9 @@ Deeper leaves are collapsed as `+N more`. Cross-spine multi-parents are not dupl
   - conjugated π-system engagement (`xmet:8000004`)
   - heteroaromatic oxidation impact (`xmet:8000006`): thiophene epoxidation, thiophene S-oxidation
   - quinoid π-system formation (`xmet:8000005`)
-- aromaticity change (`xmet:1700015`)
-- aromaticity gain delta (`xmet:1700108`)
-- aromaticity loss delta (`xmet:1700107`)
+- aromaticity change (`xmet:4000274`)
+- aromaticity gain delta (`xmet:4000195`)
+- aromaticity loss delta (`xmet:4000194`)
 - atom added (`xmet:1700012`)
 - atom removed (`xmet:1700013`)
 - bond order change (`xmet:1700014`)
@@ -251,14 +251,14 @@ Deeper leaves are collapsed as `+N more`. Cross-spine multi-parents are not dupl
   - bond order change (`xmet:7200003`)
   - bond-edit topology unspecified (`xmet:7200008`)
   - rearrangement topology (`xmet:7200005`)
-  - ring closure (`xmet:7200006`)
+  - ring closure (`xmet:4000405`)
   - ring opening topology (`xmet:7200007`)
   - substitution (`xmet:7200004`)
 - charge change (`xmet:1700016`)
 - conjugate moiety added (`xmet:1700018`)
-- deethylation delta (`xmet:1700103`)
-- demethylation delta (`xmet:1700102`)
-- dioxygenation (`xmet:1700101`)
+- deethylation delta (`xmet:4000225`)
+- demethylation delta (`xmet:4000224`)
+- dioxygenation (`xmet:4000223`)
 - … +15 more direct children
 
 ## product status (`xmet:1800000`, ~18 descendants)
@@ -423,25 +423,25 @@ Deeper leaves are collapsed as `+N more`. Cross-spine multi-parents are not dupl
   - Dealkylation rule (`xmet:9100200`): Dealkylation/cc_alcohol, Dealkylation/cc_carbonyl, Dealkylation/cc_quaternary_alcohol, Dealkylation/hemiaminal, Dealkylation/methine_alcohol, Dealkylation/methine_carbonyl, +8 more
   - OxidativeDehalogenation rule (`xmet:9100210`): OxidativeDehalogenation/alcohol, OxidativeDehalogenation/carbonyl, OxidativeDehalogenation/carboxylic, OxidativeDehalogenation/gem_carboxylic, OxidativeDehalogenation/gem_hydrate, OxidativeDehalogenation/rearrange
 
-## leaving group (`xmet:2200000`, ~30 descendants)
+## leaving group (`xmet:4000229`, ~30 descendants)
 
 > Fragment or moiety that departs in a cleavage / substitution / dealkylation / hydrolysis step. Med-chem handle for soft-spot design.
 
-- acetaldehyde leaving fragment (`xmet:2200031`)
-- alcohol leaving fragment (`xmet:2200021`)
-- allyl leaving group (`xmet:2200015`)
-- amine leaving fragment (`xmet:2200022`)
-- aryl leaving group (`xmet:2200033`)
-- benzyl leaving group (`xmet:2200014`)
-- bromide leaving group (`xmet:2200019`)
-- carboxylate leaving group (`xmet:2200025`)
-- chloride leaving group (`xmet:2200018`)
-- cyanide leaving group (`xmet:2200037`)
-- ethyl leaving group (`xmet:2200011`)
-- fluoride leaving group (`xmet:2200017`)
-- formaldehyde leaving fragment (`xmet:2200030`)
-- halide leaving group (`xmet:2200016`)
-- hydrogen leaving group (`xmet:2200029`)
+- acetaldehyde leaving fragment (`xmet:4000251`)
+- alcohol leaving fragment (`xmet:4000241`)
+- allyl leaving group (`xmet:4000235`)
+- amine leaving fragment (`xmet:4000242`)
+- aryl leaving group (`xmet:4000253`)
+- benzyl leaving group (`xmet:4000234`)
+- bromide leaving group (`xmet:4000239`)
+- carboxylate leaving group (`xmet:4000245`)
+- chloride leaving group (`xmet:4000238`)
+- cyanide leaving group (`xmet:4000257`)
+- ethyl leaving group (`xmet:4000231`)
+- fluoride leaving group (`xmet:4000237`)
+- formaldehyde leaving fragment (`xmet:4000250`)
+- halide leaving group (`xmet:4000236`)
+- hydrogen leaving group (`xmet:4000249`)
 - … +15 more direct children
 
 ## pharmacological role (`xmet:2300000`, ~10 descendants)

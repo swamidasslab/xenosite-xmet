@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 REMAP_PATH = ROOT / "data/mappings/xmet-id-remap.tsv"
 OUT_PATH = ROOT / "data/mappings/xmet-tagger.sssom.tsv"
-REACTION_CLASS = "xmet:1100000"
+REACTION_CLASS = "xmet:4000213"
 
 DEFAULT_RULES_DIR = ROOT.parent / "crates" / "xenosite-tagger" / "data" / "rules"
 RULE_FILES = ("xenobiotic.rules.yaml", "structural.rules.yaml")

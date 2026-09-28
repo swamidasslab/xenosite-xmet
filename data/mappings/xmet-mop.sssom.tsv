@@ -1,20 +1,20 @@
 # exactMatch: label+definition identity; UDM enum present; mop.obo name→id.
 # Excludes placement stubs, Phase-II-scoped methylation, Rainbow colors, bad UDM comments.
 subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label
-xmet:0000110	skos:exactMatch	mop:0000671	semapv:ManualMappingCuration	epoxidation	epoxidation
-xmet:1100014	skos:exactMatch	mop:0001550	semapv:ManualMappingCuration	dehalogenation	dehalogenation
-xmet:0000610	skos:exactMatch	mop:0000369	semapv:ManualMappingCuration	alkylation	alkylation
-xmet:0000611	skos:exactMatch	mop:0002369	semapv:ManualMappingCuration	N-alkylation	N-alkylation
-xmet:0000621	skos:exactMatch	mop:0000591	semapv:ManualMappingCuration	carboxylation	carboxylation
-xmet:0000640	skos:exactMatch	mop:0000561	semapv:ManualMappingCuration	cyclization	cyclization
-xmet:0000660	skos:exactMatch	mop:0000550	semapv:ManualMappingCuration	halogenation	halogenation
-xmet:0000661	skos:exactMatch	mop:0000650	semapv:ManualMappingCuration	amination	amination
-xmet:0000670	skos:exactMatch	mop:0000003	semapv:ManualMappingCuration	formylation	formylation
-xmet:0000730	skos:exactMatch	mop:0000411	semapv:ManualMappingCuration	arylation	arylation
-xmet:0000101	skos:closeMatch	mop:0000673	semapv:ManualMappingCuration	aromatic hydroxylation	hydroxylation
-xmet:0000200	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	dealkylation	demethylation
-xmet:0000013	skos:closeMatch	mop:0000402	semapv:ManualMappingCuration	hydrolysis	hydrolysis
-xmet:0001020	skos:closeMatch	mop:0000035	semapv:ManualMappingCuration	acetylation	acetylation
-xmet:0000201	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	N-dealkylation	demethylation
-xmet:0000202	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	O-dealkylation	demethylation
-xmet:1100000	skos:broadMatch	mop:0000000	semapv:ManualMappingCuration	chemical transformation	molecular process
+xmet:4000022	skos:exactMatch	mop:0000671	semapv:ManualMappingCuration	epoxidation	epoxidation
+xmet:4000214	skos:exactMatch	mop:0001550	semapv:ManualMappingCuration	dehalogenation	dehalogenation
+xmet:4000116	skos:exactMatch	mop:0000369	semapv:ManualMappingCuration	alkylation	alkylation
+xmet:4000117	skos:exactMatch	mop:0002369	semapv:ManualMappingCuration	N-alkylation	N-alkylation
+xmet:4000122	skos:exactMatch	mop:0000591	semapv:ManualMappingCuration	carboxylation	carboxylation
+xmet:4000127	skos:exactMatch	mop:0000561	semapv:ManualMappingCuration	cyclization	cyclization
+xmet:4000129	skos:exactMatch	mop:0000550	semapv:ManualMappingCuration	halogenation	halogenation
+xmet:4000130	skos:exactMatch	mop:0000650	semapv:ManualMappingCuration	amination	amination
+xmet:4000131	skos:exactMatch	mop:0000003	semapv:ManualMappingCuration	formylation	formylation
+xmet:4000145	skos:exactMatch	mop:0000411	semapv:ManualMappingCuration	arylation	arylation
+xmet:4000013	skos:closeMatch	mop:0000673	semapv:ManualMappingCuration	aromatic hydroxylation	hydroxylation
+xmet:4000042	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	dealkylation	demethylation
+xmet:4000007	skos:closeMatch	mop:0000402	semapv:ManualMappingCuration	hydrolysis	hydrolysis
+xmet:4000163	skos:closeMatch	mop:0000035	semapv:ManualMappingCuration	acetylation	acetylation
+xmet:4000043	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	N-dealkylation	demethylation
+xmet:4000044	skos:closeMatch	mop:0000669	semapv:ManualMappingCuration	O-dealkylation	demethylation
+xmet:4000213	skos:broadMatch	mop:0000000	semapv:ManualMappingCuration	chemical transformation	molecular process

@@ -5,7 +5,7 @@
 
 This repo is the **source of truth** for the XMET concept scheme: authoring YAML,
 exported SKOS, SSSOM crosswalks, competency questions, and MetXBioDB/AMD
-term→XMET mapping. Concept CURIEs use the `xmet:` prefix (e.g. `xmet:1100000`).
+term→XMET mapping. Concept CURIEs use the `xmet:` prefix (e.g. `xmet:4000213`).
 Scheme IRI: `https://xenosite.org/ontology/xmet#`.
 
 The reaction **tagger / RuleSet engine** lives in

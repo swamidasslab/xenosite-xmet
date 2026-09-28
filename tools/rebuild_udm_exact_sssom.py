@@ -18,16 +18,16 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Hand-reviewed KEEP set (label + definition identity). Update only after review.
 KEEP: dict[str, str] = {
-    "xmet:0000110": "mop:0000671",  # epoxidation
-    "xmet:1100014": "mop:0001550",  # dehalogenation
-    "xmet:0000610": "mop:0000369",  # alkylation
-    "xmet:0000611": "mop:0002369",  # N-alkylation
-    "xmet:0000621": "mop:0000591",  # carboxylation
-    "xmet:0000640": "mop:0000561",  # cyclization
-    "xmet:0000660": "mop:0000550",  # halogenation
-    "xmet:0000661": "mop:0000650",  # amination
-    "xmet:0000670": "mop:0000003",  # formylation
-    "xmet:0000730": "mop:0000411",  # arylation
+    "xmet:4000022": "mop:0000671",  # epoxidation
+    "xmet:4000214": "mop:0001550",  # dehalogenation
+    "xmet:4000116": "mop:0000369",  # alkylation
+    "xmet:4000117": "mop:0002369",  # N-alkylation
+    "xmet:4000122": "mop:0000591",  # carboxylation
+    "xmet:4000127": "mop:0000561",  # cyclization
+    "xmet:4000129": "mop:0000550",  # halogenation
+    "xmet:4000130": "mop:0000650",  # amination
+    "xmet:4000131": "mop:0000003",  # formylation
+    "xmet:4000145": "mop:0000411",  # arylation
 }
 
 FIELDS = [

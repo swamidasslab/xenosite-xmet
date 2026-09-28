@@ -2,6 +2,11 @@
 
 ## 2026-09-28
 
+- Opaque dense renumber of all 406 live concepts to ``xmet:4000000``…``xmet:4000405`` via ``tools/renumber_xmet_ids.py`` (two-phase placeholders; no hierarchy in IDs). Covered ontology + all mapping SSSOM/views/expectations; ledger in ``xmet-id-renumber.tsv``. Chose ``4000000+`` because ``1000000+`` overlapped live ``1xxxxxx`` IDs. Tagger rule emits on main still use pre-redesign CURIEs — separate sync needed.
+
+
+## 2026-09-28
+
 - Nested relation vocab ``always with`` under ``suggests``. Wired YAML ``always_with`` → ``xmet:alwaysWith``. Upgraded dehalogenation → halide LG from suggests to alwaysWith (generic→halide root; *de*fluorination/chlorination/bromination→matching leaf); LG→reaction stays suggests.
 
 
@@ -32,7 +37,7 @@
 
 ## 2026-09-28
 
-- Relabeled broad Forest-aligned **quinone** homes to **quinone-like species** (quinoid); minted narrow classical **quinone formation** (`xmet:3001246`) under quinone-like products beside quinone-imine and quinone-methide; ortho/para nest under the narrow quinone term. Forest/tagger SSSOM stay on the broad parent.
+- Relabeled broad Forest-aligned **quinone** homes to **quinone-like species** (quinoid); minted narrow classical **quinone formation** (`xmet:4000394`) under quinone-like products beside quinone-imine and quinone-methide; ortho/para nest under the narrow quinone term. Forest/tagger SSSOM stay on the broad parent.
 
 
 ## 2026-09-28
@@ -42,7 +47,7 @@
 
 ## 2026-09-28
 
-- Dropped quinone ``stepwise quinone formation`` shelf; moved one-/two-/three-step to reaction-descriptor **multistep** (`xmet:3001245`), ``related_to`` composite transformation (YAML ``related_to`` → ``xmet:relatedTo``).
+- Dropped quinone ``stepwise quinone formation`` shelf; moved one-/two-/three-step to reaction-descriptor **multistep** (`xmet:4000393`), ``related_to`` composite transformation (YAML ``related_to`` → ``xmet:relatedTo``).
 
 
 ## 2026-09-28
@@ -75,7 +80,7 @@
   (`yaml_related_match_forbidden`, `sssom_related_match_forbidden`).
 
 - Antonym pairs marked via YAML `antonyms:` → `xmet:antonymOf` (relation vocab
-  `antonym of` xmet:3001192). Fuzzy audit skips antonym pairs. Synonym cleanups:
+  `antonym of` xmet:4000342). Fuzzy audit skips antonym pairs. Synonym cleanups:
   aromatic epoxidation ≠ arene oxide; mesylate ≠ sulfonate parent label; cyanide
   vs nitrile kept distinct (cross-syns dropped); ether hydrolysis ≠ ether cleavage
   syn. Reparented dehalogenation → isoredox; alkene epoxidation → epoxidation.
@@ -120,7 +125,7 @@
   hydration; composite dihydrodiol pathway `hasPart` includes trans-diol.
 
 - NIH shift: **not a composite** — single rearrangement step. Merged into
-  **arene oxide rearrangement to phenol** (`xmet:0004005`); "NIH shift" kept as
+  **arene oxide rearrangement to phenol** (`xmet:4000197`); "NIH shift" kept as
   synonym. Composite arenol-conjugation pathway `hasPart` updated.
 
 - Quinone formation: removed from under dehydrogenation; **composite only**.

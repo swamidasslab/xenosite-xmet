@@ -1,23 +1,23 @@
 source_term	xrm_id	preferred_label	note
-O-sulfonation	xmet:0001011	O-sulfation	MetX spelling variant of O-sulfation
-GSH-conjugation	xmet:0001030	glutathionation	hyphenated GSH form
-GSH conjugation	xmet:0001030	glutathionation	spacing variant
-C-Hydroxylation	xmet:0000100	hydroxylation	AMD label; already synonym of hydroxylation
-C-Oxidation	xmet:0000021	carbon oxidation	AMD umbrella → carbon oxidation
-N-Reduction	xmet:0000510	nitrogen reduction	AMD heteroatom reduction class
-S-Oxidation	xmet:0000130	sulfur oxidation	already synonym; alias for robustness
-N-Oxidation	xmet:0000120	nitrogen oxidation	already synonym; alias for robustness
-O-Glucuronidation	xmet:0001001	O-glucuronidation	casing
-O-Sulfation	xmet:0001011	O-sulfation	casing
-O-Demethylation	xmet:0000209	O-demethylation	casing
-N-Demethylation	xmet:0000205	N-demethylation	casing
-N-Dealkylation	xmet:0000201	N-dealkylation	casing
-O-Dealkylation	xmet:0000202	O-dealkylation	casing
-S-Dealkylation	xmet:0000203	S-dealkylation	casing
-Glutathionation	xmet:0001030	glutathionation	casing
-Epoxidation	xmet:0000110	epoxidation	casing
-Hydrolysis	xmet:0000013	hydrolysis	casing
-Reduction	xmet:0000014	reduction	casing
-Oxidation	xmet:0000020	oxidation	casing
-Aromatic Hydroxylation	xmet:0000101	aromatic hydroxylation	casing
-Aliphatic Hydroxylation	xmet:0000102	aliphatic hydroxylation	casing
+O-sulfonation	xmet:4000159	O-sulfation	MetX spelling variant of O-sulfation
+GSH-conjugation	xmet:4000167	glutathionation	hyphenated GSH form
+GSH conjugation	xmet:4000167	glutathionation	spacing variant
+C-Hydroxylation	xmet:4000012	hydroxylation	AMD label; already synonym of hydroxylation
+C-Oxidation	xmet:4000009	carbon oxidation	AMD umbrella → carbon oxidation
+N-Reduction	xmet:4000093	nitrogen reduction	AMD heteroatom reduction class
+S-Oxidation	xmet:4000032	sulfur oxidation	already synonym; alias for robustness
+N-Oxidation	xmet:4000026	nitrogen oxidation	already synonym; alias for robustness
+O-Glucuronidation	xmet:4000149	O-glucuronidation	casing
+O-Sulfation	xmet:4000159	O-sulfation	casing
+O-Demethylation	xmet:4000050	O-demethylation	casing
+N-Demethylation	xmet:4000349	N-demethylation	casing
+N-Dealkylation	xmet:4000043	N-dealkylation	casing
+O-Dealkylation	xmet:4000044	O-dealkylation	casing
+S-Dealkylation	xmet:4000045	S-dealkylation	casing
+Glutathionation	xmet:4000167	glutathionation	casing
+Epoxidation	xmet:4000022	epoxidation	casing
+Hydrolysis	xmet:4000007	hydrolysis	casing
+Reduction	xmet:4000008	reduction	casing
+Oxidation	xmet:4000009	oxidation	casing
+Aromatic Hydroxylation	xmet:4000013	aromatic hydroxylation	casing
+Aliphatic Hydroxylation	xmet:4000014	aliphatic hydroxylation	casing

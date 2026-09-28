@@ -32,15 +32,15 @@ PREFERRED_SPINE_SCHEMES = {
 }
 
 ROOT_ALLOWED = {
-    "xmet:0000000",
-    "xmet:1100000",
+    "xmet:4000000",
+    "xmet:4000213",
     "xmet:2500000",
     "xmet:1500000",
     "xmet:1600000",
     "xmet:7500000",
     "xmet:7900000",
     "xmet:2100000",
-    "xmet:3000000",
+    "xmet:4000263",
 }
 
 XMET_ID = re.compile(r"^xmet:[0-9]{7}$|^xmet:[A-Za-z_][A-Za-z0-9_]*$")
@@ -272,7 +272,7 @@ def validate(path: Path, mapping_files: list[Path] | None = None) -> tuple[list[
 
         # Phase and activation language should not be preferred hierarchy parents
         # for reaction classes.
-        for forbidden in ("xmet:0000001", "xmet:0000002", "xmet:0003000"):
+        for forbidden in ("xmet:4000001", "xmet:4000002", "xmet:0003000"):
             if forbidden in parents and spine == "reaction_class":
                 errors.append(
                     Problem(

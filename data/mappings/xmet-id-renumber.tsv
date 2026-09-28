@@ -1,0 +1,407 @@
+old_id	new_id	preferred_label
+xmet:0000000	xmet:4000000	xenobiotic biotransformation
+xmet:0000001	xmet:4000001	phase I
+xmet:0000002	xmet:4000002	phase II
+xmet:0000003	xmet:4000003	phase III
+xmet:0000010	xmet:4000004	stable oxygenation
+xmet:0000011	xmet:4000005	unstable oxygenation
+xmet:0000012	xmet:4000006	dehydrogenation
+xmet:0000013	xmet:4000007	hydrolysis
+xmet:0000014	xmet:4000008	reduction
+xmet:0000020	xmet:4000009	oxidation
+xmet:0000022	xmet:4000010	heteroatom oxidation
+xmet:0000024	xmet:4000011	conjugation
+xmet:0000100	xmet:4000012	hydroxylation
+xmet:0000101	xmet:4000013	aromatic hydroxylation
+xmet:0000102	xmet:4000014	aliphatic hydroxylation
+xmet:0000103	xmet:4000015	para-hydroxylation
+xmet:0000104	xmet:4000016	ortho-hydroxylation
+xmet:0000105	xmet:4000017	meta-hydroxylation
+xmet:0000106	xmet:4000018	benzylic hydroxylation
+xmet:0000107	xmet:4000019	allylic hydroxylation
+xmet:0000108	xmet:4000020	ω-hydroxylation
+xmet:0000109	xmet:4000021	ω-1 hydroxylation
+xmet:0000110	xmet:4000022	epoxidation
+xmet:0000111	xmet:4000023	alkene epoxidation
+xmet:0000112	xmet:4000024	arene oxide formation
+xmet:0000113	xmet:4000025	thiophene epoxidation
+xmet:0000120	xmet:4000026	nitrogen oxidation
+xmet:0000121	xmet:4000027	N-oxide formation
+xmet:0000122	xmet:4000028	hydroxylamine formation
+xmet:0000123	xmet:4000029	nitroso formation
+xmet:0000124	xmet:4000030	primary amine N-oxidation
+xmet:0000125	xmet:4000031	aromatic amine N-oxidation
+xmet:0000130	xmet:4000032	sulfur oxidation
+xmet:0000131	xmet:4000033	sulfoxidation
+xmet:0000132	xmet:4000034	sulfone formation
+xmet:0000133	xmet:4000035	thiophene S-oxidation
+xmet:0000134	xmet:4000036	thiol oxidation
+xmet:0000135	xmet:4000037	disulfide formation
+xmet:0000140	xmet:4000038	primary carbon hydroxylation
+xmet:0000141	xmet:4000039	secondary carbon hydroxylation
+xmet:0000142	xmet:4000040	tertiary carbon hydroxylation
+xmet:0000143	xmet:4000041	alicyclic hydroxylation
+xmet:0000200	xmet:4000042	dealkylation
+xmet:0000201	xmet:4000043	N-dealkylation
+xmet:0000202	xmet:4000044	O-dealkylation
+xmet:0000203	xmet:4000045	S-dealkylation
+xmet:0000204	xmet:4000046	C-dealkylation
+xmet:0000206	xmet:4000047	N-deethylation
+xmet:0000207	xmet:4000048	N-depropylation
+xmet:0000208	xmet:4000049	oxidative deamination
+xmet:0000209	xmet:4000050	O-demethylation
+xmet:0000210	xmet:4000051	oxidative dehalogenation
+xmet:0000211	xmet:4000052	O-deethylation
+xmet:0000212	xmet:4000053	aromatic O-dealkylation
+xmet:0000213	xmet:4000054	aliphatic O-dealkylation
+xmet:0000214	xmet:4000055	oxidative defluorination
+xmet:0000215	xmet:4000056	oxidative dechlorination
+xmet:0000216	xmet:4000057	oxidative debromination
+xmet:0000217	xmet:4000058	S-demethylation
+xmet:0000300	xmet:4000059	quinone-like species formation
+xmet:0000301	xmet:4000060	ortho-quinone formation
+xmet:0000302	xmet:4000061	para-quinone formation
+xmet:0000303	xmet:4000062	quinone-imine formation
+xmet:0000304	xmet:4000063	quinone-methide formation
+xmet:0000305	xmet:4000064	iminium ion formation
+xmet:0000306	xmet:4000065	imine-methide formation
+xmet:0000307	xmet:4000066	one-step
+xmet:0000308	xmet:4000067	two-step
+xmet:0000309	xmet:4000068	three-step
+xmet:0000310	xmet:4000069	alcohol oxidation
+xmet:0000311	xmet:4000070	primary alcohol oxidation
+xmet:0000312	xmet:4000071	secondary alcohol oxidation
+xmet:0000313	xmet:4000072	aldehyde oxidation
+xmet:0000314	xmet:4000073	alkene formation
+xmet:0000315	xmet:4000074	aromatization
+xmet:0000316	xmet:4000075	single- to double-bond dehydrogenation
+xmet:0000317	xmet:4000076	double- to triple-bond dehydrogenation
+xmet:0000400	xmet:4000077	epoxide opening
+xmet:0000401	xmet:4000078	ester hydrolysis
+xmet:0000402	xmet:4000079	amide hydrolysis
+xmet:0000403	xmet:4000080	lactone hydrolysis
+xmet:0000404	xmet:4000081	lactam hydrolysis
+xmet:0000405	xmet:4000082	carbamate hydrolysis
+xmet:0000406	xmet:4000083	urea hydrolysis
+xmet:0000407	xmet:4000084	ether cleavage
+xmet:0000408	xmet:4000085	ether hydrolysis
+xmet:0000409	xmet:4000086	cyanide hydrolysis
+xmet:0000410	xmet:4000087	dephosphorylation
+xmet:0000411	xmet:4000088	nitrile hydrolysis
+xmet:0000412	xmet:4000089	azo cleavage
+xmet:0000500	xmet:4000090	hydrogenation
+xmet:0000501	xmet:4000091	alkene hydrogenation
+xmet:0000502	xmet:4000092	alkyne hydrogenation
+xmet:0000510	xmet:4000093	nitrogen reduction
+xmet:0000511	xmet:4000094	nitro reduction
+xmet:0000512	xmet:4000095	nitro to amine reduction
+xmet:0000513	xmet:4000096	nitroaromatic reduction
+xmet:0000514	xmet:4000097	azo reduction
+xmet:0000515	xmet:4000098	N-oxide reduction
+xmet:0000516	xmet:4000099	oxime reduction
+xmet:0000517	xmet:4000100	benzodioxole reduction
+xmet:0000520	xmet:4000101	oxygen reduction
+xmet:0000521	xmet:4000102	ketone reduction
+xmet:0000522	xmet:4000103	aldehyde reduction
+xmet:0000523	xmet:4000104	quinone-like reduction
+xmet:0000524	xmet:4000105	carbonyl reduction
+xmet:0000530	xmet:4000106	sulfur reduction
+xmet:0000531	xmet:4000107	sulfoxide reduction
+xmet:0000532	xmet:4000108	disulfide reduction
+xmet:0000533	xmet:4000109	sulfo reduction
+xmet:0000540	xmet:4000110	reductive dehalogenation
+xmet:0000541	xmet:4000111	reductive defluorination
+xmet:0000542	xmet:4000112	reductive dechlorination
+xmet:0000550	xmet:4000113	dehydration
+xmet:0000600	xmet:4000114	cyanidation
+xmet:0000601	xmet:4000115	decyanidation
+xmet:0000610	xmet:4000116	alkylation
+xmet:0000611	xmet:4000117	N-alkylation
+xmet:0000612	xmet:4000118	O-alkylation
+xmet:0000613	xmet:4000119	S-alkylation
+xmet:0000614	xmet:4000120	C-alkylation
+xmet:0000620	xmet:4000121	decarboxylation
+xmet:0000621	xmet:4000122	carboxylation
+xmet:0000630	xmet:4000123	esterification
+xmet:0000631	xmet:4000124	transesterification
+xmet:0000632	xmet:4000125	lactonization
+xmet:0000633	xmet:4000126	lactamization
+xmet:0000640	xmet:4000127	cyclization
+xmet:0000650	xmet:4000128	dehydroxylation
+xmet:0000660	xmet:4000129	halogenation
+xmet:0000661	xmet:4000130	amination
+xmet:0000670	xmet:4000131	formylation
+xmet:0000671	xmet:4000132	deformylation
+xmet:0000680	xmet:4000133	N-nitrosation
+xmet:0000681	xmet:4000134	denitrosation
+xmet:0000690	xmet:4000135	desulfuration
+xmet:0000691	xmet:4000136	sulfuration
+xmet:0000700	xmet:4000137	deglucuronidation
+xmet:0000701	xmet:4000138	desulfation
+xmet:0000702	xmet:4000139	deglycosidation
+xmet:0000703	xmet:4000140	deglutathionation
+xmet:0000704	xmet:4000141	decysteination
+xmet:0000710	xmet:4000142	Se-methylation
+xmet:0000720	xmet:4000143	dearylation
+xmet:0000721	xmet:4000144	alpha-hydroxylation
+xmet:0000730	xmet:4000145	arylation
+xmet:0000731	xmet:4000146	carbonylation
+xmet:0000732	xmet:4000147	deconjugation
+xmet:0001000	xmet:4000148	glucuronidation
+xmet:0001001	xmet:4000149	O-glucuronidation
+xmet:0001002	xmet:4000150	phenolic glucuronidation
+xmet:0001003	xmet:4000151	alcoholic glucuronidation
+xmet:0001004	xmet:4000152	acyl glucuronidation
+xmet:0001005	xmet:4000153	N-glucuronidation
+xmet:0001006	xmet:4000154	quaternary N-glucuronidation
+xmet:0001007	xmet:4000155	S-glucuronidation
+xmet:0001008	xmet:4000156	C-glucuronidation
+xmet:0001009	xmet:4000157	carbamoyl glucuronidation
+xmet:0001010	xmet:4000158	sulfation
+xmet:0001011	xmet:4000159	O-sulfation
+xmet:0001012	xmet:4000160	phenolic sulfation
+xmet:0001013	xmet:4000161	alcoholic sulfation
+xmet:0001014	xmet:4000162	N-sulfation
+xmet:0001020	xmet:4000163	acetylation
+xmet:0001021	xmet:4000164	N-acetylation
+xmet:0001022	xmet:4000165	O-acetylation
+xmet:0001023	xmet:4000166	deacetylation
+xmet:0001030	xmet:4000167	glutathione conjugation
+xmet:0001031	xmet:4000168	Michael glutathionation
+xmet:0001032	xmet:4000169	epoxide glutathionation
+xmet:0001033	xmet:4000170	halide displacement glutathionation
+xmet:0001034	xmet:4000171	isocyanate glutathionation
+xmet:0001035	xmet:4000172	aziridine glutathionation
+xmet:0001036	xmet:4000173	quinone-like glutathionation
+xmet:0001037	xmet:4000174	mercapturic acid formation
+xmet:0001040	xmet:4000175	methylation
+xmet:0001041	xmet:4000176	O-methylation
+xmet:0001042	xmet:4000177	N-methylation
+xmet:0001043	xmet:4000178	S-methylation
+xmet:0001050	xmet:4000179	amino acid conjugation
+xmet:0001051	xmet:4000180	glycine conjugation
+xmet:0001052	xmet:4000181	glutamine conjugation
+xmet:0001053	xmet:4000182	taurine conjugation
+xmet:0001054	xmet:4000183	serine conjugation
+xmet:0001060	xmet:4000184	glycosylation
+xmet:0001061	xmet:4000185	CoA conjugation
+xmet:0002000	xmet:4000186	tautomerization
+xmet:0002001	xmet:4000187	keto–enol tautomerization
+xmet:0002002	xmet:4000188	imine–enamine tautomerization
+xmet:0002003	xmet:4000189	isomerization
+xmet:0002004	xmet:4000190	rearrangement
+xmet:0002005	xmet:4000191	deacylation
+xmet:0002006	xmet:4000192	denitrogenation
+xmet:0002007	xmet:4000193	decarbonylation
+xmet:0004001	xmet:4000194	dearomatization
+xmet:0004002	xmet:4000195	rearomatization
+xmet:0004004	xmet:4000196	ipso substitution
+xmet:0004005	xmet:4000197	arene oxide rearrangement to phenol
+xmet:0004006	xmet:4000198	carbinolamine cleavage
+xmet:0004007	xmet:4000199	hemiacetal cleavage
+xmet:0004008	xmet:4000200	ring opening
+xmet:0004009	xmet:4000201	ring expansion
+xmet:0004010	xmet:4000202	ring contraction
+xmet:0004011	xmet:4000203	cis-diol formation
+xmet:0004012	xmet:4000204	hydration
+xmet:0004013	xmet:4000205	hydration of carbonyl
+xmet:0004014	xmet:4000206	conjugate addition
+xmet:0004015	xmet:4000207	nucleophilic aromatic substitution
+xmet:0004016	xmet:4000208	radical recombination metabolite
+xmet:0004017	xmet:4000209	acyl migration
+xmet:0004018	xmet:4000210	transacylation
+xmet:0004019	xmet:4000211	radical formation
+xmet:1000000	xmet:4000212	disposition stage
+xmet:1100000	xmet:4000213	reaction class
+xmet:1100014	xmet:4000214	isoredox dehalogenation
+xmet:1200101	xmet:4000215	aliphatic epoxidation
+xmet:1200106	xmet:4000216	amine dehydrogenation
+xmet:1300010	xmet:4000217	cysteine conjugation
+xmet:1300011	xmet:4000218	N-acetylcysteine conjugation
+xmet:1300012	xmet:4000219	phosphorylation
+xmet:1700000	xmet:4000220	structural delta
+xmet:1700011	xmet:4000221	mass shift
+xmet:1700017	xmet:4000222	stereochemical change
+xmet:1700100	xmet:4000223	oxygenation mass shift
+xmet:1700102	xmet:4000224	demethylation mass shift
+xmet:1700103	xmet:4000225	deethylation mass shift
+xmet:1700104	xmet:4000226	glucuronide mass shift
+xmet:1700105	xmet:4000227	sulfate mass shift
+xmet:1700106	xmet:4000228	GSH mass shift
+xmet:2200000	xmet:4000229	leaving group
+xmet:2200010	xmet:4000230	methyl leaving group
+xmet:2200011	xmet:4000231	ethyl leaving group
+xmet:2200012	xmet:4000232	propyl leaving group
+xmet:2200013	xmet:4000233	isopropyl leaving group
+xmet:2200014	xmet:4000234	benzyl leaving group
+xmet:2200015	xmet:4000235	allyl leaving group
+xmet:2200016	xmet:4000236	halide leaving group
+xmet:2200017	xmet:4000237	fluoride leaving group
+xmet:2200018	xmet:4000238	chloride leaving group
+xmet:2200019	xmet:4000239	bromide leaving group
+xmet:2200020	xmet:4000240	iodide leaving group
+xmet:2200021	xmet:4000241	alcohol leaving fragment
+xmet:2200022	xmet:4000242	amine leaving fragment
+xmet:2200023	xmet:4000243	phenol leaving fragment
+xmet:2200024	xmet:4000244	thiol leaving fragment
+xmet:2200025	xmet:4000245	carboxylate leaving group
+xmet:2200026	xmet:4000246	phosphate leaving group
+xmet:2200027	xmet:4000247	sulfate leaving group
+xmet:2200028	xmet:4000248	water leaving group
+xmet:2200029	xmet:4000249	hydrogen leaving group
+xmet:2200030	xmet:4000250	formaldehyde leaving fragment
+xmet:2200031	xmet:4000251	acetaldehyde leaving fragment
+xmet:2200032	xmet:4000252	small alkyl leaving group
+xmet:2200033	xmet:4000253	aryl leaving group
+xmet:2200034	xmet:4000254	mesylate leaving group
+xmet:2200035	xmet:4000255	tosylate leaving group
+xmet:2200036	xmet:4000256	isocyanate leaving fragment
+xmet:2200037	xmet:4000257	cyanide leaving group
+xmet:2200038	xmet:4000258	nitrogen gas leaving group
+xmet:2200039	xmet:4000259	no leaving group
+xmet:2200040	xmet:4000260	carbonyl leaving fragment
+xmet:2200041	xmet:4000261	heteroatom or small-molecule leaving group
+xmet:2200042	xmet:4000262	sulfonate leaving group
+xmet:3000000	xmet:4000263	reaction descriptor
+xmet:3000004	xmet:4000264	elimination
+xmet:3000005	xmet:4000265	isoredox
+xmet:3000100	xmet:4000266	transfer conjugation
+xmet:3000200	xmet:4000267	adduct formation
+xmet:3000201	xmet:4000268	protein adduct formation
+xmet:3000202	xmet:4000269	DNA adduct formation
+xmet:3000203	xmet:4000270	cyanide conjugation
+xmet:3000300	xmet:4000271	skeletal rearrangement
+xmet:3000400	xmet:4000272	composite transformation
+xmet:3000500	xmet:4000273	ring effect
+xmet:3000510	xmet:4000274	aromaticity effect
+xmet:3000520	xmet:4000275	cleavage
+xmet:3000521	xmet:4000276	ring-opening cleavage
+xmet:3000522	xmet:4000277	cleavage with leaving group
+xmet:3000523	xmet:4000278	fragmenting cleavage
+xmet:3000600	xmet:4000279	GSH pyroglutamate neutral loss
+xmet:3000601	xmet:4000280	cyanide mass shift
+xmet:3001000	xmet:4000281	concept relation
+xmet:3001100	xmet:4000282	related to
+xmet:3001101	xmet:4000283	suggests
+xmet:3001102	xmet:4000284	always with
+xmet:3001103	xmet:4000285	has part
+xmet:3001104	xmet:4000286	is part of
+xmet:3001105	xmet:4000287	aromatic epoxidation
+xmet:3001106	xmet:4000288	reductive C–halogen cleavage
+xmet:3001107	xmet:4000289	reductive dehalogenation to alkene
+xmet:3001108	xmet:4000290	epoxide ring formation
+xmet:3001109	xmet:4000291	methine hydroxylation
+xmet:3001110	xmet:4000292	methyl or methylene hydroxylation
+xmet:3001111	xmet:4000293	hydrolytic bond cleavage
+xmet:3001112	xmet:4000294	carbonyl hydration with cleavage
+xmet:3001113	xmet:4000295	epoxide hydration
+xmet:3001114	xmet:4000296	epoxide rearrangement
+xmet:3001115	xmet:4000297	sulfur–oxygen zwitterion formation
+xmet:3001116	xmet:4000298	sulfenic acid formation
+xmet:3001117	xmet:4000299	sulfur oxo formation
+xmet:3001118	xmet:4000300	peroxide reduction
+xmet:3001119	xmet:4000301	thioether C–S or O–S cleavage
+xmet:3001120	xmet:4000302	alkane dehydrogenation
+xmet:3001121	xmet:4000303	sulfoxide formation by dehydrogenation
+xmet:3001122	xmet:4000304	alcohol dehydration
+xmet:3001123	xmet:4000305	beta-elimination
+xmet:3001124	xmet:4000306	carbonyl dehydration
+xmet:3001125	xmet:4000307	oxidative dehalogenation to alcohol
+xmet:3001126	xmet:4000308	oxidative dehalogenation to carbonyl
+xmet:3001127	xmet:4000309	oxidative dehalogenation to carboxylic acid
+xmet:3001128	xmet:4000310	1,2-halide migration with hydroxylation
+xmet:3001129	xmet:4000311	geminal dihalide to carboxylic acid
+xmet:3001130	xmet:4000312	geminal dihalide to geminal diol
+xmet:3001131	xmet:4000313	nitro N–O cleavage
+xmet:3001132	xmet:4000314	hydroxylamine N–O cleavage
+xmet:3001133	xmet:4000315	nitroso reduction
+xmet:3001142	xmet:4000316	quaternary C–heteroatom dealkylation
+xmet:3001145	xmet:4000317	quaternary C-dealkylation
+xmet:3001146	xmet:4000318	hemiaminal collapse dealkylation
+xmet:3001147	xmet:4000319	dehydrogenation to phenol
+xmet:3001148	xmet:4000320	dehydrogenation to amine
+xmet:3001149	xmet:4000321	dehydrogenation to alkyl methide site
+xmet:3001150	xmet:4000322	conjugated-path hydrogenation
+xmet:3001151	xmet:4000323	arene oxide–trans-dihydrodiol pathway
+xmet:3001152	xmet:4000324	arene oxide–arenol conjugation pathway
+xmet:3001153	xmet:4000325	diol formation
+xmet:3001154	xmet:4000326	trans-diol formation
+xmet:3001155	xmet:4000327	quinone-like single-to-double dehydrogenation
+xmet:3001156	xmet:4000328	quinone-like carbonyl-oxygen addition
+xmet:3001157	xmet:4000329	quinone-like formation by halide replacement
+xmet:3001158	xmet:4000330	dealkylative quinone-like formation
+xmet:3001159	xmet:4000331	epoxide methyl-sulfone sulfation
+xmet:3001160	xmet:4000332	thiol glutathionation
+xmet:3001161	xmet:4000333	alkene glutathionation
+xmet:3001162	xmet:4000334	carbonyl glutathionation
+xmet:3001163	xmet:4000335	mesylate glutathionation
+xmet:3001174	xmet:4000336	N-quaternary dealkylation
+xmet:3001175	xmet:4000337	N-hemiaminal collapse dealkylation
+xmet:3001188	xmet:4000338	carbon oxidation
+xmet:3001189	xmet:4000339	dioxygenation
+xmet:3001190	xmet:4000340	tertiary N-dealkylation
+xmet:3001191	xmet:4000341	secondary N-dealkylation
+xmet:3001192	xmet:4000342	antonym of
+xmet:3001193	xmet:4000343	dealkylation of alkyl carbons
+xmet:3001194	xmet:4000344	demethylation
+xmet:3001195	xmet:4000345	methylene dealkylation
+xmet:3001196	xmet:4000346	methine dealkylation
+xmet:3001198	xmet:4000347	N-dealkylation of secondary and tertiary amines
+xmet:3001199	xmet:4000348	N-dealkylation of alkyl carbons
+xmet:3001200	xmet:4000349	N-demethylation
+xmet:3001201	xmet:4000350	N-methylene dealkylation
+xmet:3001202	xmet:4000351	N-methine dealkylation
+xmet:3001203	xmet:4000352	carboxylate ester hydrolysis
+xmet:3001204	xmet:4000353	carboxamide hydrolysis
+xmet:3001205	xmet:4000354	ether bond hydrolysis
+xmet:3001206	xmet:4000355	nitrile bond hydrolysis
+xmet:3001207	xmet:4000356	hydrolytic deacylation
+xmet:3001208	xmet:4000357	isoredox additions
+xmet:3001209	xmet:4000358	isoredox removals
+xmet:3001210	xmet:4000359	oxygen leaving fragment
+xmet:3001211	xmet:4000360	nitrogen leaving fragment
+xmet:3001212	xmet:4000361	sulfur leaving fragment
+xmet:3001213	xmet:4000362	small inorganic leaving group
+xmet:3001214	xmet:4000363	quinone-like formation by product type
+xmet:3001215	xmet:4000364	quinone-like forming transformations
+xmet:3001217	xmet:4000365	glutathione and thiol adduct formation
+xmet:3001218	xmet:4000366	cyanide adduct formation
+xmet:3001219	xmet:4000367	macromolecular adducts
+xmet:3001220	xmet:4000368	adduct-forming additions
+xmet:3001221	xmet:4000369	acyl conjugations
+xmet:3001222	xmet:4000370	heteroatom conjugations
+xmet:3001223	xmet:4000371	glutathionation of epoxides and aziridines
+xmet:3001224	xmet:4000372	Michael and alkene glutathionation
+xmet:3001225	xmet:4000373	glutathionation with leaving-group displacement
+xmet:3001226	xmet:4000374	glutathionation of quinone-like species and thiols
+xmet:3001227	xmet:4000375	nitro-group reduction
+xmet:3001228	xmet:4000376	azo reduction and cleavage
+xmet:3001229	xmet:4000377	miscellaneous nitrogen reduction
+xmet:3001230	xmet:4000378	hydroxylation at chain positions
+xmet:3001231	xmet:4000379	hydroxylation of activated carbons
+xmet:3001232	xmet:4000380	aliphatic and alicyclic hydroxylation
+xmet:3001233	xmet:4000381	epoxide CH glutathionation
+xmet:3001234	xmet:4000382	epoxide CH2 glutathionation
+xmet:3001235	xmet:4000383	epoxide C glutathionation
+xmet:3001236	xmet:4000384	aziridine CH glutathionation
+xmet:3001237	xmet:4000385	aziridine CH2 glutathionation
+xmet:3001238	xmet:4000386	aziridine C glutathionation
+xmet:3001239	xmet:4000387	charged nitro N–O cleavage
+xmet:3001240	xmet:4000388	nitro-anion N–O cleavage
+xmet:3001241	xmet:4000389	neutral nitro N–O cleavage
+xmet:3001242	xmet:4000390	dual nitro N–O cleavage
+xmet:3001243	xmet:4000391	unspecified nitro N–O cleavage
+xmet:3001244	xmet:4000392	alkene to vicinal diol pathway
+xmet:3001245	xmet:4000393	step count
+xmet:3001246	xmet:4000394	quinone formation
+xmet:3001247	xmet:4000395	carbon–carbon dehydrogenation
+xmet:3001248	xmet:4000396	aldehyde leaving group
+xmet:3001249	xmet:4000397	cleaved-carbon oxidation state
+xmet:3001250	xmet:4000398	alcohol-level cleaved carbon
+xmet:3001251	xmet:4000399	aldehyde-level cleaved carbon
+xmet:3001252	xmet:4000400	ketone-level cleaved carbon
+xmet:3001253	xmet:4000401	carboxylic-level cleaved carbon
+xmet:3001254	xmet:4000402	carboxylic acid leaving fragment
+xmet:3001255	xmet:4000403	formic acid leaving fragment
+xmet:3001256	xmet:4000404	acetic acid leaving fragment
+xmet:7200006	xmet:4000405	ring closure

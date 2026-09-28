@@ -54,10 +54,10 @@ DROP_DISPOSITION_LABELS = {
 }
 
 KEEP_SPINE_IDS = {
-    "xmet:1000000",
-    "xmet:1100000",
-    "xmet:3000000",
-    "xmet:3001000",
+    "xmet:4000212",
+    "xmet:4000213",
+    "xmet:4000263",
+    "xmet:4000281",
 }
 
 
@@ -120,7 +120,7 @@ def main() -> None:
     old_spines = list(data.get("spines") or [])
     new_spines = [s for s in old_spines if s.get("id") in KEEP_SPINE_IDS]
     # Preserve order of KEEP as in plan
-    order = ["xmet:1000000", "xmet:1100000", "xmet:3000000", "xmet:3001000"]
+    order = ["xmet:4000212", "xmet:4000213", "xmet:4000263", "xmet:4000281"]
     by_spine = {s["id"]: s for s in new_spines}
     data["spines"] = [by_spine[i] for i in order if i in by_spine]
 
@@ -130,7 +130,7 @@ def main() -> None:
             continue
         parents = [p for p in (c.get("parents") or []) if p not in drop]
         c["parents"] = parents
-        if not parents and c["id"] != "xmet:0000000":
+        if not parents and c["id"] != "xmet:4000000":
             # orphaned non-root: should not happen for KEEP subtrees; park warning
             print(f"WARN orphan after drop: {c['id']} {c.get('preferred_label')}")
         kept.append(c)

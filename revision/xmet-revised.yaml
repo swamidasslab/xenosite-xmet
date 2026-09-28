@@ -134,7 +134,7 @@ concept_schemes:
     preferred_label: biological context cue scheme
     definition: Enzyme, species, matrix, tissue, and assay terms for extraction and grounding. Not reaction names.
 concepts:
-- id: xmet:0000000
+- id: xmet:4000000
   pref_label: xenobiotic biotransformation
   in_scheme:
   - xmet:reaction_class_scheme
@@ -143,7 +143,7 @@ concepts:
   - xenobiotic metabolism
   - drug metabolism
   - biotransformation
-- id: xmet:0000001
+- id: xmet:4000001
   pref_label: Phase I metabolism
   in_scheme:
   - xmet:disposition_stage_scheme
@@ -153,7 +153,7 @@ concepts:
   - phase I
   - phase 1
   - functionalization phase
-- id: xmet:0000002
+- id: xmet:4000002
   pref_label: Phase II metabolism
   in_scheme:
   - xmet:disposition_stage_scheme
@@ -162,7 +162,7 @@ concepts:
   - phase II
   - phase 2
   - conjugation phase
-- id: xmet:0000003
+- id: xmet:4000003
   pref_label: Phase III transport
   in_scheme:
   - xmet:disposition_stage_scheme
@@ -244,14 +244,14 @@ concepts:
   preferred_spine: biological_effect
   parents:
   - xmet:0002999
-- id: xmet:1100000
+- id: xmet:4000213
   pref_label: reaction class
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Enzyme-independent chemical transformation class.
   parents:
-  - xmet:0000000
-- id: xmet:0000020
+  - xmet:4000000
+- id: xmet:4000009
   pref_label: oxidation
   in_scheme:
   - xmet:reaction_class_scheme
@@ -259,8 +259,8 @@ concepts:
   parents:
   - xmet:0000005
   hasDispositionStage:
-  - xmet:0000001
-- id: xmet:0000014
+  - xmet:4000001
+- id: xmet:4000008
   pref_label: reduction
   in_scheme:
   - xmet:reaction_class_scheme
@@ -268,8 +268,8 @@ concepts:
   parents:
   - xmet:0000005
   hasDispositionStage:
-  - xmet:0000001
-- id: xmet:0000013
+  - xmet:4000001
+- id: xmet:4000007
   pref_label: hydrolysis
   in_scheme:
   - xmet:reaction_class_scheme
@@ -277,8 +277,8 @@ concepts:
   parents:
   - xmet:0000006
   hasDispositionStage:
-  - xmet:0000001
-- id: xmet:0000024
+  - xmet:4000001
+- id: xmet:4000011
   pref_label: conjugation
   in_scheme:
   - xmet:reaction_class_scheme
@@ -287,165 +287,165 @@ concepts:
   parents:
   - xmet:0000007
   hasDispositionStage:
-  - xmet:0000002
+  - xmet:4000002
   annotation_guidance: Do not infer detoxication from conjugation alone. Phase II transfer conjugation and adduct-forming
     conjugation are separate branches.
-- id: xmet:0000012
+- id: xmet:4000006
   pref_label: dehydrogenation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Removal of hydrogen atoms to form a carbonyl, iminium, unsaturated bond, aromatic system, or quinoid
     system.
   parents:
-  - xmet:0000023
+  - xmet:4000042
   hasDispositionStage:
-  - xmet:0000001
-- id: xmet:0000100
+  - xmet:4000001
+- id: xmet:4000012
   pref_label: hydroxylation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Addition or replacement leading to a hydroxylated product.
   parents:
-  - xmet:0000021
+  - xmet:4000009
   hasDispositionStage:
-  - xmet:0000001
-- id: xmet:0000101
+  - xmet:4000001
+- id: xmet:4000013
   pref_label: aromatic hydroxylation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Hydroxylation on an aromatic or heteroaromatic system.
   parents:
-  - xmet:0000100
+  - xmet:4000012
   mapping_hints:
   - predicate: relatedStructuralLocus
     object: xmet:1600013
     certainty: usually_true
-- id: xmet:0000102
+- id: xmet:4000014
   pref_label: aliphatic hydroxylation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Hydroxylation on a non-aromatic carbon site.
   parents:
-  - xmet:0000100
+  - xmet:4000012
   mapping_hints:
   - predicate: relatedStructuralLocus
     object: xmet:1600300
     certainty: usually_true
-- id: xmet:0000110
+- id: xmet:4000022
   pref_label: epoxidation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation of an alkene or aromatic system to an epoxide/arene oxide product.
   parents:
-  - xmet:0000021
+  - xmet:4000009
   tag_suggestions:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500101
     certainty: context_dependent
-- id: xmet:0000112
+- id: xmet:4000024
   pref_label: arene oxide formation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Formation of an arene oxide intermediate or product from an aromatic ring.
   parents:
-  - xmet:0000110
+  - xmet:4000022
   tag_suggestions:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500101
     certainty: context_dependent
-- id: xmet:0000120
+- id: xmet:4000026
   pref_label: N-oxidation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation at nitrogen to N-oxide, hydroxylamine, nitroso, or related nitrogen-oxygen product.
   parents:
-  - xmet:0000021
-- id: xmet:0000130
+  - xmet:4000009
+- id: xmet:4000032
   pref_label: S-oxidation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation at sulfur to sulfoxide, sulfone, S-oxide, or related sulfur-oxygen product.
   parents:
-  - xmet:0000021
-- id: xmet:0000133
+  - xmet:4000009
+- id: xmet:4000035
   pref_label: thiophene S-oxidation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation of thiophene or related sulfur heteroaromatic systems; may perturb aromaticity and yield
     trapping-prone products.
   parents:
-  - xmet:0000130
+  - xmet:4000032
   tag_suggestions:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500100
     certainty: context_dependent
-- id: xmet:0000200
+- id: xmet:4000042
   pref_label: dealkylation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Removal of an alkyl group from N, O, S, or C, often after alpha-carbon oxidation.
   parents:
-  - xmet:0000022
+  - xmet:4000010
   hasDispositionStage:
-  - xmet:0000001
-- id: xmet:0000201
+  - xmet:4000001
+- id: xmet:4000043
   pref_label: N-dealkylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000200
+  - xmet:4000042
   definition: Dealkylation at nitrogen.
   synonyms:
   - oxidative N-dealkylation
-- id: xmet:0000202
+- id: xmet:4000044
   pref_label: O-dealkylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000200
+  - xmet:4000042
   definition: Dealkylation at oxygen, commonly aryl or alkyl ether cleavage.
   synonyms:
   - oxidative O-dealkylation
-- id: xmet:0000203
+- id: xmet:4000045
   pref_label: S-dealkylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000200
+  - xmet:4000042
   definition: Dealkylation at sulfur.
-- id: xmet:0000205
+- id: xmet:4000349
   pref_label: N-demethylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000201
+  - xmet:4000043
   definition: N-dealkylation removing a methyl group, often with formaldehyde-equivalent coproduct.
   synonyms:
   - oxidative N-demethylation
-- id: xmet:0000209
+- id: xmet:4000050
   pref_label: O-demethylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000202
+  - xmet:4000044
   definition: O-dealkylation removing a methyl group.
   synonyms:
   - aryl methyl ether cleavage
-- id: xmet:0000210
+- id: xmet:4000051
   pref_label: oxidative dehalogenation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidative replacement or loss of halogen from a xenobiotic.
   parents:
-  - xmet:0000022
-- id: xmet:0000300
+  - xmet:4000010
+- id: xmet:4000059
   pref_label: quinoid formation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Formation of a quinone, quinone imine, quinone methide, or related quinoid pi-system. This term does
     not assert toxicity by itself.
   parents:
-  - xmet:0000012
+  - xmet:4000006
   synonyms:
   - quinone formation
   - quinone-like formation
@@ -454,26 +454,26 @@ concepts:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500100
     certainty: context_dependent
-- id: xmet:0000301
+- id: xmet:4000060
   pref_label: ortho-quinone formation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000300
+  - xmet:4000059
   definition: Formation of an ortho-quinone product or product substructure.
-- id: xmet:0000302
+- id: xmet:4000061
   pref_label: para-quinone formation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000300
+  - xmet:4000059
   definition: Formation of a para-quinone product or product substructure.
-- id: xmet:0000303
+- id: xmet:4000062
   pref_label: quinone imine formation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000300
+  - xmet:4000059
   definition: Formation of a quinone imine product or product substructure. Use reactive-product-potential tags
     for reactivity; do not use broad bioactivation as the parent.
   synonyms:
@@ -484,12 +484,12 @@ concepts:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500100
     certainty: context_dependent
-- id: xmet:0000304
+- id: xmet:4000063
   pref_label: quinone methide formation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000300
+  - xmet:4000059
   definition: Formation of a quinone methide product or product substructure.
   synonyms:
   - quinone-methide formation
@@ -497,135 +497,135 @@ concepts:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500100
     certainty: context_dependent
-- id: xmet:0000305
+- id: xmet:4000064
   pref_label: iminium ion formation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000012
+  - xmet:4000006
   definition: Dehydrogenation or oxidation yielding an iminium product or intermediate.
   tag_suggestions:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500100
     certainty: context_dependent
-- id: xmet:0000310
+- id: xmet:4000069
   pref_label: alcohol oxidation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000012
+  - xmet:4000006
   definition: Oxidation/dehydrogenation of alcohol to aldehyde, ketone, or further oxidized product.
-- id: xmet:0000315
+- id: xmet:4000074
   pref_label: aromatization
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000012
+  - xmet:4000006
   definition: Formation or restoration of an aromatic system.
-- id: xmet:0000400
+- id: xmet:4000077
   pref_label: epoxide opening
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000013
+  - xmet:4000007
   definition: Hydrolytic or nucleophilic opening of an epoxide or arene oxide.
-- id: xmet:0000401
+- id: xmet:4000078
   pref_label: ester hydrolysis
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000013
+  - xmet:4000007
   definition: Hydrolysis of an ester or lactone bond.
-- id: xmet:0000402
+- id: xmet:4000079
   pref_label: amide hydrolysis
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000013
+  - xmet:4000007
   definition: Hydrolysis of an amide or lactam bond.
-- id: xmet:0000411
+- id: xmet:4000088
   pref_label: nitrile hydrolysis
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000013
+  - xmet:4000007
   definition: Hydrolysis of a nitrile/cyano group.
   synonyms:
   - cyanide hydrolysis
-- id: xmet:0000412
+- id: xmet:4000089
   pref_label: azo cleavage
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000014
+  - xmet:4000008
   definition: Cleavage/reduction of an azo linkage.
   synonyms:
   - azo reduction
   - azo splitting
-- id: xmet:0000500
+- id: xmet:4000090
   pref_label: hydrogenation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000014
+  - xmet:4000008
   definition: Addition of hydrogen across unsaturated bonds or reduction of pi bonds.
-- id: xmet:0000511
+- id: xmet:4000094
   pref_label: nitro reduction
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0000014
+  - xmet:4000008
   definition: Reduction of a nitro group toward nitroso, hydroxylamine, or amine products.
   tag_suggestions:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500100
     certainty: context_dependent
-- id: xmet:0000550
+- id: xmet:4000113
   pref_label: dehydration
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
   - xmet:0000008
   definition: Loss of water to form unsaturation or rearranged product.
-- id: xmet:0001000
+- id: xmet:4000148
   pref_label: glucuronidation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001008
+  - xmet:4000156
   definition: Conjugation with glucuronic acid.
   hasDispositionStage:
-  - xmet:0000002
-- id: xmet:0001004
+  - xmet:4000002
+- id: xmet:4000152
   pref_label: acyl glucuronidation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001000
+  - xmet:4000148
   definition: Glucuronidation of a carboxylic acid to form an acyl glucuronide.
   tag_suggestions:
   - predicate: suggestsReactiveProductPotential
     object: xmet:7500102
     certainty: context_dependent
-- id: xmet:0001010
+- id: xmet:4000158
   pref_label: sulfation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001009
+  - xmet:4000157
   definition: Conjugation with sulfate.
   hasDispositionStage:
-  - xmet:0000002
-- id: xmet:0001020
+  - xmet:4000002
+- id: xmet:4000163
   pref_label: acetylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001009
+  - xmet:4000157
   definition: Conjugation or transfer of an acetyl group.
   hasDispositionStage:
-  - xmet:0000002
-- id: xmet:0001030
+  - xmet:4000002
+- id: xmet:4000167
   pref_label: glutathione conjugation
   in_scheme:
   - xmet:reaction_class_scheme
@@ -634,7 +634,7 @@ concepts:
   definition: Conjugation with glutathione, often reflecting electrophile capture. May be GST-mediated or nonenzymatic;
     enzyme mediation belongs in biological context, not the reaction-class parent.
   hasDispositionStage:
-  - xmet:0000002
+  - xmet:4000002
   synonyms:
   - GSH adduct formation
   - GSH conjugation
@@ -664,37 +664,37 @@ concepts:
     - m/z 130, depending on ionization mode and instrument method
     curation_note: Use mass-shift and MS/MS clues to prioritize candidate GSH adducts, but confirm with formula,
       isotope pattern, fragments, retention, and structure/path consistency.
-- id: xmet:0001031
+- id: xmet:4000168
   pref_label: Michael glutathione conjugation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001030
+  - xmet:4000167
   definition: Glutathione addition to a Michael acceptor or conjugated electrophile.
-- id: xmet:0001032
+- id: xmet:4000169
   pref_label: epoxide glutathione conjugation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001030
+  - xmet:4000167
   definition: Glutathione conjugation by epoxide opening.
-- id: xmet:0001036
+- id: xmet:4000173
   pref_label: quinone glutathione conjugation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001030
+  - xmet:4000167
   definition: Glutathione conjugation to a quinone, quinone imine, quinone methide, or related quinoid electrophile.
-- id: xmet:0001040
+- id: xmet:4000175
   pref_label: methylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001009
+  - xmet:4000157
   definition: Transfer or conjugation of a methyl group.
   hasDispositionStage:
-  - xmet:0000002
-- id: xmet:0001050
+  - xmet:4000002
+- id: xmet:4000179
   pref_label: amino acid conjugation
   in_scheme:
   - xmet:reaction_class_scheme
@@ -702,16 +702,16 @@ concepts:
   - xmet:0001016
   definition: Conjugation with amino acids such as glycine, taurine, glutamine, or serine.
   hasDispositionStage:
-  - xmet:0000002
-- id: xmet:0001060
+  - xmet:4000002
+- id: xmet:4000184
   pref_label: glycosylation
   in_scheme:
   - xmet:reaction_class_scheme
   parents:
-  - xmet:0001008
+  - xmet:4000156
   definition: Conjugation with a sugar moiety other than glucuronide where specifically known.
   hasDispositionStage:
-  - xmet:0000002
+  - xmet:4000002
 - id: xmet:2500000
   pref_label: metabolite product family
   in_scheme:
@@ -963,7 +963,7 @@ concepts:
   parents:
   - xmet:7900011
   definition: Last enumerated transformation yielding the reported or predicted product.
-- id: xmet:3000000
+- id: xmet:4000263
   pref_label: metabolism text-mining cue
   in_scheme:
   - xmet:text_mining_scheme
@@ -1355,28 +1355,28 @@ concepts:
   - xmet:reaction_class_scheme
   definition: Reaction class involving net oxidation or reduction.
   parents:
-  - xmet:1100000
+  - xmet:4000213
 - id: xmet:0000006
   pref_label: bond cleavage reaction
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Reaction class whose defining edit cleaves a bond.
   parents:
-  - xmet:1100000
+  - xmet:4000213
 - id: xmet:0000007
   pref_label: group transfer or conjugation reaction
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Reaction class whose defining edit transfers or attaches a group.
   parents:
-  - xmet:1100000
+  - xmet:4000213
 - id: xmet:0000008
   pref_label: elimination reaction
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Reaction class involving loss of a small molecule or group to form unsaturation or rearranged product.
   parents:
-  - xmet:1100000
+  - xmet:4000213
 - id: xmet:1500100
   pref_label: quinoid product family
   in_scheme:
@@ -1510,21 +1510,21 @@ concepts:
   - xmet:text_mining_scheme
   definition: Text-mining cue group for statements that report metabolites, pathways, or transformations.
   parents:
-  - xmet:3000000
+  - xmet:4000263
 - id: xmet:3000002
   pref_label: metabolic effect cue
   in_scheme:
   - xmet:text_mining_scheme
   definition: Text-mining cue group for prodrug, active-metabolite, reactive-metabolite, or activation language.
   parents:
-  - xmet:3000000
+  - xmet:4000263
 - id: xmet:3000003
   pref_label: biological context attribution cue
   in_scheme:
   - xmet:text_mining_scheme
   definition: Text-mining cue group for statements assigning enzyme, species, system, tissue, matrix, or route context.
   parents:
-  - xmet:3000000
+  - xmet:4000263
 - id: xmet:2100001
   pref_label: molecular actor context cue
   in_scheme:
@@ -1548,39 +1548,39 @@ concepts:
     mentions.
   parents:
   - xmet:2100000
-- id: xmet:0000021
+- id: xmet:4000009
   pref_label: oxygen-incorporating oxidation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation reaction in which oxygen is incorporated into the substrate or a heteroatom oxidation state
     is increased.
   parents:
-  - xmet:0000020
+  - xmet:4000009
   synonyms:
   - oxygenation
-- id: xmet:0000022
+- id: xmet:4000010
   pref_label: oxidative substituent cleavage
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation coupled to cleavage or loss of an alkyl, halogen, or related substituent.
   parents:
-  - xmet:0000020
-- id: xmet:0000023
+  - xmet:4000009
+- id: xmet:4000042
   pref_label: electron-transfer oxidation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Oxidation described primarily by electron or hydrogen loss rather than addition of an endogenous conjugating
     group.
   parents:
-  - xmet:0000020
-- id: xmet:0001008
+  - xmet:4000009
+- id: xmet:4000156
   pref_label: sugar or glycosyl conjugation
   in_scheme:
   - xmet:reaction_class_scheme
   definition: Conjugation with glucuronic acid, sugar, or glycosyl groups.
   parents:
   - xmet:0000999
-- id: xmet:0001009
+- id: xmet:4000157
   pref_label: small-group transfer conjugation
   in_scheme:
   - xmet:reaction_class_scheme
@@ -1594,7 +1594,7 @@ concepts:
   definition: Legacy broad conjugation grouping for amino-acid and thiol-derived conjugation. Prefer the narrower
     children for new annotations.
   parents:
-  - xmet:0000024
+  - xmet:4000011
   synonyms:
   - amino acid/thiol conjugation
   deprecated_for_new_annotation: true
@@ -1769,13 +1769,13 @@ concepts:
   definition: Enzymatic or enzyme-associated transfer of endogenous functional groups to a xenobiotic or metabolite,
     often discussed as Phase II metabolism. Detoxication or clearance should be asserted separately, not inferred.
   parents:
-  - xmet:0000024
+  - xmet:4000011
   synonyms:
   - Phase II conjugation
   - phase 2 conjugation
   - metabolic conjugation
   hasDispositionStage:
-  - xmet:0000002
+  - xmet:4000002
 - id: xmet:0001017
   pref_label: reactive-species capture conjugation
   in_scheme:
@@ -1783,7 +1783,7 @@ concepts:
   definition: Conjugation or adduct formation that captures an electrophile or other reactive species. This is a
     warning-sign branch for reactive-metabolite chemistry, regardless of whether an enzyme such as GST contributed.
   parents:
-  - xmet:0000024
+  - xmet:4000011
   synonyms:
   - electrophile trapping
   - reactive metabolite trapping

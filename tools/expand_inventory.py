@@ -66,20 +66,20 @@ def main():
     # --- metabolism phase / pathway role ---
     add(
         "sequential metabolism",
-        "xmet:1000000",
+        "xmet:4000212",
         "Multi-step metabolic sequence rather than a single transformation.",
         ["sequential biotransformation"],
         "phase",
     )
     add(
         "intermediate metabolite formation",
-        "xmet:1000000",
+        "xmet:4000212",
         "Formation of a non-terminal metabolic intermediate.",
         bucket="phase",
     )
     add(
         "first-pass metabolism",
-        "xmet:1000000",
+        "xmet:4000212",
         "Pathway role associated with first-pass metabolic clearance.",
         bucket="phase",
     )
@@ -129,7 +129,7 @@ def main():
         ("Michael GSH conjugation", "GSH attack on a Michael acceptor.", []),
         ("halide-displacement GSH conjugation", "GSH displacement of a halide.", []),
     ]:
-        parents = ["xmet:1300000", "xmet:0000002"]
+        parents = ["xmet:1300000", "xmet:4000002"]
         add(pref, parents, definition, syn or None, "p2")
 
     # --- reactive / product metabolite classes ---
@@ -341,7 +341,7 @@ def main():
         ("ring expansion delta", "Ring size increase.", []),
         ("ring contraction delta", "Ring size decrease.", []),
     ]:
-        add(pref, "xmet:1700000", definition, syn or None, "delta")
+        add(pref, "xmet:4000220", definition, syn or None, "delta")
 
     # --- product status extras ---
     for pref, definition, syn in [
@@ -411,7 +411,7 @@ def main():
         1
         for c in doc["concepts"]
         if not c["id"].startswith("xmet:9")
-        and c["id"] != "xmet:0000000"
+        and c["id"] != "xmet:4000000"
     )
     alts = sum(len(c.get("synonyms") or []) for c in doc["concepts"])
     print(f"concepts={len(doc['concepts'])} non_forest≈{non_forest} synonyms={alts}")

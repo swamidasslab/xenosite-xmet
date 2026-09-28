@@ -84,12 +84,12 @@ def main():
         ]:
             if c.get(src):
                 node[dst] = one_or_list(c[src])
-        if c.get("id") == "xmet:0000000":
+        if c.get("id") == "xmet:4000000":
             node["topConcept"] = True
         graph.append(node)
     # scheme first already; ensure root second
-    root = next(n for n in graph if n["id"] == "xmet:0000000")
-    others = [n for n in graph if n["id"] not in ("xmet:scheme", "xmet:0000000")]
+    root = next(n for n in graph if n["id"] == "xmet:4000000")
+    others = [n for n in graph if n["id"] not in ("xmet:scheme", "xmet:4000000")]
     others.sort(key=lambda n: n["id"])
     out = {"@context": CONTEXT, "@graph": [graph[0], root, *others]}
     SKOS_PATH.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")

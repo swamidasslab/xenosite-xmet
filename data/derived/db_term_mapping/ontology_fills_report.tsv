@@ -6,35 +6,35 @@ xmet:1500233	protein binding	added
 xmet:1500234	covalent binding	added
 xmet:1500235	lipid binding	added
 xmet:1500236	CoA binding	added
-xmet:0000600	cyanidation	added
-xmet:0000601	decyanidation	added
-xmet:0000610	alkylation	added
-xmet:0000611	N-alkylation	added
-xmet:0000612	O-alkylation	added
-xmet:0000613	S-alkylation	added
-xmet:0000614	C-alkylation	added
-xmet:0000620	decarboxylation	added
-xmet:0000621	carboxylation	added
-xmet:0000630	esterification	added
-xmet:0000631	transesterification	added
-xmet:0000632	lactonization	added
-xmet:0000633	lactamization	added
-xmet:0000640	cyclization	added
-xmet:0000650	dehydroxylation	added
-xmet:0000660	halogenation	added
-xmet:0000661	amination	added
-xmet:0000670	formylation	added
-xmet:0000671	deformylation	added
-xmet:0000680	N-nitrosation	added
-xmet:0000690	desulfuration	added
-xmet:0000691	sulfuration	added
-xmet:0000700	deglucuronidation	added
-xmet:0000701	desulfation	added
-xmet:0000702	deglycosidation	added
-xmet:0000703	deglutathionation	added
-xmet:0000704	decysteination	added
-xmet:0000710	Se-methylation	added
-xmet:0000720	dearylation	added
-xmet:0000721	alpha-hydroxylation	added
+xmet:4000114	cyanidation	added
+xmet:4000115	decyanidation	added
+xmet:4000116	alkylation	added
+xmet:4000117	N-alkylation	added
+xmet:4000118	O-alkylation	added
+xmet:4000119	S-alkylation	added
+xmet:4000120	C-alkylation	added
+xmet:4000121	decarboxylation	added
+xmet:4000122	carboxylation	added
+xmet:4000123	esterification	added
+xmet:4000124	transesterification	added
+xmet:4000125	lactonization	added
+xmet:4000126	lactamization	added
+xmet:4000127	cyclization	added
+xmet:4000128	dehydroxylation	added
+xmet:4000129	halogenation	added
+xmet:4000130	amination	added
+xmet:4000131	formylation	added
+xmet:4000132	deformylation	added
+xmet:4000133	N-nitrosation	added
+xmet:4000135	desulfuration	added
+xmet:4000136	sulfuration	added
+xmet:4000137	deglucuronidation	added
+xmet:4000138	desulfation	added
+xmet:4000139	deglycosidation	added
+xmet:4000140	deglutathionation	added
+xmet:4000141	decysteination	added
+xmet:4000142	Se-methylation	added
+xmet:4000143	dearylation	added
+xmet:4000144	alpha-hydroxylation	added
 xmet:1600200	alicyclic site	added
 xmet:1600201	fused benzene site	added

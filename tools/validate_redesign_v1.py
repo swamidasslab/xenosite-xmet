@@ -34,32 +34,32 @@ DEFAULT_FOREST_RULES_RS = ROOT.parent / "crates" / "xenosite-forest" / "src" / "
 TAGGER_RULE_FILES = ("xenobiotic.rules.yaml", "structural.rules.yaml")
 ALLOWED_RULE_PATTERN_PREDS = {"skos:exactMatch", "skos:closeMatch"}
 
-DISPOSITION = "xmet:1000000"
-REACTION_CLASS = "xmet:1100000"
-REACTION_DESCRIPTOR = "xmet:3000000"
-CONCEPT_RELATION = "xmet:3001000"
-OXIDATION = "xmet:0000020"
-SO = "xmet:0000010"
-UO = "xmet:0000011"
-DH = "xmet:0000012"
-HD = "xmet:0000013"
-RD = "xmet:0000014"
-CONJUGATION = "xmet:0000024"
-TRANSFER = "xmet:3000100"
-ADDUCT = "xmet:3000200"
-GSH = "xmet:0001030"
-PHASE_I = "xmet:0000001"
-PHASE_II = "xmet:0000002"
-PHASE_III = "xmet:0000003"
+DISPOSITION = "xmet:4000212"
+REACTION_CLASS = "xmet:4000213"
+REACTION_DESCRIPTOR = "xmet:4000263"
+CONCEPT_RELATION = "xmet:4000281"
+OXIDATION = "xmet:4000009"
+SO = "xmet:4000004"
+UO = "xmet:4000005"
+DH = "xmet:4000006"
+HD = "xmet:4000007"
+RD = "xmet:4000008"
+CONJUGATION = "xmet:4000011"
+TRANSFER = "xmet:4000266"
+ADDUCT = "xmet:4000267"
+GSH = "xmet:4000167"
+PHASE_I = "xmet:4000001"
+PHASE_II = "xmet:4000002"
+PHASE_III = "xmet:4000003"
 PHASE_I_FAMILY = "xmet:1200000"
 PHASE_II_FAMILY = "xmet:1300000"
-REARRANGEMENT = "xmet:0002004"
-TAUTOMERIZATION = "xmet:0002000"
-ISOMERIZATION = "xmet:0002003"
+REARRANGEMENT = "xmet:4000190"
+TAUTOMERIZATION = "xmet:4000186"
+ISOMERIZATION = "xmet:4000189"
 
 COLORS = {SO, UO, DH, HD, RD}
-PHASE_TAGS = {PHASE_I, PHASE_II, PHASE_III, "xmet:3000004"}
-ISOREDOX = "xmet:3000005"
+PHASE_TAGS = {PHASE_I, PHASE_II, PHASE_III, "xmet:4000264"}
+ISOREDOX = "xmet:4000265"
 
 # Color / conjugation membership beyond draft PhaseOne colors (specialized leaves).
 EXTRA_RULE_TO_RULESET: dict[str, str] = {
@@ -451,7 +451,7 @@ def check_five_colors_and_conjugation(
         findings.append(Finding("oxidation_under_reaction_class", OXIDATION, "oxidation not under reaction class"))
     if REACTION_CLASS not in ancestors(RD, pm) and REACTION_CLASS not in pm.get(RD, []):
         findings.append(Finding("reduction_under_reaction_class", RD, "reduction not under reaction class"))
-    isoredox = "xmet:3000005"
+    isoredox = "xmet:4000265"
     if isoredox not in concepts:
         findings.append(Finding("isoredox_present", isoredox, "missing isoredox class"))
     else:
@@ -500,7 +500,7 @@ def check_descriptor_orthogonal(
         )
         return
     # Backbone reaction-class nodes must not descend from reaction descriptor.
-    backbone = COLORS | {OXIDATION, CONJUGATION, REARRANGEMENT, "xmet:3000005", RD, HD, DH}
+    backbone = COLORS | {OXIDATION, CONJUGATION, REARRANGEMENT, "xmet:4000265", RD, HD, DH}
     for cid in backbone:
         if cid not in concepts:
             continue
@@ -517,9 +517,9 @@ def check_descriptor_orthogonal(
 
 def check_relation_vocab(findings: list[Finding], concepts: dict[str, dict[str, Any]]) -> None:
     required = {
-        "xmet:3001100": ("related to", "skos:related"),
-        "xmet:3001103": ("has part", "dcterms:hasPart"),
-        "xmet:3001104": ("is part of", "dcterms:isPartOf"),
+        "xmet:4000282": ("related to", "skos:related"),
+        "xmet:4000285": ("has part", "dcterms:hasPart"),
+        "xmet:4000286": ("is part of", "dcterms:isPartOf"),
     }
     for cid, (label, exact) in required.items():
         if cid not in concepts:
@@ -538,7 +538,7 @@ def check_relation_vocab(findings: list[Finding], concepts: dict[str, dict[str, 
             findings.append(
                 Finding("relation_vocab_exact", cid, f"missing exact_match {exact}", exact)
             )
-    for cid in ("xmet:3001101", "xmet:3001102"):
+    for cid in ("xmet:4000283", "xmet:4000284"):
         if cid not in concepts:
             findings.append(Finding("relation_vocab", cid, "missing suggests/always with"))
 
@@ -566,7 +566,7 @@ def check_dealkylation_pattern_always_with(
         findings.append(
             Finding(
                 "dealk_always_with",
-                "xmet:0000200",
+                "xmet:4000042",
                 "no Forest Dealkylation/NDealkylation pattern SSSOM rows found",
             )
         )
@@ -949,7 +949,7 @@ def check_forest_phaseone(
         findings.append(
             Finding(
                 "forest_rules_rs",
-                "xmet:1100000",
+                "xmet:4000213",
                 "Forest rules.rs not found (set XMET_FOREST_RULES_RS or keep sibling crate)",
             )
         )
@@ -960,7 +960,7 @@ def check_forest_phaseone(
             findings.append(
                 Finding(
                     "forest_catalog_patterns_present",
-                    "xmet:1100000",
+                    "xmet:4000213",
                     f"no Forest leaf patterns parsed from {rules_rs}",
                 )
             )
@@ -1119,22 +1119,47 @@ def check_related_match_discipline(
             )
 
 
-def check_external_exact_discipline(findings: list[Finding]) -> None:
-    """Redesign-generation subjects in external/mesh/mop must use exactMatch only.
+def load_renumber_old_ids() -> dict[str, str]:
+    """new_id → old_id from the opaque renumber cut (if present)."""
+    path = ROOT / "data/mappings/xmet-id-renumber.tsv"
+    if not path.exists():
+        return {}
+    out: dict[str, str] = {}
+    with path.open() as fh:
+        for row in csv.DictReader(fh, delimiter="\t"):
+            old = (row.get("old_id") or "").strip()
+            new = (row.get("new_id") or "").strip()
+            if old and new:
+                out[new] = old
+    return out
 
-    Pre-existing soft rows on legacy IDs are left alone (not expanded this pass).
+
+def check_external_exact_discipline(findings: list[Finding]) -> None:
+    """Soft external matches forbidden on concepts that were redesign-era mints.
+
+    After the opaque ``4000000+`` renumber, detect redesign-era origins via
+    ``xmet-id-renumber.tsv`` (old ``xmet:3xxxxxx``). Legacy homes that merely
+    moved into the 4-block keep their closeMatch/broadMatch rows.
     """
+    new_to_old = load_renumber_old_ids()
+
+    def is_redesign_era(sub: str) -> bool:
+        if sub.startswith("xmet:3"):
+            return True
+        old = new_to_old.get(sub, "")
+        return old.startswith("xmet:3")
+
     for path in (EXTERNAL_SSSOM, MOP_SSSOM, MESH_SSSOM):
         for r in load_sssom(path):
             sub = r["subject_id"]
-            if not (sub.startswith("xmet:3") or sub.startswith("xmet:4")):
+            if not is_redesign_era(sub):
                 continue
             if r["predicate_id"] != "skos:exactMatch":
                 findings.append(
                     Finding(
                         "external_exact_only",
                         sub,
-                        f"non-exact external mapping for redesign-generation id ({r['predicate_id']})",
+                        f"non-exact external mapping for redesign-era id ({r['predicate_id']})",
                         r["object_id"],
                     )
                 )
@@ -1170,7 +1195,7 @@ def check_tagger_smarts(
         findings.append(
             Finding(
                 "tagger_rules_dir",
-                "xmet:1100000",
+                "xmet:4000213",
                 "tagger rules dir not found (set XMET_TAGGER_RULES_DIR or keep sibling crate)",
             )
         )
@@ -1181,7 +1206,7 @@ def check_tagger_smarts(
         findings.append(
             Finding(
                 "tagger_smarts_present",
-                "xmet:1100000",
+                "xmet:4000213",
                 f"no SMARTS rules found under {directory}",
             )
         )
@@ -1210,7 +1235,7 @@ def check_tagger_smarts(
             findings.append(
                 Finding(
                     "tagger_smarts_coverage",
-                    "xmet:1100000",
+                    "xmet:4000213",
                     "SMARTS rule missing exactMatch row in xmet-tagger.sssom.tsv",
                     rid,
                 )

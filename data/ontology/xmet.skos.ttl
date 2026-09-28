@@ -7,7 +7,7 @@ xmet:scheme a skos:ConceptScheme ;
   skos:prefLabel "Xenobiotic Reaction Metabolism" ;
   skos:definition "Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a full chemical ontology. Site-localized display names use templates outside the concept scheme. SSSOM maps to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO." .
 
-xmet:0000000 a skos:Concept ;
+xmet:4000000 a skos:Concept ;
   skos:prefLabel "xenobiotic biotransformation" ;
   skos:definition "Chemical alteration of an exogenous substance in a biological system." ;
   skos:inScheme xmet:scheme ;
@@ -15,7 +15,7 @@ xmet:0000000 a skos:Concept ;
   skos:altLabel "biotransformation" ;
   skos:altLabel "drug metabolism" .
 
-xmet:0000001 a skos:Concept ;
+xmet:4000001 a skos:Concept ;
   skos:prefLabel "phase I" ;
   skos:definition "Functionalization stage tag: oxidation, reduction, hydrolysis, and related edits that introduce or expose polar groups. Not a chemical superclass." ;
   skos:inScheme xmet:scheme ;
@@ -24,9 +24,9 @@ xmet:0000001 a skos:Concept ;
   skos:altLabel "Metabolic Detoxication, Phase I" ;
   skos:altLabel "phase 1 metabolism" ;
   skos:altLabel "functionalization phase" ;
-  skos:broader xmet:1000000 .
+  skos:broader xmet:4000212 .
 
-xmet:0000002 a skos:Concept ;
+xmet:4000002 a skos:Concept ;
   skos:prefLabel "phase II" ;
   skos:definition "Conjugation stage tag: binding to endogenous moieties. Not a chemical superclass — transfer conjugations and adducts are distinguished under reaction class." ;
   skos:inScheme xmet:scheme ;
@@ -35,18 +35,18 @@ xmet:0000002 a skos:Concept ;
   skos:altLabel "Metabolic Detoxication, Phase II" ;
   skos:altLabel "phase 2 metabolism" ;
   skos:altLabel "conjugation phase" ;
-  skos:broader xmet:1000000 .
+  skos:broader xmet:4000212 .
 
-xmet:0000003 a skos:Concept ;
+xmet:4000003 a skos:Concept ;
   skos:prefLabel "phase III" ;
   skos:definition "Further handling / transport / excretion-related disposition of conjugates and metabolites. Disposition tag, not a reaction class." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "phase 3" ;
   skos:altLabel "phase III" ;
   skos:altLabel "transport phase" ;
-  skos:broader xmet:1000000 .
+  skos:broader xmet:4000212 .
 
-xmet:0000010 a skos:Concept ;
+xmet:4000004 a skos:Concept ;
   skos:prefLabel "stable oxygenation" ;
   skos:definition "Rainbow Phase I class: oxygenation that yields a stable oxygenated metabolite (aromatic/aliphatic hydroxylation, epoxidation, N-oxidation, S-oxidation)." ;
   skos:inScheme xmet:scheme ;
@@ -55,9 +55,9 @@ xmet:0000010 a skos:Concept ;
   skos:altLabel "Rainbow stable oxygenation" ;
   skos:altLabel "SO class (full name)" ;
   skos:altLabel "stable_oxygenation" ;
-  skos:broader xmet:0000020 .
+  skos:broader xmet:4000009 .
 
-xmet:0000011 a skos:Concept ;
+xmet:4000005 a skos:Concept ;
   skos:prefLabel "unstable oxygenation" ;
   skos:definition "Rainbow Phase I class: oxygenation that triggers cleavage or rearrangement (N-/O-/S-/C-dealkylation, oxidative deamination, oxidative dehalogenation)." ;
   skos:inScheme xmet:scheme ;
@@ -66,48 +66,48 @@ xmet:0000011 a skos:Concept ;
   skos:altLabel "Rainbow unstable oxygenation" ;
   skos:altLabel "UO class (full name)" ;
   skos:altLabel "unstable_oxygenation" ;
-  skos:broader xmet:0000020 .
+  skos:broader xmet:4000009 .
 
-xmet:0000012 a skos:Concept ;
+xmet:4000006 a skos:Concept ;
   skos:prefLabel "dehydrogenation" ;
   skos:definition "Rainbow dehydrogenation color: extract hydrogen(s) to form a multiple bond, iminium, or quinoid. Nested under oxidation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "desaturation" ;
-  skos:broader xmet:0000020 .
+  skos:broader xmet:4000009 .
 
-xmet:0000013 a skos:Concept ;
+xmet:4000007 a skos:Concept ;
   skos:prefLabel "hydrolysis" ;
   skos:definition "Rainbow hydrolysis color: water addition cleaves amide, ester, ether, or related bonds. Nested under isoredox (redox-neutral)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000005 .
+  skos:broader xmet:4000265 .
 
-xmet:0000014 a skos:Concept ;
+xmet:4000008 a skos:Concept ;
   skos:prefLabel "reduction" ;
   skos:definition "Reduction class (Rainbow reduction color): remove oxygen or add hydrogen(s) (nitro, carbonyl, sulfo reduction; reductive dehalogenation; hydrogenation). Peer of oxidation and isoredox under reaction class." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:0000020 a skos:Concept ;
+xmet:4000009 a skos:Concept ;
   skos:prefLabel "oxidation" ;
   skos:definition "Oxidations and related increase of oxidation state. Holds Rainbow stable oxygenation, unstable oxygenation, and dehydrogenation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative metabolism" ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:0000022 a skos:Concept ;
+xmet:4000010 a skos:Concept ;
   skos:prefLabel "heteroatom oxidation" ;
   skos:definition "Direct oxidation of N, S (and related heteroatoms)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000010 .
+  skos:broader xmet:4000004 .
 
-xmet:0000024 a skos:Concept ;
+xmet:4000011 a skos:Concept ;
   skos:prefLabel "conjugation" ;
   skos:definition "Addition of an endogenous or trapping moiety. Split into transfer conjugation (clearance-oriented) and adduct formation (electrophile capture)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:1100000 ;
-  skos:closeMatch xmet:0000002 .
+  skos:broader xmet:4000213 ;
+  skos:closeMatch xmet:4000002 .
 
-xmet:0000100 a skos:Concept ;
+xmet:4000012 a skos:Concept ;
   skos:prefLabel "hydroxylation" ;
   skos:definition "Introduction of a hydroxyl group, typically at carbon." ;
   skos:inScheme xmet:scheme ;
@@ -115,9 +115,9 @@ xmet:0000100 a skos:Concept ;
   skos:altLabel "monooxygenation hydroxylation" ;
   skos:altLabel "hydroxylation to alcohol" ;
   skos:altLabel "hydroxylation to alcohol or oxide" ;
-  skos:broader xmet:0000010 .
+  skos:broader xmet:4000004 .
 
-xmet:0000101 a skos:Concept ;
+xmet:4000013 a skos:Concept ;
   skos:prefLabel "aromatic hydroxylation" ;
   skos:definition "Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways." ;
   skos:inScheme xmet:scheme ;
@@ -126,308 +126,308 @@ xmet:0000101 a skos:Concept ;
   skos:altLabel "arene hydroxylation" ;
   skos:altLabel "aromatic hydroxylation to phenol" ;
   skos:altLabel "aromatic hydroxylation to phenol or phenolate" ;
-  skos:broader xmet:0000100 .
+  skos:broader xmet:4000012 .
 
-xmet:0000102 a skos:Concept ;
+xmet:4000014 a skos:Concept ;
   skos:prefLabel "aliphatic hydroxylation" ;
   skos:definition "Hydroxylation of an aliphatic carbon (not limited to methyl/methylene; see also tertiary carbon hydroxylation under methine hydroxylation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "alkyl hydroxylation" ;
-  skos:broader xmet:3001232 .
+  skos:broader xmet:4000380 .
 
-xmet:0000103 a skos:Concept ;
+xmet:4000015 a skos:Concept ;
   skos:prefLabel "para-hydroxylation" ;
   skos:definition "Para-regioselective aromatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000101 .
+  skos:broader xmet:4000013 .
 
-xmet:0000104 a skos:Concept ;
+xmet:4000016 a skos:Concept ;
   skos:prefLabel "ortho-hydroxylation" ;
   skos:definition "Ortho-regioselective aromatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000101 .
+  skos:broader xmet:4000013 .
 
-xmet:0000105 a skos:Concept ;
+xmet:4000017 a skos:Concept ;
   skos:prefLabel "meta-hydroxylation" ;
   skos:definition "Meta-regioselective aromatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000101 .
+  skos:broader xmet:4000013 .
 
-xmet:0000106 a skos:Concept ;
+xmet:4000018 a skos:Concept ;
   skos:prefLabel "benzylic hydroxylation" ;
   skos:definition "Hydroxylation at a carbon adjacent to an aromatic ring (benzylic). May be methyl, methylene, or methine; under hydroxylation of activated carbons." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "toluene side-chain hydroxylation" ;
-  skos:broader xmet:3001231 .
+  skos:broader xmet:4000379 .
 
-xmet:0000107 a skos:Concept ;
+xmet:4000019 a skos:Concept ;
   skos:prefLabel "allylic hydroxylation" ;
   skos:definition "Hydroxylation at a carbon adjacent to a C=C bond (allylic). Under hydroxylation of activated carbons; not restricted to methine sites." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001231 .
+  skos:broader xmet:4000379 .
 
-xmet:0000108 a skos:Concept ;
+xmet:4000020 a skos:Concept ;
   skos:prefLabel "ω-hydroxylation" ;
   skos:definition "ω-hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "omega-hydroxylation" ;
   skos:altLabel "terminal methyl hydroxylation" ;
-  skos:broader xmet:3001230 .
+  skos:broader xmet:4000378 .
 
-xmet:0000109 a skos:Concept ;
+xmet:4000021 a skos:Concept ;
   skos:prefLabel "ω-1 hydroxylation" ;
   skos:definition "ω-1 hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "omega-1 hydroxylation" ;
   skos:altLabel "penultimate carbon hydroxylation" ;
-  skos:broader xmet:3001230 .
+  skos:broader xmet:4000378 .
 
-xmet:0000110 a skos:Concept ;
+xmet:4000022 a skos:Concept ;
   skos:prefLabel "epoxidation" ;
   skos:definition "Formation of a three-membered epoxide ring." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxirane formation" ;
-  skos:broader xmet:0000010 .
+  skos:broader xmet:4000004 .
 
-xmet:0000111 a skos:Concept ;
+xmet:4000023 a skos:Concept ;
   skos:prefLabel "alkene epoxidation" ;
   skos:definition "alkene epoxidation: xenobiotic-metabolism term under epoxidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000110 .
+  skos:broader xmet:4000022 .
 
-xmet:0000112 a skos:Concept ;
+xmet:4000024 a skos:Concept ;
   skos:prefLabel "arene oxide formation" ;
   skos:definition "Epoxidation of an aromatic π-system to an arene oxide intermediate." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "arene oxide" ;
-  skos:broader xmet:3001108 .
+  skos:broader xmet:4000290 .
 
-xmet:0000113 a skos:Concept ;
+xmet:4000025 a skos:Concept ;
   skos:prefLabel "thiophene epoxidation" ;
   skos:definition "thiophene epoxidation: xenobiotic-metabolism term under epoxidation, heteroaromatic oxidation impact." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "thiohene epoxidation" ;
-  skos:broader xmet:0000110 .
+  skos:broader xmet:4000022 .
 
-xmet:0000120 a skos:Concept ;
+xmet:4000026 a skos:Concept ;
   skos:prefLabel "nitrogen oxidation" ;
   skos:definition "nitrogen oxidation: xenobiotic-metabolism term under heteroatom oxidation, stable oxygenation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-oxidation" ;
-  skos:broader xmet:0000022 .
+  skos:broader xmet:4000010 .
 
-xmet:0000121 a skos:Concept ;
+xmet:4000027 a skos:Concept ;
   skos:prefLabel "N-oxide formation" ;
   skos:definition "Formation of an N-oxide from a tertiary amine (or equivalent trivalent nitrogen with no N–H)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "tertiary amine N-oxidation" ;
-  skos:broader xmet:0000120 .
+  skos:broader xmet:4000026 .
 
-xmet:0000122 a skos:Concept ;
+xmet:4000028 a skos:Concept ;
   skos:prefLabel "hydroxylamine formation" ;
   skos:definition "Formation of a hydroxylamine by N-oxidation of a primary or secondary amine (N–H → N–OH)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-hydroxylation" ;
-  skos:broader xmet:0000120 .
+  skos:broader xmet:4000026 .
 
-xmet:0000123 a skos:Concept ;
+xmet:4000029 a skos:Concept ;
   skos:prefLabel "nitroso formation" ;
   skos:definition "Formation of a nitroso group by N-oxidation of a primary amine (–NH2 → –N=O)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000120 .
+  skos:broader xmet:4000026 .
 
-xmet:0000124 a skos:Concept ;
+xmet:4000030 a skos:Concept ;
   skos:prefLabel "primary amine N-oxidation" ;
   skos:definition "N-oxidation of a primary amine, typically yielding a hydroxylamine (or further nitroso)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000122 .
+  skos:broader xmet:4000028 .
 
-xmet:0000125 a skos:Concept ;
+xmet:4000031 a skos:Concept ;
   skos:prefLabel "aromatic amine N-oxidation" ;
   skos:definition "N-oxidation of an aromatic amine, typically yielding an aryl hydroxylamine." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000122 .
+  skos:broader xmet:4000028 .
 
-xmet:0000130 a skos:Concept ;
+xmet:4000032 a skos:Concept ;
   skos:prefLabel "sulfur oxidation" ;
   skos:definition "sulfur oxidation: xenobiotic-metabolism term under heteroatom oxidation, stable oxygenation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "S-oxidation" ;
-  skos:broader xmet:0000022 .
+  skos:broader xmet:4000010 .
 
-xmet:0000131 a skos:Concept ;
+xmet:4000033 a skos:Concept ;
   skos:prefLabel "sulfoxidation" ;
   skos:definition "sulfoxidation: xenobiotic-metabolism term under sulfur oxidation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "sulfoxide formation" ;
-  skos:broader xmet:3001117 .
+  skos:broader xmet:4000299 .
 
-xmet:0000132 a skos:Concept ;
+xmet:4000034 a skos:Concept ;
   skos:prefLabel "sulfone formation" ;
   skos:definition "sulfone formation: xenobiotic-metabolism term under sulfur oxidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001117 .
+  skos:broader xmet:4000299 .
 
-xmet:0000133 a skos:Concept ;
+xmet:4000035 a skos:Concept ;
   skos:prefLabel "thiophene S-oxidation" ;
   skos:definition "S-oxidation of a thiophene ring; a dearomatizing path to S-oxides." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "Thiohene S-oxidation" ;
   skos:altLabel "thiohene S-oxidation" ;
-  skos:broader xmet:0000130 .
+  skos:broader xmet:4000032 .
 
-xmet:0000134 a skos:Concept ;
+xmet:4000036 a skos:Concept ;
   skos:prefLabel "thiol oxidation" ;
   skos:definition "thiol oxidation: xenobiotic-metabolism term under sulfur oxidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001116 .
+  skos:broader xmet:4000298 .
 
-xmet:0000135 a skos:Concept ;
+xmet:4000037 a skos:Concept ;
   skos:prefLabel "disulfide formation" ;
   skos:definition "Formation of a disulfide (R–S–S–R′) by sulfur oxidation / oxidative coupling. Does not require an S=O (sulfur oxo) bond." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000130 .
+  skos:broader xmet:4000032 .
 
-xmet:0000140 a skos:Concept ;
+xmet:4000038 a skos:Concept ;
   skos:prefLabel "primary carbon hydroxylation" ;
   skos:definition "primary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001230 .
+  skos:broader xmet:4000378 .
 
-xmet:0000141 a skos:Concept ;
+xmet:4000039 a skos:Concept ;
   skos:prefLabel "secondary carbon hydroxylation" ;
   skos:definition "secondary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001230 .
+  skos:broader xmet:4000378 .
 
-xmet:0000142 a skos:Concept ;
+xmet:4000040 a skos:Concept ;
   skos:prefLabel "tertiary carbon hydroxylation" ;
   skos:definition "tertiary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001109 .
+  skos:broader xmet:4000291 .
 
-xmet:0000143 a skos:Concept ;
+xmet:4000041 a skos:Concept ;
   skos:prefLabel "alicyclic hydroxylation" ;
   skos:definition "Hydroxylation of a saturated ring carbon." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001232 .
+  skos:broader xmet:4000380 .
 
-xmet:0000200 a skos:Concept ;
+xmet:4000042 a skos:Concept ;
   skos:prefLabel "dealkylation" ;
   skos:definition "Oxidative removal of an alkyl group from N, O, S, or C via α-carbon hydroxylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative dealkylation" ;
   skos:altLabel "carbon–heteroatom oxidative cleavage" ;
-  skos:broader xmet:0000011 .
+  skos:broader xmet:4000005 .
 
-xmet:0000201 a skos:Concept ;
+xmet:4000043 a skos:Concept ;
   skos:prefLabel "N-dealkylation" ;
   skos:definition "N-dealkylation: xenobiotic-metabolism term under dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative N-dealkylation" ;
   skos:altLabel "N-dealkylative cleavage" ;
-  skos:broader xmet:0000200 .
+  skos:broader xmet:4000042 .
 
-xmet:0000202 a skos:Concept ;
+xmet:4000044 a skos:Concept ;
   skos:prefLabel "O-dealkylation" ;
   skos:definition "O-dealkylation: xenobiotic-metabolism term under dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative O-dealkylation" ;
-  skos:broader xmet:0000200 .
+  skos:broader xmet:4000042 .
 
-xmet:0000203 a skos:Concept ;
+xmet:4000045 a skos:Concept ;
   skos:prefLabel "S-dealkylation" ;
   skos:definition "S-dealkylation: xenobiotic-metabolism term under dealkylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000200 .
+  skos:broader xmet:4000042 .
 
-xmet:0000204 a skos:Concept ;
+xmet:4000046 a skos:Concept ;
   skos:prefLabel "C-dealkylation" ;
   skos:definition "Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic C-dealkylation). Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Forest cc_alcohol / cc_carbonyl share this home; ox-state via alwaysWith. Quaternary site child for cc_quaternary_alcohol." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative C–C cleavage" ;
   skos:altLabel "oxidative carbon–carbon cleavage" ;
   skos:altLabel "carbon–carbon dealkylation" ;
-  skos:broader xmet:0000200 .
+  skos:broader xmet:4000042 .
 
-xmet:0000206 a skos:Concept ;
+xmet:4000047 a skos:Concept ;
   skos:prefLabel "N-deethylation" ;
   skos:definition "N-deethylation: xenobiotic-metabolism term under N-dealkylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001201 .
+  skos:broader xmet:4000350 .
 
-xmet:0000207 a skos:Concept ;
+xmet:4000048 a skos:Concept ;
   skos:prefLabel "N-depropylation" ;
   skos:definition "N-depropylation: xenobiotic-metabolism term under N-dealkylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001201 .
+  skos:broader xmet:4000350 .
 
-xmet:0000208 a skos:Concept ;
+xmet:4000049 a skos:Concept ;
   skos:prefLabel "oxidative deamination" ;
   skos:definition "α-Carbon hydroxylation of a primary (or suitable) amine releasing ammonia/amine and a carbonyl." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "deamination" ;
-  skos:broader xmet:3001146 .
+  skos:broader xmet:4000318 .
 
-xmet:0000209 a skos:Concept ;
+xmet:4000050 a skos:Concept ;
   skos:prefLabel "O-demethylation" ;
   skos:definition "O-demethylation: xenobiotic-metabolism term under O-dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aryl methyl ether cleavage" ;
   skos:altLabel "oxidative O-demethylation" ;
-  skos:broader xmet:3001194 .
+  skos:broader xmet:4000344 .
 
-xmet:0000210 a skos:Concept ;
+xmet:4000051 a skos:Concept ;
   skos:prefLabel "oxidative dehalogenation" ;
   skos:definition "Replacement of halogen by oxygen via oxidative pathways. Under unstable oxygenation; related to isoredox dehalogenation (not a subtype of it)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative dehalogenation" ;
-  skos:broader xmet:0000011 .
+  skos:broader xmet:4000005 .
 
-xmet:0000211 a skos:Concept ;
+xmet:4000052 a skos:Concept ;
   skos:prefLabel "O-deethylation" ;
   skos:definition "O-deethylation: xenobiotic-metabolism term under O-dealkylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001195 .
+  skos:broader xmet:4000345 .
 
-xmet:0000212 a skos:Concept ;
+xmet:4000053 a skos:Concept ;
   skos:prefLabel "aromatic O-dealkylation" ;
   skos:definition "Cleavage of an aryl–O–alkyl ether (e.g. anisole → phenol)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000202 .
+  skos:broader xmet:4000044 .
 
-xmet:0000213 a skos:Concept ;
+xmet:4000054 a skos:Concept ;
   skos:prefLabel "aliphatic O-dealkylation" ;
   skos:definition "aliphatic O-dealkylation: xenobiotic-metabolism term under O-dealkylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000202 .
+  skos:broader xmet:4000044 .
 
-xmet:0000214 a skos:Concept ;
+xmet:4000055 a skos:Concept ;
   skos:prefLabel "oxidative defluorination" ;
   skos:definition "oxidative defluorination: xenobiotic-metabolism term under oxidative dehalogenation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001125 .
+  skos:broader xmet:4000307 .
 
-xmet:0000215 a skos:Concept ;
+xmet:4000056 a skos:Concept ;
   skos:prefLabel "oxidative dechlorination" ;
   skos:definition "oxidative dechlorination: xenobiotic-metabolism term under oxidative dehalogenation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001125 .
+  skos:broader xmet:4000307 .
 
-xmet:0000216 a skos:Concept ;
+xmet:4000057 a skos:Concept ;
   skos:prefLabel "oxidative debromination" ;
   skos:definition "oxidative debromination: xenobiotic-metabolism term under oxidative dehalogenation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001125 .
+  skos:broader xmet:4000307 .
 
-xmet:0000217 a skos:Concept ;
+xmet:4000058 a skos:Concept ;
   skos:prefLabel "S-demethylation" ;
   skos:definition "Oxidative removal of an S-methyl group." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative S-demethylation" ;
-  skos:broader xmet:3001194 .
+  skos:broader xmet:4000344 .
 
-xmet:0000300 a skos:Concept ;
+xmet:4000059 a skos:Concept ;
   skos:prefLabel "quinone-like species formation" ;
   skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step routes may be modeled under composite transformation. Forest QuinoneFormation uses this broad sense." ;
   skos:inScheme xmet:scheme ;
@@ -435,59 +435,59 @@ xmet:0000300 a skos:Concept ;
   skos:altLabel "quinoid species formation" ;
   skos:altLabel "quinone-like formation" ;
   skos:altLabel "quinonation" ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:0000301 a skos:Concept ;
+xmet:4000060 a skos:Concept ;
   skos:prefLabel "ortho-quinone formation" ;
   skos:definition "Formation of an ortho-quinone (1,2-diketone): two adjacent ring sites are oxidized/dehydrogenated, collapsing aromaticity into a conjugated non-aromatic ortho-quinoid. Narrow classical quinone, not quinone-imine/methide." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "o-quinone formation" ;
   skos:altLabel "1,2-quinone formation" ;
   skos:altLabel "ortho-quinoid formation" ;
-  skos:broader xmet:3001246 .
+  skos:broader xmet:4000394 .
 
-xmet:0000302 a skos:Concept ;
+xmet:4000061 a skos:Concept ;
   skos:prefLabel "para-quinone formation" ;
   skos:definition "Formation of a para-quinone (1,4-diketone): two para-related ring sites are oxidized/dehydrogenated, collapsing aromaticity into a conjugated non-aromatic para-quinoid. Narrow classical quinone, not quinone-imine/methide." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "p-quinone formation" ;
   skos:altLabel "1,4-quinone formation" ;
   skos:altLabel "para-quinoid formation" ;
-  skos:broader xmet:3001246 .
+  skos:broader xmet:4000394 .
 
-xmet:0000303 a skos:Concept ;
+xmet:4000062 a skos:Concept ;
   skos:prefLabel "quinone-imine formation" ;
   skos:definition "Formation of a quinone-imine: one or both quinoid ends are C=N rather than C=O. Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid (e.g. NAPQI-type). Sibling of classical quinone formation under quinone-like products." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinone imine formation" ;
   skos:altLabel "NAPQI-type formation" ;
   skos:altLabel "quinoid imine formation" ;
-  skos:broader xmet:3001214 .
+  skos:broader xmet:4000363 .
 
-xmet:0000304 a skos:Concept ;
+xmet:4000063 a skos:Concept ;
   skos:prefLabel "quinone-methide formation" ;
   skos:definition "Formation of a quinone-methide: a quinoid with an exocyclic alkylidene/methide end (including imine-methide variants). Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like products." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinone methide formation" ;
   skos:altLabel "quinoid methide formation" ;
   skos:altLabel "imine-methide formation" ;
-  skos:broader xmet:3001214 .
+  skos:broader xmet:4000363 .
 
-xmet:0000305 a skos:Concept ;
+xmet:4000064 a skos:Concept ;
   skos:prefLabel "iminium ion formation" ;
   skos:definition "Formation of an iminium ion, typically by amine dehydrogenation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "iminium formation" ;
-  skos:broader xmet:1200106 .
+  skos:broader xmet:4000216 .
 
-xmet:0000306 a skos:Concept ;
+xmet:4000065 a skos:Concept ;
   skos:prefLabel "imine-methide formation" ;
   skos:definition "Formation of an imine-methide (or related methide) from an amine dehydrogenation path." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "imine methide formation" ;
-  skos:broader xmet:1200106 .
+  skos:broader xmet:4000216 .
 
-xmet:0000307 a skos:Concept ;
+xmet:4000066 a skos:Concept ;
   skos:prefLabel "one-step" ;
   skos:definition "Descriptor: transformation counted as a single formal metabolic step. For quinone-like species formation, the elementary-plan dependency cone into terminating dehydrogenation has size 1 (DH alone — both quinoid ends already present). Free co-occurring plan steps that do not precede DH do not deepen this count." ;
   skos:inScheme xmet:scheme ;
@@ -498,9 +498,9 @@ xmet:0000307 a skos:Concept ;
   skos:altLabel "1-step quinone-like species formation" ;
   skos:altLabel "direct quinone-like species formation" ;
   skos:altLabel "one-step quinone formation" ;
-  skos:broader xmet:3001245 .
+  skos:broader xmet:4000393 .
 
-xmet:0000308 a skos:Concept ;
+xmet:4000067 a skos:Concept ;
   skos:prefLabel "two-step" ;
   skos:definition "Descriptor: transformation counted as two formal metabolic steps. For quinone-like species formation, the dependency cone into terminating dehydrogenation has size 2 — one preparatory elementary step that precedes DH, then DH (prep typically hydroxylation or oxidative dehalogenation)." ;
   skos:inScheme xmet:scheme ;
@@ -509,9 +509,9 @@ xmet:0000308 a skos:Concept ;
   skos:altLabel "two-step quinone-like species formation" ;
   skos:altLabel "2-step quinone-like species formation" ;
   skos:altLabel "two-step quinone formation" ;
-  skos:broader xmet:3001245 .
+  skos:broader xmet:4000393 .
 
-xmet:0000309 a skos:Concept ;
+xmet:4000068 a skos:Concept ;
   skos:prefLabel "three-step" ;
   skos:definition "Descriptor: transformation counted as three or more formal metabolic steps. For quinone-like species formation, the dependency cone into terminating dehydrogenation has size ≥3 — two (or more) preparatory elementary steps that precede DH, then DH." ;
   skos:inScheme xmet:scheme ;
@@ -521,359 +521,359 @@ xmet:0000309 a skos:Concept ;
   skos:altLabel "three-step quinone-like species formation" ;
   skos:altLabel "3-step quinone-like species formation" ;
   skos:altLabel "three-step quinone formation" ;
-  skos:broader xmet:3001245 .
+  skos:broader xmet:4000393 .
 
-xmet:0000310 a skos:Concept ;
+xmet:4000069 a skos:Concept ;
   skos:prefLabel "alcohol oxidation" ;
   skos:definition "Dehydrogenation of an alcohol to a carbonyl (primary alcohol → aldehyde; secondary → ketone)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "alcohol dehydrogenation" ;
   skos:altLabel "alcohol to aldehyde" ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:0000311 a skos:Concept ;
+xmet:4000070 a skos:Concept ;
   skos:prefLabel "primary alcohol oxidation" ;
   skos:definition "Dehydrogenation of a primary alcohol to an aldehyde." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000310 .
+  skos:broader xmet:4000069 .
 
-xmet:0000312 a skos:Concept ;
+xmet:4000071 a skos:Concept ;
   skos:prefLabel "secondary alcohol oxidation" ;
   skos:definition "Dehydrogenation of a secondary alcohol to a ketone." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000310 .
+  skos:broader xmet:4000069 .
 
-xmet:0000313 a skos:Concept ;
+xmet:4000072 a skos:Concept ;
   skos:prefLabel "aldehyde oxidation" ;
   skos:definition "Dehydrogenation / oxidation of an aldehyde toward carboxylic acid. Sibling of alcohol oxidation under dehydrogenation, not a subtype of it." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aldehyde to carboxylic acid" ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:0000314 a skos:Concept ;
+xmet:4000073 a skos:Concept ;
   skos:prefLabel "alkene formation" ;
   skos:definition "alkene formation: xenobiotic-metabolism term under dehydrogenation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "desaturation to alkene" ;
-  skos:broader xmet:3001120 .
+  skos:broader xmet:4000302 .
 
-xmet:0000315 a skos:Concept ;
+xmet:4000074 a skos:Concept ;
   skos:prefLabel "aromatization" ;
   skos:definition "Formation or restoration of an aromatic system." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000510 .
+  skos:broader xmet:4000274 .
 
-xmet:0000316 a skos:Concept ;
+xmet:4000075 a skos:Concept ;
   skos:prefLabel "single- to double-bond dehydrogenation" ;
   skos:definition "Dehydrogenation that converts a single bond into a double bond (Rainbow Table 1)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "bond unsaturation to alkene" ;
-  skos:broader xmet:3001120 .
+  skos:broader xmet:4000302 .
 
-xmet:0000317 a skos:Concept ;
+xmet:4000076 a skos:Concept ;
   skos:prefLabel "double- to triple-bond dehydrogenation" ;
   skos:definition "Dehydrogenation converting a double bond into a triple bond. Under carbon–carbon dehydrogenation (not under alkane dehydrogenation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "bond unsaturation to alkyne" ;
-  skos:broader xmet:3001247 .
+  skos:broader xmet:4000395 .
 
-xmet:0000400 a skos:Concept ;
+xmet:4000077 a skos:Concept ;
   skos:prefLabel "epoxide opening" ;
   skos:definition "Opening of an epoxide ring (hydration to diol, or rearrangement). Under isoredox; not a subtype of hydrolysis, though Forest lists EpoxideOpening with the HD ruleset operationally. Hydration vs rearrangement specialize underneath." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "epoxide hydrolysis" ;
-  skos:broader xmet:3000005 .
+  skos:broader xmet:4000265 .
 
-xmet:0000401 a skos:Concept ;
+xmet:4000078 a skos:Concept ;
   skos:prefLabel "ester hydrolysis" ;
   skos:definition "ester hydrolysis: xenobiotic-metabolism term under hydrolysis." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "de-esterification" ;
   skos:altLabel "C-de-esterification" ;
   skos:altLabel "deesterification" ;
-  skos:broader xmet:3001203 .
+  skos:broader xmet:4000352 .
 
-xmet:0000402 a skos:Concept ;
+xmet:4000079 a skos:Concept ;
   skos:prefLabel "amide hydrolysis" ;
   skos:definition "amide hydrolysis: xenobiotic-metabolism term under hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001204 .
+  skos:broader xmet:4000353 .
 
-xmet:0000403 a skos:Concept ;
+xmet:4000080 a skos:Concept ;
   skos:prefLabel "lactone hydrolysis" ;
   skos:definition "lactone hydrolysis: xenobiotic-metabolism term under ester hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001203 .
+  skos:broader xmet:4000352 .
 
-xmet:0000404 a skos:Concept ;
+xmet:4000081 a skos:Concept ;
   skos:prefLabel "lactam hydrolysis" ;
   skos:definition "lactam hydrolysis: xenobiotic-metabolism term under amide hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001204 .
+  skos:broader xmet:4000353 .
 
-xmet:0000405 a skos:Concept ;
+xmet:4000082 a skos:Concept ;
   skos:prefLabel "carbamate hydrolysis" ;
   skos:definition "carbamate hydrolysis: xenobiotic-metabolism term under hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001204 .
+  skos:broader xmet:4000353 .
 
-xmet:0000406 a skos:Concept ;
+xmet:4000083 a skos:Concept ;
   skos:prefLabel "urea hydrolysis" ;
   skos:definition "urea hydrolysis: xenobiotic-metabolism term under hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001204 .
+  skos:broader xmet:4000353 .
 
-xmet:0000407 a skos:Concept ;
+xmet:4000084 a skos:Concept ;
   skos:prefLabel "ether cleavage" ;
   skos:definition "Hydrolytic or solvolytic cleavage of ethers (distinct from oxidative O-dealkylation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "hydrolytic ether cleavage" ;
-  skos:broader xmet:3001205 .
+  skos:broader xmet:4000354 .
 
-xmet:0000408 a skos:Concept ;
+xmet:4000085 a skos:Concept ;
   skos:prefLabel "ether hydrolysis" ;
   skos:definition "Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from oxidative O-dealkylation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001205 .
+  skos:broader xmet:4000354 .
 
-xmet:0000409 a skos:Concept ;
+xmet:4000086 a skos:Concept ;
   skos:prefLabel "cyanide hydrolysis" ;
   skos:definition "Hydrolysis at a cyanide/nitrile center (Rainbow Table 1 hydrolysis type)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001206 ;
-  skos:closeMatch xmet:0000411 .
+  skos:broader xmet:4000355 ;
+  skos:closeMatch xmet:4000088 .
 
-xmet:0000410 a skos:Concept ;
+xmet:4000087 a skos:Concept ;
   skos:prefLabel "dephosphorylation" ;
   skos:definition "Hydrolytic cleavage of a phosphate ester, releasing the organic alcohol from phosphorus." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "phosphate ester hydrolysis" ;
-  skos:broader xmet:0000013 .
+  skos:broader xmet:4000007 .
 
-xmet:0000411 a skos:Concept ;
+xmet:4000088 a skos:Concept ;
   skos:prefLabel "nitrile hydrolysis" ;
   skos:definition "Hydrolysis of a nitrile / cyanide group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001206 .
+  skos:broader xmet:4000355 .
 
-xmet:0000412 a skos:Concept ;
+xmet:4000089 a skos:Concept ;
   skos:prefLabel "azo cleavage" ;
   skos:definition "azo cleavage: xenobiotic-metabolism term under hydrolysis, reduction." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "azo splitting" ;
   skos:altLabel "azo reduction/cleavage" ;
-  skos:broader xmet:3001228 .
+  skos:broader xmet:4000376 .
 
-xmet:0000500 a skos:Concept ;
+xmet:4000090 a skos:Concept ;
   skos:prefLabel "hydrogenation" ;
   skos:definition "hydrogenation: xenobiotic-metabolism term under reduction." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "alkene hydrogenation" ;
   skos:altLabel "reductive saturation" ;
-  skos:broader xmet:0000014 .
+  skos:broader xmet:4000008 .
 
-xmet:0000501 a skos:Concept ;
+xmet:4000091 a skos:Concept ;
   skos:prefLabel "alkene hydrogenation" ;
   skos:definition "Reduction of a C=C bond to a C–C single bond by addition of hydrogen." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000500 .
+  skos:broader xmet:4000090 .
 
-xmet:0000502 a skos:Concept ;
+xmet:4000092 a skos:Concept ;
   skos:prefLabel "alkyne hydrogenation" ;
   skos:definition "Partial reduction of a C≡C bond to a C=C bond by addition of hydrogen." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000500 .
+  skos:broader xmet:4000090 .
 
-xmet:0000510 a skos:Concept ;
+xmet:4000093 a skos:Concept ;
   skos:prefLabel "nitrogen reduction" ;
   skos:definition "nitrogen reduction: xenobiotic-metabolism term under reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000014 .
+  skos:broader xmet:4000008 .
 
-xmet:0000511 a skos:Concept ;
+xmet:4000094 a skos:Concept ;
   skos:prefLabel "nitro reduction" ;
   skos:definition "Reduction of a nitro group toward nitroso, hydroxylamine, and/or amine." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000512 .
+  skos:broader xmet:4000095 .
 
-xmet:0000512 a skos:Concept ;
+xmet:4000095 a skos:Concept ;
   skos:prefLabel "nitro to amine reduction" ;
   skos:definition "Complete reduction of a nitro group to an amine (–NO2 → –NH2)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001227 .
+  skos:broader xmet:4000375 .
 
-xmet:0000513 a skos:Concept ;
+xmet:4000096 a skos:Concept ;
   skos:prefLabel "nitroaromatic reduction" ;
   skos:definition "nitroaromatic reduction: xenobiotic-metabolism term under nitro reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000512 .
+  skos:broader xmet:4000095 .
 
-xmet:0000514 a skos:Concept ;
+xmet:4000097 a skos:Concept ;
   skos:prefLabel "azo reduction" ;
   skos:definition "azo reduction: xenobiotic-metabolism term under nitrogen reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001228 .
+  skos:broader xmet:4000376 .
 
-xmet:0000515 a skos:Concept ;
+xmet:4000098 a skos:Concept ;
   skos:prefLabel "N-oxide reduction" ;
   skos:definition "N-oxide reduction: xenobiotic-metabolism term under nitrogen reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001229 .
+  skos:broader xmet:4000377 .
 
-xmet:0000516 a skos:Concept ;
+xmet:4000099 a skos:Concept ;
   skos:prefLabel "oxime reduction" ;
   skos:definition "oxime reduction: xenobiotic-metabolism term under nitrogen reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001229 .
+  skos:broader xmet:4000377 .
 
-xmet:0000517 a skos:Concept ;
+xmet:4000100 a skos:Concept ;
   skos:prefLabel "benzodioxole reduction" ;
   skos:definition "benzodioxole reduction: reductive cleavage of a methylenedioxy bridge." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000014 .
+  skos:broader xmet:4000008 .
 
-xmet:0000520 a skos:Concept ;
+xmet:4000101 a skos:Concept ;
   skos:prefLabel "oxygen reduction" ;
   skos:definition "oxygen reduction: xenobiotic-metabolism term under reduction." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "carbonyl reduction" ;
   skos:altLabel "ketone/aldehyde reduction" ;
-  skos:broader xmet:0000014 .
+  skos:broader xmet:4000008 .
 
-xmet:0000521 a skos:Concept ;
+xmet:4000102 a skos:Concept ;
   skos:prefLabel "ketone reduction" ;
   skos:definition "Reduction of a ketone carbonyl to a secondary alcohol." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000524 .
+  skos:broader xmet:4000105 .
 
-xmet:0000522 a skos:Concept ;
+xmet:4000103 a skos:Concept ;
   skos:prefLabel "aldehyde reduction" ;
   skos:definition "Reduction of an aldehyde carbonyl to a primary alcohol." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000524 .
+  skos:broader xmet:4000105 .
 
-xmet:0000523 a skos:Concept ;
+xmet:4000104 a skos:Concept ;
   skos:prefLabel "quinone-like reduction" ;
   skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. Reduction of such a quinoid product back toward an aromatic (or less oxidized) form." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid reduction" ;
   skos:altLabel "quinone reduction" ;
-  skos:broader xmet:0000524 .
+  skos:broader xmet:4000105 .
 
-xmet:0000524 a skos:Concept ;
+xmet:4000105 a skos:Concept ;
   skos:prefLabel "carbonyl reduction" ;
   skos:definition "Reduction of a carbonyl (C=O) to the corresponding alcohol by addition of hydrogen across the double bond." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000520 .
+  skos:broader xmet:4000101 .
 
-xmet:0000530 a skos:Concept ;
+xmet:4000106 a skos:Concept ;
   skos:prefLabel "sulfur reduction" ;
   skos:definition "sulfur reduction: xenobiotic-metabolism term under reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000014 .
+  skos:broader xmet:4000008 .
 
-xmet:0000531 a skos:Concept ;
+xmet:4000107 a skos:Concept ;
   skos:prefLabel "sulfoxide reduction" ;
   skos:definition "Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000530 .
+  skos:broader xmet:4000106 .
 
-xmet:0000532 a skos:Concept ;
+xmet:4000108 a skos:Concept ;
   skos:prefLabel "disulfide reduction" ;
   skos:definition "Reductive cleavage of a disulfide S–S bond to thiols (or equivalent)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000530 .
+  skos:broader xmet:4000106 .
 
-xmet:0000533 a skos:Concept ;
+xmet:4000109 a skos:Concept ;
   skos:prefLabel "sulfo reduction" ;
   skos:definition "Reduction of a sulfo / sulfoxide center (Rainbow Table 1 reduction type)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "sulfoxide reduction" ;
   skos:altLabel "S-oxide reduction" ;
-  skos:broader xmet:0000530 ;
-  skos:closeMatch xmet:0000531 .
+  skos:broader xmet:4000106 ;
+  skos:closeMatch xmet:4000107 .
 
-xmet:0000540 a skos:Concept ;
+xmet:4000110 a skos:Concept ;
   skos:prefLabel "reductive dehalogenation" ;
   skos:definition "Reductive removal of halogen. Under reduction; related to isoredox dehalogenation (not a subtype of it)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000014 .
+  skos:broader xmet:4000008 .
 
-xmet:0000541 a skos:Concept ;
+xmet:4000111 a skos:Concept ;
   skos:prefLabel "reductive defluorination" ;
   skos:definition "reductive defluorination: xenobiotic-metabolism term under reductive dehalogenation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001106 .
+  skos:broader xmet:4000288 .
 
-xmet:0000542 a skos:Concept ;
+xmet:4000112 a skos:Concept ;
   skos:prefLabel "reductive dechlorination" ;
   skos:definition "reductive dechlorination: xenobiotic-metabolism term under reductive dehalogenation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001106 .
+  skos:broader xmet:4000288 .
 
-xmet:0000550 a skos:Concept ;
+xmet:4000113 a skos:Concept ;
   skos:prefLabel "dehydration" ;
   skos:definition "Loss of water, typically via elimination (alcohol dehydration, beta-elimination, carbonyl dehydration). Chemically non-redox / elimination-like; not a subtype of reduction. Forest may still catalog Dehydration with the RD ruleset operationally." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000005 .
+  skos:broader xmet:4000265 .
 
-xmet:0000600 a skos:Concept ;
+xmet:4000114 a skos:Concept ;
   skos:prefLabel "cyanidation" ;
   skos:definition "Introduction of a cyano/cyanide group (reactive/toxicophore-relevant)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cyano addition" ;
   skos:altLabel "nitrile formation" ;
   skos:altLabel "cyanide incorporation" ;
-  skos:broader xmet:3001218 .
+  skos:broader xmet:4000366 .
 
-xmet:0000601 a skos:Concept ;
+xmet:4000115 a skos:Concept ;
   skos:prefLabel "decyanidation" ;
   skos:definition "Loss or cleavage of a cyano/cyanide group. Sibling of nitrile hydrolysis under nitrile bond hydrolysis when the path is hydrolytic CN loss; antonym of cyanidation. Not every decyanidation is carbonyl-forming nitrile hydrolysis." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cyano loss" ;
   skos:altLabel "nitrile cleavage" ;
   skos:altLabel "cyanide release" ;
-  skos:broader xmet:3001206 .
+  skos:broader xmet:4000355 .
 
-xmet:0000610 a skos:Concept ;
+xmet:4000116 a skos:Concept ;
   skos:prefLabel "alkylation" ;
   skos:definition "Addition of an alkyl group. Antonym of dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "alkyl transfer" ;
   skos:altLabel "alkyl conjugation" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000611 a skos:Concept ;
+xmet:4000117 a skos:Concept ;
   skos:prefLabel "N-alkylation" ;
   skos:definition "Alkylation at nitrogen. Antonym of N-dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "nitrogen alkylation" ;
-  skos:broader xmet:0000610 .
+  skos:broader xmet:4000116 .
 
-xmet:0000612 a skos:Concept ;
+xmet:4000118 a skos:Concept ;
   skos:prefLabel "O-alkylation" ;
   skos:definition "Alkylation at oxygen. Antonym of O-dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxygen alkylation" ;
   skos:altLabel "ether formation" ;
-  skos:broader xmet:0000610 .
+  skos:broader xmet:4000116 .
 
-xmet:0000613 a skos:Concept ;
+xmet:4000119 a skos:Concept ;
   skos:prefLabel "S-alkylation" ;
   skos:definition "Alkylation at sulfur. Antonym of S-dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "sulfur alkylation" ;
   skos:altLabel "thioether formation" ;
-  skos:broader xmet:0000610 .
+  skos:broader xmet:4000116 .
 
-xmet:0000614 a skos:Concept ;
+xmet:4000120 a skos:Concept ;
   skos:prefLabel "C-alkylation" ;
   skos:definition "Alkylation at carbon. Antonym of C-dealkylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "carbon alkylation" ;
-  skos:broader xmet:0000610 .
+  skos:broader xmet:4000116 .
 
-xmet:0000620 a skos:Concept ;
+xmet:4000121 a skos:Concept ;
   skos:prefLabel "decarboxylation" ;
   skos:definition "Loss of CO2 from a carboxylic acid (distinct from decarbonylation)." ;
   skos:inScheme xmet:scheme ;
@@ -881,9 +881,9 @@ xmet:0000620 a skos:Concept ;
   skos:altLabel "carboxyl loss" ;
   skos:altLabel "C-decarboxylation" ;
   skos:altLabel "N-decarboxylation" ;
-  skos:broader xmet:3001209 .
+  skos:broader xmet:4000358 .
 
-xmet:0000621 a skos:Concept ;
+xmet:4000122 a skos:Concept ;
   skos:prefLabel "carboxylation" ;
   skos:definition "Introduction of a carboxyl group. Antonym of decarboxylation." ;
   skos:inScheme xmet:scheme ;
@@ -891,47 +891,47 @@ xmet:0000621 a skos:Concept ;
   skos:altLabel "carboxyl formation" ;
   skos:altLabel "C-carboxylation" ;
   skos:altLabel "N-carboxylation" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000630 a skos:Concept ;
+xmet:4000123 a skos:Concept ;
   skos:prefLabel "esterification" ;
   skos:definition "Formation of an ester. Antonym of ester hydrolysis." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "ester formation" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000631 a skos:Concept ;
+xmet:4000124 a skos:Concept ;
   skos:prefLabel "transesterification" ;
   skos:definition "Exchange of ester alkoxy groups." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "ester exchange" ;
-  skos:broader xmet:0000630 .
+  skos:broader xmet:4000123 .
 
-xmet:0000632 a skos:Concept ;
+xmet:4000125 a skos:Concept ;
   skos:prefLabel "lactonization" ;
   skos:definition "Intramolecular ester formation to a lactone. Antonym of lactone hydrolysis." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "lactone formation" ;
   skos:altLabel "intramolecular esterification" ;
-  skos:broader xmet:0000640 .
+  skos:broader xmet:4000127 .
 
-xmet:0000633 a skos:Concept ;
+xmet:4000126 a skos:Concept ;
   skos:prefLabel "lactamization" ;
   skos:definition "Intramolecular amide formation to a lactam. Antonym of lactam hydrolysis." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "lactam formation" ;
   skos:altLabel "intramolecular amidation" ;
-  skos:broader xmet:0000640 .
+  skos:broader xmet:4000127 .
 
-xmet:0000640 a skos:Concept ;
+xmet:4000127 a skos:Concept ;
   skos:prefLabel "cyclization" ;
   skos:definition "Formation of a new ring by cyclization." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "ring-forming cyclization" ;
   skos:altLabel "annulation" ;
-  skos:broader xmet:3000300 .
+  skos:broader xmet:4000271 .
 
-xmet:0000650 a skos:Concept ;
+xmet:4000128 a skos:Concept ;
   skos:prefLabel "dehydroxylation" ;
   skos:definition "Loss of a hydroxyl group. Antonym of hydroxylation." ;
   skos:inScheme xmet:scheme ;
@@ -939,72 +939,72 @@ xmet:0000650 a skos:Concept ;
   skos:altLabel "OH loss" ;
   skos:altLabel "aromatic dehydroxylation" ;
   skos:altLabel "N-dehydroxylation" ;
-  skos:broader xmet:3001209 .
+  skos:broader xmet:4000358 .
 
-xmet:0000660 a skos:Concept ;
+xmet:4000129 a skos:Concept ;
   skos:prefLabel "halogenation" ;
   skos:definition "Introduction of halogen. Antonym of dehalogenation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "halide addition" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000661 a skos:Concept ;
+xmet:4000130 a skos:Concept ;
   skos:prefLabel "amination" ;
   skos:definition "Introduction of an amino group. Antonym of deamination." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "amino group introduction" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000670 a skos:Concept ;
+xmet:4000131 a skos:Concept ;
   skos:prefLabel "formylation" ;
   skos:definition "Introduction of a formyl group (often N-formylation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-formylation" ;
   skos:altLabel "formyl conjugation" ;
-  skos:broader xmet:3001221 .
+  skos:broader xmet:4000369 .
 
-xmet:0000671 a skos:Concept ;
+xmet:4000132 a skos:Concept ;
   skos:prefLabel "deformylation" ;
   skos:definition "Loss of a formyl group. Antonym of formylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-deformylation" ;
   skos:altLabel "formyl loss" ;
-  skos:broader xmet:3001207 .
+  skos:broader xmet:4000356 .
 
-xmet:0000680 a skos:Concept ;
+xmet:4000133 a skos:Concept ;
   skos:prefLabel "N-nitrosation" ;
   skos:definition "Formation of an N-nitroso species (reactive-metabolite relevant)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "nitrosation" ;
   skos:altLabel "N-nitroso formation" ;
-  skos:broader xmet:0000120 .
+  skos:broader xmet:4000026 .
 
-xmet:0000681 a skos:Concept ;
+xmet:4000134 a skos:Concept ;
   skos:prefLabel "denitrosation" ;
   skos:definition "Removal of an N-nitroso group. Antonym of N-nitrosation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-denitrosation" ;
   skos:altLabel "N-nitroso cleavage" ;
-  skos:broader xmet:3001229 .
+  skos:broader xmet:4000377 .
 
-xmet:0000690 a skos:Concept ;
+xmet:4000135 a skos:Concept ;
   skos:prefLabel "desulfuration" ;
   skos:definition "Removal/replacement of sulfur (e.g. phosphorothioate oxidative desulfuration)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "oxidative desulfuration" ;
   skos:altLabel "desulfurization" ;
   skos:altLabel "P=S to P=O" ;
-  skos:broader xmet:0000130 .
+  skos:broader xmet:4000032 .
 
-xmet:0000691 a skos:Concept ;
+xmet:4000136 a skos:Concept ;
   skos:prefLabel "sulfuration" ;
   skos:definition "Introduction of sulfur. Antonym of desulfuration (not synonymous with sulfation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "thionation" ;
   skos:altLabel "S introduction" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000700 a skos:Concept ;
+xmet:4000137 a skos:Concept ;
   skos:prefLabel "deglucuronidation" ;
   skos:definition "Hydrolytic removal of a glucuronide. Antonym of glucuronidation." ;
   skos:inScheme xmet:scheme ;
@@ -1012,17 +1012,17 @@ xmet:0000700 a skos:Concept ;
   skos:altLabel "glucuronide hydrolysis" ;
   skos:altLabel "N-deglucuronidation" ;
   skos:altLabel "S-deglucuronidation" ;
-  skos:broader xmet:0000732 .
+  skos:broader xmet:4000147 .
 
-xmet:0000701 a skos:Concept ;
+xmet:4000138 a skos:Concept ;
   skos:prefLabel "desulfation" ;
   skos:definition "Hydrolytic removal of a sulfate. Antonym of sulfation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "sulfate hydrolysis" ;
   skos:altLabel "O-desulfation" ;
-  skos:broader xmet:0000732 .
+  skos:broader xmet:4000147 .
 
-xmet:0000702 a skos:Concept ;
+xmet:4000139 a skos:Concept ;
   skos:prefLabel "deglycosidation" ;
   skos:definition "Cleavage of a glycoside. Antonym of glycosylation." ;
   skos:inScheme xmet:scheme ;
@@ -1030,71 +1030,71 @@ xmet:0000702 a skos:Concept ;
   skos:altLabel "N-deglycosidation" ;
   skos:altLabel "deglucosidation" ;
   skos:altLabel "glycoside hydrolysis" ;
-  skos:broader xmet:0000732 .
+  skos:broader xmet:4000147 .
 
-xmet:0000703 a skos:Concept ;
+xmet:4000140 a skos:Concept ;
   skos:prefLabel "deglutathionation" ;
   skos:definition "Removal of a glutathione adduct. Antonym of glutathionation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH adduct cleavage" ;
   skos:altLabel "glutathione adduct hydrolysis" ;
-  skos:broader xmet:0000732 .
+  skos:broader xmet:4000147 .
 
-xmet:0000704 a skos:Concept ;
+xmet:4000141 a skos:Concept ;
   skos:prefLabel "decysteination" ;
   skos:definition "Removal of a cysteine conjugate. Antonym of cysteine conjugation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cysteine adduct cleavage" ;
-  skos:broader xmet:0000732 .
+  skos:broader xmet:4000147 .
 
-xmet:0000710 a skos:Concept ;
+xmet:4000142 a skos:Concept ;
   skos:prefLabel "Se-methylation" ;
   skos:definition "Methylation at selenium (distinct from S-methylation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "selenium methylation" ;
-  skos:broader xmet:0001040 .
+  skos:broader xmet:4000175 .
 
-xmet:0000720 a skos:Concept ;
+xmet:4000143 a skos:Concept ;
   skos:prefLabel "dearylation" ;
   skos:definition "Cleavage removing an aryl group from N/O/S (heteroatom dearylation; not C–C cleavage)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "O-dearylation" ;
   skos:altLabel "N-dearylation" ;
   skos:altLabel "aryl ether cleavage" ;
-  skos:broader xmet:0000200 .
+  skos:broader xmet:4000042 .
 
-xmet:0000721 a skos:Concept ;
+xmet:4000144 a skos:Concept ;
   skos:prefLabel "alpha-hydroxylation" ;
   skos:definition "Hydroxylation at a carbon alpha to a carbonyl or heteroatom." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "α-hydroxylation" ;
   skos:altLabel "alpha hydroxylation of carbonyl" ;
-  skos:broader xmet:3001231 .
+  skos:broader xmet:4000379 .
 
-xmet:0000730 a skos:Concept ;
+xmet:4000145 a skos:Concept ;
   skos:prefLabel "arylation" ;
   skos:definition "Addition of an aryl group. Antonym of dearylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aryl transfer" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000731 a skos:Concept ;
+xmet:4000146 a skos:Concept ;
   skos:prefLabel "carbonylation" ;
   skos:definition "Introduction of a carbonyl via carbonylation (distinct from carboxylation). Antonym of decarbonylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "CO insertion" ;
   skos:altLabel "carbonyl insertion" ;
-  skos:broader xmet:3001208 .
+  skos:broader xmet:4000357 .
 
-xmet:0000732 a skos:Concept ;
+xmet:4000147 a skos:Concept ;
   skos:prefLabel "deconjugation" ;
   skos:definition "Removal of a previously attached conjugate moiety (deglucuronidation, desulfation, …). Not a subtype of conjugation; antonym of conjugation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "conjugate cleavage" ;
   skos:altLabel "phase II deconjugation" ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:0001000 a skos:Concept ;
+xmet:4000148 a skos:Concept ;
   skos:prefLabel "glucuronidation" ;
   skos:definition "glucuronidation: xenobiotic-metabolism term under phase II, phase II conjugation family." ;
   skos:inScheme xmet:scheme ;
@@ -1104,126 +1104,126 @@ xmet:0001000 a skos:Concept ;
   skos:altLabel "UDP-glucuronosyl transfer" ;
   skos:altLabel "glucuronide conjugation" ;
   skos:altLabel "UDP-glucuronosyl conjugation" ;
-  skos:broader xmet:3001222 .
+  skos:broader xmet:4000370 .
 
-xmet:0001001 a skos:Concept ;
+xmet:4000149 a skos:Concept ;
   skos:prefLabel "O-glucuronidation" ;
   skos:definition "O-glucuronidation at hydroxy (phenolic or alcoholic). Does not include acyl (carboxylate) glucuronidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001000 .
+  skos:broader xmet:4000148 .
 
-xmet:0001002 a skos:Concept ;
+xmet:4000150 a skos:Concept ;
   skos:prefLabel "phenolic glucuronidation" ;
   skos:definition "phenolic glucuronidation: xenobiotic-metabolism term under O-glucuronidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001001 .
+  skos:broader xmet:4000149 .
 
-xmet:0001003 a skos:Concept ;
+xmet:4000151 a skos:Concept ;
   skos:prefLabel "alcoholic glucuronidation" ;
   skos:definition "alcoholic glucuronidation: xenobiotic-metabolism term under O-glucuronidation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aliphatic O-glucuronidation" ;
-  skos:broader xmet:0001001 .
+  skos:broader xmet:4000149 .
 
-xmet:0001004 a skos:Concept ;
+xmet:4000152 a skos:Concept ;
   skos:prefLabel "acyl glucuronidation" ;
   skos:definition "Glucuronidation of a carboxylate to an acyl glucuronide. Sibling of O-glucuronidation (hydroxy attachment); uses the carboxylate Forest pattern, not the alcohol pattern." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "acyl glucuronide formation" ;
-  skos:broader xmet:0001000 .
+  skos:broader xmet:4000148 .
 
-xmet:0001005 a skos:Concept ;
+xmet:4000153 a skos:Concept ;
   skos:prefLabel "N-glucuronidation" ;
   skos:definition "Glucuronidation at nitrogen, including quaternary ammonium N-glucuronides." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001000 .
+  skos:broader xmet:4000148 .
 
-xmet:0001006 a skos:Concept ;
+xmet:4000154 a skos:Concept ;
   skos:prefLabel "quaternary N-glucuronidation" ;
   skos:definition "quaternary N-glucuronidation: xenobiotic-metabolism term under N-glucuronidation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N+-glucuronidation" ;
-  skos:broader xmet:0001005 .
+  skos:broader xmet:4000153 .
 
-xmet:0001007 a skos:Concept ;
+xmet:4000155 a skos:Concept ;
   skos:prefLabel "S-glucuronidation" ;
   skos:definition "S-glucuronidation: xenobiotic-metabolism term under glucuronidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001000 .
+  skos:broader xmet:4000148 .
 
-xmet:0001008 a skos:Concept ;
+xmet:4000156 a skos:Concept ;
   skos:prefLabel "C-glucuronidation" ;
   skos:definition "C-glucuronidation: xenobiotic-metabolism term under glucuronidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001000 .
+  skos:broader xmet:4000148 .
 
-xmet:0001009 a skos:Concept ;
+xmet:4000157 a skos:Concept ;
   skos:prefLabel "carbamoyl glucuronidation" ;
   skos:definition "N-glucuronidation at a carbamoyl nitrogen." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-carbamoyl glucuronidation" ;
-  skos:broader xmet:0001005 .
+  skos:broader xmet:4000153 .
 
-xmet:0001010 a skos:Concept ;
+xmet:4000158 a skos:Concept ;
   skos:prefLabel "sulfation" ;
   skos:definition "sulfation: xenobiotic-metabolism term under phase II, phase II conjugation family." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "sulfonation" ;
   skos:altLabel "sulfate conjugation" ;
   skos:altLabel "sulfo-conjugation" ;
-  skos:broader xmet:3001222 .
+  skos:broader xmet:4000370 .
 
-xmet:0001011 a skos:Concept ;
+xmet:4000159 a skos:Concept ;
   skos:prefLabel "O-sulfation" ;
   skos:definition "Sulfation at oxygen (phenols or alcohols)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001010 .
+  skos:broader xmet:4000158 .
 
-xmet:0001012 a skos:Concept ;
+xmet:4000160 a skos:Concept ;
   skos:prefLabel "phenolic sulfation" ;
   skos:definition "phenolic sulfation: xenobiotic-metabolism term under O-sulfation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001011 .
+  skos:broader xmet:4000159 .
 
-xmet:0001013 a skos:Concept ;
+xmet:4000161 a skos:Concept ;
   skos:prefLabel "alcoholic sulfation" ;
   skos:definition "alcoholic sulfation: xenobiotic-metabolism term under O-sulfation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001011 .
+  skos:broader xmet:4000159 .
 
-xmet:0001014 a skos:Concept ;
+xmet:4000162 a skos:Concept ;
   skos:prefLabel "N-sulfation" ;
   skos:definition "N-sulfation: xenobiotic-metabolism term under sulfation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001010 .
+  skos:broader xmet:4000158 .
 
-xmet:0001020 a skos:Concept ;
+xmet:4000163 a skos:Concept ;
   skos:prefLabel "acetylation" ;
   skos:definition "acetylation: xenobiotic-metabolism term under phase II, phase II conjugation family." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-acetylation" ;
   skos:altLabel "acylation" ;
-  skos:broader xmet:3001221 .
+  skos:broader xmet:4000369 .
 
-xmet:0001021 a skos:Concept ;
+xmet:4000164 a skos:Concept ;
   skos:prefLabel "N-acetylation" ;
   skos:definition "N-acetylation: xenobiotic-metabolism term under acetylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001020 .
+  skos:broader xmet:4000163 .
 
-xmet:0001022 a skos:Concept ;
+xmet:4000165 a skos:Concept ;
   skos:prefLabel "O-acetylation" ;
   skos:definition "O-acetylation: xenobiotic-metabolism term under acetylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001020 .
+  skos:broader xmet:4000163 .
 
-xmet:0001023 a skos:Concept ;
+xmet:4000166 a skos:Concept ;
   skos:prefLabel "deacetylation" ;
   skos:definition "Hydrolytic removal of an acetyl group (often esterase/amidase)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001207 .
+  skos:broader xmet:4000356 .
 
-xmet:0001030 a skos:Concept ;
+xmet:4000167 a skos:Concept ;
   skos:prefLabel "glutathione conjugation" ;
   skos:definition "Conjugation / adduct formation with glutathione (electrophile capture). Under adduct formation, not transfer conjugation. Soft-suggests protein adduct." ;
   skos:inScheme xmet:scheme ;
@@ -1233,120 +1233,120 @@ xmet:0001030 a skos:Concept ;
   skos:altLabel "glutathione adduct formation" ;
   skos:altLabel "glutathionation" ;
   skos:altLabel "GSH adduct formation" ;
-  skos:broader xmet:3001217 .
+  skos:broader xmet:4000365 .
 
-xmet:0001031 a skos:Concept ;
+xmet:4000168 a skos:Concept ;
   skos:prefLabel "Michael glutathionation" ;
   skos:definition "Glutathione addition at a Michael acceptor." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH Michael addition" ;
-  skos:broader xmet:3001224 .
+  skos:broader xmet:4000372 .
 
-xmet:0001032 a skos:Concept ;
+xmet:4000169 a skos:Concept ;
   skos:prefLabel "epoxide glutathionation" ;
   skos:definition "epoxide glutathionation: xenobiotic-metabolism term under glutathionation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH epoxide conjugation" ;
-  skos:broader xmet:3001223 .
+  skos:broader xmet:4000371 .
 
-xmet:0001033 a skos:Concept ;
+xmet:4000170 a skos:Concept ;
   skos:prefLabel "halide displacement glutathionation" ;
   skos:definition "halide displacement glutathionation: xenobiotic-metabolism term under glutathionation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH nucleophilic aromatic/aliphatic substitution" ;
-  skos:broader xmet:3001225 .
+  skos:broader xmet:4000373 .
 
-xmet:0001034 a skos:Concept ;
+xmet:4000171 a skos:Concept ;
   skos:prefLabel "isocyanate glutathionation" ;
   skos:definition "isocyanate glutathionation: xenobiotic-metabolism term under glutathionation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001225 .
+  skos:broader xmet:4000373 .
 
-xmet:0001035 a skos:Concept ;
+xmet:4000172 a skos:Concept ;
   skos:prefLabel "aziridine glutathionation" ;
   skos:definition "aziridine glutathionation: xenobiotic-metabolism term under glutathionation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001223 .
+  skos:broader xmet:4000371 .
 
-xmet:0001036 a skos:Concept ;
+xmet:4000173 a skos:Concept ;
   skos:prefLabel "quinone-like glutathionation" ;
   skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. GSH (or related thiol) conjugate addition at a quinoid electrophile." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid glutathionation" ;
   skos:altLabel "quinone glutathionation" ;
   skos:altLabel "GSH addition to quinone-like species" ;
-  skos:broader xmet:3001226 .
+  skos:broader xmet:4000374 .
 
-xmet:0001037 a skos:Concept ;
+xmet:4000174 a skos:Concept ;
   skos:prefLabel "mercapturic acid formation" ;
   skos:definition "Downstream processing of GSH conjugates to N-acetylcysteine (mercapturate) adducts." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "mercapturic_acid_formation" ;
-  skos:broader xmet:3001217 .
+  skos:broader xmet:4000365 .
 
-xmet:0001040 a skos:Concept ;
+xmet:4000175 a skos:Concept ;
   skos:prefLabel "methylation" ;
   skos:definition "methylation: xenobiotic-metabolism term under phase II, phase II conjugation family." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "methyl conjugation" ;
-  skos:broader xmet:3001222 .
+  skos:broader xmet:4000370 .
 
-xmet:0001041 a skos:Concept ;
+xmet:4000176 a skos:Concept ;
   skos:prefLabel "O-methylation" ;
   skos:definition "O-methylation: xenobiotic-metabolism term under methylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "catechol O-methylation" ;
-  skos:broader xmet:0001040 .
+  skos:broader xmet:4000175 .
 
-xmet:0001042 a skos:Concept ;
+xmet:4000177 a skos:Concept ;
   skos:prefLabel "N-methylation" ;
   skos:definition "N-methylation: xenobiotic-metabolism term under methylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001040 .
+  skos:broader xmet:4000175 .
 
-xmet:0001043 a skos:Concept ;
+xmet:4000178 a skos:Concept ;
   skos:prefLabel "S-methylation" ;
   skos:definition "S-methylation: xenobiotic-metabolism term under methylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "thiol methylation" ;
-  skos:broader xmet:0001040 .
+  skos:broader xmet:4000175 .
 
-xmet:0001050 a skos:Concept ;
+xmet:4000179 a skos:Concept ;
   skos:prefLabel "amino acid conjugation" ;
   skos:definition "amino acid conjugation: xenobiotic-metabolism term under phase II, phase II conjugation family." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "amino_acid_conjugation" ;
-  skos:broader xmet:3001222 .
+  skos:broader xmet:4000370 .
 
-xmet:0001051 a skos:Concept ;
+xmet:4000180 a skos:Concept ;
   skos:prefLabel "glycine conjugation" ;
   skos:definition "glycine conjugation: xenobiotic-metabolism term under amino acid conjugation, phase II conjugation family, phase II." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "hippurate formation" ;
   skos:altLabel "benzoyl glycine conjugation" ;
   skos:altLabel "glycine_conjugation" ;
-  skos:broader xmet:0001050 .
+  skos:broader xmet:4000179 .
 
-xmet:0001052 a skos:Concept ;
+xmet:4000181 a skos:Concept ;
   skos:prefLabel "glutamine conjugation" ;
   skos:definition "glutamine conjugation: xenobiotic-metabolism term under amino acid conjugation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001050 .
+  skos:broader xmet:4000179 .
 
-xmet:0001053 a skos:Concept ;
+xmet:4000182 a skos:Concept ;
   skos:prefLabel "taurine conjugation" ;
   skos:definition "taurine conjugation: xenobiotic-metabolism term under amino acid conjugation, phase II conjugation family, phase II." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "taurine_conjugation" ;
-  skos:broader xmet:0001050 .
+  skos:broader xmet:4000179 .
 
-xmet:0001054 a skos:Concept ;
+xmet:4000183 a skos:Concept ;
   skos:prefLabel "serine conjugation" ;
   skos:definition "serine conjugation: xenobiotic-metabolism term under amino acid conjugation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001050 .
+  skos:broader xmet:4000179 .
 
-xmet:0001060 a skos:Concept ;
+xmet:4000184 a skos:Concept ;
   skos:prefLabel "glycosylation" ;
   skos:definition "Conjugation with sugars other than glucuronic acid." ;
   skos:inScheme xmet:scheme ;
@@ -1356,83 +1356,83 @@ xmet:0001060 a skos:Concept ;
   skos:altLabel "glucosidation" ;
   skos:altLabel "O-glucosidation" ;
   skos:altLabel "N-glucosidation" ;
-  skos:broader xmet:3001222 .
+  skos:broader xmet:4000370 .
 
-xmet:0001061 a skos:Concept ;
+xmet:4000185 a skos:Concept ;
   skos:prefLabel "CoA conjugation" ;
   skos:definition "Activation of carboxylic acids as CoA thioesters (often preceding amino acid conjugation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "acyl-CoA formation" ;
   skos:altLabel "coa_conjugation" ;
-  skos:broader xmet:3001221 .
+  skos:broader xmet:4000369 .
 
-xmet:0002000 a skos:Concept ;
+xmet:4000186 a skos:Concept ;
   skos:prefLabel "tautomerization" ;
   skos:definition "Tautomer interconversion; often peripheral to labeled metabolism." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002004 .
+  skos:broader xmet:4000190 .
 
-xmet:0002001 a skos:Concept ;
+xmet:4000187 a skos:Concept ;
   skos:prefLabel "keto–enol tautomerization" ;
   skos:definition "keto–enol tautomerization: xenobiotic-metabolism term under tautomerization." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002000 .
+  skos:broader xmet:4000186 .
 
-xmet:0002002 a skos:Concept ;
+xmet:4000188 a skos:Concept ;
   skos:prefLabel "imine–enamine tautomerization" ;
   skos:definition "imine–enamine tautomerization: xenobiotic-metabolism term under tautomerization." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002000 .
+  skos:broader xmet:4000186 .
 
-xmet:0002003 a skos:Concept ;
+xmet:4000189 a skos:Concept ;
   skos:prefLabel "isomerization" ;
   skos:definition "Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; Metabolic Forest treats related rearrangements separately from the five Phase I classes)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002004 .
+  skos:broader xmet:4000190 .
 
-xmet:0002004 a skos:Concept ;
+xmet:4000190 a skos:Concept ;
   skos:prefLabel "rearrangement" ;
   skos:definition "Non–enzyme-mediated molecular rearrangement shelf (tautomerization, isomerization, skeletal rearrangement). Not a Rainbow reaction color." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:0002005 a skos:Concept ;
+xmet:4000191 a skos:Concept ;
   skos:prefLabel "deacylation" ;
   skos:definition "Removal of an acyl group (Rainbow excluded phase I remainder; related to hydrolysis/deacetylation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001207 .
+  skos:broader xmet:4000356 .
 
-xmet:0002006 a skos:Concept ;
+xmet:4000192 a skos:Concept ;
   skos:prefLabel "denitrogenation" ;
   skos:definition "Metabolic loss of nitrogen from the scaffold (Rainbow excluded phase I remainder)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000300 .
+  skos:broader xmet:4000271 .
 
-xmet:0002007 a skos:Concept ;
+xmet:4000193 a skos:Concept ;
   skos:prefLabel "decarbonylation" ;
   skos:definition "Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001209 .
+  skos:broader xmet:4000358 .
 
-xmet:0004001 a skos:Concept ;
+xmet:4000194 a skos:Concept ;
   skos:prefLabel "dearomatization" ;
   skos:definition "Loss of aromatic character (arene oxide, quinone-like/quinoid products, thiophene S-oxide, cis-dihydrodiol, etc.)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000510 .
+  skos:broader xmet:4000274 .
 
-xmet:0004002 a skos:Concept ;
+xmet:4000195 a skos:Concept ;
   skos:prefLabel "rearomatization" ;
   skos:definition "Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol formation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000315 .
+  skos:broader xmet:4000074 .
 
-xmet:0004004 a skos:Concept ;
+xmet:4000196 a skos:Concept ;
   skos:prefLabel "ipso substitution" ;
   skos:definition "Substitution at a substituted aromatic carbon (ipso), often displacing alkyl/halogen/alkoxy." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000101 .
+  skos:broader xmet:4000013 .
 
-xmet:0004005 a skos:Concept ;
+xmet:4000197 a skos:Concept ;
   skos:prefLabel "arene oxide rearrangement to phenol" ;
   skos:definition "Rearrangement of an arene oxide to a phenol (arenol) by 1,2-migration of hydrogen or a substituent (NIH shift). A rearrangement step, not a subtype of arene oxide formation; related to arene oxide formation as a pathway partner." ;
   skos:inScheme xmet:scheme ;
@@ -1441,180 +1441,180 @@ xmet:0004005 a skos:Concept ;
   skos:altLabel "1,2-migration to phenol" ;
   skos:altLabel "arene oxide to phenol" ;
   skos:altLabel "arenol formation via arene oxide" ;
-  skos:broader xmet:0002004 .
+  skos:broader xmet:4000190 .
 
-xmet:0004006 a skos:Concept ;
+xmet:4000198 a skos:Concept ;
   skos:prefLabel "carbinolamine cleavage" ;
   skos:definition "Spontaneous collapse of an α-hydroxy amine to amine + carbonyl; mechanism shared by N-dealkylation and oxidative deamination." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001146 .
+  skos:broader xmet:4000318 .
 
-xmet:0004007 a skos:Concept ;
+xmet:4000199 a skos:Concept ;
   skos:prefLabel "hemiacetal cleavage" ;
   skos:definition "hemiacetal cleavage: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000202 .
+  skos:broader xmet:4000044 .
 
-xmet:0004008 a skos:Concept ;
+xmet:4000200 a skos:Concept ;
   skos:prefLabel "ring opening" ;
   skos:definition "ring opening: xenobiotic-metabolism term under process facet, chemical transformation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000500 .
+  skos:broader xmet:4000273 .
 
-xmet:0004009 a skos:Concept ;
+xmet:4000201 a skos:Concept ;
   skos:prefLabel "ring expansion" ;
   skos:definition "ring expansion: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000300 .
+  skos:broader xmet:4000271 .
 
-xmet:0004010 a skos:Concept ;
+xmet:4000202 a skos:Concept ;
   skos:prefLabel "ring contraction" ;
   skos:definition "ring contraction: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000300 .
+  skos:broader xmet:4000271 .
 
-xmet:0004011 a skos:Concept ;
+xmet:4000203 a skos:Concept ;
   skos:prefLabel "cis-diol formation" ;
   skos:definition "Formation of a cis-1,2-diol, typically by dioxygenase addition across an aromatic bond. Under diol formation; related to hydroxylation as a common route, not a subtype of it." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "arene cis-dihydrodiol formation" ;
   skos:altLabel "cis-dihydroxylation" ;
   skos:altLabel "cis-dihydrodiol formation" ;
-  skos:broader xmet:3001153 .
+  skos:broader xmet:4000325 .
 
-xmet:0004012 a skos:Concept ;
+xmet:4000204 a skos:Concept ;
   skos:prefLabel "hydration" ;
   skos:definition "Addition of water to a substrate (IUPAC hydration). May or may not cleave a bond; does not imply hydrolytic solvolysis by itself." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000013 .
+  skos:broader xmet:4000007 .
 
-xmet:0004013 a skos:Concept ;
+xmet:4000205 a skos:Concept ;
   skos:prefLabel "hydration of carbonyl" ;
   skos:definition "hydration of carbonyl: xenobiotic-metabolism term under hydration." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0004012 .
+  skos:broader xmet:4000204 .
 
-xmet:0004014 a skos:Concept ;
+xmet:4000206 a skos:Concept ;
   skos:prefLabel "conjugate addition" ;
   skos:definition "conjugate addition: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "Michael addition" ;
-  skos:broader xmet:3001220 .
+  skos:broader xmet:4000368 .
 
-xmet:0004015 a skos:Concept ;
+xmet:4000207 a skos:Concept ;
   skos:prefLabel "nucleophilic aromatic substitution" ;
   skos:definition "nucleophilic aromatic substitution: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001220 .
+  skos:broader xmet:4000368 .
 
-xmet:0004016 a skos:Concept ;
+xmet:4000208 a skos:Concept ;
   skos:prefLabel "radical recombination metabolite" ;
   skos:definition "radical recombination metabolite: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000300 .
+  skos:broader xmet:4000271 .
 
-xmet:0004017 a skos:Concept ;
+xmet:4000209 a skos:Concept ;
   skos:prefLabel "acyl migration" ;
   skos:definition "Intramolecular migration of an acyl group (notable for acyl glucuronides)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002004 .
+  skos:broader xmet:4000190 .
 
-xmet:0004018 a skos:Concept ;
+xmet:4000210 a skos:Concept ;
   skos:prefLabel "transacylation" ;
   skos:definition "transacylation: xenobiotic-metabolism term under process facet." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001221 .
+  skos:broader xmet:4000369 .
 
-xmet:0004019 a skos:Concept ;
+xmet:4000211 a skos:Concept ;
   skos:prefLabel "radical formation" ;
   skos:definition "Formation of a radical metabolite intermediate. Under rearrangement as a sparse xenobiotic path remainder — not a skeletal connectivity rearrangement." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002004 .
+  skos:broader xmet:4000190 .
 
-xmet:1000000 a skos:Concept ;
+xmet:4000212 a skos:Concept ;
   skos:prefLabel "disposition stage" ;
   skos:definition "Conventional ADME disposition framing (Phase I / II / III and elimination). Tags for reaction classes — not chemical hierarchy parents." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "disposition_stage" ;
   skos:altLabel "metabolism phase" ;
   skos:altLabel "phase" ;
-  skos:broader xmet:0000000 .
+  skos:broader xmet:4000000 .
 
-xmet:1100000 a skos:Concept ;
+xmet:4000213 a skos:Concept ;
   skos:prefLabel "reaction class" ;
   skos:definition "Chemist-facing chemical transformation classes for xenobiotic metabolism (Rainbow colors, conjugation, rearrangement, composites)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "reaction_class" ;
   skos:altLabel "chemical transformation" ;
   skos:altLabel "transformation" ;
-  skos:broader xmet:0000000 .
+  skos:broader xmet:4000000 .
 
-xmet:1100014 a skos:Concept ;
+xmet:4000214 a skos:Concept ;
   skos:prefLabel "isoredox dehalogenation" ;
   skos:definition "Redox-neutral removal or displacement of halogen (no net oxidation or reduction of the carbon framework). Sibling-class specializations live elsewhere: oxidative dehalogenation under unstable oxygenation, reductive dehalogenation under reduction. Related to those terms; not their parent (single-parent hierarchy)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "dehalogenation" ;
   skos:altLabel "non-redox dehalogenation" ;
   skos:altLabel "redox-neutral dehalogenation" ;
-  skos:broader xmet:3001209 .
+  skos:broader xmet:4000358 .
 
-xmet:1200101 a skos:Concept ;
+xmet:4000215 a skos:Concept ;
   skos:prefLabel "aliphatic epoxidation" ;
   skos:definition "Epoxidation of an aliphatic alkene." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aliphatic_epoxidation" ;
-  skos:broader xmet:3001108 .
+  skos:broader xmet:4000290 .
 
-xmet:1200106 a skos:Concept ;
+xmet:4000216 a skos:Concept ;
   skos:prefLabel "amine dehydrogenation" ;
   skos:definition "Dehydrogenation of an amine to an imine or iminium species (C–N → C=N)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "amine_dehydrogenation" ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:1300010 a skos:Concept ;
+xmet:4000217 a skos:Concept ;
   skos:prefLabel "cysteine conjugation" ;
   skos:definition "Phase II conjugation family: cysteine conjugation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cysteine_conjugation" ;
   skos:altLabel "S-cysteination" ;
   skos:altLabel "cysteination" ;
-  skos:broader xmet:3001217 .
+  skos:broader xmet:4000365 .
 
-xmet:1300011 a skos:Concept ;
+xmet:4000218 a skos:Concept ;
   skos:prefLabel "N-acetylcysteine conjugation" ;
   skos:definition "Phase II conjugation family: N-acetylcysteine conjugation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "n_acetylcysteine_conjugation" ;
-  skos:broader xmet:3001217 .
+  skos:broader xmet:4000365 .
 
-xmet:1300012 a skos:Concept ;
+xmet:4000219 a skos:Concept ;
   skos:prefLabel "phosphorylation" ;
   skos:definition "Phase II conjugation family: phosphorylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001222 .
+  skos:broader xmet:4000370 .
 
-xmet:1700000 a skos:Concept ;
+xmet:4000220 a skos:Concept ;
   skos:prefLabel "structural delta" ;
   skos:definition "Thin shelf for structural-edit descriptors common in med-chem discourse (not engine topology / formula-delta taxonomies). Mass cues live under mass shift; aromaticity under aromaticity effect; ring under ring effect." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "structural_delta" ;
   skos:altLabel "delta" ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:1700011 a skos:Concept ;
+xmet:4000221 a skos:Concept ;
   skos:prefLabel "mass shift" ;
   skos:definition "High-signal MS mass difference or neutral-loss cues used in drug-metabolism structure elucidation (not a dump of all formula deltas)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:1700017 a skos:Concept ;
+xmet:4000222 a skos:Concept ;
   skos:prefLabel "stereochemical change" ;
   skos:definition "Stereo configuration change." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:1700000 .
+  skos:broader xmet:4000220 .
 
-xmet:1700100 a skos:Concept ;
+xmet:4000223 a skos:Concept ;
   skos:prefLabel "oxygenation mass shift" ;
   skos:definition "Nominal +16 Da (monooxygenation). Suggests hydroxylation / other +O paths; +32 Da dioxygenation is related." ;
   skos:inScheme xmet:scheme ;
@@ -1622,393 +1622,393 @@ xmet:1700100 a skos:Concept ;
   skos:altLabel "+16 Da" ;
   skos:altLabel "monooxygenation" ;
   skos:altLabel "oxygen gain mass shift" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:1700102 a skos:Concept ;
+xmet:4000224 a skos:Concept ;
   skos:prefLabel "demethylation mass shift" ;
   skos:definition "Nominal −14 Da (loss of CH₂). Suggests N-/O-/S-demethylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "-CH2" ;
   skos:altLabel "−14 Da" ;
   skos:altLabel "demethylation delta" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:1700103 a skos:Concept ;
+xmet:4000225 a skos:Concept ;
   skos:prefLabel "deethylation mass shift" ;
   skos:definition "Nominal −28 Da (loss of C₂H₄). Suggests N-/O-deethylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "-C2H4" ;
   skos:altLabel "−28 Da" ;
   skos:altLabel "deethylation delta" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:1700104 a skos:Concept ;
+xmet:4000226 a skos:Concept ;
   skos:prefLabel "glucuronide mass shift" ;
   skos:definition "Nominal +176 Da for glucuronide conjugation. Suggests glucuronidation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "+C6H8O6" ;
   skos:altLabel "+176 Da" ;
   skos:altLabel "GlcA mass shift" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:1700105 a skos:Concept ;
+xmet:4000227 a skos:Concept ;
   skos:prefLabel "sulfate mass shift" ;
   skos:definition "Nominal +80 Da for sulfate conjugation. Suggests sulfation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "+SO3" ;
   skos:altLabel "+80 Da" ;
   skos:altLabel "sulfate conjugation mass shift" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:1700106 a skos:Concept ;
+xmet:4000228 a skos:Concept ;
   skos:prefLabel "GSH mass shift" ;
   skos:definition "Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathionation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "+GSH" ;
   skos:altLabel "+305 Da" ;
   skos:altLabel "glutathione mass shift" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:2200000 a skos:Concept ;
+xmet:4000229 a skos:Concept ;
   skos:prefLabel "leaving group" ;
   skos:definition "Fragment or moiety that departs in cleavage / substitution / dealkylation / hydrolysis. Pragmatic stop-word filter for metabolite annotation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "leaving_group" ;
   skos:altLabel "departing group" ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:2200010 a skos:Concept ;
+xmet:4000230 a skos:Concept ;
   skos:prefLabel "methyl leaving group" ;
   skos:definition "Methyl fragment departing (typical N-/O-demethylation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "CH3 leaving group" ;
-  skos:broader xmet:2200032 .
+  skos:broader xmet:4000252 .
 
-xmet:2200011 a skos:Concept ;
+xmet:4000231 a skos:Concept ;
   skos:prefLabel "ethyl leaving group" ;
   skos:definition "Ethyl fragment departing (typical N-/O-deethylation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200032 .
+  skos:broader xmet:4000252 .
 
-xmet:2200012 a skos:Concept ;
+xmet:4000232 a skos:Concept ;
   skos:prefLabel "propyl leaving group" ;
   skos:definition "Propyl fragment departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200032 .
+  skos:broader xmet:4000252 .
 
-xmet:2200013 a skos:Concept ;
+xmet:4000233 a skos:Concept ;
   skos:prefLabel "isopropyl leaving group" ;
   skos:definition "Isopropyl fragment departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200032 .
+  skos:broader xmet:4000252 .
 
-xmet:2200014 a skos:Concept ;
+xmet:4000234 a skos:Concept ;
   skos:prefLabel "benzyl leaving group" ;
   skos:definition "Benzyl fragment departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200032 .
+  skos:broader xmet:4000252 .
 
-xmet:2200015 a skos:Concept ;
+xmet:4000235 a skos:Concept ;
   skos:prefLabel "allyl leaving group" ;
   skos:definition "Allyl fragment departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200032 .
+  skos:broader xmet:4000252 .
 
-xmet:2200016 a skos:Concept ;
+xmet:4000236 a skos:Concept ;
   skos:prefLabel "halide leaving group" ;
   skos:definition "Halide ion departing (fluoride, chloride, bromide, iodide)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "halogen leaving group" ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:2200017 a skos:Concept ;
+xmet:4000237 a skos:Concept ;
   skos:prefLabel "fluoride leaving group" ;
   skos:definition "Fluoride departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200016 .
+  skos:broader xmet:4000236 .
 
-xmet:2200018 a skos:Concept ;
+xmet:4000238 a skos:Concept ;
   skos:prefLabel "chloride leaving group" ;
   skos:definition "Chloride departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200016 .
+  skos:broader xmet:4000236 .
 
-xmet:2200019 a skos:Concept ;
+xmet:4000239 a skos:Concept ;
   skos:prefLabel "bromide leaving group" ;
   skos:definition "Bromide departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200016 .
+  skos:broader xmet:4000236 .
 
-xmet:2200020 a skos:Concept ;
+xmet:4000240 a skos:Concept ;
   skos:prefLabel "iodide leaving group" ;
   skos:definition "Iodide departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200016 .
+  skos:broader xmet:4000236 .
 
-xmet:2200021 a skos:Concept ;
+xmet:4000241 a skos:Concept ;
   skos:prefLabel "alcohol leaving fragment" ;
   skos:definition "Alcohol / alkanol-equivalent fragment released as a coproduct (e.g. methanol from demethylation to alcohol level, ethanol from deethylation), or from ether cleavage / hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001210 .
+  skos:broader xmet:4000359 .
 
-xmet:2200022 a skos:Concept ;
+xmet:4000242 a skos:Concept ;
   skos:prefLabel "amine leaving fragment" ;
   skos:definition "Amine fragment from amide/urea hydrolysis or N-dealkylation path." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001211 .
+  skos:broader xmet:4000360 .
 
-xmet:2200023 a skos:Concept ;
+xmet:4000243 a skos:Concept ;
   skos:prefLabel "phenol leaving fragment" ;
   skos:definition "Phenol / phenoxide fragment departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001210 .
+  skos:broader xmet:4000359 .
 
-xmet:2200024 a skos:Concept ;
+xmet:4000244 a skos:Concept ;
   skos:prefLabel "thiol leaving fragment" ;
   skos:definition "Thiol / thiolate fragment departing." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001212 .
+  skos:broader xmet:4000361 .
 
-xmet:2200025 a skos:Concept ;
+xmet:4000245 a skos:Concept ;
   skos:prefLabel "carboxylate leaving group" ;
   skos:definition "Carboxylate departing (e.g. ester hydrolysis)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001210 .
+  skos:broader xmet:4000359 .
 
-xmet:2200026 a skos:Concept ;
+xmet:4000246 a skos:Concept ;
   skos:prefLabel "phosphate leaving group" ;
   skos:definition "Phosphate / phosphoryl leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001210 .
+  skos:broader xmet:4000359 .
 
-xmet:2200027 a skos:Concept ;
+xmet:4000247 a skos:Concept ;
   skos:prefLabel "sulfate leaving group" ;
   skos:definition "Sulfate leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001210 .
+  skos:broader xmet:4000359 .
 
-xmet:2200028 a skos:Concept ;
+xmet:4000248 a skos:Concept ;
   skos:prefLabel "water leaving group" ;
   skos:definition "Water departing (dehydration / condensation reverse)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001210 .
+  skos:broader xmet:4000359 .
 
-xmet:2200029 a skos:Concept ;
+xmet:4000249 a skos:Concept ;
   skos:prefLabel "hydrogen leaving group" ;
   skos:definition "Hydride / proton framing for dehydrogenation ends." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001213 .
+  skos:broader xmet:4000362 .
 
-xmet:2200030 a skos:Concept ;
+xmet:4000250 a skos:Concept ;
   skos:prefLabel "formaldehyde leaving fragment" ;
   skos:definition "Formaldehyde-equivalent leaving fragment from demethylation / carbinolamine cleavage. A specialized aldehyde leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001248 .
+  skos:broader xmet:4000396 .
 
-xmet:2200031 a skos:Concept ;
+xmet:4000251 a skos:Concept ;
   skos:prefLabel "acetaldehyde leaving fragment" ;
   skos:definition "Acetaldehyde-equivalent leaving fragment from deethylation. A specialized aldehyde leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001248 .
+  skos:broader xmet:4000396 .
 
-xmet:2200032 a skos:Concept ;
+xmet:4000252 a skos:Concept ;
   skos:prefLabel "small alkyl leaving group" ;
   skos:definition "Small alkyl (or closely related unsaturated alkyl) carbon fragment that departs (methyl, ethyl, propyl, isopropyl, benzyl, allyl, …)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:2200033 a skos:Concept ;
+xmet:4000253 a skos:Concept ;
   skos:prefLabel "aryl leaving group" ;
   skos:definition "Aryl fragment departing (less common)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:2200034 a skos:Concept ;
+xmet:4000254 a skos:Concept ;
   skos:prefLabel "mesylate leaving group" ;
   skos:definition "Mesylate / sulfonate ester leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200042 .
+  skos:broader xmet:4000262 .
 
-xmet:2200035 a skos:Concept ;
+xmet:4000255 a skos:Concept ;
   skos:prefLabel "tosylate leaving group" ;
   skos:definition "Tosylate leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200042 .
+  skos:broader xmet:4000262 .
 
-xmet:2200036 a skos:Concept ;
+xmet:4000256 a skos:Concept ;
   skos:prefLabel "isocyanate leaving fragment" ;
   skos:definition "Isocyanate fragment in carbamate/urea chemistry." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001211 .
+  skos:broader xmet:4000360 .
 
-xmet:2200037 a skos:Concept ;
+xmet:4000257 a skos:Concept ;
   skos:prefLabel "cyanide leaving group" ;
   skos:definition "Cyanide departing (nitrile hydrolysis / related)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001213 .
+  skos:broader xmet:4000362 .
 
-xmet:2200038 a skos:Concept ;
+xmet:4000258 a skos:Concept ;
   skos:prefLabel "nitrogen gas leaving group" ;
   skos:definition "N2 departing (azo / diazo paths)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001211 .
+  skos:broader xmet:4000360 .
 
-xmet:2200039 a skos:Concept ;
+xmet:4000259 a skos:Concept ;
   skos:prefLabel "no leaving group" ;
   skos:definition "Transformation without a discrete departing fragment." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "non-cleaving transformation" ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:2200040 a skos:Concept ;
+xmet:4000260 a skos:Concept ;
   skos:prefLabel "carbonyl leaving fragment" ;
   skos:definition "Carbonyl-containing fragment released in cleavage or dealkylation paths. Includes aldehyde leaving groups (formaldehyde, acetaldehyde, …) and related carbonyl equivalents." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aldehyde leaving fragment" ;
   skos:altLabel "carbonyl / aldehyde leaving fragment" ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:2200041 a skos:Concept ;
+xmet:4000261 a skos:Concept ;
   skos:prefLabel "heteroatom or small-molecule leaving group" ;
   skos:definition "Heteroatom-centered or small inorganic/organic molecule that departs (water, hydrogen, alcohol/phenol/amine/thiol fragments, oxyanions, cyanide, …)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "heteroatom leaving group" ;
   skos:altLabel "small-molecule leaving group" ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:2200042 a skos:Concept ;
+xmet:4000262 a skos:Concept ;
   skos:prefLabel "sulfonate leaving group" ;
   skos:definition "Sulfonate ester leaving groups (mesylate, tosylate, and related)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "sulfonate ester leaving group" ;
   skos:altLabel "activated sulfonate leaving group" ;
-  skos:broader xmet:2200000 .
+  skos:broader xmet:4000229 .
 
-xmet:3000000 a skos:Concept ;
+xmet:4000263 a skos:Concept ;
   skos:prefLabel "reaction descriptor" ;
   skos:definition "Orthogonal descriptors (leaving group, ring/aromaticity effect, cleavage, mass shift, multistep) used alongside reaction class." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "reaction_descriptor" ;
-  skos:broader xmet:0000000 .
+  skos:broader xmet:4000000 .
 
-xmet:3000004 a skos:Concept ;
+xmet:4000264 a skos:Concept ;
   skos:prefLabel "elimination" ;
   skos:definition "Elimination or excretion disposition tag for xenobiotic clearance from the organism (urine, bile, breath, …)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "elimination or excretion" ;
   skos:altLabel "excretion" ;
-  skos:broader xmet:1000000 .
+  skos:broader xmet:4000212 .
 
-xmet:3000005 a skos:Concept ;
+xmet:4000265 a skos:Concept ;
   skos:prefLabel "isoredox" ;
   skos:definition "Redox-neutral transformations (Rainbow sense). Holds hydrolysis and related water-mediated bond breaks." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "redox-neutral transformation" ;
   skos:altLabel "isoredox class" ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:3000100 a skos:Concept ;
+xmet:4000266 a skos:Concept ;
   skos:prefLabel "transfer conjugation" ;
   skos:definition "Metabolic transfer of an endogenous moiety (glucuronide, sulfate, acetyl, methyl, amino acid, glycosyl, CoA, …) typically supporting clearance. Distinct from reactive adduct formation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "metabolic transfer conjugation" ;
   skos:altLabel "Phase II transfer conjugation" ;
-  skos:broader xmet:0000024 .
+  skos:broader xmet:4000011 .
 
-xmet:3000200 a skos:Concept ;
+xmet:4000267 a skos:Concept ;
   skos:prefLabel "adduct formation" ;
   skos:definition "Electrophile capture / macromolecular or trapping adduct formation (GSH, protein, DNA, cyanide). Distinct from transfer conjugation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "reactive-species capture conjugation" ;
   skos:altLabel "adduct conjugation" ;
-  skos:broader xmet:0000024 .
+  skos:broader xmet:4000011 .
 
-xmet:3000201 a skos:Concept ;
+xmet:4000268 a skos:Concept ;
   skos:prefLabel "protein adduct formation" ;
   skos:definition "Covalent adduct formation with protein nucleophiles. Often suggested by soft-electrophile / GSH-trapping evidence." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "protein adduct" ;
   skos:altLabel "protein binding adduct" ;
-  skos:broader xmet:3001219 .
+  skos:broader xmet:4000367 .
 
-xmet:3000202 a skos:Concept ;
+xmet:4000269 a skos:Concept ;
   skos:prefLabel "DNA adduct formation" ;
   skos:definition "Covalent adduct formation with DNA nucleophiles. Often suggested by hard-electrophile / cyanide-trapping evidence." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "DNA adduct" ;
-  skos:broader xmet:3001219 .
+  skos:broader xmet:4000367 .
 
-xmet:3000203 a skos:Concept ;
+xmet:4000270 a skos:Concept ;
   skos:prefLabel "cyanide conjugation" ;
   skos:definition "Trapping of hard electrophiles (e.g. iminium) with cyanide. Distinct from cyanide as a leaving group. Soft-suggests DNA adduct formation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cyanide trapping" ;
   skos:altLabel "cyanide adduct formation" ;
   skos:altLabel "CN trapping" ;
-  skos:broader xmet:3001218 .
+  skos:broader xmet:4000366 .
 
-xmet:3000300 a skos:Concept ;
+xmet:4000271 a skos:Concept ;
   skos:prefLabel "skeletal rearrangement" ;
   skos:definition "Rearrangement that changes atom connectivity of the heavy-atom skeleton (sparse in xenobiotic metabolism)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0002004 .
+  skos:broader xmet:4000190 .
 
-xmet:3000400 a skos:Concept ;
+xmet:4000272 a skos:Concept ;
   skos:prefLabel "composite transformation" ;
   skos:definition "Multi-step or multi-part transformation described as a unit; constituents linked via has part / is part of." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "composite" ;
   skos:altLabel "composite pathway" ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:3000500 a skos:Concept ;
+xmet:4000273 a skos:Concept ;
   skos:prefLabel "ring effect" ;
   skos:definition "Ring opening, closure, expansion, or contraction accompanying a reaction." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:3000510 a skos:Concept ;
+xmet:4000274 a skos:Concept ;
   skos:prefLabel "aromaticity effect" ;
   skos:definition "Gain or loss of aromatic character accompanying a transformation (aromatization / rearomatization / dearomatization)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aromaticity change" ;
   skos:altLabel "aromaticity descriptor" ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:3000520 a skos:Concept ;
+xmet:4000275 a skos:Concept ;
   skos:prefLabel "cleavage" ;
   skos:definition "Directional bond-break cue: ring-opening cleavage, cleavage with leaving group, or fragmenting cleavage (≥2 metabolite products)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:3000521 a skos:Concept ;
+xmet:4000276 a skos:Concept ;
   skos:prefLabel "ring-opening cleavage" ;
   skos:definition "Bond break that opens a ring; always with ring opening." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000520 .
+  skos:broader xmet:4000275 .
 
-xmet:3000522 a skos:Concept ;
+xmet:4000277 a skos:Concept ;
   skos:prefLabel "cleavage with leaving group" ;
   skos:definition "One product is the retained scaffold; the other is a small/generic leaving fragment." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000520 .
+  skos:broader xmet:4000275 .
 
-xmet:3000523 a skos:Concept ;
+xmet:4000278 a skos:Concept ;
   skos:prefLabel "fragmenting cleavage" ;
   skos:definition "Cleavage yields two or more xenobiotic-derived metabolites that each deserve product-level identity (not collapsed to leaving group)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000520 .
+  skos:broader xmet:4000275 .
 
-xmet:3000600 a skos:Concept ;
+xmet:4000279 a skos:Concept ;
   skos:prefLabel "GSH pyroglutamate neutral loss" ;
   skos:definition "Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting glutathione conjugation / GSH adduct." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "NL 129" ;
   skos:altLabel "pyroglutamate neutral loss" ;
   skos:altLabel "129 Da neutral loss" ;
-  skos:broader xmet:1700106 .
+  skos:broader xmet:4000228 .
 
-xmet:3000601 a skos:Concept ;
+xmet:4000280 a skos:Concept ;
   skos:prefLabel "cyanide mass shift" ;
   skos:definition "Mass cue / neutral loss of ~27 Da (HCN) suggesting cyanide conjugation / trapping." ;
   skos:inScheme xmet:scheme ;
@@ -2016,290 +2016,290 @@ xmet:3000601 a skos:Concept ;
   skos:altLabel "HCN neutral loss" ;
   skos:altLabel "~27 Da" ;
   skos:altLabel "cyanide neutral loss" ;
-  skos:broader xmet:1700011 .
+  skos:broader xmet:4000221 .
 
-xmet:3001000 a skos:Concept ;
+xmet:4000281 a skos:Concept ;
   skos:prefLabel "concept relation" ;
   skos:definition "Parent for the small relation vocabulary used across XMET spines." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000000 .
+  skos:broader xmet:4000000 .
 
-xmet:3001100 a skos:Concept ;
+xmet:4000282 a skos:Concept ;
   skos:prefLabel "related to" ;
   skos:definition "Associated with; no frequency or necessity claim." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "relatedTo" ;
   skos:altLabel "xmet:relatedTo" ;
-  skos:broader xmet:3001000 ;
+  skos:broader xmet:4000281 ;
   skos:exactMatch <https://xenosite.org/ontology/xmet/ext/skos/related> .
 
-xmet:3001101 a skos:Concept ;
+xmet:4000283 a skos:Concept ;
   skos:prefLabel "suggests" ;
   skos:definition "Often (but not always) associated with." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "suggests" ;
   skos:altLabel "xmet:suggests" ;
-  skos:broader xmet:3001000 .
+  skos:broader xmet:4000281 .
 
-xmet:3001102 a skos:Concept ;
+xmet:4000284 a skos:Concept ;
   skos:prefLabel "always with" ;
   skos:definition "Whenever this term applies, the target also applies (or a term under the target if it is a category root). Stronger form of suggests." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "alwaysWith" ;
   skos:altLabel "xmet:alwaysWith" ;
-  skos:broader xmet:3001101 .
+  skos:broader xmet:4000283 .
 
-xmet:3001103 a skos:Concept ;
+xmet:4000285 a skos:Concept ;
   skos:prefLabel "has part" ;
   skos:definition "Has as a constituent / part (e.g. composite has part reaction)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "hasPart" ;
   skos:altLabel "xmet:hasPart" ;
-  skos:broader xmet:3001000 ;
+  skos:broader xmet:4000281 ;
   skos:exactMatch <https://xenosite.org/ontology/xmet/ext/dcterms/hasPart> .
 
-xmet:3001104 a skos:Concept ;
+xmet:4000286 a skos:Concept ;
   skos:prefLabel "is part of" ;
   skos:definition "Is a constituent / part of. Inverse of has part." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "isPartOf" ;
   skos:altLabel "xmet:isPartOf" ;
-  skos:broader xmet:3001000 ;
+  skos:broader xmet:4000281 ;
   skos:exactMatch <https://xenosite.org/ontology/xmet/ext/dcterms/isPartOf> .
 
-xmet:3001105 a skos:Concept ;
+xmet:4000287 a skos:Concept ;
   skos:prefLabel "aromatic epoxidation" ;
   skos:definition "Epoxidation on an aromatic system." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "arene epoxidation" ;
   skos:altLabel "aromatic_epoxidation" ;
-  skos:broader xmet:3001108 .
+  skos:broader xmet:4000290 .
 
-xmet:3001106 a skos:Concept ;
+xmet:4000288 a skos:Concept ;
   skos:prefLabel "reductive C–halogen cleavage" ;
   skos:definition "Reductive cleavage of a carbon–halogen bond with loss of halide and retention of carbon saturation (no new C=C required)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000540 .
+  skos:broader xmet:4000110 .
 
-xmet:3001107 a skos:Concept ;
+xmet:4000289 a skos:Concept ;
   skos:prefLabel "reductive dehalogenation to alkene" ;
   skos:definition "Reductive loss of halide accompanied by formation of a C=C bond between the halogen-bearing carbon and an adjacent carbon." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000540 .
+  skos:broader xmet:4000110 .
 
-xmet:3001108 a skos:Concept ;
+xmet:4000290 a skos:Concept ;
   skos:prefLabel "epoxide ring formation" ;
   skos:definition "Formation of a three-membered epoxide ring from a C=C (or C=N) bond by oxygen addition." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000110 .
+  skos:broader xmet:4000022 .
 
-xmet:3001109 a skos:Concept ;
+xmet:4000291 a skos:Concept ;
   skos:prefLabel "methine hydroxylation" ;
   skos:definition "Hydroxylation at a methine carbon (R3C–H / aromatic CH; Forest Hydroxylation/h matches [#6h1]). Carbon-class shelf under hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000100 .
+  skos:broader xmet:4000012 .
 
-xmet:3001110 a skos:Concept ;
+xmet:4000292 a skos:Concept ;
   skos:prefLabel "methyl or methylene hydroxylation" ;
   skos:definition "Hydroxylation at a methyl or methylene carbon (RCH3 or R2CH2 → alcohol)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000100 .
+  skos:broader xmet:4000012 .
 
-xmet:3001111 a skos:Concept ;
+xmet:4000293 a skos:Concept ;
   skos:prefLabel "hydrolytic bond cleavage" ;
   skos:definition "Hydrolysis that cleaves a bond to N, O, or S adjacent to a carbonyl (or thiocarbonyl), releasing the heteroatom fragment." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000013 .
+  skos:broader xmet:4000007 .
 
-xmet:3001112 a skos:Concept ;
+xmet:4000294 a skos:Concept ;
   skos:prefLabel "carbonyl hydration with cleavage" ;
   skos:definition "Addition of water at a carbonyl (or thiocarbonyl) with cleavage of an adjacent heteroatom bond. A specialized hydration (and hydrolytic cleavage), not the parent of general hydration." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0004012 .
+  skos:broader xmet:4000204 .
 
-xmet:3001113 a skos:Concept ;
+xmet:4000295 a skos:Concept ;
   skos:prefLabel "epoxide hydration" ;
   skos:definition "Opening of an epoxide by water to form a 1,2-diol." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000400 .
+  skos:broader xmet:4000077 .
 
-xmet:3001114 a skos:Concept ;
+xmet:4000296 a skos:Concept ;
   skos:prefLabel "epoxide rearrangement" ;
   skos:definition "Rearrangement accompanying epoxide opening (for example to a phenol or carbonyl)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000400 .
+  skos:broader xmet:4000077 .
 
-xmet:3001115 a skos:Concept ;
+xmet:4000297 a skos:Concept ;
   skos:prefLabel "sulfur–oxygen zwitterion formation" ;
   skos:definition "Oxidation of sulfur to a charge-separated S⁺–O⁻ (zwitterionic) oxide." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000130 .
+  skos:broader xmet:4000032 .
 
-xmet:3001116 a skos:Concept ;
+xmet:4000298 a skos:Concept ;
   skos:prefLabel "sulfenic acid formation" ;
   skos:definition "Oxidation of sulfur introducing an S–OH (sulfenic acid) group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000130 .
+  skos:broader xmet:4000032 .
 
-xmet:3001117 a skos:Concept ;
+xmet:4000299 a skos:Concept ;
   skos:prefLabel "sulfur oxo formation" ;
   skos:definition "Oxidation forming an S=O bond (sulfoxide pathway, or further to sulfone)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000130 .
+  skos:broader xmet:4000032 .
 
-xmet:3001118 a skos:Concept ;
+xmet:4000300 a skos:Concept ;
   skos:prefLabel "peroxide reduction" ;
   skos:definition "Reductive cleavage of an O–O peroxide bond." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000520 .
+  skos:broader xmet:4000101 .
 
-xmet:3001119 a skos:Concept ;
+xmet:4000301 a skos:Concept ;
   skos:prefLabel "thioether C–S or O–S cleavage" ;
   skos:definition "Reductive cleavage of a sulfur–carbon or sulfur–oxygen bond in a thioether or related context." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000530 .
+  skos:broader xmet:4000106 .
 
-xmet:3001120 a skos:Concept ;
+xmet:4000302 a skos:Concept ;
   skos:prefLabel "alkane dehydrogenation" ;
   skos:definition "Dehydrogenation forming a C=C bond from an alkyl C–C context." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001247 .
+  skos:broader xmet:4000395 .
 
-xmet:3001121 a skos:Concept ;
+xmet:4000303 a skos:Concept ;
   skos:prefLabel "sulfoxide formation by dehydrogenation" ;
   skos:definition "Dehydrogenation of an S–OH species to S=O (sulfoxide)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:3001122 a skos:Concept ;
+xmet:4000304 a skos:Concept ;
   skos:prefLabel "alcohol dehydration" ;
   skos:definition "Loss of water from an alcohol (or related C/N–OH), yielding unsaturation or fragmentation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000550 .
+  skos:broader xmet:4000113 .
 
-xmet:3001123 a skos:Concept ;
+xmet:4000305 a skos:Concept ;
   skos:prefLabel "beta-elimination" ;
   skos:definition "Beta-elimination of OH forming a C=C bond." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000550 .
+  skos:broader xmet:4000113 .
 
-xmet:3001124 a skos:Concept ;
+xmet:4000306 a skos:Concept ;
   skos:prefLabel "carbonyl dehydration" ;
   skos:definition "Dehydration involving a carbonyl oxygen (loss of water-equivalent from a C=O context)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000550 .
+  skos:broader xmet:4000113 .
 
-xmet:3001125 a skos:Concept ;
+xmet:4000307 a skos:Concept ;
   skos:prefLabel "oxidative dehalogenation to alcohol" ;
   skos:definition "Replacement of carbon-bound halogen by OH with loss of the halide." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000210 .
+  skos:broader xmet:4000051 .
 
-xmet:3001126 a skos:Concept ;
+xmet:4000308 a skos:Concept ;
   skos:prefLabel "oxidative dehalogenation to carbonyl" ;
   skos:definition "Oxidative loss of halide from a methine halide yielding a carbonyl." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000210 .
+  skos:broader xmet:4000051 .
 
-xmet:3001127 a skos:Concept ;
+xmet:4000309 a skos:Concept ;
   skos:prefLabel "oxidative dehalogenation to carboxylic acid" ;
   skos:definition "Oxidative loss of halide from a methylene halide yielding a carboxylic acid." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000210 .
+  skos:broader xmet:4000051 .
 
-xmet:3001128 a skos:Concept ;
+xmet:4000310 a skos:Concept ;
   skos:prefLabel "1,2-halide migration with hydroxylation" ;
   skos:definition "Oxidative dehalogenation with 1,2-migration of halide onto an adjacent carbon and hydroxylation at the original site." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000210 .
+  skos:broader xmet:4000051 .
 
-xmet:3001129 a skos:Concept ;
+xmet:4000311 a skos:Concept ;
   skos:prefLabel "geminal dihalide to carboxylic acid" ;
   skos:definition "Oxidative conversion of a geminal dihalide carbon to a carboxylic acid with loss of both halides." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000210 .
+  skos:broader xmet:4000051 .
 
-xmet:3001130 a skos:Concept ;
+xmet:4000312 a skos:Concept ;
   skos:prefLabel "geminal dihalide to geminal diol" ;
   skos:definition "Oxidative conversion of a geminal dihalide to a geminal diol (hydrate) with loss of both halides." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000210 .
+  skos:broader xmet:4000051 .
 
-xmet:3001131 a skos:Concept ;
+xmet:4000313 a skos:Concept ;
   skos:prefLabel "nitro N–O cleavage" ;
   skos:definition "Partial reduction of a nitro group by cleavage of an N–O bond (covers charged, anionic, and neutral nitro representations used in matching)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001227 .
+  skos:broader xmet:4000375 .
 
-xmet:3001132 a skos:Concept ;
+xmet:4000314 a skos:Concept ;
   skos:prefLabel "hydroxylamine N–O cleavage" ;
   skos:definition "Reductive cleavage of the N–O bond of a hydroxylamine." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001227 .
+  skos:broader xmet:4000375 .
 
-xmet:3001133 a skos:Concept ;
+xmet:4000315 a skos:Concept ;
   skos:prefLabel "nitroso reduction" ;
   skos:definition "Reduction of a nitroso group (N=O)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001227 .
+  skos:broader xmet:4000375 .
 
-xmet:3001142 a skos:Concept ;
+xmet:4000316 a skos:Concept ;
   skos:prefLabel "quaternary C–heteroatom dealkylation" ;
   skos:definition "Dealkylation cleaving a quaternary carbon–heteroatom bond. Ox-state via Forest alwaysWith (alcohol-level), not hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quaternary C–heteroatom dealkylation to alcohol" ;
-  skos:broader xmet:3001193 .
+  skos:broader xmet:4000343 .
 
-xmet:3001145 a skos:Concept ;
+xmet:4000317 a skos:Concept ;
   skos:prefLabel "quaternary C-dealkylation" ;
   skos:definition "C-dealkylation at a quaternary carbon (oxidative C–C cleavage). Ox-state via Forest alwaysWith (alcohol-level)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quaternary C–C dealkylation" ;
   skos:altLabel "quaternary C-dealkylation to alcohol" ;
-  skos:broader xmet:0000204 .
+  skos:broader xmet:4000046 .
 
-xmet:3001146 a skos:Concept ;
+xmet:4000318 a skos:Concept ;
   skos:prefLabel "hemiaminal collapse dealkylation" ;
   skos:definition "Dealkylation via hemiaminal/hemiacetal/hemithioacetal collapse. alwaysWith encodes aldehyde-level cleaved carbon and no discrete alkyl leaving group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001193 .
+  skos:broader xmet:4000343 .
 
-xmet:3001147 a skos:Concept ;
+xmet:4000319 a skos:Concept ;
   skos:prefLabel "dehydrogenation to phenol" ;
   skos:definition "A dehydrogenation path whose product site is a phenol (aromatic or phenolic C–OH), often a precursor to quinone-like oxidation in which a second site is later dehydrogenated and aromaticity collapses." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:3001148 a skos:Concept ;
+xmet:4000320 a skos:Concept ;
   skos:prefLabel "dehydrogenation to amine" ;
   skos:definition "A dehydrogenation path whose product site is a primary or secondary amine." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:3001149 a skos:Concept ;
+xmet:4000321 a skos:Concept ;
   skos:prefLabel "dehydrogenation to alkyl methide site" ;
   skos:definition "A dehydrogenation path whose product site is an alkyl carbon in a methide-forming context (methyl, methylene, or methine)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:3001150 a skos:Concept ;
+xmet:4000322 a skos:Concept ;
   skos:prefLabel "conjugated-path hydrogenation" ;
   skos:definition "Hydrogenation along a conjugated bond path that adds hydrogen at the path end (including dearomatizing reductions of aromatic systems). The path end may be any atom kept in place; a carbonyl oxygen end yields the corresponding alcohol." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "dearomatizing hydrogenation" ;
   skos:altLabel "resonance-path hydrogenation" ;
-  skos:broader xmet:0000500 .
+  skos:broader xmet:4000090 .
 
-xmet:3001151 a skos:Concept ;
+xmet:4000323 a skos:Concept ;
   skos:prefLabel "arene oxide–trans-dihydrodiol pathway" ;
   skos:definition "Composite: aromatic epoxidation (arene oxide formation) followed by epoxide hydration to a trans-1,2-dihydrodiol (mEH/sEH-family chemistry)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "epoxide formation and opening to trans-diol" ;
   skos:altLabel "epoxidation–hydration to trans-dihydrodiol" ;
   skos:altLabel "arene oxide hydration pathway" ;
-  skos:broader xmet:3000400 .
+  skos:broader xmet:4000272 .
 
-xmet:3001152 a skos:Concept ;
+xmet:4000324 a skos:Concept ;
   skos:prefLabel "arene oxide–arenol conjugation pathway" ;
   skos:definition "Composite: aromatic epoxidation (arene oxide formation), rearrangement of the arene oxide to a phenol/arenol, then phenolic O-glucuronidation and/or O-sulfation." ;
   skos:inScheme xmet:scheme ;
@@ -2307,554 +2307,554 @@ xmet:3001152 a skos:Concept ;
   skos:altLabel "arene oxide–phenol conjugation pathway" ;
   skos:altLabel "arene oxide rearrangement then phenolic conjugation" ;
   skos:altLabel "NIH shift then phenolic conjugation" ;
-  skos:broader xmet:3000400 .
+  skos:broader xmet:4000272 .
 
-xmet:3001153 a skos:Concept ;
+xmet:4000325 a skos:Concept ;
   skos:prefLabel "diol formation" ;
   skos:definition "Formation of a 1,2-diol. Mechanism-spanning umbrella: cis routes (e.g. dioxygenase cis-dihydroxylation) and trans routes (e.g. epoxide hydration to a trans-dihydrodiol). Reaction-class term (product stereochemistry specialized below), not a descriptor facet." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "dihydroxylation" ;
   skos:altLabel "1,2-diol formation" ;
-  skos:broader xmet:1100000 .
+  skos:broader xmet:4000213 .
 
-xmet:3001154 a skos:Concept ;
+xmet:4000326 a skos:Concept ;
   skos:prefLabel "trans-diol formation" ;
   skos:definition "Formation of a trans-1,2-diol (trans-dihydrodiol). Product stereochemistry class under diol formation; often produced by epoxide hydration but not defined as a subtype of it." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "trans-dihydrodiol formation" ;
   skos:altLabel "trans-1,2-diol formation" ;
   skos:altLabel "epoxide hydration to trans-diol" ;
-  skos:broader xmet:3001153 .
+  skos:broader xmet:4000325 .
 
-xmet:3001155 a skos:Concept ;
+xmet:4000327 a skos:Concept ;
   skos:prefLabel "quinone-like single-to-double dehydrogenation" ;
   skos:definition "Forest QuinoneFormation/single_to_double: a ring carbon bound to OH/NH dehydrogenates to a quinoid double bond (one quinoid end), including methide-end variants. Elementary step toward a quinone-like species." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid single-to-double dehydrogenation" ;
   skos:altLabel "phenol or aniline to quinoid" ;
   skos:altLabel "quinone C–heteroatom dehydrogenation" ;
-  skos:broader xmet:3001215 .
+  skos:broader xmet:4000364 .
 
-xmet:3001156 a skos:Concept ;
+xmet:4000328 a skos:Concept ;
   skos:prefLabel "quinone-like carbonyl-oxygen addition" ;
   skos:definition "Forest QuinoneFormation/add_carbonyl_o: add oxygen to an aromatic CH to form a quinoid carbonyl end on the path to a quinone-like species." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid carbonyl-oxygen addition" ;
   skos:altLabel "add carbonyl oxygen to quinoid path" ;
-  skos:broader xmet:3001215 .
+  skos:broader xmet:4000364 .
 
-xmet:3001157 a skos:Concept ;
+xmet:4000329 a skos:Concept ;
   skos:prefLabel "quinone-like formation by halide replacement" ;
   skos:definition "Forest QuinoneFormation/replace_halogen: replace an aryl halide with oxygen on the path to a quinone-like species." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid formation by halide replacement" ;
   skos:altLabel "replace halogen to quinoid" ;
-  skos:broader xmet:3001215 .
+  skos:broader xmet:4000364 .
 
-xmet:3001158 a skos:Concept ;
+xmet:4000330 a skos:Concept ;
   skos:prefLabel "dealkylative quinone-like formation" ;
   skos:definition "Forest QuinoneFormation/dealkylate: cleave an N/O-alkyl on a ring heteroatom while forming a quinone-like species." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "dealkylative quinoid formation" ;
   skos:altLabel "quinone formation with dealkylation" ;
-  skos:broader xmet:3001215 .
+  skos:broader xmet:4000364 .
 
-xmet:3001159 a skos:Concept ;
+xmet:4000331 a skos:Concept ;
   skos:prefLabel "epoxide methyl-sulfone sulfation" ;
   skos:definition "Forest Sulfation/epoxide_methyl_sulfone: sulfation path yielding a methyl-sulfone motif from an epoxide partner." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001010 .
+  skos:broader xmet:4000158 .
 
-xmet:3001160 a skos:Concept ;
+xmet:4000332 a skos:Concept ;
   skos:prefLabel "thiol glutathionation" ;
   skos:definition "Forest Glutathionation/thiol: GSH conjugation at a thiol electrophile / disulfide-exchange partner." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH thiol conjugation" ;
-  skos:broader xmet:3001226 .
+  skos:broader xmet:4000374 .
 
-xmet:3001161 a skos:Concept ;
+xmet:4000333 a skos:Concept ;
   skos:prefLabel "alkene glutathionation" ;
   skos:definition "Forest Glutathionation/alkene: GSH addition across an alkene (non-Michael or general olefin path)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH alkene addition" ;
-  skos:broader xmet:3001224 .
+  skos:broader xmet:4000372 .
 
-xmet:3001162 a skos:Concept ;
+xmet:4000334 a skos:Concept ;
   skos:prefLabel "carbonyl glutathionation" ;
   skos:definition "Forest Glutathionation/carbonyl: GSH addition to a carbonyl electrophile." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH carbonyl addition" ;
-  skos:broader xmet:3001224 .
+  skos:broader xmet:4000372 .
 
-xmet:3001163 a skos:Concept ;
+xmet:4000335 a skos:Concept ;
   skos:prefLabel "mesylate glutathionation" ;
   skos:definition "Forest Glutathionation/mesylate: GSH displacement of a mesylate (or related sulfonate) leaving group." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "GSH mesylate displacement" ;
-  skos:broader xmet:3001225 .
+  skos:broader xmet:4000373 .
 
-xmet:3001174 a skos:Concept ;
+xmet:4000336 a skos:Concept ;
   skos:prefLabel "N-quaternary dealkylation" ;
   skos:definition "N-dealkylation at a quaternary carbon attached to nitrogen. Cleaved-carbon oxidation state is carried by Forest pattern alwaysWith (alcohol-level), not by hierarchy." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-quaternary dealkylation to alcohol" ;
-  skos:broader xmet:3001199 .
+  skos:broader xmet:4000348 .
 
-xmet:3001175 a skos:Concept ;
+xmet:4000337 a skos:Concept ;
   skos:prefLabel "N-hemiaminal collapse dealkylation" ;
   skos:definition "Forest NDealkylation/hemiaminal: hemiaminal collapse after N-oxidation / carbinolamine path." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001199 .
+  skos:broader xmet:4000348 .
 
-xmet:3001188 a skos:Concept ;
+xmet:4000338 a skos:Concept ;
   skos:prefLabel "carbon oxidation" ;
   skos:definition "Carbon-centred oxygenation (C/c → C/c–O), Phase I carbon oxidation specialization." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000020 .
+  skos:broader xmet:4000009 .
 
-xmet:3001189 a skos:Concept ;
+xmet:4000339 a skos:Concept ;
   skos:prefLabel "dioxygenation" ;
   skos:definition "Net addition of two oxygen atoms (ΔO=+2), typically arene dihydroxylation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "arene dioxygenation" ;
-  skos:broader xmet:0000020 .
+  skos:broader xmet:4000009 .
 
-xmet:3001190 a skos:Concept ;
+xmet:4000340 a skos:Concept ;
   skos:prefLabel "tertiary N-dealkylation" ;
   skos:definition "N-dealkylation of tertiary amine nitrogen (D3/H0 → D2/H≥1)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001198 .
+  skos:broader xmet:4000347 .
 
-xmet:3001191 a skos:Concept ;
+xmet:4000341 a skos:Concept ;
   skos:prefLabel "secondary N-dealkylation" ;
   skos:definition "N-dealkylation of secondary amine nitrogen to primary (H1 → H2)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001198 .
+  skos:broader xmet:4000347 .
 
-xmet:3001192 a skos:Concept ;
+xmet:4000342 a skos:Concept ;
   skos:prefLabel "antonym of" ;
   skos:definition "Opposite / inverse transformation sense (e.g. hydroxylation vs dehydroxylation). Symmetric." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "antonymOf" ;
   skos:altLabel "xmet:antonymOf" ;
   skos:altLabel "antonym" ;
-  skos:broader xmet:3001000 .
+  skos:broader xmet:4000281 .
 
-xmet:3001193 a skos:Concept ;
+xmet:4000343 a skos:Concept ;
   skos:prefLabel "dealkylation of alkyl carbons" ;
   skos:definition "Dealkylation distinguished by which alkyl carbon is lost (methyl, methylene, methine, quaternary, or C–C) and the oxidation state of the released fragment." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "alkyl-carbon dealkylation" ;
-  skos:broader xmet:0000200 .
+  skos:broader xmet:4000042 .
 
-xmet:3001194 a skos:Concept ;
+xmet:4000344 a skos:Concept ;
   skos:prefLabel "demethylation" ;
   skos:definition "Oxidative demethylation at N/O/S (heteroatom-general). Forest methyl_* patterns share this home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. O-/S-demethylation specialize by heteroatom underneath." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001193 .
+  skos:broader xmet:4000343 .
 
-xmet:3001195 a skos:Concept ;
+xmet:4000345 a skos:Concept ;
   skos:prefLabel "methylene dealkylation" ;
   skos:definition "Dealkylation at a methylene attached to N/O/S. Forest methylene_* patterns share this home; ox-state/fragment via alwaysWith. O-deethylation specializes underneath." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001193 .
+  skos:broader xmet:4000343 .
 
-xmet:3001196 a skos:Concept ;
+xmet:4000346 a skos:Concept ;
   skos:prefLabel "methine dealkylation" ;
   skos:definition "Dealkylation at a methine attached to N/O/S. Forest methine_* patterns share this home; ox-state via alwaysWith." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001193 .
+  skos:broader xmet:4000343 .
 
-xmet:3001198 a skos:Concept ;
+xmet:4000347 a skos:Concept ;
   skos:prefLabel "N-dealkylation of secondary and tertiary amines" ;
   skos:definition "N-dealkylation distinguished by amine substitution (secondary vs tertiary)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000201 .
+  skos:broader xmet:4000043 .
 
-xmet:3001199 a skos:Concept ;
+xmet:4000348 a skos:Concept ;
   skos:prefLabel "N-dealkylation of alkyl carbons" ;
   skos:definition "N-dealkylation distinguished by which alkyl carbon is lost and the oxidation state of the released fragment." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000201 .
+  skos:broader xmet:4000043 .
 
-xmet:3001200 a skos:Concept ;
+xmet:4000349 a skos:Concept ;
   skos:prefLabel "N-demethylation" ;
   skos:definition "Oxidative N–methyl cleavage (N-demethylation). Forest methyl_* patterns share this home; cleaved-carbon oxidation state and released fragment are distinguished via mapping alwaysWith." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "N-methyl dealkylation" ;
   skos:altLabel "N-demethylation by fragment oxidation" ;
-  skos:broader xmet:3001199 .
+  skos:broader xmet:4000348 .
 
-xmet:3001201 a skos:Concept ;
+xmet:4000350 a skos:Concept ;
   skos:prefLabel "N-methylene dealkylation" ;
   skos:definition "N-dealkylation at a methylene carbon attached to nitrogen (includes N-deethylation / N-depropylation site specializations). Forest methylene_* patterns share this home; ox-state / fragment via mapping alwaysWith." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001199 .
+  skos:broader xmet:4000348 .
 
-xmet:3001202 a skos:Concept ;
+xmet:4000351 a skos:Concept ;
   skos:prefLabel "N-methine dealkylation" ;
   skos:definition "N-dealkylation at a methine carbon attached to nitrogen. Forest methine_* patterns share this home; ox-state via mapping alwaysWith." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001199 .
+  skos:broader xmet:4000348 .
 
-xmet:3001203 a skos:Concept ;
+xmet:4000352 a skos:Concept ;
   skos:prefLabel "carboxylate ester hydrolysis" ;
   skos:definition "Hydrolytic cleavage of carboxylate esters and lactones." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "ester hydrolysis family" ;
-  skos:broader xmet:3001111 .
+  skos:broader xmet:4000293 .
 
-xmet:3001204 a skos:Concept ;
+xmet:4000353 a skos:Concept ;
   skos:prefLabel "carboxamide hydrolysis" ;
   skos:definition "Hydrolytic cleavage of amides, lactams, ureas, and carbamates." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "amide hydrolysis family" ;
-  skos:broader xmet:3001111 .
+  skos:broader xmet:4000293 .
 
-xmet:3001205 a skos:Concept ;
+xmet:4000354 a skos:Concept ;
   skos:prefLabel "ether bond hydrolysis" ;
   skos:definition "Hydrolytic ether cleavage / ether hydrolysis." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001111 .
+  skos:broader xmet:4000293 .
 
-xmet:3001206 a skos:Concept ;
+xmet:4000355 a skos:Concept ;
   skos:prefLabel "nitrile bond hydrolysis" ;
   skos:definition "Hydrolysis of nitriles / cyanide-bearing carbonitriles." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001111 .
+  skos:broader xmet:4000293 .
 
-xmet:3001207 a skos:Concept ;
+xmet:4000356 a skos:Concept ;
   skos:prefLabel "hydrolytic deacylation" ;
   skos:definition "Hydrolytic removal of acyl groups (acetyl, formyl, and general acyl)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001111 .
+  skos:broader xmet:4000293 .
 
-xmet:3001208 a skos:Concept ;
+xmet:4000357 a skos:Concept ;
   skos:prefLabel "isoredox additions" ;
   skos:definition "Redox-neutral additions or insertions (alkylation, halogenation, amination, arylation, carbonylation, carboxylation, sulfuration, esterification)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000005 .
+  skos:broader xmet:4000265 .
 
-xmet:3001209 a skos:Concept ;
+xmet:4000358 a skos:Concept ;
   skos:prefLabel "isoredox removals" ;
   skos:definition "Redox-neutral removals or extrusions (dehalogenation, decarboxylation, decarbonylation, dehydroxylation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000005 .
+  skos:broader xmet:4000265 .
 
-xmet:3001210 a skos:Concept ;
+xmet:4000359 a skos:Concept ;
   skos:prefLabel "oxygen leaving fragment" ;
   skos:definition "Leaving groups that depart as oxygen-containing fragments (alcohol, phenol, carboxylate, sulfate, phosphate, water)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200041 .
+  skos:broader xmet:4000261 .
 
-xmet:3001211 a skos:Concept ;
+xmet:4000360 a skos:Concept ;
   skos:prefLabel "nitrogen leaving fragment" ;
   skos:definition "Leaving groups that depart as nitrogen-containing fragments (amine, isocyanate, N₂)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200041 .
+  skos:broader xmet:4000261 .
 
-xmet:3001212 a skos:Concept ;
+xmet:4000361 a skos:Concept ;
   skos:prefLabel "sulfur leaving fragment" ;
   skos:definition "Leaving groups that depart as sulfur-containing fragments (thiol)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200041 .
+  skos:broader xmet:4000261 .
 
-xmet:3001213 a skos:Concept ;
+xmet:4000362 a skos:Concept ;
   skos:prefLabel "small inorganic leaving group" ;
   skos:definition "Small inorganic leaving groups (hydrogen, cyanide)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:2200041 .
+  skos:broader xmet:4000261 .
 
-xmet:3001214 a skos:Concept ;
+xmet:4000363 a skos:Concept ;
   skos:prefLabel "quinone-like formation by product type" ;
   skos:definition "Transformation classes distinguished by quinoid product identity: classical quinone, quinone-imine, and quinone-methide." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinone-like products" ;
   skos:altLabel "quinoid products" ;
   skos:altLabel "quinone-family products" ;
-  skos:broader xmet:0000300 .
+  skos:broader xmet:4000059 .
 
-xmet:3001215 a skos:Concept ;
+xmet:4000364 a skos:Concept ;
   skos:prefLabel "quinone-like forming transformations" ;
   skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. Elementary Forest routes that install or complete a quinoid end (single-to-double dehydrogenation, carbonyl-oxygen addition, halide replacement, dealkylative formation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinoid-forming transformations" ;
-  skos:broader xmet:0000300 .
+  skos:broader xmet:4000059 .
 
-xmet:3001217 a skos:Concept ;
+xmet:4000365 a skos:Concept ;
   skos:prefLabel "glutathione and thiol adduct formation" ;
   skos:definition "Adduct formation via GSH, cysteine, N-acetylcysteine, or mercapturic-acid pathways." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000200 .
+  skos:broader xmet:4000267 .
 
-xmet:3001218 a skos:Concept ;
+xmet:4000366 a skos:Concept ;
   skos:prefLabel "cyanide adduct formation" ;
   skos:definition "Adduct formation by cyanide trapping / cyanidation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000200 .
+  skos:broader xmet:4000267 .
 
-xmet:3001219 a skos:Concept ;
+xmet:4000367 a skos:Concept ;
   skos:prefLabel "macromolecular adducts" ;
   skos:definition "Covalent adducts to macromolecules (protein, DNA)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000200 .
+  skos:broader xmet:4000267 .
 
-xmet:3001220 a skos:Concept ;
+xmet:4000368 a skos:Concept ;
   skos:prefLabel "adduct-forming additions" ;
   skos:definition "Addition mechanisms that form adducts (conjugate addition, nucleophilic aromatic substitution)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000200 .
+  skos:broader xmet:4000267 .
 
-xmet:3001221 a skos:Concept ;
+xmet:4000369 a skos:Concept ;
   skos:prefLabel "acyl conjugations" ;
   skos:definition "Transfer of acyl or CoA groups (acetylation, formylation, transacylation, CoA conjugation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "acyl transfer conjugation" ;
-  skos:broader xmet:3000100 .
+  skos:broader xmet:4000266 .
 
-xmet:3001222 a skos:Concept ;
+xmet:4000370 a skos:Concept ;
   skos:prefLabel "heteroatom conjugations" ;
   skos:definition "Transfer conjugations with heteroatom or glycosyl donors (glucuronidation, glycosylation, sulfation, methylation, amino-acid conjugation, phosphorylation)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "heteroatom transfer conjugation" ;
-  skos:broader xmet:3000100 .
+  skos:broader xmet:4000266 .
 
-xmet:3001223 a skos:Concept ;
+xmet:4000371 a skos:Concept ;
   skos:prefLabel "glutathionation of epoxides and aziridines" ;
   skos:definition "GSH attack on epoxides or aziridines." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001030 .
+  skos:broader xmet:4000167 .
 
-xmet:3001224 a skos:Concept ;
+xmet:4000372 a skos:Concept ;
   skos:prefLabel "Michael and alkene glutathionation" ;
   skos:definition "GSH conjugate addition to Michael acceptors, alkenes, or carbonyl electrophiles." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001030 .
+  skos:broader xmet:4000167 .
 
-xmet:3001225 a skos:Concept ;
+xmet:4000373 a skos:Concept ;
   skos:prefLabel "glutathionation with leaving-group displacement" ;
   skos:definition "GSH displacement of halide, mesylate, or isocyanate leaving groups." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001030 .
+  skos:broader xmet:4000167 .
 
-xmet:3001226 a skos:Concept ;
+xmet:4000374 a skos:Concept ;
   skos:prefLabel "glutathionation of quinone-like species and thiols" ;
   skos:definition "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. GSH conjugation at quinoid electrophiles or at thiol partners." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "glutathionation of quinoids and thiols" ;
   skos:altLabel "glutathionation of quinones and thiols" ;
-  skos:broader xmet:0001030 .
+  skos:broader xmet:4000167 .
 
-xmet:3001227 a skos:Concept ;
+xmet:4000375 a skos:Concept ;
   skos:prefLabel "nitro-group reduction" ;
   skos:definition "Reduction along the nitro → nitroso → hydroxylamine → amine manifold, including N–O cleavages." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000510 .
+  skos:broader xmet:4000093 .
 
-xmet:3001228 a skos:Concept ;
+xmet:4000376 a skos:Concept ;
   skos:prefLabel "azo reduction and cleavage" ;
   skos:definition "Reduction or cleavage of azo linkages." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000510 .
+  skos:broader xmet:4000093 .
 
-xmet:3001229 a skos:Concept ;
+xmet:4000377 a skos:Concept ;
   skos:prefLabel "miscellaneous nitrogen reduction" ;
   skos:definition "Nitrogen reductions outside the nitro and azo manifolds (N-oxide, oxime, denitrosation)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000510 .
+  skos:broader xmet:4000093 .
 
-xmet:3001230 a skos:Concept ;
+xmet:4000378 a skos:Concept ;
   skos:prefLabel "hydroxylation at chain positions" ;
   skos:definition "Hydroxylation at defined chain positions (primary, secondary, ω, ω-1)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000100 .
+  skos:broader xmet:4000012 .
 
-xmet:3001231 a skos:Concept ;
+xmet:4000379 a skos:Concept ;
   skos:prefLabel "hydroxylation of activated carbons" ;
   skos:definition "Hydroxylation at activated carbons (benzylic, allylic, α-to-heteroatom), regardless of primary/secondary/tertiary H-count." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000100 .
+  skos:broader xmet:4000012 .
 
-xmet:3001232 a skos:Concept ;
+xmet:4000380 a skos:Concept ;
   skos:prefLabel "aliphatic and alicyclic hydroxylation" ;
   skos:definition "Hydroxylation of saturated aliphatic or alicyclic frameworks." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0000100 .
+  skos:broader xmet:4000012 .
 
-xmet:3001233 a skos:Concept ;
+xmet:4000381 a skos:Concept ;
   skos:prefLabel "epoxide CH glutathionation" ;
   skos:definition "GSH attack at an epoxide carbon bearing one H (Forest epoxide_ch)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001032 .
+  skos:broader xmet:4000169 .
 
-xmet:3001234 a skos:Concept ;
+xmet:4000382 a skos:Concept ;
   skos:prefLabel "epoxide CH2 glutathionation" ;
   skos:definition "GSH attack at an epoxide methylene carbon (Forest epoxide_ch2)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001032 .
+  skos:broader xmet:4000169 .
 
-xmet:3001235 a skos:Concept ;
+xmet:4000383 a skos:Concept ;
   skos:prefLabel "epoxide C glutathionation" ;
   skos:definition "GSH attack at a fully substituted epoxide carbon (Forest epoxide_c)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001032 .
+  skos:broader xmet:4000169 .
 
-xmet:3001236 a skos:Concept ;
+xmet:4000384 a skos:Concept ;
   skos:prefLabel "aziridine CH glutathionation" ;
   skos:definition "GSH attack at an aziridine carbon bearing one H." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001035 .
+  skos:broader xmet:4000172 .
 
-xmet:3001237 a skos:Concept ;
+xmet:4000385 a skos:Concept ;
   skos:prefLabel "aziridine CH2 glutathionation" ;
   skos:definition "GSH attack at an aziridine methylene carbon." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001035 .
+  skos:broader xmet:4000172 .
 
-xmet:3001238 a skos:Concept ;
+xmet:4000386 a skos:Concept ;
   skos:prefLabel "aziridine C glutathionation" ;
   skos:definition "GSH attack at a fully substituted aziridine carbon." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:0001035 .
+  skos:broader xmet:4000172 .
 
-xmet:3001239 a skos:Concept ;
+xmet:4000387 a skos:Concept ;
   skos:prefLabel "charged nitro N–O cleavage" ;
   skos:definition "N–O cleavage of a charged nitro species." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001131 .
+  skos:broader xmet:4000313 .
 
-xmet:3001240 a skos:Concept ;
+xmet:4000388 a skos:Concept ;
   skos:prefLabel "nitro-anion N–O cleavage" ;
   skos:definition "N–O cleavage of a nitro anion." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001131 .
+  skos:broader xmet:4000313 .
 
-xmet:3001241 a skos:Concept ;
+xmet:4000389 a skos:Concept ;
   skos:prefLabel "neutral nitro N–O cleavage" ;
   skos:definition "N–O cleavage of a neutral nitro group." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001131 .
+  skos:broader xmet:4000313 .
 
-xmet:3001242 a skos:Concept ;
+xmet:4000390 a skos:Concept ;
   skos:prefLabel "dual nitro N–O cleavage" ;
   skos:definition "N–O cleavage covering charged and neutral nitro forms (leave 2 O)." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001131 .
+  skos:broader xmet:4000313 .
 
-xmet:3001243 a skos:Concept ;
+xmet:4000391 a skos:Concept ;
   skos:prefLabel "unspecified nitro N–O cleavage" ;
   skos:definition "Broad N–O cleavage matcher for any nitro form." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3001131 .
+  skos:broader xmet:4000313 .
 
-xmet:3001244 a skos:Concept ;
+xmet:4000392 a skos:Concept ;
   skos:prefLabel "alkene to vicinal diol pathway" ;
   skos:definition "Composite: epoxidation of an alkene/arene followed by hydrolytic epoxide opening to a vicinal diol (Forest EpoxideHydration one-hop)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "epoxide hydration composite" ;
   skos:altLabel "alkene dihydrodiol pathway" ;
-  skos:broader xmet:3000400 .
+  skos:broader xmet:4000272 .
 
-xmet:3001245 a skos:Concept ;
+xmet:4000393 a skos:Concept ;
   skos:prefLabel "step count" ;
   skos:definition "Descriptor: formal number of metabolic steps in a transformation (one-, two-, or three-or-more-step). Orthogonal to reaction class; related to composite transformations that package multiple steps as a unit." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "multistep" ;
   skos:altLabel "reaction step count" ;
   skos:altLabel "number of steps" ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:3001246 a skos:Concept ;
+xmet:4000394 a skos:Concept ;
   skos:prefLabel "quinone formation" ;
   skos:definition "Classical quinone (diketone quinoid with C=O ends), as opposed to quinone-imine or quinone-methide. Ortho (1,2) and para (1,4) specializations sit underneath. A narrowing of quinone-like species formation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "classical quinone formation" ;
   skos:altLabel "diketone quinone formation" ;
   skos:altLabel "benzoquinone-type formation" ;
-  skos:broader xmet:3001214 .
+  skos:broader xmet:4000363 .
 
-xmet:3001247 a skos:Concept ;
+xmet:4000395 a skos:Concept ;
   skos:prefLabel "carbon–carbon dehydrogenation" ;
   skos:definition "Dehydrogenation that changes the bond order between two carbons (alkane→alkene, or alkene→alkyne)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "C–C dehydrogenation" ;
   skos:altLabel "carbon-carbon dehydrogenation" ;
-  skos:broader xmet:0000012 .
+  skos:broader xmet:4000006 .
 
-xmet:3001248 a skos:Concept ;
+xmet:4000396 a skos:Concept ;
   skos:prefLabel "aldehyde leaving group" ;
   skos:definition "Aldehyde-equivalent fragment released as a leaving group / coproduct, typically from oxidative dealkylation (formaldehyde from demethylation, acetaldehyde from deethylation, and higher alkanals analogously). Under carbonyl leaving fragment." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "aldehyde leaving fragment" ;
   skos:altLabel "alkanals leaving group" ;
   skos:altLabel "aldehyde-equivalent leaving group" ;
-  skos:broader xmet:2200040 .
+  skos:broader xmet:4000260 .
 
-xmet:3001249 a skos:Concept ;
+xmet:4000397 a skos:Concept ;
   skos:prefLabel "cleaved-carbon oxidation state" ;
   skos:definition "Descriptor: oxidation state of the carbon cleaved from a heteroatom (or analogous cleaved carbon) in dealkylation-type chemistry. Orthogonal to reaction-class site shelves (N-demethylation, …)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cleaved carbon oxidation state" ;
   skos:altLabel "fragment carbon oxidation state" ;
-  skos:broader xmet:3000000 .
+  skos:broader xmet:4000263 .
 
-xmet:3001250 a skos:Concept ;
+xmet:4000398 a skos:Concept ;
   skos:prefLabel "alcohol-level cleaved carbon" ;
   skos:definition "Cleaved carbon at alcohol oxidation level (e.g. methanol-/ethanol-equivalent fragment, or C–OH on the cleaved carbon)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cleaved carbon to alcohol" ;
   skos:altLabel "alcohol-level fragment carbon" ;
-  skos:broader xmet:3001249 .
+  skos:broader xmet:4000397 .
 
-xmet:3001251 a skos:Concept ;
+xmet:4000399 a skos:Concept ;
   skos:prefLabel "aldehyde-level cleaved carbon" ;
   skos:definition "Cleaved carbon at aldehyde oxidation level (e.g. formaldehyde-/acetaldehyde-equivalent)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cleaved carbon to aldehyde" ;
   skos:altLabel "aldehyde-level fragment carbon" ;
-  skos:broader xmet:3001249 .
+  skos:broader xmet:4000397 .
 
-xmet:3001252 a skos:Concept ;
+xmet:4000400 a skos:Concept ;
   skos:prefLabel "ketone-level cleaved carbon" ;
   skos:definition "Cleaved carbon at ketone oxidation level (typical methine→carbonyl dealkylation fragment)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cleaved carbon to ketone" ;
   skos:altLabel "ketone-level fragment carbon" ;
-  skos:broader xmet:3001249 .
+  skos:broader xmet:4000397 .
 
-xmet:3001253 a skos:Concept ;
+xmet:4000401 a skos:Concept ;
   skos:prefLabel "carboxylic-level cleaved carbon" ;
   skos:definition "Cleaved carbon at carboxylic-acid oxidation level (e.g. formic-/acetic-equivalent fragment)." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cleaved carbon to carboxylic acid" ;
   skos:altLabel "carboxylic-level fragment carbon" ;
-  skos:broader xmet:3001249 .
+  skos:broader xmet:4000397 .
 
-xmet:3001254 a skos:Concept ;
+xmet:4000402 a skos:Concept ;
   skos:prefLabel "carboxylic acid leaving fragment" ;
   skos:definition "Carboxylic-acid-equivalent fragment released as a coproduct (formic, acetic, …). Distinct from carboxylate leaving group in ester hydrolysis." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "carboxylic acid leaving group" ;
   skos:altLabel "released carboxylic acid fragment" ;
-  skos:broader xmet:2200040 .
+  skos:broader xmet:4000260 .
 
-xmet:3001255 a skos:Concept ;
+xmet:4000403 a skos:Concept ;
   skos:prefLabel "formic acid leaving fragment" ;
   skos:definition "Formic-acid-equivalent released from demethylation to carboxylic level." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "formic acid leaving group" ;
-  skos:broader xmet:3001254 .
+  skos:broader xmet:4000402 .
 
-xmet:3001256 a skos:Concept ;
+xmet:4000404 a skos:Concept ;
   skos:prefLabel "acetic acid leaving fragment" ;
   skos:definition "Acetic-acid-equivalent released from methylene/deethylation to carboxylic level." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "acetic acid leaving group" ;
-  skos:broader xmet:3001254 .
+  skos:broader xmet:4000402 .
 
-xmet:7200006 a skos:Concept ;
+xmet:4000405 a skos:Concept ;
   skos:prefLabel "ring closure" ;
   skos:definition "A new ring is formed." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:3000500 .
+  skos:broader xmet:4000273 .
 

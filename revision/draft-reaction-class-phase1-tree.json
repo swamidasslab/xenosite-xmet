@@ -107,7 +107,7 @@
                     "id": "rule:struct-hydroxylamine-formation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000122",
+                    "primary_emit": "xmet:4000028",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
                   }
@@ -161,7 +161,7 @@
                     "id": "rule:struct-n-oxide-reduction",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000515",
+                    "primary_emit": "xmet:4000098",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/n_oxide"
                   }
@@ -191,7 +191,7 @@
                 "id": "rule:struct-n-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000120",
+                "primary_emit": "xmet:4000026",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -199,7 +199,7 @@
                 "id": "rule:struct-hydroxylamine-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000122",
+                "primary_emit": "xmet:4000028",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/hydroxylamine"
               },
@@ -207,7 +207,7 @@
                 "id": "rule:struct-carbon-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000021",
+                "primary_emit": "xmet:4000009",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -215,7 +215,7 @@
                 "id": "rule:struct-n-oxide-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000515",
+                "primary_emit": "xmet:4000098",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:NitrogenOxidation/n_oxide"
               },
@@ -223,7 +223,7 @@
                 "id": "rule:struct-nitroso-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000123",
+                "primary_emit": "xmet:4000029",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -231,7 +231,7 @@
                 "id": "rule:struct-aromatic-amine-n-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000125",
+                "primary_emit": "xmet:4000031",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -239,7 +239,7 @@
                 "id": "rule:struct-primary-amine-n-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000124",
+                "primary_emit": "xmet:4000030",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }
@@ -353,7 +353,7 @@
                 "id": "rule:struct-s-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000130",
+                "primary_emit": "xmet:4000032",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -361,7 +361,7 @@
                 "id": "rule:struct-thiophene-s-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000133",
+                "primary_emit": "xmet:4000035",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -369,7 +369,7 @@
                 "id": "rule:struct-sulfone-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000132",
+                "primary_emit": "xmet:4000034",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -377,7 +377,7 @@
                 "id": "rule:struct-sulfoxide-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000531",
+                "primary_emit": "xmet:4000107",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }
@@ -443,7 +443,7 @@
                     "id": "rule:tag-arene-oxide",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000112",
+                    "primary_emit": "xmet:4000024",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
                   },
@@ -451,7 +451,7 @@
                     "id": "rule:tag-nih-shift",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0004003",
+                    "primary_emit": "xmet:4000197",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
                   },
@@ -459,7 +459,7 @@
                     "id": "rule:tag-ipso",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0004004",
+                    "primary_emit": "xmet:4000196",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
                   },
@@ -467,7 +467,7 @@
                     "id": "rule:struct-alkene-epoxidation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000111",
+                    "primary_emit": "xmet:4000023",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
                   },
@@ -475,7 +475,7 @@
                     "id": "rule:struct-aromatic-epoxidation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000110",
+                    "primary_emit": "xmet:4000022",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
                   },
@@ -483,7 +483,7 @@
                     "id": "rule:struct-arene-oxide-formation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000112",
+                    "primary_emit": "xmet:4000024",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
                   }
@@ -502,7 +502,7 @@
                 "id": "rule:epoxidation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "smarts",
-                "primary_emit": "xmet:0000110",
+                "primary_emit": "xmet:4000022",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -510,7 +510,7 @@
                 "id": "rule:tag-epoxidation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000110",
+                "primary_emit": "xmet:4000022",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -518,7 +518,7 @@
                 "id": "rule:tag-arene-oxide",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000112",
+                "primary_emit": "xmet:4000024",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
               },
@@ -526,7 +526,7 @@
                 "id": "rule:tag-nih-shift",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0004003",
+                "primary_emit": "xmet:4000197",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
               },
@@ -534,7 +534,7 @@
                 "id": "rule:tag-ipso",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0004004",
+                "primary_emit": "xmet:4000196",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
               },
@@ -542,7 +542,7 @@
                 "id": "rule:struct-epoxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000110",
+                "primary_emit": "xmet:4000022",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -550,7 +550,7 @@
                 "id": "rule:struct-alkene-epoxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000111",
+                "primary_emit": "xmet:4000023",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
               },
@@ -558,7 +558,7 @@
                 "id": "rule:struct-aromatic-epoxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000110",
+                "primary_emit": "xmet:4000022",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
               },
@@ -566,7 +566,7 @@
                 "id": "rule:struct-arene-oxide-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000112",
+                "primary_emit": "xmet:4000024",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Epoxidation/epoxide"
               }
@@ -622,7 +622,7 @@
                     "id": "rule:aromatic-hydroxylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "smarts",
-                    "primary_emit": "xmet:0000101",
+                    "primary_emit": "xmet:4000013",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   },
@@ -630,7 +630,7 @@
                     "id": "rule:tag-aromatic-hydroxylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000101",
+                    "primary_emit": "xmet:4000013",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   },
@@ -638,7 +638,7 @@
                     "id": "rule:tag-para-hydroxylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000103",
+                    "primary_emit": "xmet:4000015",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   },
@@ -646,7 +646,7 @@
                     "id": "rule:struct-aromatic-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000101",
+                    "primary_emit": "xmet:4000013",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   },
@@ -654,7 +654,7 @@
                     "id": "rule:struct-ortho-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000104",
+                    "primary_emit": "xmet:4000016",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   },
@@ -662,7 +662,7 @@
                     "id": "rule:struct-para-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000103",
+                    "primary_emit": "xmet:4000015",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   },
@@ -670,7 +670,7 @@
                     "id": "rule:struct-meta-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000105",
+                    "primary_emit": "xmet:4000017",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
                   }
@@ -724,7 +724,7 @@
                     "id": "rule:aliphatic-hydroxylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "smarts",
-                    "primary_emit": "xmet:0000102",
+                    "primary_emit": "xmet:4000014",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   },
@@ -732,7 +732,7 @@
                     "id": "rule:tag-benzylic-hydroxylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000106",
+                    "primary_emit": "xmet:4000018",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   },
@@ -740,7 +740,7 @@
                     "id": "rule:tag-omega-hydroxylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000108",
+                    "primary_emit": "xmet:4000020",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   },
@@ -748,7 +748,7 @@
                     "id": "rule:struct-aliphatic-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000102",
+                    "primary_emit": "xmet:4000014",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   },
@@ -756,7 +756,7 @@
                     "id": "rule:struct-allylic-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000107",
+                    "primary_emit": "xmet:4000019",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   },
@@ -764,7 +764,7 @@
                     "id": "rule:struct-benzylic-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000106",
+                    "primary_emit": "xmet:4000018",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   },
@@ -772,7 +772,7 @@
                     "id": "rule:struct-omega-1-hydroxylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000109",
+                    "primary_emit": "xmet:4000021",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
                   }
@@ -786,7 +786,7 @@
                 "id": "rule:hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "smarts",
-                "primary_emit": "xmet:0000100",
+                "primary_emit": "xmet:4000012",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -794,7 +794,7 @@
                 "id": "rule:aromatic-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "smarts",
-                "primary_emit": "xmet:0000101",
+                "primary_emit": "xmet:4000013",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -802,7 +802,7 @@
                 "id": "rule:aliphatic-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "smarts",
-                "primary_emit": "xmet:0000102",
+                "primary_emit": "xmet:4000014",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               },
@@ -810,7 +810,7 @@
                 "id": "rule:tag-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000100",
+                "primary_emit": "xmet:4000012",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -818,7 +818,7 @@
                 "id": "rule:tag-aromatic-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000101",
+                "primary_emit": "xmet:4000013",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -826,7 +826,7 @@
                 "id": "rule:tag-para-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000103",
+                "primary_emit": "xmet:4000015",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -834,7 +834,7 @@
                 "id": "rule:tag-benzylic-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000106",
+                "primary_emit": "xmet:4000018",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               },
@@ -842,7 +842,7 @@
                 "id": "rule:tag-omega-hydroxylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000108",
+                "primary_emit": "xmet:4000020",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               },
@@ -850,7 +850,7 @@
                 "id": "rule:struct-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000100",
+                "primary_emit": "xmet:4000012",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -858,7 +858,7 @@
                 "id": "rule:struct-aromatic-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000101",
+                "primary_emit": "xmet:4000013",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -866,7 +866,7 @@
                 "id": "rule:struct-aliphatic-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000102",
+                "primary_emit": "xmet:4000014",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               },
@@ -874,7 +874,7 @@
                 "id": "rule:struct-allylic-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000107",
+                "primary_emit": "xmet:4000019",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               },
@@ -882,7 +882,7 @@
                 "id": "rule:struct-benzylic-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000106",
+                "primary_emit": "xmet:4000018",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               },
@@ -890,7 +890,7 @@
                 "id": "rule:struct-ortho-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000104",
+                "primary_emit": "xmet:4000016",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -898,7 +898,7 @@
                 "id": "rule:struct-para-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000103",
+                "primary_emit": "xmet:4000015",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -906,7 +906,7 @@
                 "id": "rule:struct-meta-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000105",
+                "primary_emit": "xmet:4000017",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h"
               },
@@ -914,7 +914,7 @@
                 "id": "rule:struct-omega-1-hydroxylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000109",
+                "primary_emit": "xmet:4000021",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydroxylation/h2"
               }
@@ -1115,7 +1115,7 @@
                     "id": "rule:tag-n-demethylation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000205",
+                    "primary_emit": "xmet:4000349",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
                   },
@@ -1123,7 +1123,7 @@
                     "id": "rule:struct-n-demethylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000205",
+                    "primary_emit": "xmet:4000349",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
                   }
@@ -1309,7 +1309,7 @@
                     "id": "rule:struct-n-deethylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000206",
+                    "primary_emit": "xmet:4000047",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
                   },
@@ -1317,7 +1317,7 @@
                     "id": "rule:struct-n-depropylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000207",
+                    "primary_emit": "xmet:4000048",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
                   }
@@ -1583,7 +1583,7 @@
                     "id": "rule:struct-c-dealkylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000204",
+                    "primary_emit": "xmet:4000046",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
                   },
@@ -1591,7 +1591,7 @@
                     "id": "rule:struct-dearylation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000720",
+                    "primary_emit": "xmet:4000143",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
                   }
@@ -1715,7 +1715,7 @@
                 "id": "rule:tag-dealkylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000200",
+                "primary_emit": "xmet:4000042",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -1723,7 +1723,7 @@
                 "id": "rule:tag-n-dealkylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000201",
+                "primary_emit": "xmet:4000043",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1731,7 +1731,7 @@
                 "id": "rule:tag-n-demethylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000205",
+                "primary_emit": "xmet:4000349",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
               },
@@ -1739,7 +1739,7 @@
                 "id": "rule:tag-oxidative-deamination",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000208",
+                "primary_emit": "xmet:4000049",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1747,7 +1747,7 @@
                 "id": "rule:tag-o-dealkylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000202",
+                "primary_emit": "xmet:4000044",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1755,7 +1755,7 @@
                 "id": "rule:tag-o-demethylation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000209",
+                "primary_emit": "xmet:4000050",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1763,7 +1763,7 @@
                 "id": "rule:struct-n-demethylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000205",
+                "primary_emit": "xmet:4000349",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dealkylation/methyl_alcohol"
               },
@@ -1771,7 +1771,7 @@
                 "id": "rule:struct-o-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000202",
+                "primary_emit": "xmet:4000044",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1779,7 +1779,7 @@
                 "id": "rule:struct-n-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000201",
+                "primary_emit": "xmet:4000043",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1787,7 +1787,7 @@
                 "id": "rule:struct-n-dealkylation-secondary",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000201",
+                "primary_emit": "xmet:4000043",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1795,7 +1795,7 @@
                 "id": "rule:struct-n-deethylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000206",
+                "primary_emit": "xmet:4000047",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
               },
@@ -1803,7 +1803,7 @@
                 "id": "rule:struct-n-depropylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000207",
+                "primary_emit": "xmet:4000048",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dealkylation/methylene_alcohol"
               },
@@ -1811,7 +1811,7 @@
                 "id": "rule:struct-o-deethylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000211",
+                "primary_emit": "xmet:4000052",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1819,7 +1819,7 @@
                 "id": "rule:struct-aromatic-o-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000212",
+                "primary_emit": "xmet:4000053",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1827,7 +1827,7 @@
                 "id": "rule:struct-s-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000203",
+                "primary_emit": "xmet:4000045",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -1835,7 +1835,7 @@
                 "id": "rule:struct-c-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000204",
+                "primary_emit": "xmet:4000046",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
               },
@@ -1843,7 +1843,7 @@
                 "id": "rule:struct-dearylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000720",
+                "primary_emit": "xmet:4000143",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dealkylation/cc_alcohol"
               },
@@ -1851,7 +1851,7 @@
                 "id": "rule:struct-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000200",
+                "primary_emit": "xmet:4000042",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -1859,7 +1859,7 @@
                 "id": "rule:struct-aliphatic-o-dealkylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000213",
+                "primary_emit": "xmet:4000054",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               }
@@ -2349,7 +2349,7 @@
                 "id": "rule:struct-oxidative-dehalogenation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000210",
+                "primary_emit": "xmet:4000051",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -2357,7 +2357,7 @@
                 "id": "rule:struct-oxidative-defluorination",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000214",
+                "primary_emit": "xmet:4000055",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -2365,7 +2365,7 @@
                 "id": "rule:struct-oxidative-dechlorination",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000215",
+                "primary_emit": "xmet:4000056",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -2373,7 +2373,7 @@
                 "id": "rule:struct-oxidative-debromination",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000216",
+                "primary_emit": "xmet:4000057",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               }
@@ -2457,7 +2457,7 @@
                     "id": "rule:alcohol-oxidation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "smarts",
-                    "primary_emit": "xmet:0000310",
+                    "primary_emit": "xmet:4000069",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
                   },
@@ -2465,7 +2465,7 @@
                     "id": "rule:primary-alcohol-oxidation",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "smarts",
-                    "primary_emit": "xmet:0000311",
+                    "primary_emit": "xmet:4000070",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
                   },
@@ -2473,7 +2473,7 @@
                     "id": "rule:struct-alcohol-oxidation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000310",
+                    "primary_emit": "xmet:4000069",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
                   },
@@ -2481,7 +2481,7 @@
                     "id": "rule:struct-primary-alcohol-oxidation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000311",
+                    "primary_emit": "xmet:4000070",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
                   },
@@ -2489,7 +2489,7 @@
                     "id": "rule:struct-secondary-alcohol-oxidation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000312",
+                    "primary_emit": "xmet:4000071",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
                   }
@@ -2546,7 +2546,7 @@
                     "id": "rule:tag-quinone-imine",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000303",
+                    "primary_emit": "xmet:4000062",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
                   },
@@ -2554,7 +2554,7 @@
                     "id": "rule:tag-imine-methide",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000306",
+                    "primary_emit": "xmet:4000065",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
                   },
@@ -2570,7 +2570,7 @@
                     "id": "rule:struct-imine-enamine-tautomerization",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0002002",
+                    "primary_emit": "xmet:4000188",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
                   },
@@ -2578,7 +2578,7 @@
                     "id": "rule:struct-iminium-formation",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000305",
+                    "primary_emit": "xmet:4000064",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
                   }
@@ -2840,7 +2840,7 @@
                 "id": "rule:alcohol-oxidation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "smarts",
-                "primary_emit": "xmet:0000310",
+                "primary_emit": "xmet:4000069",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
               },
@@ -2848,7 +2848,7 @@
                 "id": "rule:primary-alcohol-oxidation",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "smarts",
-                "primary_emit": "xmet:0000311",
+                "primary_emit": "xmet:4000070",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
               },
@@ -2856,7 +2856,7 @@
                 "id": "rule:tag-dearomatization",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0004001",
+                "primary_emit": "xmet:4000194",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -2864,7 +2864,7 @@
                 "id": "rule:tag-quinone-imine",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000303",
+                "primary_emit": "xmet:4000062",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
               },
@@ -2872,7 +2872,7 @@
                 "id": "rule:tag-imine-methide",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000306",
+                "primary_emit": "xmet:4000065",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
               },
@@ -2944,7 +2944,7 @@
                 "id": "rule:struct-alcohol-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000310",
+                "primary_emit": "xmet:4000069",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
               },
@@ -2952,7 +2952,7 @@
                 "id": "rule:struct-aromatization",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000315",
+                "primary_emit": "xmet:4000074",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -2960,7 +2960,7 @@
                 "id": "rule:struct-alkene-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000314",
+                "primary_emit": "xmet:4000073",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -2968,7 +2968,7 @@
                 "id": "rule:struct-primary-alcohol-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000311",
+                "primary_emit": "xmet:4000070",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
               },
@@ -2976,7 +2976,7 @@
                 "id": "rule:struct-secondary-alcohol-oxidation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000312",
+                "primary_emit": "xmet:4000071",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/alcohol"
               },
@@ -2984,7 +2984,7 @@
                 "id": "rule:struct-double-to-triple-dehydrogenation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000317",
+                "primary_emit": "xmet:4000076",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -2992,7 +2992,7 @@
                 "id": "rule:struct-imine-enamine-tautomerization",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0002002",
+                "primary_emit": "xmet:4000188",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
               },
@@ -3000,7 +3000,7 @@
                 "id": "rule:struct-iminium-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000305",
+                "primary_emit": "xmet:4000064",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Dehydrogenation/amine"
               }
@@ -3085,7 +3085,7 @@
                 "id": "rule:struct-dephosphorylation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000410",
+                "primary_emit": "xmet:4000087",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }
@@ -3149,7 +3149,7 @@
                 "id": "rule:struct-epoxide-opening",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000400",
+                "primary_emit": "xmet:4000077",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }
@@ -3278,7 +3278,7 @@
                     "id": "rule:tag-ether-hydrolysis",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000408",
+                    "primary_emit": "xmet:4000085",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3286,7 +3286,7 @@
                     "id": "rule:struct-ester-hydrolysis",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000401",
+                    "primary_emit": "xmet:4000078",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3294,7 +3294,7 @@
                     "id": "rule:struct-lactamization",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000633",
+                    "primary_emit": "xmet:4000126",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3302,7 +3302,7 @@
                     "id": "rule:struct-amide-hydrolysis",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000402",
+                    "primary_emit": "xmet:4000079",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3310,7 +3310,7 @@
                     "id": "rule:struct-lactam-hydrolysis",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000404",
+                    "primary_emit": "xmet:4000081",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3318,7 +3318,7 @@
                     "id": "rule:struct-carbamate-hydrolysis",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000405",
+                    "primary_emit": "xmet:4000082",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3326,7 +3326,7 @@
                     "id": "rule:struct-nitrile-hydrolysis",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000411",
+                    "primary_emit": "xmet:4000088",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   },
@@ -3334,7 +3334,7 @@
                     "id": "rule:struct-ether-hydrolysis",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000408",
+                    "primary_emit": "xmet:4000085",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
                   }
@@ -3348,7 +3348,7 @@
                 "id": "rule:tag-ether-hydrolysis",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000408",
+                "primary_emit": "xmet:4000085",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3356,7 +3356,7 @@
                 "id": "rule:struct-ester-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000401",
+                "primary_emit": "xmet:4000078",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3364,7 +3364,7 @@
                 "id": "rule:struct-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000013",
+                "primary_emit": "xmet:4000007",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -3372,7 +3372,7 @@
                 "id": "rule:struct-lactamization",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000633",
+                "primary_emit": "xmet:4000126",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3380,7 +3380,7 @@
                 "id": "rule:struct-amide-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000402",
+                "primary_emit": "xmet:4000079",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3388,7 +3388,7 @@
                 "id": "rule:struct-lactam-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000404",
+                "primary_emit": "xmet:4000081",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3396,7 +3396,7 @@
                 "id": "rule:struct-carbamate-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000405",
+                "primary_emit": "xmet:4000082",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3404,7 +3404,7 @@
                 "id": "rule:struct-nitrile-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000411",
+                "primary_emit": "xmet:4000088",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               },
@@ -3412,7 +3412,7 @@
                 "id": "rule:struct-ether-hydrolysis",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000408",
+                "primary_emit": "xmet:4000085",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:Hydrolysis/cleave"
               }
@@ -3717,7 +3717,7 @@
                 "id": "rule:struct-hydrogenation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000500",
+                "primary_emit": "xmet:4000090",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -3725,7 +3725,7 @@
                 "id": "rule:struct-alkyne-hydrogenation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000502",
+                "primary_emit": "xmet:4000092",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }
@@ -3968,7 +3968,7 @@
                 "id": "rule:tag-nitro-reduction",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000511",
+                "primary_emit": "xmet:4000094",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -3976,7 +3976,7 @@
                 "id": "rule:tag-nitroaromatic-reduction",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000513",
+                "primary_emit": "xmet:4000096",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -3984,7 +3984,7 @@
                 "id": "rule:struct-nitrogen-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000510",
+                "primary_emit": "xmet:4000093",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -3992,7 +3992,7 @@
                 "id": "rule:struct-nitro-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000511",
+                "primary_emit": "xmet:4000094",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }
@@ -4054,7 +4054,7 @@
                     "id": "rule:tag-carbonyl-reduction",
                     "file": "xenobiotic.rules.yaml",
                     "kind": "tag",
-                    "primary_emit": "xmet:0000524",
+                    "primary_emit": "xmet:4000105",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
                   },
@@ -4062,7 +4062,7 @@
                     "id": "rule:struct-aldehyde-reduction",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000522",
+                    "primary_emit": "xmet:4000103",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
                   },
@@ -4070,7 +4070,7 @@
                     "id": "rule:struct-ketone-reduction",
                     "file": "structural.rules.yaml",
                     "kind": "struct",
-                    "primary_emit": "xmet:0000521",
+                    "primary_emit": "xmet:4000102",
                     "maps_relation": "specialize",
                     "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
                   }
@@ -4111,7 +4111,7 @@
                 "id": "rule:tag-carbonyl-reduction",
                 "file": "xenobiotic.rules.yaml",
                 "kind": "tag",
-                "primary_emit": "xmet:0000524",
+                "primary_emit": "xmet:4000105",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
               },
@@ -4119,7 +4119,7 @@
                 "id": "rule:struct-aldehyde-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000522",
+                "primary_emit": "xmet:4000103",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
               },
@@ -4127,7 +4127,7 @@
                 "id": "rule:struct-ketone-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000521",
+                "primary_emit": "xmet:4000102",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": "forest.pattern:OxygenReduction/carbonyl"
               }
@@ -4305,7 +4305,7 @@
                 "id": "rule:struct-reductive-dehalogenation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000540",
+                "primary_emit": "xmet:4000110",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               },
@@ -4313,7 +4313,7 @@
                 "id": "rule:struct-reductive-dechlorination",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000542",
+                "primary_emit": "xmet:4000112",
                 "maps_relation": "specialize",
                 "maps_to_forest_pattern": null
               }
@@ -4438,7 +4438,7 @@
                 "id": "rule:struct-sulfur-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000530",
+                "primary_emit": "xmet:4000106",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -4446,7 +4446,7 @@
                 "id": "rule:struct-disulfide-formation",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000135",
+                "primary_emit": "xmet:4000037",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               },
@@ -4454,7 +4454,7 @@
                 "id": "rule:struct-disulfide-reduction",
                 "file": "structural.rules.yaml",
                 "kind": "struct",
-                "primary_emit": "xmet:0000532",
+                "primary_emit": "xmet:4000108",
                 "maps_relation": "rule",
                 "maps_to_forest_pattern": null
               }

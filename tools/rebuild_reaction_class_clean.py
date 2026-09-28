@@ -23,73 +23,73 @@ FOREST_SSSOM = ROOT / "data/mappings/xmet-forest.sssom.tsv"
 REMAP_PATH = ROOT / "data/mappings/xmet-id-remap.tsv"
 ARTIFACTS = ROOT / "artifacts"
 
-REACTION_CLASS = "xmet:1100000"
-OXIDATION = "xmet:0000020"
-SO = "xmet:0000010"
-UO = "xmet:0000011"
-DH = "xmet:0000012"
-HD = "xmet:0000013"
-RD = "xmet:0000014"
-ISOREDOX = "xmet:3000005"
-CONJUGATION = "xmet:0000024"
-TRANSFER = "xmet:3000100"
-ADDUCT = "xmet:3000200"
-REARRANGEMENT = "xmet:0002004"
-COMPOSITE = "xmet:3000400"
-UNPLACED = "xmet:3000990"
+REACTION_CLASS = "xmet:4000213"
+OXIDATION = "xmet:4000009"
+SO = "xmet:4000004"
+UO = "xmet:4000005"
+DH = "xmet:4000006"
+HD = "xmet:4000007"
+RD = "xmet:4000008"
+ISOREDOX = "xmet:4000265"
+CONJUGATION = "xmet:4000011"
+TRANSFER = "xmet:4000266"
+ADDUCT = "xmet:4000267"
+REARRANGEMENT = "xmet:4000190"
+COMPOSITE = "xmet:4000272"
+UNPLACED = "xmet:4000213"
 
 # Chemist concept IDs for Forest PhaseOneRS rules (prefer non-forest-map).
 # Placement follows draft-reaction-class-phase1-tree.json color grouping.
 PHASEONE_IMPORT: dict[str, tuple[str, str]] = {
     # rule_name: (xmet_id, parent_id)
-    "Hydroxylation": ("xmet:0000100", SO),
-    "Epoxidation": ("xmet:0000110", SO),
-    "NitrogenOxidation": ("xmet:0000120", SO),
-    "SulfurOxidation": ("xmet:0000130", SO),
-    "Dealkylation": ("xmet:0000200", UO),
-    "OxidativeDehalogenation": ("xmet:0000210", UO),
-    "Dehydrogenation": ("xmet:0000012", OXIDATION),  # color node itself
-    "Hydrolysis": ("xmet:0000013", ISOREDOX),  # color under isoredox
-    "EpoxideOpening": ("xmet:0000400", HD),
-    "Dephosphorylation": ("xmet:0000410", HD),
-    "Hydrogenation": ("xmet:0000500", RD),
-    "NitrogenReduction": ("xmet:0000510", RD),
-    "OxygenReduction": ("xmet:0000520", RD),
-    "SulfurReduction": ("xmet:0000530", RD),
-    "ReductiveDehalogenation": ("xmet:0000540", RD),
-    "Dehydration": ("xmet:0000550", RD),  # Forest draft places under RD
+    "Hydroxylation": ("xmet:4000012", SO),
+    "Epoxidation": ("xmet:4000022", SO),
+    "NitrogenOxidation": ("xmet:4000026", SO),
+    "SulfurOxidation": ("xmet:4000032", SO),
+    "Dealkylation": ("xmet:4000042", UO),
+    "OxidativeDehalogenation": ("xmet:4000051", UO),
+    "Dehydrogenation": ("xmet:4000006", OXIDATION),  # color node itself
+    "Hydrolysis": ("xmet:4000007", ISOREDOX),  # color under isoredox
+    "EpoxideOpening": ("xmet:4000077", HD),
+    "Dephosphorylation": ("xmet:4000087", HD),
+    "Hydrogenation": ("xmet:4000090", RD),
+    "NitrogenReduction": ("xmet:4000093", RD),
+    "OxygenReduction": ("xmet:4000101", RD),
+    "SulfurReduction": ("xmet:4000106", RD),
+    "ReductiveDehalogenation": ("xmet:4000110", RD),
+    "Dehydration": ("xmet:4000113", RD),  # Forest draft places under RD
 }
 
 # Extra useful children under dealkylation / colors
 EXTRA_IMPORT: dict[str, str] = {
-    "xmet:0000201": "xmet:0000200",  # N-dealkylation → dealkylation
-    "xmet:0000202": "xmet:0000200",  # O-dealkylation
-    "xmet:0000203": "xmet:0000200",  # S-dealkylation if exists
-    "xmet:0000204": "xmet:0000200",  # C-dealkylation if exists
+    "xmet:4000043": "xmet:4000042",  # N-dealkylation → dealkylation
+    "xmet:4000044": "xmet:4000042",  # O-dealkylation
+    "xmet:4000045": "xmet:4000042",  # S-dealkylation if exists
+    "xmet:4000046": "xmet:4000042",  # C-dealkylation if exists
 }
 
 CONJ_IMPORT: dict[str, str] = {
-    "xmet:0001000": TRANSFER,  # glucuronidation
-    "xmet:0001010": TRANSFER,  # sulfation
-    "xmet:0001020": TRANSFER,  # acetylation
-    "xmet:0001040": TRANSFER,  # methylation
-    "xmet:0001050": TRANSFER,  # amino acid conjugation
-    "xmet:0001060": TRANSFER,  # glycosylation
-    "xmet:0001061": TRANSFER,  # CoA
-    "xmet:0000670": TRANSFER,  # formylation
-    "xmet:0001030": ADDUCT,  # glutathione conjugation
-    "xmet:3000201": ADDUCT,  # protein adduct
-    "xmet:3000202": ADDUCT,  # DNA adduct
-    "xmet:3000203": ADDUCT,  # cyanide conjugation
-    "xmet:0001037": ADDUCT,  # mercapturic if present
-    "xmet:1300010": ADDUCT,  # cysteine conjugation
-    "xmet:1300011": ADDUCT,  # NAC
+    "xmet:4000148": TRANSFER,  # glucuronidation
+    "xmet:4000158": TRANSFER,  # sulfation
+    "xmet:4000163": TRANSFER,  # acetylation
+    "xmet:4000175": TRANSFER,  # methylation
+    "xmet:4000179": TRANSFER,  # amino acid conjugation
+    "xmet:4000184": TRANSFER,  # glycosylation
+    "xmet:4000185": TRANSFER,  # CoA
+    "xmet:4000131": TRANSFER,  # formylation
+    "xmet:4000167": ADDUCT,  # glutathione conjugation
+    "xmet:4000268": ADDUCT,  # protein adduct
+    "xmet:4000269": ADDUCT,  # DNA adduct
+    "xmet:4000270": ADDUCT,  # cyanide conjugation
+    "xmet:4000174": ADDUCT,  # mercapturic if present
+    "xmet:4000217": ADDUCT,  # cysteine conjugation
+    "xmet:4000218": ADDUCT,  # NAC
 }
 
 REARR_IMPORT: dict[str, str] = {
-    "xmet:0002000": REARRANGEMENT,  # tautomerization
-    "xmet:0002003": REARRANGEMENT,  # isomerization
-    "xmet:3000300": REARRANGEMENT,  # skeletal
+    "xmet:4000186": REARRANGEMENT,  # tautomerization
+    "xmet:4000189": REARRANGEMENT,  # isomerization
+    "xmet:4000271": REARRANGEMENT,  # skeletal
 }
 
 
@@ -243,12 +243,12 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
     placed = set(parent_of) | {REACTION_CLASS, UNPLACED}
     # Also keep reaction-descriptor / disposition / relation out of this pass
     non_rc_spines = {
-        "xmet:1000000",
-        "xmet:3000000",
-        "xmet:3001000",
-        "xmet:1700000",
-        "xmet:2200000",
-        "xmet:0000000",
+        "xmet:4000212",
+        "xmet:4000263",
+        "xmet:4000281",
+        "xmet:4000220",
+        "xmet:4000229",
+        "xmet:4000000",
     }
 
     parked = 0
@@ -268,7 +268,7 @@ def apply(data: dict[str, Any]) -> list[dict[str, str]]:
         # If concept primarily lives in another spine (descriptor etc.), strip RC only
         ps = list(c.get("parents") or [])
         anc = ancestors(cid, pm)
-        if any(s in anc or s in ps for s in non_rc_spines - {"xmet:0000000"}):
+        if any(s in anc or s in ps for s in non_rc_spines - {"xmet:4000000"}):
             set_parents(c, [p for p in ps if p != REACTION_CLASS and p not in placed])
             if not c["parents"]:
                 set_parents(c, [UNPLACED])

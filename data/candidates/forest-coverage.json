@@ -132,7 +132,7 @@
       "forest_rule": "forest.rule:Epoxidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xmet:0000110",
+        "xmet:4000022",
         "xmet:9100110"
       ],
       "patterns": [
@@ -165,7 +165,7 @@
       "forest_rule": "forest.rule:Glucuronidation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xmet:0001000",
+        "xmet:4000148",
         "xmet:9101000"
       ],
       "patterns": [],
@@ -212,7 +212,7 @@
       "forest_rule": "forest.rule:Hydroxylation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xmet:0000100",
+        "xmet:4000012",
         "xmet:9100100"
       ],
       "patterns": [
@@ -231,7 +231,7 @@
       "forest_rule": "forest.rule:NDealkylation",
       "sssom_rule_mapped": true,
       "sssom_subjects": [
-        "xmet:0000201",
+        "xmet:4000043",
         "xmet:9100201"
       ],
       "patterns": [],
@@ -410,7 +410,7 @@
       "sssom_rule_mapped": true,
       "sssom_subjects": [
         "xmet:9100131",
-        "xmet:0000133"
+        "xmet:4000035"
       ],
       "patterns": [
         "forest.pattern:ThiopheneSulfurOxidation/thiophene_s_oxide"

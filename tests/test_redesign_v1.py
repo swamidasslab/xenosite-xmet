@@ -101,7 +101,7 @@ def test_ndealkylation_methyl_patterns_share_demethylation_home():
     ]
     assert len(rows) == 3
     homes = {r["subject_id"] for r in rows}
-    assert homes == {"xmet:3001200"}
+    assert homes == {"xmet:4000349"}
     aw_sets = {
         frozenset(x for x in (r.get("always_with") or "").split("|") if x) for r in rows
     }
@@ -117,7 +117,7 @@ def test_dealkylation_methyl_patterns_share_demethylation_home():
     ]
     assert len(rows) == 3
     homes = {r["subject_id"] for r in rows}
-    assert homes == {"xmet:3001194"}
+    assert homes == {"xmet:4000344"}
     aw_sets = {
         frozenset(x for x in (r.get("always_with") or "").split("|") if x) for r in rows
     }

@@ -1,6 +1,6 @@
 # Crosswalks to GO / RXNO / ChEBI / Rhea / KEGG / ECO / CHMO.
 # XMET is a separate SKOS thesaurus; these are soft alignments, not imports.
 subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label
-xmet:0000000	skos:closeMatch	GO:0006805	semapv:ManualMappingCuration	xenobiotic biotransformation	xenobiotic metabolic process
-xmet:0000001	skos:broadMatch	GO:0006805	semapv:ManualMappingCuration	phase I	xenobiotic metabolic process
-xmet:0000002	skos:broadMatch	GO:0006805	semapv:ManualMappingCuration	phase II	xenobiotic metabolic process
+xmet:4000000	skos:closeMatch	GO:0006805	semapv:ManualMappingCuration	xenobiotic biotransformation	xenobiotic metabolic process
+xmet:4000001	skos:broadMatch	GO:0006805	semapv:ManualMappingCuration	phase I	xenobiotic metabolic process
+xmet:4000002	skos:broadMatch	GO:0006805	semapv:ManualMappingCuration	phase II	xenobiotic metabolic process

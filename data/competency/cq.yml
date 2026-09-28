@@ -8,7 +8,7 @@ questions:
   layer: ontology
   question: Hydroxylation family labels under chemical transformation.
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - hydroxylation
   - aromatic hydroxylation
@@ -17,7 +17,7 @@ questions:
   layer: ontology
   question: Rainbow unstable oxygenation under phase I reaction family.
   type: ontology_broader
-  concept: xmet:0000011
+  concept: xmet:4000005
   expected_ancestors:
   - xmet:1200000
 - id: CQ-P1-003
@@ -52,19 +52,19 @@ questions:
   type: sparql
   query: sparql/cq_aldehyde_producers.rq
   expected_contains:
-  - xmet:0000201
-  - xmet:0000205
+  - xmet:4000043
+  - xmet:4000349
   expected_excludes:
-  - xmet:0001000
+  - xmet:4000148
 - id: CQ-P1-006
   layer: ontology
   question: 'SPARQL: C-dealkylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000204 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000046 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000204
+  - xmet:4000046
   min_results: 1
 - id: CQ-P1-007
   layer: tagging
@@ -80,7 +80,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: C-dealkylation, N-dealkylation, N-deethylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - C-dealkylation
   - N-dealkylation
@@ -89,24 +89,24 @@ questions:
   layer: mapping
   question: hydroxylation maps to RXNO:0000330.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: RXNO:0000330
 - id: CQ-P1-010
   layer: ontology
   question: C-dealkylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000204
+  concept: xmet:4000046
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-011
   layer: ontology
   question: 'SPARQL: N-dealkylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000201 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000043 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000201
+  - xmet:4000043
   min_results: 1
 - id: CQ-P1-012
   layer: tagging
@@ -122,7 +122,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: N-demethylation, N-depropylation, N-oxide formation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - N-demethylation
   - N-depropylation
@@ -131,24 +131,24 @@ questions:
   layer: mapping
   question: epoxidation maps to RXNO:0000001.
   type: mapping_exists
-  subject: xmet:0000110
+  subject: xmet:4000022
   object: RXNO:0000001
 - id: CQ-P1-015
   layer: ontology
   question: N-dealkylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000201
+  concept: xmet:4000043
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-016
   layer: ontology
   question: 'SPARQL: N-deethylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000206 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000047 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000206
+  - xmet:4000047
   min_results: 1
 - id: CQ-P1-017
   layer: tagging
@@ -164,7 +164,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: N-oxide reduction, NIH shift, O-dealkylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - N-oxide reduction
   - NIH shift
@@ -173,24 +173,24 @@ questions:
   layer: mapping
   question: dealkylation maps to RXNO:0000336.
   type: mapping_exists
-  subject: xmet:0000200
+  subject: xmet:4000042
   object: RXNO:0000336
 - id: CQ-P1-020
   layer: ontology
   question: N-deethylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000206
+  concept: xmet:4000047
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-021
   layer: ontology
   question: 'SPARQL: N-demethylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000205 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000349 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000205
+  - xmet:4000349
   min_results: 1
 - id: CQ-P1-022
   layer: tagging
@@ -206,7 +206,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: O-deethylation, O-demethylation, S-dealkylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - O-deethylation
   - O-demethylation
@@ -215,24 +215,24 @@ questions:
   layer: mapping
   question: hydrolysis maps to RXNO:0000344.
   type: mapping_exists
-  subject: xmet:0000013
+  subject: xmet:4000007
   object: RXNO:0000344
 - id: CQ-P1-025
   layer: ontology
   question: N-demethylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000205
+  concept: xmet:4000349
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-026
   layer: ontology
   question: 'SPARQL: N-depropylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000207 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000048 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000207
+  - xmet:4000048
   min_results: 1
 - id: CQ-P1-027
   layer: tagging
@@ -249,7 +249,7 @@ questions:
   question: 'Labels present under chemical transformation: acyl migration, alcohol oxidation, aldehyde
     oxidation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - acyl migration
   - alcohol oxidation
@@ -258,24 +258,24 @@ questions:
   layer: mapping
   question: reduction maps to RXNO:0000333.
   type: mapping_exists
-  subject: xmet:0000014
+  subject: xmet:4000008
   object: RXNO:0000333
 - id: CQ-P1-030
   layer: ontology
   question: N-depropylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000207
+  concept: xmet:4000048
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-031
   layer: ontology
   question: 'SPARQL: N-oxide formation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000121 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000027 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000121
+  - xmet:4000027
   min_results: 1
 - id: CQ-P1-032
   layer: tagging
@@ -292,7 +292,7 @@ questions:
   question: 'Labels present under chemical transformation: aldehyde reduction, alicyclic hydroxylation,
     aliphatic O-dealkylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - aldehyde reduction
   - alicyclic hydroxylation
@@ -301,24 +301,24 @@ questions:
   layer: mapping
   question: dehydrogenation maps to RXNO:0000332.
   type: mapping_exists
-  subject: xmet:0000012
+  subject: xmet:4000006
   object: RXNO:0000332
 - id: CQ-P1-035
   layer: ontology
   question: N-oxide formation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000121
+  concept: xmet:4000027
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-036
   layer: ontology
   question: 'SPARQL: N-oxide reduction under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000515 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000098 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000515
+  - xmet:4000098
   min_results: 1
 - id: CQ-P1-037
   layer: tagging
@@ -336,7 +336,7 @@ questions:
   question: 'Labels present under chemical transformation: aliphatic hydroxylation, alkene epoxidation,
     alkene formation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - aliphatic hydroxylation
   - alkene epoxidation
@@ -345,24 +345,24 @@ questions:
   layer: mapping
   question: hydroxylation maps to rh:27802.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: rh:27802
 - id: CQ-P1-040
   layer: ontology
   question: N-oxide reduction hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000515
+  concept: xmet:4000098
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-041
   layer: ontology
   question: 'SPARQL: NIH shift under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0004003 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000197 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0004003
+  - xmet:4000197
   min_results: 1
 - id: CQ-P1-042
   layer: tagging
@@ -380,7 +380,7 @@ questions:
   question: 'Labels present under chemical transformation: alkene hydrogenation, alkyne hydrogenation,
     allylic hydroxylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - alkene hydrogenation
   - alkyne hydrogenation
@@ -389,24 +389,24 @@ questions:
   layer: mapping
   question: hydroxylation maps to kegg.rclass:RC00001.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: kegg.rclass:RC00001
 - id: CQ-P1-045
   layer: ontology
   question: NIH shift hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0004003
+  concept: xmet:4000197
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-046
   layer: ontology
   question: 'SPARQL: O-dealkylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000202 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000044 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000202
+  - xmet:4000044
   min_results: 1
 - id: CQ-P1-047
   layer: tagging
@@ -423,7 +423,7 @@ questions:
   question: 'Labels present under chemical transformation: amide hydrolysis, arene oxide formation, arene
     oxide rearrangement.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - amide hydrolysis
   - arene oxide formation
@@ -432,24 +432,24 @@ questions:
   layer: mapping
   question: dealkylation maps to kegg.rclass:RC00060.
   type: mapping_exists
-  subject: xmet:0000200
+  subject: xmet:4000042
   object: kegg.rclass:RC00060
 - id: CQ-P1-050
   layer: ontology
   question: O-dealkylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000202
+  concept: xmet:4000044
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-051
   layer: ontology
   question: 'SPARQL: O-deethylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000211 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000052 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000211
+  - xmet:4000052
   min_results: 1
 - id: CQ-P1-052
   layer: tagging
@@ -466,7 +466,7 @@ questions:
   question: 'Labels present under chemical transformation: aromatic O-dealkylation, aromatic amine N-oxidation,
     aromatic hydroxylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - aromatic O-dealkylation
   - aromatic amine N-oxidation
@@ -475,24 +475,24 @@ questions:
   layer: mapping
   question: hydroxylation maps to forest.rule:Hydroxylation.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: forest.rule:Hydroxylation
 - id: CQ-P1-055
   layer: ontology
   question: O-deethylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000211
+  concept: xmet:4000052
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-056
   layer: ontology
   question: 'SPARQL: O-demethylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000209 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000050 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000209
+  - xmet:4000050
   min_results: 1
 - id: CQ-P1-057
   layer: tagging
@@ -508,7 +508,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: aromatization, azo cleavage, azo reduction.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - aromatization
   - azo cleavage
@@ -517,18 +517,18 @@ questions:
   layer: ontology
   question: O-demethylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000209
+  concept: xmet:4000050
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-060
   layer: ontology
   question: 'SPARQL: S-dealkylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000203 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000045 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000203
+  - xmet:4000045
   min_results: 1
 - id: CQ-P1-061
   layer: tagging
@@ -546,7 +546,7 @@ questions:
   question: 'Labels present under chemical transformation: benzylic hydroxylation, carbamate hydrolysis,
     carbinolamine cleavage.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - benzylic hydroxylation
   - carbamate hydrolysis
@@ -555,18 +555,18 @@ questions:
   layer: ontology
   question: S-dealkylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000203
+  concept: xmet:4000045
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-064
   layer: ontology
   question: 'SPARQL: acyl migration under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0004017 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000209 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0004017
+  - xmet:4000209
   min_results: 1
 - id: CQ-P1-065
   layer: tagging
@@ -584,7 +584,7 @@ questions:
   question: 'Labels present under chemical transformation: carbon oxidation, carbonyl reduction, carbon–heteroatom
     oxidative cleavage.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - carbon oxidation
   - carbonyl reduction
@@ -593,18 +593,18 @@ questions:
   layer: ontology
   question: acyl migration hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0004017
+  concept: xmet:4000209
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-068
   layer: ontology
   question: 'SPARQL: alcohol oxidation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000310 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000069 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000310
+  - xmet:4000069
   min_results: 1
 - id: CQ-P1-069
   layer: tagging
@@ -621,7 +621,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: cis-dihydroxylation, conjugate addition, conjugation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - cis-dihydroxylation
   - conjugate addition
@@ -630,18 +630,18 @@ questions:
   layer: ontology
   question: alcohol oxidation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000310
+  concept: xmet:4000069
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-072
   layer: ontology
   question: 'SPARQL: aldehyde oxidation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000313 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000072 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000313
+  - xmet:4000072
   min_results: 1
 - id: CQ-P1-073
   layer: tagging
@@ -657,7 +657,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: cyanide hydrolysis, deacetylation, dealkylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - cyanide hydrolysis
   - deacetylation
@@ -666,18 +666,18 @@ questions:
   layer: ontology
   question: aldehyde oxidation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000313
+  concept: xmet:4000072
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-076
   layer: ontology
   question: 'SPARQL: aldehyde reduction under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000522 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000103 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000522
+  - xmet:4000103
   min_results: 1
 - id: CQ-P1-077
   layer: tagging
@@ -693,7 +693,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: deamination, dearomatization, dehalogenation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - deamination
   - dearomatization
@@ -702,18 +702,18 @@ questions:
   layer: ontology
   question: aldehyde reduction hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000522
+  concept: xmet:4000103
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-080
   layer: ontology
   question: 'SPARQL: alicyclic hydroxylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000143 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000041 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000143
+  - xmet:4000041
   min_results: 1
 - id: CQ-P1-081
   layer: tagging
@@ -729,7 +729,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: dehydration, dehydrogenation, dephosphorylation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - dehydration
   - dehydrogenation
@@ -738,18 +738,18 @@ questions:
   layer: ontology
   question: alicyclic hydroxylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000143
+  concept: xmet:4000041
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-084
   layer: ontology
   question: 'SPARQL: aliphatic O-dealkylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000213 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000054 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000213
+  - xmet:4000054
   min_results: 1
 - id: CQ-P1-085
   layer: tagging
@@ -766,7 +766,7 @@ questions:
   question: 'Labels present under chemical transformation: disulfide formation, disulfide reduction, double-
     to triple-bond dehydrogenation.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - disulfide formation
   - disulfide reduction
@@ -775,18 +775,18 @@ questions:
   layer: ontology
   question: aliphatic O-dealkylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000213
+  concept: xmet:4000054
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-088
   layer: ontology
   question: 'SPARQL: aliphatic hydroxylation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000102 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000014 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000102
+  - xmet:4000014
   min_results: 1
 - id: CQ-P1-089
   layer: tagging
@@ -802,7 +802,7 @@ questions:
   layer: ontology
   question: 'Labels present under chemical transformation: epoxidation, epoxide opening, ester hydrolysis.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - epoxidation
   - epoxide opening
@@ -811,18 +811,18 @@ questions:
   layer: ontology
   question: aliphatic hydroxylation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000102
+  concept: xmet:4000014
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-092
   layer: ontology
   question: 'SPARQL: alkene epoxidation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000111 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000023 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000111
+  - xmet:4000023
   min_results: 1
 - id: CQ-P1-093
   layer: tagging
@@ -839,7 +839,7 @@ questions:
   question: 'Labels present under chemical transformation: ether cleavage, ether hydrolysis, hemiacetal
     cleavage.'
   type: ontology_labels
-  under: xmet:1100000
+  under: xmet:4000213
   expected_contains_labels:
   - ether cleavage
   - ether hydrolysis
@@ -848,18 +848,18 @@ questions:
   layer: ontology
   question: alkene epoxidation hangs under chemical transformation.
   type: ontology_broader
-  concept: xmet:0000111
+  concept: xmet:4000023
   expected_ancestors:
-  - xmet:1100000
+  - xmet:4000213
 - id: CQ-P1-096
   layer: ontology
   question: 'SPARQL: alkene formation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000314 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000073 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000314
+  - xmet:4000073
   min_results: 1
 - id: CQ-P1-097
   layer: tagging
@@ -876,10 +876,10 @@ questions:
   question: 'SPARQL: alkene hydrogenation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000501 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000091 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000501
+  - xmet:4000091
   min_results: 1
 - id: CQ-P1-099
   layer: tagging
@@ -896,10 +896,10 @@ questions:
   question: 'SPARQL: alkyne hydrogenation under chemical transformation.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0000502 AS ?term)\n  ?term skos:broader+ xmet:1100000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000092 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
-  - xmet:0000502
+  - xmet:4000092
   min_results: 1
 - id: CQ-P2-001
   layer: ontology
@@ -916,28 +916,28 @@ questions:
   type: sparql
   query: sparql/cq_phase2_oxygen_attachment.rq
   expected_contains:
-  - xmet:0001001
-  - xmet:0001011
-  - xmet:0001041
-  - xmet:1300100
-  - xmet:1300103
-  - xmet:1300106
+  - xmet:4000149
+  - xmet:4000159
+  - xmet:4000176
+  - xmet:4000149
+  - xmet:4000159
+  - xmet:4000176
   expected_excludes:
-  - xmet:0001005
-  - xmet:1300101
-  - xmet:0001004
-  - xmet:1300102
+  - xmet:4000153
+  - xmet:4000153
+  - xmet:4000152
+  - xmet:4000152
 - id: CQ-P2-003
   layer: ontology
   question: Glucuronidation classes distinguish O/N/S/C/acyl attachment.
   type: sparql
   query: sparql/cq_glucuronidation_attachment_atoms.rq
   expected_contains:
-  - xmet:1300100
-  - xmet:1300101
-  - xmet:1300102
-  - xmet:1300120
-  - xmet:1300121
+  - xmet:4000149
+  - xmet:4000153
+  - xmet:4000152
+  - xmet:4000155
+  - xmet:4000156
   min_results: 5
 - id: CQ-P2-004
   layer: tagging
@@ -957,29 +957,29 @@ questions:
   type: sparql
   query: sparql/cq_phase2_nitrogen_attachment.rq
   expected_contains:
-  - xmet:0001005
-  - xmet:1300101
+  - xmet:4000153
+  - xmet:4000153
   expected_excludes:
-  - xmet:0001001
-  - xmet:1300100
+  - xmet:4000149
+  - xmet:4000149
 - id: CQ-P2-006
   layer: ontology
   question: Phase II not enzyme-specific.
   type: sparql
   query: sparql/cq_phase2_not_enzyme.rq
   expected_contains:
-  - xmet:0001000
-  - xmet:0001010
-  - xmet:0001030
+  - xmet:4000148
+  - xmet:4000158
+  - xmet:4000167
 - id: CQ-P2-007
   layer: ontology
   question: 'SPARQL: C-glucuronidation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001008 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000156 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001008
+  - xmet:4000156
   min_results: 1
 - id: CQ-P2-008
   layer: tagging
@@ -1005,13 +1005,13 @@ questions:
   layer: mapping
   question: methylation maps to RXNO:0000350.
   type: mapping_exists
-  subject: xmet:0001040
+  subject: xmet:4000175
   object: RXNO:0000350
 - id: CQ-P2-011
   layer: ontology
   question: C-glucuronidation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001008
+  concept: xmet:4000156
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-012
@@ -1019,10 +1019,10 @@ questions:
   question: 'SPARQL: C-glucuronidation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300121 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000156 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300121
+  - xmet:4000156
   min_results: 1
 - id: CQ-P2-013
   layer: tagging
@@ -1048,13 +1048,13 @@ questions:
   layer: mapping
   question: acetylation maps to RXNO:0000345.
   type: mapping_exists
-  subject: xmet:0001020
+  subject: xmet:4000163
   object: RXNO:0000345
 - id: CQ-P2-016
   layer: ontology
   question: C-glucuronidation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300121
+  concept: xmet:4000156
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-017
@@ -1062,10 +1062,10 @@ questions:
   question: 'SPARQL: CoA conjugation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001061 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000185 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001061
+  - xmet:4000185
   min_results: 1
 - id: CQ-P2-018
   layer: tagging
@@ -1091,13 +1091,13 @@ questions:
   layer: mapping
   question: glucuronidation maps to CHEBI:24302.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: CHEBI:24302
 - id: CQ-P2-021
   layer: ontology
   question: CoA conjugation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001061
+  concept: xmet:4000185
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-022
@@ -1105,10 +1105,10 @@ questions:
   question: 'SPARQL: GSH conjugation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300105 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000167 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300105
+  - xmet:4000167
   min_results: 1
 - id: CQ-P2-023
   layer: tagging
@@ -1134,13 +1134,13 @@ questions:
   layer: mapping
   question: sulfation maps to CHEBI:26819.
   type: mapping_exists
-  subject: xmet:0001010
+  subject: xmet:4000158
   object: CHEBI:26819
 - id: CQ-P2-026
   layer: ontology
   question: GSH conjugation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300105
+  concept: xmet:4000167
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-027
@@ -1148,10 +1148,10 @@ questions:
   question: 'SPARQL: Michael GSH conjugation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300118 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000168 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300118
+  - xmet:4000168
   min_results: 1
 - id: CQ-P2-028
   layer: tagging
@@ -1177,13 +1177,13 @@ questions:
   layer: mapping
   question: glutathionation maps to CHEBI:57925.
   type: mapping_exists
-  subject: xmet:0001030
+  subject: xmet:4000167
   object: CHEBI:57925
 - id: CQ-P2-031
   layer: ontology
   question: Michael GSH conjugation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300118
+  concept: xmet:4000168
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-032
@@ -1191,10 +1191,10 @@ questions:
   question: 'SPARQL: Michael glutathionation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001031 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000168 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001031
+  - xmet:4000168
   min_results: 1
 - id: CQ-P2-033
   layer: tagging
@@ -1219,13 +1219,13 @@ questions:
   layer: mapping
   question: glucuronidation maps to rh:17889.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: rh:17889
 - id: CQ-P2-036
   layer: ontology
   question: Michael glutathionation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001031
+  concept: xmet:4000168
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-037
@@ -1233,10 +1233,10 @@ questions:
   question: 'SPARQL: N-acetylation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001021 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000164 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001021
+  - xmet:4000164
   min_results: 1
 - id: CQ-P2-038
   layer: tagging
@@ -1262,13 +1262,13 @@ questions:
   layer: mapping
   question: sulfation maps to rh:16781.
   type: mapping_exists
-  subject: xmet:0001010
+  subject: xmet:4000158
   object: rh:16781
 - id: CQ-P2-041
   layer: ontology
   question: N-acetylation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001021
+  concept: xmet:4000164
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-042
@@ -1276,10 +1276,10 @@ questions:
   question: 'SPARQL: N-acetylation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300109 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000164 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300109
+  - xmet:4000164
   min_results: 1
 - id: CQ-P2-043
   layer: tagging
@@ -1304,13 +1304,13 @@ questions:
   layer: mapping
   question: glucuronidation maps to kegg.rclass:RC00049.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: kegg.rclass:RC00049
 - id: CQ-P2-046
   layer: ontology
   question: N-acetylation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300109
+  concept: xmet:4000164
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-047
@@ -1318,10 +1318,10 @@ questions:
   question: 'SPARQL: N-acetylcysteine conjugation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300011 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000218 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300011
+  - xmet:4000218
   min_results: 1
 - id: CQ-P2-048
   layer: tagging
@@ -1347,13 +1347,13 @@ questions:
   layer: mapping
   question: glucuronidation maps to forest.rule:Glucuronidation.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: forest.rule:Glucuronidation
 - id: CQ-P2-051
   layer: ontology
   question: N-acetylcysteine conjugation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300011
+  concept: xmet:4000218
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-052
@@ -1361,10 +1361,10 @@ questions:
   question: 'SPARQL: N-glucuronidation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001005 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000153 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001005
+  - xmet:4000153
   min_results: 1
 - id: CQ-P2-053
   layer: tagging
@@ -1390,13 +1390,13 @@ questions:
   layer: mapping
   question: Michael glutathionation maps to forest.pattern:Glutathionation/michael.
   type: mapping_exists
-  subject: xmet:0001031
+  subject: xmet:4000168
   object: forest.pattern:Glutathionation/michael
 - id: CQ-P2-056
   layer: ontology
   question: N-glucuronidation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001005
+  concept: xmet:4000153
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-057
@@ -1404,10 +1404,10 @@ questions:
   question: 'SPARQL: N-glucuronidation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300101 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000153 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300101
+  - xmet:4000153
   min_results: 1
 - id: CQ-P2-058
   layer: tagging
@@ -1433,7 +1433,7 @@ questions:
   layer: ontology
   question: N-glucuronidation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300101
+  concept: xmet:4000153
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-061
@@ -1441,10 +1441,10 @@ questions:
   question: 'SPARQL: N-methylation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001042 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000177 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001042
+  - xmet:4000177
   min_results: 1
 - id: CQ-P2-062
   layer: ontology
@@ -1460,7 +1460,7 @@ questions:
   layer: ontology
   question: N-methylation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001042
+  concept: xmet:4000177
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-064
@@ -1468,10 +1468,10 @@ questions:
   question: 'SPARQL: N-methylation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300107 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000177 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300107
+  - xmet:4000177
   min_results: 1
 - id: CQ-P2-065
   layer: ontology
@@ -1487,7 +1487,7 @@ questions:
   layer: ontology
   question: N-methylation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300107
+  concept: xmet:4000177
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-067
@@ -1495,10 +1495,10 @@ questions:
   question: 'SPARQL: N-sulfation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001014 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000162 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001014
+  - xmet:4000162
   min_results: 1
 - id: CQ-P2-068
   layer: ontology
@@ -1514,7 +1514,7 @@ questions:
   layer: ontology
   question: N-sulfation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001014
+  concept: xmet:4000162
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-070
@@ -1522,10 +1522,10 @@ questions:
   question: 'SPARQL: N-sulfation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300104 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000162 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300104
+  - xmet:4000162
   min_results: 1
 - id: CQ-P2-071
   layer: ontology
@@ -1541,7 +1541,7 @@ questions:
   layer: ontology
   question: N-sulfation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300104
+  concept: xmet:4000162
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-073
@@ -1549,10 +1549,10 @@ questions:
   question: 'SPARQL: O-acetylation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001022 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000165 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001022
+  - xmet:4000165
   min_results: 1
 - id: CQ-P2-074
   layer: ontology
@@ -1568,7 +1568,7 @@ questions:
   layer: ontology
   question: O-acetylation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001022
+  concept: xmet:4000165
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-076
@@ -1576,10 +1576,10 @@ questions:
   question: 'SPARQL: O-acetylation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300110 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000165 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300110
+  - xmet:4000165
   min_results: 1
 - id: CQ-P2-077
   layer: ontology
@@ -1595,7 +1595,7 @@ questions:
   layer: ontology
   question: O-acetylation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300110
+  concept: xmet:4000165
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-079
@@ -1603,10 +1603,10 @@ questions:
   question: 'SPARQL: O-glucuronidation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001001 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000149 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001001
+  - xmet:4000149
   min_results: 1
 - id: CQ-P2-080
   layer: ontology
@@ -1622,7 +1622,7 @@ questions:
   layer: ontology
   question: O-glucuronidation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001001
+  concept: xmet:4000149
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-082
@@ -1630,10 +1630,10 @@ questions:
   question: 'SPARQL: O-glucuronidation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300100 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000149 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300100
+  - xmet:4000149
   min_results: 1
 - id: CQ-P2-083
   layer: ontology
@@ -1649,7 +1649,7 @@ questions:
   layer: ontology
   question: O-glucuronidation class hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:1300100
+  concept: xmet:4000149
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-085
@@ -1657,10 +1657,10 @@ questions:
   question: 'SPARQL: O-methylation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001041 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000176 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001041
+  - xmet:4000176
   min_results: 1
 - id: CQ-P2-086
   layer: ontology
@@ -1676,7 +1676,7 @@ questions:
   layer: ontology
   question: O-methylation hangs under phase II conjugation family.
   type: ontology_broader
-  concept: xmet:0001041
+  concept: xmet:4000176
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-088
@@ -1684,105 +1684,105 @@ questions:
   question: 'SPARQL: O-methylation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300106 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000176 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300106
+  - xmet:4000176
   min_results: 1
 - id: CQ-P2-089
   layer: ontology
   question: 'SPARQL: O-sulfation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001011 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000159 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001011
+  - xmet:4000159
   min_results: 1
 - id: CQ-P2-090
   layer: ontology
   question: 'SPARQL: O-sulfation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300103 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000159 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300103
+  - xmet:4000159
   min_results: 1
 - id: CQ-P2-091
   layer: ontology
   question: 'SPARQL: S-glucuronidation under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0001007 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000155 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:0001007
+  - xmet:4000155
   min_results: 1
 - id: CQ-P2-092
   layer: ontology
   question: 'SPARQL: S-glucuronidation class under phase II conjugation family.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1300120 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000155 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
-  - xmet:1300120
+  - xmet:4000155
   min_results: 1
 - id: CQ-P2-093
   layer: ontology
   question: C-glucuronidation under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:0001008
+  concept: xmet:4000156
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-094
   layer: ontology
   question: C-glucuronidation class under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:1300121
+  concept: xmet:4000156
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-095
   layer: ontology
   question: CoA conjugation under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:0001061
+  concept: xmet:4000185
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-096
   layer: ontology
   question: GSH conjugation class under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:1300105
+  concept: xmet:4000167
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-097
   layer: ontology
   question: Michael GSH conjugation under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:1300118
+  concept: xmet:4000168
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-098
   layer: ontology
   question: Michael glutathionation under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:0001031
+  concept: xmet:4000168
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-099
   layer: ontology
   question: N-acetylation under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:0001021
+  concept: xmet:4000164
   expected_ancestors:
   - xmet:1300000
 - id: CQ-P2-100
   layer: ontology
   question: N-acetylation class under phase II conjugation family (pad).
   type: ontology_broader
-  concept: xmet:1300109
+  concept: xmet:4000164
   expected_ancestors:
   - xmet:1300000
 - id: CQ-RM-001
@@ -1812,10 +1812,10 @@ questions:
   type: sparql
   query: sparql/cq_gsh_trappable_producers.rq
   expected_contains:
-  - xmet:0000110
-  - xmet:0000300
-  - xmet:0001004
-  - xmet:0001030
+  - xmet:4000022
+  - xmet:4000059
+  - xmet:4000152
+  - xmet:4000167
 - id: CQ-RM-004
   layer: ontology
   question: Reactive aromatic metabolites SPARQL.
@@ -3182,7 +3182,7 @@ questions:
   layer: ontology
   question: Structural delta core labels.
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - monooxygenation
   - formula delta
@@ -3193,7 +3193,7 @@ questions:
   type: sparql
   query: sparql/cq_structural_deltas.rq
   expected_contains:
-  - xmet:1700100
+  - xmet:4000223
   - xmet:7700001
   - xmet:1700010
   min_results: 3
@@ -3211,10 +3211,10 @@ questions:
   question: 'SPARQL: GSH mass shift under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1700106 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000228 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
-  - xmet:1700106
+  - xmet:4000228
   min_results: 1
 - id: CQ-DELTA-005
   layer: tagging
@@ -3231,7 +3231,7 @@ questions:
   layer: ontology
   question: 'Labels present under structural delta: GSH mass shift, NIH shift, alkyl loss delta.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - GSH mass shift
   - NIH shift
@@ -3246,18 +3246,18 @@ questions:
   layer: ontology
   question: GSH mass shift hangs under structural delta.
   type: ontology_broader
-  concept: xmet:1700106
+  concept: xmet:4000228
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-009
   layer: ontology
   question: 'SPARQL: NIH shift under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0004003 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000197 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
-  - xmet:0004003
+  - xmet:4000197
   min_results: 1
 - id: CQ-DELTA-010
   layer: tagging
@@ -3274,7 +3274,7 @@ questions:
   question: 'Labels present under structural delta: arene oxide pathway, arene oxide rearrangement, aromatic
     and conjugated-system impact.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - arene oxide pathway
   - arene oxide rearrangement
@@ -3289,15 +3289,15 @@ questions:
   layer: ontology
   question: NIH shift hangs under structural delta.
   type: ontology_broader
-  concept: xmet:0004003
+  concept: xmet:4000197
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-014
   layer: ontology
   question: 'SPARQL: alkyl loss delta under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:7700007 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:7700007 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
   - xmet:7700007
@@ -3317,7 +3317,7 @@ questions:
   question: 'Labels present under structural delta: aromatic ring substitution impact, aromaticity change,
     aromaticity gain.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - aromatic ring substitution impact
   - aromaticity change
@@ -3334,13 +3334,13 @@ questions:
   type: ontology_broader
   concept: xmet:7700007
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-019
   layer: ontology
   question: 'SPARQL: arene oxide pathway under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000007 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000007 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
   - xmet:8000007
@@ -3360,7 +3360,7 @@ questions:
   question: 'Labels present under structural delta: aromaticity gain delta, aromaticity loss, aromaticity
     loss delta.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - aromaticity gain delta
   - aromaticity loss
@@ -3371,16 +3371,16 @@ questions:
   type: ontology_broader
   concept: xmet:8000007
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-023
   layer: ontology
   question: 'SPARQL: arene oxide rearrangement under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0004005 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000197 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
-  - xmet:0004005
+  - xmet:4000197
   min_results: 1
 - id: CQ-DELTA-024
   layer: tagging
@@ -3397,7 +3397,7 @@ questions:
   layer: ontology
   question: 'Labels present under structural delta: aromatization, atom added, atom addition.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - aromatization
   - atom added
@@ -3406,15 +3406,15 @@ questions:
   layer: ontology
   question: arene oxide rearrangement hangs under structural delta.
   type: ontology_broader
-  concept: xmet:0004005
+  concept: xmet:4000197
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-027
   layer: ontology
   question: 'SPARQL: aromatic and conjugated-system impact under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000000 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000000 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
   - xmet:8000000
@@ -3434,7 +3434,7 @@ questions:
   layer: ontology
   question: 'Labels present under structural delta: atom removed, bond cleavage, bond order change.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - atom removed
   - bond cleavage
@@ -3445,13 +3445,13 @@ questions:
   type: ontology_broader
   concept: xmet:8000000
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-031
   layer: ontology
   question: 'SPARQL: aromatic ring substitution impact under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000003 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000003 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
   - xmet:8000003
@@ -3472,7 +3472,7 @@ questions:
   question: 'Labels present under structural delta: bond order change, bond order decrease, bond order
     increase.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - bond order change
   - bond order decrease
@@ -3483,16 +3483,16 @@ questions:
   type: ontology_broader
   concept: xmet:8000003
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-035
   layer: ontology
   question: 'SPARQL: aromaticity change under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1700015 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000274 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
-  - xmet:1700015
+  - xmet:4000274
   min_results: 1
 - id: CQ-DELTA-036
   layer: tagging
@@ -3509,7 +3509,7 @@ questions:
   question: 'Labels present under structural delta: bond-edit topology, bond-edit topology unspecified,
     charge change.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - bond-edit topology
   - bond-edit topology unspecified
@@ -3518,15 +3518,15 @@ questions:
   layer: ontology
   question: aromaticity change hangs under structural delta.
   type: ontology_broader
-  concept: xmet:1700015
+  concept: xmet:4000274
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-039
   layer: ontology
   question: 'SPARQL: aromaticity gain under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000002 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000002 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
   - xmet:8000002
@@ -3547,7 +3547,7 @@ questions:
   question: 'Labels present under structural delta: conjugate gain delta, conjugate moiety added, conjugated
     adduct formation.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - conjugate gain delta
   - conjugate moiety added
@@ -3558,16 +3558,16 @@ questions:
   type: ontology_broader
   concept: xmet:8000002
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-043
   layer: ontology
   question: 'SPARQL: aromaticity gain delta under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1700108 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000195 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
-  - xmet:1700108
+  - xmet:4000195
   min_results: 1
 - id: CQ-DELTA-044
   layer: tagging
@@ -3585,7 +3585,7 @@ questions:
   question: 'Labels present under structural delta: conjugated π-system engagement, dearomatization, deethylation
     delta.'
   type: ontology_labels
-  under: xmet:1700000
+  under: xmet:4000220
   expected_contains_labels:
   - conjugated π-system engagement
   - dearomatization
@@ -3594,15 +3594,15 @@ questions:
   layer: ontology
   question: aromaticity gain delta hangs under structural delta.
   type: ontology_broader
-  concept: xmet:1700108
+  concept: xmet:4000195
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-047
   layer: ontology
   question: 'SPARQL: aromaticity loss under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000001 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000001 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
   - xmet:8000001
@@ -3623,94 +3623,94 @@ questions:
   type: ontology_broader
   concept: xmet:8000001
   expected_ancestors:
-  - xmet:1700000
+  - xmet:4000220
 - id: CQ-DELTA-050
   layer: ontology
   question: 'SPARQL: aromaticity loss delta under structural delta.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1700107 AS ?term)\n  ?term skos:broader+ xmet:1700000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000194 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
-  - xmet:1700107
+  - xmet:4000194
   min_results: 1
 - id: CQ-MAP-001
   layer: mapping
   question: Hydroxylation maps to MOP.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object_prefix: 'mop:'
 - id: CQ-MAP-002
   layer: mapping
   question: Xenobiotic biotransformation → GO:0006805.
   type: mapping_exists
-  subject: xmet:0000000
+  subject: xmet:4000000
   object: GO:0006805
 - id: CQ-MAP-003
   layer: mapping
   question: xenobiotic biotransformation → GO:0006805.
   type: mapping_exists
-  subject: xmet:0000000
+  subject: xmet:4000000
   object: GO:0006805
 - id: CQ-MAP-004
   layer: mapping
   question: phase I → GO:0006805.
   type: mapping_exists
-  subject: xmet:0000001
+  subject: xmet:4000001
   object: GO:0006805
 - id: CQ-MAP-005
   layer: mapping
   question: phase II → GO:0006805.
   type: mapping_exists
-  subject: xmet:0000002
+  subject: xmet:4000002
   object: GO:0006805
 - id: CQ-MAP-006
   layer: mapping
   question: hydroxylation → RXNO:0000330.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: RXNO:0000330
 - id: CQ-MAP-007
   layer: mapping
   question: epoxidation → RXNO:0000001.
   type: mapping_exists
-  subject: xmet:0000110
+  subject: xmet:4000022
   object: RXNO:0000001
 - id: CQ-MAP-008
   layer: mapping
   question: dealkylation → RXNO:0000336.
   type: mapping_exists
-  subject: xmet:0000200
+  subject: xmet:4000042
   object: RXNO:0000336
 - id: CQ-MAP-009
   layer: mapping
   question: methylation → RXNO:0000350.
   type: mapping_exists
-  subject: xmet:0001040
+  subject: xmet:4000175
   object: RXNO:0000350
 - id: CQ-MAP-010
   layer: mapping
   question: acetylation → RXNO:0000345.
   type: mapping_exists
-  subject: xmet:0001020
+  subject: xmet:4000163
   object: RXNO:0000345
 - id: CQ-MAP-011
   layer: mapping
   question: hydrolysis → RXNO:0000344.
   type: mapping_exists
-  subject: xmet:0000013
+  subject: xmet:4000007
   object: RXNO:0000344
 - id: CQ-MAP-012
   layer: mapping
   question: reduction → RXNO:0000333.
   type: mapping_exists
-  subject: xmet:0000014
+  subject: xmet:4000008
   object: RXNO:0000333
 - id: CQ-MAP-013
   layer: mapping
   question: dehydrogenation → RXNO:0000332.
   type: mapping_exists
-  subject: xmet:0000012
+  subject: xmet:4000006
   object: RXNO:0000332
 - id: CQ-MAP-014
   layer: mapping
@@ -3752,55 +3752,55 @@ questions:
   layer: mapping
   question: glucuronidation → CHEBI:24302.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: CHEBI:24302
 - id: CQ-MAP-021
   layer: mapping
   question: sulfation → CHEBI:26819.
   type: mapping_exists
-  subject: xmet:0001010
+  subject: xmet:4000158
   object: CHEBI:26819
 - id: CQ-MAP-022
   layer: mapping
   question: glutathionation → CHEBI:57925.
   type: mapping_exists
-  subject: xmet:0001030
+  subject: xmet:4000167
   object: CHEBI:57925
 - id: CQ-MAP-023
   layer: mapping
   question: hydroxylation → rh:27802.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: rh:27802
 - id: CQ-MAP-024
   layer: mapping
   question: glucuronidation → rh:17889.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: rh:17889
 - id: CQ-MAP-025
   layer: mapping
   question: sulfation → rh:16781.
   type: mapping_exists
-  subject: xmet:0001010
+  subject: xmet:4000158
   object: rh:16781
 - id: CQ-MAP-026
   layer: mapping
   question: hydroxylation → kegg.rclass:RC00001.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: kegg.rclass:RC00001
 - id: CQ-MAP-027
   layer: mapping
   question: dealkylation → kegg.rclass:RC00060.
   type: mapping_exists
-  subject: xmet:0000200
+  subject: xmet:4000042
   object: kegg.rclass:RC00060
 - id: CQ-MAP-028
   layer: mapping
   question: glucuronidation → kegg.rclass:RC00049.
   type: mapping_exists
-  subject: xmet:0001000
+  subject: xmet:4000148
   object: kegg.rclass:RC00049
 - id: CQ-MAP-029
   layer: mapping
@@ -3896,13 +3896,13 @@ questions:
   layer: mapping
   question: phase I → forest.ruleset:PhaseOne.
   type: mapping_exists
-  subject: xmet:0000001
+  subject: xmet:4000001
   object: forest.ruleset:PhaseOne
 - id: CQ-MAP-045
   layer: mapping
   question: phase II → forest.ruleset:CJ.
   type: mapping_exists
-  subject: xmet:0000002
+  subject: xmet:4000002
   object: forest.ruleset:CJ
 - id: CQ-MAP-046
   layer: mapping
@@ -3914,7 +3914,7 @@ questions:
   layer: mapping
   question: stable oxygenation → forest.ruleset:SO.
   type: mapping_exists
-  subject: xmet:0000010
+  subject: xmet:4000004
   object: forest.ruleset:SO
 - id: CQ-MAP-048
   layer: mapping
@@ -3926,13 +3926,13 @@ questions:
   layer: mapping
   question: unstable oxygenation → forest.ruleset:UO.
   type: mapping_exists
-  subject: xmet:0000011
+  subject: xmet:4000005
   object: forest.ruleset:UO
 - id: CQ-MAP-050
   layer: mapping
   question: hydroxylation → forest.rule:Hydroxylation.
   type: mapping_exists
-  subject: xmet:0000100
+  subject: xmet:4000012
   object: forest.rule:Hydroxylation
 - id: CQ-EV-001
   layer: ontology
@@ -4279,7 +4279,7 @@ questions:
   layer: ontology
   question: Leaving group spine core.
   type: ontology_labels
-  under: xmet:2200000
+  under: xmet:4000229
   expected_contains_labels:
   - methyl leaving group
   - halide leaving group
@@ -4289,10 +4289,10 @@ questions:
   question: 'SPARQL: acetaldehyde leaving fragment under leaving group.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2200031 AS ?term)\n  ?term skos:broader+ xmet:2200000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000251 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
-  - xmet:2200031
+  - xmet:4000251
   min_results: 1
 - id: CQ-LG-003
   layer: tagging
@@ -4309,7 +4309,7 @@ questions:
   question: 'Labels present under leaving group: acetaldehyde leaving fragment, alcohol leaving fragment,
     allyl leaving group.'
   type: ontology_labels
-  under: xmet:2200000
+  under: xmet:4000229
   expected_contains_labels:
   - acetaldehyde leaving fragment
   - alcohol leaving fragment
@@ -4318,18 +4318,18 @@ questions:
   layer: ontology
   question: acetaldehyde leaving fragment hangs under leaving group.
   type: ontology_broader
-  concept: xmet:2200031
+  concept: xmet:4000251
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-LG-006
   layer: ontology
   question: 'SPARQL: alcohol leaving fragment under leaving group.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2200021 AS ?term)\n  ?term skos:broader+ xmet:2200000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000241 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
-  - xmet:2200021
+  - xmet:4000241
   min_results: 1
 - id: CQ-LG-007
   layer: tagging
@@ -4346,7 +4346,7 @@ questions:
   question: 'Labels present under leaving group: amine leaving fragment, aryl leaving group, benzyl leaving
     group.'
   type: ontology_labels
-  under: xmet:2200000
+  under: xmet:4000229
   expected_contains_labels:
   - amine leaving fragment
   - aryl leaving group
@@ -4355,18 +4355,18 @@ questions:
   layer: ontology
   question: alcohol leaving fragment hangs under leaving group.
   type: ontology_broader
-  concept: xmet:2200021
+  concept: xmet:4000241
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-LG-010
   layer: ontology
   question: 'SPARQL: allyl leaving group under leaving group.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2200015 AS ?term)\n  ?term skos:broader+ xmet:2200000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000235 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
-  - xmet:2200015
+  - xmet:4000235
   min_results: 1
 - id: CQ-LG-011
   layer: tagging
@@ -4383,7 +4383,7 @@ questions:
   question: 'Labels present under leaving group: bromide leaving group, carboxylate leaving group, chloride
     leaving group.'
   type: ontology_labels
-  under: xmet:2200000
+  under: xmet:4000229
   expected_contains_labels:
   - bromide leaving group
   - carboxylate leaving group
@@ -4392,18 +4392,18 @@ questions:
   layer: ontology
   question: allyl leaving group hangs under leaving group.
   type: ontology_broader
-  concept: xmet:2200015
+  concept: xmet:4000235
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-LG-014
   layer: ontology
   question: 'SPARQL: amine leaving fragment under leaving group.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2200022 AS ?term)\n  ?term skos:broader+ xmet:2200000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000242 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
-  - xmet:2200022
+  - xmet:4000242
   min_results: 1
 - id: CQ-LG-015
   layer: tagging
@@ -4420,7 +4420,7 @@ questions:
   question: 'Labels present under leaving group: cyanide leaving group, ethyl leaving group, fluoride
     leaving group.'
   type: ontology_labels
-  under: xmet:2200000
+  under: xmet:4000229
   expected_contains_labels:
   - cyanide leaving group
   - ethyl leaving group
@@ -4429,18 +4429,18 @@ questions:
   layer: ontology
   question: amine leaving fragment hangs under leaving group.
   type: ontology_broader
-  concept: xmet:2200022
+  concept: xmet:4000242
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-LG-018
   layer: ontology
   question: 'SPARQL: aryl leaving group under leaving group.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2200033 AS ?term)\n  ?term skos:broader+ xmet:2200000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000253 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
-  - xmet:2200033
+  - xmet:4000253
   min_results: 1
 - id: CQ-LG-019
   layer: tagging
@@ -4457,7 +4457,7 @@ questions:
   question: 'Labels present under leaving group: formaldehyde leaving fragment, halide leaving group,
     hydrogen leaving group.'
   type: ontology_labels
-  under: xmet:2200000
+  under: xmet:4000229
   expected_contains_labels:
   - formaldehyde leaving fragment
   - halide leaving group
@@ -4466,18 +4466,18 @@ questions:
   layer: ontology
   question: aryl leaving group hangs under leaving group.
   type: ontology_broader
-  concept: xmet:2200033
+  concept: xmet:4000253
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-LG-022
   layer: ontology
   question: 'SPARQL: benzyl leaving group under leaving group.'
   type: sparql
   query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
-    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2200014 AS ?term)\n  ?term skos:broader+ xmet:2200000 .\n\
+    SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000234 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
-  - xmet:2200014
+  - xmet:4000234
   min_results: 1
 - id: CQ-LG-023
   layer: tagging
@@ -4493,16 +4493,16 @@ questions:
   layer: ontology
   question: benzyl leaving group hangs under leaving group.
   type: ontology_broader
-  concept: xmet:2200014
+  concept: xmet:4000234
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-LG-025
   layer: ontology
   question: acetaldehyde leaving fragment under leaving group (pad).
   type: ontology_broader
-  concept: xmet:2200031
+  concept: xmet:4000251
   expected_ancestors:
-  - xmet:2200000
+  - xmet:4000229
 - id: CQ-PHARM-001
   layer: ontology
   question: Pharmacological role distinctions.

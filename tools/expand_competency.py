@@ -42,14 +42,14 @@ TARGETS = {
 }
 
 SPINES = {
-    "P1": ("xmet:1100000", "chemical transformation"),
+    "P1": ("xmet:4000213", "chemical transformation"),
     "P2": ("xmet:1300000", "phase II conjugation family"),
     "RM": ("xmet:1500000", "reactive metabolite family"),
     "SITE": ("xmet:1600000", "site type"),
-    "DELTA": ("xmet:1700000", "structural delta"),
+    "DELTA": ("xmet:4000220", "structural delta"),
     "EV": ("xmet:2000000", "evidence"),
     "PROV": ("xmet:1900000", "rule provenance"),
-    "LG": ("xmet:2200000", "leaving group"),
+    "LG": ("xmet:4000229", "leaving group"),
     "PHARM": ("xmet:2300000", "pharmacological role"),
     "ABOUT": ("xmet:2400000", "annotation about"),
     "MED": ("xmet:1400000", "medchem liability"),
@@ -152,7 +152,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Hydroxylation family labels under chemical transformation.",
             "type": "ontology_labels",
-            "under": "xmet:1100000",
+            "under": "xmet:4000213",
             "expected_contains_labels": [
                 "hydroxylation",
                 "aromatic hydroxylation",
@@ -164,7 +164,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Rainbow unstable oxygenation under phase I reaction family.",
             "type": "ontology_broader",
-            "concept": "xmet:0000011",
+            "concept": "xmet:4000005",
             "expected_ancestors": ["xmet:1200000"],
         },
         {
@@ -200,8 +200,8 @@ def seed_questions():
             "question": "Find transformations that can produce aldehydes.",
             "type": "sparql",
             "query": "sparql/cq_aldehyde_producers.rq",
-            "expected_contains": ["xmet:0000201", "xmet:0000205"],
-            "expected_excludes": ["xmet:0001000"],
+            "expected_contains": ["xmet:4000043", "xmet:4000349"],
+            "expected_excludes": ["xmet:4000148"],
         },
         # --- Phase II seeds ---
         {
@@ -223,18 +223,18 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_phase2_oxygen_attachment.rq",
             "expected_contains": [
-                "xmet:0001001",
-                "xmet:0001011",
-                "xmet:0001041",
-                "xmet:1300100",
-                "xmet:1300103",
-                "xmet:1300106",
+                "xmet:4000149",
+                "xmet:4000159",
+                "xmet:4000176",
+                "xmet:4000149",
+                "xmet:4000159",
+                "xmet:4000176",
             ],
             "expected_excludes": [
-                "xmet:0001005",
-                "xmet:1300101",
-                "xmet:0001004",
-                "xmet:1300102",
+                "xmet:4000153",
+                "xmet:4000153",
+                "xmet:4000152",
+                "xmet:4000152",
             ],
         },
         {
@@ -244,11 +244,11 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_glucuronidation_attachment_atoms.rq",
             "expected_contains": [
-                "xmet:1300100",
-                "xmet:1300101",
-                "xmet:1300102",
-                "xmet:1300120",
-                "xmet:1300121",
+                "xmet:4000149",
+                "xmet:4000153",
+                "xmet:4000152",
+                "xmet:4000155",
+                "xmet:4000156",
             ],
             "min_results": 5,
         },
@@ -268,8 +268,8 @@ def seed_questions():
             "question": "Phase II nitrogen attachment SPARQL.",
             "type": "sparql",
             "query": "sparql/cq_phase2_nitrogen_attachment.rq",
-            "expected_contains": ["xmet:0001005", "xmet:1300101"],
-            "expected_excludes": ["xmet:0001001", "xmet:1300100"],
+            "expected_contains": ["xmet:4000153", "xmet:4000153"],
+            "expected_excludes": ["xmet:4000149", "xmet:4000149"],
         },
         {
             "id": "CQ-P2-006",
@@ -277,7 +277,7 @@ def seed_questions():
             "question": "Phase II not enzyme-specific.",
             "type": "sparql",
             "query": "sparql/cq_phase2_not_enzyme.rq",
-            "expected_contains": ["xmet:0001000", "xmet:0001010", "xmet:0001030"],
+            "expected_contains": ["xmet:4000148", "xmet:4000158", "xmet:4000167"],
         },
         # --- RM seeds ---
         {
@@ -309,10 +309,10 @@ def seed_questions():
             "type": "sparql",
             "query": "sparql/cq_gsh_trappable_producers.rq",
             "expected_contains": [
-                "xmet:0000110",
-                "xmet:0000300",
-                "xmet:0001004",
-                "xmet:0001030",
+                "xmet:4000022",
+                "xmet:4000059",
+                "xmet:4000152",
+                "xmet:4000167",
             ],
         },
         {
@@ -396,7 +396,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Structural delta core labels.",
             "type": "ontology_labels",
-            "under": "xmet:1700000",
+            "under": "xmet:4000220",
             "expected_contains_labels": [
                 "monooxygenation",
                 "formula delta",
@@ -409,7 +409,7 @@ def seed_questions():
             "question": "Structural delta SPARQL.",
             "type": "sparql",
             "query": "sparql/cq_structural_deltas.rq",
-            "expected_contains": ["xmet:1700100", "xmet:7700001", "xmet:1700010"],
+            "expected_contains": ["xmet:4000223", "xmet:7700001", "xmet:1700010"],
             "min_results": 3,
         },
         {
@@ -428,7 +428,7 @@ def seed_questions():
             "layer": "mapping",
             "question": "Hydroxylation maps to MOP.",
             "type": "mapping_exists",
-            "subject": "xmet:0000100",
+            "subject": "xmet:4000012",
             "object_prefix": "mop:",
         },
         {
@@ -436,7 +436,7 @@ def seed_questions():
             "layer": "mapping",
             "question": "Xenobiotic biotransformation → GO:0006805.",
             "type": "mapping_exists",
-            "subject": "xmet:0000000",
+            "subject": "xmet:4000000",
             "object": "GO:0006805",
         },
         {
@@ -460,7 +460,7 @@ def seed_questions():
             "layer": "ontology",
             "question": "Leaving group spine core.",
             "type": "ontology_labels",
-            "under": "xmet:2200000",
+            "under": "xmet:4000229",
             "expected_contains_labels": [
                 "methyl leaving group",
                 "halide leaving group",
@@ -609,7 +609,7 @@ def expand_category(
     # Product-class companions are covered by relatedMatch expansion + gold gaps,
     # not by asserting every former ad-hoc emit id.
     chem_desc = set()
-    for root in ("xmet:1100000", "xmet:1200000", "xmet:1300000"):
+    for root in ("xmet:4000213", "xmet:1200000", "xmet:1300000"):
         chem_desc |= descendants(children, root)
 
     seen_tags = set()
@@ -854,9 +854,9 @@ def build_gold(by_id, tag_rules, n=150):
     def under(root):
         return descendants(children, root)
 
-    chem_t = under("xmet:1100000")
-    phase1 = under("xmet:1000000") | {"xmet:0000001"} | under("xmet:1200000")
-    phase2 = under("xmet:1300000") | {"xmet:0000002"}
+    chem_t = under("xmet:4000213")
+    phase1 = under("xmet:4000212") | {"xmet:4000001"} | under("xmet:1200000")
+    phase2 = under("xmet:1300000") | {"xmet:4000002"}
     product = under("xmet:1500000")
     site = under("xmet:1600000")
     liability = under("xmet:1400000") | under("xmet:2300000")
@@ -875,9 +875,9 @@ def build_gold(by_id, tag_rules, n=150):
         for eid, lab in zip(rule["emit"], rule["emit_labels"]):
             if not transformation and eid in chem_t:
                 transformation = lab
-            if not phase and (eid == "xmet:0000001" or lab == "phase I"):
+            if not phase and (eid == "xmet:4000001" or lab == "phase I"):
                 phase = "phase I"
-            if not phase and (eid == "xmet:0000002" or lab == "phase II"):
+            if not phase and (eid == "xmet:4000002" or lab == "phase II"):
                 phase = "phase II"
             if not phase and eid in under("xmet:1200000"):
                 phase = "phase I"
