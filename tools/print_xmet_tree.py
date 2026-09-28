@@ -396,7 +396,7 @@ def format_intra_relations(
     for rel, src, dst, _ in edges:
         by_rel[rel].append((src, dst))
 
-    for rel in ("relatedTo", "suggests", "antonymOf", "hasPart", "isPartOf"):
+    for rel in ("relatedTo", "suggests", "alwaysWith", "antonymOf", "hasPart", "isPartOf"):
         pairs = by_rel.get(rel) or []
         if not pairs:
             continue

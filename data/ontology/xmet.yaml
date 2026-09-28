@@ -448,6 +448,13 @@ concepts:
   - xmet:4000307
   always_with:
   - xmet:4000239
+- id: xmet:4000410
+  preferred_label: oxidative deiodination
+  definition: 'oxidative deiodination: xenobiotic-metabolism term under oxidative dehalogenation.'
+  parents:
+  - xmet:4000307
+  always_with:
+  - xmet:4000240
 - id: xmet:4000058
   preferred_label: S-demethylation
   synonyms:
@@ -882,6 +889,20 @@ concepts:
   - xmet:4000288
   always_with:
   - xmet:4000238
+- id: xmet:4000411
+  preferred_label: reductive debromination
+  definition: 'reductive debromination: xenobiotic-metabolism term under reductive dehalogenation.'
+  parents:
+  - xmet:4000288
+  always_with:
+  - xmet:4000239
+- id: xmet:4000412
+  preferred_label: reductive deiodination
+  definition: 'reductive deiodination: xenobiotic-metabolism term under reductive dehalogenation.'
+  parents:
+  - xmet:4000288
+  always_with:
+  - xmet:4000240
 - id: xmet:4000113
   preferred_label: dehydration
   definition: Loss of water, typically via elimination (alcohol dehydration, beta-elimination, carbonyl
@@ -1739,61 +1760,79 @@ concepts:
   parents:
   - xmet:4000220
 - id: xmet:4000223
-  preferred_label: oxygenation mass shift
+  preferred_label: oxygenation mass shift (+16 Da)
   synonyms:
+  - oxygenation mass shift
   - +O
   - +16 Da
   - monooxygenation
   - oxygen gain mass shift
-  definition: Nominal +16 Da (monooxygenation). Suggests hydroxylation / other +O paths; +32 Da dioxygenation
-    is related.
+  definition: Nominal +16 Da (monooxygenation to alcohol / oxide). Suggests hydroxylation; +32 Da
+    dioxygenation is related.
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000012
 - id: xmet:4000224
-  preferred_label: demethylation mass shift
+  preferred_label: demethylation mass shift (−14 Da)
   synonyms:
+  - demethylation mass shift
   - -CH2
   - −14 Da
   - demethylation delta
   definition: Nominal −14 Da (loss of CH₂). Suggests N-/O-/S-demethylation.
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000344
 - id: xmet:4000225
-  preferred_label: deethylation mass shift
+  preferred_label: deethylation mass shift (−28 Da)
   synonyms:
+  - deethylation mass shift
   - -C2H4
   - −28 Da
   - deethylation delta
-  definition: Nominal −28 Da (loss of C₂H₄). Suggests N-/O-deethylation.
+  definition: Nominal −28 Da (loss of C₂H₄). Suggests deethylation (N-/O-).
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000413
 - id: xmet:4000226
-  preferred_label: glucuronide mass shift
+  preferred_label: glucuronide mass shift (+176 Da)
   synonyms:
+  - glucuronide mass shift
   - +C6H8O6
   - +176 Da
   - GlcA mass shift
   definition: Nominal +176 Da for glucuronide conjugation. Suggests glucuronidation.
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000148
 - id: xmet:4000227
-  preferred_label: sulfate mass shift
+  preferred_label: sulfate mass shift (+80 Da)
   synonyms:
+  - sulfate mass shift
   - +SO3
   - +80 Da
   - sulfate conjugation mass shift
   definition: Nominal +80 Da for sulfate conjugation. Suggests sulfation.
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000158
 - id: xmet:4000228
-  preferred_label: GSH mass shift
+  preferred_label: GSH mass shift (+305 Da)
   synonyms:
+  - GSH mass shift
   - +GSH
   - +305 Da
   - glutathione mass shift
-  definition: Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathionation.
+  definition: Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathione conjugation.
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000167
 - id: xmet:4000229
   preferred_label: leaving group
   synonyms:
@@ -1842,46 +1881,26 @@ concepts:
   definition: Halide ion departing (fluoride, chloride, bromide, iodide).
   parents:
   - xmet:4000229
-  suggests:
-  - xmet:4000051
-  - xmet:4000110
-  - xmet:4000214
 - id: xmet:4000237
   preferred_label: fluoride leaving group
   definition: Fluoride departing.
   parents:
   - xmet:4000236
-  suggests:
-  - xmet:4000051
-  - xmet:4000110
-  - xmet:4000214
 - id: xmet:4000238
   preferred_label: chloride leaving group
   definition: Chloride departing.
   parents:
   - xmet:4000236
-  suggests:
-  - xmet:4000051
-  - xmet:4000110
-  - xmet:4000214
 - id: xmet:4000239
   preferred_label: bromide leaving group
   definition: Bromide departing.
   parents:
   - xmet:4000236
-  suggests:
-  - xmet:4000051
-  - xmet:4000110
-  - xmet:4000214
 - id: xmet:4000240
   preferred_label: iodide leaving group
   definition: Iodide departing.
   parents:
   - xmet:4000236
-  suggests:
-  - xmet:4000051
-  - xmet:4000110
-  - xmet:4000214
 - id: xmet:4000241
   preferred_label: alcohol leaving fragment
   definition: Alcohol / alkanol-equivalent fragment released as a coproduct (e.g. methanol from demethylation
@@ -2135,8 +2154,9 @@ concepts:
   parents:
   - xmet:4000275
 - id: xmet:4000279
-  preferred_label: GSH pyroglutamate neutral loss
+  preferred_label: GSH pyroglutamate neutral loss (129 Da)
   synonyms:
+  - GSH pyroglutamate neutral loss
   - NL 129
   - pyroglutamate neutral loss
   - 129 Da neutral loss
@@ -2144,9 +2164,12 @@ concepts:
     / GSH adduct.
   parents:
   - xmet:4000228
+  suggests:
+  - xmet:4000167
 - id: xmet:4000280
-  preferred_label: cyanide mass shift
+  preferred_label: cyanide mass shift (27 Da)
   synonyms:
+  - cyanide mass shift
   - NL 27
   - HCN neutral loss
   - ~27 Da
@@ -2154,6 +2177,8 @@ concepts:
   definition: Mass cue / neutral loss of ~27 Da (HCN) suggesting cyanide conjugation / trapping.
   parents:
   - xmet:4000221
+  suggests:
+  - xmet:4000270
 - id: xmet:4000281
   preferred_label: concept relation
   definition: Parent for the small relation vocabulary used across XMET spines.
@@ -2664,6 +2689,12 @@ concepts:
   definition: Oxidative demethylation at N/O/S (heteroatom-general). Forest methyl_* patterns share this
     home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. O-/S-demethylation specialize
     by heteroatom underneath.
+  parents:
+  - xmet:4000343
+- id: xmet:4000413
+  preferred_label: deethylation
+  definition: Oxidative deethylation at N/O (heteroatom-general). Parallel to demethylation; N- and O-deethylation
+    specialize by heteroatom elsewhere in the tree (single-parent homes).
   parents:
   - xmet:4000343
 - id: xmet:4000345

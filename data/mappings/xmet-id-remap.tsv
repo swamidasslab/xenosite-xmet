@@ -1049,3 +1049,7 @@ xmet:4000363		retired	quinone-like formation by product type collapsed; children
 	xmet:4000407	minted	nonaromatic conjugated-system remodeling shelf
 	xmet:4000408	minted	phenolic ring-end dehydrogenation under xmet:4000327
 	xmet:4000409	minted	anilinic ring-end dehydrogenation under xmet:4000327
+	xmet:4000410	minted	oxidative deiodination under xmet:4000307 (iodide LG precision)
+	xmet:4000411	minted	reductive debromination under xmet:4000288 (bromide LG precision)
+	xmet:4000412	minted	reductive deiodination under xmet:4000288 (iodide LG precision)
+	xmet:4000413	minted	deethylation (heteroatom-general; mass-shift −28 Da home)

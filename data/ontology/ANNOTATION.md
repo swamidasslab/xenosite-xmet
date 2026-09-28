@@ -69,8 +69,8 @@ chemical transformation and phase I family).
 
 | `skos:related` / `skos:relatedMatch` | **Not used in YAML.** SSSOM: Forest rulesets only |
 | `xmet:relatedTo` (`related_to:` in YAML) | Soft association across spines (e.g. multistep ↔ composite); not hierarchy |
-| `xmet:suggests` (`suggests:` in YAML) | Often co-applies (weaker than alwaysWith); e.g. halide leaving group → dehalogenation. List **family roots only** — do not also list `skos:narrower` descendants of a listed target (parent covers children). |
-| `xmet:alwaysWith` (`always_with:` in YAML) | Stronger suggests: whenever source applies, target (or a child of a category root) also applies; e.g. dehalogenation → halide leaving group. Nested under suggests in the relation vocab. Same no-redundant-descendant rule when listing multiple targets. |
+| `xmet:suggests` (`suggests:` in YAML) | Often co-applies (weaker than alwaysWith). **Match precision on both sides**. Mass-shift cues → matching reaction class (GSH +305 / NL129 → glutathione conjugation; GlcA +176 → glucuronidation; demethylation −14 → demethylation; deethylation −28 → deethylation; +16 → hydroxylation). **One general beats fan-out to all children**. Do not also list `skos:narrower` descendants of a listed target when that target is already at the right specificity (parent covers children *within* that precision). |
+| `xmet:alwaysWith` (`always_with:` in YAML) | Stronger suggests: whenever source applies, target (or a child of a category root) also applies. **Direction for leaving groups: reaction → LG** (oxidative dechlorination → chloride LG; family dehalogenation → halide LG) — not LG → reaction (a halide LG also appears in displacement conjugations, etc.). Nested under suggests in the relation vocab. Same precision-matching + no-redundant-descendant rules — list the category root once, never every child. |
 | `xmet:antonymOf` (`antonyms:` in YAML) | Opposite / inverse transformation pair (symmetric) |
 | `skos:exactMatch` | True identity to an external concept (rare) |
 | `skos:closeMatch` | Similar MeSH/KEGG/Rhea/model term |

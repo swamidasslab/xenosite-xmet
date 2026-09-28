@@ -522,8 +522,10 @@ def check_redundant_soft_targets(
 ) -> None:
     """suggests / always_with: do not list a target that is under another listed target.
 
-    Parent covers descendants; enumerating children is redundant fan-out
-    (e.g. halide LG → oxidative dehalogenation already covers ox-dehal leaves).
+    Within one precision level, the parent covers descendants (e.g. halide LG →
+    oxidative dehalogenation already covers ox-dehal-to-alcohol). Halogen-specific
+    LGs should point at halogen-specific reactions instead of also listing the
+    generic parent (precision matching) — then no parent+child pair appears.
     """
     memo: dict[str, set[str]] = {}
     for cid, c in concepts.items():

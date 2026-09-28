@@ -1615,9 +1615,10 @@ xmet:4000222 a skos:Concept ;
   skos:broader xmet:4000220 .
 
 xmet:4000223 a skos:Concept ;
-  skos:prefLabel "oxygenation mass shift" ;
-  skos:definition "Nominal +16 Da (monooxygenation). Suggests hydroxylation / other +O paths; +32 Da dioxygenation is related." ;
+  skos:prefLabel "oxygenation mass shift (+16 Da)" ;
+  skos:definition "Nominal +16 Da (monooxygenation to alcohol / oxide). Suggests hydroxylation; +32 Da dioxygenation is related." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "oxygenation mass shift" ;
   skos:altLabel "+O" ;
   skos:altLabel "+16 Da" ;
   skos:altLabel "monooxygenation" ;
@@ -1625,45 +1626,50 @@ xmet:4000223 a skos:Concept ;
   skos:broader xmet:4000221 .
 
 xmet:4000224 a skos:Concept ;
-  skos:prefLabel "demethylation mass shift" ;
+  skos:prefLabel "demethylation mass shift (−14 Da)" ;
   skos:definition "Nominal −14 Da (loss of CH₂). Suggests N-/O-/S-demethylation." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "demethylation mass shift" ;
   skos:altLabel "-CH2" ;
   skos:altLabel "−14 Da" ;
   skos:altLabel "demethylation delta" ;
   skos:broader xmet:4000221 .
 
 xmet:4000225 a skos:Concept ;
-  skos:prefLabel "deethylation mass shift" ;
-  skos:definition "Nominal −28 Da (loss of C₂H₄). Suggests N-/O-deethylation." ;
+  skos:prefLabel "deethylation mass shift (−28 Da)" ;
+  skos:definition "Nominal −28 Da (loss of C₂H₄). Suggests deethylation (N-/O-)." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "deethylation mass shift" ;
   skos:altLabel "-C2H4" ;
   skos:altLabel "−28 Da" ;
   skos:altLabel "deethylation delta" ;
   skos:broader xmet:4000221 .
 
 xmet:4000226 a skos:Concept ;
-  skos:prefLabel "glucuronide mass shift" ;
+  skos:prefLabel "glucuronide mass shift (+176 Da)" ;
   skos:definition "Nominal +176 Da for glucuronide conjugation. Suggests glucuronidation." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "glucuronide mass shift" ;
   skos:altLabel "+C6H8O6" ;
   skos:altLabel "+176 Da" ;
   skos:altLabel "GlcA mass shift" ;
   skos:broader xmet:4000221 .
 
 xmet:4000227 a skos:Concept ;
-  skos:prefLabel "sulfate mass shift" ;
+  skos:prefLabel "sulfate mass shift (+80 Da)" ;
   skos:definition "Nominal +80 Da for sulfate conjugation. Suggests sulfation." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "sulfate mass shift" ;
   skos:altLabel "+SO3" ;
   skos:altLabel "+80 Da" ;
   skos:altLabel "sulfate conjugation mass shift" ;
   skos:broader xmet:4000221 .
 
 xmet:4000228 a skos:Concept ;
-  skos:prefLabel "GSH mass shift" ;
-  skos:definition "Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathionation." ;
+  skos:prefLabel "GSH mass shift (+305 Da)" ;
+  skos:definition "Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathione conjugation." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "GSH mass shift" ;
   skos:altLabel "+GSH" ;
   skos:altLabel "+305 Da" ;
   skos:altLabel "glutathione mass shift" ;
@@ -2000,18 +2006,20 @@ xmet:4000278 a skos:Concept ;
   skos:broader xmet:4000275 .
 
 xmet:4000279 a skos:Concept ;
-  skos:prefLabel "GSH pyroglutamate neutral loss" ;
+  skos:prefLabel "GSH pyroglutamate neutral loss (129 Da)" ;
   skos:definition "Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting glutathione conjugation / GSH adduct." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "GSH pyroglutamate neutral loss" ;
   skos:altLabel "NL 129" ;
   skos:altLabel "pyroglutamate neutral loss" ;
   skos:altLabel "129 Da neutral loss" ;
   skos:broader xmet:4000228 .
 
 xmet:4000280 a skos:Concept ;
-  skos:prefLabel "cyanide mass shift" ;
+  skos:prefLabel "cyanide mass shift (27 Da)" ;
   skos:definition "Mass cue / neutral loss of ~27 Da (HCN) suggesting cyanide conjugation / trapping." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "cyanide mass shift" ;
   skos:altLabel "NL 27" ;
   skos:altLabel "HCN neutral loss" ;
   skos:altLabel "~27 Da" ;
@@ -2887,4 +2895,28 @@ xmet:4000409 a skos:Concept ;
   skos:altLabel "aniline to quinoid imine end" ;
   skos:altLabel "ring C–NH quinoid dehydrogenation" ;
   skos:broader xmet:4000327 .
+
+xmet:4000410 a skos:Concept ;
+  skos:prefLabel "oxidative deiodination" ;
+  skos:definition "oxidative deiodination: xenobiotic-metabolism term under oxidative dehalogenation." ;
+  skos:inScheme xmet:scheme ;
+  skos:broader xmet:4000307 .
+
+xmet:4000411 a skos:Concept ;
+  skos:prefLabel "reductive debromination" ;
+  skos:definition "reductive debromination: xenobiotic-metabolism term under reductive dehalogenation." ;
+  skos:inScheme xmet:scheme ;
+  skos:broader xmet:4000288 .
+
+xmet:4000412 a skos:Concept ;
+  skos:prefLabel "reductive deiodination" ;
+  skos:definition "reductive deiodination: xenobiotic-metabolism term under reductive dehalogenation." ;
+  skos:inScheme xmet:scheme ;
+  skos:broader xmet:4000288 .
+
+xmet:4000413 a skos:Concept ;
+  skos:prefLabel "deethylation" ;
+  skos:definition "Oxidative deethylation at N/O (heteroatom-general). Parallel to demethylation; N- and O-deethylation specialize by heteroatom elsewhere in the tree (single-parent homes)." ;
+  skos:inScheme xmet:scheme ;
+  skos:broader xmet:4000343 .
 

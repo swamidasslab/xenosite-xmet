@@ -2438,81 +2438,93 @@
     {
       "id": "xmet:4000223",
       "type": "skos:Concept",
-      "prefLabel": "oxygenation mass shift",
+      "prefLabel": "oxygenation mass shift (+16 Da)",
       "inScheme": "xmet:scheme",
-      "definition": "Nominal +16 Da (monooxygenation). Suggests hydroxylation / other +O paths; +32 Da dioxygenation is related.",
+      "definition": "Nominal +16 Da (monooxygenation to alcohol / oxide). Suggests hydroxylation; +32 Da dioxygenation is related.",
       "altLabel": [
+        "oxygenation mass shift",
         "+O",
         "+16 Da",
         "monooxygenation",
         "oxygen gain mass shift"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000012"
     },
     {
       "id": "xmet:4000224",
       "type": "skos:Concept",
-      "prefLabel": "demethylation mass shift",
+      "prefLabel": "demethylation mass shift (−14 Da)",
       "inScheme": "xmet:scheme",
       "definition": "Nominal −14 Da (loss of CH₂). Suggests N-/O-/S-demethylation.",
       "altLabel": [
+        "demethylation mass shift",
         "-CH2",
         "−14 Da",
         "demethylation delta"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000344"
     },
     {
       "id": "xmet:4000225",
       "type": "skos:Concept",
-      "prefLabel": "deethylation mass shift",
+      "prefLabel": "deethylation mass shift (−28 Da)",
       "inScheme": "xmet:scheme",
-      "definition": "Nominal −28 Da (loss of C₂H₄). Suggests N-/O-deethylation.",
+      "definition": "Nominal −28 Da (loss of C₂H₄). Suggests deethylation (N-/O-).",
       "altLabel": [
+        "deethylation mass shift",
         "-C2H4",
         "−28 Da",
         "deethylation delta"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000413"
     },
     {
       "id": "xmet:4000226",
       "type": "skos:Concept",
-      "prefLabel": "glucuronide mass shift",
+      "prefLabel": "glucuronide mass shift (+176 Da)",
       "inScheme": "xmet:scheme",
       "definition": "Nominal +176 Da for glucuronide conjugation. Suggests glucuronidation.",
       "altLabel": [
+        "glucuronide mass shift",
         "+C6H8O6",
         "+176 Da",
         "GlcA mass shift"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000148"
     },
     {
       "id": "xmet:4000227",
       "type": "skos:Concept",
-      "prefLabel": "sulfate mass shift",
+      "prefLabel": "sulfate mass shift (+80 Da)",
       "inScheme": "xmet:scheme",
       "definition": "Nominal +80 Da for sulfate conjugation. Suggests sulfation.",
       "altLabel": [
+        "sulfate mass shift",
         "+SO3",
         "+80 Da",
         "sulfate conjugation mass shift"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000158"
     },
     {
       "id": "xmet:4000228",
       "type": "skos:Concept",
-      "prefLabel": "GSH mass shift",
+      "prefLabel": "GSH mass shift (+305 Da)",
       "inScheme": "xmet:scheme",
-      "definition": "Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathionation.",
+      "definition": "Nominal +305 Da (glutathione conjugation / adduct). Suggests glutathione conjugation.",
       "altLabel": [
+        "GSH mass shift",
         "+GSH",
         "+305 Da",
         "glutathione mass shift"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000167"
     },
     {
       "id": "xmet:4000229",
@@ -2586,12 +2598,7 @@
       "altLabel": [
         "halogen leaving group"
       ],
-      "broader": "xmet:4000229",
-      "suggests": [
-        "xmet:4000051",
-        "xmet:4000110",
-        "xmet:4000214"
-      ]
+      "broader": "xmet:4000229"
     },
     {
       "id": "xmet:4000237",
@@ -2599,12 +2606,7 @@
       "prefLabel": "fluoride leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Fluoride departing.",
-      "broader": "xmet:4000236",
-      "suggests": [
-        "xmet:4000051",
-        "xmet:4000110",
-        "xmet:4000214"
-      ]
+      "broader": "xmet:4000236"
     },
     {
       "id": "xmet:4000238",
@@ -2612,12 +2614,7 @@
       "prefLabel": "chloride leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Chloride departing.",
-      "broader": "xmet:4000236",
-      "suggests": [
-        "xmet:4000051",
-        "xmet:4000110",
-        "xmet:4000214"
-      ]
+      "broader": "xmet:4000236"
     },
     {
       "id": "xmet:4000239",
@@ -2625,12 +2622,7 @@
       "prefLabel": "bromide leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Bromide departing.",
-      "broader": "xmet:4000236",
-      "suggests": [
-        "xmet:4000051",
-        "xmet:4000110",
-        "xmet:4000214"
-      ]
+      "broader": "xmet:4000236"
     },
     {
       "id": "xmet:4000240",
@@ -2638,12 +2630,7 @@
       "prefLabel": "iodide leaving group",
       "inScheme": "xmet:scheme",
       "definition": "Iodide departing.",
-      "broader": "xmet:4000236",
-      "suggests": [
-        "xmet:4000051",
-        "xmet:4000110",
-        "xmet:4000214"
-      ]
+      "broader": "xmet:4000236"
     },
     {
       "id": "xmet:4000241",
@@ -3010,29 +2997,33 @@
     {
       "id": "xmet:4000279",
       "type": "skos:Concept",
-      "prefLabel": "GSH pyroglutamate neutral loss",
+      "prefLabel": "GSH pyroglutamate neutral loss (129 Da)",
       "inScheme": "xmet:scheme",
       "definition": "Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting glutathione conjugation / GSH adduct.",
       "altLabel": [
+        "GSH pyroglutamate neutral loss",
         "NL 129",
         "pyroglutamate neutral loss",
         "129 Da neutral loss"
       ],
-      "broader": "xmet:4000228"
+      "broader": "xmet:4000228",
+      "suggests": "xmet:4000167"
     },
     {
       "id": "xmet:4000280",
       "type": "skos:Concept",
-      "prefLabel": "cyanide mass shift",
+      "prefLabel": "cyanide mass shift (27 Da)",
       "inScheme": "xmet:scheme",
       "definition": "Mass cue / neutral loss of ~27 Da (HCN) suggesting cyanide conjugation / trapping.",
       "altLabel": [
+        "cyanide mass shift",
         "NL 27",
         "HCN neutral loss",
         "~27 Da",
         "cyanide neutral loss"
       ],
-      "broader": "xmet:4000221"
+      "broader": "xmet:4000221",
+      "suggests": "xmet:4000270"
     },
     {
       "id": "xmet:4000281",
@@ -4299,6 +4290,41 @@
         "ring C–NH quinoid dehydrogenation"
       ],
       "broader": "xmet:4000327"
+    },
+    {
+      "id": "xmet:4000410",
+      "type": "skos:Concept",
+      "prefLabel": "oxidative deiodination",
+      "inScheme": "xmet:scheme",
+      "definition": "oxidative deiodination: xenobiotic-metabolism term under oxidative dehalogenation.",
+      "broader": "xmet:4000307",
+      "alwaysWith": "xmet:4000240"
+    },
+    {
+      "id": "xmet:4000411",
+      "type": "skos:Concept",
+      "prefLabel": "reductive debromination",
+      "inScheme": "xmet:scheme",
+      "definition": "reductive debromination: xenobiotic-metabolism term under reductive dehalogenation.",
+      "broader": "xmet:4000288",
+      "alwaysWith": "xmet:4000239"
+    },
+    {
+      "id": "xmet:4000412",
+      "type": "skos:Concept",
+      "prefLabel": "reductive deiodination",
+      "inScheme": "xmet:scheme",
+      "definition": "reductive deiodination: xenobiotic-metabolism term under reductive dehalogenation.",
+      "broader": "xmet:4000288",
+      "alwaysWith": "xmet:4000240"
+    },
+    {
+      "id": "xmet:4000413",
+      "type": "skos:Concept",
+      "prefLabel": "deethylation",
+      "inScheme": "xmet:scheme",
+      "definition": "Oxidative deethylation at N/O (heteroatom-general). Parallel to demethylation; N- and O-deethylation specialize by heteroatom elsewhere in the tree (single-parent homes).",
+      "broader": "xmet:4000343"
     }
   ]
 }

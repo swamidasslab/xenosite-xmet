@@ -2,6 +2,33 @@
 
 ## 2026-09-28
 
+- Parent crate patch bump ``0.6.1``→``0.6.2`` with soft-link cleanup commit.
+
+- Dropped halide LG → dehalogenation ``suggests`` (wrong direction). Keep
+  reaction → LG ``alwaysWith`` only (ox/red/isoredox dehalogenation → halide;
+  dechlorination → chloride; …). A halide LG also appears in displacement /
+  conjugation paths, so it should not imply dehalogenation.
+
+- Soft-link crosstalk cleanup: mass-shift cues prefer **one general** target —
+  deethylation −28 → minted ``deethylation`` (4000413) instead of N-+O-fan-out;
+  +16 → hydroxylation (not the broader stable-oxygenation shelf). Demethylation −14 /
+  cyanide 27 already general/specific-correct. Geminal / family ox-dehal paths
+  keep ``alwaysWith`` halide LG only (not F/Cl/Br/I). Tree printer now lists
+  ``alwaysWith`` in the relations dump.
+
+- Halide LG ``suggests`` precision: drop generic isoredox/family targets from
+  F/Cl/Br/I. Specific LGs now only point at halogen-matched ox/red leaves.
+  Minted missing ``oxidative deiodination`` (4000410), ``reductive
+  debromination`` (4000411), ``reductive deiodination`` (4000412) so Br/I
+  match Cl/F. Generic halide LG still → ox/red/isoredox dehalogenation.
+
+- Mass-shift descriptors: put nominal Da in preferred labels (GSH pyroglutamate
+  NL **129 Da**, GSH **+305**, GlcA **+176**, sulfate **+80**, oxygenation
+  **+16**, demethylation **−14**, deethylation **−28**, cyanide **27**). Wired
+  ``suggests`` to matching reaction classes (glutathione conjugation,
+  glucuronidation, sulfation, hydroxylation, demethylation, N-/O-deethylation,
+  cyanide conjugation). Prose-only "suggests" in defs was not enough.
+
 - Quinone hierarchy restructure: minted **conjugated-system remodeling**
   (`xmet:4000406`) as Forest `QuinoneFormation` rule home; **nonaromatic
   conjugated-system remodeling** (`4000407`) shelf for rule–pattern gap;
@@ -18,10 +45,11 @@
   up to conjugated-system remodeling (``related_to`` quinone-like kept).
   Parent crate patch bump ``0.6.0``→``0.6.1``.
 
-- Trimmed redundant LG ``suggests`` fan-out (halide/F/Cl/Br/I → keep only
-  oxidative / reductive / isoredox dehalogenation roots; drop descendant leaves).
-  Validator ``soft_target_redundant`` enforces parent-covers-children for
-  ``suggests`` / ``always_with``.
+- Trimmed redundant LG ``suggests`` fan-out: **precision-matched** pairs
+  (halide→ox/red/isoredox dehalogenation; fluoride→defluorination; chloride→
+  dechlorination; bromide→debromination + red/isoredox fallbacks). Dropped
+  mechanism-leaf spam under generic halide. Validator ``soft_target_redundant``
+  still forbids listing a target that is under another listed target.
 
 ## 2026-09-28
 
