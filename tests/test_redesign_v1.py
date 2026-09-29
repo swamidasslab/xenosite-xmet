@@ -122,3 +122,13 @@ def test_dealkylation_methyl_patterns_share_demethylation_home():
         frozenset(x for x in (r.get("always_with") or "").split("|") if x) for r in rows
     }
     assert len(aw_sets) == 3
+
+
+def test_definitions_omit_product_tooling_names():
+    """Concept definitions must be chemical — no Forest / Xenosite / Rainbow refs."""
+    data = v.load_yaml()
+    concepts = v.by_id(data)
+    findings: list[v.Finding] = []
+    v.check_definition_no_product_refs(findings, concepts)
+    msg = _fail_msg(findings, "definition_product_ref")
+    assert not msg, msg

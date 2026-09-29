@@ -4098,7 +4098,7 @@ questions:
   question: SHACL core shape for all concepts.
   type: shacl
   shapes: ../ontology/xmet.shacl.ttl
-  data: ../ontology/xmet.skos.ttl
+  data: ../ontology/xmet.ttl
   allow_warnings: false
 - id: CQ-PROV-002
   layer: ontology

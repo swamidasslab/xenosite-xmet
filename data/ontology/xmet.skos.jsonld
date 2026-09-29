@@ -56,6 +56,22 @@
       "@id": "xmet:alwaysWith",
       "@type": "@id"
     },
+    "operationalizes": {
+      "@id": "xmet:operationalizes",
+      "@type": "@id"
+    },
+    "predicts": {
+      "@id": "xmet:predicts",
+      "@type": "@id"
+    },
+    "recognizes": {
+      "@id": "xmet:recognizes",
+      "@type": "@id"
+    },
+    "enumerates": {
+      "@id": "xmet:enumerates",
+      "@type": "@id"
+    },
     "inScheme": {
       "@id": "skos:inScheme",
       "@type": "@id"
@@ -130,7 +146,7 @@
       "type": "skos:Concept",
       "prefLabel": "stable oxygenation",
       "inScheme": "xmet:scheme",
-      "definition": "Rainbow Phase I class: oxygenation that yields a stable oxygenated metabolite (aromatic/aliphatic hydroxylation, epoxidation, N-oxidation, S-oxidation).",
+      "definition": "Oxygenation that yields a stable oxygenated metabolite (aromatic/aliphatic hydroxylation, epoxidation, N-oxidation, S-oxidation).",
       "altLabel": [
         "SO class",
         "stable oxygen addition class",
@@ -145,7 +161,7 @@
       "type": "skos:Concept",
       "prefLabel": "unstable oxygenation",
       "inScheme": "xmet:scheme",
-      "definition": "Rainbow Phase I class: oxygenation that triggers cleavage or rearrangement (N-/O-/S-/C-dealkylation, oxidative deamination, oxidative dehalogenation).",
+      "definition": "Oxygenation that triggers cleavage or rearrangement (N-/O-/S-/C-dealkylation, oxidative deamination, oxidative dehalogenation).",
       "altLabel": [
         "UO class",
         "unstable oxygen addition class",
@@ -160,7 +176,7 @@
       "type": "skos:Concept",
       "prefLabel": "dehydrogenation",
       "inScheme": "xmet:scheme",
-      "definition": "Rainbow dehydrogenation color: extract hydrogen(s) to form a multiple bond, iminium, or quinoid. Nested under oxidation. Often an elementary part of conjugated-system remodeling (including quinone-like paths).",
+      "definition": "Extract hydrogen(s) to form a multiple bond, iminium, or quinoid. Nested under oxidation. Often an elementary part of conjugated-system remodeling (including quinone-like paths).",
       "altLabel": [
         "desaturation"
       ],
@@ -173,7 +189,7 @@
       "type": "skos:Concept",
       "prefLabel": "hydrolysis",
       "inScheme": "xmet:scheme",
-      "definition": "Rainbow hydrolysis color: water addition cleaves amide, ester, ether, or related bonds. Nested under isoredox (redox-neutral).",
+      "definition": "Water addition cleaves amide, ester, ether, or related bonds. Nested under isoredox (redox-neutral).",
       "broader": "xmet:4000265",
       "relatedTo": "xmet:4000077"
     },
@@ -182,7 +198,7 @@
       "type": "skos:Concept",
       "prefLabel": "reduction",
       "inScheme": "xmet:scheme",
-      "definition": "Reduction class (Rainbow reduction color): remove oxygen or add hydrogen(s) (nitro, carbonyl, sulfo reduction; reductive dehalogenation; hydrogenation). Peer of oxidation and isoredox under reaction class.",
+      "definition": "Remove oxygen or add hydrogen(s) (nitro, carbonyl, sulfo reduction; reductive dehalogenation; hydrogenation). Peer of oxidation and isoredox under reaction class.",
       "broader": "xmet:4000213",
       "relatedTo": "xmet:4000113"
     },
@@ -191,7 +207,7 @@
       "type": "skos:Concept",
       "prefLabel": "oxidation",
       "inScheme": "xmet:scheme",
-      "definition": "Oxidations and related increase of oxidation state. Holds Rainbow stable oxygenation, unstable oxygenation, and dehydrogenation.",
+      "definition": "Oxidations and related increase of oxidation state. Holds stable oxygenation, unstable oxygenation, and dehydrogenation.",
       "altLabel": [
         "oxidative metabolism"
       ],
@@ -568,7 +584,7 @@
       "type": "skos:Concept",
       "prefLabel": "C-dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic C-dealkylation). Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Forest cc_alcohol / cc_carbonyl share this home; ox-state via alwaysWith. Quaternary site child for cc_quaternary_alcohol.",
+      "definition": "Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic C-dealkylation). Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Alcohol- and carbonyl-level cleavage patterns share this home; ox-state via alwaysWith. Quaternary site child for quaternary C–C alcohol-level cleavage.",
       "altLabel": [
         "oxidative C–C cleavage",
         "oxidative carbon–carbon cleavage",
@@ -695,7 +711,7 @@
       "type": "skos:Concept",
       "prefLabel": "quinone-like species formation",
       "inScheme": "xmet:scheme",
-      "definition": "Aromatic→quinoid remodeling under conjugated-system remodeling: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated quinoid (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step routes may be modeled under composite transformation. Tagger struct-quinone-formation homes here; the broader Forest QuinoneFormation rule homes on conjugated-system remodeling.",
+      "definition": "Aromatic→quinoid remodeling under conjugated-system remodeling: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated quinoid (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step routes may be modeled under composite transformation.",
       "altLabel": [
         "quinoid formation",
         "quinoid species formation",
@@ -895,7 +911,7 @@
       "type": "skos:Concept",
       "prefLabel": "single- to double-bond dehydrogenation",
       "inScheme": "xmet:scheme",
-      "definition": "Dehydrogenation that converts a single bond into a double bond (Rainbow Table 1).",
+      "definition": "Dehydrogenation that converts a single bond into a double bond.",
       "altLabel": [
         "bond unsaturation to alkene"
       ],
@@ -917,7 +933,7 @@
       "type": "skos:Concept",
       "prefLabel": "epoxide opening",
       "inScheme": "xmet:scheme",
-      "definition": "Opening of an epoxide ring (hydration to diol, or rearrangement). Under isoredox; not a subtype of hydrolysis, though Forest lists EpoxideOpening with the HD ruleset operationally. Hydration vs rearrangement specialize underneath.",
+      "definition": "Opening of an epoxide ring (hydration to diol, or rearrangement). Under isoredox; not a subtype of hydrolysis. Hydration vs rearrangement specialize underneath.",
       "altLabel": [
         "epoxide hydrolysis"
       ],
@@ -993,7 +1009,7 @@
       "type": "skos:Concept",
       "prefLabel": "ether hydrolysis",
       "inScheme": "xmet:scheme",
-      "definition": "Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from oxidative O-dealkylation).",
+      "definition": "Hydrolytic cleavage of an ether bond (distinct from oxidative O-dealkylation).",
       "broader": "xmet:4000354"
     },
     {
@@ -1001,7 +1017,7 @@
       "type": "skos:Concept",
       "prefLabel": "cyanide hydrolysis",
       "inScheme": "xmet:scheme",
-      "definition": "Hydrolysis at a cyanide/nitrile center (Rainbow Table 1 hydrolysis type).",
+      "definition": "Hydrolysis at a cyanide/nitrile center.",
       "broader": "xmet:4000355",
       "closeMatch": "xmet:4000088"
     },
@@ -1162,7 +1178,7 @@
       "type": "skos:Concept",
       "prefLabel": "quinone-like reduction",
       "inScheme": "xmet:scheme",
-      "definition": "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. Reduction of such a quinoid product back toward an aromatic (or less oxidized) form.",
+      "definition": "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides; the narrower classical quinone term sits underneath. Reduction of such a quinoid product back toward an aromatic (or less oxidized) form.",
       "altLabel": [
         "quinoid reduction",
         "quinone reduction"
@@ -1206,7 +1222,7 @@
       "type": "skos:Concept",
       "prefLabel": "sulfo reduction",
       "inScheme": "xmet:scheme",
-      "definition": "Reduction of a sulfo / sulfoxide center (Rainbow Table 1 reduction type).",
+      "definition": "Reduction of a sulfo / sulfoxide center.",
       "altLabel": [
         "sulfoxide reduction",
         "S-oxide reduction"
@@ -1247,7 +1263,7 @@
       "type": "skos:Concept",
       "prefLabel": "dehydration",
       "inScheme": "xmet:scheme",
-      "definition": "Loss of water, typically via elimination (alcohol dehydration, beta-elimination, carbonyl dehydration). Chemically non-redox / elimination-like; not a subtype of reduction. Forest may still catalog Dehydration with the RD ruleset operationally.",
+      "definition": "Loss of water, typically via elimination (alcohol dehydration, beta-elimination, carbonyl dehydration). Chemically non-redox / elimination-like; not a subtype of reduction.",
       "broader": "xmet:4000265",
       "relatedTo": "xmet:4000008"
     },
@@ -1730,7 +1746,7 @@
       "type": "skos:Concept",
       "prefLabel": "acyl glucuronidation",
       "inScheme": "xmet:scheme",
-      "definition": "Glucuronidation of a carboxylate to an acyl glucuronide. Sibling of O-glucuronidation (hydroxy attachment); uses the carboxylate Forest pattern, not the alcohol pattern.",
+      "definition": "Glucuronidation of a carboxylate to an acyl glucuronide. Sibling of O-glucuronidation (hydroxy attachment); uses a carboxylate attachment pattern, not the alcohol pattern.",
       "altLabel": [
         "acyl glucuronide formation"
       ],
@@ -1936,7 +1952,7 @@
       "type": "skos:Concept",
       "prefLabel": "quinone-like glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. GSH (or related thiol) conjugate addition at a quinoid electrophile.",
+      "definition": "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides; the narrower classical quinone term sits underneath. GSH (or related thiol) conjugate addition at a quinoid electrophile.",
       "altLabel": [
         "quinoid glutathionation",
         "quinone glutathionation",
@@ -2104,7 +2120,7 @@
       "type": "skos:Concept",
       "prefLabel": "isomerization",
       "inScheme": "xmet:scheme",
-      "definition": "Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; Metabolic Forest treats related rearrangements separately from the five Phase I classes).",
+      "definition": "Isomeric rearrangement without net redox (related rearrangements sit apart from the five Phase I reaction colors).",
       "broader": "xmet:4000190"
     },
     {
@@ -2112,7 +2128,7 @@
       "type": "skos:Concept",
       "prefLabel": "rearrangement",
       "inScheme": "xmet:scheme",
-      "definition": "Non–enzyme-mediated molecular rearrangement shelf (tautomerization, isomerization, skeletal rearrangement). Not a Rainbow reaction color.",
+      "definition": "Non–enzyme-mediated molecular rearrangement shelf (tautomerization, isomerization, skeletal rearrangement). Not one of the Phase I reaction colors.",
       "broader": "xmet:4000213"
     },
     {
@@ -2120,7 +2136,7 @@
       "type": "skos:Concept",
       "prefLabel": "deacylation",
       "inScheme": "xmet:scheme",
-      "definition": "Removal of an acyl group (Rainbow excluded phase I remainder; related to hydrolysis/deacetylation).",
+      "definition": "Removal of an acyl group (related to hydrolysis/deacetylation).",
       "broader": "xmet:4000356"
     },
     {
@@ -2128,7 +2144,7 @@
       "type": "skos:Concept",
       "prefLabel": "denitrogenation",
       "inScheme": "xmet:scheme",
-      "definition": "Metabolic loss of nitrogen from the scaffold (Rainbow excluded phase I remainder).",
+      "definition": "Metabolic loss of nitrogen from the scaffold.",
       "broader": "xmet:4000271"
     },
     {
@@ -2136,7 +2152,7 @@
       "type": "skos:Concept",
       "prefLabel": "decarbonylation",
       "inScheme": "xmet:scheme",
-      "definition": "Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder).",
+      "definition": "Metabolic loss of carbon monoxide / carbonyl fragment.",
       "broader": "xmet:4000358",
       "antonymOf": "xmet:4000146"
     },
@@ -2325,7 +2341,7 @@
       "type": "skos:Concept",
       "prefLabel": "reaction class",
       "inScheme": "xmet:scheme",
-      "definition": "Chemist-facing chemical transformation classes for xenobiotic metabolism (Rainbow colors, conjugation, rearrangement, composites).",
+      "definition": "Chemist-facing chemical transformation classes for xenobiotic metabolism (oxidation colors, conjugation, rearrangement, composites).",
       "altLabel": [
         "reaction_class",
         "chemical transformation",
@@ -2851,7 +2867,7 @@
       "type": "skos:Concept",
       "prefLabel": "isoredox",
       "inScheme": "xmet:scheme",
-      "definition": "Redox-neutral transformations (Rainbow sense). Holds hydrolysis and related water-mediated bond breaks.",
+      "definition": "Redox-neutral transformations. Holds hydrolysis and related water-mediated bond breaks.",
       "altLabel": [
         "redox-neutral transformation",
         "isoredox class"
@@ -3139,7 +3155,7 @@
       "type": "skos:Concept",
       "prefLabel": "methine hydroxylation",
       "inScheme": "xmet:scheme",
-      "definition": "Hydroxylation at a methine carbon (R3C–H / aromatic CH; Forest Hydroxylation/h matches [#6h1]). Carbon-class shelf under hydroxylation.",
+      "definition": "Hydroxylation at a methine carbon (R3C–H / aromatic CH). Carbon-class shelf under hydroxylation.",
       "broader": "xmet:4000012"
     },
     {
@@ -3350,7 +3366,7 @@
       "type": "skos:Concept",
       "prefLabel": "quaternary C–heteroatom dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "Dealkylation cleaving a quaternary carbon–heteroatom bond. Ox-state via Forest alwaysWith (alcohol-level), not hierarchy.",
+      "definition": "Dealkylation cleaving a quaternary carbon–heteroatom bond. Ox-state via alwaysWith (alcohol-level), not hierarchy.",
       "altLabel": [
         "quaternary C–heteroatom dealkylation to alcohol"
       ],
@@ -3361,7 +3377,7 @@
       "type": "skos:Concept",
       "prefLabel": "quaternary C-dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "C-dealkylation at a quaternary carbon (oxidative C–C cleavage). Ox-state via Forest alwaysWith (alcohol-level).",
+      "definition": "C-dealkylation at a quaternary carbon (oxidative C–C cleavage). Ox-state via alwaysWith (alcohol-level).",
       "altLabel": [
         "quaternary C–C dealkylation",
         "quaternary C-dealkylation to alcohol"
@@ -3482,7 +3498,7 @@
       "type": "skos:Concept",
       "prefLabel": "hydroxy/amino ring-end dehydrogenation",
       "inScheme": "xmet:scheme",
-      "definition": "Ring carbon bound to OH or NH₂/NHR dehydrogenates to a quinoid C=O or C=NH/C=NR end under quinone-like endpoint transformations (Forest QuinoneFormation/single_to_double SMARTS [#6R:1][#8H,#7D1H2,#7D2H1:2]). Phenolic and anilinic children specialize the heteroatom. Not the shared single_to_double edit used internally by methide, iminium, or dealkylate patterns; not methide-end.",
+      "definition": "Ring carbon bound to OH or NH₂/NHR dehydrogenates to a quinoid C=O or C=NH/C=NR end under quinone-like endpoint transformations. Phenolic and anilinic children specialize the heteroatom. Distinct from methide-end or shared single-to-double edits used inside methide, iminium, or dealkylative quinoid paths.",
       "altLabel": [
         "Forest QuinoneFormation/single_to_double",
         "phenol or aniline to quinoid",
@@ -3496,7 +3512,7 @@
       "type": "skos:Concept",
       "prefLabel": "aromatic CH to quinoid carbonyl",
       "inScheme": "xmet:scheme",
-      "definition": "Install a quinoid carbonyl end at an aromatic CH (Forest QuinoneFormation/add_carbonyl_o) under quinone-like endpoint transformations. One-hop end state of hydroxylation followed by dehydrogenation (Forest canonical plan; has_part those elementary classes); also used in multi-end paths (e.g. benzene→benzoquinone via two ends).",
+      "definition": "Install a quinoid carbonyl end at an aromatic CH under quinone-like endpoint transformations. One-hop end state of hydroxylation followed by dehydrogenation (has_part those elementary classes); also used in multi-end paths (e.g. benzene→benzoquinone via two ends).",
       "altLabel": [
         "Forest QuinoneFormation/add_carbonyl_o",
         "quinoid carbonyl-oxygen addition",
@@ -3513,7 +3529,7 @@
       "type": "skos:Concept",
       "prefLabel": "oxidative dehalogenation to quinoid carbonyl",
       "inScheme": "xmet:scheme",
-      "definition": "Aryl halide → quinoid carbonyl end with dearomatization (Forest QuinoneFormation/replace_halogen) under quinone-like endpoint transformations. One-hop end state of oxidative dehalogenation followed by dehydrogenation when oxygen must be installed (Forest canonical plan; has_part those elementary classes). Not identical to the elementary oxidative dehalogenation rule alone.",
+      "definition": "Aryl halide → quinoid carbonyl end with dearomatization under quinone-like endpoint transformations. One-hop end state of oxidative dehalogenation followed by dehydrogenation when oxygen must be installed (has_part those elementary classes). Not identical to the elementary oxidative dehalogenation reaction alone.",
       "altLabel": [
         "Forest QuinoneFormation/replace_halogen",
         "quinoid oxidative dehalogenation endpoint",
@@ -3530,7 +3546,7 @@
       "type": "skos:Concept",
       "prefLabel": "dealkylative quinoid endpoint",
       "inScheme": "xmet:scheme",
-      "definition": "Cleave an N/O-alkyl on a ring heteroatom while forming a quinoid end (Forest QuinoneFormation/dealkylate) under quinone-like endpoint transformations. Related to dealkylation but scoped as a quinoid-forming endpoint, not the general dealkylation rule.",
+      "definition": "Cleave an N/O-alkyl on a ring heteroatom while forming a quinoid end under quinone-like endpoint transformations. Related to dealkylation but scoped as a quinoid-forming endpoint, not the general dealkylation reaction.",
       "altLabel": [
         "Forest QuinoneFormation/dealkylate",
         "dealkylative quinone-like formation",
@@ -3544,7 +3560,7 @@
       "type": "skos:Concept",
       "prefLabel": "epoxide methyl-sulfone sulfation",
       "inScheme": "xmet:scheme",
-      "definition": "Forest Sulfation/epoxide_methyl_sulfone: sulfation path yielding a methyl-sulfone motif from an epoxide partner.",
+      "definition": "Sulfation path yielding a methyl-sulfone motif from an epoxide partner.",
       "broader": "xmet:4000158"
     },
     {
@@ -3552,7 +3568,7 @@
       "type": "skos:Concept",
       "prefLabel": "thiol glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "Forest Glutathionation/thiol: GSH conjugation at a thiol electrophile / disulfide-exchange partner.",
+      "definition": "GSH conjugation at a thiol electrophile / disulfide-exchange partner.",
       "altLabel": [
         "GSH thiol conjugation"
       ],
@@ -3563,7 +3579,7 @@
       "type": "skos:Concept",
       "prefLabel": "alkene glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "Forest Glutathionation/alkene: GSH addition across an alkene (non-Michael or general olefin path).",
+      "definition": "GSH addition across an alkene (non-Michael or general olefin path).",
       "altLabel": [
         "GSH alkene addition"
       ],
@@ -3574,7 +3590,7 @@
       "type": "skos:Concept",
       "prefLabel": "carbonyl glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "Forest Glutathionation/carbonyl: GSH addition to a carbonyl electrophile.",
+      "definition": "GSH addition to a carbonyl electrophile.",
       "altLabel": [
         "GSH carbonyl addition"
       ],
@@ -3585,7 +3601,7 @@
       "type": "skos:Concept",
       "prefLabel": "mesylate glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "Forest Glutathionation/mesylate: GSH displacement of a mesylate (or related sulfonate) leaving group.",
+      "definition": "GSH displacement of a mesylate (or related sulfonate) leaving group.",
       "altLabel": [
         "GSH mesylate displacement"
       ],
@@ -3596,7 +3612,7 @@
       "type": "skos:Concept",
       "prefLabel": "N-quaternary dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "N-dealkylation at a quaternary carbon attached to nitrogen. Cleaved-carbon oxidation state is carried by Forest pattern alwaysWith (alcohol-level), not by hierarchy.",
+      "definition": "N-dealkylation at a quaternary carbon attached to nitrogen. Cleaved-carbon oxidation state is carried by alwaysWith (alcohol-level), not by hierarchy.",
       "altLabel": [
         "N-quaternary dealkylation to alcohol"
       ],
@@ -3607,7 +3623,7 @@
       "type": "skos:Concept",
       "prefLabel": "N-hemiaminal collapse dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "Forest NDealkylation/hemiaminal: hemiaminal collapse after N-oxidation / carbinolamine path.",
+      "definition": "Hemiaminal collapse after N-oxidation / carbinolamine path (N-centered).",
       "broader": "xmet:4000348"
     },
     {
@@ -3674,7 +3690,7 @@
       "type": "skos:Concept",
       "prefLabel": "demethylation",
       "inScheme": "xmet:scheme",
-      "definition": "Oxidative demethylation at N/O/S (heteroatom-general). Forest methyl_* patterns share this home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. O-/S-demethylation specialize by heteroatom underneath.",
+      "definition": "Oxidative demethylation at N/O/S (heteroatom-general). Methyl-cleavage patterns share this home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. O-/S-demethylation specialize by heteroatom underneath.",
       "broader": "xmet:4000343"
     },
     {
@@ -3682,7 +3698,7 @@
       "type": "skos:Concept",
       "prefLabel": "methylene dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "Dealkylation at a methylene attached to N/O/S. Forest methylene_* patterns share this home; ox-state/fragment via alwaysWith. O-deethylation specializes underneath.",
+      "definition": "Dealkylation at a methylene attached to N/O/S. Methylene-cleavage patterns share this home; ox-state/fragment via alwaysWith. O-deethylation specializes underneath.",
       "broader": "xmet:4000343"
     },
     {
@@ -3690,7 +3706,7 @@
       "type": "skos:Concept",
       "prefLabel": "methine dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "Dealkylation at a methine attached to N/O/S. Forest methine_* patterns share this home; ox-state via alwaysWith.",
+      "definition": "Dealkylation at a methine attached to N/O/S. Methine-cleavage patterns share this home; ox-state via alwaysWith.",
       "broader": "xmet:4000343"
     },
     {
@@ -3714,7 +3730,7 @@
       "type": "skos:Concept",
       "prefLabel": "N-demethylation",
       "inScheme": "xmet:scheme",
-      "definition": "Oxidative N–methyl cleavage (N-demethylation). Forest methyl_* patterns share this home; cleaved-carbon oxidation state and released fragment are distinguished via mapping alwaysWith.",
+      "definition": "Oxidative N–methyl cleavage (N-demethylation). Methyl-cleavage patterns share this home; cleaved-carbon oxidation state and released fragment are distinguished via mapping alwaysWith.",
       "altLabel": [
         "N-methyl dealkylation",
         "N-demethylation by fragment oxidation"
@@ -3726,7 +3742,7 @@
       "type": "skos:Concept",
       "prefLabel": "N-methylene dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "N-dealkylation at a methylene carbon attached to nitrogen (includes N-deethylation / N-depropylation site specializations). Forest methylene_* patterns share this home; ox-state / fragment via mapping alwaysWith.",
+      "definition": "N-dealkylation at a methylene carbon attached to nitrogen (includes N-deethylation / N-depropylation site specializations). Methylene-cleavage patterns share this home; ox-state / fragment via mapping alwaysWith.",
       "broader": "xmet:4000348"
     },
     {
@@ -3734,7 +3750,7 @@
       "type": "skos:Concept",
       "prefLabel": "N-methine dealkylation",
       "inScheme": "xmet:scheme",
-      "definition": "N-dealkylation at a methine carbon attached to nitrogen. Forest methine_* patterns share this home; ox-state via mapping alwaysWith.",
+      "definition": "N-dealkylation at a methine carbon attached to nitrogen. Methine-cleavage patterns share this home; ox-state via mapping alwaysWith.",
       "broader": "xmet:4000348"
     },
     {
@@ -3836,7 +3852,7 @@
       "type": "skos:Concept",
       "prefLabel": "quinone-like endpoint transformations",
       "inScheme": "xmet:scheme",
-      "definition": "Pair-endpoint transformations under conjugated-system remodeling that install or complete a quinone-like (quinoid) end (Forest QuinoneFormation patterns). Named by transformation chemistry, not edit ids; some endpoints are one-hop end states of hydroxylation or oxidative dehalogenation followed by dehydrogenation (see has_part on those leaves).",
+      "definition": "Pair-endpoint transformations under conjugated-system remodeling that install or complete a quinone-like (quinoid) end. Named by transformation chemistry; some endpoints are one-hop end states of hydroxylation or oxidative dehalogenation followed by dehydrogenation (see has_part on those leaves).",
       "altLabel": [
         "dehydrogenation endpoint transformations",
         "quinoid endpoint transformations",
@@ -3928,7 +3944,7 @@
       "type": "skos:Concept",
       "prefLabel": "glutathionation of quinone-like species and thiols",
       "inScheme": "xmet:scheme",
-      "definition": "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower classical quinone term sits underneath. GSH conjugation at quinoid electrophiles or at thiol partners.",
+      "definition": "Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines, quinone-methides, and imine-methides; the narrower classical quinone term sits underneath. GSH conjugation at quinoid electrophiles or at thiol partners.",
       "altLabel": [
         "glutathionation of quinoids and thiols",
         "glutathionation of quinones and thiols"
@@ -3988,7 +4004,7 @@
       "type": "skos:Concept",
       "prefLabel": "epoxide CH glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "GSH attack at an epoxide carbon bearing one H (Forest epoxide_ch).",
+      "definition": "GSH attack at an epoxide carbon bearing one H (methine).",
       "broader": "xmet:4000169"
     },
     {
@@ -3996,7 +4012,7 @@
       "type": "skos:Concept",
       "prefLabel": "epoxide CH2 glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "GSH attack at an epoxide methylene carbon (Forest epoxide_ch2).",
+      "definition": "GSH attack at an epoxide methylene carbon.",
       "broader": "xmet:4000169"
     },
     {
@@ -4004,7 +4020,7 @@
       "type": "skos:Concept",
       "prefLabel": "epoxide C glutathionation",
       "inScheme": "xmet:scheme",
-      "definition": "GSH attack at a fully substituted epoxide carbon (Forest epoxide_c).",
+      "definition": "GSH attack at a fully substituted epoxide carbon.",
       "broader": "xmet:4000169"
     },
     {
@@ -4076,7 +4092,7 @@
       "type": "skos:Concept",
       "prefLabel": "alkene to vicinal diol pathway",
       "inScheme": "xmet:scheme",
-      "definition": "Composite: epoxidation of an alkene/arene followed by hydrolytic epoxide opening to a vicinal diol (Forest EpoxideHydration one-hop).",
+      "definition": "Composite: epoxidation of an alkene/arene followed by hydrolytic epoxide opening to a vicinal diol.",
       "altLabel": [
         "epoxide hydration composite",
         "alkene dihydrodiol pathway"
@@ -4247,7 +4263,7 @@
       "type": "skos:Concept",
       "prefLabel": "conjugated-system remodeling",
       "inScheme": "xmet:scheme",
-      "definition": "Coordinated multi-site remodeling that builds or extends a conjugated π-system (Forest rule QuinoneFormation; tagger struct-conjugated-system-remodeling). Broader than aromatic quinoid collapse; current Forest patterns only cover aromatic→quinoid endpoints. Tagger SMARTS mirrors quinone-like phenol→carbonyl without a dearomatize gate. Children distinguish quinone-like species formation, quinone-like endpoint transformations, and nonaromatic conjugated-system remodeling.",
+      "definition": "Coordinated multi-site remodeling that builds or extends a conjugated π-system. Broader than aromatic quinoid collapse; pattern coverage currently emphasizes aromatic→quinoid endpoints. Children distinguish quinone-like species formation, quinone-like endpoint transformations, and nonaromatic conjugated-system remodeling.",
       "altLabel": [
         "conjugated π-system remodeling",
         "conjugated-system transformation",
@@ -4260,7 +4276,7 @@
       "type": "skos:Concept",
       "prefLabel": "nonaromatic conjugated-system remodeling",
       "inScheme": "xmet:scheme",
-      "definition": "Conjugated-system remodeling outside aromatic→quinoid collapse. Placement shelf for Forest QuinoneFormation rule breadth that current aromatic patterns do not yet cover.",
+      "definition": "Conjugated-system remodeling outside aromatic→quinoid collapse. Placement shelf for conjugated π-system edits that current aromatic quinoid patterns do not yet cover.",
       "altLabel": [
         "nonaromatic conjugated-system transformation",
         "non-aromatic conjugated π-system remodeling"
@@ -4325,6 +4341,54 @@
       "inScheme": "xmet:scheme",
       "definition": "Oxidative deethylation at N/O (heteroatom-general). Parallel to demethylation; N- and O-deethylation specialize by heteroatom elsewhere in the tree (single-parent homes).",
       "broader": "xmet:4000343"
+    },
+    {
+      "id": "xmet:4000414",
+      "type": "skos:Concept",
+      "prefLabel": "operationalizes",
+      "inScheme": "xmet:scheme",
+      "definition": "Source is made concrete by target (rule, pattern, model, assay, or enumeration that implements or applies the source concept).",
+      "altLabel": [
+        "operationalizes",
+        "xmet:operationalizes"
+      ],
+      "broader": "xmet:4000281"
+    },
+    {
+      "id": "xmet:4000415",
+      "type": "skos:Concept",
+      "prefLabel": "predicts",
+      "inScheme": "xmet:scheme",
+      "definition": "Source (model or score) predicts applicability or occurrence of target. Under operationalizes.",
+      "altLabel": [
+        "predicts",
+        "xmet:predicts"
+      ],
+      "broader": "xmet:4000414"
+    },
+    {
+      "id": "xmet:4000416",
+      "type": "skos:Concept",
+      "prefLabel": "recognizes",
+      "inScheme": "xmet:scheme",
+      "definition": "Source (pattern, SMARTS, or detector) recognizes instances of target. Under operationalizes.",
+      "altLabel": [
+        "recognizes",
+        "xmet:recognizes"
+      ],
+      "broader": "xmet:4000414"
+    },
+    {
+      "id": "xmet:4000417",
+      "type": "skos:Concept",
+      "prefLabel": "enumerates",
+      "inScheme": "xmet:scheme",
+      "definition": "Source lists or covers members/cases of target. Under operationalizes.",
+      "altLabel": [
+        "enumerates",
+        "xmet:enumerates"
+      ],
+      "broader": "xmet:4000414"
     }
   ]
 }

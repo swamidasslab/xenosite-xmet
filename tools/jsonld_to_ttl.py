@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Export data/ontology/xmet.skos.jsonld → xmet.skos.ttl (+ optional xmet attachment props).
+"""Export data/ontology/xmet.skos.jsonld → data/ontology/xmet.ttl.
 
-Also materializes ``xmet:hasAttachmentAtomType`` when a concept ``skos:relatedMatch``
-points at an attachment-atom site concept — so SPARQL competency queries can use
-the operational property from ANNOTATION.md without inventing SKOS parents.
+Full concept graph: SKOS (labels, broader, matches) plus XMET relation
+predicates (``relatedTo``, ``suggests``, ``alwaysWith``, ``antonymOf``,
+``hasPart`` / ``isPartOf``). Also materializes ``xmet:hasAttachmentAtomType``
+when a concept ``skos:relatedMatch`` points at a known attachment-atom site.
 """
 from __future__ import annotations
 
@@ -12,28 +13,38 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 JSONLD = ROOT / "data/ontology/xmet.skos.jsonld"
-TTL = ROOT / "data/ontology/xmet.skos.ttl"
+TTL = ROOT / "data/ontology/xmet.ttl"
 
-XMET = "https://xenosite.org/ontology/xmet#"
 XMET = "https://xenosite.org/ontology/xmet#"
 SKOS = "http://www.w3.org/2004/02/skos/core#"
+DCT = "http://purl.org/dc/terms/"
 
-ATTACHMENT = {
-    "xmet:1600135": "oxygen",  # attachment atom O
-    "xmet:1600136": "nitrogen",
-    "xmet:1600137": "sulfur",
-    "xmet:1600138": "carbon",
-    "xmet:1600139": "acyl",
-}
+# JSON-LD compact keys → TTL predicate (prefix:local)
+SKOS_LINK_PREDS = (
+    "broader",
+    "narrower",
+    "exactMatch",
+    "closeMatch",
+    "broadMatch",
+    "relatedMatch",
+)
 
+XMET_LINK_PREDS = (
+    ("relatedTo", "xmet:relatedTo"),
+    ("suggests", "xmet:suggests"),
+    ("alwaysWith", "xmet:alwaysWith"),
+    ("operationalizes", "xmet:operationalizes"),
+    ("predicts", "xmet:predicts"),
+    ("recognizes", "xmet:recognizes"),
+    ("enumerates", "xmet:enumerates"),
+    ("antonymOf", "xmet:antonymOf"),
+    ("hasPart", "dct:hasPart"),
+    ("isPartOf", "dct:isPartOf"),
+)
 
-def curie_to_iri(curie: str) -> str:
-    if curie.startswith("xmet:"):
-        return XMET + curie.split(":", 1)[1]
-    if curie.startswith("http://") or curie.startswith("https://"):
-        return curie
-    # opaque / external CURIEs kept as string literals in match objects when needed
-    return curie
+# Optional: relatedMatch object → emit hasAttachmentAtomType (post-renumber IDs).
+# Empty until attachment-atom site leaves return to the live inventory.
+ATTACHMENT: dict[str, str] = {}
 
 
 def ttl_iri(curie: str) -> str:
@@ -41,7 +52,6 @@ def ttl_iri(curie: str) -> str:
         return f"xmet:{curie.split(':', 1)[1]}"
     if curie.startswith("http://") or curie.startswith("https://"):
         return f"<{curie}>"
-    # non-xmet CURIEs → angle-bracket synthetic IRIs under xmet:ext/
     safe = curie.replace(":", "/")
     return f"<https://xenosite.org/ontology/xmet/ext/{safe}>"
 
@@ -62,9 +72,8 @@ def main() -> None:
     data = json.loads(JSONLD.read_text())
     lines = [
         "@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
-        "@prefix xmet: <https://xenosite.org/ontology/xmet#> .",
-        "@prefix xmet: <https://xenosite.org/ontology/xmet#> .",
-        "@prefix dct: <http://purl.org/dc/terms/> .",
+        f"@prefix xmet: <{XMET}> .",
+        f"@prefix dct: <{DCT}> .",
         "",
     ]
     for n in data["@graph"]:
@@ -91,11 +100,15 @@ def main() -> None:
             stmts.append(f"skos:inScheme {ttl_iri(n['inScheme'])}")
         for lab in as_list(n.get("altLabel")):
             stmts.append(f'skos:altLabel "{esc(lab)}"')
-        for pred in ("broader", "narrower", "exactMatch", "closeMatch", "broadMatch", "relatedMatch"):
+        for pred in SKOS_LINK_PREDS:
             for obj in as_list(n.get(pred)):
                 stmts.append(f"skos:{pred} {ttl_iri(obj)}")
                 if pred == "relatedMatch" and obj in ATTACHMENT:
                     stmts.append(f"xmet:hasAttachmentAtomType {ttl_iri(obj)}")
+        for key, ttl_pred in XMET_LINK_PREDS:
+            for obj in as_list(n.get(key)):
+                stmts.append(f"{ttl_pred} {ttl_iri(obj)}")
+
         lines.append(f"{subj} {stmts[0]} ;")
         for s in stmts[1:-1]:
             lines.append(f"  {s} ;")
@@ -106,6 +119,10 @@ def main() -> None:
         lines.append("")
 
     TTL.write_text("\n".join(lines) + "\n")
+    # Drop legacy SKOS-only filename if present
+    legacy = ROOT / "data/ontology/xmet.skos.ttl"
+    if legacy.exists():
+        legacy.unlink()
     print(f"wrote {TTL}")
 
 

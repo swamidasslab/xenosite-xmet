@@ -1,0 +1,72 @@
+{
+  "skos": "data/ontology/xmet.ttl",
+  "sssom": "data/mappings/xmet-forest.sssom.tsv",
+  "inferred_ttl": "data/candidates/forest-inferred-covers.ttl",
+  "exactMatch_kinds": {
+    "pattern": 100,
+    "rule": 28
+  },
+  "predicates": {
+    "closeMatch": 1,
+    "exactMatch": 128,
+    "relatedMatch": 9
+  },
+  "pattern_vs_rule": {
+    "same_home": 8,
+    "under_rule": 92
+  },
+  "homes": {
+    "both": [
+      "xmet:4000035",
+      "xmet:4000087",
+      "xmet:4000089",
+      "xmet:4000096",
+      "xmet:4000100",
+      "xmet:4000163",
+      "xmet:4000392"
+    ],
+    "rule_only": [
+      "xmet:4000006",
+      "xmet:4000007",
+      "xmet:4000012",
+      "xmet:4000022",
+      "xmet:4000026",
+      "xmet:4000032",
+      "xmet:4000042",
+      "xmet:4000043",
+      "xmet:4000051",
+      "xmet:4000077",
+      "xmet:4000090",
+      "xmet:4000093",
+      "xmet:4000101",
+      "xmet:4000106",
+      "xmet:4000110",
+      "xmet:4000113",
+      "xmet:4000148",
+      "xmet:4000158",
+      "xmet:4000167",
+      "xmet:4000186",
+      "xmet:4000406"
+    ],
+    "pattern_only_count": 81
+  },
+  "n_cover_triples": 430,
+  "gaps": {
+    "rules_no_patterns": [
+      "Tautomerization"
+    ],
+    "pattern_classes_no_rule": [],
+    "disjoint_patterns": 0,
+    "harvest_only": [
+      "forest.pattern:ConjugationRule/acetyl"
+    ]
+  },
+  "harvest": {
+    "n": 48,
+    "sssom_patterns": 100,
+    "intersection": 47,
+    "harvest_only": [
+      "forest.pattern:ConjugationRule/acetyl"
+    ]
+  }
+}

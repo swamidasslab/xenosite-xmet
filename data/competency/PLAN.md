@@ -37,7 +37,7 @@ python3 crates/xenosite-tagger/tools/yaml_to_skos.py
 ```
 # Design note                          # XMET adaptation
 ontology/
-  xmet.ttl / xmet.skos.ttl      →  data/ontology/xmet.skos.ttl (+ xmet.skos.jsonld)
+  xmet.ttl / xmet.skos.ttl      →  data/ontology/xmet.ttl (+ xmet.skos.jsonld)
   xmet.shacl.ttl                →  data/ontology/xmet.shacl.ttl
   mappings/mesh.tsv             →  data/mappings/views/mesh.tsv
   mappings/kegg.tsv             →  data/mappings/views/kegg.tsv
@@ -61,7 +61,7 @@ canonical mapping store; `views/` are compact projections for CQ readability.
 | Type | Layer | Runner |
 | --- | --- | --- |
 | `ontology_labels` / `ontology_broader` | ontology | Python over JSON-LD |
-| `sparql` | ontology | rdflib over `xmet.skos.ttl` |
+| `sparql` | ontology | rdflib over `xmet.ttl` |
 | `shacl` | ontology | pyshacl over `xmet.shacl.ttl` |
 | `definition_coverage` | ontology | Python fraction check |
 | `mapping_exists` | mapping | SSSOM TSV scan |

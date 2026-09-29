@@ -32,6 +32,10 @@ CONTEXT = {
     "relatedTo": {"@id": "xmet:relatedTo", "@type": "@id"},
     "suggests": {"@id": "xmet:suggests", "@type": "@id"},
     "alwaysWith": {"@id": "xmet:alwaysWith", "@type": "@id"},
+    "operationalizes": {"@id": "xmet:operationalizes", "@type": "@id"},
+    "predicts": {"@id": "xmet:predicts", "@type": "@id"},
+    "recognizes": {"@id": "xmet:recognizes", "@type": "@id"},
+    "enumerates": {"@id": "xmet:enumerates", "@type": "@id"},
     "inScheme": {"@id": "skos:inScheme", "@type": "@id"},
 }
 
@@ -81,6 +85,10 @@ def main():
             ("related_to", "relatedTo"),
             ("suggests", "suggests"),
             ("always_with", "alwaysWith"),
+            ("operationalizes", "operationalizes"),
+            ("predicts", "predicts"),
+            ("recognizes", "recognizes"),
+            ("enumerates", "enumerates"),
         ]:
             if c.get(src):
                 node[dst] = one_or_list(c[src])

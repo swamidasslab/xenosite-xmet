@@ -1,0 +1,798 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xmet: <https://xenosite.org/ontology/xmet#> .
+
+<https://xenosite.org/ns/forest/pattern/Acetylation/acetyl> xmet:covers xmet:4000163,
+        xmet:4000164,
+        xmet:4000165 .
+
+<https://xenosite.org/ns/forest/pattern/AzoSplitting/azo> xmet:covers xmet:4000089 .
+
+<https://xenosite.org/ns/forest/pattern/BenzodioxoleReduction/dioxole_methylene> xmet:covers xmet:4000100 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/cc_alcohol> xmet:covers xmet:4000046,
+        xmet:4000317 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/cc_carbonyl> xmet:covers xmet:4000046,
+        xmet:4000317 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/cc_quaternary_alcohol> xmet:covers xmet:4000317 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/hemiaminal> xmet:covers xmet:4000049,
+        xmet:4000198,
+        xmet:4000318 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methine_alcohol> xmet:covers xmet:4000346 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methine_carbonyl> xmet:covers xmet:4000346 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methyl_alcohol> xmet:covers xmet:4000050,
+        xmet:4000058,
+        xmet:4000344 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methyl_carbonyl> xmet:covers xmet:4000050,
+        xmet:4000058,
+        xmet:4000344 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methyl_carboxylic> xmet:covers xmet:4000050,
+        xmet:4000058,
+        xmet:4000344 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methylene_alcohol> xmet:covers xmet:4000052,
+        xmet:4000345 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methylene_carbonyl> xmet:covers xmet:4000052,
+        xmet:4000345 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/methylene_carboxylic> xmet:covers xmet:4000052,
+        xmet:4000345 .
+
+<https://xenosite.org/ns/forest/pattern/Dealkylation/quaternary_alcohol> xmet:covers xmet:4000316 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydration/alcohol> xmet:covers xmet:4000304 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydration/beta_elimination> xmet:covers xmet:4000305 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydration/carbonyl> xmet:covers xmet:4000306 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/alcohol> xmet:covers xmet:4000069,
+        xmet:4000070,
+        xmet:4000071 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/alkyl> xmet:covers xmet:4000073,
+        xmet:4000075,
+        xmet:4000302 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/amine> xmet:covers xmet:4000064,
+        xmet:4000065,
+        xmet:4000216 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/amine_end> xmet:covers xmet:4000320 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/methide_end> xmet:covers xmet:4000321 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/phenol_end> xmet:covers xmet:4000319 .
+
+<https://xenosite.org/ns/forest/pattern/Dehydrogenation/sulfoxide> xmet:covers xmet:4000303 .
+
+<https://xenosite.org/ns/forest/pattern/Dephosphorylation/phosphate_ester> xmet:covers xmet:4000087 .
+
+<https://xenosite.org/ns/forest/pattern/Epoxidation/epoxide> xmet:covers xmet:4000024,
+        xmet:4000215,
+        xmet:4000287,
+        xmet:4000290 .
+
+<https://xenosite.org/ns/forest/pattern/EpoxideHydration/diol> xmet:covers xmet:4000392 .
+
+<https://xenosite.org/ns/forest/pattern/EpoxideOpening/hydrate> xmet:covers xmet:4000295 .
+
+<https://xenosite.org/ns/forest/pattern/EpoxideOpening/rearrange> xmet:covers xmet:4000296 .
+
+<https://xenosite.org/ns/forest/pattern/Glucuronidation/alcohol> xmet:covers xmet:4000149,
+        xmet:4000150,
+        xmet:4000151 .
+
+<https://xenosite.org/ns/forest/pattern/Glucuronidation/carboxylate> xmet:covers xmet:4000152 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/alkene> xmet:covers xmet:4000333 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/aziridine_c> xmet:covers xmet:4000386 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/aziridine_ch> xmet:covers xmet:4000384 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/aziridine_ch2> xmet:covers xmet:4000385 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/carbonyl> xmet:covers xmet:4000334 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/epoxide_c> xmet:covers xmet:4000383 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/epoxide_ch> xmet:covers xmet:4000381 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/epoxide_ch2> xmet:covers xmet:4000382 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/halide> xmet:covers xmet:4000170 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/isocyanate> xmet:covers xmet:4000171 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/mesylate> xmet:covers xmet:4000335 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/michael> xmet:covers xmet:4000168 .
+
+<https://xenosite.org/ns/forest/pattern/Glutathionation/thiol> xmet:covers xmet:4000332 .
+
+<https://xenosite.org/ns/forest/pattern/Hydrogenation/alkene> xmet:covers xmet:4000091 .
+
+<https://xenosite.org/ns/forest/pattern/Hydrogenation/alkyne> xmet:covers xmet:4000092 .
+
+<https://xenosite.org/ns/forest/pattern/Hydrogenation/path_end> xmet:covers xmet:4000322 .
+
+<https://xenosite.org/ns/forest/pattern/Hydrolysis/add_water> xmet:covers xmet:4000294 .
+
+<https://xenosite.org/ns/forest/pattern/Hydrolysis/cleave> xmet:covers xmet:4000078,
+        xmet:4000079,
+        xmet:4000080,
+        xmet:4000081,
+        xmet:4000082,
+        xmet:4000083,
+        xmet:4000084,
+        xmet:4000085,
+        xmet:4000086,
+        xmet:4000088,
+        xmet:4000115,
+        xmet:4000132,
+        xmet:4000166,
+        xmet:4000191,
+        xmet:4000293,
+        xmet:4000352,
+        xmet:4000353,
+        xmet:4000354,
+        xmet:4000355,
+        xmet:4000356 .
+
+<https://xenosite.org/ns/forest/pattern/Hydroxylation/h> xmet:covers xmet:4000040,
+        xmet:4000291 .
+
+<https://xenosite.org/ns/forest/pattern/Hydroxylation/h2> xmet:covers xmet:4000292 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/hemiaminal> xmet:covers xmet:4000337 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methine_alcohol> xmet:covers xmet:4000351 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methine_carbonyl> xmet:covers xmet:4000351 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methyl_alcohol> xmet:covers xmet:4000349 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methyl_carbonyl> xmet:covers xmet:4000349 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methyl_carboxylic> xmet:covers xmet:4000349 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methylene_alcohol> xmet:covers xmet:4000047,
+        xmet:4000048,
+        xmet:4000350 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methylene_carbonyl> xmet:covers xmet:4000047,
+        xmet:4000048,
+        xmet:4000350 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/methylene_carboxylic> xmet:covers xmet:4000047,
+        xmet:4000048,
+        xmet:4000350 .
+
+<https://xenosite.org/ns/forest/pattern/NDealkylation/quaternary_alcohol> xmet:covers xmet:4000336 .
+
+<https://xenosite.org/ns/forest/pattern/NitroaromaticReduction/nitro_charged> xmet:covers xmet:4000096 .
+
+<https://xenosite.org/ns/forest/pattern/NitroaromaticReduction/nitro_neutral> xmet:covers xmet:4000096 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenOxidation/hydroxylamine> xmet:covers xmet:4000028,
+        xmet:4000030,
+        xmet:4000031 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenOxidation/n_oxide> xmet:covers xmet:4000027 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenOxidation/nitroso> xmet:covers xmet:4000029 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/hydroxylamine> xmet:covers xmet:4000314 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_anion> xmet:covers xmet:4000388 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_both> xmet:covers xmet:4000390 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_both_any> xmet:covers xmet:4000391 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_charged> xmet:covers xmet:4000387 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_neutral> xmet:covers xmet:4000389 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_to_amine> xmet:covers xmet:4000094,
+        xmet:4000095,
+        xmet:4000096 .
+
+<https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitroso> xmet:covers xmet:4000315 .
+
+<https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/alcohol> xmet:covers xmet:4000055,
+        xmet:4000056,
+        xmet:4000057,
+        xmet:4000307,
+        xmet:4000410 .
+
+<https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/carbonyl> xmet:covers xmet:4000308 .
+
+<https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/carboxylic> xmet:covers xmet:4000309 .
+
+<https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/gem_carboxylic> xmet:covers xmet:4000311 .
+
+<https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/gem_hydrate> xmet:covers xmet:4000312 .
+
+<https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/rearrange> xmet:covers xmet:4000310 .
+
+<https://xenosite.org/ns/forest/pattern/OxygenReduction/carbonyl> xmet:covers xmet:4000102,
+        xmet:4000103,
+        xmet:4000104,
+        xmet:4000105 .
+
+<https://xenosite.org/ns/forest/pattern/OxygenReduction/peroxide> xmet:covers xmet:4000300 .
+
+<https://xenosite.org/ns/forest/pattern/QuinoneFormation/add_carbonyl_o> xmet:covers xmet:4000328 .
+
+<https://xenosite.org/ns/forest/pattern/QuinoneFormation/dealkylate> xmet:covers xmet:4000330 .
+
+<https://xenosite.org/ns/forest/pattern/QuinoneFormation/iminium> xmet:covers xmet:4000062 .
+
+<https://xenosite.org/ns/forest/pattern/QuinoneFormation/methide_end> xmet:covers xmet:4000063 .
+
+<https://xenosite.org/ns/forest/pattern/QuinoneFormation/replace_halogen> xmet:covers xmet:4000329 .
+
+<https://xenosite.org/ns/forest/pattern/QuinoneFormation/single_to_double> xmet:covers xmet:4000327,
+        xmet:4000408,
+        xmet:4000409 .
+
+<https://xenosite.org/ns/forest/pattern/ReductiveDehalogenation/alkene> xmet:covers xmet:4000289 .
+
+<https://xenosite.org/ns/forest/pattern/ReductiveDehalogenation/cleave> xmet:covers xmet:4000111,
+        xmet:4000112,
+        xmet:4000288,
+        xmet:4000411,
+        xmet:4000412 .
+
+<https://xenosite.org/ns/forest/pattern/Sulfation/alcohol> xmet:covers xmet:4000159,
+        xmet:4000160,
+        xmet:4000161 .
+
+<https://xenosite.org/ns/forest/pattern/SulfurOxidation/hydroxy> xmet:covers xmet:4000036,
+        xmet:4000298 .
+
+<https://xenosite.org/ns/forest/pattern/SulfurOxidation/oxo> xmet:covers xmet:4000033,
+        xmet:4000034,
+        xmet:4000299 .
+
+<https://xenosite.org/ns/forest/pattern/SulfurOxidation/zwitterion> xmet:covers xmet:4000297 .
+
+<https://xenosite.org/ns/forest/pattern/SulfurReduction/disulfide> xmet:covers xmet:4000108 .
+
+<https://xenosite.org/ns/forest/pattern/SulfurReduction/sulfoxide> xmet:covers xmet:4000107 .
+
+<https://xenosite.org/ns/forest/pattern/SulfurReduction/thioether> xmet:covers xmet:4000301 .
+
+<https://xenosite.org/ns/forest/pattern/ThiopheneSulfurOxidation/thiophene_s_oxide> xmet:covers xmet:4000035 .
+
+<https://xenosite.org/ns/forest/rule/Acetylation> xmet:covers xmet:4000163,
+        xmet:4000164,
+        xmet:4000165 .
+
+<https://xenosite.org/ns/forest/rule/AzoSplitting> xmet:covers xmet:4000089 .
+
+<https://xenosite.org/ns/forest/rule/BenzodioxoleReduction> xmet:covers xmet:4000100 .
+
+<https://xenosite.org/ns/forest/rule/Dealkylation> xmet:covers xmet:4000042,
+        xmet:4000043,
+        xmet:4000044,
+        xmet:4000045,
+        xmet:4000046,
+        xmet:4000047,
+        xmet:4000048,
+        xmet:4000049,
+        xmet:4000050,
+        xmet:4000052,
+        xmet:4000053,
+        xmet:4000054,
+        xmet:4000058,
+        xmet:4000143,
+        xmet:4000198,
+        xmet:4000199,
+        xmet:4000316,
+        xmet:4000317,
+        xmet:4000318,
+        xmet:4000336,
+        xmet:4000337,
+        xmet:4000340,
+        xmet:4000341,
+        xmet:4000343,
+        xmet:4000344,
+        xmet:4000345,
+        xmet:4000346,
+        xmet:4000347,
+        xmet:4000348,
+        xmet:4000349,
+        xmet:4000350,
+        xmet:4000351,
+        xmet:4000413 .
+
+<https://xenosite.org/ns/forest/rule/Dehydration> xmet:covers xmet:4000113,
+        xmet:4000304,
+        xmet:4000305,
+        xmet:4000306 .
+
+<https://xenosite.org/ns/forest/rule/Dehydrogenation> xmet:covers xmet:4000006,
+        xmet:4000064,
+        xmet:4000065,
+        xmet:4000069,
+        xmet:4000070,
+        xmet:4000071,
+        xmet:4000072,
+        xmet:4000073,
+        xmet:4000075,
+        xmet:4000076,
+        xmet:4000216,
+        xmet:4000302,
+        xmet:4000303,
+        xmet:4000319,
+        xmet:4000320,
+        xmet:4000321,
+        xmet:4000395 .
+
+<https://xenosite.org/ns/forest/rule/Dephosphorylation> xmet:covers xmet:4000087 .
+
+<https://xenosite.org/ns/forest/rule/Epoxidation> xmet:covers xmet:4000022,
+        xmet:4000023,
+        xmet:4000024,
+        xmet:4000025,
+        xmet:4000215,
+        xmet:4000287,
+        xmet:4000290 .
+
+<https://xenosite.org/ns/forest/rule/EpoxideHydration> xmet:covers xmet:4000392 .
+
+<https://xenosite.org/ns/forest/rule/EpoxideOpening> xmet:covers xmet:4000077,
+        xmet:4000295,
+        xmet:4000296 .
+
+<https://xenosite.org/ns/forest/rule/Glucuronidation> xmet:covers xmet:4000148,
+        xmet:4000149,
+        xmet:4000150,
+        xmet:4000151,
+        xmet:4000152,
+        xmet:4000153,
+        xmet:4000154,
+        xmet:4000155,
+        xmet:4000156,
+        xmet:4000157 .
+
+<https://xenosite.org/ns/forest/rule/Glutathionation> xmet:covers xmet:4000167,
+        xmet:4000168,
+        xmet:4000169,
+        xmet:4000170,
+        xmet:4000171,
+        xmet:4000172,
+        xmet:4000173,
+        xmet:4000332,
+        xmet:4000333,
+        xmet:4000334,
+        xmet:4000335,
+        xmet:4000371,
+        xmet:4000372,
+        xmet:4000373,
+        xmet:4000374,
+        xmet:4000381,
+        xmet:4000382,
+        xmet:4000383,
+        xmet:4000384,
+        xmet:4000385,
+        xmet:4000386 .
+
+<https://xenosite.org/ns/forest/rule/Hydrogenation> xmet:covers xmet:4000090,
+        xmet:4000091,
+        xmet:4000092,
+        xmet:4000322 .
+
+<https://xenosite.org/ns/forest/rule/Hydrolysis> xmet:covers xmet:4000007,
+        xmet:4000078,
+        xmet:4000079,
+        xmet:4000080,
+        xmet:4000081,
+        xmet:4000082,
+        xmet:4000083,
+        xmet:4000084,
+        xmet:4000085,
+        xmet:4000086,
+        xmet:4000087,
+        xmet:4000088,
+        xmet:4000115,
+        xmet:4000132,
+        xmet:4000166,
+        xmet:4000191,
+        xmet:4000204,
+        xmet:4000205,
+        xmet:4000293,
+        xmet:4000294,
+        xmet:4000352,
+        xmet:4000353,
+        xmet:4000354,
+        xmet:4000355,
+        xmet:4000356 .
+
+<https://xenosite.org/ns/forest/rule/Hydroxylation> xmet:covers xmet:4000012,
+        xmet:4000013,
+        xmet:4000014,
+        xmet:4000015,
+        xmet:4000016,
+        xmet:4000017,
+        xmet:4000018,
+        xmet:4000019,
+        xmet:4000020,
+        xmet:4000021,
+        xmet:4000038,
+        xmet:4000039,
+        xmet:4000040,
+        xmet:4000041,
+        xmet:4000144,
+        xmet:4000196,
+        xmet:4000291,
+        xmet:4000292,
+        xmet:4000378,
+        xmet:4000379,
+        xmet:4000380 .
+
+<https://xenosite.org/ns/forest/rule/NDealkylation> xmet:covers xmet:4000043,
+        xmet:4000047,
+        xmet:4000048,
+        xmet:4000336,
+        xmet:4000337,
+        xmet:4000340,
+        xmet:4000341,
+        xmet:4000347,
+        xmet:4000348,
+        xmet:4000349,
+        xmet:4000350,
+        xmet:4000351 .
+
+<https://xenosite.org/ns/forest/rule/NitroaromaticReduction> xmet:covers xmet:4000096 .
+
+<https://xenosite.org/ns/forest/rule/NitrogenOxidation> xmet:covers xmet:4000026,
+        xmet:4000027,
+        xmet:4000028,
+        xmet:4000029,
+        xmet:4000030,
+        xmet:4000031,
+        xmet:4000133 .
+
+<https://xenosite.org/ns/forest/rule/NitrogenReduction> xmet:covers xmet:4000089,
+        xmet:4000093,
+        xmet:4000094,
+        xmet:4000095,
+        xmet:4000096,
+        xmet:4000097,
+        xmet:4000098,
+        xmet:4000099,
+        xmet:4000134,
+        xmet:4000313,
+        xmet:4000314,
+        xmet:4000315,
+        xmet:4000375,
+        xmet:4000376,
+        xmet:4000377,
+        xmet:4000387,
+        xmet:4000388,
+        xmet:4000389,
+        xmet:4000390,
+        xmet:4000391 .
+
+<https://xenosite.org/ns/forest/rule/OxidativeDehalogenation> xmet:covers xmet:4000051,
+        xmet:4000055,
+        xmet:4000056,
+        xmet:4000057,
+        xmet:4000307,
+        xmet:4000308,
+        xmet:4000309,
+        xmet:4000310,
+        xmet:4000311,
+        xmet:4000312,
+        xmet:4000410 .
+
+<https://xenosite.org/ns/forest/rule/OxygenReduction> xmet:covers xmet:4000101,
+        xmet:4000102,
+        xmet:4000103,
+        xmet:4000104,
+        xmet:4000105,
+        xmet:4000300 .
+
+<https://xenosite.org/ns/forest/rule/QuinoneFormation> xmet:covers xmet:4000059,
+        xmet:4000060,
+        xmet:4000061,
+        xmet:4000062,
+        xmet:4000063,
+        xmet:4000327,
+        xmet:4000328,
+        xmet:4000329,
+        xmet:4000330,
+        xmet:4000364,
+        xmet:4000394,
+        xmet:4000406,
+        xmet:4000407,
+        xmet:4000408,
+        xmet:4000409 .
+
+<https://xenosite.org/ns/forest/rule/ReductiveDehalogenation> xmet:covers xmet:4000110,
+        xmet:4000111,
+        xmet:4000112,
+        xmet:4000288,
+        xmet:4000289,
+        xmet:4000411,
+        xmet:4000412 .
+
+<https://xenosite.org/ns/forest/rule/Sulfation> xmet:covers xmet:4000158,
+        xmet:4000159,
+        xmet:4000160,
+        xmet:4000161,
+        xmet:4000162,
+        xmet:4000331 .
+
+<https://xenosite.org/ns/forest/rule/SulfurOxidation> xmet:covers xmet:4000032,
+        xmet:4000033,
+        xmet:4000034,
+        xmet:4000035,
+        xmet:4000036,
+        xmet:4000037,
+        xmet:4000135,
+        xmet:4000297,
+        xmet:4000298,
+        xmet:4000299 .
+
+<https://xenosite.org/ns/forest/rule/SulfurReduction> xmet:covers xmet:4000106,
+        xmet:4000107,
+        xmet:4000108,
+        xmet:4000109,
+        xmet:4000301 .
+
+<https://xenosite.org/ns/forest/rule/Tautomerization> xmet:covers xmet:4000186,
+        xmet:4000187,
+        xmet:4000188 .
+
+<https://xenosite.org/ns/forest/rule/ThiopheneSulfurOxidation> xmet:covers xmet:4000035 .
+
+xmet:4000006 skos:exactMatch <https://xenosite.org/ns/forest/rule/Dehydrogenation> .
+
+xmet:4000007 skos:exactMatch <https://xenosite.org/ns/forest/rule/Hydrolysis> .
+
+xmet:4000012 skos:exactMatch <https://xenosite.org/ns/forest/rule/Hydroxylation> .
+
+xmet:4000022 skos:exactMatch <https://xenosite.org/ns/forest/rule/Epoxidation> .
+
+xmet:4000026 skos:exactMatch <https://xenosite.org/ns/forest/rule/NitrogenOxidation> .
+
+xmet:4000032 skos:exactMatch <https://xenosite.org/ns/forest/rule/SulfurOxidation> .
+
+xmet:4000042 skos:exactMatch <https://xenosite.org/ns/forest/rule/Dealkylation> .
+
+xmet:4000051 skos:exactMatch <https://xenosite.org/ns/forest/rule/OxidativeDehalogenation> .
+
+xmet:4000077 skos:exactMatch <https://xenosite.org/ns/forest/rule/EpoxideOpening> .
+
+xmet:4000090 skos:exactMatch <https://xenosite.org/ns/forest/rule/Hydrogenation> .
+
+xmet:4000093 skos:exactMatch <https://xenosite.org/ns/forest/rule/NitrogenReduction> .
+
+xmet:4000101 skos:exactMatch <https://xenosite.org/ns/forest/rule/OxygenReduction> .
+
+xmet:4000106 skos:exactMatch <https://xenosite.org/ns/forest/rule/SulfurReduction> .
+
+xmet:4000110 skos:exactMatch <https://xenosite.org/ns/forest/rule/ReductiveDehalogenation> .
+
+xmet:4000113 skos:exactMatch <https://xenosite.org/ns/forest/rule/Dehydration> .
+
+xmet:4000148 skos:exactMatch <https://xenosite.org/ns/forest/rule/Glucuronidation> .
+
+xmet:4000158 skos:exactMatch <https://xenosite.org/ns/forest/rule/Sulfation> .
+
+xmet:4000167 skos:exactMatch <https://xenosite.org/ns/forest/rule/Glutathionation> .
+
+xmet:4000186 skos:exactMatch <https://xenosite.org/ns/forest/rule/Tautomerization> .
+
+xmet:4000406 skos:exactMatch <https://xenosite.org/ns/forest/rule/QuinoneFormation> .
+
+xmet:4000027 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenOxidation/n_oxide> .
+
+xmet:4000028 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenOxidation/hydroxylamine> .
+
+xmet:4000029 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenOxidation/nitroso> .
+
+xmet:4000043 skos:exactMatch <https://xenosite.org/ns/forest/rule/NDealkylation> .
+
+xmet:4000062 skos:exactMatch <https://xenosite.org/ns/forest/pattern/QuinoneFormation/iminium> .
+
+xmet:4000063 skos:exactMatch <https://xenosite.org/ns/forest/pattern/QuinoneFormation/methide_end> .
+
+xmet:4000069 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/alcohol> .
+
+xmet:4000091 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydrogenation/alkene> .
+
+xmet:4000092 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydrogenation/alkyne> .
+
+xmet:4000095 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_to_amine> .
+
+xmet:4000100 skos:exactMatch <https://xenosite.org/ns/forest/pattern/BenzodioxoleReduction/dioxole_methylene>,
+        <https://xenosite.org/ns/forest/rule/BenzodioxoleReduction> .
+
+xmet:4000105 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxygenReduction/carbonyl> .
+
+xmet:4000107 skos:exactMatch <https://xenosite.org/ns/forest/pattern/SulfurReduction/sulfoxide> .
+
+xmet:4000108 skos:exactMatch <https://xenosite.org/ns/forest/pattern/SulfurReduction/disulfide> .
+
+xmet:4000149 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glucuronidation/alcohol> .
+
+xmet:4000152 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glucuronidation/carboxylate> .
+
+xmet:4000159 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Sulfation/alcohol> .
+
+xmet:4000163 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Acetylation/acetyl>,
+        <https://xenosite.org/ns/forest/rule/Acetylation> .
+
+xmet:4000168 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/michael> .
+
+xmet:4000170 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/halide> .
+
+xmet:4000171 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/isocyanate> .
+
+xmet:4000216 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/amine> .
+
+xmet:4000288 skos:exactMatch <https://xenosite.org/ns/forest/pattern/ReductiveDehalogenation/cleave> .
+
+xmet:4000289 skos:exactMatch <https://xenosite.org/ns/forest/pattern/ReductiveDehalogenation/alkene> .
+
+xmet:4000290 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Epoxidation/epoxide> .
+
+xmet:4000291 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydroxylation/h> .
+
+xmet:4000292 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydroxylation/h2> .
+
+xmet:4000293 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydrolysis/cleave> .
+
+xmet:4000294 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydrolysis/add_water> .
+
+xmet:4000295 skos:exactMatch <https://xenosite.org/ns/forest/pattern/EpoxideOpening/hydrate> .
+
+xmet:4000296 skos:exactMatch <https://xenosite.org/ns/forest/pattern/EpoxideOpening/rearrange> .
+
+xmet:4000297 skos:exactMatch <https://xenosite.org/ns/forest/pattern/SulfurOxidation/zwitterion> .
+
+xmet:4000298 skos:exactMatch <https://xenosite.org/ns/forest/pattern/SulfurOxidation/hydroxy> .
+
+xmet:4000299 skos:exactMatch <https://xenosite.org/ns/forest/pattern/SulfurOxidation/oxo> .
+
+xmet:4000300 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxygenReduction/peroxide> .
+
+xmet:4000301 skos:exactMatch <https://xenosite.org/ns/forest/pattern/SulfurReduction/thioether> .
+
+xmet:4000302 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/alkyl> .
+
+xmet:4000303 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/sulfoxide> .
+
+xmet:4000304 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydration/alcohol> .
+
+xmet:4000305 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydration/beta_elimination> .
+
+xmet:4000306 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydration/carbonyl> .
+
+xmet:4000307 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/alcohol> .
+
+xmet:4000308 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/carbonyl> .
+
+xmet:4000309 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/carboxylic> .
+
+xmet:4000310 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/rearrange> .
+
+xmet:4000311 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/gem_carboxylic> .
+
+xmet:4000312 skos:exactMatch <https://xenosite.org/ns/forest/pattern/OxidativeDehalogenation/gem_hydrate> .
+
+xmet:4000314 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/hydroxylamine> .
+
+xmet:4000315 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitroso> .
+
+xmet:4000316 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/quaternary_alcohol> .
+
+xmet:4000318 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/hemiaminal> .
+
+xmet:4000319 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/phenol_end> .
+
+xmet:4000320 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/amine_end> .
+
+xmet:4000321 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dehydrogenation/methide_end> .
+
+xmet:4000322 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Hydrogenation/path_end> .
+
+xmet:4000327 skos:exactMatch <https://xenosite.org/ns/forest/pattern/QuinoneFormation/single_to_double> .
+
+xmet:4000328 skos:exactMatch <https://xenosite.org/ns/forest/pattern/QuinoneFormation/add_carbonyl_o> .
+
+xmet:4000329 skos:exactMatch <https://xenosite.org/ns/forest/pattern/QuinoneFormation/replace_halogen> .
+
+xmet:4000330 skos:exactMatch <https://xenosite.org/ns/forest/pattern/QuinoneFormation/dealkylate> .
+
+xmet:4000332 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/thiol> .
+
+xmet:4000333 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/alkene> .
+
+xmet:4000334 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/carbonyl> .
+
+xmet:4000335 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/mesylate> .
+
+xmet:4000381 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/epoxide_ch> .
+
+xmet:4000382 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/epoxide_ch2> .
+
+xmet:4000383 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/epoxide_c> .
+
+xmet:4000384 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/aziridine_ch> .
+
+xmet:4000385 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/aziridine_ch2> .
+
+xmet:4000386 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Glutathionation/aziridine_c> .
+
+xmet:4000387 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_charged> .
+
+xmet:4000388 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_anion> .
+
+xmet:4000389 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_neutral> .
+
+xmet:4000390 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_both> .
+
+xmet:4000391 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitrogenReduction/nitro_both_any> .
+
+xmet:4000392 skos:exactMatch <https://xenosite.org/ns/forest/pattern/EpoxideHydration/diol>,
+        <https://xenosite.org/ns/forest/rule/EpoxideHydration> .
+
+xmet:4000035 skos:exactMatch <https://xenosite.org/ns/forest/pattern/ThiopheneSulfurOxidation/thiophene_s_oxide>,
+        <https://xenosite.org/ns/forest/rule/ThiopheneSulfurOxidation> .
+
+xmet:4000046 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/cc_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/Dealkylation/cc_carbonyl> .
+
+xmet:4000087 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dephosphorylation/phosphate_ester>,
+        <https://xenosite.org/ns/forest/rule/Dephosphorylation> .
+
+xmet:4000089 skos:exactMatch <https://xenosite.org/ns/forest/pattern/AzoSplitting/azo>,
+        <https://xenosite.org/ns/forest/rule/AzoSplitting> .
+
+xmet:4000336 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NDealkylation/quaternary_alcohol> .
+
+xmet:4000337 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NDealkylation/hemiaminal> .
+
+xmet:4000346 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/methine_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/Dealkylation/methine_carbonyl> .
+
+xmet:4000317 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/cc_quaternary_alcohol> .
+
+xmet:4000344 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/methyl_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/Dealkylation/methyl_carbonyl>,
+        <https://xenosite.org/ns/forest/pattern/Dealkylation/methyl_carboxylic> .
+
+xmet:4000345 skos:exactMatch <https://xenosite.org/ns/forest/pattern/Dealkylation/methylene_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/Dealkylation/methylene_carbonyl>,
+        <https://xenosite.org/ns/forest/pattern/Dealkylation/methylene_carboxylic> .
+
+xmet:4000351 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NDealkylation/methine_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/NDealkylation/methine_carbonyl> .
+
+xmet:4000096 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NitroaromaticReduction/nitro_charged>,
+        <https://xenosite.org/ns/forest/pattern/NitroaromaticReduction/nitro_neutral>,
+        <https://xenosite.org/ns/forest/rule/NitroaromaticReduction> .
+
+xmet:4000349 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NDealkylation/methyl_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/NDealkylation/methyl_carbonyl>,
+        <https://xenosite.org/ns/forest/pattern/NDealkylation/methyl_carboxylic> .
+
+xmet:4000350 skos:exactMatch <https://xenosite.org/ns/forest/pattern/NDealkylation/methylene_alcohol>,
+        <https://xenosite.org/ns/forest/pattern/NDealkylation/methylene_carbonyl>,
+        <https://xenosite.org/ns/forest/pattern/NDealkylation/methylene_carboxylic> .
+

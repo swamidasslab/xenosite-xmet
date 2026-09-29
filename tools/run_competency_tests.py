@@ -22,7 +22,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 CQ = ROOT / "data/competency/cq.yml"
 SKOS_JSON = ROOT / "data/ontology/xmet.skos.jsonld"
-SKOS_TTL = ROOT / "data/ontology/xmet.skos.ttl"
+SKOS_TTL = ROOT / "data/ontology/xmet.ttl"
 SHACL = ROOT / "data/ontology/xmet.shacl.ttl"
 MAP_DIR = ROOT / "data/mappings"
 FIXTURES = ROOT / "data/competency/fixtures/reactions.jsonl"
@@ -211,7 +211,7 @@ def main() -> int:
                 if q.get("min_results") is not None and len(got) < q["min_results"]:
                     raise AssertionError(f"SPARQL min_results {q['min_results']} > {len(got)}")
             elif typ == "shacl":
-                data = ROOT / "data/competency" / q.get("data", "../ontology/xmet.skos.ttl")
+                data = ROOT / "data/competency" / q.get("data", "../ontology/xmet.ttl")
                 shapes = ROOT / "data/competency" / q.get("shapes", "../ontology/xmet.shacl.ttl")
                 # resolve .. paths cleanly
                 data = (SPARQL_DIR / q["data"]).resolve() if "data" in q else SKOS_TTL

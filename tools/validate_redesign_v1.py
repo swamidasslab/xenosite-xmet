@@ -34,6 +34,12 @@ DEFAULT_FOREST_RULES_RS = ROOT.parent / "crates" / "xenosite-forest" / "src" / "
 TAGGER_RULE_FILES = ("xenobiotic.rules.yaml", "structural.rules.yaml")
 ALLOWED_RULE_PATTERN_PREDS = {"skos:exactMatch", "skos:closeMatch"}
 
+# Product / model names forbidden in chemical concept definitions.
+DEFINITION_PRODUCT_REF_RE = re.compile(
+    r"(?i)\b(?:metabolic\s+)?forest\b|forest\.|forest-map|\brainbow\b|"
+    r"\bxenosite\b|xenosite[.\-]"
+)
+
 DISPOSITION = "xmet:4000212"
 REACTION_CLASS = "xmet:4000213"
 REACTION_DESCRIPTOR = "xmet:4000263"
@@ -351,6 +357,25 @@ def check_unique_sssom_subjects(
             )
 
 
+def check_definition_no_product_refs(
+    findings: list[Finding], concepts: dict[str, dict[str, Any]]
+) -> None:
+    """Definitions must describe chemistry, not Forest / Xenosite / Rainbow tooling."""
+    for cid, c in concepts.items():
+        text = c.get("definition") or ""
+        if not isinstance(text, str):
+            continue
+        for m in DEFINITION_PRODUCT_REF_RE.finditer(text):
+            findings.append(
+                Finding(
+                    "definition_product_ref",
+                    cid,
+                    f"definition mentions product/tooling {m.group(0)!r} "
+                    f"(keep chemical concept wording only)",
+                )
+            )
+
+
 def check_remap(findings: list[Finding], concepts: dict[str, dict[str, Any]]) -> None:
     if not REMAP_PATH.exists():
         return
@@ -590,6 +615,22 @@ def check_relation_vocab(findings: list[Finding], concepts: dict[str, dict[str, 
     for cid in ("xmet:4000283", "xmet:4000284"):
         if cid not in concepts:
             findings.append(Finding("relation_vocab", cid, "missing suggests/always with"))
+    for cid, label in (
+        ("xmet:4000414", "operationalizes"),
+        ("xmet:4000415", "predicts"),
+        ("xmet:4000416", "recognizes"),
+        ("xmet:4000417", "enumerates"),
+    ):
+        if cid not in concepts:
+            findings.append(Finding("relation_vocab", cid, f"missing {label}"))
+        elif concepts[cid].get("preferred_label") != label:
+            findings.append(
+                Finding(
+                    "relation_vocab",
+                    cid,
+                    f"expected label {label!r}, got {concepts[cid].get('preferred_label')!r}",
+                )
+            )
 
 
 def check_dealkylation_pattern_always_with(
@@ -1338,6 +1379,7 @@ def run() -> int:
     check_five_colors_and_conjugation(findings, concepts, pm)
     check_descriptor_orthogonal(findings, concepts, pm)
     check_relation_vocab(findings, concepts)
+    check_definition_no_product_refs(findings, concepts)
     check_redundant_soft_targets(findings, concepts, pm)
     check_forest_phaseone(findings, concepts, pm)
     check_forest_nesting(findings, concepts, pm)

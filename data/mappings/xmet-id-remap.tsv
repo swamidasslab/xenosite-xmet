@@ -1053,3 +1053,7 @@ xmet:4000363		retired	quinone-like formation by product type collapsed; children
 	xmet:4000411	minted	reductive debromination under xmet:4000288 (bromide LG precision)
 	xmet:4000412	minted	reductive deiodination under xmet:4000288 (iodide LG precision)
 	xmet:4000413	minted	deethylation (heteroatom-general; mass-shift −28 Da home)
+	xmet:4000414	minted	relation vocab: operationalizes
+	xmet:4000415	minted	relation vocab: predicts (under operationalizes)
+	xmet:4000416	minted	relation vocab: recognizes (under operationalizes)
+	xmet:4000417	minted	relation vocab: enumerates (under operationalizes)

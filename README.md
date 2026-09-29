@@ -40,7 +40,7 @@ git clone git@github.com:swamidasslab/xenosite-xmet.git
 cd xenosite-xmet
 uv sync
 
-make ontology-export    # regenerate SKOS JSON-LD + TTL from xmet.yaml
+make ontology-export    # regenerate JSON-LD + xmet.ttl (SKOS + xmet: relations) from xmet.yaml
 make ontology-stats     # spine / mapping inventory
 make db-term-mapping    # requires local MetX/AMD extracts under data/
 ```

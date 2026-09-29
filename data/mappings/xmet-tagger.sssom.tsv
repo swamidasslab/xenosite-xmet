@@ -50,8 +50,10 @@ xmet:4000049	skos:exactMatch	rule:struct-deamination	semapv:ManualMappingCuratio
 xmet:4000143	skos:exactMatch	rule:struct-dearylation	semapv:ManualMappingCuration	dearylation	struct-dearylation
 xmet:4000121	skos:exactMatch	rule:struct-decarboxylation	semapv:ManualMappingCuration	decarboxylation	struct-decarboxylation
 xmet:4000147	skos:exactMatch	rule:struct-deconjugation	semapv:ManualMappingCuration	deconjugation	struct-deconjugation
+xmet:4000141	skos:exactMatch	rule:struct-decysteination	semapv:ManualMappingCuration	decysteination	struct-decysteination
 xmet:4000132	skos:exactMatch	rule:struct-deformylation	semapv:ManualMappingCuration	deformylation	struct-deformylation
 xmet:4000139	skos:exactMatch	rule:struct-deglycosidation	semapv:ManualMappingCuration	deglycosidation	struct-deglycosidation
+xmet:4000140	skos:exactMatch	rule:struct-deglutathionation	semapv:ManualMappingCuration	deglutathionation	struct-deglutathionation
 xmet:4000214	skos:exactMatch	rule:struct-dehalogenation	semapv:ManualMappingCuration	isoredox dehalogenation	struct-dehalogenation
 xmet:4000128	skos:exactMatch	rule:struct-dehydroxylation	semapv:ManualMappingCuration	dehydroxylation	struct-dehydroxylation
 xmet:4000134	skos:exactMatch	rule:struct-denitrosation	semapv:ManualMappingCuration	denitrosation	struct-denitrosation
@@ -69,6 +71,7 @@ xmet:4000084	skos:exactMatch	rule:struct-ether-cleavage	semapv:ManualMappingCura
 xmet:4000085	skos:exactMatch	rule:struct-ether-hydrolysis	semapv:ManualMappingCuration	ether hydrolysis	struct-ether-hydrolysis
 xmet:4000131	skos:exactMatch	rule:struct-formylation	semapv:ManualMappingCuration	formylation	struct-formylation
 xmet:4000181	skos:exactMatch	rule:struct-glutamine-conjugation	semapv:ManualMappingCuration	glutamine conjugation	struct-glutamine-conjugation
+xmet:4000167	skos:exactMatch	rule:struct-glutathionation	semapv:ManualMappingCuration	glutathione conjugation	struct-glutathionation
 xmet:4000180	skos:exactMatch	rule:struct-glycine-conjugation	semapv:ManualMappingCuration	glycine conjugation	struct-glycine-conjugation
 xmet:4000184	skos:exactMatch	rule:struct-glycosylation	semapv:ManualMappingCuration	glycosylation	struct-glycosylation
 xmet:4000129	skos:exactMatch	rule:struct-halogenation	semapv:ManualMappingCuration	halogenation	struct-halogenation

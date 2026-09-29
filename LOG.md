@@ -1,12 +1,23 @@
 # Lab log
 
+## 2026-09-29
+
+- Hard-fail ``definition_product_ref``: concept definitions must not mention Forest / Xenosite / Rainbow (or forest./forest-map); cleaned 52 defs to chemical prose; pytest coverage.
+
+
+## 2026-09-29
+
+- Relation vocab: minted ``operationalizes`` under concept relation with children ``predicts``, ``recognizes``, ``enumerates`` (`4000414`–`4000417`); YAML/TTL export predicates wired.
+
+
 ## 2026-09-28
 
 - Tagger SMARTS ``rule:struct-conjugated-system-remodeling``: same phenol→carbonyl
   SMARTS as quinone-like formation, **without** ``aromaticity_change: dearomatize``;
   SSSOM ``exactMatch`` to conjugated-system remodeling (``xmet:4000406``) alongside
   Forest ``QuinoneFormation``. Quinone-like (``4000059`` / struct-quinone-formation)
-  keeps the dearomatize gate.
+  keeps the dearomatize gate. Also SSSOM for ``struct-glutathionation`` /
+  ``struct-deglutathionation`` / ``struct-decysteination``.
 
 - Parent crate patch bump ``0.6.1``→``0.6.2`` with soft-link cleanup commit.
 

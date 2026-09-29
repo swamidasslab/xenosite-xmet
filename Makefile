@@ -1,6 +1,6 @@
 # xenosite-xmet — ontology authoring targets
 
-.PHONY: ontology-stats ontology-export ontology-tree ontology-fuzzy-audit db-term-mapping validate-redesign rebuild-tagger-sssom sync-tagger-emits help
+.PHONY: ontology-stats ontology-export ontology-tree ontology-fuzzy-audit forest-pattern-coverage db-term-mapping validate-redesign rebuild-tagger-sssom sync-tagger-emits help
 
 ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 UV ?= uv
@@ -12,8 +12,9 @@ help:
 	@echo "Targets:"
 	@echo "  make ontology-stats      XMET inventory / spine / mapping stats"
 	@echo "  make ontology-tree       Pretty-print full XMET tree (+ Forest SSSOM)"
+	@echo "  make forest-pattern-coverage  SPARQL Forest rule↔pattern cover stats (from scratch)"
 	@echo "  make ontology-fuzzy-audit  Fuzzy label scan for duplicates / misparenting"
-	@echo "  make ontology-export     Regenerate xmet.skos.jsonld (+ TTL) from xmet.yaml"
+	@echo "  make ontology-export     Regenerate xmet.skos.jsonld + xmet.ttl from xmet.yaml"
 	@echo "  make db-term-mapping     MetXBioDB/AMD term → XMET mapping workflow"
 	@echo "  make validate-redesign   Redesign v1 adherence (Forest/tagger SSSOM, spines, remap)"
 	@echo "  make rebuild-tagger-sssom  Refresh xmet-tagger.sssom.tsv from tagger SMARTS emits"
@@ -24,6 +25,11 @@ ontology-stats:
 
 ontology-tree:
 	@$(PY) $(ROOT)/tools/print_xmet_tree.py --ids --stats
+
+forest-pattern-coverage:
+	@# Always rebuild SKOS TTL, then SPARQL-infer covers from TTL + SSSOM (no cache).
+	@$(PY) $(ROOT)/tools/jsonld_to_ttl.py
+	@$(PY) $(ROOT)/tools/forest_pattern_coverage.py --json
 
 ontology-fuzzy-audit:
 	@$(PY) $(ROOT)/tools/fuzzy_ontology_audit.py

@@ -35,7 +35,7 @@ cargo test -p xenosite-tagger --test gold_score
 python3 crates/xenosite-tagger/tools/score_gold_set.py
 ```
 
-See `data/competency/PLAN.md`. SPARQL runs against `xmet.skos.ttl`; SHACL against
+See `data/competency/PLAN.md`. SPARQL runs against `xmet.ttl`; SHACL against
 `xmet.shacl.ttl`. Tagging CQs export to `fixtures/reactions.jsonl` for Rust.
 
 ## Promoting SMARTS into assignments

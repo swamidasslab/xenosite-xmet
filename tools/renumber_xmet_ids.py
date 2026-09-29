@@ -69,6 +69,7 @@ SKIP_NAMES = {
     "renumber_xmet_ids.py",
     "xmet.skos.jsonld",
     "xmet.skos.ttl",
+    "xmet.ttl",
     "xmet-id-renumber.tsv",  # written separately; must keep old_id column
     "xmet-id-remap.tsv",  # rewritten specially (preserve historical old_id)
 }

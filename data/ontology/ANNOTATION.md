@@ -20,14 +20,24 @@ Hierarchy lives in `parents:` / `skos:broader` only.
 
 Live inventory was renumbered densely to ``xmet:4000000``…``xmet:4000405``
 (see [`../mappings/xmet-id-renumber.tsv`](../mappings/xmet-id-renumber.tsv)).
-New mints continue sequentially from ``xmet:4000410`` (``4000406``–``4000409``
-used for conjugated-system / quinoid endpoint restructure). Never recycle a
+New mints continue sequentially from ``xmet:4000418`` (``4000406``–``4000413``
+used for conjugated-system / quinoid work; ``4000414``–``4000417`` operationalizes
+relation family). Never recycle a
 retired CURIE. Merges/retirements/renumbers:
 [`../mappings/xmet-id-remap.tsv`](../mappings/xmet-id-remap.tsv).
 
 ```bash
 uv run python tools/renumber_xmet_ids.py   # already applied; kept for replay docs
 ```
+
+Published graph: [`xmet.ttl`](xmet.ttl) (SKOS labels/hierarchy/matches **plus**
+`xmet:relatedTo` / `suggests` / `alwaysWith` / `antonymOf` and `dct:hasPart`).
+JSON-LD intermediate: [`xmet.skos.jsonld`](xmet.skos.jsonld). Regenerate with
+`make ontology-export`.
+
+**Definitions** are chemical-concept prose only. Do not name Metabolic Forest,
+Xenosite, Rainbow, or similar tooling/products in `definition:` (validator
+`definition_product_ref`).
 
 ## Inventory guidance (v0.1)
 
@@ -71,6 +81,10 @@ chemical transformation and phase I family).
 | `xmet:relatedTo` (`related_to:` in YAML) | Soft association across spines (e.g. multistep ↔ composite); not hierarchy |
 | `xmet:suggests` (`suggests:` in YAML) | Often co-applies (weaker than alwaysWith). **Match precision on both sides**. Mass-shift cues → matching reaction class (GSH +305 / NL129 → glutathione conjugation; GlcA +176 → glucuronidation; demethylation −14 → demethylation; deethylation −28 → deethylation; +16 → hydroxylation). **One general beats fan-out to all children**. Do not also list `skos:narrower` descendants of a listed target when that target is already at the right specificity (parent covers children *within* that precision). |
 | `xmet:alwaysWith` (`always_with:` in YAML) | Stronger suggests: whenever source applies, target (or a child of a category root) also applies. **Direction for leaving groups: reaction → LG** (oxidative dechlorination → chloride LG; family dehalogenation → halide LG) — not LG → reaction (a halide LG also appears in displacement conjugations, etc.). Nested under suggests in the relation vocab. Same precision-matching + no-redundant-descendant rules — list the category root once, never every child. |
+| `xmet:operationalizes` (`operationalizes:` in YAML) | Source is made concrete by target (rule, pattern, model, assay, enumeration). Parent of predicts / recognizes / enumerates in the relation vocab. |
+| `xmet:predicts` (`predicts:` in YAML) | Source (model/score) predicts applicability of target. Under operationalizes. |
+| `xmet:recognizes` (`recognizes:` in YAML) | Source (pattern/SMARTS/detector) recognizes instances of target. Under operationalizes. |
+| `xmet:enumerates` (`enumerates:` in YAML) | Source lists or covers members/cases of target. Under operationalizes. |
 | `xmet:antonymOf` (`antonyms:` in YAML) | Opposite / inverse transformation pair (symmetric) |
 | `skos:exactMatch` | True identity to an external concept (rare) |
 | `skos:closeMatch` | Similar MeSH/KEGG/Rhea/model term |

@@ -452,7 +452,7 @@ def seed_questions():
             "question": "SHACL core shape for all concepts.",
             "type": "shacl",
             "shapes": "../ontology/xmet.shacl.ttl",
-            "data": "../ontology/xmet.skos.ttl",
+            "data": "../ontology/xmet.ttl",
             "allow_warnings": False,
         },
         {

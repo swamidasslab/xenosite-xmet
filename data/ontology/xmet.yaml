@@ -2,9 +2,9 @@ scheme:
   id: xmet:scheme
   preferred_label: Xenobiotic Reaction Metabolism
   iri: https://xenosite.org/ontology/xmet#
-  definition: Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a full
-    chemical ontology. Site-localized display names use templates outside the concept scheme. SSSOM maps
-    to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO.
+  definition: Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a 
+    full chemical ontology. Site-localized display names use templates outside the concept scheme. 
+    SSSOM maps to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO.
 concepts:
 - id: xmet:4000000
   preferred_label: xenobiotic biotransformation
@@ -43,8 +43,8 @@ concepts:
   - phase 3
   - phase III
   - transport phase
-  definition: Further handling / transport / excretion-related disposition of conjugates and metabolites.
-    Disposition tag, not a reaction class.
+  definition: Further handling / transport / excretion-related disposition of conjugates and 
+    metabolites. Disposition tag, not a reaction class.
   parents:
   - xmet:4000212
 - id: xmet:4000004
@@ -55,8 +55,8 @@ concepts:
   - Rainbow stable oxygenation
   - SO class (full name)
   - stable_oxygenation
-  definition: 'Rainbow Phase I class: oxygenation that yields a stable oxygenated metabolite (aromatic/aliphatic
-    hydroxylation, epoxidation, N-oxidation, S-oxidation).'
+  definition: 'Oxygenation that yields a stable oxygenated metabolite (aromatic/aliphatic hydroxylation,
+    epoxidation, N-oxidation, S-oxidation).'
   parents:
   - xmet:4000009
 - id: xmet:4000005
@@ -67,17 +67,16 @@ concepts:
   - Rainbow unstable oxygenation
   - UO class (full name)
   - unstable_oxygenation
-  definition: 'Rainbow Phase I class: oxygenation that triggers cleavage or rearrangement (N-/O-/S-/C-dealkylation,
-    oxidative deamination, oxidative dehalogenation).'
+  definition: 'Oxygenation that triggers cleavage or rearrangement (N-/O-/S-/C-dealkylation, oxidative
+    deamination, oxidative dehalogenation).'
   parents:
   - xmet:4000009
 - id: xmet:4000006
   preferred_label: dehydrogenation
   synonyms:
   - desaturation
-  definition: 'Rainbow dehydrogenation color: extract hydrogen(s) to form a multiple bond, iminium, or
-    quinoid. Nested under oxidation. Often an elementary part of conjugated-system remodeling (including
-    quinone-like paths).'
+  definition: 'Extract hydrogen(s) to form a multiple bond, iminium, or quinoid. Nested under oxidation.
+    Often an elementary part of conjugated-system remodeling (including quinone-like paths).'
   parents:
   - xmet:4000009
   is_part_of:
@@ -86,17 +85,15 @@ concepts:
   - xmet:4000059
 - id: xmet:4000007
   preferred_label: hydrolysis
-  definition: 'Rainbow hydrolysis color: water addition cleaves amide, ester, ether, or related bonds.
-    Nested under isoredox (redox-neutral).'
+  definition: 'Water addition cleaves amide, ester, ether, or related bonds. Nested under isoredox (redox-neutral).'
   parents:
   - xmet:4000265
   related_to:
   - xmet:4000077
 - id: xmet:4000008
   preferred_label: reduction
-  definition: 'Reduction class (Rainbow reduction color): remove oxygen or add hydrogen(s) (nitro, carbonyl,
-    sulfo reduction; reductive dehalogenation; hydrogenation). Peer of oxidation and isoredox under reaction
-    class.'
+  definition: 'Remove oxygen or add hydrogen(s) (nitro, carbonyl, sulfo reduction; reductive dehalogenation;
+    hydrogenation). Peer of oxidation and isoredox under reaction class.'
   parents:
   - xmet:4000213
   related_to:
@@ -105,7 +102,7 @@ concepts:
   preferred_label: oxidation
   synonyms:
   - oxidative metabolism
-  definition: Oxidations and related increase of oxidation state. Holds Rainbow stable oxygenation, unstable
+  definition: Oxidations and related increase of oxidation state. Holds stable oxygenation, unstable
     oxygenation, and dehydrogenation.
   parents:
   - xmet:4000213
@@ -116,8 +113,8 @@ concepts:
   - xmet:4000004
 - id: xmet:4000011
   preferred_label: conjugation
-  definition: Addition of an endogenous or trapping moiety. Split into transfer conjugation (clearance-oriented)
-    and adduct formation (electrophile capture).
+  definition: Addition of an endogenous or trapping moiety. Split into transfer conjugation 
+    (clearance-oriented) and adduct formation (electrophile capture).
   parents:
   - xmet:4000213
   close_match:
@@ -146,8 +143,8 @@ concepts:
   - arene hydroxylation
   - aromatic hydroxylation to phenol
   - aromatic hydroxylation to phenol or phenolate
-  definition: Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways. Often an
-    elementary part of conjugated-system remodeling toward quinone-like species.
+  definition: Hydroxylation of an aromatic ring; often via arene oxide / NIH-shift pathways. Often 
+    an elementary part of conjugated-system remodeling toward quinone-like species.
   parents:
   - xmet:4000012
   is_part_of:
@@ -158,8 +155,8 @@ concepts:
   preferred_label: aliphatic hydroxylation
   synonyms:
   - alkyl hydroxylation
-  definition: Hydroxylation of an aliphatic carbon (not limited to methyl/methylene; see also tertiary
-    carbon hydroxylation under methine hydroxylation).
+  definition: Hydroxylation of an aliphatic carbon (not limited to methyl/methylene; see also 
+    tertiary carbon hydroxylation under methine hydroxylation).
   parents:
   - xmet:4000380
 - id: xmet:4000015
@@ -181,14 +178,14 @@ concepts:
   preferred_label: benzylic hydroxylation
   synonyms:
   - toluene side-chain hydroxylation
-  definition: Hydroxylation at a carbon adjacent to an aromatic ring (benzylic). May be methyl, methylene,
-    or methine; under hydroxylation of activated carbons.
+  definition: Hydroxylation at a carbon adjacent to an aromatic ring (benzylic). May be methyl, 
+    methylene, or methine; under hydroxylation of activated carbons.
   parents:
   - xmet:4000379
 - id: xmet:4000019
   preferred_label: allylic hydroxylation
-  definition: Hydroxylation at a carbon adjacent to a C=C bond (allylic). Under hydroxylation of activated
-    carbons; not restricted to methine sites.
+  definition: Hydroxylation at a carbon adjacent to a C=C bond (allylic). Under hydroxylation of 
+    activated carbons; not restricted to methine sites.
   parents:
   - xmet:4000379
 - id: xmet:4000020
@@ -250,15 +247,16 @@ concepts:
   preferred_label: N-oxide formation
   synonyms:
   - tertiary amine N-oxidation
-  definition: Formation of an N-oxide from a tertiary amine (or equivalent trivalent nitrogen with no
-    N–H).
+  definition: Formation of an N-oxide from a tertiary amine (or equivalent trivalent nitrogen with 
+    no N–H).
   parents:
   - xmet:4000026
 - id: xmet:4000028
   preferred_label: hydroxylamine formation
   synonyms:
   - N-hydroxylation
-  definition: Formation of a hydroxylamine by N-oxidation of a primary or secondary amine (N–H → N–OH).
+  definition: Formation of a hydroxylamine by N-oxidation of a primary or secondary amine (N–H → 
+    N–OH).
   parents:
   - xmet:4000026
 - id: xmet:4000029
@@ -268,7 +266,8 @@ concepts:
   - xmet:4000026
 - id: xmet:4000030
   preferred_label: primary amine N-oxidation
-  definition: N-oxidation of a primary amine, typically yielding a hydroxylamine (or further nitroso).
+  definition: N-oxidation of a primary amine, typically yielding a hydroxylamine (or further 
+    nitroso).
   parents:
   - xmet:4000028
 - id: xmet:4000031
@@ -310,8 +309,8 @@ concepts:
   - xmet:4000298
 - id: xmet:4000037
   preferred_label: disulfide formation
-  definition: Formation of a disulfide (R–S–S–R′) by sulfur oxidation / oxidative coupling. Does not require
-    an S=O (sulfur oxo) bond.
+  definition: Formation of a disulfide (R–S–S–R′) by sulfur oxidation / oxidative coupling. Does not
+    require an S=O (sulfur oxo) bond.
   parents:
   - xmet:4000032
 - id: xmet:4000038
@@ -370,9 +369,10 @@ concepts:
   - oxidative C–C cleavage
   - oxidative carbon–carbon cleavage
   - carbon–carbon dealkylation
-  definition: Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic C-dealkylation).
-    Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Forest cc_alcohol / cc_carbonyl share
-    this home; ox-state via alwaysWith. Quaternary site child for cc_quaternary_alcohol.
+  definition: Oxidative cleavage of a carbon–carbon bond with loss of an alkyl fragment (xenobiotic 
+    C-dealkylation). Chemically oxidative C–C cleavage, not N-/O-/S-dealkylation. Alcohol- and 
+    carbonyl-level cleavage patterns share this home; ox-state via alwaysWith. Quaternary site child
+    for quaternary C–C alcohol-level cleavage.
   parents:
   - xmet:4000042
 - id: xmet:4000047
@@ -389,7 +389,8 @@ concepts:
   preferred_label: oxidative deamination
   synonyms:
   - deamination
-  definition: α-Carbon hydroxylation of a primary (or suitable) amine releasing ammonia/amine and a carbonyl.
+  definition: α-Carbon hydroxylation of a primary (or suitable) amine releasing ammonia/amine and a 
+    carbonyl.
   parents:
   - xmet:4000318
 - id: xmet:4000050
@@ -404,8 +405,8 @@ concepts:
   preferred_label: oxidative dehalogenation
   synonyms:
   - oxidative dehalogenation
-  definition: Replacement of halogen by oxygen via oxidative pathways. Under unstable oxygenation; related
-    to isoredox dehalogenation (not a subtype of it).
+  definition: Replacement of halogen by oxygen via oxidative pathways. Under unstable oxygenation; 
+    related to isoredox dehalogenation (not a subtype of it).
   parents:
   - xmet:4000005
   related_to:
@@ -468,11 +469,10 @@ concepts:
   - conjugated π-system remodeling
   - conjugated-system transformation
   - Forest QuinoneFormation
-  definition: Coordinated multi-site remodeling that builds or extends a conjugated π-system (Forest rule
-    QuinoneFormation; tagger struct-conjugated-system-remodeling). Broader than aromatic quinoid collapse;
-    current Forest patterns only cover aromatic→quinoid endpoints. Tagger SMARTS mirrors quinone-like
-    phenol→carbonyl without a dearomatize gate. Children distinguish quinone-like species formation,
-    quinone-like endpoint transformations, and nonaromatic conjugated-system remodeling.
+  definition: Coordinated multi-site remodeling that builds or extends a conjugated π-system. 
+    Broader than aromatic quinoid collapse; pattern coverage currently emphasizes aromatic→quinoid 
+    endpoints. Children distinguish quinone-like species formation, quinone-like endpoint 
+    transformations, and nonaromatic conjugated-system remodeling.
   parents:
   - xmet:4000213
 - id: xmet:4000059
@@ -486,8 +486,7 @@ concepts:
     aromatic system are oxidized/dehydrogenated so the ring collapses into a non-aromatic conjugated quinoid
     (classical quinones, quinone-imines, quinone-methides, imine-methides). Not necessarily a composite
     pathway — an already hydroxylated precursor may need only terminating dehydrogenation. Specific multi-step
-    routes may be modeled under composite transformation. Tagger struct-quinone-formation homes here;
-    the broader Forest QuinoneFormation rule homes on conjugated-system remodeling.'
+    routes may be modeled under composite transformation.'
   parents:
   - xmet:4000406
   related_to:
@@ -499,8 +498,8 @@ concepts:
   synonyms:
   - nonaromatic conjugated-system transformation
   - non-aromatic conjugated π-system remodeling
-  definition: Conjugated-system remodeling outside aromatic→quinoid collapse. Placement shelf for Forest
-    QuinoneFormation rule breadth that current aromatic patterns do not yet cover.
+  definition: Conjugated-system remodeling outside aromatic→quinoid collapse. Placement shelf for 
+    conjugated π-system edits that current aromatic quinoid patterns do not yet cover.
   parents:
   - xmet:4000406
 - id: xmet:4000060
@@ -610,7 +609,8 @@ concepts:
   synonyms:
   - alcohol dehydrogenation
   - alcohol to aldehyde
-  definition: Dehydrogenation of an alcohol to a carbonyl (primary alcohol → aldehyde; secondary → ketone).
+  definition: Dehydrogenation of an alcohol to a carbonyl (primary alcohol → aldehyde; secondary → 
+    ketone).
   parents:
   - xmet:4000006
 - id: xmet:4000070
@@ -627,8 +627,8 @@ concepts:
   preferred_label: aldehyde oxidation
   synonyms:
   - aldehyde to carboxylic acid
-  definition: Dehydrogenation / oxidation of an aldehyde toward carboxylic acid. Sibling of alcohol oxidation
-    under dehydrogenation, not a subtype of it.
+  definition: Dehydrogenation / oxidation of an aldehyde toward carboxylic acid. Sibling of alcohol 
+    oxidation under dehydrogenation, not a subtype of it.
   parents:
   - xmet:4000006
 - id: xmet:4000073
@@ -649,24 +649,23 @@ concepts:
   preferred_label: single- to double-bond dehydrogenation
   synonyms:
   - bond unsaturation to alkene
-  definition: Dehydrogenation that converts a single bond into a double bond (Rainbow Table 1).
+  definition: Dehydrogenation that converts a single bond into a double bond.
   parents:
   - xmet:4000302
 - id: xmet:4000076
   preferred_label: double- to triple-bond dehydrogenation
   synonyms:
   - bond unsaturation to alkyne
-  definition: Dehydrogenation converting a double bond into a triple bond. Under carbon–carbon dehydrogenation
-    (not under alkane dehydrogenation).
+  definition: Dehydrogenation converting a double bond into a triple bond. Under carbon–carbon 
+    dehydrogenation (not under alkane dehydrogenation).
   parents:
   - xmet:4000395
 - id: xmet:4000077
   preferred_label: epoxide opening
   synonyms:
   - epoxide hydrolysis
-  definition: Opening of an epoxide ring (hydration to diol, or rearrangement). Under isoredox; not a
-    subtype of hydrolysis, though Forest lists EpoxideOpening with the HD ruleset operationally. Hydration
-    vs rearrangement specialize underneath.
+  definition: Opening of an epoxide ring (hydration to diol, or rearrangement). Under isoredox; not 
+    a subtype of hydrolysis. Hydration vs rearrangement specialize underneath.
   parents:
   - xmet:4000265
   related_to:
@@ -714,13 +713,12 @@ concepts:
   - xmet:4000354
 - id: xmet:4000085
   preferred_label: ether hydrolysis
-  definition: Hydrolytic cleavage of an ether bond (Rainbow hydrolysis types; distinct from oxidative
-    O-dealkylation).
+  definition: Hydrolytic cleavage of an ether bond (distinct from oxidative O-dealkylation).
   parents:
   - xmet:4000354
 - id: xmet:4000086
   preferred_label: cyanide hydrolysis
-  definition: Hydrolysis at a cyanide/nitrile center (Rainbow Table 1 hydrolysis type).
+  definition: Hydrolysis at a cyanide/nitrile center.
   parents:
   - xmet:4000355
   close_match:
@@ -729,7 +727,8 @@ concepts:
   preferred_label: dephosphorylation
   synonyms:
   - phosphate ester hydrolysis
-  definition: Hydrolytic cleavage of a phosphate ester, releasing the organic alcohol from phosphorus.
+  definition: Hydrolytic cleavage of a phosphate ester, releasing the organic alcohol from 
+    phosphorus.
   parents:
   - xmet:4000007
   antonyms:
@@ -827,9 +826,8 @@ concepts:
   preferred_label: quinone-like reduction
   definition: 'Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated
     so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines,
-    quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower
-    classical quinone term sits underneath. Reduction of such a quinoid product back toward an aromatic
-    (or less oxidized) form.'
+    quinone-methides, and imine-methides; the narrower classical quinone term sits underneath. Reduction
+    of such a quinoid product back toward an aromatic (or less oxidized) form.'
   parents:
   - xmet:4000105
   synonyms:
@@ -837,8 +835,8 @@ concepts:
   - quinone reduction
 - id: xmet:4000105
   preferred_label: carbonyl reduction
-  definition: Reduction of a carbonyl (C=O) to the corresponding alcohol by addition of hydrogen across
-    the double bond.
+  definition: Reduction of a carbonyl (C=O) to the corresponding alcohol by addition of hydrogen 
+    across the double bond.
   parents:
   - xmet:4000101
 - id: xmet:4000106
@@ -861,15 +859,15 @@ concepts:
   synonyms:
   - sulfoxide reduction
   - S-oxide reduction
-  definition: Reduction of a sulfo / sulfoxide center (Rainbow Table 1 reduction type).
+  definition: Reduction of a sulfo / sulfoxide center.
   parents:
   - xmet:4000106
   close_match:
   - xmet:4000107
 - id: xmet:4000110
   preferred_label: reductive dehalogenation
-  definition: Reductive removal of halogen. Under reduction; related to isoredox dehalogenation (not a
-    subtype of it).
+  definition: Reductive removal of halogen. Under reduction; related to isoredox dehalogenation (not
+    a subtype of it).
   parents:
   - xmet:4000008
   related_to:
@@ -906,9 +904,8 @@ concepts:
   - xmet:4000240
 - id: xmet:4000113
   preferred_label: dehydration
-  definition: Loss of water, typically via elimination (alcohol dehydration, beta-elimination, carbonyl
-    dehydration). Chemically non-redox / elimination-like; not a subtype of reduction. Forest may still
-    catalog Dehydration with the RD ruleset operationally.
+  definition: Loss of water, typically via elimination (alcohol dehydration, beta-elimination, 
+    carbonyl dehydration). Chemically non-redox / elimination-like; not a subtype of reduction.
   parents:
   - xmet:4000265
   related_to:
@@ -930,9 +927,9 @@ concepts:
   - cyano loss
   - nitrile cleavage
   - cyanide release
-  definition: Loss or cleavage of a cyano/cyanide group. Sibling of nitrile hydrolysis under nitrile bond
-    hydrolysis when the path is hydrolytic CN loss; antonym of cyanidation. Not every decyanidation is
-    carbonyl-forming nitrile hydrolysis.
+  definition: Loss or cleavage of a cyano/cyanide group. Sibling of nitrile hydrolysis under nitrile
+    bond hydrolysis when the path is hydrolytic CN loss; antonym of cyanidation. Not every 
+    decyanidation is carbonyl-forming nitrile hydrolysis.
   parents:
   - xmet:4000355
   antonyms:
@@ -1209,7 +1206,8 @@ concepts:
   synonyms:
   - CO insertion
   - carbonyl insertion
-  definition: Introduction of a carbonyl via carbonylation (distinct from carboxylation). Antonym of decarbonylation.
+  definition: Introduction of a carbonyl via carbonylation (distinct from carboxylation). Antonym of
+    decarbonylation.
   parents:
   - xmet:4000357
   antonyms:
@@ -1219,8 +1217,8 @@ concepts:
   synonyms:
   - conjugate cleavage
   - phase II deconjugation
-  definition: Removal of a previously attached conjugate moiety (deglucuronidation, desulfation, …). Not
-    a subtype of conjugation; antonym of conjugation.
+  definition: Removal of a previously attached conjugate moiety (deglucuronidation, desulfation, …).
+    Not a subtype of conjugation; antonym of conjugation.
   parents:
   - xmet:4000213
   antonyms:
@@ -1241,8 +1239,8 @@ concepts:
   - xmet:4000137
 - id: xmet:4000149
   preferred_label: O-glucuronidation
-  definition: O-glucuronidation at hydroxy (phenolic or alcoholic). Does not include acyl (carboxylate)
-    glucuronidation.
+  definition: O-glucuronidation at hydroxy (phenolic or alcoholic). Does not include acyl 
+    (carboxylate) glucuronidation.
   parents:
   - xmet:4000148
 - id: xmet:4000150
@@ -1263,8 +1261,8 @@ concepts:
   preferred_label: acyl glucuronidation
   synonyms:
   - acyl glucuronide formation
-  definition: Glucuronidation of a carboxylate to an acyl glucuronide. Sibling of O-glucuronidation (hydroxy
-    attachment); uses the carboxylate Forest pattern, not the alcohol pattern.
+  definition: Glucuronidation of a carboxylate to an acyl glucuronide. Sibling of O-glucuronidation 
+    (hydroxy attachment); uses a carboxylate attachment pattern, not the alcohol pattern.
   parents:
   - xmet:4000148
 - id: xmet:4000153
@@ -1363,8 +1361,8 @@ concepts:
   - glutathione adduct formation
   - glutathionation
   - GSH adduct formation
-  definition: Conjugation / adduct formation with glutathione (electrophile capture). Under adduct formation,
-    not transfer conjugation. Soft-suggests protein adduct.
+  definition: Conjugation / adduct formation with glutathione (electrophile capture). Under adduct 
+    formation, not transfer conjugation. Soft-suggests protein adduct.
   parents:
   - xmet:4000365
 - id: xmet:4000168
@@ -1402,8 +1400,8 @@ concepts:
   preferred_label: quinone-like glutathionation
   definition: 'Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated
     so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines,
-    quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower
-    classical quinone term sits underneath. GSH (or related thiol) conjugate addition at a quinoid electrophile.'
+    quinone-methides, and imine-methides; the narrower classical quinone term sits underneath. GSH (or
+    related thiol) conjugate addition at a quinoid electrophile.'
   parents:
   - xmet:4000374
   synonyms:
@@ -1496,7 +1494,8 @@ concepts:
   synonyms:
   - acyl-CoA formation
   - coa_conjugation
-  definition: Activation of carboxylic acids as CoA thioesters (often preceding amino acid conjugation).
+  definition: Activation of carboxylic acids as CoA thioesters (often preceding amino acid 
+    conjugation).
   parents:
   - xmet:4000369
 - id: xmet:4000186
@@ -1516,37 +1515,37 @@ concepts:
   - xmet:4000186
 - id: xmet:4000189
   preferred_label: isomerization
-  definition: Isomeric rearrangement without net redox (Rainbow excluded phase I remainder; Metabolic
-    Forest treats related rearrangements separately from the five Phase I classes).
+  definition: Isomeric rearrangement without net redox (related rearrangements sit apart from the 
+    five Phase I reaction colors).
   parents:
   - xmet:4000190
 - id: xmet:4000190
   preferred_label: rearrangement
-  definition: Non–enzyme-mediated molecular rearrangement shelf (tautomerization, isomerization, skeletal
-    rearrangement). Not a Rainbow reaction color.
+  definition: Non–enzyme-mediated molecular rearrangement shelf (tautomerization, isomerization, 
+    skeletal rearrangement). Not one of the Phase I reaction colors.
   parents:
   - xmet:4000213
 - id: xmet:4000191
   preferred_label: deacylation
-  definition: Removal of an acyl group (Rainbow excluded phase I remainder; related to hydrolysis/deacetylation).
+  definition: Removal of an acyl group (related to hydrolysis/deacetylation).
   parents:
   - xmet:4000356
 - id: xmet:4000192
   preferred_label: denitrogenation
-  definition: Metabolic loss of nitrogen from the scaffold (Rainbow excluded phase I remainder).
+  definition: Metabolic loss of nitrogen from the scaffold.
   parents:
   - xmet:4000271
 - id: xmet:4000193
   preferred_label: decarbonylation
-  definition: Metabolic loss of carbon monoxide / carbonyl fragment (Rainbow excluded phase I remainder).
+  definition: Metabolic loss of carbon monoxide / carbonyl fragment.
   parents:
   - xmet:4000358
   antonyms:
   - xmet:4000146
 - id: xmet:4000194
   preferred_label: dearomatization
-  definition: Loss of aromatic character (arene oxide, quinone-like/quinoid products, thiophene S-oxide,
-    cis-dihydrodiol, etc.).
+  definition: Loss of aromatic character (arene oxide, quinone-like/quinoid products, thiophene 
+    S-oxide, cis-dihydrodiol, etc.).
   parents:
   - xmet:4000274
   antonyms:
@@ -1554,14 +1553,16 @@ concepts:
   - xmet:4000195
 - id: xmet:4000195
   preferred_label: rearomatization
-  definition: Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol formation).
+  definition: Restoration of aromaticity after a dearomatized intermediate (e.g. NIH-shift phenol 
+    formation).
   parents:
   - xmet:4000074
   antonyms:
   - xmet:4000194
 - id: xmet:4000196
   preferred_label: ipso substitution
-  definition: Substitution at a substituted aromatic carbon (ipso), often displacing alkyl/halogen/alkoxy.
+  definition: Substitution at a substituted aromatic carbon (ipso), often displacing 
+    alkyl/halogen/alkoxy.
   parents:
   - xmet:4000013
 - id: xmet:4000197
@@ -1572,9 +1573,9 @@ concepts:
   - 1,2-migration to phenol
   - arene oxide to phenol
   - arenol formation via arene oxide
-  definition: Rearrangement of an arene oxide to a phenol (arenol) by 1,2-migration of hydrogen or a substituent
-    (NIH shift). A rearrangement step, not a subtype of arene oxide formation; related to arene oxide
-    formation as a pathway partner.
+  definition: Rearrangement of an arene oxide to a phenol (arenol) by 1,2-migration of hydrogen or a
+    substituent (NIH shift). A rearrangement step, not a subtype of arene oxide formation; related 
+    to arene oxide formation as a pathway partner.
   parents:
   - xmet:4000190
   is_part_of:
@@ -1583,8 +1584,8 @@ concepts:
   - xmet:4000024
 - id: xmet:4000198
   preferred_label: carbinolamine cleavage
-  definition: Spontaneous collapse of an α-hydroxy amine to amine + carbonyl; mechanism shared by N-dealkylation
-    and oxidative deamination.
+  definition: Spontaneous collapse of an α-hydroxy amine to amine + carbonyl; mechanism shared by 
+    N-dealkylation and oxidative deamination.
   parents:
   - xmet:4000318
 - id: xmet:4000199
@@ -1613,16 +1614,16 @@ concepts:
   - arene cis-dihydrodiol formation
   - cis-dihydroxylation
   - cis-dihydrodiol formation
-  definition: Formation of a cis-1,2-diol, typically by dioxygenase addition across an aromatic bond.
-    Under diol formation; related to hydroxylation as a common route, not a subtype of it.
+  definition: Formation of a cis-1,2-diol, typically by dioxygenase addition across an aromatic 
+    bond. Under diol formation; related to hydroxylation as a common route, not a subtype of it.
   parents:
   - xmet:4000325
   related_to:
   - xmet:4000012
 - id: xmet:4000204
   preferred_label: hydration
-  definition: Addition of water to a substrate (IUPAC hydration). May or may not cleave a bond; does not
-    imply hydrolytic solvolysis by itself.
+  definition: Addition of water to a substrate (IUPAC hydration). May or may not cleave a bond; does
+    not imply hydrolytic solvolysis by itself.
   parents:
   - xmet:4000007
 - id: xmet:4000205
@@ -1659,8 +1660,8 @@ concepts:
   - xmet:4000369
 - id: xmet:4000211
   preferred_label: radical formation
-  definition: Formation of a radical metabolite intermediate. Under rearrangement as a sparse xenobiotic
-    path remainder — not a skeletal connectivity rearrangement.
+  definition: Formation of a radical metabolite intermediate. Under rearrangement as a sparse 
+    xenobiotic path remainder — not a skeletal connectivity rearrangement.
   parents:
   - xmet:4000190
 - id: xmet:4000212
@@ -1669,8 +1670,8 @@ concepts:
   - disposition_stage
   - metabolism phase
   - phase
-  definition: Conventional ADME disposition framing (Phase I / II / III and elimination). Tags for reaction
-    classes — not chemical hierarchy parents.
+  definition: Conventional ADME disposition framing (Phase I / II / III and elimination). Tags for 
+    reaction classes — not chemical hierarchy parents.
   parents:
   - xmet:4000000
 - id: xmet:4000213
@@ -1679,8 +1680,8 @@ concepts:
   - reaction_class
   - chemical transformation
   - transformation
-  definition: Chemist-facing chemical transformation classes for xenobiotic metabolism (Rainbow colors,
-    conjugation, rearrangement, composites).
+  definition: Chemist-facing chemical transformation classes for xenobiotic metabolism (oxidation 
+    colors, conjugation, rearrangement, composites).
   parents:
   - xmet:4000000
 - id: xmet:4000214
@@ -1744,15 +1745,15 @@ concepts:
   synonyms:
   - structural_delta
   - delta
-  definition: Thin shelf for structural-edit descriptors common in med-chem discourse (not engine topology
-    / formula-delta taxonomies). Mass cues live under mass shift; aromaticity under aromaticity effect;
-    ring under ring effect.
+  definition: Thin shelf for structural-edit descriptors common in med-chem discourse (not engine 
+    topology / formula-delta taxonomies). Mass cues live under mass shift; aromaticity under 
+    aromaticity effect; ring under ring effect.
   parents:
   - xmet:4000263
 - id: xmet:4000221
   preferred_label: mass shift
-  definition: High-signal MS mass difference or neutral-loss cues used in drug-metabolism structure elucidation
-    (not a dump of all formula deltas).
+  definition: High-signal MS mass difference or neutral-loss cues used in drug-metabolism structure 
+    elucidation (not a dump of all formula deltas).
   parents:
   - xmet:4000263
 - id: xmet:4000222
@@ -1768,7 +1769,7 @@ concepts:
   - +16 Da
   - monooxygenation
   - oxygen gain mass shift
-  definition: Nominal +16 Da (monooxygenation to alcohol / oxide). Suggests hydroxylation; +32 Da
+  definition: Nominal +16 Da (monooxygenation to alcohol / oxide). Suggests hydroxylation; +32 Da 
     dioxygenation is related.
   parents:
   - xmet:4000221
@@ -1839,8 +1840,8 @@ concepts:
   synonyms:
   - leaving_group
   - departing group
-  definition: Fragment or moiety that departs in cleavage / substitution / dealkylation / hydrolysis.
-    Pragmatic stop-word filter for metabolite annotation.
+  definition: Fragment or moiety that departs in cleavage / substitution / dealkylation / 
+    hydrolysis. Pragmatic stop-word filter for metabolite annotation.
   parents:
   - xmet:4000263
 - id: xmet:4000230
@@ -1904,8 +1905,8 @@ concepts:
   - xmet:4000236
 - id: xmet:4000241
   preferred_label: alcohol leaving fragment
-  definition: Alcohol / alkanol-equivalent fragment released as a coproduct (e.g. methanol from demethylation
-    to alcohol level, ethanol from deethylation), or from ether cleavage / hydrolysis.
+  definition: Alcohol / alkanol-equivalent fragment released as a coproduct (e.g. methanol from 
+    demethylation to alcohol level, ethanol from deethylation), or from ether cleavage / hydrolysis.
   parents:
   - xmet:4000359
 - id: xmet:4000242
@@ -1950,20 +1951,20 @@ concepts:
   - xmet:4000362
 - id: xmet:4000250
   preferred_label: formaldehyde leaving fragment
-  definition: Formaldehyde-equivalent leaving fragment from demethylation / carbinolamine cleavage. A
-    specialized aldehyde leaving group.
+  definition: Formaldehyde-equivalent leaving fragment from demethylation / carbinolamine cleavage. 
+    A specialized aldehyde leaving group.
   parents:
   - xmet:4000396
 - id: xmet:4000251
   preferred_label: acetaldehyde leaving fragment
-  definition: Acetaldehyde-equivalent leaving fragment from deethylation. A specialized aldehyde leaving
-    group.
+  definition: Acetaldehyde-equivalent leaving fragment from deethylation. A specialized aldehyde 
+    leaving group.
   parents:
   - xmet:4000396
 - id: xmet:4000252
   preferred_label: small alkyl leaving group
-  definition: Small alkyl (or closely related unsaturated alkyl) carbon fragment that departs (methyl,
-    ethyl, propyl, isopropyl, benzyl, allyl, …).
+  definition: Small alkyl (or closely related unsaturated alkyl) carbon fragment that departs 
+    (methyl, ethyl, propyl, isopropyl, benzyl, allyl, …).
   parents:
   - xmet:4000229
 - id: xmet:4000253
@@ -2008,8 +2009,8 @@ concepts:
   synonyms:
   - aldehyde leaving fragment
   - carbonyl / aldehyde leaving fragment
-  definition: Carbonyl-containing fragment released in cleavage or dealkylation paths. Includes aldehyde
-    leaving groups (formaldehyde, acetaldehyde, …) and related carbonyl equivalents.
+  definition: Carbonyl-containing fragment released in cleavage or dealkylation paths. Includes 
+    aldehyde leaving groups (formaldehyde, acetaldehyde, …) and related carbonyl equivalents.
   parents:
   - xmet:4000229
 - id: xmet:4000261
@@ -2017,8 +2018,8 @@ concepts:
   synonyms:
   - heteroatom leaving group
   - small-molecule leaving group
-  definition: Heteroatom-centered or small inorganic/organic molecule that departs (water, hydrogen, alcohol/phenol/amine/thiol
-    fragments, oxyanions, cyanide, …).
+  definition: Heteroatom-centered or small inorganic/organic molecule that departs (water, hydrogen,
+    alcohol/phenol/amine/thiol fragments, oxyanions, cyanide, …).
   parents:
   - xmet:4000229
 - id: xmet:4000262
@@ -2033,8 +2034,8 @@ concepts:
   preferred_label: reaction descriptor
   synonyms:
   - reaction_descriptor
-  definition: Orthogonal descriptors (leaving group, ring/aromaticity effect, cleavage, mass shift, multistep)
-    used alongside reaction class.
+  definition: Orthogonal descriptors (leaving group, ring/aromaticity effect, cleavage, mass shift, 
+    multistep) used alongside reaction class.
   parents:
   - xmet:4000000
 - id: xmet:4000264
@@ -2042,8 +2043,8 @@ concepts:
   synonyms:
   - elimination or excretion
   - excretion
-  definition: Elimination or excretion disposition tag for xenobiotic clearance from the organism (urine,
-    bile, breath, …).
+  definition: Elimination or excretion disposition tag for xenobiotic clearance from the organism 
+    (urine, bile, breath, …).
   parents:
   - xmet:4000212
 - id: xmet:4000265
@@ -2051,8 +2052,8 @@ concepts:
   synonyms:
   - redox-neutral transformation
   - isoredox class
-  definition: Redox-neutral transformations (Rainbow sense). Holds hydrolysis and related water-mediated
-    bond breaks.
+  definition: Redox-neutral transformations. Holds hydrolysis and related water-mediated bond 
+    breaks.
   parents:
   - xmet:4000213
 - id: xmet:4000266
@@ -2060,8 +2061,9 @@ concepts:
   synonyms:
   - metabolic transfer conjugation
   - Phase II transfer conjugation
-  definition: Metabolic transfer of an endogenous moiety (glucuronide, sulfate, acetyl, methyl, amino
-    acid, glycosyl, CoA, …) typically supporting clearance. Distinct from reactive adduct formation.
+  definition: Metabolic transfer of an endogenous moiety (glucuronide, sulfate, acetyl, methyl, 
+    amino acid, glycosyl, CoA, …) typically supporting clearance. Distinct from reactive adduct 
+    formation.
   parents:
   - xmet:4000011
 - id: xmet:4000267
@@ -2069,8 +2071,8 @@ concepts:
   synonyms:
   - reactive-species capture conjugation
   - adduct conjugation
-  definition: Electrophile capture / macromolecular or trapping adduct formation (GSH, protein, DNA, cyanide).
-    Distinct from transfer conjugation.
+  definition: Electrophile capture / macromolecular or trapping adduct formation (GSH, protein, DNA,
+    cyanide). Distinct from transfer conjugation.
   parents:
   - xmet:4000011
 - id: xmet:4000268
@@ -2078,16 +2080,16 @@ concepts:
   synonyms:
   - protein adduct
   - protein binding adduct
-  definition: Covalent adduct formation with protein nucleophiles. Often suggested by soft-electrophile
-    / GSH-trapping evidence.
+  definition: Covalent adduct formation with protein nucleophiles. Often suggested by 
+    soft-electrophile / GSH-trapping evidence.
   parents:
   - xmet:4000367
 - id: xmet:4000269
   preferred_label: DNA adduct formation
   synonyms:
   - DNA adduct
-  definition: Covalent adduct formation with DNA nucleophiles. Often suggested by hard-electrophile /
-    cyanide-trapping evidence.
+  definition: Covalent adduct formation with DNA nucleophiles. Often suggested by hard-electrophile 
+    / cyanide-trapping evidence.
   parents:
   - xmet:4000367
 - id: xmet:4000270
@@ -2096,14 +2098,14 @@ concepts:
   - cyanide trapping
   - cyanide adduct formation
   - CN trapping
-  definition: Trapping of hard electrophiles (e.g. iminium) with cyanide. Distinct from cyanide as a leaving
-    group. Soft-suggests DNA adduct formation.
+  definition: Trapping of hard electrophiles (e.g. iminium) with cyanide. Distinct from cyanide as a
+    leaving group. Soft-suggests DNA adduct formation.
   parents:
   - xmet:4000366
 - id: xmet:4000271
   preferred_label: skeletal rearrangement
-  definition: Rearrangement that changes atom connectivity of the heavy-atom skeleton (sparse in xenobiotic
-    metabolism).
+  definition: Rearrangement that changes atom connectivity of the heavy-atom skeleton (sparse in 
+    xenobiotic metabolism).
   parents:
   - xmet:4000190
 - id: xmet:4000272
@@ -2111,8 +2113,8 @@ concepts:
   synonyms:
   - composite
   - composite pathway
-  definition: Multi-step or multi-part transformation described as a unit; constituents linked via has
-    part / is part of.
+  definition: Multi-step or multi-part transformation described as a unit; constituents linked via 
+    has part / is part of.
   parents:
   - xmet:4000213
   related_to:
@@ -2128,8 +2130,8 @@ concepts:
   synonyms:
   - aromaticity change
   - aromaticity descriptor
-  definition: Gain or loss of aromatic character accompanying a transformation (aromatization / rearomatization
-    / dearomatization).
+  definition: Gain or loss of aromatic character accompanying a transformation (aromatization / 
+    rearomatization / dearomatization).
   parents:
   - xmet:4000263
 - id: xmet:4000275
@@ -2150,8 +2152,8 @@ concepts:
   - xmet:4000275
 - id: xmet:4000278
   preferred_label: fragmenting cleavage
-  definition: Cleavage yields two or more xenobiotic-derived metabolites that each deserve product-level
-    identity (not collapsed to leaving group).
+  definition: Cleavage yields two or more xenobiotic-derived metabolites that each deserve 
+    product-level identity (not collapsed to leaving group).
   parents:
   - xmet:4000275
 - id: xmet:4000279
@@ -2161,8 +2163,8 @@ concepts:
   - NL 129
   - pyroglutamate neutral loss
   - 129 Da neutral loss
-  definition: Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting glutathione conjugation
-    / GSH adduct.
+  definition: Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting glutathione 
+    conjugation / GSH adduct.
   parents:
   - xmet:4000228
   suggests:
@@ -2208,8 +2210,8 @@ concepts:
   synonyms:
   - alwaysWith
   - xmet:alwaysWith
-  definition: Whenever this term applies, the target also applies (or a term under the target if it is
-    a category root). Stronger form of suggests.
+  definition: Whenever this term applies, the target also applies (or a term under the target if it 
+    is a category root). Stronger form of suggests.
   parents:
   - xmet:4000283
 - id: xmet:4000285
@@ -2232,6 +2234,41 @@ concepts:
   - xmet:4000281
   exact_match:
   - dcterms:isPartOf
+- id: xmet:4000414
+  preferred_label: operationalizes
+  synonyms:
+  - operationalizes
+  - xmet:operationalizes
+  definition: Source is made concrete by target (rule, pattern, model, assay, or enumeration that 
+    implements or applies the source concept).
+  parents:
+  - xmet:4000281
+- id: xmet:4000415
+  preferred_label: predicts
+  synonyms:
+  - predicts
+  - xmet:predicts
+  definition: Source (model or score) predicts applicability or occurrence of target. Under 
+    operationalizes.
+  parents:
+  - xmet:4000414
+- id: xmet:4000416
+  preferred_label: recognizes
+  synonyms:
+  - recognizes
+  - xmet:recognizes
+  definition: Source (pattern, SMARTS, or detector) recognizes instances of target. Under 
+    operationalizes.
+  parents:
+  - xmet:4000414
+- id: xmet:4000417
+  preferred_label: enumerates
+  synonyms:
+  - enumerates
+  - xmet:enumerates
+  definition: Source lists or covers members/cases of target. Under operationalizes.
+  parents:
+  - xmet:4000414
 - id: xmet:4000287
   preferred_label: aromatic epoxidation
   synonyms:
@@ -2242,29 +2279,30 @@ concepts:
   - xmet:4000290
 - id: xmet:4000288
   preferred_label: reductive C–halogen cleavage
-  definition: Reductive cleavage of a carbon–halogen bond with loss of halide and retention of carbon
-    saturation (no new C=C required).
+  definition: Reductive cleavage of a carbon–halogen bond with loss of halide and retention of 
+    carbon saturation (no new C=C required).
   parents:
   - xmet:4000110
   always_with:
   - xmet:4000236
 - id: xmet:4000289
   preferred_label: reductive dehalogenation to alkene
-  definition: Reductive loss of halide accompanied by formation of a C=C bond between the halogen-bearing
-    carbon and an adjacent carbon.
+  definition: Reductive loss of halide accompanied by formation of a C=C bond between the 
+    halogen-bearing carbon and an adjacent carbon.
   parents:
   - xmet:4000110
   always_with:
   - xmet:4000236
 - id: xmet:4000290
   preferred_label: epoxide ring formation
-  definition: Formation of a three-membered epoxide ring from a C=C (or C=N) bond by oxygen addition.
+  definition: Formation of a three-membered epoxide ring from a C=C (or C=N) bond by oxygen 
+    addition.
   parents:
   - xmet:4000022
 - id: xmet:4000291
   preferred_label: methine hydroxylation
-  definition: Hydroxylation at a methine carbon (R3C–H / aromatic CH; Forest Hydroxylation/h matches [#6h1]).
-    Carbon-class shelf under hydroxylation.
+  definition: Hydroxylation at a methine carbon (R3C–H / aromatic CH). Carbon-class shelf under 
+    hydroxylation.
   parents:
   - xmet:4000012
 - id: xmet:4000292
@@ -2274,14 +2312,15 @@ concepts:
   - xmet:4000012
 - id: xmet:4000293
   preferred_label: hydrolytic bond cleavage
-  definition: Hydrolysis that cleaves a bond to N, O, or S adjacent to a carbonyl (or thiocarbonyl), releasing
-    the heteroatom fragment.
+  definition: Hydrolysis that cleaves a bond to N, O, or S adjacent to a carbonyl (or thiocarbonyl),
+    releasing the heteroatom fragment.
   parents:
   - xmet:4000007
 - id: xmet:4000294
   preferred_label: carbonyl hydration with cleavage
-  definition: Addition of water at a carbonyl (or thiocarbonyl) with cleavage of an adjacent heteroatom
-    bond. A specialized hydration (and hydrolytic cleavage), not the parent of general hydration.
+  definition: Addition of water at a carbonyl (or thiocarbonyl) with cleavage of an adjacent 
+    heteroatom bond. A specialized hydration (and hydrolytic cleavage), not the parent of general 
+    hydration.
   parents:
   - xmet:4000204
 - id: xmet:4000295
@@ -2321,7 +2360,8 @@ concepts:
   - xmet:4000101
 - id: xmet:4000301
   preferred_label: thioether C–S or O–S cleavage
-  definition: Reductive cleavage of a sulfur–carbon or sulfur–oxygen bond in a thioether or related context.
+  definition: Reductive cleavage of a sulfur–carbon or sulfur–oxygen bond in a thioether or related 
+    context.
   parents:
   - xmet:4000106
 - id: xmet:4000302
@@ -2336,7 +2376,8 @@ concepts:
   - xmet:4000006
 - id: xmet:4000304
   preferred_label: alcohol dehydration
-  definition: Loss of water from an alcohol (or related C/N–OH), yielding unsaturation or fragmentation.
+  definition: Loss of water from an alcohol (or related C/N–OH), yielding unsaturation or 
+    fragmentation.
   parents:
   - xmet:4000113
 - id: xmet:4000305
@@ -2372,32 +2413,32 @@ concepts:
   - xmet:4000236
 - id: xmet:4000310
   preferred_label: 1,2-halide migration with hydroxylation
-  definition: Oxidative dehalogenation with 1,2-migration of halide onto an adjacent carbon and hydroxylation
-    at the original site.
+  definition: Oxidative dehalogenation with 1,2-migration of halide onto an adjacent carbon and 
+    hydroxylation at the original site.
   parents:
   - xmet:4000051
   always_with:
   - xmet:4000236
 - id: xmet:4000311
   preferred_label: geminal dihalide to carboxylic acid
-  definition: Oxidative conversion of a geminal dihalide carbon to a carboxylic acid with loss of both
-    halides.
+  definition: Oxidative conversion of a geminal dihalide carbon to a carboxylic acid with loss of 
+    both halides.
   parents:
   - xmet:4000051
   always_with:
   - xmet:4000236
 - id: xmet:4000312
   preferred_label: geminal dihalide to geminal diol
-  definition: Oxidative conversion of a geminal dihalide to a geminal diol (hydrate) with loss of both
-    halides.
+  definition: Oxidative conversion of a geminal dihalide to a geminal diol (hydrate) with loss of 
+    both halides.
   parents:
   - xmet:4000051
   always_with:
   - xmet:4000236
 - id: xmet:4000313
   preferred_label: nitro N–O cleavage
-  definition: Partial reduction of a nitro group by cleavage of an N–O bond (covers charged, anionic,
-    and neutral nitro representations used in matching).
+  definition: Partial reduction of a nitro group by cleavage of an N–O bond (covers charged, 
+    anionic, and neutral nitro representations used in matching).
   parents:
   - xmet:4000375
 - id: xmet:4000314
@@ -2412,7 +2453,7 @@ concepts:
   - xmet:4000375
 - id: xmet:4000316
   preferred_label: quaternary C–heteroatom dealkylation
-  definition: Dealkylation cleaving a quaternary carbon–heteroatom bond. Ox-state via Forest alwaysWith
+  definition: Dealkylation cleaving a quaternary carbon–heteroatom bond. Ox-state via alwaysWith 
     (alcohol-level), not hierarchy.
   parents:
   - xmet:4000343
@@ -2420,8 +2461,8 @@ concepts:
   - quaternary C–heteroatom dealkylation to alcohol
 - id: xmet:4000317
   preferred_label: quaternary C-dealkylation
-  definition: C-dealkylation at a quaternary carbon (oxidative C–C cleavage). Ox-state via Forest alwaysWith
-    (alcohol-level).
+  definition: C-dealkylation at a quaternary carbon (oxidative C–C cleavage). Ox-state via 
+    alwaysWith (alcohol-level).
   parents:
   - xmet:4000046
   synonyms:
@@ -2429,15 +2470,15 @@ concepts:
   - quaternary C-dealkylation to alcohol
 - id: xmet:4000318
   preferred_label: hemiaminal collapse dealkylation
-  definition: Dealkylation via hemiaminal/hemiacetal/hemithioacetal collapse. alwaysWith encodes aldehyde-level
-    cleaved carbon and no discrete alkyl leaving group.
+  definition: Dealkylation via hemiaminal/hemiacetal/hemithioacetal collapse. alwaysWith encodes 
+    aldehyde-level cleaved carbon and no discrete alkyl leaving group.
   parents:
   - xmet:4000343
 - id: xmet:4000319
   preferred_label: dehydrogenation to phenol
-  definition: A dehydrogenation path whose product site is a phenol (aromatic or phenolic C–OH), often
-    a precursor to quinone-like oxidation in which a second site is later dehydrogenated and aromaticity
-    collapses.
+  definition: A dehydrogenation path whose product site is a phenol (aromatic or phenolic C–OH), 
+    often a precursor to quinone-like oxidation in which a second site is later dehydrogenated and 
+    aromaticity collapses.
   parents:
   - xmet:4000006
 - id: xmet:4000320
@@ -2447,8 +2488,8 @@ concepts:
   - xmet:4000006
 - id: xmet:4000321
   preferred_label: dehydrogenation to alkyl methide site
-  definition: A dehydrogenation path whose product site is an alkyl carbon in a methide-forming context
-    (methyl, methylene, or methine).
+  definition: A dehydrogenation path whose product site is an alkyl carbon in a methide-forming 
+    context (methyl, methylene, or methine).
   parents:
   - xmet:4000006
 - id: xmet:4000322
@@ -2456,9 +2497,9 @@ concepts:
   synonyms:
   - dearomatizing hydrogenation
   - resonance-path hydrogenation
-  definition: Hydrogenation along a conjugated bond path that adds hydrogen at the path end (including
-    dearomatizing reductions of aromatic systems). The path end may be any atom kept in place; a carbonyl
-    oxygen end yields the corresponding alcohol.
+  definition: Hydrogenation along a conjugated bond path that adds hydrogen at the path end 
+    (including dearomatizing reductions of aromatic systems). The path end may be any atom kept in 
+    place; a carbonyl oxygen end yields the corresponding alcohol.
   parents:
   - xmet:4000090
 - id: xmet:4000323
@@ -2507,8 +2548,8 @@ concepts:
   - trans-dihydrodiol formation
   - trans-1,2-diol formation
   - epoxide hydration to trans-diol
-  definition: Formation of a trans-1,2-diol (trans-dihydrodiol). Product stereochemistry class under diol
-    formation; often produced by epoxide hydration but not defined as a subtype of it.
+  definition: Formation of a trans-1,2-diol (trans-dihydrodiol). Product stereochemistry class under
+    diol formation; often produced by epoxide hydration but not defined as a subtype of it.
   parents:
   - xmet:4000325
   is_part_of:
@@ -2522,10 +2563,10 @@ concepts:
   - phenol or aniline to quinoid
   - quinone C–heteroatom dehydrogenation
   - hydroxy/amino quinoid endpoint dehydrogenation
-  definition: Ring carbon bound to OH or NH₂/NHR dehydrogenates to a quinoid C=O or C=NH/C=NR end under
-    quinone-like endpoint transformations (Forest QuinoneFormation/single_to_double SMARTS [#6R:1][#8H,#7D1H2,#7D2H1:2]).
-    Phenolic and anilinic children specialize the heteroatom. Not the shared single_to_double edit used
-    internally by methide, iminium, or dealkylate patterns; not methide-end.
+  definition: Ring carbon bound to OH or NH₂/NHR dehydrogenates to a quinoid C=O or C=NH/C=NR end 
+    under quinone-like endpoint transformations. Phenolic and anilinic children specialize the 
+    heteroatom. Distinct from methide-end or shared single-to-double edits used inside methide, 
+    iminium, or dealkylative quinoid paths.
   parents:
   - xmet:4000364
 - id: xmet:4000408
@@ -2533,8 +2574,8 @@ concepts:
   synonyms:
   - phenol to quinoid carbonyl end
   - ring C–OH quinoid dehydrogenation
-  definition: Ring carbon–OH dehydrogenates to a quinoid carbonyl end ([#6R][#8H] specialization of hydroxy/amino
-    ring-end dehydrogenation).
+  definition: Ring carbon–OH dehydrogenates to a quinoid carbonyl end ([#6R][#8H] specialization of 
+    hydroxy/amino ring-end dehydrogenation).
   parents:
   - xmet:4000327
 - id: xmet:4000409
@@ -2553,10 +2594,9 @@ concepts:
   - Forest QuinoneFormation/add_carbonyl_o
   - quinoid carbonyl-oxygen addition
   - aromatic CH oxygenation to quinoid carbonyl
-  definition: Install a quinoid carbonyl end at an aromatic CH (Forest QuinoneFormation/add_carbonyl_o)
-    under quinone-like endpoint transformations. One-hop end state of hydroxylation followed by dehydrogenation
-    (Forest canonical plan; has_part those elementary classes); also used in multi-end paths (e.g. benzene→benzoquinone
-    via two ends).
+  definition: Install a quinoid carbonyl end at an aromatic CH under quinone-like endpoint 
+    transformations. One-hop end state of hydroxylation followed by dehydrogenation (has_part those 
+    elementary classes); also used in multi-end paths (e.g. benzene→benzoquinone via two ends).
   parents:
   - xmet:4000364
   has_part:
@@ -2568,10 +2608,10 @@ concepts:
   - Forest QuinoneFormation/replace_halogen
   - quinoid oxidative dehalogenation endpoint
   - aryl halide to quinoid carbonyl
-  definition: Aryl halide → quinoid carbonyl end with dearomatization (Forest QuinoneFormation/replace_halogen)
-    under quinone-like endpoint transformations. One-hop end state of oxidative dehalogenation followed
-    by dehydrogenation when oxygen must be installed (Forest canonical plan; has_part those elementary
-    classes). Not identical to the elementary oxidative dehalogenation rule alone.
+  definition: Aryl halide → quinoid carbonyl end with dearomatization under quinone-like endpoint 
+    transformations. One-hop end state of oxidative dehalogenation followed by dehydrogenation when 
+    oxygen must be installed (has_part those elementary classes). Not identical to the elementary 
+    oxidative dehalogenation reaction alone.
   parents:
   - xmet:4000364
   has_part:
@@ -2583,9 +2623,9 @@ concepts:
   - Forest QuinoneFormation/dealkylate
   - dealkylative quinone-like formation
   - quinone formation with dealkylation
-  definition: Cleave an N/O-alkyl on a ring heteroatom while forming a quinoid end (Forest QuinoneFormation/dealkylate)
-    under quinone-like endpoint transformations. Related to dealkylation but scoped as a quinoid-forming
-    endpoint, not the general dealkylation rule.
+  definition: Cleave an N/O-alkyl on a ring heteroatom while forming a quinoid end under 
+    quinone-like endpoint transformations. Related to dealkylation but scoped as a quinoid-forming 
+    endpoint, not the general dealkylation reaction.
   parents:
   - xmet:4000364
   related_to:
@@ -2597,53 +2637,48 @@ concepts:
   - xmet:4000273
 - id: xmet:4000331
   preferred_label: epoxide methyl-sulfone sulfation
-  definition: 'Forest Sulfation/epoxide_methyl_sulfone: sulfation path yielding a methyl-sulfone motif
-    from an epoxide partner.'
+  definition: 'Sulfation path yielding a methyl-sulfone motif from an epoxide partner.'
   parents:
   - xmet:4000158
 - id: xmet:4000332
   preferred_label: thiol glutathionation
   synonyms:
   - GSH thiol conjugation
-  definition: 'Forest Glutathionation/thiol: GSH conjugation at a thiol electrophile / disulfide-exchange
-    partner.'
+  definition: 'GSH conjugation at a thiol electrophile / disulfide-exchange partner.'
   parents:
   - xmet:4000374
 - id: xmet:4000333
   preferred_label: alkene glutathionation
   synonyms:
   - GSH alkene addition
-  definition: 'Forest Glutathionation/alkene: GSH addition across an alkene (non-Michael or general olefin
-    path).'
+  definition: 'GSH addition across an alkene (non-Michael or general olefin path).'
   parents:
   - xmet:4000372
 - id: xmet:4000334
   preferred_label: carbonyl glutathionation
   synonyms:
   - GSH carbonyl addition
-  definition: 'Forest Glutathionation/carbonyl: GSH addition to a carbonyl electrophile.'
+  definition: 'GSH addition to a carbonyl electrophile.'
   parents:
   - xmet:4000372
 - id: xmet:4000335
   preferred_label: mesylate glutathionation
   synonyms:
   - GSH mesylate displacement
-  definition: 'Forest Glutathionation/mesylate: GSH displacement of a mesylate (or related sulfonate)
-    leaving group.'
+  definition: 'GSH displacement of a mesylate (or related sulfonate) leaving group.'
   parents:
   - xmet:4000373
 - id: xmet:4000336
   preferred_label: N-quaternary dealkylation
-  definition: N-dealkylation at a quaternary carbon attached to nitrogen. Cleaved-carbon oxidation state
-    is carried by Forest pattern alwaysWith (alcohol-level), not by hierarchy.
+  definition: N-dealkylation at a quaternary carbon attached to nitrogen. Cleaved-carbon oxidation 
+    state is carried by alwaysWith (alcohol-level), not by hierarchy.
   parents:
   - xmet:4000348
   synonyms:
   - N-quaternary dealkylation to alcohol
 - id: xmet:4000337
   preferred_label: N-hemiaminal collapse dealkylation
-  definition: 'Forest NDealkylation/hemiaminal: hemiaminal collapse after N-oxidation / carbinolamine
-    path.'
+  definition: 'Hemiaminal collapse after N-oxidation / carbinolamine path (N-centered).'
   parents:
   - xmet:4000348
 - id: xmet:4000338
@@ -2674,40 +2709,41 @@ concepts:
   - antonymOf
   - xmet:antonymOf
   - antonym
-  definition: Opposite / inverse transformation sense (e.g. hydroxylation vs dehydroxylation). Symmetric.
+  definition: Opposite / inverse transformation sense (e.g. hydroxylation vs dehydroxylation). 
+    Symmetric.
   parents:
   - xmet:4000281
 - id: xmet:4000343
   preferred_label: dealkylation of alkyl carbons
-  definition: Dealkylation distinguished by which alkyl carbon is lost (methyl, methylene, methine, quaternary,
-    or C–C) and the oxidation state of the released fragment.
+  definition: Dealkylation distinguished by which alkyl carbon is lost (methyl, methylene, methine, 
+    quaternary, or C–C) and the oxidation state of the released fragment.
   parents:
   - xmet:4000042
   synonyms:
   - alkyl-carbon dealkylation
 - id: xmet:4000344
   preferred_label: demethylation
-  definition: Oxidative demethylation at N/O/S (heteroatom-general). Forest methyl_* patterns share this
-    home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. O-/S-demethylation specialize
-    by heteroatom underneath.
+  definition: Oxidative demethylation at N/O/S (heteroatom-general). Methyl-cleavage patterns share 
+    this home; cleaved-carbon ox-state and released fragment via mapping alwaysWith. 
+    O-/S-demethylation specialize by heteroatom underneath.
   parents:
   - xmet:4000343
 - id: xmet:4000413
   preferred_label: deethylation
-  definition: Oxidative deethylation at N/O (heteroatom-general). Parallel to demethylation; N- and O-deethylation
-    specialize by heteroatom elsewhere in the tree (single-parent homes).
+  definition: Oxidative deethylation at N/O (heteroatom-general). Parallel to demethylation; N- and 
+    O-deethylation specialize by heteroatom elsewhere in the tree (single-parent homes).
   parents:
   - xmet:4000343
 - id: xmet:4000345
   preferred_label: methylene dealkylation
-  definition: Dealkylation at a methylene attached to N/O/S. Forest methylene_* patterns share this home;
-    ox-state/fragment via alwaysWith. O-deethylation specializes underneath.
+  definition: Dealkylation at a methylene attached to N/O/S. Methylene-cleavage patterns share this 
+    home; ox-state/fragment via alwaysWith. O-deethylation specializes underneath.
   parents:
   - xmet:4000343
 - id: xmet:4000346
   preferred_label: methine dealkylation
-  definition: Dealkylation at a methine attached to N/O/S. Forest methine_* patterns share this home;
-    ox-state via alwaysWith.
+  definition: Dealkylation at a methine attached to N/O/S. Methine-cleavage patterns share this 
+    home; ox-state via alwaysWith.
   parents:
   - xmet:4000343
 - id: xmet:4000347
@@ -2717,14 +2753,15 @@ concepts:
   - xmet:4000043
 - id: xmet:4000348
   preferred_label: N-dealkylation of alkyl carbons
-  definition: N-dealkylation distinguished by which alkyl carbon is lost and the oxidation state of the
-    released fragment.
+  definition: N-dealkylation distinguished by which alkyl carbon is lost and the oxidation state of 
+    the released fragment.
   parents:
   - xmet:4000043
 - id: xmet:4000349
   preferred_label: N-demethylation
-  definition: Oxidative N–methyl cleavage (N-demethylation). Forest methyl_* patterns share this home;
-    cleaved-carbon oxidation state and released fragment are distinguished via mapping alwaysWith.
+  definition: Oxidative N–methyl cleavage (N-demethylation). Methyl-cleavage patterns share this 
+    home; cleaved-carbon oxidation state and released fragment are distinguished via mapping 
+    alwaysWith.
   parents:
   - xmet:4000348
   synonyms:
@@ -2732,15 +2769,15 @@ concepts:
   - N-demethylation by fragment oxidation
 - id: xmet:4000350
   preferred_label: N-methylene dealkylation
-  definition: N-dealkylation at a methylene carbon attached to nitrogen (includes N-deethylation / N-depropylation
-    site specializations). Forest methylene_* patterns share this home; ox-state / fragment via mapping
-    alwaysWith.
+  definition: N-dealkylation at a methylene carbon attached to nitrogen (includes N-deethylation / 
+    N-depropylation site specializations). Methylene-cleavage patterns share this home; ox-state / 
+    fragment via mapping alwaysWith.
   parents:
   - xmet:4000348
 - id: xmet:4000351
   preferred_label: N-methine dealkylation
-  definition: N-dealkylation at a methine carbon attached to nitrogen. Forest methine_* patterns share
-    this home; ox-state via mapping alwaysWith.
+  definition: N-dealkylation at a methine carbon attached to nitrogen. Methine-cleavage patterns 
+    share this home; ox-state via mapping alwaysWith.
   parents:
   - xmet:4000348
 - id: xmet:4000352
@@ -2774,20 +2811,20 @@ concepts:
   - xmet:4000293
 - id: xmet:4000357
   preferred_label: isoredox additions
-  definition: Redox-neutral additions or insertions (alkylation, halogenation, amination, arylation, carbonylation,
-    carboxylation, sulfuration, esterification).
+  definition: Redox-neutral additions or insertions (alkylation, halogenation, amination, arylation,
+    carbonylation, carboxylation, sulfuration, esterification).
   parents:
   - xmet:4000265
 - id: xmet:4000358
   preferred_label: isoredox removals
-  definition: Redox-neutral removals or extrusions (dehalogenation, decarboxylation, decarbonylation,
-    dehydroxylation).
+  definition: Redox-neutral removals or extrusions (dehalogenation, decarboxylation, 
+    decarbonylation, dehydroxylation).
   parents:
   - xmet:4000265
 - id: xmet:4000359
   preferred_label: oxygen leaving fragment
-  definition: Leaving groups that depart as oxygen-containing fragments (alcohol, phenol, carboxylate,
-    sulfate, phosphate, water).
+  definition: Leaving groups that depart as oxygen-containing fragments (alcohol, phenol, 
+    carboxylate, sulfate, phosphate, water).
   parents:
   - xmet:4000261
 - id: xmet:4000360
@@ -2807,10 +2844,10 @@ concepts:
   - xmet:4000261
 - id: xmet:4000364
   preferred_label: quinone-like endpoint transformations
-  definition: Pair-endpoint transformations under conjugated-system remodeling that install or complete
-    a quinone-like (quinoid) end (Forest QuinoneFormation patterns). Named by transformation chemistry,
-    not edit ids; some endpoints are one-hop end states of hydroxylation or oxidative dehalogenation followed
-    by dehydrogenation (see has_part on those leaves).
+  definition: Pair-endpoint transformations under conjugated-system remodeling that install or 
+    complete a quinone-like (quinoid) end. Named by transformation chemistry; some endpoints are 
+    one-hop end states of hydroxylation or oxidative dehalogenation followed by dehydrogenation (see
+    has_part on those leaves).
   parents:
   - xmet:4000406
   synonyms:
@@ -2836,20 +2873,22 @@ concepts:
   - xmet:4000267
 - id: xmet:4000368
   preferred_label: adduct-forming additions
-  definition: Addition mechanisms that form adducts (conjugate addition, nucleophilic aromatic substitution).
+  definition: Addition mechanisms that form adducts (conjugate addition, nucleophilic aromatic 
+    substitution).
   parents:
   - xmet:4000267
 - id: xmet:4000369
   preferred_label: acyl conjugations
-  definition: Transfer of acyl or CoA groups (acetylation, formylation, transacylation, CoA conjugation).
+  definition: Transfer of acyl or CoA groups (acetylation, formylation, transacylation, CoA 
+    conjugation).
   parents:
   - xmet:4000266
   synonyms:
   - acyl transfer conjugation
 - id: xmet:4000370
   preferred_label: heteroatom conjugations
-  definition: Transfer conjugations with heteroatom or glycosyl donors (glucuronidation, glycosylation,
-    sulfation, methylation, amino-acid conjugation, phosphorylation).
+  definition: Transfer conjugations with heteroatom or glycosyl donors (glucuronidation, 
+    glycosylation, sulfation, methylation, amino-acid conjugation, phosphorylation).
   parents:
   - xmet:4000266
   synonyms:
@@ -2873,8 +2912,8 @@ concepts:
   preferred_label: glutathionation of quinone-like species and thiols
   definition: 'Quinone-like (quinoid) species: two distinct sites on an aromatic system are oxidized/dehydrogenated
     so the ring collapses into a non-aromatic conjugated system. Covers classical quinones, quinone-imines,
-    quinone-methides, and imine-methides. Forest “QuinoneFormation” uses this broad sense; the narrower
-    classical quinone term sits underneath. GSH conjugation at quinoid electrophiles or at thiol partners.'
+    quinone-methides, and imine-methides; the narrower classical quinone term sits underneath. GSH conjugation
+    at quinoid electrophiles or at thiol partners.'
   parents:
   - xmet:4000167
   synonyms:
@@ -2882,7 +2921,8 @@ concepts:
   - glutathionation of quinones and thiols
 - id: xmet:4000375
   preferred_label: nitro-group reduction
-  definition: Reduction along the nitro → nitroso → hydroxylamine → amine manifold, including N–O cleavages.
+  definition: Reduction along the nitro → nitroso → hydroxylamine → amine manifold, including N–O 
+    cleavages.
   parents:
   - xmet:4000093
 - id: xmet:4000376
@@ -2892,7 +2932,8 @@ concepts:
   - xmet:4000093
 - id: xmet:4000377
   preferred_label: miscellaneous nitrogen reduction
-  definition: Nitrogen reductions outside the nitro and azo manifolds (N-oxide, oxime, denitrosation).
+  definition: Nitrogen reductions outside the nitro and azo manifolds (N-oxide, oxime, 
+    denitrosation).
   parents:
   - xmet:4000093
 - id: xmet:4000378
@@ -2902,8 +2943,8 @@ concepts:
   - xmet:4000012
 - id: xmet:4000379
   preferred_label: hydroxylation of activated carbons
-  definition: Hydroxylation at activated carbons (benzylic, allylic, α-to-heteroatom), regardless of primary/secondary/tertiary
-    H-count.
+  definition: Hydroxylation at activated carbons (benzylic, allylic, α-to-heteroatom), regardless of
+    primary/secondary/tertiary H-count.
   parents:
   - xmet:4000012
 - id: xmet:4000380
@@ -2913,17 +2954,17 @@ concepts:
   - xmet:4000012
 - id: xmet:4000381
   preferred_label: epoxide CH glutathionation
-  definition: GSH attack at an epoxide carbon bearing one H (Forest epoxide_ch).
+  definition: GSH attack at an epoxide carbon bearing one H (methine).
   parents:
   - xmet:4000169
 - id: xmet:4000382
   preferred_label: epoxide CH2 glutathionation
-  definition: GSH attack at an epoxide methylene carbon (Forest epoxide_ch2).
+  definition: GSH attack at an epoxide methylene carbon.
   parents:
   - xmet:4000169
 - id: xmet:4000383
   preferred_label: epoxide C glutathionation
-  definition: GSH attack at a fully substituted epoxide carbon (Forest epoxide_c).
+  definition: GSH attack at a fully substituted epoxide carbon.
   parents:
   - xmet:4000169
 - id: xmet:4000384
@@ -2969,7 +3010,7 @@ concepts:
 - id: xmet:4000392
   preferred_label: alkene to vicinal diol pathway
   definition: 'Composite: epoxidation of an alkene/arene followed by hydrolytic epoxide opening to a vicinal
-    diol (Forest EpoxideHydration one-hop).'
+    diol.'
   parents:
   - xmet:4000272
   synonyms:
@@ -2994,8 +3035,9 @@ concepts:
   - xmet:4000272
 - id: xmet:4000394
   preferred_label: quinone formation
-  definition: Classical quinone (diketone quinoid with C=O ends), as opposed to quinone-imine or quinone-methide.
-    Ortho (1,2) and para (1,4) specializations sit underneath. A narrowing of quinone-like species formation.
+  definition: Classical quinone (diketone quinoid with C=O ends), as opposed to quinone-imine or 
+    quinone-methide. Ortho (1,2) and para (1,4) specializations sit underneath. A narrowing of 
+    quinone-like species formation.
   synonyms:
   - classical quinone formation
   - diketone quinone formation
@@ -3004,7 +3046,8 @@ concepts:
   - xmet:4000059
 - id: xmet:4000395
   preferred_label: carbon–carbon dehydrogenation
-  definition: Dehydrogenation that changes the bond order between two carbons (alkane→alkene, or alkene→alkyne).
+  definition: Dehydrogenation that changes the bond order between two carbons (alkane→alkene, or 
+    alkene→alkyne).
   synonyms:
   - C–C dehydrogenation
   - carbon-carbon dehydrogenation
@@ -3012,9 +3055,9 @@ concepts:
   - xmet:4000006
 - id: xmet:4000396
   preferred_label: aldehyde leaving group
-  definition: Aldehyde-equivalent fragment released as a leaving group / coproduct, typically from oxidative
-    dealkylation (formaldehyde from demethylation, acetaldehyde from deethylation, and higher alkanals
-    analogously). Under carbonyl leaving fragment.
+  definition: Aldehyde-equivalent fragment released as a leaving group / coproduct, typically from 
+    oxidative dealkylation (formaldehyde from demethylation, acetaldehyde from deethylation, and 
+    higher alkanals analogously). Under carbonyl leaving fragment.
   synonyms:
   - aldehyde leaving fragment
   - alkanals leaving group
@@ -3033,8 +3076,8 @@ concepts:
   - fragment carbon oxidation state
 - id: xmet:4000398
   preferred_label: alcohol-level cleaved carbon
-  definition: Cleaved carbon at alcohol oxidation level (e.g. methanol-/ethanol-equivalent fragment, or
-    C–OH on the cleaved carbon).
+  definition: Cleaved carbon at alcohol oxidation level (e.g. methanol-/ethanol-equivalent fragment,
+    or C–OH on the cleaved carbon).
   parents:
   - xmet:4000397
   synonyms:
@@ -3042,7 +3085,8 @@ concepts:
   - alcohol-level fragment carbon
 - id: xmet:4000399
   preferred_label: aldehyde-level cleaved carbon
-  definition: Cleaved carbon at aldehyde oxidation level (e.g. formaldehyde-/acetaldehyde-equivalent).
+  definition: Cleaved carbon at aldehyde oxidation level (e.g. 
+    formaldehyde-/acetaldehyde-equivalent).
   parents:
   - xmet:4000397
   synonyms:
@@ -3050,7 +3094,8 @@ concepts:
   - aldehyde-level fragment carbon
 - id: xmet:4000400
   preferred_label: ketone-level cleaved carbon
-  definition: Cleaved carbon at ketone oxidation level (typical methine→carbonyl dealkylation fragment).
+  definition: Cleaved carbon at ketone oxidation level (typical methine→carbonyl dealkylation 
+    fragment).
   parents:
   - xmet:4000397
   synonyms:
@@ -3058,7 +3103,8 @@ concepts:
   - ketone-level fragment carbon
 - id: xmet:4000401
   preferred_label: carboxylic-level cleaved carbon
-  definition: Cleaved carbon at carboxylic-acid oxidation level (e.g. formic-/acetic-equivalent fragment).
+  definition: Cleaved carbon at carboxylic-acid oxidation level (e.g. formic-/acetic-equivalent 
+    fragment).
   parents:
   - xmet:4000397
   synonyms:
@@ -3066,8 +3112,8 @@ concepts:
   - carboxylic-level fragment carbon
 - id: xmet:4000402
   preferred_label: carboxylic acid leaving fragment
-  definition: Carboxylic-acid-equivalent fragment released as a coproduct (formic, acetic, …). Distinct
-    from carboxylate leaving group in ester hydrolysis.
+  definition: Carboxylic-acid-equivalent fragment released as a coproduct (formic, acetic, …). 
+    Distinct from carboxylate leaving group in ester hydrolysis.
   parents:
   - xmet:4000260
   synonyms:
