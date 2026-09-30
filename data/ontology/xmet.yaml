@@ -839,6 +839,22 @@ concepts:
     across the double bond.
   parents:
   - xmet:4000101
+- id: xmet:4000421
+  preferred_label: nitroso N=O reduction
+  synonyms:
+  - nitroso oxygen reduction
+  definition: Reduction of a nitroso N=O double bond to N–O (hydrogen addition across the oxo bond),
+    not N–O cleavage. Distinct from nitroso reduction under nitrogen reduction.
+  parents:
+  - xmet:4000101
+- id: xmet:4000422
+  preferred_label: nitro N=O reduction
+  synonyms:
+  - nitro oxygen reduction
+  definition: Reduction of a nitro N⁺=O double bond toward N–OH (hydrogen addition with formal-charge
+    drop), not nitro-group N–O cleavage under nitrogen reduction.
+  parents:
+  - xmet:4000101
 - id: xmet:4000106
   preferred_label: sulfur reduction
   definition: 'sulfur reduction: xenobiotic-metabolism term under reduction.'
@@ -1987,6 +2003,14 @@ concepts:
   definition: Isocyanate fragment in carbamate/urea chemistry.
   parents:
   - xmet:4000360
+- id: xmet:4000418
+  preferred_label: nitrite leaving fragment
+  synonyms:
+  - nitro leaving fragment
+  - nitrite leaving group
+  definition: Nitro/nitrite-class nitrogen leave (e.g. Ar–NO₂ departure as nitrite-equivalent).
+  parents:
+  - xmet:4000360
 - id: xmet:4000257
   preferred_label: cyanide leaving group
   definition: Cyanide departing (nitrile hydrolysis / related).
@@ -2388,6 +2412,24 @@ concepts:
 - id: xmet:4000306
   preferred_label: carbonyl dehydration
   definition: Dehydration involving a carbonyl oxygen (loss of water-equivalent from a C=O context).
+  parents:
+  - xmet:4000113
+- id: xmet:4000419
+  preferred_label: nitroso oxo-leave
+  synonyms:
+  - nitroso dehydration
+  - nitroso oxygen leave
+  definition: Loss of oxygen from a nitroso N=O (water-equivalent oxo leave), distinct from nitroso
+    N–O reductive cleavage.
+  parents:
+  - xmet:4000113
+- id: xmet:4000420
+  preferred_label: nitro oxo-leave
+  synonyms:
+  - nitro dehydration
+  - nitro oxygen leave
+  definition: Loss of oxygen from a nitro N⁺=O (water-equivalent oxo leave with formal-charge drop),
+    distinct from nitro-group reductive N–O cleavage.
   parents:
   - xmet:4000113
 - id: xmet:4000307
