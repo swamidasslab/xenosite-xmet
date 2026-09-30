@@ -3056,3 +3056,41 @@ xmet:4000417 a skos:Concept ;
   skos:altLabel "xmet:enumerates" ;
   skos:broader xmet:4000414 .
 
+xmet:4000418 a skos:Concept ;
+  skos:prefLabel "nitrite leaving fragment" ;
+  skos:definition "Nitro/nitrite-class nitrogen leave (e.g. Ar–NO₂ departure as nitrite-equivalent)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "nitro leaving fragment" ;
+  skos:altLabel "nitrite leaving group" ;
+  skos:broader xmet:4000360 .
+
+xmet:4000419 a skos:Concept ;
+  skos:prefLabel "nitroso oxo-leave" ;
+  skos:definition "Loss of oxygen from a nitroso N=O (water-equivalent oxo leave), distinct from nitroso N–O reductive cleavage." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "nitroso dehydration" ;
+  skos:altLabel "nitroso oxygen leave" ;
+  skos:broader xmet:4000113 .
+
+xmet:4000420 a skos:Concept ;
+  skos:prefLabel "nitro oxo-leave" ;
+  skos:definition "Loss of oxygen from a nitro N⁺=O (water-equivalent oxo leave with formal-charge drop), distinct from nitro-group reductive N–O cleavage." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "nitro dehydration" ;
+  skos:altLabel "nitro oxygen leave" ;
+  skos:broader xmet:4000113 .
+
+xmet:4000421 a skos:Concept ;
+  skos:prefLabel "nitroso N=O reduction" ;
+  skos:definition "Reduction of a nitroso N=O double bond to N–O (hydrogen addition across the oxo bond), not N–O cleavage. Distinct from nitroso reduction under nitrogen reduction." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "nitroso oxygen reduction" ;
+  skos:broader xmet:4000101 .
+
+xmet:4000422 a skos:Concept ;
+  skos:prefLabel "nitro N=O reduction" ;
+  skos:definition "Reduction of a nitro N⁺=O double bond toward N–OH (hydrogen addition with formal-charge drop), not nitro-group N–O cleavage under nitrogen reduction." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "nitro oxygen reduction" ;
+  skos:broader xmet:4000101 .
+

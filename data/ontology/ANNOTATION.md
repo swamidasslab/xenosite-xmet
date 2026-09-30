@@ -20,9 +20,9 @@ Hierarchy lives in `parents:` / `skos:broader` only.
 
 Live inventory was renumbered densely to ``xmet:4000000``…``xmet:4000405``
 (see [`../mappings/xmet-id-renumber.tsv`](../mappings/xmet-id-renumber.tsv)).
-New mints continue sequentially from ``xmet:4000418`` (``4000406``–``4000413``
-used for conjugated-system / quinoid work; ``4000414``–``4000417`` operationalizes
-relation family). Never recycle a
+New mints continue sequentially from ``xmet:4000423`` (``4000406``–``4000413``
+conjugated-system / quinoid; ``4000414``–``4000417`` operationalizes relation
+family; ``4000418``–``4000422`` nitrite LG + dehyd/OR N-oxo leaves). Never recycle a
 retired CURIE. Merges/retirements/renumbers:
 [`../mappings/xmet-id-remap.tsv`](../mappings/xmet-id-remap.tsv).
 

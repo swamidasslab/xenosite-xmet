@@ -4389,6 +4389,64 @@
         "xmet:enumerates"
       ],
       "broader": "xmet:4000414"
+    },
+    {
+      "id": "xmet:4000418",
+      "type": "skos:Concept",
+      "prefLabel": "nitrite leaving fragment",
+      "inScheme": "xmet:scheme",
+      "definition": "Nitro/nitrite-class nitrogen leave (e.g. Ar–NO₂ departure as nitrite-equivalent).",
+      "altLabel": [
+        "nitro leaving fragment",
+        "nitrite leaving group"
+      ],
+      "broader": "xmet:4000360"
+    },
+    {
+      "id": "xmet:4000419",
+      "type": "skos:Concept",
+      "prefLabel": "nitroso oxo-leave",
+      "inScheme": "xmet:scheme",
+      "definition": "Loss of oxygen from a nitroso N=O (water-equivalent oxo leave), distinct from nitroso N–O reductive cleavage.",
+      "altLabel": [
+        "nitroso dehydration",
+        "nitroso oxygen leave"
+      ],
+      "broader": "xmet:4000113"
+    },
+    {
+      "id": "xmet:4000420",
+      "type": "skos:Concept",
+      "prefLabel": "nitro oxo-leave",
+      "inScheme": "xmet:scheme",
+      "definition": "Loss of oxygen from a nitro N⁺=O (water-equivalent oxo leave with formal-charge drop), distinct from nitro-group reductive N–O cleavage.",
+      "altLabel": [
+        "nitro dehydration",
+        "nitro oxygen leave"
+      ],
+      "broader": "xmet:4000113"
+    },
+    {
+      "id": "xmet:4000421",
+      "type": "skos:Concept",
+      "prefLabel": "nitroso N=O reduction",
+      "inScheme": "xmet:scheme",
+      "definition": "Reduction of a nitroso N=O double bond to N–O (hydrogen addition across the oxo bond), not N–O cleavage. Distinct from nitroso reduction under nitrogen reduction.",
+      "altLabel": [
+        "nitroso oxygen reduction"
+      ],
+      "broader": "xmet:4000101"
+    },
+    {
+      "id": "xmet:4000422",
+      "type": "skos:Concept",
+      "prefLabel": "nitro N=O reduction",
+      "inScheme": "xmet:scheme",
+      "definition": "Reduction of a nitro N⁺=O double bond toward N–OH (hydrogen addition with formal-charge drop), not nitro-group N–O cleavage under nitrogen reduction.",
+      "altLabel": [
+        "nitro oxygen reduction"
+      ],
+      "broader": "xmet:4000101"
     }
   ]
 }
