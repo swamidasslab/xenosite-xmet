@@ -2,6 +2,21 @@
 
 ## 2026-09-29
 
+- Forest SSSOM sync from metabolite (`xf:` CURIEs). Dropped short-code catalog
+  rows (SO/UO/CJ) and redundant Dehydrogenation/Hydrolysis `relatedMatch`.
+  Mapped Effect-split patterns to precise homes: `dealkylate_cumulated` →
+  `4000330` + isocyanate LG; quaternary_alcohol_n/nitro → `4000336` + ox-state
+  (+ nitrite LG); `beta_elimination_acid` → `4000305`; `alkene_cumulene` →
+  `4000091`; tautomer patterns stay on `4000186`.
+- Minted `4000418` nitrite leaving fragment; `4000419`/`4000420` nitroso/nitro
+  oxo-leave under dehydration; `4000421`/`4000422` nitroso/nitro N=O reduction
+  under oxygen reduction. SSSOM exactMatch for the four Forest dehyd/OR arms.
+- Validator/tools accept living ``xf:`` Forest CURIEs (normalize legacy ``forest.rule``/``pattern``/``ruleset``; expand SO/UO/… to long catalog names). Conjugation catalog nesting optional until SSSOM row exists. ``forest_pattern_coverage`` / tree printer updated for w3id ``xf:`` IRIs.
+
+
+
+## 2026-09-29
+
 - Hard-fail ``definition_product_ref``: concept definitions must not mention Forest / Xenosite / Rainbow (or forest./forest-map); cleaned 52 defs to chemical prose; pytest coverage.
 
 
