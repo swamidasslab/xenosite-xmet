@@ -30,7 +30,14 @@ XFAIL_PATH = ROOT / "data/mappings/validation-xfail.tsv"
 DRAFT_PHASE1 = ROOT / "revision/draft-reaction-class-phase1-tree.json"
 BASELINE_EXTERNAL = ROOT / "artifacts" / "xmet-external.sssom.pre-redesign-v1.tsv"
 DEFAULT_TAGGER_RULES_DIR = ROOT.parent / "crates" / "xenosite-tagger" / "data" / "rules"
-DEFAULT_FOREST_RULES_RS = ROOT.parent / "crates" / "xenosite-forest" / "src" / "rules.rs"
+# Prefer metabolite forest (xf: catalog source); fall back to sibling tagger crate.
+_METABOLITE_RULES_RS = (
+    ROOT.parent.parent / "xenosite-metabolite" / "crates" / "xenosite-forest" / "src" / "rules.rs"
+)
+_TAGGER_RULES_RS = ROOT.parent / "crates" / "xenosite-forest" / "src" / "rules.rs"
+DEFAULT_FOREST_RULES_RS = (
+    _METABOLITE_RULES_RS if _METABOLITE_RULES_RS.is_file() else _TAGGER_RULES_RS
+)
 TAGGER_RULE_FILES = ("xenobiotic.rules.yaml", "structural.rules.yaml")
 ALLOWED_RULE_PATTERN_PREDS = {"skos:exactMatch", "skos:closeMatch"}
 
@@ -67,32 +74,103 @@ COLORS = {SO, UO, DH, HD, RD}
 PHASE_TAGS = {PHASE_I, PHASE_II, PHASE_III, "xmet:4000264"}
 ISOREDOX = "xmet:4000265"
 
+# Historical two-letter ruleset codes → long xf: catalog / leaf names.
+# SSSOM must use long names only (never SO/UO/CJ/…).
+SHORT_TO_LONG: dict[str, str] = {
+    "SO": "StableOxygenation",
+    "UO": "UnstableOxygenation",
+    "DH": "Dehydrogenation",
+    "HD": "Hydrolysis",
+    "RD": "Reduction",
+    "CJ": "Conjugation",
+    "QF": "QuinoneFormation",
+    "TT": "Tautomerization",
+}
+
+# Catalogs that may use skos:relatedMatch (not rule/pattern exactMatch homes).
+RELATEDMATCH_CATALOGS: frozenset[str] = frozenset(
+    {
+        "PhaseOne",
+        "StableOxygenation",
+        "UnstableOxygenation",
+        "Reduction",
+        "Conjugation",  # deferred until catalog is ready; allow when present
+    }
+)
+
 # Color / conjugation membership beyond draft PhaseOne colors (specialized leaves).
 EXTRA_RULE_TO_RULESET: dict[str, str] = {
-    "NDealkylation": "forest.ruleset:UO",
-    "AzoSplitting": "forest.ruleset:RD",
-    "BenzodioxoleReduction": "forest.ruleset:RD",
-    "NitroaromaticReduction": "forest.ruleset:RD",
-    "ThiopheneSulfurOxidation": "forest.ruleset:SO",
+    "NDealkylation": "xf:UnstableOxygenation",
+    "AzoSplitting": "xf:Reduction",
+    "BenzodioxoleReduction": "xf:Reduction",
+    "NitroaromaticReduction": "xf:Reduction",
+    "ThiopheneSulfurOxidation": "xf:StableOxygenation",
 }
 CJ_RULES = ("Acetylation", "Sulfation", "Glucuronidation", "Glutathionation")
 
 # Rules whose Forest color membership is operational only — chemical parent may
 # differ (no multi-inheritance). Nesting under the ruleset home is not required.
 OPERATIONAL_RULESET_MEMBERSHIP_ONLY = {
-    "forest.rule:Dehydration",  # chemically elimination / isoredox; Forest lists under RD
-    "forest.rule:EpoxideOpening",  # chemically isoredox ring opening; Forest lists under HD
+    "xf:Dehydration",  # chemically elimination / isoredox; Forest lists under RD
+    "xf:EpoxideOpening",  # chemically isoredox ring opening; Forest lists under HD
 }
 
-# Closest chemist parent each Forest ruleset home must nest under (or equal).
+# Closest chemist parent each Forest catalog home must nest under (or equal).
 RULESET_REQUIRED_ANCESTOR: dict[str, str] = {
-    "forest.ruleset:SO": OXIDATION,
-    "forest.ruleset:UO": OXIDATION,
-    "forest.ruleset:DH": OXIDATION,
-    "forest.ruleset:HD": ISOREDOX,
-    "forest.ruleset:RD": REACTION_CLASS,
-    "forest.ruleset:PhaseOne": DISPOSITION,
+    "xf:StableOxygenation": OXIDATION,
+    "xf:UnstableOxygenation": OXIDATION,
+    "xf:Reduction": REACTION_CLASS,
+    "xf:PhaseOne": DISPOSITION,
 }
+
+
+def normalize_forest_object(obj: str) -> str:
+    """Canonical ``xf:`` CURIE from ``xf:`` or legacy ``forest.*`` forms.
+
+    Short catalog codes (SO/UO/…) expand to long names. Patterns keep ``Rule/pat``.
+    """
+    raw = (obj or "").strip()
+    if not raw:
+        return raw
+    if raw.startswith("xf:"):
+        local = raw[3:]
+    elif raw.startswith("forest.pattern:"):
+        local = raw[len("forest.pattern:") :]
+    elif raw.startswith("forest.rule:"):
+        local = raw[len("forest.rule:") :]
+    elif raw.startswith("forest.ruleset:"):
+        local = raw[len("forest.ruleset:") :]
+    else:
+        return raw
+    if "/" not in local and local in SHORT_TO_LONG:
+        local = SHORT_TO_LONG[local]
+    return f"xf:{local}"
+
+
+def forest_object_kind(obj: str) -> str:
+    """Return ``pattern``, ``catalog``, ``rule``, or ``other`` for a Forest object id."""
+    n = normalize_forest_object(obj)
+    if not n.startswith("xf:"):
+        return "other"
+    local = n[3:]
+    if "/" in local:
+        return "pattern"
+    if local in RELATEDMATCH_CATALOGS:
+        return "catalog"
+    return "rule"
+
+
+def xf_rule(name: str) -> str:
+    return f"xf:{name}"
+
+
+def xf_pattern(rule: str, pattern: str) -> str:
+    return f"xf:{rule}/{pattern}"
+
+
+def is_relatedmatch_catalog(obj: str) -> bool:
+    n = normalize_forest_object(obj)
+    return forest_object_kind(n) == "catalog"
 
 
 class Finding:
@@ -165,7 +243,21 @@ def load_sssom(path: Path) -> list[dict[str, str]]:
         return []
     with path.open() as fh:
         reader = csv.DictReader((ln for ln in fh if not ln.startswith("#")), delimiter="\t")
-        return list(reader)
+        rows = list(reader)
+    # Canonicalize Forest object CURIEs to xf: (accept legacy forest.*).
+    if path.resolve() == FOREST_SSSOM.resolve():
+        for r in rows:
+            obj = r.get("object_id") or ""
+            if obj.startswith(("xf:", "forest.")):
+                r["object_id"] = normalize_forest_object(obj)
+    return rows
+
+
+def index_sssom_by_object(rows: list[dict[str, str]]) -> dict[str, list[dict[str, str]]]:
+    by_obj: dict[str, list[dict[str, str]]] = defaultdict(list)
+    for r in rows:
+        by_obj[r["object_id"]].append(r)
+    return by_obj
 
 
 def forest_rules_rs() -> Path | None:
@@ -262,20 +354,20 @@ def under_or_equal(cid: str, ancestor: str, pm: dict[str, list[str]], memo: dict
 
 
 def load_rule_to_ruleset_membership() -> dict[str, str]:
-    """forest.rule:Name → forest.ruleset:… from draft colors + curated extras + CJ."""
+    """xf:Rule → xf:Catalog from draft colors + curated extras + conjugation leaves."""
     membership: dict[str, str] = {}
     if DRAFT_PHASE1.exists():
         draft = json.loads(DRAFT_PHASE1.read_text())
         for color in (draft.get("reaction_class") or {}).get("phase_one_colors") or []:
-            rs = color.get("forest_ruleset") or ""
+            rs = normalize_forest_object(color.get("forest_ruleset") or "")
             for rule in color.get("rules") or []:
-                fr = rule.get("forest_rule") or ""
-                if fr and rs:
+                fr = normalize_forest_object(rule.get("forest_rule") or "")
+                if fr.startswith("xf:") and rs.startswith("xf:"):
                     membership[fr] = rs
     for rule_name, rs in EXTRA_RULE_TO_RULESET.items():
-        membership.setdefault(f"forest.rule:{rule_name}", rs)
+        membership.setdefault(xf_rule(rule_name), rs)
     for rule_name in CJ_RULES:
-        membership.setdefault(f"forest.rule:{rule_name}", "forest.ruleset:CJ")
+        membership.setdefault(xf_rule(rule_name), "xf:Conjugation")
     for fr in OPERATIONAL_RULESET_MEMBERSHIP_ONLY:
         membership.pop(fr, None)
     return membership
@@ -302,7 +394,8 @@ def check_unique_sssom_homes(
     findings: list[Finding],
     rows: list[dict[str, str]],
     *,
-    object_prefix: str,
+    object_prefix: str = "",
+    object_kind: str | None = None,
     check_id: str,
     label: str,
 ) -> None:
@@ -310,8 +403,12 @@ def check_unique_sssom_homes(
     by_obj: dict[str, list[dict[str, str]]] = defaultdict(list)
     for r in rows:
         obj = r.get("object_id") or ""
-        if obj.startswith(object_prefix):
-            by_obj[obj].append(r)
+        if object_kind is not None:
+            if forest_object_kind(obj) != object_kind:
+                continue
+        elif object_prefix and not obj.startswith(object_prefix):
+            continue
+        by_obj[obj].append(r)
     for obj, mapped in sorted(by_obj.items()):
         subjects = sorted({r["subject_id"] for r in mapped})
         if len(subjects) > 1:
@@ -329,19 +426,23 @@ def check_unique_sssom_subjects(
     findings: list[Finding],
     rows: list[dict[str, str]],
     *,
-    object_prefix: str,
+    object_prefix: str = "",
+    object_kind: str | None = None,
     check_id: str,
     label: str,
 ) -> None:
     """Each XMET home may map to at most one object in a peer class (subject → object).
 
-    Peer classes: forest.pattern↔forest.pattern, forest.rule↔forest.rule,
-    tagger rule:↔rule:. Cross-class co-homes (pattern+rule on one concept) are OK.
+    Peer classes: pattern↔pattern, rule↔rule, tagger rule:↔rule:.
+    Cross-class co-homes (pattern+rule on one concept) are OK.
     """
     by_sub: dict[str, list[str]] = defaultdict(list)
     for r in rows:
         obj = r.get("object_id") or ""
-        if not obj.startswith(object_prefix):
+        if object_kind is not None:
+            if forest_object_kind(obj) != object_kind:
+                continue
+        elif not obj.startswith(object_prefix):
             continue
         by_sub[r["subject_id"]].append(obj)
     for sub, objs in sorted(by_sub.items()):
@@ -640,13 +741,13 @@ def check_dealkylation_pattern_always_with(
 ) -> None:
     """Dealkylation / N-dealkylation patterns may share a site home iff alwaysWith distinguishes them.
 
-    Policy for ``forest.pattern:Dealkylation/*`` and ``forest.pattern:NDealkylation/*``:
+    Policy for ``xf:Dealkylation/*`` and ``xf:NDealkylation/*``:
     - Every such SSSOM row must list ``always_with`` descriptor CURIEs (pipe-separated)
       under reaction descriptor.
     - Patterns that share the same subject_id must have distinct always_with sets.
     """
     rows = load_sssom(FOREST_SSSOM)
-    prefixes = ("forest.pattern:Dealkylation/", "forest.pattern:NDealkylation/")
+    prefixes = ("xf:Dealkylation/", "xf:NDealkylation/")
     d_rows = [
         r
         for r in rows
@@ -708,27 +809,33 @@ def check_dealkylation_pattern_always_with(
     for sub, group in sorted(by_home.items()):
         if len(group) < 2:
             continue
-        seen: dict[frozenset[str], str] = {}
-        for r in group:
-            obj = r.get("object_id") or ""
-            aw = frozenset(
-                x.strip() for x in (r.get("always_with") or "").split("|") if x.strip()
-            )
-            if not aw:
-                continue
-            prior = seen.get(aw)
-            if prior:
-                findings.append(
-                    Finding(
-                        "dealk_always_with_distinct",
-                        sub,
-                        f"patterns share home with identical always_with {sorted(aw)}: "
-                        f"{prior} and {obj}",
-                        obj,
-                    )
+        # Distinct always_with within one family (Dealkylation or NDealkylation).
+        # Cross-family twins (Dealkylation/X ↔ NDealkylation/X) may share always_with.
+        for family_prefix in ("xf:Dealkylation/", "xf:NDealkylation/"):
+            fam = [r for r in group if (r.get("object_id") or "").startswith(family_prefix)]
+            seen: dict[frozenset[str], str] = {}
+            for r in fam:
+                obj = r.get("object_id") or ""
+                aw = frozenset(
+                    x.strip()
+                    for x in (r.get("always_with") or "").split("|")
+                    if x.strip()
                 )
-            else:
-                seen[aw] = obj
+                if not aw:
+                    continue
+                prior = seen.get(aw)
+                if prior:
+                    findings.append(
+                        Finding(
+                            "dealk_always_with_distinct",
+                            sub,
+                            f"patterns share home with identical always_with {sorted(aw)}: "
+                            f"{prior} and {obj}",
+                            obj,
+                        )
+                    )
+                else:
+                    seen[aw] = obj
 
 
 def check_ndealkylation_pattern_always_with(
@@ -744,19 +851,18 @@ def check_forest_nesting(
     concepts: dict[str, dict[str, Any]],
     pm: dict[str, list[str]],
 ) -> None:
-    """Forest hierarchy mirrored in XMET: pattern ⊂ rule ⊂ ruleset ⊂ parent.
+    """Forest hierarchy mirrored in XMET: pattern ⊂ rule ⊂ catalog ⊂ parent.
 
-    1. Every live ``forest.pattern:Rule/pat`` chemist home nests under the
-       mapped ``forest.rule:Rule`` chemist home.
-    2. Every rule with a known ruleset membership nests under (or equals) at
-       least one chemist home of that ruleset.
-    3. Every ruleset chemist home nests under its required reaction-class /
-       disposition ancestor; CJ homes nest under conjugation (or are it).
+    1. Every live ``xf:Rule/pat`` chemist home nests under the mapped ``xf:Rule``
+       chemist home.
+    2. Every rule with a known catalog membership nests under (or equals) at
+       least one chemist home of that catalog.
+    3. Every catalog chemist home nests under its required reaction-class /
+       disposition ancestor; Conjugation homes nest under conjugation (or are it)
+       when a Conjugation relatedMatch row is present (catalog deferred otherwise).
     """
     rows = load_sssom(FOREST_SSSOM)
-    by_obj: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for r in rows:
-        by_obj[r["object_id"]].append(r)
+    by_obj = index_sssom_by_object(rows)
 
     memo: dict[str, set[str]] = {}
 
@@ -764,13 +870,13 @@ def check_forest_nesting(
     rules_rs = forest_rules_rs()
     catalog: dict[str, list[str]] = load_forest_catalog_patterns(rules_rs) if rules_rs else {}
     for rule_name, pats in catalog.items():
-        fr = f"forest.rule:{rule_name}"
+        fr = xf_rule(rule_name)
         rule_homes = [h for h in chemist_sssom_homes(by_obj, fr) if h in concepts]
         if not rule_homes:
             continue
         rule_sub = rule_homes[0]
         for pname in pats:
-            fp = f"forest.pattern:{rule_name}/{pname}"
+            fp = xf_pattern(rule_name, pname)
             for sub in chemist_sssom_homes(by_obj, fp):
                 if sub not in concepts:
                     continue
@@ -784,9 +890,12 @@ def check_forest_nesting(
                         )
                     )
 
-    # --- 2. rules under rulesets ---
+    # --- 2. rules under catalogs ---
     membership = load_rule_to_ruleset_membership()
     for fr, rs in sorted(membership.items()):
+        # Conjugation catalog deferred until SSSOM row exists.
+        if rs == "xf:Conjugation" and rs not in by_obj:
+            continue
         rule_homes = [h for h in chemist_sssom_homes(by_obj, fr) if h in concepts]
         if not rule_homes:
             findings.append(
@@ -804,7 +913,7 @@ def check_forest_nesting(
                 Finding(
                     "forest_rule_under_ruleset",
                     rule_homes[0],
-                    f"ruleset {rs} has no chemist SSSOM home",
+                    f"catalog {rs} has no chemist SSSOM home",
                     fr,
                 )
             )
@@ -817,7 +926,7 @@ def check_forest_nesting(
                 Finding(
                     "forest_rule_under_ruleset",
                     rule_sub,
-                    f"rule subject not under ruleset home(s) {homes} ({rs})",
+                    f"rule subject not under catalog home(s) {homes} ({rs})",
                     fr,
                 )
             )
@@ -827,7 +936,7 @@ def check_forest_nesting(
         compose = load_forest_compose_members(rules_rs)
         colored = set(membership)
         for rule_name in compose.get("PhaseOne") or []:
-            fr = f"forest.rule:{rule_name}"
+            fr = xf_rule(rule_name)
             if fr in colored:
                 continue
             for rule_sub in chemist_sssom_homes(by_obj, fr):
@@ -843,7 +952,7 @@ def check_forest_nesting(
                         )
                     )
 
-    # --- 3. rulesets under required parents ---
+    # --- 3. catalogs under required parents ---
     for rs, ancestor in RULESET_REQUIRED_ANCESTOR.items():
         homes = chemist_sssom_homes(by_obj, rs)
         if not homes:
@@ -862,7 +971,7 @@ def check_forest_nesting(
                     Finding(
                         "forest_ruleset_nesting",
                         sub,
-                        "ruleset SSSOM subject not in XMET",
+                        "catalog SSSOM subject not in XMET",
                         rs,
                     )
                 )
@@ -872,30 +981,23 @@ def check_forest_nesting(
                     Finding(
                         "forest_ruleset_nesting",
                         sub,
-                        f"ruleset home not under {ancestor}",
+                        f"catalog home not under {ancestor}",
                         rs,
                     )
                 )
 
-    # CJ: each home is conjugation or nests under it; conjugation under RC.
-    cj_homes = chemist_sssom_homes(by_obj, "forest.ruleset:CJ")
+    # Conjugation: optional until catalog ships; when present, nest under conjugation + RC.
+    cj_homes = chemist_sssom_homes(by_obj, "xf:Conjugation")
     if not cj_homes:
-        findings.append(
-            Finding(
-                "forest_ruleset_nesting",
-                CONJUGATION,
-                "no chemist SSSOM home for forest.ruleset:CJ",
-                "forest.ruleset:CJ",
-            )
-        )
+        return
     for sub in cj_homes:
         if sub not in concepts:
             findings.append(
                 Finding(
                     "forest_ruleset_nesting",
                     sub,
-                    "CJ ruleset SSSOM subject not in XMET",
-                    "forest.ruleset:CJ",
+                    "Conjugation catalog SSSOM subject not in XMET",
+                    "xf:Conjugation",
                 )
             )
             continue
@@ -904,8 +1006,8 @@ def check_forest_nesting(
                 Finding(
                     "forest_ruleset_nesting",
                     sub,
-                    "CJ ruleset home not under conjugation",
-                    "forest.ruleset:CJ",
+                    "Conjugation catalog home not under conjugation",
+                    "xf:Conjugation",
                 )
             )
         if not under_or_equal(sub, REACTION_CLASS, pm, memo):
@@ -913,8 +1015,8 @@ def check_forest_nesting(
                 Finding(
                     "forest_ruleset_nesting",
                     sub,
-                    "CJ ruleset home not under reaction class",
-                    "forest.ruleset:CJ",
+                    "Conjugation catalog home not under reaction class",
+                    "xf:Conjugation",
                 )
             )
 
@@ -925,14 +1027,12 @@ def check_forest_phaseone(
     pm: dict[str, list[str]],
 ) -> None:
     rows = load_sssom(FOREST_SSSOM)
-    by_obj: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for r in rows:
-        by_obj[r["object_id"]].append(r)
+    by_obj = index_sssom_by_object(rows)
 
     check_unique_sssom_homes(
         findings,
         rows,
-        object_prefix="forest.pattern:",
+        object_kind="pattern",
         check_id="forest_pattern_unique_home",
         label="Forest pattern",
     )
@@ -942,31 +1042,33 @@ def check_forest_phaseone(
     check_unique_sssom_subjects(
         findings,
         rows,
-        object_prefix="forest.rule:",
+        object_kind="rule",
         check_id="forest_rule_unique_subject",
         label="Forest rule",
     )
 
-    for ruleset, xmet_id in [
-        ("forest.ruleset:SO", SO),
-        ("forest.ruleset:UO", UO),
-        ("forest.ruleset:DH", DH),
-        ("forest.ruleset:HD", HD),
-        ("forest.ruleset:RD", RD),
+    # Catalog / color mappings (long xf: names only — never SO/UO/…).
+    # Dehydrogenation / Hydrolysis are rule exactMatch homes (ex-DH/HD catalogs).
+    for catalog, xmet_id in [
+        ("xf:StableOxygenation", SO),
+        ("xf:UnstableOxygenation", UO),
+        ("xf:Dehydrogenation", DH),
+        ("xf:Hydrolysis", HD),
+        ("xf:Reduction", RD),
     ]:
-        if ruleset not in by_obj:
+        if catalog not in by_obj:
             findings.append(
-                Finding("forest_ruleset_mapped", xmet_id, f"no SSSOM row for {ruleset}", ruleset)
+                Finding("forest_ruleset_mapped", xmet_id, f"no SSSOM row for {catalog}", catalog)
             )
         else:
-            subs = {r["subject_id"] for r in by_obj[ruleset]}
+            subs = {r["subject_id"] for r in by_obj[catalog]}
             if xmet_id not in subs and not any(s in concepts for s in subs):
                 findings.append(
                     Finding(
                         "forest_ruleset_mapped",
                         xmet_id,
-                        f"ruleset {ruleset} not linked from chemist color",
-                        ruleset,
+                        f"catalog {catalog} not linked from chemist color",
+                        catalog,
                     )
                 )
 
@@ -978,7 +1080,7 @@ def check_forest_phaseone(
         expected_rules = list(draft.get("phaseone_rules_in_forest") or [])
 
     for rule in expected_rules:
-        obj = f"forest.rule:{rule}"
+        obj = xf_rule(rule)
         if obj not in by_obj:
             findings.append(
                 Finding(
@@ -1001,9 +1103,9 @@ def check_forest_phaseone(
                     )
                 )
 
-    # forest.rule rows: exactMatch or closeMatch only (not relatedMatch)
+    # Rule rows: exactMatch or closeMatch only (not relatedMatch).
     for obj, mapped in by_obj.items():
-        if not obj.startswith("forest.rule:"):
+        if forest_object_kind(obj) != "rule":
             continue
         for r in mapped:
             pred = r.get("predicate_id") or ""
@@ -1012,14 +1114,14 @@ def check_forest_phaseone(
                     Finding(
                         "forest_rule_predicate",
                         r.get("subject_id") or obj,
-                        f"forest.rule mapping must be exactMatch or closeMatch; got {pred}",
+                        f"xf: rule mapping must be exactMatch or closeMatch; got {pred}",
                         obj,
                     )
                 )
 
-    # forest.pattern rows (all, incl. conjugation): exactMatch or closeMatch
+    # Pattern rows: exactMatch or closeMatch
     for obj, mapped in by_obj.items():
-        if not obj.startswith("forest.pattern:"):
+        if forest_object_kind(obj) != "pattern":
             continue
         for r in mapped:
             pred = r.get("predicate_id") or ""
@@ -1028,7 +1130,7 @@ def check_forest_phaseone(
                     Finding(
                         "forest_pattern_predicate",
                         r.get("subject_id") or obj,
-                        f"forest.pattern mapping must be exactMatch or closeMatch; got {pred}",
+                        f"xf: pattern mapping must be exactMatch or closeMatch; got {pred}",
                         obj,
                     )
                 )
@@ -1056,20 +1158,20 @@ def check_forest_phaseone(
             )
 
     # Also keep draft PhaseOne pattern hierarchy checks when present.
-    expected_patterns: list[tuple[str, str]] = []  # (forest.pattern, forest.rule)
+    expected_patterns: list[tuple[str, str]] = []  # (xf:pattern, xf:rule)
     for color in (draft.get("reaction_class") or {}).get("phase_one_colors") or []:
         for rule in color.get("rules") or []:
-            fr = rule.get("forest_rule") or ""
+            fr = normalize_forest_object(rule.get("forest_rule") or "")
             for pat in rule.get("patterns") or []:
-                fp = pat.get("forest_pattern") or ""
-                if fp and fr:
+                fp = normalize_forest_object(pat.get("forest_pattern") or "")
+                if fp.startswith("xf:") and fr.startswith("xf:"):
                     expected_patterns.append((fp, fr))
 
     live_fps: set[str] = set()
     for rule_name, pats in catalog.items():
-        fr = f"forest.rule:{rule_name}"
+        fr = xf_rule(rule_name)
         for pname in pats:
-            fp = f"forest.pattern:{rule_name}/{pname}"
+            fp = xf_pattern(rule_name, pname)
             live_fps.add(fp)
             expected_patterns.append((fp, fr))
 
@@ -1132,31 +1234,31 @@ def check_forest_phaseone(
     # Orphan pattern SSSOM rows (removed from Forest catalog)
     if catalog:
         for obj in by_obj:
-            if obj.startswith("forest.pattern:") and obj not in live_fps:
+            if forest_object_kind(obj) == "pattern" and obj not in live_fps:
                 findings.append(
                     Finding(
                         "forest_pattern_sssom_orphan",
                         by_obj[obj][0]["subject_id"],
-                        "SSSOM forest.pattern not in live Forest catalog",
+                        "SSSOM xf: pattern not in live Forest catalog",
                         obj,
                     )
                 )
 
-    # CJ should not map only to phase II tag
-    for r in by_obj.get("forest.ruleset:CJ", []):
+    # Conjugation catalog should not map only to phase II tag
+    for r in by_obj.get("xf:Conjugation", []):
         if r["subject_id"] in PHASE_TAGS:
             findings.append(
                 Finding(
                     "forest_cj_fork",
                     r["subject_id"],
-                    "CJ ruleset should map to conjugation / fork, not disposition phase tag",
-                    "forest.ruleset:CJ",
+                    "Conjugation catalog should map to conjugation / fork, not disposition phase tag",
+                    "xf:Conjugation",
                 )
             )
 
     # GSH mapping subject under adducts
     for r in rows:
-        if r["object_id"] == "forest.rule:Glutathionation":
+        if r["object_id"] == "xf:Glutathionation":
             sub = r["subject_id"]
             if sub in concepts:
                 anc = ancestors(sub, pm) | set(pm.get(sub, []))
@@ -1175,9 +1277,9 @@ def check_related_match_discipline(
     findings: list[Finding],
     concepts: dict[str, dict[str, Any]],
 ) -> None:
-    """relatedMatch is disallowed except Forest ruleset SSSOM rows.
+    """relatedMatch is disallowed except Forest catalog SSSOM rows (``xf:``).
 
-    YAML ``related_match`` and non-ruleset SSSOM relatedMatch must be curated
+    YAML ``related_match`` and non-catalog SSSOM relatedMatch must be curated
     away; antonyms use ``antonyms:`` / ``xmet:antonymOf`` instead.
     """
     for cid, c in concepts.items():
@@ -1190,19 +1292,22 @@ def check_related_match_discipline(
                 )
             )
 
-    allowed_obj_prefix = "forest.ruleset:"
     for path in (FOREST_SSSOM, EXTERNAL_SSSOM, MOP_SSSOM, MESH_SSSOM, TAGGER_SSSOM):
         for r in load_sssom(path):
             if r.get("predicate_id") != "skos:relatedMatch":
                 continue
             obj = r.get("object_id") or ""
-            if obj.startswith(allowed_obj_prefix):
+            if path.resolve() == FOREST_SSSOM.resolve() and is_relatedmatch_catalog(obj):
+                continue
+            # Legacy forest.ruleset:* still accepted if present during transition.
+            if obj.startswith("forest.ruleset:"):
                 continue
             findings.append(
                 Finding(
                     "sssom_related_match_forbidden",
                     r.get("subject_id") or "",
-                    f"relatedMatch not allowed except {allowed_obj_prefix}* "
+                    "relatedMatch not allowed except Forest catalog xf:* "
+                    "(PhaseOne/StableOxygenation/UnstableOxygenation/Reduction/Conjugation) "
                     f"(file {path.name})",
                     obj,
                 )

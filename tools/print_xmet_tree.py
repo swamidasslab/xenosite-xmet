@@ -125,9 +125,11 @@ def resolve_root(by: dict[str, dict[str, Any]], root: str) -> str:
 
 
 def _rank_obj(obj: str) -> int:
+    if obj.startswith("xf:") and "/" in obj:
+        return 0
     if obj.startswith("forest.pattern:"):
         return 0
-    if obj.startswith("forest.rule:"):
+    if obj.startswith("xf:") or obj.startswith("forest.rule:"):
         return 1
     if obj.startswith("rule:"):
         return 2
@@ -137,6 +139,8 @@ def _rank_obj(obj: str) -> int:
 
 
 def _short_obj(obj: str) -> str:
+    if obj.startswith("xf:"):
+        return obj[3:]
     if obj.startswith("forest.pattern:"):
         return "pattern:" + obj.split(":", 1)[1]
     if obj.startswith("forest.rule:"):

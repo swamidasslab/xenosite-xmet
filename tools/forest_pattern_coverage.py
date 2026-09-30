@@ -38,20 +38,44 @@ OUT_TTL = ROOT / "data/candidates/forest-inferred-covers.ttl"
 OUT_JSON = ROOT / "data/candidates/forest-pattern-coverage.json"
 
 XMET = Namespace("https://xenosite.org/ontology/xmet#")
+# Living Forest IRIs (xf: path form). Legacy forest.*/ns/forest/ still accepted on read.
+XF = Namespace("https://w3id.org/xenosite/forest/")
 FOREST = Namespace("https://xenosite.org/ns/forest/")
 # Custom cover predicate (materialized inference)
 COVERS = XMET.covers  # xmet:covers
+
+SHORT_TO_LONG = {
+    "SO": "StableOxygenation",
+    "UO": "UnstableOxygenation",
+    "DH": "Dehydrogenation",
+    "HD": "Hydrolysis",
+    "RD": "Reduction",
+    "CJ": "Conjugation",
+}
+
+
+def normalize_forest_local(obj: str) -> str:
+    raw = (obj or "").strip()
+    if raw.startswith("xf:"):
+        local = raw[3:]
+    elif raw.startswith("forest.pattern:"):
+        local = raw[len("forest.pattern:") :]
+    elif raw.startswith("forest.rule:"):
+        local = raw[len("forest.rule:") :]
+    elif raw.startswith("forest.ruleset:"):
+        local = raw[len("forest.ruleset:") :]
+    else:
+        return raw
+    if "/" not in local and local in SHORT_TO_LONG:
+        local = SHORT_TO_LONG[local]
+    return local
 
 
 def curie_to_iri(curie: str) -> URIRef:
     if curie.startswith("xmet:"):
         return XMET[curie[5:]]
-    if curie.startswith("forest.rule:"):
-        return FOREST[f"rule/{curie.split(':', 1)[1]}"]
-    if curie.startswith("forest.pattern:"):
-        return FOREST[f"pattern/{curie.split(':', 1)[1]}"]
-    if curie.startswith("forest.ruleset:"):
-        return FOREST[f"ruleset/{curie.split(':', 1)[1]}"]
+    if curie.startswith(("xf:", "forest.rule:", "forest.pattern:", "forest.ruleset:")):
+        return XF[normalize_forest_local(curie)]
     raise ValueError(f"unknown CURIE: {curie}")
 
 
@@ -59,12 +83,16 @@ def iri_to_curie(term) -> str:
     s = str(term)
     if s.startswith(str(XMET)):
         return "xmet:" + s[len(str(XMET)) :]
+    if s.startswith(str(XF)):
+        return "xf:" + s[len(str(XF)) :]
     if s.startswith(str(FOREST) + "rule/"):
-        return "forest.rule:" + s[len(str(FOREST) + "rule/") :]
+        return "xf:" + s[len(str(FOREST) + "rule/") :]
     if s.startswith(str(FOREST) + "pattern/"):
-        return "forest.pattern:" + s[len(str(FOREST) + "pattern/") :]
+        return "xf:" + s[len(str(FOREST) + "pattern/") :]
     if s.startswith(str(FOREST) + "ruleset/"):
-        return "forest.ruleset:" + s[len(str(FOREST) + "ruleset/") :]
+        local = s[len(str(FOREST) + "ruleset/") :]
+        local = SHORT_TO_LONG.get(local, local)
+        return "xf:" + local
     return s
 
 
@@ -82,6 +110,7 @@ def load_graph(skos_ttl: Path, sssom: Path) -> Graph:
     g = Graph()
     g.bind("skos", SKOS)
     g.bind("xmet", XMET)
+    g.bind("xf", XF)
     g.bind("forest", FOREST)
     g.parse(skos_ttl, format="turtle")
 
@@ -118,7 +147,7 @@ CONSTRUCT {
 }
 WHERE {
     ?home skos:exactMatch ?forest .
-    FILTER( STRSTARTS(STR(?forest), "https://xenosite.org/ns/forest/") )
+    FILTER( STRSTARTS(STR(?forest), "https://w3id.org/xenosite/forest/") )
     {
         BIND(?home AS ?child)
     }
@@ -135,11 +164,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?kind (COUNT(DISTINCT ?forest) AS ?n)
 WHERE {
   ?home skos:exactMatch ?forest .
-  FILTER( STRSTARTS(STR(?forest), "https://xenosite.org/ns/forest/") )
+  FILTER( STRSTARTS(STR(?forest), "https://w3id.org/xenosite/forest/") )
   BIND(
-    IF( CONTAINS(STR(?forest), "/rule/"), "rule",
-    IF( CONTAINS(STR(?forest), "/pattern/"), "pattern",
-    IF( CONTAINS(STR(?forest), "/ruleset/"), "ruleset", "other" ) ) )
+    IF( CONTAINS(STRAFTER(STR(?forest), "https://w3id.org/xenosite/forest/"), "/"), "pattern",
+        "rule" )
     AS ?kind
   )
 }
@@ -154,7 +182,7 @@ SELECT ?pred (COUNT(*) AS ?n)
 WHERE {
   VALUES ?pred { skos:exactMatch skos:closeMatch skos:relatedMatch }
   ?s ?pred ?forest .
-  FILTER( STRSTARTS(STR(?forest), "https://xenosite.org/ns/forest/") )
+  FILTER( STRSTARTS(STR(?forest), "https://w3id.org/xenosite/forest/") )
 }
 GROUP BY ?pred
 ORDER BY ?pred
@@ -169,7 +197,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?forest ?home ?homeLabel (COUNT(DISTINCT ?covered) AS ?nCovered)
 WHERE {
   ?home skos:exactMatch ?forest .
-  FILTER( STRSTARTS(STR(?forest), "https://xenosite.org/ns/forest/") )
+  FILTER( STRSTARTS(STR(?forest), "https://w3id.org/xenosite/forest/") )
   OPTIONAL { ?home skos:prefLabel ?homeLabel }
   ?forest xmet:covers ?covered .
 }
@@ -186,16 +214,18 @@ WHERE {
   {
     SELECT DISTINCT ?home WHERE {
       ?home skos:exactMatch ?f .
-      FILTER( STRSTARTS(STR(?f), "https://xenosite.org/ns/forest/") )
+      FILTER( STRSTARTS(STR(?f), "https://w3id.org/xenosite/forest/") )
     }
   }
   BIND( EXISTS {
     ?home skos:exactMatch ?r .
-    FILTER( CONTAINS(STR(?r), "/rule/") )
+    FILTER( STRSTARTS(STR(?r), "https://w3id.org/xenosite/forest/") )
+    FILTER( !CONTAINS(STRAFTER(STR(?r), "https://w3id.org/xenosite/forest/"), "/") )
   } AS ?asRule )
   BIND( EXISTS {
     ?home skos:exactMatch ?p .
-    FILTER( CONTAINS(STR(?p), "/pattern/") )
+    FILTER( STRSTARTS(STR(?p), "https://w3id.org/xenosite/forest/") )
+    FILTER( CONTAINS(STRAFTER(STR(?p), "https://w3id.org/xenosite/forest/"), "/") )
   } AS ?asPattern )
 }
 ORDER BY ?home
@@ -208,12 +238,13 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 SELECT ?pattern ?patternHome ?rule ?ruleHome ?rel
 WHERE {
   ?patternHome skos:exactMatch ?pattern .
-  FILTER( CONTAINS(STR(?pattern), "/pattern/") )
-  # forest.pattern:Class/name → forest.rule:Class
+  FILTER( STRSTARTS(STR(?pattern), "https://w3id.org/xenosite/forest/") )
+  FILTER( CONTAINS(STRAFTER(STR(?pattern), "https://w3id.org/xenosite/forest/"), "/") )
+  # xf:Rule/name → xf:Rule
   BIND( IRI(
     CONCAT(
-      "https://xenosite.org/ns/forest/rule/",
-      STRBEFORE( STRAFTER(STR(?pattern), "/pattern/"), "/" )
+      "https://w3id.org/xenosite/forest/",
+      STRBEFORE( STRAFTER(STR(?pattern), "https://w3id.org/xenosite/forest/"), "/" )
     )
   ) AS ?rule )
   OPTIONAL { ?ruleHome skos:exactMatch ?rule }
@@ -239,6 +270,8 @@ def load_harvest_patterns(path: Path) -> set[str]:
             continue
         tag = json.loads(line).get("forest_tag") or ""
         if tag.startswith("forest.pattern:"):
+            out.add("xf:" + tag[len("forest.pattern:") :])
+        elif tag.startswith("xf:") and "/" in tag[3:]:
             out.add(tag)
     return out
 
@@ -274,12 +307,13 @@ def main() -> int:
     out_g = Graph()
     out_g.bind("skos", SKOS)
     out_g.bind("xmet", XMET)
+    out_g.bind("xf", XF)
     out_g.bind("forest", FOREST)
     for triple in inferred:
         out_g.add(triple)
     # Also keep asserted exactMatch for readability
     for s, p, o in g.triples((None, SKOS.exactMatch, None)):
-        if str(o).startswith(str(FOREST)) or str(s).startswith(str(FOREST)):
+        if str(o).startswith(str(XF)) or str(s).startswith(str(XF)):
             out_g.add((s, p, o))
     out_g.serialize(OUT_TTL, format="turtle")
 
@@ -350,7 +384,7 @@ def main() -> int:
     sssom_pats = {
         iri_to_curie(o)
         for _s, _p, o in g.triples((None, SKOS.exactMatch, None))
-        if str(o).startswith(str(FOREST) + "pattern/")
+        if str(o).startswith(str(XF)) and "/" in str(o)[len(str(XF)) :]
     }
     if args.harvest.exists():
         print(
@@ -360,12 +394,15 @@ def main() -> int:
         )
 
     # Gaps only (not full per-class dump)
+    def _is_xf_rule(curie: str) -> bool:
+        return curie.startswith("xf:") and "/" not in curie[3:]
+
     rules_no_pat = sorted(
         cls
         for cls in (
             iri_to_curie(r.forest).split(":", 1)[1]
             for r in g.query(PER_FOREST)
-            if iri_to_curie(r.forest).startswith("forest.rule:")
+            if _is_xf_rule(iri_to_curie(r.forest))
         )
         if cls not in by_class
     )
@@ -389,7 +426,7 @@ def main() -> int:
         rule_homes = {}
         for r in g.query(PER_FOREST):
             fc = iri_to_curie(r.forest)
-            if not fc.startswith("forest.rule:"):
+            if not _is_xf_rule(fc):
                 continue
             rule_homes[fc.split(":", 1)[1]] = (
                 iri_to_curie(r.home),
