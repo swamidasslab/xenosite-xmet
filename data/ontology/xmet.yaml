@@ -855,6 +855,20 @@ concepts:
     drop), not nitro-group N–O cleavage under nitrogen reduction.
   parents:
   - xmet:4000101
+- id: xmet:4000423
+  preferred_label: glutathionation excluding thiol disulfide
+  synonyms:
+  - glutathionation without thiol disulfide
+  - non-thiol glutathionation
+  - electrophile glutathionation without thiol exchange
+  definition: Glutathione conjugation at electrophilic centers other than substrate thiol–disulfide
+    exchange—epoxides, aziridines, carbon–halogen bonds, alkenes, Michael acceptors, aldehydes,
+    sulfonate esters, and isocyanates or isothiocyanates. Used when thiol disulfide chemistry is out
+    of scope (for example hard-nucleophile trapping contexts).
+  parents:
+  - xmet:4000167
+  related_to:
+  - xmet:4000267
 - id: xmet:4000106
   preferred_label: sulfur reduction
   definition: 'sulfur reduction: xenobiotic-metabolism term under reduction.'
