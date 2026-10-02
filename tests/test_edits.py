@@ -83,9 +83,12 @@ def test_guards_reject_stale_patches_atomically(repo):
 def test_retire_moves_children_rewrites_links_and_forwards_remap(repo):
     y, r = repo
     ws = Workspace.load(y, r)
-    old, new = "xmet:4000109", "xmet:4000107"
-    pointing = [row for row in r.read_text().splitlines() if row.split("\t")[1:2] == [old]]
-    assert pointing, "fixture expects remap rows that point at the retired id"
+    # Any live leaf that older remap rows point at; retire it into its parent.
+    idx = ws.index()
+    has_children = {p for c in ws.concepts for p in c.get("parents") or []}
+    targets = [row.split("\t")[1] for row in r.read_text().splitlines()[1:]]
+    old = next(t for t in targets if t in idx and t not in has_children)
+    new = idx[old]["parents"][0]
     apply_patches(ws, [patch({"op": "retire", "concept": old, "replaced_by": new})])
     write(ws, y, r)
     data = yaml.safe_load(y.read_text())["concepts"]

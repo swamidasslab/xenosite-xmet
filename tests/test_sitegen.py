@@ -100,3 +100,20 @@ def test_site_code_is_generic(cfg: Config) -> None:
         if m
     ]
     assert not hits, "project-specific strings in generic code:\n" + "\n".join(hits)
+
+
+def test_branch_scoped_check_options(cfg: Config) -> None:
+    """skip_under drops a subtree; min_chars_under sets a per-branch threshold."""
+    v = Vocabulary(cfg)
+    checks = cfg.section("quality")["checks"]
+    run_checks(v)
+    skipped = set(checks["single_child"]["skip_under"])
+    for c in v.concepts.values():
+        branch = {v.concepts[a]["curie"] for a in c["ancestors"]} | {c["curie"]}
+        if branch & skipped:
+            assert not any(f["check"] == "single_child" for f in c["flags"]), c["curie"]
+    (lg, n), = checks["short_definition"]["min_chars_under"].items()
+    under = [c for c in v.concepts.values() if lg in {v.concepts[a]["curie"] for a in c["ancestors"]}]
+    assert under and all(
+        any(f["check"] == "short_definition" for f in c["flags"]) == (0 < len(c["definition"].strip()) < n) for c in under
+    )

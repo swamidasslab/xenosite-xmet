@@ -34,14 +34,37 @@ def _missing_definition(v: Vocabulary, opts: dict[str, Any]) -> list[tuple[str, 
     return [(s, "") for s, c in v.concepts.items() if not c["definition"].strip()]
 
 
+def _branch_value(v: Vocabulary, slug: str, by_branch: dict[str, Any], default: Any) -> Any:
+    """Value for the nearest configured branch at or above ``slug`` (keys are CURIEs)."""
+    c = v.concepts[slug]
+    for s in [slug, *reversed(c["ancestors"])]:
+        if v.concepts[s]["curie"] in by_branch:
+            return by_branch[v.concepts[s]["curie"]]
+    return default
+
+
 @check("short_definition")
 def _short_definition(v: Vocabulary, opts: dict[str, Any]) -> list[tuple[str, str]]:
-    n = int(opts.get("min_chars", 40))
-    return [
-        (s, f"{len(c['definition'].strip())} characters (minimum {n})")
-        for s, c in v.concepts.items()
-        if 0 < len(c["definition"].strip()) < n
-    ]
+    default = int(opts.get("min_chars", 40))
+    out = []
+    for s, c in v.concepts.items():
+        n = int(_branch_value(v, s, opts.get("min_chars_under") or {}, default))
+        if 0 < len(c["definition"].strip()) < n:
+            out.append((s, f"{len(c['definition'].strip())} characters (minimum {n})"))
+    return out
+
+
+@check("templated_definition")
+def _templated_definition(v: Vocabulary, opts: dict[str, Any]) -> list[tuple[str, str]]:
+    """Placeholder definitions: start with the concept's own label and a colon, or match
+    a configured placeholder pattern."""
+    pats = [re.compile(p) for p in opts.get("patterns") or []]
+    out = []
+    for s, c in v.concepts.items():
+        d = c["definition"].strip()
+        if norm(d).startswith(norm(c["label"]) + ":") or any(p.search(d) for p in pats):
+            out.append((s, "placeholder text instead of a definition"))
+    return out
 
 
 @check("missing_synonyms")
@@ -192,6 +215,9 @@ def run_checks(v: Vocabulary) -> list[dict[str, Any]]:
             raise SystemExit(f"unknown quality check in config: {name}")
         severity = opts.get("severity", "warn")
         hits = CHECKS[name](v, opts)
+        skip = set(opts.get("skip_under") or [])
+        if skip:
+            hits = [h for h in hits if h[0] in v.concepts and not _branch_value(v, h[0], {k: True for k in skip}, False)]
         for slug, detail, *extra in hits:
             if slug in v.concepts:
                 v.concepts[slug]["flags"].append(

@@ -98,7 +98,11 @@ mappings:
 quality:
   checks:
     missing_definition:   { severity: error }
-    short_definition:     { severity: warn, min_chars: 40 }
+    templated_definition: { severity: warn, patterns: ['xenobiotic-metabolism term under'] }
+    short_definition:
+      severity: warn
+      min_chars: 40
+      min_chars_under: { "xmet:4000229": 15 }   # leaving groups: "Chloride departing." is complete
     missing_synonyms:     { severity: info }
     duplicate_label:      { severity: error }
     near_duplicate_label:
@@ -107,7 +111,9 @@ quality:
       ignore_prefixes: [de, un, non, dis, in, re]   # stable/unstable, alkylation/dealkylation
       ignore_tokens_up_to: 2                       # locants: N-/O-/S-dealkylation, ω-1
     dangling_reference:   { severity: error }
-    single_child:         { severity: info }
+    single_child:
+      severity: info
+      skip_under: ["xmet:4000281"]   # relation vocabulary nests always-with under suggests by design
     wide_node:            { severity: info, max_children: 15 }
     deep_node:            { severity: info, max_depth: 8 }
     hierarchy_cycle:      { severity: error }
