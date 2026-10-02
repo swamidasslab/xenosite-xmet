@@ -872,6 +872,8 @@ concepts:
   - xmet:4000008
 - id: xmet:4000107
   preferred_label: sulfoxide reduction
+  synonyms:
+  - sulfoxide deoxygenation
   definition: Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation).
   parents:
   - xmet:4000106

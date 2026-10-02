@@ -795,6 +795,7 @@ xmet:4000107 a skos:Concept ;
   skos:prefLabel "sulfoxide reduction" ;
   skos:definition "Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation)." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "sulfoxide deoxygenation" ;
   skos:broader xmet:4000106 .
 
 xmet:4000108 a skos:Concept ;

@@ -1203,6 +1203,9 @@
       "prefLabel": "sulfoxide reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation).",
+      "altLabel": [
+        "sulfoxide deoxygenation"
+      ],
       "broader": "xmet:4000106"
     },
     {
