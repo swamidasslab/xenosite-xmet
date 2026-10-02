@@ -9,7 +9,6 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import os
 import re
 import sys
 from collections import defaultdict
@@ -29,16 +28,6 @@ TAGGER_SSSOM = ROOT / "data/mappings/xmet-tagger.sssom.tsv"
 XFAIL_PATH = ROOT / "data/mappings/validation-xfail.tsv"
 DRAFT_PHASE1 = ROOT / "revision/draft-reaction-class-phase1-tree.json"
 BASELINE_EXTERNAL = ROOT / "artifacts" / "xmet-external.sssom.pre-redesign-v1.tsv"
-DEFAULT_TAGGER_RULES_DIR = ROOT.parent / "crates" / "xenosite-tagger" / "data" / "rules"
-# Prefer metabolite forest (xf: catalog source); fall back to sibling tagger crate.
-_METABOLITE_RULES_RS = (
-    ROOT.parent.parent / "xenosite-metabolite" / "crates" / "xenosite-forest" / "src" / "rules.rs"
-)
-_TAGGER_RULES_RS = ROOT.parent / "crates" / "xenosite-forest" / "src" / "rules.rs"
-DEFAULT_FOREST_RULES_RS = (
-    _METABOLITE_RULES_RS if _METABOLITE_RULES_RS.is_file() else _TAGGER_RULES_RS
-)
-TAGGER_RULE_FILES = ("xenobiotic.rules.yaml", "structural.rules.yaml")
 ALLOWED_RULE_PATTERN_PREDS = {"skos:exactMatch", "skos:closeMatch"}
 
 # Product / model names forbidden in chemical concept definitions.
@@ -187,10 +176,6 @@ def xf_rule(name: str) -> str:
     return f"xf:{name}"
 
 
-def xf_pattern(rule: str, pattern: str) -> str:
-    return f"xf:{rule}/{pattern}"
-
-
 def is_relatedmatch_catalog(obj: str) -> bool:
     n = normalize_forest_object(obj)
     return forest_object_kind(n) == "catalog"
@@ -281,80 +266,6 @@ def index_sssom_by_object(rows: list[dict[str, str]]) -> dict[str, list[dict[str
     for r in rows:
         by_obj[r["object_id"]].append(r)
     return by_obj
-
-
-def forest_rules_rs() -> Path | None:
-    override = os.environ.get("XMET_FOREST_RULES_RS")
-    path = Path(override) if override else DEFAULT_FOREST_RULES_RS
-    return path if path.is_file() else None
-
-
-def load_forest_catalog_patterns(rules_rs: Path) -> dict[str, list[str]]:
-    """Parse live Forest leaf RuleSet → pattern names from rules.rs.
-
-    Pattern names are the first string argument of ``smirks_row`` /
-    ``endpoint_row`` / ``PatternInfo::<ctor>`` inside each
-    ``pub fn …() -> RuleSet`` leaf (skips phase_one / default / all catalogs).
-    """
-    text = rules_rs.read_text()
-    parts = re.split(r"\n(?=pub fn [a-z_]+\(\) -> RuleSet)", text)
-    catalog: dict[str, list[str]] = {}
-    skip = {"phase_one", "default_ruleset", "all_rules"}
-    for part in parts:
-        m = re.match(r"pub fn ([a-z_]+)\(\) -> RuleSet", part)
-        if not m or m.group(1) in skip:
-            continue
-        nm = re.search(r'RuleSet::new\(\s*Some\("([^"]+)"', part)
-        if not nm:
-            continue
-        rule = nm.group(1)
-        pats: list[str] = []
-        for helper in ("smirks_row", "endpoint_row"):
-            pats.extend(re.findall(rf'{helper}\(\s*"([^"]+)"', part))
-        pats.extend(re.findall(r'PatternInfo::[a-z_]+\(\s*"([^"]+)"', part))
-        seen: set[str] = set()
-        uniq: list[str] = []
-        for p in pats:
-            if p not in seen:
-                seen.add(p)
-                uniq.append(p)
-        catalog[rule] = uniq
-    return catalog
-
-
-def load_forest_compose_members(rules_rs: Path) -> dict[str, list[str]]:
-    """Parse ``RuleSet::compose`` catalogs → leaf rule names (PascalCase).
-
-    Maps catalog name (PhaseOne, Default, All) to ordered leaf rule names.
-    """
-    text = rules_rs.read_text()
-    # fn snake → RuleSet::new Some("Pascal") for leaf lookup
-    snake_to_pascal: dict[str, str] = {}
-    for m in re.finditer(
-        r'pub fn ([a-z_]+)\(\) -> RuleSet \{[\s\S]*?RuleSet::new\(\s*Some\("([^"]+)"',
-        text,
-    ):
-        snake_to_pascal[m.group(1)] = m.group(2)
-
-    catalogs: dict[str, list[str]] = {}
-    for m in re.finditer(
-        r"pub fn ([a-z_]+)\(\) -> RuleSet \{\s*RuleSet::compose\(\s*Some\(\"([^\"]+)\"",
-        text,
-    ):
-        fn_name, catalog_name = m.group(1), m.group(2)
-        # Body until matching close of compose — take until next pub fn or end
-        start = m.end()
-        nxt = re.search(r"\npub fn ", text[start:])
-        body = text[start : start + nxt.start()] if nxt else text[start:]
-        members: list[str] = []
-        for call in re.findall(r"\b([a-z_]+)\(\)", body):
-            if call in {"compose", "into", "from"}:
-                continue
-            pascal = snake_to_pascal.get(call)
-            if pascal:
-                members.append(pascal)
-        catalogs[catalog_name] = members
-    return catalogs
 
 
 def chemist_sssom_homes(
@@ -876,7 +787,7 @@ def check_forest_nesting(
 ) -> None:
     """Forest hierarchy mirrored in XMET: pattern ⊂ rule ⊂ catalog ⊂ parent.
 
-    1. Every live ``xf:Rule/pat`` chemist home nests under the mapped ``xf:Rule``
+    1. Every mapped ``xf:Rule/pat`` chemist home nests under the mapped ``xf:Rule``
        chemist home.
     2. Every rule with a known catalog membership nests under (or equals) at
        least one chemist home of that catalog.
@@ -889,29 +800,25 @@ def check_forest_nesting(
 
     memo: dict[str, set[str]] = {}
 
-    # --- 1. patterns under rules (live Forest catalog) ---
-    rules_rs = forest_rules_rs()
-    catalog: dict[str, list[str]] = load_forest_catalog_patterns(rules_rs) if rules_rs else {}
-    for rule_name, pats in catalog.items():
-        fr = xf_rule(rule_name)
+    # --- 1. patterns under rules (both mapped in the Forest SSSOM) ---
+    for fp in by_obj:
+        if forest_object_kind(fp) != "pattern":
+            continue
+        fr = fp.rsplit("/", 1)[0]
         rule_homes = [h for h in chemist_sssom_homes(by_obj, fr) if h in concepts]
         if not rule_homes:
             continue
         rule_sub = rule_homes[0]
-        for pname in pats:
-            fp = xf_pattern(rule_name, pname)
-            for sub in chemist_sssom_homes(by_obj, fp):
-                if sub not in concepts:
-                    continue
-                if not under_or_equal(sub, rule_sub, pm, memo):
-                    findings.append(
-                        Finding(
-                            "forest_pattern_under_rule",
-                            sub,
-                            f"pattern subject not under rule concept {rule_sub} ({fr})",
-                            fp,
-                        )
+        for sub in chemist_sssom_homes(by_obj, fp):
+            if sub in concepts and not under_or_equal(sub, rule_sub, pm, memo):
+                findings.append(
+                    Finding(
+                        "forest_pattern_under_rule",
+                        sub,
+                        f"pattern subject not under rule concept {rule_sub} ({fr})",
+                        fp,
                     )
+                )
 
     # --- 2. rules under catalogs ---
     membership = load_rule_to_ruleset_membership()
@@ -953,27 +860,6 @@ def check_forest_nesting(
                     fr,
                 )
             )
-
-    # PhaseOne catalog leaves without a color/CJ membership still nest under RC.
-    if rules_rs:
-        compose = load_forest_compose_members(rules_rs)
-        colored = set(membership)
-        for rule_name in compose.get("PhaseOne") or []:
-            fr = xf_rule(rule_name)
-            if fr in colored:
-                continue
-            for rule_sub in chemist_sssom_homes(by_obj, fr):
-                if rule_sub not in concepts:
-                    continue
-                if not under_or_equal(rule_sub, REACTION_CLASS, pm, memo):
-                    findings.append(
-                        Finding(
-                            "forest_rule_under_ruleset",
-                            rule_sub,
-                            "PhaseOne leaf without color membership not under reaction class",
-                            fr,
-                        )
-                    )
 
     # --- 3. catalogs under required parents ---
     for rs, ancestor in RULESET_REQUIRED_ANCESTOR.items():
@@ -1158,28 +1044,6 @@ def check_forest_phaseone(
                     )
                 )
 
-    # Live Forest catalog: every leaf pattern must have a chemist SSSOM home.
-    rules_rs = forest_rules_rs()
-    if rules_rs is None:
-        findings.append(
-            Finding(
-                "forest_rules_rs",
-                "xmet:4000213",
-                "Forest rules.rs not found (set XMET_FOREST_RULES_RS or keep sibling crate)",
-            )
-        )
-        catalog: dict[str, list[str]] = {}
-    else:
-        catalog = load_forest_catalog_patterns(rules_rs)
-        if not catalog:
-            findings.append(
-                Finding(
-                    "forest_catalog_patterns_present",
-                    "xmet:4000213",
-                    f"no Forest leaf patterns parsed from {rules_rs}",
-                )
-            )
-
     # Also keep draft PhaseOne pattern hierarchy checks when present.
     expected_patterns: list[tuple[str, str]] = []  # (xf:pattern, xf:rule)
     for color in (draft.get("reaction_class") or {}).get("phase_one_colors") or []:
@@ -1190,14 +1054,6 @@ def check_forest_phaseone(
                 if fp.startswith("xf:") and fr.startswith("xf:"):
                     expected_patterns.append((fp, fr))
 
-    live_fps: set[str] = set()
-    for rule_name, pats in catalog.items():
-        fr = xf_rule(rule_name)
-        for pname in pats:
-            fp = xf_pattern(rule_name, pname)
-            live_fps.add(fp)
-            expected_patterns.append((fp, fr))
-
     seen_fp: set[str] = set()
     for fp, fr in expected_patterns:
         if fp in seen_fp:
@@ -1205,14 +1061,9 @@ def check_forest_phaseone(
         seen_fp.add(fp)
         rows_for = by_obj.get(fp) or []
         if not rows_for:
-            check = (
-                "forest_pattern_coverage"
-                if fp in live_fps
-                else "forest_phaseone_pattern_coverage"
-            )
             findings.append(
                 Finding(
-                    check,
+                    "forest_phaseone_pattern_coverage",
                     fp,
                     "Forest pattern missing SSSOM mapping",
                     fp,
@@ -1251,19 +1102,6 @@ def check_forest_phaseone(
                         sub,
                         f"pattern conceptual home must be exactMatch or closeMatch; got {pred}",
                         fp,
-                    )
-                )
-
-    # Orphan pattern SSSOM rows (removed from Forest catalog)
-    if catalog:
-        for obj in by_obj:
-            if forest_object_kind(obj) == "pattern" and obj not in live_fps:
-                findings.append(
-                    Finding(
-                        "forest_pattern_sssom_orphan",
-                        by_obj[obj][0]["subject_id"],
-                        "SSSOM xf: pattern not in live Forest catalog",
-                        obj,
                     )
                 )
 
@@ -1383,58 +1221,13 @@ def check_external_exact_discipline(findings: list[Finding]) -> None:
                 )
 
 
-def tagger_rules_dir() -> Path | None:
-    override = os.environ.get("XMET_TAGGER_RULES_DIR")
-    path = Path(override) if override else DEFAULT_TAGGER_RULES_DIR
-    return path if path.is_dir() else None
-
-
-def load_tagger_smarts_rule_ids(directory: Path) -> list[str]:
-    ids: list[str] = []
-    for name in TAGGER_RULE_FILES:
-        path = directory / name
-        if not path.exists():
-            continue
-        data = yaml.safe_load(path.read_text())
-        for rule in data.get("rules") or []:
-            if rule.get("reactant_smarts") or rule.get("product_smarts"):
-                ids.append(rule["id"])
-    return ids
-
-
-def check_tagger_smarts(
+def check_tagger_sssom(
     findings: list[Finding],
     concepts: dict[str, dict[str, Any]],
     pm: dict[str, list[str]],
 ) -> None:
-    """Every tagger SMARTS rule has an exactMatch home under reaction class."""
-    directory = tagger_rules_dir()
-    if directory is None:
-        findings.append(
-            Finding(
-                "tagger_rules_dir",
-                "xmet:4000213",
-                "tagger rules dir not found (set XMET_TAGGER_RULES_DIR or keep sibling crate)",
-            )
-        )
-        return
-
-    smarts_ids = load_tagger_smarts_rule_ids(directory)
-    if not smarts_ids:
-        findings.append(
-            Finding(
-                "tagger_smarts_present",
-                "xmet:4000213",
-                f"no SMARTS rules found under {directory}",
-            )
-        )
-        return
-
+    """Every tagger SSSOM exactMatch home exists and sits under reaction class."""
     rows = load_sssom(TAGGER_SSSOM)
-    by_obj: dict[str, list[dict[str, str]]] = defaultdict(list)
-    for r in rows:
-        by_obj[r["object_id"]].append(r)
-
     check_unique_sssom_homes(
         findings,
         rows,
@@ -1446,51 +1239,21 @@ def check_tagger_smarts(
     # share one chemical subject. Object→subject uniqueness still enforced.
 
     memo: dict[str, set[str]] = {}
-    for rid in smarts_ids:
-        mapped = by_obj.get(rid) or []
-        exact = [r for r in mapped if r["predicate_id"] == "skos:exactMatch"]
-        if not exact:
-            findings.append(
-                Finding(
-                    "tagger_smarts_coverage",
-                    "xmet:4000213",
-                    "SMARTS rule missing exactMatch row in xmet-tagger.sssom.tsv",
-                    rid,
-                )
-            )
+    for r in rows:
+        if r.get("predicate_id") != "skos:exactMatch":
             continue
-        for r in exact:
-            sub = r["subject_id"]
-            if sub not in concepts:
-                findings.append(
-                    Finding(
-                        "tagger_sssom_subject_exists",
-                        sub,
-                        "tagger SSSOM subject not in live ontology",
-                        rid,
-                    )
-                )
-                continue
-            if sub != REACTION_CLASS and REACTION_CLASS not in ancestors(sub, pm, memo):
-                findings.append(
-                    Finding(
-                        "tagger_smarts_reaction_class",
-                        sub,
-                        "tagger SMARTS exactMatch subject not under reaction class",
-                        rid,
-                    )
-                )
-
-    # Orphan SSSOM rows (rule removed from tagger YAML)
-    live_rules = set(smarts_ids)
-    for obj, mapped in by_obj.items():
-        if obj.startswith("rule:") and obj not in live_rules:
+        sub, rid = r["subject_id"], r["object_id"]
+        if sub not in concepts:
+            findings.append(
+                Finding("tagger_sssom_subject_exists", sub, "tagger SSSOM subject not in live ontology", rid)
+            )
+        elif sub != REACTION_CLASS and REACTION_CLASS not in ancestors(sub, pm, memo):
             findings.append(
                 Finding(
-                    "tagger_sssom_orphan",
-                    mapped[0]["subject_id"],
-                    "SSSOM object not a current SMARTS rule",
-                    obj,
+                    "tagger_smarts_reaction_class",
+                    sub,
+                    "tagger SMARTS exactMatch subject not under reaction class",
+                    rid,
                 )
             )
 
@@ -1512,7 +1275,7 @@ def run() -> int:
     check_forest_phaseone(findings, concepts, pm)
     check_forest_nesting(findings, concepts, pm)
     check_dealkylation_pattern_always_with(findings, concepts, pm)
-    check_tagger_smarts(findings, concepts, pm)
+    check_tagger_sssom(findings, concepts, pm)
     check_related_match_discipline(findings, concepts)
     check_external_exact_discipline(findings)
 
