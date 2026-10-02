@@ -1,0 +1,6 @@
+id: 2026-10-02-test-2
+rationale: "Workflow re-test after action updates."
+changes:
+  - op: set_definition
+    concept: xmet:4000107
+    value: "Short."
