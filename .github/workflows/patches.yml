@@ -1,0 +1,133 @@
+name: Patches
+
+# Review bot for edit proposals in data/patches/pending/.
+#
+# Security: pull_request_target runs with this repository's token, so it never checks
+# out or executes code from the pull request. Patch files are fetched as data and
+# parsed with yaml.safe_load by the code on main.
+#
+#   PR opened/updated  → comment: what changes, spec + quality findings fixed/new
+#   /apply [#n …]      → (maintainers) apply to main in a new PR, close the proposal
+#   /reject [reason]   → (maintainers) close the proposal
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+    paths: ["data/patches/pending/**"]
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: patches-${{ github.event.pull_request.number || github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  review:
+    if: github.event_name == 'pull_request_target'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+    steps:
+      - uses: actions/checkout@v4   # base branch (main), not the PR
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync
+      - name: Fetch patch files from the PR (data only)
+        run: tools/fetch_pr_patches.sh "$PR" "$RUNNER_TEMP/patches" 2> "$RUNNER_TEMP/other-files.txt"
+      - name: Review
+        id: review
+        run: |
+          set +e
+          uv run python tools/patch_review.py "$RUNNER_TEMP"/patches/*.y*ml --out "$RUNNER_TEMP/review.md"
+          echo "status=$?" >> "$GITHUB_OUTPUT"
+      - name: Comment
+        run: |
+          {
+            echo "<!-- xmet-patch-review -->"
+            cat "$RUNNER_TEMP/review.md"
+            if [ -s "$RUNNER_TEMP/other-files.txt" ]; then
+              echo; echo "> ⚠️ This PR also changes files outside \`data/patches/pending/\`; only the patch files were reviewed:"
+              sed 's/^/> - `/; s/$/`/' "$RUNNER_TEMP/other-files.txt"
+            fi
+            echo; echo "<sub>Maintainers: comment \`/apply\` to merge this patch into the ontology, or \`/reject <reason>\`.</sub>"
+          } > "$RUNNER_TEMP/comment.md"
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" --paginate \
+                 -q '.[] | select(.body | startswith("<!-- xmet-patch-review -->")) | .id' | head -1)
+          if [ -n "$id" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" -F body=@"$RUNNER_TEMP/comment.md" > /dev/null
+          else
+            gh pr comment "$PR" --body-file "$RUNNER_TEMP/comment.md"
+          fi
+      - name: Fail if the patch does not pass
+        if: steps.review.outputs.status != '0'
+        run: exit 1
+
+  apply:
+    if: >-
+      github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/apply') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.issue.number }}
+      BODY: ${{ github.event.comment.body }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync
+      - name: Collect patches (this PR, plus any #n listed after /apply)
+        run: |
+          prs="$PR $(echo "$BODY" | head -1 | grep -o '#[0-9]\+' | tr -d '#' | tr '\n' ' ')"
+          echo "PRS=$(echo $prs | tr ' ' '\n' | awk '!seen[$0]++' | tr '\n' ' ')" >> "$GITHUB_ENV"
+          for n in $prs; do tools/fetch_pr_patches.sh "$n" data/patches/pending 2>/dev/null; done
+      - name: Apply, export, test
+        run: |
+          uv run xmet-edit apply data/patches/pending/*.y*ml | tee "$RUNNER_TEMP/review.md"
+          make ontology-export
+          uv run pytest -q
+      - name: Open PR with the applied change
+        run: |
+          branch="patch/pr-${PR}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add -A data/
+          refs=$(for n in $PRS; do printf '#%s ' "$n"; done)
+          git commit -m "Apply edit patches ${refs}" -m "Proposed in ${refs}; applied with xmet-edit after review."
+          git push -f origin "$branch"
+          url=$(gh pr create --base main --head "$branch" --title "Apply edit patches ${refs}" \
+                  --body-file "$RUNNER_TEMP/review.md")
+          for n in $PRS; do
+            gh pr comment "$n" --body "Applied in ${url} — thank you! Closing this proposal."
+            gh pr close "$n"
+          done
+
+  reject:
+    if: >-
+      github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '/reject') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.issue.number }}
+      BODY: ${{ github.event.comment.body }}
+    steps:
+      - run: |
+          reason=$(echo "$BODY" | head -1 | sed 's|^/reject *||')
+          gh pr close "$PR" --repo "$GITHUB_REPOSITORY" --comment "Not applied${reason:+: $reason}. Thank you for the suggestion."

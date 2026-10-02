@@ -127,6 +127,25 @@ def test_forest_meets_xmet_spec():
     assert report.ok, report.text()
 ```
 
+## Proposing and applying edits
+
+Edits arrive as **patches**: small YAML changesets in `data/patches/pending/`,
+applied atomically and validated only in their final state (format:
+[`data/patches/README.md`](data/patches/README.md)). The site's *Suggest an edit*
+form writes them and opens them as pull requests.
+
+The **Patches** workflow comments on each patch PR with what changes and which
+spec and quality findings the patch fixes or introduces versus `main`. It runs
+only code from `main`; the PR's patch files are read as data. Maintainers reply
+`/apply` (optionally `/apply #12 #15` to batch several proposals) to get a PR
+that applies them to `xmet.yaml`, regenerates exports, and passes tests, or
+`/reject <reason>` to close.
+
+Locally: `uv run python tools/patch_review.py PATCH…` (full review),
+`uv run xmet-edit check|apply|list`. Applying rewrites only the concepts and
+fields a patch changes, mints ids after the last one used, and forwards remap
+rows when a concept is retired.
+
 ## Website
 
 A static browser for the vocabulary — tree, per-concept pages, search, and

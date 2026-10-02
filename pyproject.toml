@@ -14,6 +14,7 @@ authors = [
 ]
 dependencies = [
     "PyYAML>=6.0",
+    "ruamel.yaml>=0.18",
 ]
 keywords = ["metabolite", "metabolism", "ontology", "skos", "xenosite", "xmet"]
 
@@ -25,6 +26,7 @@ competency = [
 
 [project.scripts]
 xmet-validate = "xenosite.xmet.validate.cli:main"
+xmet-edit = "xenosite.xmet.edits.cli:main"
 
 [project.urls]
 Homepage = "https://xenosite.org"

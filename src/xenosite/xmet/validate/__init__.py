@@ -91,21 +91,25 @@ class Report:
 def sources(
     forest_sssom: str | Path | None = None,
     tagger_sssom: str | Path | None = None,
+    ontology_yaml: str | Path | None = None,
+    remap: str | Path | None = None,
 ) -> Iterator[None]:
-    """Temporarily validate candidate SSSOM files in place of XMET's copies.
+    """Temporarily validate candidate files in place of XMET's copies.
 
     A sibling repository uses this (or ``xmet-validate --forest-sssom …``) to check
-    a regenerated mapping before proposing it to XMET.
+    a regenerated mapping before proposing it; ``xmet-edit`` uses it to validate an
+    ontology with a patch applied.
     """
-    saved = core.FOREST_SSSOM, core.TAGGER_SSSOM
+    names = ("FOREST_SSSOM", "TAGGER_SSSOM", "YAML_PATH", "REMAP_PATH")
+    saved = {n: getattr(core, n) for n in names}
     try:
-        if forest_sssom is not None:
-            core.FOREST_SSSOM = Path(forest_sssom).resolve()
-        if tagger_sssom is not None:
-            core.TAGGER_SSSOM = Path(tagger_sssom).resolve()
+        for name, value in zip(names, (forest_sssom, tagger_sssom, ontology_yaml, remap)):
+            if value is not None:
+                setattr(core, name, Path(value).resolve())
         yield
     finally:
-        core.FOREST_SSSOM, core.TAGGER_SSSOM = saved
+        for name, value in saved.items():
+            setattr(core, name, value)
 
 
 def validate_ontology() -> Report:

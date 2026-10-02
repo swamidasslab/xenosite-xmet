@@ -1,5 +1,22 @@
 # Lab log
 
+## 2026-10-02 (edits)
+
+- Removed 8 synonyms that duplicated another concept's label (usually the
+  concept's own child or parent); duplicate-label check now 0. Competency
+  results unchanged.
+- Edit proposals as atomic **patches** (`data/patches/pending/`):
+  `xenosite.xmet.edits` + `xmet-edit check|apply|list`; `tools/patch_review.py`
+  compares spec + quality findings before/after (fixed / new / unchanged).
+  Applying splices only changed concepts and fields into `xmet.yaml`, mints ids
+  after the last used, and forwards remap rows on retire. **Patches** workflow
+  reviews patch PRs (data only, code from main); `/apply` / `/reject` for
+  maintainers. Untested on GitHub until the repo is public.
+- Site: per-issue explainer pages; term pages show the parent chain plus
+  children and grandchildren; fewer boxes; structured "Suggest an edit" form
+  that opens the patch as a GitHub PR (free-form comment link underneath).
+  Dropped the one-sided-relation check.
+
 ## 2026-10-02 (validator)
 
 - Redesign validator now accepts Forest catalog-path CURIEs
