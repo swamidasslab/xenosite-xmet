@@ -121,7 +121,6 @@
       "definition": "Conjugation stage tag: binding to endogenous moieties. Not a chemical superclass — transfer conjugations and adducts are distinguished under reaction class.",
       "altLabel": [
         "phase 2",
-        "conjugation",
         "Metabolic Detoxication, Phase II",
         "phase 2 metabolism",
         "conjugation phase"
@@ -772,8 +771,7 @@
       "definition": "Formation of a quinone-methide: a quinoid with an exocyclic alkylidene/methide end (including imine-methide variants). Two distinct sites are dehydrogenated so an aromatic system collapses into a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like species formation.",
       "altLabel": [
         "quinone methide formation",
-        "quinoid methide formation",
-        "imine-methide formation"
+        "quinoid methide formation"
       ],
       "broader": "xmet:4000059"
     },
@@ -1060,7 +1058,6 @@
       "inScheme": "xmet:scheme",
       "definition": "hydrogenation: xenobiotic-metabolism term under reduction.",
       "altLabel": [
-        "alkene hydrogenation",
         "reductive saturation"
       ],
       "broader": "xmet:4000008"
@@ -1152,7 +1149,6 @@
       "inScheme": "xmet:scheme",
       "definition": "oxygen reduction: xenobiotic-metabolism term under reduction.",
       "altLabel": [
-        "carbonyl reduction",
         "ketone/aldehyde reduction"
       ],
       "broader": "xmet:4000008"
@@ -1224,7 +1220,6 @@
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a sulfo / sulfoxide center.",
       "altLabel": [
-        "sulfoxide reduction",
         "S-oxide reduction"
       ],
       "broader": "xmet:4000106",
@@ -1851,7 +1846,6 @@
       "inScheme": "xmet:scheme",
       "definition": "acetylation: xenobiotic-metabolism term under phase II, phase II conjugation family.",
       "altLabel": [
-        "N-acetylation",
         "acylation"
       ],
       "broader": "xmet:4000369",
@@ -2810,7 +2804,6 @@
       "inScheme": "xmet:scheme",
       "definition": "Carbonyl-containing fragment released in cleavage or dealkylation paths. Includes aldehyde leaving groups (formaldehyde, acetaldehyde, …) and related carbonyl equivalents.",
       "altLabel": [
-        "aldehyde leaving fragment",
         "carbonyl / aldehyde leaving fragment"
       ],
       "broader": "xmet:4000229"
@@ -2929,7 +2922,6 @@
       "definition": "Trapping of hard electrophiles (e.g. iminium) with cyanide. Distinct from cyanide as a leaving group. Soft-suggests DNA adduct formation.",
       "altLabel": [
         "cyanide trapping",
-        "cyanide adduct formation",
         "CN trapping"
       ],
       "broader": "xmet:4000366"

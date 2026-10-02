@@ -30,7 +30,6 @@ xmet:4000002 a skos:Concept ;
   skos:definition "Conjugation stage tag: binding to endogenous moieties. Not a chemical superclass — transfer conjugations and adducts are distinguished under reaction class." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "phase 2" ;
-  skos:altLabel "conjugation" ;
   skos:altLabel "Metabolic Detoxication, Phase II" ;
   skos:altLabel "phase 2 metabolism" ;
   skos:altLabel "conjugation phase" ;
@@ -490,7 +489,6 @@ xmet:4000063 a skos:Concept ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "quinone methide formation" ;
   skos:altLabel "quinoid methide formation" ;
-  skos:altLabel "imine-methide formation" ;
   skos:broader xmet:4000059 .
 
 xmet:4000064 a skos:Concept ;
@@ -691,7 +689,6 @@ xmet:4000090 a skos:Concept ;
   skos:prefLabel "hydrogenation" ;
   skos:definition "hydrogenation: xenobiotic-metabolism term under reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "alkene hydrogenation" ;
   skos:altLabel "reductive saturation" ;
   skos:broader xmet:4000008 .
 
@@ -759,7 +756,6 @@ xmet:4000101 a skos:Concept ;
   skos:prefLabel "oxygen reduction" ;
   skos:definition "oxygen reduction: xenobiotic-metabolism term under reduction." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "carbonyl reduction" ;
   skos:altLabel "ketone/aldehyde reduction" ;
   skos:broader xmet:4000008 .
 
@@ -811,7 +807,6 @@ xmet:4000109 a skos:Concept ;
   skos:prefLabel "sulfo reduction" ;
   skos:definition "Reduction of a sulfo / sulfoxide center." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "sulfoxide reduction" ;
   skos:altLabel "S-oxide reduction" ;
   skos:broader xmet:4000106 ;
   skos:closeMatch xmet:4000107 .
@@ -1248,7 +1243,6 @@ xmet:4000163 a skos:Concept ;
   skos:prefLabel "acetylation" ;
   skos:definition "acetylation: xenobiotic-metabolism term under phase II, phase II conjugation family." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "N-acetylation" ;
   skos:altLabel "acylation" ;
   skos:broader xmet:4000369 ;
   xmet:antonymOf xmet:4000166 .
@@ -1937,7 +1931,6 @@ xmet:4000260 a skos:Concept ;
   skos:prefLabel "carbonyl leaving fragment" ;
   skos:definition "Carbonyl-containing fragment released in cleavage or dealkylation paths. Includes aldehyde leaving groups (formaldehyde, acetaldehyde, …) and related carbonyl equivalents." ;
   skos:inScheme xmet:scheme ;
-  skos:altLabel "aldehyde leaving fragment" ;
   skos:altLabel "carbonyl / aldehyde leaving fragment" ;
   skos:broader xmet:4000229 .
 
@@ -2016,7 +2009,6 @@ xmet:4000270 a skos:Concept ;
   skos:definition "Trapping of hard electrophiles (e.g. iminium) with cyanide. Distinct from cyanide as a leaving group. Soft-suggests DNA adduct formation." ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "cyanide trapping" ;
-  skos:altLabel "cyanide adduct formation" ;
   skos:altLabel "CN trapping" ;
   skos:broader xmet:4000366 .
 

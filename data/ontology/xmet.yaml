@@ -29,7 +29,6 @@ concepts:
   preferred_label: phase II
   synonyms:
   - phase 2
-  - conjugation
   - Metabolic Detoxication, Phase II
   - phase 2 metabolism
   - conjugation phase
@@ -540,7 +539,6 @@ concepts:
   synonyms:
   - quinone methide formation
   - quinoid methide formation
-  - imine-methide formation
   definition: 'Formation of a quinone-methide: a quinoid with an exocyclic alkylidene/methide end (including
     imine-methide variants). Two distinct sites are dehydrogenated so an aromatic system collapses into
     a non-aromatic conjugated quinoid. Sibling of classical quinone formation under quinone-like species
@@ -749,7 +747,6 @@ concepts:
 - id: xmet:4000090
   preferred_label: hydrogenation
   synonyms:
-  - alkene hydrogenation
   - reductive saturation
   definition: 'hydrogenation: xenobiotic-metabolism term under reduction.'
   parents:
@@ -807,7 +804,6 @@ concepts:
 - id: xmet:4000101
   preferred_label: oxygen reduction
   synonyms:
-  - carbonyl reduction
   - ketone/aldehyde reduction
   definition: 'oxygen reduction: xenobiotic-metabolism term under reduction.'
   parents:
@@ -887,7 +883,6 @@ concepts:
 - id: xmet:4000109
   preferred_label: sulfo reduction
   synonyms:
-  - sulfoxide reduction
   - S-oxide reduction
   definition: Reduction of a sulfo / sulfoxide center.
   parents:
@@ -1358,7 +1353,6 @@ concepts:
 - id: xmet:4000163
   preferred_label: acetylation
   synonyms:
-  - N-acetylation
   - acylation
   definition: 'acetylation: xenobiotic-metabolism term under phase II, phase II conjugation family.'
   parents:
@@ -2045,7 +2039,6 @@ concepts:
 - id: xmet:4000260
   preferred_label: carbonyl leaving fragment
   synonyms:
-  - aldehyde leaving fragment
   - carbonyl / aldehyde leaving fragment
   definition: Carbonyl-containing fragment released in cleavage or dealkylation paths. Includes 
     aldehyde leaving groups (formaldehyde, acetaldehyde, …) and related carbonyl equivalents.
@@ -2134,7 +2127,6 @@ concepts:
   preferred_label: cyanide conjugation
   synonyms:
   - cyanide trapping
-  - cyanide adduct formation
   - CN trapping
   definition: Trapping of hard electrophiles (e.g. iminium) with cyanide. Distinct from cyanide as a
     leaving group. Soft-suggests DNA adduct formation.
