@@ -37,7 +37,7 @@ HARVEST = ROOT / "data/candidates/forest-smarts.jsonl"
 OUT_TTL = ROOT / "data/candidates/forest-inferred-covers.ttl"
 OUT_JSON = ROOT / "data/candidates/forest-pattern-coverage.json"
 
-XMET = Namespace("https://xenosite.org/ontology/xmet#")
+XMET = Namespace("https://w3id.org/xenosite/xmet/")
 # Living Forest IRIs (xf: path form). Legacy forest.*/ns/forest/ still accepted on read.
 XF = Namespace("https://w3id.org/xenosite/forest/")
 FOREST = Namespace("https://xenosite.org/ns/forest/")
@@ -139,7 +139,7 @@ def load_graph(skos_ttl: Path, sssom: Path) -> Graph:
 # child skos:broader+ parent means child is under parent).
 INFER_COVERS = """
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xmet: <https://xenosite.org/ontology/xmet#>
+PREFIX xmet: <https://w3id.org/xenosite/xmet/>
 
 CONSTRUCT {
     ?forest xmet:covers ?home .
@@ -191,7 +191,7 @@ ORDER BY ?pred
 # Per forest entity: exact home + inferred cover count
 PER_FOREST = """
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xmet: <https://xenosite.org/ontology/xmet#>
+PREFIX xmet: <https://w3id.org/xenosite/xmet/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT ?forest ?home ?homeLabel (COUNT(DISTINCT ?covered) AS ?nCovered)

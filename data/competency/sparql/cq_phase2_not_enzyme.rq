@@ -1,5 +1,5 @@
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xmet:  <https://xenosite.org/ontology/xmet#>
+PREFIX xmet:  <https://w3id.org/xenosite/xmet/>
 
 SELECT DISTINCT ?term ?label WHERE {
   ?term skos:broader+ xmet:1300000 .

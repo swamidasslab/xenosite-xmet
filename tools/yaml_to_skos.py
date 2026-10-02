@@ -14,7 +14,7 @@ SKOS_PATH = ROOT / "data/ontology/xmet.skos.jsonld"
 CONTEXT = {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dct": "http://purl.org/dc/terms/",
-    "xmet": "https://xenosite.org/ontology/xmet#",
+    "xmet": "https://w3id.org/xenosite/xmet/",
     "id": "@id",
     "type": "@type",
     "prefLabel": "skos:prefLabel",

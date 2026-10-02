@@ -14,10 +14,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 JSONLD = ROOT / "data/ontology/xmet.skos.jsonld"
 TTL = ROOT / "data/ontology/xmet.ttl"
+LEGACY_TTL = ROOT / "data/ontology/xmet-legacy-iris.ttl"
 
-XMET = "https://xenosite.org/ontology/xmet#"
+XMET = "https://w3id.org/xenosite/xmet/"
 SKOS = "http://www.w3.org/2004/02/skos/core#"
 DCT = "http://purl.org/dc/terms/"
+# Pre-w3id hash namespace; xmet-legacy-iris.ttl links each old IRI to the new one.
+LEGACY_XMET = "https://xenosite.org/ontology/xmet#"
+
+# Well-known CURIE prefixes expanded to full IRIs (others fall back to ext/).
+KNOWN_PREFIXES = {"skos": SKOS, "dct": DCT, "dcterms": DCT}
 
 # JSON-LD compact keys → TTL predicate (prefix:local)
 SKOS_LINK_PREDS = (
@@ -52,8 +58,11 @@ def ttl_iri(curie: str) -> str:
         return f"xmet:{curie.split(':', 1)[1]}"
     if curie.startswith("http://") or curie.startswith("https://"):
         return f"<{curie}>"
+    prefix, _, local = curie.partition(":")
+    if prefix in KNOWN_PREFIXES and local:
+        return f"<{KNOWN_PREFIXES[prefix]}{local}>"
     safe = curie.replace(":", "/")
-    return f"<https://xenosite.org/ontology/xmet/ext/{safe}>"
+    return f"<{XMET}ext/{safe}>"
 
 
 def esc(s: str) -> str:
@@ -66,6 +75,23 @@ def as_list(v):
     if isinstance(v, list):
         return v
     return [v]
+
+
+def write_legacy(data: dict) -> None:
+    """owl:sameAs from each pre-w3id hash IRI to its current xmet: IRI."""
+    lines = [
+        "@prefix owl: <http://www.w3.org/2002/07/owl#> .",
+        f"@prefix xmet: <{XMET}> .",
+        f"@prefix legacy: <{LEGACY_XMET}> .",
+        "",
+    ]
+    for n in data["@graph"]:
+        nid = n["id"]
+        if nid.startswith("xmet:"):
+            local = nid.split(":", 1)[1]
+            lines.append(f"legacy:{local} owl:sameAs xmet:{local} .")
+    LEGACY_TTL.write_text("\n".join(lines) + "\n")
+    print(f"wrote {LEGACY_TTL}")
 
 
 def main() -> None:
@@ -119,6 +145,7 @@ def main() -> None:
         lines.append("")
 
     TTL.write_text("\n".join(lines) + "\n")
+    write_legacy(data)
     # Drop legacy SKOS-only filename if present
     legacy = ROOT / "data/ontology/xmet.skos.ttl"
     if legacy.exists():

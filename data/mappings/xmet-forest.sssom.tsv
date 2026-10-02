@@ -1,7 +1,7 @@
 # Metabolic Forest ↔ XMET chemist homes (SSSOM).
 #curie_map:
 #  xf: https://w3id.org/xenosite/forest/
-#  xmet: https://xenosite.org/ontology/xmet#
+#  xmet: https://w3id.org/xenosite/xmet/
 #  skos: http://www.w3.org/2004/02/skos/core#
 #  semapv: https://w3id.org/semapv/
 # Object CURIEs use xf: path form (Rule, Rule/pattern, or catalog name).

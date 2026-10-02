@@ -6,7 +6,10 @@
 This repo is the **source of truth** for the XMET concept scheme: authoring YAML,
 exported SKOS, SSSOM crosswalks, competency questions, and MetXBioDB/AMD
 term→XMET mapping. Concept CURIEs use the `xmet:` prefix (e.g. `xmet:4000213`).
-Scheme IRI: `https://xenosite.org/ontology/xmet#`.
+Namespace: `https://w3id.org/xenosite/xmet/` — concept IRIs are
+`https://w3id.org/xenosite/xmet/4000213`, scheme `…/xmet/scheme`. Pre-w3id hash
+IRIs (`https://xenosite.org/ontology/xmet#…`) are linked by `owl:sameAs` in
+[`data/ontology/xmet-legacy-iris.ttl`](data/ontology/xmet-legacy-iris.ttl).
 
 The reaction **tagger / RuleSet engine** lives in
 [`swamidasslab/xenosite-tagger`](https://github.com/swamidasslab/xenosite-tagger),

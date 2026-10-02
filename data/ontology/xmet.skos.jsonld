@@ -2,7 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "dct": "http://purl.org/dc/terms/",
-    "xmet": "https://xenosite.org/ontology/xmet#",
+    "xmet": "https://w3id.org/xenosite/xmet/",
     "id": "@id",
     "type": "@type",
     "prefLabel": "skos:prefLabel",
@@ -82,7 +82,7 @@
       "id": "xmet:scheme",
       "type": "skos:ConceptScheme",
       "prefLabel": "Xenobiotic Reaction Metabolism",
-      "iri": "https://xenosite.org/ontology/xmet#",
+      "iri": "https://w3id.org/xenosite/xmet/",
       "definition": "Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a full chemical ontology. Site-localized display names use templates outside the concept scheme. SSSOM maps to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO."
     },
     {
@@ -4447,6 +4447,20 @@
         "nitro oxygen reduction"
       ],
       "broader": "xmet:4000101"
+    },
+    {
+      "id": "xmet:4000423",
+      "type": "skos:Concept",
+      "prefLabel": "glutathionation excluding thiol disulfide",
+      "inScheme": "xmet:scheme",
+      "definition": "Glutathione conjugation at electrophilic centers other than substrate thiol–disulfide exchange—epoxides, aziridines, carbon–halogen bonds, alkenes, Michael acceptors, aldehydes, sulfonate esters, and isocyanates or isothiocyanates. Used when thiol disulfide chemistry is out of scope (for example hard-nucleophile trapping contexts).",
+      "altLabel": [
+        "glutathionation without thiol disulfide",
+        "non-thiol glutathionation",
+        "electrophile glutathionation without thiol exchange"
+      ],
+      "broader": "xmet:4000167",
+      "relatedTo": "xmet:4000267"
     }
   ]
 }

@@ -1,7 +1,7 @@
 @prefix sh:   <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xmet:  <https://xenosite.org/ontology/xmet#> .
-@prefix xmet: <https://xenosite.org/ontology/xmet#> .
+@prefix xmet:  <https://w3id.org/xenosite/xmet/> .
+@prefix xmet: <https://w3id.org/xenosite/xmet/> .
 
 # Structural quality shapes for the XMET SKOS thesaurus.
 # Validated by tools/run_competency_tests.py (pyshacl).

@@ -549,7 +549,7 @@ def sparql_under_spine(spine_id: str, concept_id: str) -> str:
     local_spine = spine_id.split(":", 1)[1]
     local_c = concept_id.split(":", 1)[1]
     return f"""PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xmet: <https://xenosite.org/ontology/xmet#>
+PREFIX xmet: <https://w3id.org/xenosite/xmet/>
 SELECT DISTINCT ?term WHERE {{
   BIND(xmet:{local_c} AS ?term)
   ?term skos:broader+ xmet:{local_spine} .

@@ -93,7 +93,7 @@ def load_sssom():
 
 def iri_to_curie(term) -> str:
     s = str(term)
-    prefix = "https://xenosite.org/ontology/xmet#"
+    prefix = "https://w3id.org/xenosite/xmet/"
     if s.startswith(prefix):
         return "xmet:" + s[len(prefix) :]
     if s.startswith("xmet:"):

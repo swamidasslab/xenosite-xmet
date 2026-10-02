@@ -1,7 +1,7 @@
 scheme:
   id: xmet:scheme
   preferred_label: Xenobiotic Reaction Metabolism
-  iri: https://xenosite.org/ontology/xmet#
+  iri: https://w3id.org/xenosite/xmet/
   definition: Metabolism-specific med-chem SKOS thesaurus for xenobiotic reaction naming — not a 
     full chemical ontology. Site-localized display names use templates outside the concept scheme. 
     SSSOM maps to RXNO/MOP/GO/ChEBI/Rhea/KEGG/MeSH/ECO/CHMO.

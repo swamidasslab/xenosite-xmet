@@ -60,7 +60,7 @@ questions:
   layer: ontology
   question: 'SPARQL: C-dealkylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000046 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -102,7 +102,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-dealkylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000043 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -144,7 +144,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-deethylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000047 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -186,7 +186,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-demethylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000349 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -228,7 +228,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-depropylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000048 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -271,7 +271,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-oxide formation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000027 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -314,7 +314,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-oxide reduction under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000098 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -358,7 +358,7 @@ questions:
   layer: ontology
   question: 'SPARQL: NIH shift under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000197 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -402,7 +402,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-dealkylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000044 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -445,7 +445,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-deethylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000052 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -488,7 +488,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-demethylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000050 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -524,7 +524,7 @@ questions:
   layer: ontology
   question: 'SPARQL: S-dealkylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000045 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -562,7 +562,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acyl migration under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000209 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -600,7 +600,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alcohol oxidation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000069 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -637,7 +637,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aldehyde oxidation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000072 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -673,7 +673,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aldehyde reduction under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000103 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -709,7 +709,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alicyclic hydroxylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000041 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -745,7 +745,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aliphatic O-dealkylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000054 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -782,7 +782,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aliphatic hydroxylation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000014 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -818,7 +818,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkene epoxidation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000023 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -855,7 +855,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkene formation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000073 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -875,7 +875,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkene hydrogenation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000091 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -895,7 +895,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkyne hydrogenation under chemical transformation.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000092 AS ?term)\n  ?term skos:broader+ xmet:4000213 .\n\
     }\n"
   expected_contains:
@@ -975,7 +975,7 @@ questions:
   layer: ontology
   question: 'SPARQL: C-glucuronidation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000156 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1018,7 +1018,7 @@ questions:
   layer: ontology
   question: 'SPARQL: C-glucuronidation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000156 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1061,7 +1061,7 @@ questions:
   layer: ontology
   question: 'SPARQL: CoA conjugation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000185 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1104,7 +1104,7 @@ questions:
   layer: ontology
   question: 'SPARQL: GSH conjugation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000167 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1147,7 +1147,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Michael GSH conjugation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000168 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1190,7 +1190,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Michael glutathionation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000168 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1232,7 +1232,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-acetylation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000164 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1275,7 +1275,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-acetylation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000164 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1317,7 +1317,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-acetylcysteine conjugation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000218 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1360,7 +1360,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-glucuronidation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000153 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1403,7 +1403,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-glucuronidation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000153 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1440,7 +1440,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-methylation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000177 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1467,7 +1467,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-methylation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000177 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1494,7 +1494,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-sulfation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000162 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1521,7 +1521,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-sulfation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000162 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1548,7 +1548,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-acetylation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000165 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1575,7 +1575,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-acetylation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000165 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1602,7 +1602,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-glucuronidation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000149 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1629,7 +1629,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-glucuronidation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000149 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1656,7 +1656,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-methylation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000176 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1683,7 +1683,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-methylation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000176 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1693,7 +1693,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-sulfation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000159 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1703,7 +1703,7 @@ questions:
   layer: ontology
   question: 'SPARQL: O-sulfation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000159 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1713,7 +1713,7 @@ questions:
   layer: ontology
   question: 'SPARQL: S-glucuronidation under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000155 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1723,7 +1723,7 @@ questions:
   layer: ontology
   question: 'SPARQL: S-glucuronidation class under phase II conjugation family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000155 AS ?term)\n  ?term skos:broader+ xmet:1300000 .\n\
     }\n"
   expected_contains:
@@ -1841,7 +1841,7 @@ questions:
   layer: ontology
   question: 'SPARQL: CoA conjugate under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500222 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -1884,7 +1884,7 @@ questions:
   layer: ontology
   question: 'SPARQL: GSH adduct under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500114 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -1927,7 +1927,7 @@ questions:
   layer: ontology
   question: 'SPARQL: GSH-trappable metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500019 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -1970,7 +1970,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Michael acceptor under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500016 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2003,7 +2003,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Michael acceptor metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500131 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2036,7 +2036,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-acetylcysteine adduct under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500219 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2069,7 +2069,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-glucuronide under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500215 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2096,7 +2096,7 @@ questions:
   layer: ontology
   question: 'SPARQL: N-oxide metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500122 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2123,7 +2123,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acetylated metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500224 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2150,7 +2150,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acyl glucuronide under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500015 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2177,7 +2177,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acyl glucuronide reactive under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500107 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2204,7 +2204,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alcohol metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500120 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2231,7 +2231,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aldehyde under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500013 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2258,7 +2258,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aldehyde metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500129 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2285,7 +2285,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aminophenol metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500201 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2311,7 +2311,7 @@ questions:
   layer: ontology
   question: 'SPARQL: arene oxide under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500105 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2337,7 +2337,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aziridine metabolite under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500132 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2347,7 +2347,7 @@ questions:
   layer: ontology
   question: 'SPARQL: benzylic radical under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500205 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2357,7 +2357,7 @@ questions:
   layer: ontology
   question: 'SPARQL: carbinolamine intermediate under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500126 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2367,7 +2367,7 @@ questions:
   layer: ontology
   question: 'SPARQL: carbocation intermediate under reactive metabolite family.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1500204 AS ?term)\n  ?term skos:broader+ xmet:1500000 .\n\
     }\n"
   expected_contains:
@@ -2523,7 +2523,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acyl attachment under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600139 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2559,7 +2559,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aliphatic site under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:7800002 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2585,7 +2585,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkyl ether under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600116 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2621,7 +2621,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkyl halide under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600127 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2658,7 +2658,7 @@ questions:
   layer: ontology
   question: 'SPARQL: allylic carbon under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600101 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2694,7 +2694,7 @@ questions:
   layer: ontology
   question: 'SPARQL: allylic site under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600015 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2731,7 +2731,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alpha to heteroatom under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600017 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2767,7 +2767,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alpha to nitrogen under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600140 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2803,7 +2803,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alpha to oxygen under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600141 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2839,7 +2839,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alpha to sulfur under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600142 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2875,7 +2875,7 @@ questions:
   layer: ontology
   question: 'SPARQL: ambiguous site under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600020 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2911,7 +2911,7 @@ questions:
   layer: ontology
   question: 'SPARQL: amide under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600122 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2947,7 +2947,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aniline under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600103 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2973,7 +2973,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromatic site under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600013 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -2999,7 +2999,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromatic site under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:7800001 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -3025,7 +3025,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aryl ether under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600117 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -3051,7 +3051,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aryl halide under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600128 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -3061,7 +3061,7 @@ questions:
   layer: ontology
   question: 'SPARQL: atom site under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600010 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -3071,7 +3071,7 @@ questions:
   layer: ontology
   question: 'SPARQL: attachment atom C under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600138 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -3081,7 +3081,7 @@ questions:
   layer: ontology
   question: 'SPARQL: attachment atom N under site type.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1600136 AS ?term)\n  ?term skos:broader+ xmet:1600000 .\n\
     }\n"
   expected_contains:
@@ -3210,7 +3210,7 @@ questions:
   layer: ontology
   question: 'SPARQL: GSH mass shift under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000228 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3253,7 +3253,7 @@ questions:
   layer: ontology
   question: 'SPARQL: NIH shift under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000197 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3296,7 +3296,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alkyl loss delta under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:7700007 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3339,7 +3339,7 @@ questions:
   layer: ontology
   question: 'SPARQL: arene oxide pathway under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000007 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3376,7 +3376,7 @@ questions:
   layer: ontology
   question: 'SPARQL: arene oxide rearrangement under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000197 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3413,7 +3413,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromatic and conjugated-system impact under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000000 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3450,7 +3450,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromatic ring substitution impact under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000003 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3488,7 +3488,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromaticity change under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000274 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3525,7 +3525,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromaticity gain under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000002 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3563,7 +3563,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromaticity gain delta under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000195 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3601,7 +3601,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromaticity loss under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:8000001 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3628,7 +3628,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromaticity loss delta under structural delta.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000194 AS ?term)\n  ?term skos:broader+ xmet:4000220 .\n\
     }\n"
   expected_contains:
@@ -3943,7 +3943,7 @@ questions:
   layer: ontology
   question: 'SPARQL: HLM incubation under evidence.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2000017 AS ?term)\n  ?term skos:broader+ xmet:2000000 .\n\
     }\n"
   expected_contains:
@@ -3975,7 +3975,7 @@ questions:
   layer: ontology
   question: 'SPARQL: MS1 evidence under evidence.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2000011 AS ?term)\n  ?term skos:broader+ xmet:2000000 .\n\
     }\n"
   expected_contains:
@@ -4007,7 +4007,7 @@ questions:
   layer: ontology
   question: 'SPARQL: MS2 evidence under evidence.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2000012 AS ?term)\n  ?term skos:broader+ xmet:2000000 .\n\
     }\n"
   expected_contains:
@@ -4033,7 +4033,7 @@ questions:
   layer: ontology
   question: 'SPARQL: NMR evidence under evidence.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2000014 AS ?term)\n  ?term skos:broader+ xmet:2000000 .\n\
     }\n"
   expected_contains:
@@ -4059,7 +4059,7 @@ questions:
   layer: ontology
   question: 'SPARQL: S9 incubation under evidence.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2000118 AS ?term)\n  ?term skos:broader+ xmet:2000000 .\n\
     }\n"
   expected_contains:
@@ -4104,7 +4104,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Forest-map-derived tag under rule provenance.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1900013 AS ?term)\n  ?term skos:broader+ xmet:1900000 .\n\
     }\n"
   expected_contains:
@@ -4141,7 +4141,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Rainbow DH class map under rule provenance.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1900206 AS ?term)\n  ?term skos:broader+ xmet:1900000 .\n\
     }\n"
   expected_contains:
@@ -4178,7 +4178,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Rainbow HD class map under rule provenance.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1900207 AS ?term)\n  ?term skos:broader+ xmet:1900000 .\n\
     }\n"
   expected_contains:
@@ -4215,7 +4215,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Rainbow RD class map under rule provenance.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1900208 AS ?term)\n  ?term skos:broader+ xmet:1900000 .\n\
     }\n"
   expected_contains:
@@ -4252,7 +4252,7 @@ questions:
   layer: ontology
   question: 'SPARQL: Rainbow SO class map under rule provenance.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1900204 AS ?term)\n  ?term skos:broader+ xmet:1900000 .\n\
     }\n"
   expected_contains:
@@ -4288,7 +4288,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acetaldehyde leaving fragment under leaving group.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000251 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
@@ -4325,7 +4325,7 @@ questions:
   layer: ontology
   question: 'SPARQL: alcohol leaving fragment under leaving group.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000241 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
@@ -4362,7 +4362,7 @@ questions:
   layer: ontology
   question: 'SPARQL: allyl leaving group under leaving group.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000235 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
@@ -4399,7 +4399,7 @@ questions:
   layer: ontology
   question: 'SPARQL: amine leaving fragment under leaving group.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000242 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
@@ -4436,7 +4436,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aryl leaving group under leaving group.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000253 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
@@ -4473,7 +4473,7 @@ questions:
   layer: ontology
   question: 'SPARQL: benzyl leaving group under leaving group.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:4000234 AS ?term)\n  ?term skos:broader+ xmet:4000229 .\n\
     }\n"
   expected_contains:
@@ -4516,7 +4516,7 @@ questions:
   layer: ontology
   question: 'SPARQL: active parent under pharmacological role.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2300014 AS ?term)\n  ?term skos:broader+ xmet:2300000 .\n\
     }\n"
   expected_contains:
@@ -4553,7 +4553,7 @@ questions:
   layer: ontology
   question: 'SPARQL: equipotent metabolite under pharmacological role.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2300016 AS ?term)\n  ?term skos:broader+ xmet:2300000 .\n\
     }\n"
   expected_contains:
@@ -4590,7 +4590,7 @@ questions:
   layer: ontology
   question: 'SPARQL: inactive parent under pharmacological role.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2300015 AS ?term)\n  ?term skos:broader+ xmet:2300000 .\n\
     }\n"
   expected_contains:
@@ -4627,7 +4627,7 @@ questions:
   layer: ontology
   question: 'SPARQL: less active metabolite under pharmacological role.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2300018 AS ?term)\n  ?term skos:broader+ xmet:2300000 .\n\
     }\n"
   expected_contains:
@@ -4673,7 +4673,7 @@ questions:
   layer: ontology
   question: 'SPARQL: about parent under annotation about.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2400010 AS ?term)\n  ?term skos:broader+ xmet:2400000 .\n\
     }\n"
   expected_contains:
@@ -4709,7 +4709,7 @@ questions:
   layer: ontology
   question: 'SPARQL: about pathway under annotation about.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:2400015 AS ?term)\n  ?term skos:broader+ xmet:2400000 .\n\
     }\n"
   expected_contains:
@@ -4756,7 +4756,7 @@ questions:
   layer: ontology
   question: 'SPARQL: GSH trapping opportunity under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400110 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -4800,7 +4800,7 @@ questions:
   layer: ontology
   question: 'SPARQL: active metabolite opportunity under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400126 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -4843,7 +4843,7 @@ questions:
   layer: ontology
   question: 'SPARQL: acyl glucuronide risk under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400121 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -4887,7 +4887,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aldehyde forming under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400022 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -4924,7 +4924,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aldehyde risk under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400122 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -4962,7 +4962,7 @@ questions:
   layer: ontology
   question: 'SPARQL: amide soft spot under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400106 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -4999,7 +4999,7 @@ questions:
   layer: ontology
   question: 'SPARQL: amine soft spot under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400102 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -5037,7 +5037,7 @@ questions:
   layer: ontology
   question: 'SPARQL: aromatic soft spot under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400100 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -5075,7 +5075,7 @@ questions:
   layer: ontology
   question: 'SPARQL: benzylic soft spot under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:1400101 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:
@@ -5096,7 +5096,7 @@ questions:
   layer: ontology
   question: 'SPARQL: bioactivation under medchem liability.'
   type: sparql
-  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://xenosite.org/ontology/xmet#>\n\
+  query_text: "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX xmet: <https://w3id.org/xenosite/xmet/>\n\
     SELECT DISTINCT ?term WHERE {\n  BIND(xmet:0003000 AS ?term)\n  ?term skos:broader+ xmet:1400000 .\n\
     }\n"
   expected_contains:

@@ -1,5 +1,5 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xmet: <https://xenosite.org/ontology/xmet#> .
+@prefix xmet: <https://w3id.org/xenosite/xmet/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
 xmet:scheme a skos:ConceptScheme ;
@@ -2110,7 +2110,7 @@ xmet:4000282 a skos:Concept ;
   skos:altLabel "relatedTo" ;
   skos:altLabel "xmet:relatedTo" ;
   skos:broader xmet:4000281 ;
-  skos:exactMatch <https://xenosite.org/ontology/xmet/ext/skos/related> .
+  skos:exactMatch <http://www.w3.org/2004/02/skos/core#related> .
 
 xmet:4000283 a skos:Concept ;
   skos:prefLabel "suggests" ;
@@ -2135,7 +2135,7 @@ xmet:4000285 a skos:Concept ;
   skos:altLabel "hasPart" ;
   skos:altLabel "xmet:hasPart" ;
   skos:broader xmet:4000281 ;
-  skos:exactMatch <https://xenosite.org/ontology/xmet/ext/dcterms/hasPart> .
+  skos:exactMatch <http://purl.org/dc/terms/hasPart> .
 
 xmet:4000286 a skos:Concept ;
   skos:prefLabel "is part of" ;
@@ -2144,7 +2144,7 @@ xmet:4000286 a skos:Concept ;
   skos:altLabel "isPartOf" ;
   skos:altLabel "xmet:isPartOf" ;
   skos:broader xmet:4000281 ;
-  skos:exactMatch <https://xenosite.org/ontology/xmet/ext/dcterms/isPartOf> .
+  skos:exactMatch <http://purl.org/dc/terms/isPartOf> .
 
 xmet:4000287 a skos:Concept ;
   skos:prefLabel "aromatic epoxidation" ;
@@ -3093,4 +3093,14 @@ xmet:4000422 a skos:Concept ;
   skos:inScheme xmet:scheme ;
   skos:altLabel "nitro oxygen reduction" ;
   skos:broader xmet:4000101 .
+
+xmet:4000423 a skos:Concept ;
+  skos:prefLabel "glutathionation excluding thiol disulfide" ;
+  skos:definition "Glutathione conjugation at electrophilic centers other than substrate thiol–disulfide exchange—epoxides, aziridines, carbon–halogen bonds, alkenes, Michael acceptors, aldehydes, sulfonate esters, and isocyanates or isothiocyanates. Used when thiol disulfide chemistry is out of scope (for example hard-nucleophile trapping contexts)." ;
+  skos:inScheme xmet:scheme ;
+  skos:altLabel "glutathionation without thiol disulfide" ;
+  skos:altLabel "non-thiol glutathionation" ;
+  skos:altLabel "electrophile glutathionation without thiol exchange" ;
+  skos:broader xmet:4000167 ;
+  xmet:relatedTo xmet:4000267 .
 
