@@ -1,0 +1,25 @@
+---
+// Compact concept summary; highlights `term` wherever it appears in labels.
+import { concept, termHref, ui } from '../lib/vocab';
+interface Props { slug: string; term?: string; primary?: boolean }
+const { slug, term, primary = false } = Astro.props;
+const c = concept(slug);
+const t = term?.toLowerCase();
+const mark = (s: string) => (t && s.toLowerCase() === t ? 'ring-2 ring-amber-400 bg-amber-50 dark:bg-amber-950/50' : '');
+const parent = c.parents[0] ? concept(c.parents[0]) : null;
+---
+<article class:list={['card p-5', primary && 'ring-2 ring-accent-200 dark:ring-accent-800']}>
+  <div class="flex items-baseline justify-between gap-3">
+    <a href={termHref(slug)} class:list={['text-lg font-semibold hover:text-accent-700 dark:hover:text-accent-300 rounded px-1 -mx-1', mark(c.label)]}>{c.label}</a>
+    <span class="font-mono text-xs text-base-400">{c.curie}</span>
+  </div>
+  {parent && <p class="mt-1 text-sm text-base-500">in <a class="hover:text-accent-700" href={termHref(parent.slug)}>{parent.label}</a></p>}
+  {c.definition && <p class="mt-3 text-sm leading-relaxed text-base-700 dark:text-base-300">{c.definition}</p>}
+  {c.synonyms.length > 0 && (
+    <div class="mt-3">
+      <p class="eyebrow mb-1.5">{ui.synonyms}</p>
+      <ul class="flex flex-wrap gap-1.5">{c.synonyms.map((s) => <li class:list={['chip text-xs', mark(s)]}>{s}</li>)}</ul>
+    </div>
+  )}
+  {c.children.length > 0 && <p class="mt-3 text-xs text-base-500">{c.children.length} {ui.children.toLowerCase()} · {c.descendants} {ui.descendants.toLowerCase()}</p>}
+</article>

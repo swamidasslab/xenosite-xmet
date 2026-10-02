@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 import PageIntro from '../components/PageIntro.astro';
 import SeverityPill from '../components/SeverityPill.astro';
 import Detail from '../components/Detail.astro';
-import { vocab, ui, termHref, concept, branchOf, SEVERITIES } from '../lib/vocab';
+import { vocab, ui, termHref, issueHref, concept, branchOf, SEVERITIES } from '../lib/vocab';
 import { pageMeta } from '../lib/pages';
 
 const meta = await pageMeta('quality', 'Quality');
@@ -77,7 +77,7 @@ const select = 'rounded-lg border border-base-200 bg-base-50 px-3 py-2 text-sm d
               <td class="py-2 pr-4"><a href={termHref(c.slug)} class="font-medium hover:text-accent-700 hover:underline dark:hover:text-accent-300">{c.label}</a> <span class="font-mono text-xs text-base-400">{c.curie}</span></td>
               <td class="py-2 pr-4 text-base-500">{branch.label}</td>
               <td class="py-2 pr-4" data-sort={SEVERITIES.indexOf(f.severity as any)}><SeverityPill severity={f.severity} /></td>
-              <td class="py-2 pr-4"><a href={`#${f.check}`} class="hover:text-accent-700">{titles[f.check]}</a></td>
+              <td class="py-2 pr-4"><a href={issueHref(c.slug, f.check)} class="hover:text-accent-700 hover:underline">{titles[f.check]} →</a></td>
               <td class="py-2 text-base-500"><Detail text={f.detail} /></td>
             </tr>
           ))}

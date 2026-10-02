@@ -23,6 +23,7 @@ const defaults = {
   no_flags: 'No open notes.',
   formats: 'Formats',
   contribute: 'Improve this concept',
+  suggest_edit: 'Suggest an edit',
   edit_source: 'Edit source',
   add_notes: 'Add notes',
   edit_notes: 'Edit notes',

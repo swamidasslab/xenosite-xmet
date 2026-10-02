@@ -103,7 +103,6 @@ quality:
       ignore_prefixes: [de, un, non, dis, in, re]   # stable/unstable, alkylation/dealkylation
       ignore_tokens_up_to: 2                       # locants: N-/O-/S-dealkylation, ω-1
     dangling_reference:   { severity: error }
-    unreciprocated_relation: { severity: info }
     single_child:         { severity: info }
     wide_node:            { severity: info, max_children: 15 }
     deep_node:            { severity: info, max_depth: 8 }

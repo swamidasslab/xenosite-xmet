@@ -7,7 +7,7 @@ import SeverityPill from '../../components/SeverityPill.astro';
 import CopyButton from '../../components/CopyButton.astro';
 import FieldValue from '../../components/FieldValue.astro';
 import Detail from '../../components/Detail.astro';
-import { vocab, ui, href, absolute, termHref, concept, relationLabel, repoLinks, localName, type Concept, type Relation } from '../../lib/vocab';
+import { vocab, ui, href, absolute, termHref, issueHref, concept, relationLabel, repoLinks, localName, type Concept, type Relation } from '../../lib/vocab';
 
 export function getStaticPaths() {
   return Object.keys(vocab.concepts).map((slug) => ({ params: { slug } }));
@@ -190,7 +190,7 @@ const sectionTitle = 'eyebrow mb-3';
           <ul class="space-y-3">
             {c.flags.map((f) => (
               <li class="text-sm">
-                <div class="flex items-center gap-2"><SeverityPill severity={f.severity} /><a href={href(`quality/#${f.check}`)} class="font-medium hover:text-accent-700">{checkTitles[f.check]}</a></div>
+                <div class="flex items-center gap-2"><SeverityPill severity={f.severity} /><a href={issueHref(c.slug, f.check)} class="font-medium hover:text-accent-700 hover:underline">{checkTitles[f.check]} →</a></div>
                 {f.detail && <p class="mt-1 text-base-500 dark:text-base-400"><Detail text={f.detail} /></p>}
               </li>
             ))}

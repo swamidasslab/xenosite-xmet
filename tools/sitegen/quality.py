@@ -8,7 +8,11 @@ from typing import Any, Callable
 from .model import Vocabulary
 
 Flag = dict[str, Any]
-Check = Callable[[Vocabulary, dict[str, Any]], list[tuple[str, str]]]  # → (slug, detail)
+# A check returns (slug, detail) or (slug, detail, extra) hits. Concepts referenced in a
+# detail as [[slug]] become the flag's `refs`; `extra` may add e.g. the `term` at issue.
+Hit = tuple[str, str] | tuple[str, str, dict[str, Any]]
+Check = Callable[[Vocabulary, dict[str, Any]], list[Hit]]
+REF_RE = re.compile(r"\[\[([^\]]+)\]\]")
 
 CHECKS: dict[str, Check] = {}
 
@@ -56,7 +60,7 @@ def _duplicate_label(v: Vocabulary, opts: dict[str, Any]) -> list[tuple[str, str
         if len(slugs) > 1:
             for s in slugs:
                 others = sorted(slugs - {s})
-                out.append((s, f"“{lab}” also used by " + ", ".join(f"[[{o}]]" for o in others)))
+                out.append((s, f"“{lab}” also used by " + ", ".join(f"[[{o}]]" for o in others), {"term": lab}))
     return out
 
 
@@ -167,7 +171,7 @@ def _definition_forbidden_terms(v: Vocabulary, opts: dict[str, Any]) -> list[tup
     for s, c in v.concepts.items():
         for p in pats:
             for m in p.finditer(c["definition"]):
-                out.append((s, f"definition mentions “{m.group(0)}”"))
+                out.append((s, f"definition mentions “{m.group(0)}”", {"term": m.group(0)}))
     return out
 
 
@@ -188,12 +192,18 @@ def run_checks(v: Vocabulary) -> list[dict[str, Any]]:
             raise SystemExit(f"unknown quality check in config: {name}")
         severity = opts.get("severity", "warn")
         hits = CHECKS[name](v, opts)
-        for slug, detail in hits:
+        for slug, detail, *extra in hits:
             if slug in v.concepts:
-                v.concepts[slug]["flags"].append({"check": name, "severity": severity, "detail": detail})
-        summary.append(
-            {"check": name, "severity": severity, "count": len({s for s, _ in hits})}
-        )
+                v.concepts[slug]["flags"].append(
+                    {
+                        "check": name,
+                        "severity": severity,
+                        "detail": detail,
+                        "refs": [r for r in dict.fromkeys(REF_RE.findall(detail)) if r in v.concepts],
+                        **(extra[0] if extra else {}),
+                    }
+                )
+        summary.append({"check": name, "severity": severity, "count": len({h[0] for h in hits})})
     for c in v.concepts.values():
         c["flags"].sort(key=lambda f: (SEVERITY_ORDER.get(f["severity"], 9), f["check"]))
     summary.sort(key=lambda s: (SEVERITY_ORDER.get(s["severity"], 9), s["check"]))

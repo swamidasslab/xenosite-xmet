@@ -1,0 +1,73 @@
+---
+// One quality check on one concept: what it means, every concept involved, and
+// where each sits in the hierarchy.
+import { getEntry, render } from 'astro:content';
+import Base from '../../../../layouts/Base.astro';
+import SeverityPill from '../../../../components/SeverityPill.astro';
+import Detail from '../../../../components/Detail.astro';
+import PathTree from '../../../../components/PathTree.astro';
+import ConceptCard from '../../../../components/ConceptCard.astro';
+import { vocab, ui, href, termHref, concept, repoLinks, type Flag } from '../../../../lib/vocab';
+
+export function getStaticPaths() {
+  return Object.values(vocab.concepts).flatMap((c) =>
+    [...new Set(c.flags.map((f) => f.check))].map((check) => ({ params: { slug: c.slug, check } })),
+  );
+}
+const c = concept(Astro.params.slug!);
+const check = Astro.params.check!;
+const flags: Flag[] = c.flags.filter((f) => f.check === check);
+const entry = await getEntry('checks', check);
+const Body = entry ? (await render(entry)).Content : null;
+const title = entry?.data.title ?? check.replaceAll('_', ' ');
+const involved = [c.slug, ...new Set(flags.flatMap((f) => f.refs ?? []))];
+const term = flags.find((f) => f.term)?.term;
+const links = repoLinks(c);
+---
+<Base title={`${title}: ${c.label}`} description={flags.map((f) => f.detail.replace(/\[\[|\]\]/g, '')).join('; ')} path={`term/${c.slug}/issue/${check}/`}>
+  <nav aria-label="Breadcrumb" class="mb-6 flex flex-wrap items-center gap-1.5 text-sm text-base-500">
+    <a href={href('quality/')} class="hover:text-accent-700">{ui.quality}</a><span>/</span>
+    <a href={href(`quality/#${check}`)} class="hover:text-accent-700">{title}</a><span>/</span>
+    <a href={termHref(c.slug)} class="hover:text-accent-700">{c.label}</a>
+  </nav>
+
+  <header class="mb-8 max-w-3xl">
+    <div class="flex items-center gap-2"><SeverityPill severity={flags[0].severity} /><span class="eyebrow">{title}</span></div>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight">{c.label}</h1>
+    <ul class="mt-3 space-y-1 text-lg text-base-700 dark:text-base-300">
+      {flags.map((f) => <li>{f.detail ? <Detail text={f.detail} /> : title}</li>)}
+    </ul>
+  </header>
+
+  <div class="grid grid-cols-1 gap-8 lg:grid-cols-5">
+    <div class="min-w-0 space-y-6 lg:col-span-3">
+      <section>
+        <h2 class="eyebrow mb-3">{involved.length > 1 ? 'Concepts involved' : 'Concept'}</h2>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {involved.map((s, i) => <ConceptCard slug={s} term={term} primary={i === 0} />)}
+        </div>
+      </section>
+      {Body && (
+        <section class="card p-6">
+          <h2 class="eyebrow mb-3">About this check</h2>
+          <div class="prose-site prose-sm"><Body /></div>
+        </section>
+      )}
+    </div>
+    <aside class="min-w-0 space-y-6 lg:col-span-2">
+      <section class="card p-5">
+        <h2 class="eyebrow mb-3">Where in the tree</h2>
+        <div class="overflow-x-auto text-sm"><PathTree focus={involved} /></div>
+      </section>
+      {links.source && (
+        <section class="card p-5">
+          <h2 class="eyebrow mb-3">{ui.contribute}</h2>
+          <ul class="space-y-2 text-sm">
+            <li><a class="text-accent-700 hover:underline dark:text-accent-300" href={`${termHref(c.slug)}#suggest`}>{ui.suggest_edit} →</a></li>
+            <li><a class="text-accent-700 hover:underline dark:text-accent-300" href={links.source}>{ui.edit_source} ↗</a></li>
+          </ul>
+        </section>
+      )}
+    </aside>
+  </div>
+</Base>

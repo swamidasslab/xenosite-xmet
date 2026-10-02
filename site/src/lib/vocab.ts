@@ -11,7 +11,7 @@ export interface Relation {
   curie?: string;
   iri?: string;
 }
-export interface Flag { check: string; severity: 'error' | 'warn' | 'info' | string; detail: string }
+export interface Flag { check: string; severity: 'error' | 'warn' | 'info' | string; detail: string; refs?: string[]; term?: string }
 export interface Mapping { source: string; predicate: string; object: string; object_label: string; justification: string }
 export interface Concept {
   slug: string; curie: string; iri: string; label: string; definition: string; synonyms: string[];
@@ -85,3 +85,6 @@ export function repoLinks(c: Concept) {
 
 /** Top-level branch (a child of a root) that a concept sits under; roots and branches map to themselves. */
 export const branchOf = (c: Concept): string => (c.ancestors.length >= 2 ? c.ancestors[1] : c.slug);
+
+/** Page explaining one quality check on one concept. */
+export const issueHref = (slug: string, check: string) => href(`term/${slug}/issue/${check}/`);
