@@ -2,26 +2,15 @@
 
 from __future__ import annotations
 
-import subprocess
-import sys
-from pathlib import Path
-
 import pytest
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "tools"))
-
-import validate_redesign_v1 as v  # noqa: E402
+from xenosite.xmet.validate import core as v
+from xenosite.xmet.validate import validate_ontology
 
 
-def test_validate_redesign_v1_exits_zero():
-    proc = subprocess.run(
-        [sys.executable, str(ROOT / "tools" / "validate_redesign_v1.py")],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-    )
-    assert proc.returncode == 0, proc.stdout + "\n" + proc.stderr
+def test_ontology_meets_spec():
+    report = validate_ontology()
+    assert report.ok, report.text()
 
 
 @pytest.fixture(scope="module")

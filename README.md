@@ -92,6 +92,41 @@ xenosite-xmet/
 4. Commit and push this repo; bump the pin in `xenosite-tagger` if consumers
    should pick up the change.
 
+## Validating against the XMET spec
+
+`xenosite-xmet` ships the spec checks as a library (`xenosite.xmet.validate`) and
+a command, `xmet-validate`. XMET's own tests call the same functions, so a
+sibling repository that passes `xmet-validate` meets the spec XMET enforces on
+itself.
+
+| Command | Run from | Checks |
+| --- | --- | --- |
+| `xmet-validate ontology` | anywhere | hierarchy, relations, definitions, SSSOM discipline |
+| `xmet-validate forest PATH/rules.rs` | Forest | every live pattern has a chemist home; no SSSOM row for a removed pattern; PhaseOne leaves nest under reaction class |
+| `xmet-validate tagger PATH/rules` | tagger | every SMARTS rule has an exactMatch home; no SSSOM row for a removed rule |
+| `xmet-validate curies PATH…` | any consumer | every `xmet:` CURIE is live; retired ids name their replacement |
+| `xmet-validate all --forest-rules-rs … --tagger-rules-dir … --curies …` | CI | all of the above in one run |
+
+Add `--forest-sssom FILE` / `--tagger-sssom FILE` to check a regenerated
+mapping before proposing it to XMET, and `--json` for machine-readable output.
+Exit status is 1 when any check fails; findings listed in
+`data/mappings/validation-xfail.tsv` are reported as expected failures.
+
+```bash
+# from a repo that vendors xenosite-xmet as a submodule
+uv run --project xenosite-xmet xmet-validate tagger crates/xenosite-tagger/data/rules
+# from any repo, without a checkout (the wheel bundles the ontology and mappings)
+uvx --from git+https://github.com/swamidasslab/xenosite-xmet xmet-validate forest src/rules.rs
+```
+
+```python
+from xenosite.xmet.validate import validate_forest
+
+def test_forest_meets_xmet_spec():
+    report = validate_forest("src/rules.rs")
+    assert report.ok, report.text()
+```
+
 ## Website
 
 A static browser for the vocabulary — tree, per-concept pages, search, and

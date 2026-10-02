@@ -1,5 +1,23 @@
 # Lab log
 
+## 2026-10-02 (validator)
+
+- Redesign validator now accepts Forest catalog-path CURIEs
+  (`xf:PhaseOne/StableOxygenation/Hydroxylation/h` → `xf:Hydroxylation/h`;
+  `Reactivity` is a catalog). dehydrogenation / hydrolysis / adduct formation →
+  Forest catalogs are `closeMatch`. Dropped `xmet:4000167 → xf:Glutathionation`
+  (kept `xf:GSH`): two rule homes on one concept fail the spec unless the rules
+  are declared synonyms.
+- Validator moved into the package as `xenosite.xmet.validate` with CLI
+  `xmet-validate` (ontology / forest / tagger / curies / all). XMET's tests call
+  the same functions; sibling-checkout checks run only via `forest` / `tagger`.
+  The `rules.rs` reader now follows helper functions and wrappers and bounds
+  functions by braces (it previously credited `glutathionation_patterns` to
+  Glucuronidation). Wheel bundles ontology + mappings so `uvx` works anywhere.
+- First runs on local checkouts: tagger 7 findings (5 struct-* rules unmapped,
+  2 orphan rows), metabolite Forest 65 unmapped patterns (Reactivity heads,
+  newer leaves), tagger crate CURIEs 19 unknown legacy ids in `bundle.rs`.
+
 ## 2026-10-02
 
 - **IRIs moved to w3id slash form**: concepts are now

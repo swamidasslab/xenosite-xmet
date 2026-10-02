@@ -23,6 +23,9 @@ competency = [
     "pyshacl>=0.25",
 ]
 
+[project.scripts]
+xmet-validate = "xenosite.xmet.validate.cli:main"
+
 [project.urls]
 Homepage = "https://xenosite.org"
 Repository = "https://github.com/swamidasslab/xenosite-xmet"
@@ -54,6 +57,13 @@ version-file = "src/xenosite/xmet/_version.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/xenosite"]
+
+# Ship the ontology and mappings so `xmet-validate` works from an installed wheel
+# (xenosite.xmet.paths.resource_root falls back to this copy outside a checkout).
+[tool.hatch.build.targets.wheel.force-include]
+"data/ontology" = "xenosite/xmet/_data/data/ontology"
+"data/mappings" = "xenosite/xmet/_data/data/mappings"
+"revision/draft-reaction-class-phase1-tree.json" = "xenosite/xmet/_data/revision/draft-reaction-class-phase1-tree.json"
 
 [tool.pytest.ini_options]
 addopts = "--import-mode=importlib"

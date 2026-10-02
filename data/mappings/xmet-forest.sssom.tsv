@@ -36,7 +36,6 @@ xmet:4000110	skos:exactMatch	xf:PhaseOne/Reduction/ReductiveDehalogenation	semap
 xmet:4000113	skos:exactMatch	xf:PhaseOne/Reduction/Dehydration	semapv:ManualMappingCuration	dehydration	Dehydration	
 xmet:4000158	skos:exactMatch	xf:Sulfation	semapv:ManualMappingCuration	sulfation	Sulfation	
 xmet:4000163	skos:exactMatch	xf:Acetylation	semapv:ManualMappingCuration	acetylation	Acetylation	
-xmet:4000167	skos:exactMatch	xf:Glutathionation	semapv:ManualMappingCuration	glutathione conjugation	Glutathionation	
 xmet:4000267	skos:closeMatch	xf:Reactivity	semapv:ManualMappingCuration	adduct formation	Reactivity	
 xmet:4000167	skos:exactMatch	xf:Reactivity/GSH	semapv:ManualMappingCuration	glutathione conjugation	GSH	
 xmet:4000268	skos:exactMatch	xf:Reactivity/Protein	semapv:ManualMappingCuration	protein adduct formation	Protein	
