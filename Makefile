@@ -1,6 +1,6 @@
 # xenosite-xmet — ontology authoring targets
 
-.PHONY: ontology-stats ontology-export ontology-tree ontology-fuzzy-audit forest-pattern-coverage db-term-mapping validate-redesign rebuild-tagger-sssom sync-tagger-emits help
+.PHONY: ontology-stats ontology-export ontology-tree ontology-tree-biotransformer ontology-fuzzy-audit forest-pattern-coverage db-term-mapping validate-redesign rebuild-tagger-sssom sync-tagger-emits biotransformer-inventory biotransformer-rule-smarts help
 
 ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 UV ?= uv
@@ -12,6 +12,9 @@ help:
 	@echo "Targets:"
 	@echo "  make ontology-stats      XMET inventory / spine / mapping stats"
 	@echo "  make ontology-tree       Pretty-print full XMET tree (+ Forest SSSOM)"
+	@echo "  make ontology-tree-biotransformer  XMET tree pruned to BioTransformer SSSOM (common_name + class)"
+	@echo "  make biotransformer-inventory  Refresh BT reaction-type inventory TSV"
+	@echo "  make biotransformer-rule-smarts  Export BT reactant/exclusion SMARTS + SMIRKS"
 	@echo "  make forest-pattern-coverage  SPARQL Forest rule↔pattern cover stats (from scratch)"
 	@echo "  make ontology-fuzzy-audit  Fuzzy label scan for duplicates / misparenting"
 	@echo "  make ontology-export     Regenerate xmet.skos.jsonld + xmet.ttl from xmet.yaml"
@@ -28,6 +31,15 @@ ontology-stats:
 
 ontology-tree:
 	@$(PY) $(ROOT)/tools/print_xmet_tree.py --ids --stats
+
+ontology-tree-biotransformer:
+	@$(PY) $(ROOT)/tools/print_xmet_tree.py --ids --stats --no-forest --no-tagger --bt-only --no-relations
+
+biotransformer-inventory:
+	@$(PY) $(ROOT)/tools/inventory_biotransformer.py
+
+biotransformer-rule-smarts:
+	@$(PY) $(ROOT)/tools/export_biotransformer_rule_smarts.py
 
 forest-pattern-coverage:
 	@# Always rebuild SKOS TTL, then SPARQL-infer covers from TTL + SSSOM (no cache).

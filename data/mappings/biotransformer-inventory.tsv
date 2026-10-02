@@ -1,0 +1,975 @@
+bt_label	bt_object_id	kind	n_patterns	sources	human	gut	blank_name	placement
+Human Phase I	bt.class:HUMAN_PHASE_I	class	1468	metx_class	1	0	0	placed
+Human Phase II	bt.class:HUMAN_PHASE_II	class	614	metx_class	1	0	0	placed
+O-glucuronidation	bt.rtype:O_GLUCURONIDATION	reaction_class	262	metx_reaction_type	1	0	0	placed
+Aliphatic Hydroxylation	bt.rtype:ALIPHATIC_HYDROXYLATION	reaction_class	216	metx_reaction_type	1	0	0	placed
+Aromatic Hydroxylation	bt.rtype:AROMATIC_HYDROXYLATION	reaction_class	122	metx_reaction_type	1	0	0	placed
+O-Demethylation	bt.rtype:O_DEMETHYLATION	reaction_class	87	metx_reaction_type	1	0	0	placed
+N-demethylation	bt.rtype:N_DEMETHYLATION	reaction_class	66	metx_reaction_type	1	0	0	placed
+O-sulfonation	bt.rtype:O_SULFONATION	reaction_class	58	metx_reaction_type	1	0	0	placed
+N-Dealkylation	bt.rtype:N_DEALKYLATION	reaction_class	49	metx_reaction_type	1	0	0	placed
+Human Gut Microbial	bt.class:HUMAN_GUT_MICROBIAL	class	28	metx_class	0	1	0	placed
+GSH-conjugation	bt.rtype:GSH_CONJUGATION	reaction_class	26	metx_reaction_type	1	0	0	placed
+S-Oxidation	bt.rtype:S_OXIDATION	reaction_class	26	metx_reaction_type	1	0	0	placed
+Epoxidation	bt.rtype:EPOXIDATION	reaction_class	25	metx_reaction_type	1	0	0	placed
+O-dealkylation	bt.rtype:O_DEALKYLATION	reaction_class	22	metx_reaction_type	1	0	0	placed
+N-Oxidation	bt.rtype:N_OXIDATION	reaction_class	20	metx_reaction_type	1	0	0	placed
+Dehydrogenation	bt.rtype:DEHYDROGENATION	reaction_class	18	metx_reaction_type	1	0	0	placed
+EPOXIDATION_OF_12_DISUBSTITUTED_ALKLENE	bt.rtype:EPOXIDATION_OF_12_DISUBSTITUTED_ALKLENE	reaction_class	12	metx_reaction_type	1	0	0	open
+Hydrolysis of glycosylated condensed galloyl group	bt:HYDROLYSIS_OF_GLYCOSYLATED_CONDENSED_GALLOYL_GROUPS	reaction_type	12	base	0	1	0	placed
+N-glucuronidation	bt.rtype:N_GLUCURONIDATION	reaction_class	12	metx_reaction_type	1	0	0	placed
+Hydroxylation of benzene on carbon para to a strongly electron donating group	bt.rtype:HYDROXYLATION_OF_BENZENE_ON_CARBON_PARA_TO_A_STRONGLY_ELECTRON_DONATING_GROUP	reaction_class	11	metx_reaction_type	1	0	0	open
+Allylic hydroxylation	bt.rtype:ALLYLIC_HYDROXYLATION	reaction_class	10	metx_reaction_type	1	0	0	placed
+HYDROXYLATION_OF_AROMATIC_CARBON	bt.rtype:HYDROXYLATION_OF_AROMATIC_CARBON	reaction_class	10	metx_reaction_type	1	0	0	open
+NADPH-assisted dehydrogenation	bt:NADPH_ASSISTED_DEHYDROGENATION	reaction_type	10	base	0	1	0	placed
+HYDROXYLATION_OF_HETEROAROMATIC_CARBON	bt.rtype:HYDROXYLATION_OF_HETEROAROMATIC_CARBON	reaction_class	9	metx_reaction_type	1	0	0	open
+N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1; N_DEALKYLATION_OF_ACYCLIC_TERTIARY_AMINES	bt.rtype:N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1_N_DEALKYLATION_OF_ACYCLIC_TERTIARY_AMINES	reaction_class	9	metx_reaction_type	1	0	0	open
+ARENE_EPOXIDATION	bt.rtype:ARENE_EPOXIDATION	reaction_class	8	metx_reaction_type	1	0	0	open
+C-Oxidation	bt.rtype:C_OXIDATION	reaction_class	8	metx_reaction_type	1	0	0	open
+N-acetylation	bt.rtype:N_ACETYLATION	reaction_class	8	metx_reaction_type	1	0	0	placed
+O-methylation	bt.rtype:O_METHYLATION	reaction_class	6	metx_reaction_type	1	0	0	placed
+Hydroxlation of methyl carbon adjacent to an aliphatic ring	bt.rtype:HYDROXLATION_OF_METHYL_CARBON_ADJACENT_TO_AN_ALIPHATIC_RING	reaction_class	5	metx_reaction_type	1	0	0	open
+Hydroxylation of benzene on carbon orhto to a strongly electron donating group	bt.rtype:HYDROXYLATION_OF_BENZENE_ON_CARBON_ORHTO_TO_A_STRONGLY_ELECTRON_DONATING_GROUP	reaction_class	5	metx_reaction_type	1	0	0	open
+N-Glucuronidation of azole	bt:AZOLE_N_GLUCURONIDATION	reaction_type	5	base	1	1	0	placed
+Nitroreduction of nitroarene to nitrosoarene	bt:NITROREDUCTION_OF_NITROARENE_TO_NITROSOARENE	reaction_type	5	base	0	1	0	placed
+Thiohene S-oxidation	bt.rtype:THIOHENE_S_OXIDATION	reaction_class	5	metx_reaction_type	1	0	0	open
+ALKENE_EPXODATION	bt.rtype:ALKENE_EPXODATION	reaction_class	4	metx_reaction_type	1	0	0	open
+Aromatic hydroxylation of fused benzene ring	bt:AROMATIC_HYDROXYLATION_OF_FUSED_BENZENE_RING	reaction_type	4	base	1	0	0	placed
+Cleavage of C-17-acyl-sterol	bt:STEROL_C_17_ACYL_CLEAVAGE	reaction_type	4	base	1	0	0	placed
+Dehydroxylation of dibenzopyranone	bt:DEHYDROXYLATION_OF_DIBENZOPYRANONE	reaction_type	4	base	0	1	0	placed
+Hydroxylation of alicyclic secondary carbon	bt:HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON	reaction_type	4	base	1	0	0	placed
+Hydroxylation of benzene on carbon ortho to an electron donating group	bt.rtype:HYDROXYLATION_OF_BENZENE_ON_CARBON_ORTHO_TO_AN_ELECTRON_DONATING_GROUP	reaction_class	4	metx_reaction_type	1	0	0	open
+Hydroxylation of benzene on carbon para to an electron donating group	bt.rtype:HYDROXYLATION_OF_BENZENE_ON_CARBON_PARA_TO_AN_ELECTRON_DONATING_GROUP	reaction_class	4	metx_reaction_type	1	0	0	open
+O-Deethylation	bt.rtype:O_DEETHYLATION	reaction_class	4	metx_reaction_type	1	0	0	placed
+Oxidation	bt.rtype:OXIDATION	reaction_class	4	metx_reaction_type	1	0	0	placed
+Reduction of arylhydroxylamine to arylamine	bt:REDUCTION_OF_ARYLHYDROXYLAMINE_TO_ARYLAMINE	reaction_type	4	base	1	1	0	placed
+Structural rearrangement of anthocyanidin	bt:STRUCTURAL_REARRANGEMENT_OF_ANTHOCYANIDIN_3	reaction_type	4	base	0	1	0	placed
+7-Hydroxylation of sterol	bt:STEROL_7_HYDROXYLATION	reaction_type	3	base	1	0	0	placed
+alpha-Hydroxylation of aryldimethylamine	bt:ALPHA_HYDROXYLATION_OF_ARYLDIMETHYLUREA	reaction_type	3	base	1	0	0	placed
+Anthocyanidin C-ring fission	bt:ANTHOCYANIDIN_C_RING_FISSION	reaction_type	3	base	0	1	0	placed
+Catechol O-methylation	bt:CATECHOL_O_METHYLATION	reaction_type	3	base	1	1	0	placed
+Degradation of nitrile to carboxamide	bt:NITRILE_DEGRADATION_TO_AMIDE	reaction_type	3	base	0	1	0	placed
+Desulfuration of organophosphothioates	bt.rtype:DESULFURATION_OF_ORGANOPHOSPHOTHIOATES	reaction_class	3	metx_reaction_type	1	0	0	open
+Glucosylation of ceramide	bt:CERAMIDE_GLUCOSYLATION	reaction_type	3	base	1	0	0	placed
+GSH-conjugation of aryl halide	bt:GSH_CONJUGATION_OF_ARYL_HALIDE	reaction_type	3	base	1	0	0	placed
+Hydrogenation	bt.rtype:HYDROGENATION	reaction_class	3	metx_reaction_type	1	0	0	placed
+Hydrolysis of galactose from beta-D-galactoside	bt:BETA_D_GALACTOSIDE_GALACTO_HYDROLYSIS	reaction_type	3	base	1	1	0	placed
+Hydrolysis of hydropyrimidine	bt:HYROLYSIS_OF_HYDROPYRIMIDINE	reaction_type	3	base	0	1	0	placed
+Hydrolysis of ketone	bt:KETO_HYDROLYSIS	reaction_type	3	base	1	0	0	placed
+HYDROLYSIS_OF_CARBOXYLIC_ESTER	bt.rtype:HYDROLYSIS_OF_CARBOXYLIC_ESTER	reaction_class	3	metx_reaction_type	1	0	0	open
+Hydroxylamine O-sulfonation	bt.rtype:HYDROXYLAMINE_O_SULFONATION	reaction_class	3	metx_reaction_type	1	0	0	open
+Hydroxylation	bt.rtype:HYDROXYLATION	reaction_class	3	metx_reaction_type	1	0	0	placed
+Lactone hydrolysis	bt:LACTONE_HYDROLYSIS	reaction_type	3	base	0	1	0	placed
+N-Acetylation of arylamine	bt:ARYLAMINE_N_ACETYLATION	reaction_type	3	base	1	1	0	placed
+N-Dealkylatiion	bt.rtype:N_DEALKYLATIION	reaction_class	3	metx_reaction_type	1	0	0	open
+N-Demethylation of aryldimethylamine	bt:N_DEMETHYLATION_OF_ARYLDIMETHYLUREA	reaction_type	3	base	1	0	0	placed
+N-Glucuronidation of tertiary aliphatic amine	bt:TERTIARY_ALIPHATIC_AMINE_N_GLUCURONIDATION	reaction_type	3	base	1	1	0	placed
+N-Hydroxylation	bt.rtype:N_HYDROXYLATION	reaction_class	3	metx_reaction_type	1	0	0	open
+N-oxdation of aliphatic tertiary amine	bt.rtype:N_OXDATION_OF_ALIPHATIC_TERTIARY_AMINE	reaction_class	3	metx_reaction_type	1	0	0	open
+N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1	bt.rtype:N_DEALKYLATION_OF_ALIPHATIC_TERTIARY_AMINES_PATTERN1	reaction_class	3	metx_reaction_type	1	0	0	open
+Nitroreduction of nitrosoarene to arylhydroxylamine	bt:NITROREDUCTION_OF_NITROSOARENE_TO_ARYLHYDROXYLAMINE	reaction_type	3	base	0	1	0	placed
+Oxidation of pyrimidine	bt:OXIDATION_OF_PYRIMIDINE	reaction_type	3	base	1	0	0	placed
+Reduction of alpha,beta-unsaturated carbon-carbon double bond adjacent to electron withdrawing group	bt:REDUCTION_OF_ALPHA_BETA_CARBON_DOUBLE_BOND_ADJACENT_TO_EWG	reaction_type	3	base	0	1	0	placed
+Reduction of alpha,beta-unsaturated compound	bt:REDUCTION_OF_ALPHA_BETA_UNSATURATED_COMPOUNDS	reaction_type	3	base	1	1	0	placed
+REDUCTION_OF_NITRO_TO_AMINE	bt.rtype:REDUCTION_OF_NITRO_TO_AMINE	reaction_class	3	metx_reaction_type	1	0	0	open
+12-OH-Sulfation of sterol	bt:STEROL_12_OH_SULFATION	reaction_type	2	base	1	1	0	placed
+16-Hydroxylation of sterol	bt:STEROL_16_HYDROXYLATION	reaction_type	2	base	1	0	0	placed
+17-alpha-hydroxylation of sterol	bt:STEROL_17_ALPHA_HYDROXYLATION	reaction_type	2	base	1	0	0	placed
+17-OH-Glucuronidation of sterol	bt:_17_OH_GLUCURONIDATION_OF_STEROL	reaction_type	2	base	1	1	0	placed
+2,4-Thiazolidinedione ring opening	bt:_24_THIAZOLIDINEDIONE_RING_OPENING	reaction_type	2	base	1	0	0	placed
+2-Hydroxylation of 1,4-disubstituted benzene	bt:_2_HYDROXYLATION_OF_14_DISUBSTITUTED_BENZENES	reaction_type	2	base	1	0	0	placed
+2-Hydroxylation of sterol	bt:STEROL_2_HYDROXYLATION	reaction_type	2	base	1	0	0	placed
+3-OH-Glucuronidation of sterol	bt:_3_OH_GLUCURONIDATION_OF_STEROL	reaction_type	2	base	1	1	0	placed
+4'-Deydroxylation of substitued benzene	bt.rtype:4_DEYDROXYLATION_OF_SUBSTITUED_BENZENE	reaction_class	2	metx_reaction_type	1	0	0	open
+4-alkyl hydroxylation of oxoazaphosphorine	bt.rtype:4_ALKYL_HYDROXYLATION_OF_OXOAZAPHOSPHORINE	reaction_class	2	metx_reaction_type	1	0	0	open
+4-Dephosphorylation of phosphatidylinositol-4,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_45_BISPHOSPHATE_DEPHOSPHORYLATION_5	reaction_type	2	base	1	0	0	placed
+4-Hydroxylation of sterol	bt:STEROL_4_HYDROXYLATION	reaction_type	2	base	1	0	0	placed
+4-OH-Sulfation of hydroxycinnamate	bt:_4_O_SULFATION_OF_HYDROXYCINNAMATE	reaction_type	2	base	1	0	0	placed
+6-Hydroxylation of sterol	bt:STEROL_6_HYDROXYLATION	reaction_type	2	base	1	0	0	placed
+6-OH-Glucuronidation of sterol	bt:_6_OH_GLUCURONIDATION_OF_STEROL	reaction_type	2	base	1	1	0	placed
+7-alpha-Dehydroxylation of C24 bile acid	bt:C23_BILE_ACID_7ALPHA_DEHYDROXYLATION	reaction_type	2	base	0	1	0	placed
+7-Hydroxylation of coumarin	bt:_7_HYDROXYLATION_OF_COUMARINS	reaction_type	2	base	1	0	0	placed
+7-OH-Glucuronidation of sterol	bt:_7_OH_GLUCURONIDATION_OF_STEROL	reaction_type	2	base	1	1	0	placed
+7-OH-Sulfation of sterol	bt:STEROL_7_OH_SULFATION	reaction_type	2	base	1	1	0	placed
+Allylic hydroxylation	bt:ALLYLIC_HYDROXLATION	reaction_type	2	base	1	0	0	placed
+C-DE-ESTERIFICATION	bt.rtype:C_DE_ESTERIFICATION	reaction_class	2	metx_reaction_type	1	0	0	open
+Degradation of B-type procyanidin dimer	bt:B_TYPE_PROCYANIDIN_DIMER_DEGRADATION	reaction_type	2	base	0	1	0	placed
+Dehydrogenation of long-chain acyl-CoA	bt:LONG_CHAIN_ACYL_COA_DEHYDROGENATION	reaction_type	2	base	1	0	0	placed
+Dehydrogenation of primary alcohol	bt:DEHYDROGENATION_OF_PRIMARY_ALCOHOL	reaction_type	2	base	1	0	0	placed
+Dehydrogenation of secondary alcohol	bt:DEHYDROGENATION_OF_SECONDARY_ALCOHOL	reaction_type	2	base	1	0	0	placed
+Dehydroxylation of catechol	bt:CATECHOL_DEHYDROXYLATION	reaction_type	2	base	0	1	0	placed
+Demethylation of methoxyphenyl, or methoxybenzoic acid	bt:DEMETHYLATION_OF_METHOXY_PHENYL_AND_BENZOIC_ACIDS	reaction_type	2	base	0	1	0	placed
+Epoxidation of alkene	bt:ALKENE_EPOXIDATION	reaction_type	2	base	1	0	0	placed
+Epoxidation of arene	bt:ARENE_EPOXIDATION	reaction_type	2	base	1	0	0	placed
+Flavan-3-ol C-ring fission	bt:FLAVAN_3_OL_C_RING_FISSION	reaction_type	2	base	0	1	0	placed
+Glycination of bile acid-CoA	bt:C23_BILE_ACID_COA_GLYCINATION	reaction_type	2	base	1	0	0	placed
+GSH-conjugation of alpha,beta-unsaturated carbonyl	bt:GSH_CONJUGATION_OF_ALPHA_BETA_UNSATURATED_CARBONYL	reaction_type	2	base	1	0	0	placed
+GSH-conjugation of benzene substituted with an electron donating group	bt:GSH_CONJUGATION_OF_EWG_SUBSTITUTED_BENZENE	reaction_type	2	base	1	0	0	placed
+GSH-conjugation of organohalide	bt:GSH_CONJUGATION_OF_ORGANOHALIDE	reaction_type	2	base	1	0	0	placed
+GSH-conjugation of quinone	bt:GSH_CONJUGATION_OF_QUINONE	reaction_type	2	base	1	0	0	placed
+GSH-conjugatoon	bt.rtype:GSH_CONJUGATOON	reaction_class	2	metx_reaction_type	1	0	0	open
+Hydrolysis of carboxylic acid ester	bt:HYDROLYSIS_OF_CARBOXYLIC_ACID_ESTER	reaction_type	2	base	1	1	0	placed
+Hydrolysis of cyclic secondary carboxamide	bt:HYDROLYSIS_OF_CYCLIC_SECONDARY_CARBOXAMIDE_PATTERN_1	reaction_type	2	base	1	0	0	placed
+Hydrolysis of hydantoin	bt:HYROLYSIS_OF_HYDANTOIN	reaction_type	2	base	0	1	0	placed
+Hydrolysis of terminal, non-reducing galactose from digalactosylceramide	bt:DIGALACTOSYLCERAMIDE_GALACTO_HYDROLYSIS	reaction_type	2	base	1	0	0	placed
+Hydroxylamine O-glucuronidation	bt.rtype:HYDROXYLAMINE_O_GLUCURONIDATION	reaction_class	2	metx_reaction_type	1	0	0	open
+Hydroxylation of heteroalicyclic secondary carbon	bt:HYDROXYLATION_OF_SECONDARY_HETEROALICYCLIC_CARBON	reaction_type	2	base	1	0	0	placed
+HYDROXYLATION_OF_AROMATIC_CARBON; HYDROXYLATION_OF_BENZENE_PARA_TO_EDG	bt.rtype:HYDROXYLATION_OF_AROMATIC_CARBON_HYDROXYLATION_OF_BENZENE_PARA_TO_EDG	reaction_class	2	metx_reaction_type	1	0	0	open
+Keto hydrolysis	bt:KETO_HYDROLYSIS	reaction_type	2	base	1	1	0	placed
+N-Acetylation of aralkylamine	bt:ARALKYLAMINE_N_ACETYLATION	reaction_type	2	base	1	1	0	placed
+N-acetylation of Hydrazine derivative	bt.rtype:N_ACETYLATION_OF_HYDRAZINE_DERIVATIVE	reaction_class	2	metx_reaction_type	1	0	0	open
+N-Dealkylation of N-acylurea	bt:N_DEALKYLATION_OF_N_ACYLUREAS	reaction_type	2	base	1	0	0	placed
+N-Dealkylation of phosphoramide	bt:N_DEALKYLATION_OF_PHOSPHORAMIDE	reaction_type	2	base	1	0	0	placed
+N-Dealkylation of tertiary carboxamide	bt:N_DEALKYLATION_OF_TERTIARY_CARBOXAMIDES	reaction_type	2	base	1	0	0	placed
+N-deethylation	bt.rtype:N_DEETHYLATION	reaction_class	2	metx_reaction_type	1	0	0	placed
+N-demethylations	bt.rtype:N_DEMETHYLATIONS	reaction_class	2	metx_reaction_type	1	0	0	open
+N-desethylation	bt.rtype:N_DESETHYLATION	reaction_class	2	metx_reaction_type	1	0	0	open
+N-Glucuronidation of hydroxylamine	bt:HYDROXYLAMINE_N_GLUCURONIDATION	reaction_type	2	base	1	1	0	placed
+O-demethylenation	bt.rtype:O_DEMETHYLENATION	reaction_class	2	metx_reaction_type	1	0	0	open
+Oxidation of nitrogen in a strained ring system	bt.rtype:OXIDATION_OF_NITROGEN_IN_A_STRAINED_RING_SYSTEM	reaction_class	2	metx_reaction_type	1	0	0	open
+Oxidation of piperidine or pyrrolidine iminium ion intermediate	bt:OXIDATION_OF_N_SUBSTITUTED_PIPERIDINE_IMINIUM	reaction_type	2	base	1	0	0	placed
+OXIDATION_OF_PRIM_ALCOHOL_TO_CARBOXYLIC_ACID	bt.rtype:OXIDATION_OF_PRIM_ALCOHOL_TO_CARBOXYLIC_ACID	reaction_class	2	metx_reaction_type	1	0	0	open
+Reduction	bt.rtype:REDUCTION	reaction_class	2	metx_reaction_type	1	0	0	placed
+Reduction of alpha,beta unsaturated carbon-carbon double bond adjacent to an electron withdrawing group	bt.rtype:REDUCTION_OF_ALPHA_BETA_UNSATURATED_CARBON_CARBON_DOUBLE_BOND_ADJACENT_TO_AN_ELECTRON_WITHDRAWING_GROUP	reaction_class	2	metx_reaction_type	1	0	0	open
+Reduction of azobenzene	bt.rtype:REDUCTION_OF_AZOBENZENE	reaction_class	2	metx_reaction_type	1	0	0	placed
+Reduction of halotrifluoroethane	bt:REDUCTION_OF_HALOTRIFLUOROETHANE	reaction_type	2	base	1	0	0	placed
+Reduction of quinone	bt:QUINONE_REDUCTION	reaction_type	2	base	1	0	0	placed
+Reduction of sulfite	bt:EAWAG_RULE_BT0035	reaction_type	2	base,envmicro	0	0	0	placed
+Reduction of sulfoxide to thioether	bt:SULFOXIDE_REDUCTION_TO_THIOETHER	reaction_type	2	base	1	1	0	placed
+Reductive lactonization of quinone propionic acid	bt:REDUCTIVE_LACTONIZATION_OF_QUINONE_PROPIONIC_ACID	reaction_type	2	base	1	0	0	placed
+Steroid 3-sulfate hydrolysis	bt:STEROID_3_SULFATE_HYDROLYSIS	reaction_type	2	base	1	0	0	placed
+Unknown reaction	bt.rtype:UNKNOWN_REACTION	reaction_class	2	metx_reaction_type	1	0	0	open
+(8E)-Desaturation of sphingolipid	bt:SPHINGOLIPID_8E_DESATURATION	reaction_type	1	base	0	0	0	placed
+(8Z)-Desaturation of sphingolipid	bt:SPHINGOLIPID_8Z_DESATURATION	reaction_type	1	base	0	0	0	placed
+1,3-Dicarbonyl C-glucuronidation	bt:_13_DICARBONYL_C_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+1-Acyl hydrolysis of phosphatidylcholine	bt:PHOSPHATIDYLCHOLINE_1_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+1-Acyl hydrolysis of triacylglycerol	bt:TRIACYLGLYCEROL_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+1-beta-Galactosyl transfer to 2-hydroxyacylsphingosine	bt:_2_HYDROXYACYLSPHINGOSINE_1_BETA_GALACTOSYL_TRANSFER	reaction_type	1	base	1	0	0	placed
+1-O-Acyl transfer from acyl-CoA to glycerol-3-phosphate	bt:ACYL_COA_GLYCEROL_3_PHOSPHATE_1_O_ACYL_TRANSFER	reaction_type	1	base	1	0	0	placed
+1-O-Acylation of 2-monoacylglycerol	bt:_2_ACYLGLYCEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+1-O-Acylation of glycerone-3-phosphate	bt:GLYCERONE_PHOSPHATE_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+1-O-Phosphorylation of N-acyl-D-mannosamine	bt:N_ACYL_MANNOSAMINE_1_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+10-Desaturation of sphingolipid	bt:SPHINGOLIPID_10_DESATURATION	reaction_type	1	base	0	0	0	placed
+11-beta-Hydroxylation of sterol	bt:STEROL_11_BETA_HYDROXYLATION	reaction_type	1	base	1	0	0	placed
+12-OH-Dehydrogenation of C24 bile acid	bt:_12_HYDROXY_C24_BILE_ACID_DEHYDROGENATION	reaction_type	1	base	0	1	0	placed
+2,3-Enoyl-CoA hydration	bt:_2_3_ENOYL_COA_HYDRATION	reaction_type	1	base	1	0	0	placed
+2-Acetyl hydrolysis of 1-alkyl, 2-acetyl-glycerol-3-phosphocholine	bt:_1_ALKYL_2_ACETYL_GLYCEROPHOSPHOCHOLINE_ACETOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+2-Acyl hydrolysis of phosphatidylcholine	bt:PHOSPHATIDYLCHOLINE_2_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+2-Acyl hydrolysis of phosphatidylethanolamine	bt:PHOSPHATIDYLETHANOLAMINE_2_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+2-Acyl hydrolysis of plasmenylethanolamine	bt:PLASMENYLETHANOLAMINE_2_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+2-electron Reduction of nitroguanidine	bt:_2E_REDUCTION_OF_NITROGUANIDINE	reaction_type	1	base	1	0	0	placed
+2-electron Reduction of nitromethylene	bt:_2E_REDUCTION_OF_NITROMETHYLENE	reaction_type	1	base	1	0	0	placed
+2-O-Acetylation of 1-alkylglycerol-3-phosphocholine, acetyl-CoA-dependent	bt:_1_ALKYLGLYCEROPHOSPHOCHOLINE_O_ACETYLATION	reaction_type	1	base	1	0	0	placed
+2-O-Acylation of 1-acylglycerophosphocholine from acyl-CoA	bt:_1_ACYLGLYCEROPHOSPHOCHOLINE_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+2-O-Acylation of 1-monoacylglycerol, acyl-CoA-dependent	bt:_1_ACYLGLYCEROL_3_PHOSPHATE_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+2-O-Deacylation of 1-alkyenyl-glycerol-3-phosphoethanolamine	bt:_1_ALKENYLGLYCEROPHOSPHOETHANOLAMINE_O_ACETYLATION_REVERSE	reaction_type	1	base	1	0	0	placed
+2-O-Deacylation of phosphatidylglycerol-3-phosphate	bt:_1_ACYLGLYCEROL_3_PHOSPHATE_O_ACYLATION_REVERSE	reaction_type	1	base	1	0	0	placed
+2-O-Deacylation of plasmalogen	bt:PLASMALOGEN_SYNTHESIS_REVERSE	reaction_type	1	base	0	0	0	placed
+2-O-Phosphorylation of N-acyl-D-mannosamine	bt:N_ACYL_MANNOSAMINE_2_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+21-Hydroxylation of sterol	bt:STEROL_21_HYDROXYLATION	reaction_type	1	base	1	0	0	placed
+21-OH-Dehydroxylation of corticosteroid	bt:CORTICOSTEROID_21_DEHYDROXYLATION	reaction_type	1	base	0	1	0	placed
+27-Hydroxylation of 3,7,12-hydroxycholestane	bt:_3_7_12_OH_CHOLESTANE_27_HYDROXYLATION	reaction_type	1	base	1	0	0	placed
+3'-Dehydroxylation of substituted benzene	bt:_3P_DEHYDROXYLATION_OF_SUBSTITUTED_BENZENE	reaction_type	1	base	0	1	0	placed
+3'-Deydroxylation of substitued benzene	bt.rtype:3_DEYDROXYLATION_OF_SUBSTITUED_BENZENE	reaction_class	1	metx_reaction_type	1	0	0	open
+3'-O-Demethylation of flavone	bt:_3P_O_DEMETHYLATION_OF_FLAVONE	reaction_type	1	base	0	1	0	placed
+3'-O-Methylation of flavone	bt:FLAVONE_3P_O_METHYLATION	reaction_type	1	base	1	0	0	placed
+3'-O-Sulfation of digalactosylceramide	bt:DIGALACTOSYLCERAMIDE_3P_SULFATION	reaction_type	1	base	1	0	0	placed
+3'-O-Sulfation of galactosylceramide	bt:GALACTOSYLCERAMIDE_3P_SULFATION	reaction_type	1	base	1	0	0	placed
+3-beta-Deglucosylation of sterol 3-beta-D-glucoside	bt:STEROL_3BETA_DEGLUCOSYLATION	reaction_type	1	base	1	0	0	placed
+3-beta-Glycosylation of sterol	bt:STEROL_3BETA_GLUCOSYLATION	reaction_type	1	base	1	0	0	placed
+3-Dephosphorylation of phosphatidylinositol-3,4,5-trisphosphate	bt:PHOSPHATIDYLINOSITOL_345_TRISPHOSPHATE_DEPHOSPHORYLATION_3	reaction_type	1	base	1	0	0	placed
+3-Dephosphorylation of phosphatidylinositol-3,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_35_BISPHOSPHATE_DEPHOSPHORYLATION_3	reaction_type	1	base	1	0	0	placed
+3-Hydroxylation of 5-aryl-1,4-benzodiazepine	bt:_3_HYDROXYLATION_OF_5_ARYL_14_BENZODIAZEPINES	reaction_type	1	base	1	0	0	placed
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_3_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-4,5-bisphosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_4_5_BISPHOSPHATE_3_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-4-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_4_PHOSPHATE_3_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-5-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_3_PHOSPHATE_5_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+3-O-Acylation of cholesterol, acyl-CoA-dependent	bt:STEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+3-O-Demethylation of flavone	bt:_3_O_DEMETHYLATION_OF_FLAVONE	reaction_type	1	base	0	1	0	placed
+3-O-Glucosylation of 1,2-diacylglycerol	bt:_1_2_DIACYLGLYCEROL_3_GLUCOSYLATION	reaction_type	1	base	1	0	0	placed
+3-O-Sterol acylation, phosphatidylcholine-dependent	bt:PHOSPHATIDYLCHOLINE_STEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+3-O-Sulfation of phenolic hydroxysteroid	bt:PHENOLIC_STEROID_SULFONATION	reaction_type	1	base	1	1	0	placed
+3-OH-Dehydrogenation of C24 bile acid	bt:_3_HYDROXY_C24_BILE_ACID_DEHYDROGENATION	reaction_type	1	base	0	1	0	placed
+3-OH-Glucuronidation of a phenolic compound	bt:_3_OH_GLUCURONIDATION_OF_PHENOLIC_COMPOUND	reaction_type	1	base	1	1	0	placed
+3-OH-Sulfation of sterol	bt:STEROL_3_OH_SULFATION	reaction_type	1	base	1	1	0	placed
+3-OH-Sulfonation of phenolic compound	bt:_3_O_SULFATION_OF_PHENOLIC_COMPOUND	reaction_type	1	base	1	1	0	placed
+4'-Dehydroxylation of substituted benzene	bt:_4P_DEHYDROXYLATION_OF_SUBSTITUTED_BENZENE	reaction_type	1	base	0	1	0	placed
+4'-Demethylation of 4'-methoxyisoflavone	bt:_4P_METHOXYLISOFLAVONE_DEMETHYLATION	reaction_type	1	base	0	1	0	placed
+4'-Hydroxylation of oxazaphosphorinane	bt:_4P_HYDROXYLATION_OF_OXAZAPHOSPHORINE	reaction_type	1	base	1	0	0	placed
+4'-O-Demethylation of flavone	bt:_4P_O_DEMETHYLATION_OF_FLAVONE	reaction_type	1	base	0	1	0	placed
+4'-O-Glucuronidation of isoflavone	bt:ISOFLAVONE_4P_OH_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+4'-O-Methylation of isoflavone	bt:ISOFLAVONE_4P_O_METHYLATION	reaction_type	1	base	0	0	0	placed
+4-Alkyl hydroxylation of oxazaphosphorine	bt:_4_ALKYL_HYDROXYLATION_OF_OXOAZAPHOSPHORINE	reaction_type	1	base	1	0	0	placed
+4-alpha-Galactosylation of lactosylceramide	bt:LACTOSYLCERAMIDE_4_ALPHA_GALACTOSE_TRANSFER	reaction_type	1	base	1	0	0	placed
+4-Dephosphorylation of phosphatidylinositol-3,4-bisphosphate	bt:PHOSPHATIDYLINOSITOL_34_BISPHOSPHATE_DEPHOSPHORYLATION_4	reaction_type	1	base	1	0	0	placed
+4-Desaturation of sphingolipid	bt:SPHINGOLIPID_4_DESATURATION	reaction_type	1	base	1	0	0	placed
+4-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-5-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_5_PHOSPHATE_4_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+4-O-Inositol phosphorylation of phosphatidyl-1D-myo-inositol 4-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_4_PHOSPHATE_5_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+4-O-Inositol phosphorylation of phosphatidylinositol	bt:_1_PHOSPHATIDYLINOSITOL_4_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+4-OH-Sulfonation of phenolic compound	bt:_4_O_SULFATION_OF_PHENOLIC_COMPOUND	reaction_type	1	base	1	1	0	placed
+5,6-Desaturation of delta-7-sterol	bt:DELTA_7_STEROL_56_DESATURATION	reaction_type	1	base	1	0	0	placed
+5,6-Saturation of delta-7-sterol	bt:DELTA_7_STEROL_56_SATURATION	reaction_type	1	base	1	0	0	placed
+5-Dephosphorylation of phosphatidylinositol-3,4,5-trisphosphate	bt:PHOSPHATIDYLINOSITOL_345_TRISPHOSPHATE_DEPHOSPHORYLATION_5	reaction_type	1	base	1	0	0	placed
+5-O-Demethylation of flavone	bt:_5_O_DEMETHYLATION_OF_FLAVONE	reaction_type	1	base	0	1	0	placed
+6-Acetylation of beta-D-galactoside	bt:BETA_D_GALACTOSIDE_6_ACETYLATION	reaction_type	1	base	0	1	0	placed
+6-C-Deglycosylation of isoflavone	bt:ISOFLAVONE_6_C_DEGLYCOSYLATION	reaction_type	1	base	0	1	0	placed
+6-electron Reduction of nitroguanidine	bt:_6E_REDUCTION_OF_NITROGUANIDINE	reaction_type	1	base	1	0	0	placed
+6p-Demethylation of 6p-methoxyisoflavone	bt:_6P_METHOXYLISOFLAVONE_DEMETHYLATION	reaction_type	1	base	0	1	0	placed
+7-O-Demethylation of flavone	bt:_7_O_DEMETHYLATION_OF_FLAVONE	reaction_type	1	base	0	1	0	placed
+7-O-Glucuronidation of isoflavone	bt:ISOFLAVONE_7_OH_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+7-OH-Dehydrogenation of C24 bile acid	bt:_7_HYDROXY_C24_BILE_ACID_DEHYDROGENATION	reaction_type	1	base	0	1	0	placed
+7-OH-Sulfation of a flavonol	bt:_7_OH_HYDROXYLATION_OF_FLAVONOL	reaction_type	1	base	1	0	0	placed
+8-C-Deglycosylation of isoflavone	bt:ISOFLAVONE_8_C_DEGLYCOSYLATION	reaction_type	1	base	0	1	0	placed
+9-alpha-Hydroxylation of 3-ketosteroid	bt:_3_KETOSTEROID_9ALPHA_HYDROXYLATION	reaction_type	1	base	0	0	0	placed
+_2_ELECTRON_OXIDATION_OF_P_AMINOPHENOLS_TO_QUINONE_IMINES_PATTERN1	bt.rtype:2_ELECTRON_OXIDATION_OF_P_AMINOPHENOLS_TO_QUINONE_IMINES_PATTERN1	reaction_class	1	metx_reaction_type	1	0	0	open
+Acyl hydrolysis of 1,2-diacyl-3-beta-D-galactosyl-sn-glycerol	bt:_12_DIACYL_3_BETA_GLALACTOSYL_SN_GLYCEROLALACTOSYL_ACYL_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of 1-monoacylglycerol	bt:_1_MONOACYLGLYCEROL_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of 2-lysophosphatidylethanolamine	bt:_2_LYSOPHOSPHATIDYLETHANOLAMINE_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of 2-monoacylglycerol	bt:_2_MONOACYLGLYCEROL_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of 3-acylpyruvate	bt:_3_ACYLPYRUVATE_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of 4-nitrophenyl ester	bt:ACYL_HYDROLYSIS_OF_4_NITROPHENYL_ESTER	reaction_type	1	base	0	1	0	placed
+Acyl hydrolysis of acylcholine	bt:ACYLCHOLINE_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of all-trans-retinyl ester	bt:ALL_TRANS_RETINYL_ESTER_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of anthocyanidin 3-glucoside-5-(4-hydroxycinnamoyl)glucoside	bt:ANTHOCYANIN_5_6PPP_HYDROXYCINNAMOYL_TRANSFER_REVERSE	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of long-chain acyl-CoA	bt:LONG_CHAIN_ACYL_COA_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acyl hydrolysis of sterol ester	bt:STERYL_ESTER_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Acylhydrolysis of acrylacylamide	bt:HYDROLISIS_OF_ARYL_ACYLAMIDE	reaction_type	1	base	0	0	0	placed
+Acylhydrolysis of glycerophosphodiester	bt:GLYCEROPHOSPHODIESTER_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Aldehyde oxidation	bt:ALDEHYDE_OXIDATION	reaction_type	1	base	1	1	0	placed
+Alipathic Hydroxylation	bt.rtype:ALIPATHIC_HYDROXYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Alipathic Hydroxylation (6ÃŽÂ²-hydroxylation)	bt.rtype:ALIPATHIC_HYDROXYLATION_6_HYDROXYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Aliphatic Hydroxylation (14-(R)-hydroxylation)	bt.rtype:ALIPHATIC_HYDROXYLATION_14_R_HYDROXYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Aliphatic hydroxylation of acyclic 1,2-disubstituted alkene	bt:ALIPHATIC_HYDROXYLATION_OF_ACYCLIC_12_DISUBSTITUTED_ALKENE	reaction_type	1	base	1	0	0	placed
+Aliphatic hydroxylation of carbon alpha to secondary or tertiary alkyl-N	bt:ALIPHATIC_HYDROXYLATION_OF_CARBON_ALPHA_TO_SECONDARY_OR_TERTIARY_ALKYL_N	reaction_type	1	base	1	0	0	placed
+Aliphatic hydroxylation of methyl carbon adjacent to alkyne ring	bt:ALIPHATIC_HYDROXYLATION_OF_METHYL_CARBON_ADJACENT_TO_ALKYNE_GROUP	reaction_type	1	base	1	0	0	placed
+Aliphatic hydroxylation of methyl carbon adjacent to aromatic ring	bt:ALIPHATIC_HYDROXYLATION_OF_METHYL_CARBON_ADJACENT_TO_AROMATIC_RING	reaction_type	1	base	1	0	0	placed
+ALIPHATIC_HYDROXYLATION_OF_CARBON_ADJACENT_TO_OXYGEN	bt.rtype:ALIPHATIC_HYDROXYLATION_OF_CARBON_ADJACENT_TO_OXYGEN	reaction_class	1	metx_reaction_type	1	0	0	open
+Alkyl-OH-glucuronidation	bt:ALKYL_OH_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+ALKYL_HYDROXYLATION	bt.rtype:ALKYL_HYDROXYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+alpha-Hydroxylation of aryldimethylformamidine	bt:ALPHA_HYDROXYLATION_OF_ARYLDIMETHYLFORMAMIDINE	reaction_type	1	base	1	0	0	placed
+alpha-Hydroxylation of carbonyl group	bt:ALPHA_HYDROXYLATION_OF_CARBONYL_GROUP	reaction_type	1	base	1	0	0	placed
+alpha-N-Acetylation of peptide	bt:PEPTIDE_ALPHA_N_ACETYLATION	reaction_type	1	base	1	0	0	placed
+alpha-Oxidation of carboxylic acid	bt:ALPHA_OXIDATION_OF_CARBXOYLIC_ACID	reaction_type	1	base	0	1	0	placed
+Alphatic Hydroxylation	bt.rtype:ALPHATIC_HYDROXYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Aminohydrolysis of N-acyl-aliphatic-L-amino acid	bt:N_ACYL_ALIPHATIC_L_AMINO_ACID_AMIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Aminohydrolysis of N-acyl-aromatic-L-amino acid	bt:N_ACYL_AROMATIC_L_AMINO_ACID_AMIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Aminohydrolysis of N-acyl-L-aspartate	bt:N_ACYL_L_ASPARTATE_AMIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Aminohydrolysis of N-acyl-L-cysteine-S-conjugate	bt:N_ACETYL_L_CYSTEINE_S_CONJUGATE_AMIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Aminohydrolysis of N-acylsphingosine	bt:N_ACYLSPHINGOSINE_AMIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+ANTHOCYANIDIN_STANDARDIZATION_PATTERN1	bt:ANTHOCYANIDIN_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Aromatic O-glucuronidation	bt.rtype:AROMATIC_O_GLUCURONIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Aromatic OH-glucuronidation	bt:AROMATIC_OH_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+Aromatic Oxidation	bt.rtype:AROMATIC_OXIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Aromatization of androgen	bt:ANDROGEN_AROMATIZATION	reaction_type	1	base	1	0	0	placed
+AZIDE_STANDARDIZATION	bt:AZIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+beta-Oxidation of carboxylic acid	bt:BETA_OXIDATION_OF_CARBXOYLIC_ACID	reaction_type	1	base	0	1	0	placed
+Bile acid C24 acyl glucuronidation	bt:C24_BILE_ACID_C24_COOH_GLUCURONIDATION	reaction_type	1	base	1	0	0	placed
+Bisallylic hydroxylation	bt:BISALLYLIC_HYDROXYLATION	reaction_type	1	base	1	0	0	placed
+C-DEALKLYATION	bt.rtype:C_DEALKLYATION	reaction_class	1	metx_reaction_type	1	0	0	open
+C-DEALYLATION	bt.rtype:C_DEALYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+C24-bile acid leucine conjugation	bt:C24_BILE_ACID_LEUCINE_CONJUGATION	reaction_type	1	base	0	1	0	placed
+C24-bile acid phenylalanine conjugation	bt:C24_BILE_ACID_PHENYLALANINE_CONJUGATION	reaction_type	1	base	0	1	0	placed
+C24-bile acid tyrosine conjugation	bt:C24_BILE_ACID_TYROSINE_CONJUGATION	reaction_type	1	base	0	1	0	placed
+C4-Hydroxylation of sphinganine	bt:SPHINGANINE_C4_HYDROXYLATION	reaction_type	1	base	1	0	0	placed
+C9-Methylation of sphingolipid	bt:SPHINGOLIPID_C9_METHYLATION	reaction_type	1	base	1	0	0	placed
+CARBAMIDIC_ACID_TO_UREA_STANDARDIZATION	bt:CARBAMIDIC_ACID_TO_UREA_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+CARBAMIDOTHIOIC_ACID_TO_THIOUREA_STANDARDIZATION	bt:CARBAMIDOTHIOIC_ACID_TO_THIOUREA_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+CARBOXAMIDE_STANDARDIZATION_PATTERN1	bt:CARBOXAMIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+CARBOXAMIDE_STANDARDIZATION_PATTERN2	bt:CARBOXAMIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+CARBOXYLIC_ACID_ANION_STANDARDIZATION	bt:CARBOXYLIC_ACID_ANION_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Cleavage of diphosphate from nucleoside triphosphate	bt:NUCLEOSIDE_TRIPHOSPHATE_DIPHOSPHATE_CLEAVAGE	reaction_type	1	base	1	0	0	placed
+Cleavage of phosphatidylinositol-4,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_45_BISPHOSPHATE_CLEAVAGE	reaction_type	1	base	1	0	0	placed
+Cleavage of phosphocholine from sphingomyelin	bt:SPHINGOMYELIN_PHOSPHOCHLINE_CLEAVAGE	reaction_type	1	base	1	0	0	placed
+COENZYME_A_STANDARDIZATION	bt:COENZYME_A_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Conjugation of bile acid to C23 bile acyl-CoA thioester	bt:C23_BILE_ACID_COA_ESTERIFICATION	reaction_type	1	base	1	0	0	placed
+Conjugation of bile acid to C24 acyl-CoA	bt:C24_BILE_ACID_COA_ESTERIFICATION	reaction_type	1	base	1	0	0	placed
+Cysteine-S-conjugate cleavage	bt:CYSTEINE_S_CONJUGATE_CLEAVAGE	reaction_type	1	base	1	1	0	placed
+D-Glycoside hydrolysis	bt:D_GLYCOSIDE_HYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Deacetylation of arylacetamide	bt:ARYLACETAMDE_DEACETYLATION	reaction_type	1	base	1	0	0	placed
+Deacylation of anthocyanidin 3-O-[6-O-(4-hydroxycinnamoyl)-beta-D-glucoside]	bt:ANTHOCYANIDIN_3O_GLUCOSIDE_6PP_DEACYLATION	reaction_type	1	base	1	0	0	placed
+Deacylation of cardiolipin	bt:CARDIOLIPIN_DEACYLATION	reaction_type	1	base	1	0	0	placed
+Deacylation of N-acylsphingosine or N-acylsphinganine	bt:SPHINGOSINE_N_ACYLATION_REVERSE	reaction_type	1	base	1	0	0	placed
+Deamino	bt.rtype:DEAMINO	reaction_class	1	metx_reaction_type	1	0	0	open
+Dearylation of organphosphosulfur compound	bt:DEARYLATION_OF_ORGANOPHOSPHOSULFUR_COMPOUNDS	reaction_type	1	base	1	0	0	placed
+Decarboxylation of alpha-keto acid	bt:ALPHA_KETO_ACID_DECARBOXYLATION	reaction_type	1	base	0	1	0	placed
+Decarboxylation of aromatic L-amino acid	bt:AROMATIC_L_AMINO_ACID_DECARBOXYLATION	reaction_type	1	base	1	0	0	placed
+Decarboxylation of benzoic acid	bt:BENZOIC_ACID_DECARBOXYLATION	reaction_type	1	base	0	1	0	placed
+Decarboxylation of fused benzene	bt:DECARBOXYLATION_OF_FUSED_BENZENE	reaction_type	1	base	0	1	0	placed
+Decarboxylation of hydroxycinnamic acid	bt:HYDROXYCINNAMIC_ACID_DECARBOXYLATION	reaction_type	1	base	0	1	0	placed
+Decarboxylation of phenolic acid	bt:PHENOLIC_ACID_DECARBOXYLATION	reaction_type	1	base	0	1	0	placed
+Decarboxylation of phosphatidylserine	bt:PHOSPHATIDYLSERINE_DECARBOXYLATION	reaction_type	1	base	1	0	0	placed
+Deconjugation of glycinated C23 bile acid	bt:GLYCINATED_C23_BILE_ACID_DECONJUGATION	reaction_type	1	base	0	1	0	placed
+Deconjugation of glycinated C24 bile acid	bt:GLYCINATED_C24_BILE_ACID_DECONJUGATION	reaction_type	1	base	0	1	0	placed
+Deconjugation of taurinated C23 bile acid	bt:TAURINATED_C23_BILE_ACID_DECONJUGATION	reaction_type	1	base	0	1	0	placed
+Deconjugation of taurinated C24 bile acid	bt:TAURINATED_C24_BILE_ACID_DECONJUGATION	reaction_type	1	base	0	1	0	placed
+Deglucosylation of thioglucoside	bt:THIOGLUCOSIDE_HYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Deglucosylation of thioglucosinolate	bt:THIOGLUCOSINOLATE_HYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Degradation of aliphatic nitrile to carboxylic acid	bt:ALIPHATIC_NITRILE_DEGRADATION_TO_CARBOXYLIC_ACID	reaction_type	1	base	0	1	0	placed
+Degradation of nitrile to carboxylic acid	bt:NITRILE_DEGRADATION_TO_CARBOXYLIC_ACID	reaction_type	1	base	0	1	0	placed
+Dehalogenation of 2-haloacid	bt:_2_HALOACID_DEHALOGENATION	reaction_type	1	base	1	1	0	placed
+Dehalogenation of 2-haloalkane	bt:_2_HALOALKANE_DEHALOGENATION	reaction_type	1	base	0	1	0	placed
+Dehydration of (3S)-3-hydroxyacyl-CoA	bt:_3S_3_HYDROXYACYL_COA_DEHYDRATION	reaction_type	1	base	1	0	0	placed
+Dehydration of isoflavanone	bt:ISOFLAVANONE_DEHYDRATION	reaction_type	1	base	0	1	0	placed
+Dehydration of very long-chain (3R)-3-hydroxyacyl-CoA	bt:VERY_LONG_CHAIN_3R_3_HYDROXYACYL_COA_DEHYDRATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of (D)-2-hydroxy acid	bt:D_2_HYDROXY_ACID_DEHYDROGENATION	reaction_type	1	base	0	1	0	placed
+Dehydrogenation of (S)-2-hydroxycarboxylate	bt:_S_2_HYDROXYCARBOXYLATE_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of (S)-3-hydroxyacyl-CoA	bt:S_3_HYDROXYACYL_COA_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 11-beta-hydroxysteroid	bt:_11_BETA_HYDROXYSTEROID_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 17-beta-hydroxysteroid	bt:_17_BETA_HYROXYSTEROID_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 3-alpha-hydroxysteroid	bt:_3_ALPHA_HYDROXYSTEROID_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 3-alpha-pregnane	bt:_3_ALPHA_PREGNANE_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 3-beta-hydroxy-delta-5-steroid	bt:_3_BETA_HYDROXY_DELTA_5_STEROID_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 3-beta-hydroxysteroid-4-alpha-carboxylate	bt:_3_BETA_HYDROXYSTEROID_4_ALPHA_CARBOXYLATE_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 3-oxo-5-alpha-steroid	bt:_3_OXO_5_ALPHA_STEROID_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 3-oxosteroid	bt:_3_OXOSTEROID_DEHYDROGENATION	reaction_type	1	base	0	0	0	placed
+Dehydrogenation of 4-aryl substituted 1,4-dihydropyridine	bt:DEHYDROGENATION_OF_4_ARYL_SUBSTITUTED_14_DIHYDROPYRIDINES	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of 7-beta-hydroxysteroid	bt:_7_ALPHA_HYDROXYSTEROID_DEHYDROGENATION	reaction_type	1	base	1	1	0	placed
+Dehydrogenation of alpha,beta-unsaturated amide	bt:DEHYDROGENATION_OF_ALPHA_BETA_UNSATURATED_AMIDE	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of arylaldehyde	bt:ARYL_ALDEHYDE_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of benzaldehyde	bt:BENZALDEHYDE_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of long-chain (S)-3-hydroxyacyl-CoA	bt:LONG_CHAIN_S_3_HYDROXYACYL_COA_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of medium-chain acyl-CoA	bt:MEDIUM_CHAIN_ACYL_COA_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydrogenation of short-chain acyl-CoA	bt:SHORT_CHAIN_ACYL_COA_DEHYDROGENATION	reaction_type	1	base	1	0	0	placed
+Dehydroxylation	bt.rtype:DEHYDROXYLATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+Dehydroxylation of 4-OH-5-phenylvaleric acid	bt:_4_HYDROXY_5_PHENYLVALERIC_ACID_DEHYDROXIDATION	reaction_type	1	base	0	1	0	placed
+delta-Isomerization of steroid	bt:STEROID_DELTA_ISOMERIZATION	reaction_type	1	base	1	0	0	placed
+Demanolynation of anthocyanidin 3-O-(6-O-malonyl-beta-D-glucoside)	bt:ANTHOCYANIN_6PP_MALONYL_TRANSFER_REVERSE	reaction_type	1	base	1	0	0	placed
+Demethylation of 14-alpha-methylsterol	bt:STEROL_14_ALPHA_DEMETHYLATION	reaction_type	1	base	1	0	0	placed
+Demethylenation	bt.rtype:DEMETHYLENATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Denitrosation	bt.rtype:DENITROSATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+Deoxybenzoin degradation	bt:DEOXYBENZOIN_DEGRADATION	reaction_type	1	base	0	1	0	placed
+Dephosphorylation of 1,2-diacylglycerol-3-diphosphate	bt:_12_DIACYLGLYCEROL_3_DIPHOSPHATE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of 1,2-diacylglycerol-3-phosphate	bt:_12_DIACYLGLYCEROL_3_PHOSPHATE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of 1-alkyl,2-acylglycerol-3-phosphate	bt:_1_ALKYL_2_ACYLGLYCEROL_3_PHOSPHATE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of 3'-ribonucleotide	bt:_3P_RIBONUCLEOTIDE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of 5'-ribonucleotide	bt:_5P_RIBONUCLEOTIDE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of N-acylneuraminate 9-phosphate	bt:N_ACYLNEURAMINATE_9_PHOSPHATE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of phosphate monoester	bt:PHOSPHATE_MONOESTER_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of phosphatidylglycerophosphate	bt:PHOSPHATIDYLGLYCEROPHOSPHATE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Dephosphorylation of phosphatidylinositol-3-phosphate	bt:PHOSPHATIDYLINOSITOL_3_PHOSPHATE_DEPHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Derhamnosylation of flavonol 3-O-[alpha-L-rhamnosyl-(1->6)-beta-D-glucoside]	bt:FLAVONOL_3O_GLUCOSIDE_L_DERHAMNOSYLATION	reaction_type	1	base	1	0	0	placed
+Desaturation of (11Z)-acyl-CoA	bt:ACYL_COA_11Z_DESATURATION	reaction_type	1	base	0	0	0	placed
+Desethylation	bt.rtype:DESETHYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Desulfation	bt.rtype:DESULFATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+Desulfuration of organophosphorodithioate	bt:DESULFURATION_OF_ORGANOPHOSPHORODITHIOATES	reaction_type	1	base	1	0	0	placed
+Desulfuration of organophosphothioate	bt:DESULFURATION_OF_ORGANOPHOSPHOROTHIOATES	reaction_type	1	base	1	0	0	placed
+Desulfurization of thioamide into amide	bt:DESULFURIZATION_OF_THIOAMIDE_INTO_AMIDE	reaction_type	1	base	1	0	0	placed
+DIAZO_STANDARDIZATION	bt:DIAZO_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+DIAZONIUM_STANDARDIZATION	bt:DIAZONIUM_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+DIHYDROXYLATION_OF_DOUBLE_BOND	bt.rtype:DIHYDROXYLATION_OF_DOUBLE_BOND	reaction_class	1	metx_reaction_type	1	0	0	open
+EAWAG_RULE_BT0001	bt:EAWAG_RULE_BT0001	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0002	bt:EAWAG_RULE_BT0002	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0003	bt:EAWAG_RULE_BT0003	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0005_PATTERN1	bt:EAWAG_RULE_BT0005	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0005_PATTERN2	bt:EAWAG_RULE_BT0005	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0005_PATTERN3	bt:EAWAG_RULE_BT0005	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0008	bt:EAWAG_RULE_BT0008	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0011	bt:EAWAG_RULE_BT0011	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0012	bt:EAWAG_RULE_BT0012	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0013	bt:EAWAG_RULE_BT0013	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0014	bt:EAWAG_RULE_BT0014	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0020	bt:EAWAG_RULE_BT0020	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0021_PATTERN1	bt:EAWAG_RULE_BT0021	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0021_PATTERN2	bt:EAWAG_RULE_BT0021	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0022_PATTERN1	bt:EAWAG_RULE_BT0022	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0022_PATTERN2	bt:EAWAG_RULE_BT0022	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0023_PATTERN1	bt:EAWAG_RULE_BT0023	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0023_PATTERN2	bt:EAWAG_RULE_BT0023	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0024_PATTERN1	bt:EAWAG_RULE_BT0024	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0024_PATTERN2	bt:EAWAG_RULE_BT0024	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0026	bt:EAWAG_RULE_BT0026	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0027	bt:EAWAG_RULE_BT0027	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0028	bt:EAWAG_RULE_BT0028	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0029	bt:EAWAG_RULE_BT0029	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0030	bt:EAWAG_RULE_BT0030	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0031	bt:EAWAG_RULE_BT0031	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0033	bt:EAWAG_RULE_BT0033	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0034_PATTERN1	bt:EAWAG_RULE_BT0034	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0034_PATTERN2	bt:EAWAG_RULE_BT0034	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0036	bt:EAWAG_RULE_BT0036	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0037_PATTERN1	bt:EAWAG_RULE_BT0037	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0037_PATTERN2	bt:EAWAG_RULE_BT0037	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0040	bt:EAWAG_RULE_BT0040	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0041	bt:EAWAG_RULE_BT0041	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0042	bt:EAWAG_RULE_BT0042	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0044	bt:EAWAG_RULE_BT0044	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0045	bt:EAWAG_RULE_BT0045	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0049	bt:EAWAG_RULE_BT0049	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0050	bt:EAWAG_RULE_BT0050	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0051_PATTERN1	bt:EAWAG_RULE_BT0051	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0051_PATTERN2	bt:EAWAG_RULE_BT0051	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0051_PATTERN3	bt:EAWAG_RULE_BT0051	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0051_PATTERN4	bt:EAWAG_RULE_BT0051	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0055_PATTERN1	bt:EAWAG_RULE_BT0055	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0055_PATTERN2	bt:EAWAG_RULE_BT0055	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0056	bt:EAWAG_RULE_BT0056	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0058	bt:EAWAG_RULE_BT0058	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0060	bt:EAWAG_RULE_BT0060	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0061	bt:EAWAG_RULE_BT0061	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0062	bt:EAWAG_RULE_BT0062	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0063_PATTERN1	bt:EAWAG_RULE_BT0063	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0063_PATTERN2	bt:EAWAG_RULE_BT0063	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0064	bt:EAWAG_RULE_BT0064	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0065_PATTERN1	bt:EAWAG_RULE_BT0065	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0065_PATTERN2	bt:EAWAG_RULE_BT0065	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0066_PATTERN1	bt:EAWAG_RULE_BT0066	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0066_PATTERN2	bt:EAWAG_RULE_BT0066	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0067_PATTERN1	bt:EAWAG_RULE_BT0067	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0067_PATTERN2	bt:EAWAG_RULE_BT0067	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0068	bt:EAWAG_RULE_BT0068	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0069	bt:EAWAG_RULE_BT0069	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0070	bt:EAWAG_RULE_BT0070	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0071	bt:EAWAG_RULE_BT0071	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0072	bt:EAWAG_RULE_BT0072	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0073	bt:EAWAG_RULE_BT0073	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0077	bt:EAWAG_RULE_BT0077	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0078	bt:EAWAG_RULE_BT0078	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0079	bt:EAWAG_RULE_BT0079	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0080	bt:EAWAG_RULE_BT0080	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0082	bt:EAWAG_RULE_BT0082	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0086_PATTERN1	bt:EAWAG_RULE_BT0086	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0086_PATTERN2	bt:EAWAG_RULE_BT0086	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0102	bt:EAWAG_RULE_BT0102	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0103_PATTERN1	bt:EAWAG_RULE_BT0103	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0103_PATTERN2	bt:EAWAG_RULE_BT0103	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0104_PATTERN1	bt:EAWAG_RULE_BT0104	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0104_PATTERN2	bt:EAWAG_RULE_BT0104	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0105	bt:EAWAG_RULE_BT0105	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0107	bt:EAWAG_RULE_BT0107	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0108	bt:EAWAG_RULE_BT0108	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0110	bt:EAWAG_RULE_BT0110	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0124	bt:EAWAG_RULE_BT0124	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0128	bt:EAWAG_RULE_BT0128	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0143	bt:EAWAG_RULE_BT0143	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0144	bt:EAWAG_RULE_BT0144	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0146_PATTERN1_A	bt:EAWAG_RULE_BT0146_PATTERN1_A	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0146_PATTERN1_B	bt:EAWAG_RULE_BT0146_PATTERN1_B	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0146_PATTERN1_C	bt:EAWAG_RULE_BT0146_PATTERN1_C	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0146_PATTERN2	bt:EAWAG_RULE_BT0146	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0147	bt:EAWAG_RULE_BT0147	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0149_PATTERN1	bt:EAWAG_RULE_BT0149	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0153_PATTERN1	bt:EAWAG_RULE_BT0153	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0153_PATTERN2	bt:EAWAG_RULE_BT0153	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0154	bt:EAWAG_RULE_BT0154	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0156_PATTERN1	bt:EAWAG_RULE_BT0156	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0156_PATTERN2	bt:EAWAG_RULE_BT0156	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0156_PATTERN3	bt:EAWAG_RULE_BT0156	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0158_PATTERN1	bt:EAWAG_RULE_BT0158	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0158_PATTERN2	bt:EAWAG_RULE_BT0158	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0162	bt:EAWAG_RULE_BT0162	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0166_PATTERN1	bt:EAWAG_RULE_BT0166	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0166_PATTERN2	bt:EAWAG_RULE_BT0166	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0173	bt:EAWAG_RULE_BT0173	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0174	bt:EAWAG_RULE_BT0174	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0177	bt:EAWAG_RULE_BT0177	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0180	bt:EAWAG_RULE_BT0180	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0184_PATTERN1	bt:EAWAG_RULE_BT0184	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0184_PATTERN2	bt:EAWAG_RULE_BT0184	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0188	bt:EAWAG_RULE_BT0188	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0189	bt:EAWAG_RULE_BT0189	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0190	bt:EAWAG_RULE_BT0190	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0192	bt:EAWAG_RULE_BT0192	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0193	bt:EAWAG_RULE_BT0193	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0195	bt:EAWAG_RULE_BT0195	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0198	bt:EAWAG_RULE_BT0198	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0199	bt:EAWAG_RULE_BT0199	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0200_PATTERN1	bt:EAWAG_RULE_BT0200	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0200_PATTERN2	bt:EAWAG_RULE_BT0200	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0202	bt:EAWAG_RULE_BT0202	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0206	bt:EAWAG_RULE_BT0206	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0208	bt:EAWAG_RULE_BT0208	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0209	bt:EAWAG_RULE_BT0209	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0210	bt:EAWAG_RULE_BT0210	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0214	bt:EAWAG_RULE_BT0214	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0218	bt:EAWAG_RULE_BT0218	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0219	bt:EAWAG_RULE_BT0219	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0225	bt:EAWAG_RULE_BT0225	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0226	bt:EAWAG_RULE_BT0226	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0227	bt:EAWAG_RULE_BT0227	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0231	bt:EAWAG_RULE_BT0231	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0234	bt:EAWAG_RULE_BT0234	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0237	bt:EAWAG_RULE_BT0237	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0241	bt:EAWAG_RULE_BT0241	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0242_PATTERN1	bt:EAWAG_RULE_BT0242	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0242_PATTERN2	bt:EAWAG_RULE_BT0242	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0242_PATTERN3	bt:EAWAG_RULE_BT0242	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0243	bt:EAWAG_RULE_BT0243	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0254_PATTERN1	bt:EAWAG_RULE_BT0254	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0254_PATTERN2	bt:EAWAG_RULE_BT0254	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0255_PATTERN1	bt:EAWAG_RULE_BT0255	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0255_PATTERN2	bt:EAWAG_RULE_BT0255	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0257	bt:EAWAG_RULE_BT0257	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0259	bt:EAWAG_RULE_BT0259	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0260	bt:EAWAG_RULE_BT0260	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0267	bt:EAWAG_RULE_BT0267	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0275	bt:EAWAG_RULE_BT0275	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0280	bt:EAWAG_RULE_BT0280	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0281	bt:EAWAG_RULE_BT0281	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0282	bt:EAWAG_RULE_BT0282	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0284	bt:EAWAG_RULE_BT0284	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0286	bt:EAWAG_RULE_BT0286	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0288	bt:EAWAG_RULE_BT0288	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0291_PATTERN1	bt:EAWAG_RULE_BT0291	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0291_PATTERN2	bt:EAWAG_RULE_BT0291	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0295_PATTERN1	bt:EAWAG_RULE_BT0295	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0295_PATTERN2	bt:EAWAG_RULE_BT0295	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0297	bt:EAWAG_RULE_BT0297	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0298	bt:EAWAG_RULE_BT0298	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0304	bt:EAWAG_RULE_BT0304	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0305	bt:EAWAG_RULE_BT0305	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0306	bt:EAWAG_RULE_BT0306	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0311	bt:EAWAG_RULE_BT0311	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0313	bt:EAWAG_RULE_BT0313	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0316	bt:EAWAG_RULE_BT0316	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0318_PATTERN1	bt:EAWAG_RULE_BT0318	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0318_PATTERN2	bt:EAWAG_RULE_BT0318	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0320	bt:EAWAG_RULE_BT0320	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0322	bt:EAWAG_RULE_BT0322	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0323	bt:EAWAG_RULE_BT0323	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0325	bt:EAWAG_RULE_BT0325	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0327	bt:EAWAG_RULE_BT0327	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0330_PATTERN1	bt:EAWAG_RULE_BT0330	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0330_PATTERN2	bt:EAWAG_RULE_BT0330	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0330_PATTERN3	bt:EAWAG_RULE_BT0330	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0330_PATTERN4	bt:EAWAG_RULE_BT0330	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0330_PATTERN5	bt:EAWAG_RULE_BT0330	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0330_PATTERN6	bt:EAWAG_RULE_BT0330	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0332	bt:EAWAG_RULE_BT0332	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0333	bt:EAWAG_RULE_BT0333	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0334	bt:EAWAG_RULE_BT0334	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0337_PATTERN1	bt:EAWAG_RULE_BT0337	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0337_PATTERN2	bt:EAWAG_RULE_BT0337	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0337_PATTERN3	bt:EAWAG_RULE_BT0337	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0337_PATTERN4	bt:EAWAG_RULE_BT0337	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0337_PATTERN5	bt:EAWAG_RULE_BT0337	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0337_PATTERN6	bt:EAWAG_RULE_BT0337	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0339	bt:EAWAG_RULE_BT0339	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0340_PATTERN1	bt:EAWAG_RULE_BT0340	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0340_PATTERN2	bt:EAWAG_RULE_BT0340	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0340_PATTERN3	bt:EAWAG_RULE_BT0340	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0342	bt:EAWAG_RULE_BT0342	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0343	bt:EAWAG_RULE_BT0343	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0344	bt:EAWAG_RULE_BT0344	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0345	bt:EAWAG_RULE_BT0345	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0347	bt:EAWAG_RULE_BT0347	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN1	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN2	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN3	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN4	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN5	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN6	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0348_PATTERN7	bt:EAWAG_RULE_BT0348	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0349_PATTERN1	bt:EAWAG_RULE_BT0349	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0349_PATTERN2	bt:EAWAG_RULE_BT0349	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0349_PATTERN3	bt:EAWAG_RULE_BT0349	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0349_PATTERN4	bt:EAWAG_RULE_BT0349	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0350_PATTERN1	bt:EAWAG_RULE_BT0350	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0350_PATTERN2	bt:EAWAG_RULE_BT0350	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN1	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN2	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN3	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN4	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN5	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN6	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN7	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0351_PATTERN8	bt:EAWAG_RULE_BT0351	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0352_PATTERN1	bt:EAWAG_RULE_BT0352	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0352_PATTERN2	bt:EAWAG_RULE_BT0352	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0352_PATTERN3	bt:EAWAG_RULE_BT0352	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0352_PATTERN4	bt:EAWAG_RULE_BT0352	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0352_PATTERN5	bt:EAWAG_RULE_BT0352	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0353	bt:EAWAG_RULE_BT0353	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0356_PATTERN1	bt:EAWAG_RULE_BT0356	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0356_PATTERN2	bt:EAWAG_RULE_BT0356	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0356_PATTERN3	bt:EAWAG_RULE_BT0356	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0357_PATTERN1	bt:EAWAG_RULE_BT0357	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0357_PATTERN2	bt:EAWAG_RULE_BT0357	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0358	bt:EAWAG_RULE_BT0358	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0359	bt:EAWAG_RULE_BT0359	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0361	bt:EAWAG_RULE_BT0361	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0362_PATTERN1	bt:EAWAG_RULE_BT0362	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0362_PATTERN2	bt:EAWAG_RULE_BT0362	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0362_PATTERN4	bt:EAWAG_RULE_BT0362	reaction_type	1	envmicro	0	0	1	placed
+EAWAG_RULE_BT0363	bt:EAWAG_RULE_BT0363	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0365	bt:EAWAG_RULE_BT0365	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0366_PATTERN1	bt:EAWAG_RULE_BT0366	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0366_PATTERN2	bt:EAWAG_RULE_BT0366	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0368	bt:EAWAG_RULE_BT0368	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0369	bt:EAWAG_RULE_BT0369	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0370	bt:EAWAG_RULE_BT0370	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0372	bt:EAWAG_RULE_BT0372	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0373	bt:EAWAG_RULE_BT0373	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0374_PATTERN1	bt:EAWAG_RULE_BT0374	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0374_PATTERN2	bt:EAWAG_RULE_BT0374	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0375	bt:EAWAG_RULE_BT0375	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0376	bt:EAWAG_RULE_BT0376	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0377	bt:EAWAG_RULE_BT0377	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0378_PATTERN1	bt:EAWAG_RULE_BT0378	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0378_PATTERN2	bt:EAWAG_RULE_BT0378	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0379	bt:EAWAG_RULE_BT0379	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0383	bt:EAWAG_RULE_BT0383	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0385	bt:EAWAG_RULE_BT0385	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0386	bt:EAWAG_RULE_BT0386	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0387	bt:EAWAG_RULE_BT0387	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0388_PATTERN1	bt:EAWAG_RULE_BT0388	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0388_PATTERN2	bt:EAWAG_RULE_BT0388	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0388_PATTERN3	bt:EAWAG_RULE_BT0388	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0388_PATTERN4	bt:EAWAG_RULE_BT0388	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0389	bt:EAWAG_RULE_BT0389	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0390	bt:EAWAG_RULE_BT0390	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0391_PATTERN1	bt:EAWAG_RULE_BT0391	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0391_PATTERN2	bt:EAWAG_RULE_BT0391	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0392	bt:EAWAG_RULE_BT0392	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0393	bt:EAWAG_RULE_BT0393	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0394	bt:EAWAG_RULE_BT0394	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0397_PATTERN1	bt:EAWAG_RULE_BT0397	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0397_PATTERN2	bt:EAWAG_RULE_BT0397	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0401	bt:EAWAG_RULE_BT0401	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0402	bt:EAWAG_RULE_BT0402	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0403	bt:EAWAG_RULE_BT0403	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0404	bt:EAWAG_RULE_BT0404	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0405	bt:EAWAG_RULE_BT0405	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0408	bt:EAWAG_RULE_BT0408	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0409	bt:EAWAG_RULE_BT0409	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0414	bt:EAWAG_RULE_BT0414	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0416_PATTERN1	bt:EAWAG_RULE_BT0416	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0416_PATTERN2	bt:EAWAG_RULE_BT0416	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0418_PATTERN1	bt:EAWAG_RULE_BT0418	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0418_PATTERN2	bt:EAWAG_RULE_BT0418	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0420_PATTERN1	bt:EAWAG_RULE_BT0420	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0420_PATTERN2	bt:EAWAG_RULE_BT0420	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0421	bt:EAWAG_RULE_BT0421	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0423_PATTERN1	bt:EAWAG_RULE_BT0423	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0423_PATTERN2	bt:EAWAG_RULE_BT0423	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0425_PATTERN1	bt:EAWAG_RULE_BT0425	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0425_PATTERN2	bt:EAWAG_RULE_BT0425	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0427	bt:EAWAG_RULE_BT0427	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0428	bt:EAWAG_RULE_BT0428	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0429	bt:EAWAG_RULE_BT0429	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0430	bt:EAWAG_RULE_BT0430	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0431	bt:EAWAG_RULE_BT0431	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0432_PATTERN1	bt:EAWAG_RULE_BT0432	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0432_PATTERN2	bt:EAWAG_RULE_BT0432	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0437_PATTERN1	bt:EAWAG_RULE_BT0437	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0437_PATTERN2	bt:EAWAG_RULE_BT0437	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0438	bt:EAWAG_RULE_BT0438	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0440	bt:EAWAG_RULE_BT0440	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0441	bt:EAWAG_RULE_BT0441	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0442	bt:EAWAG_RULE_BT0442	reaction_type	1	envmicro	0	0	0	placed
+EAWAG_RULE_BT0443	bt:EAWAG_RULE_BT0443	reaction_type	1	envmicro	0	0	0	placed
+Epoxidation of thiophene	bt:THIOPHENE_EPOXIDATION	reaction_type	1	base	1	0	0	placed
+Epoxidation of vinyl ether	bt:EPOXIDATION_OF_VINYL_ETHER	reaction_type	1	base	1	0	0	placed
+EPOXIDATION_OF_1122_TETRASUBSTITUTED_ALKLENE	bt.rtype:EPOXIDATION_OF_1122_TETRASUBSTITUTED_ALKLENE	reaction_class	1	metx_reaction_type	1	0	0	open
+EPOXIDATION_OF_112_TRISUBSTITUTED_ALKLENE	bt.rtype:EPOXIDATION_OF_112_TRISUBSTITUTED_ALKLENE	reaction_class	1	metx_reaction_type	1	0	0	open
+EPOXIDATION_OF_MONOSUBSTITUTED_ALKENE	bt.rtype:EPOXIDATION_OF_MONOSUBSTITUTED_ALKENE	reaction_class	1	metx_reaction_type	1	0	0	open
+Ester hydrolysis of phenylacetate	bt:PHENYLACETATE_ESTER_HYDROLYSIS	reaction_type	1	base	1	1	0	placed
+ESTERIFICATION	bt.rtype:ESTERIFICATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+Fatty acylation of retinol, acyl-CoA-dependent	bt:RETINOL_O_FATTY_ACYLATION	reaction_type	1	base	1	0	0	placed
+Flavanon-3-ol C-ring fission	bt:FLAVANON_3_OL_C_RING_FISSION	reaction_type	1	base	0	1	0	placed
+Flavanone C-ring fission	bt:FLAVANONE_C_RING_FISSION	reaction_type	1	base	0	1	0	placed
+Flavonoid C-ring reduction	bt:FLAVONOID_C_RING_REDUCTION	reaction_type	1	base	0	1	0	placed
+Formation of 2-trans-enoyl from (3R)-3-oxoacyl	bt:_2_TRANS_ENOYL_FORMATION_FROM_3_R_OXOACYL	reaction_type	1	base	1	0	0	placed
+Formation of 3-oxoacyl-CoA from acyl-CoA	bt:ACYL_COA_C_ACYL_TRANSFER	reaction_type	1	base	1	1	0	placed
+Formation of ceramide from beta-D-galactosylceramide	bt:_2_HYDROXYACYLSPHINGOSINE_1_BETA_GALACTOSYL_TRANSFER_REVERSE	reaction_type	1	base	1	0	0	placed
+Formation of cycloguanide	bt:CYCLOGUANIDE_FORMATION	reaction_type	1	base	1	0	0	placed
+Formation of iminium from pyrrolidine ring	bt:FORMATION_OF_IMINIUM_IN_PYRROLIDINE_RING	reaction_type	1	base	1	0	0	placed
+Formation of imminium ion from N-substituted piperidine	bt:FORMATION_OF_IMMINIUM_ION_FROM_N_SUBSTITUTED_PIPERIDINE	reaction_type	1	base	1	0	0	placed
+Formation of phenylvalerolactone	bt:PHENYLVALEROLACTONE_FORMATION	reaction_type	1	base	0	1	0	placed
+Formation of pyridinium from 4-substituted piperidine	bt:FORMATION_OF_PYRIDINIUM_FROM_4_SUBSTITUTED_PIPERIDINE	reaction_type	1	base	1	0	0	placed
+Galactosylation of beta-D-glucosyl-(1<->1)-ceramide	bt:GLUCOSYLCERAMIDE_BETA_1_4_GALACTOSYL_TRANSFER	reaction_type	1	base	1	0	0	placed
+Glucuronidation of primary aromatic amine	bt:GLUCURONIDATION_OF_PRIMARY_AROMATIC_AMINE	reaction_type	1	base	1	1	0	placed
+Glucuronide hydrolysis from beta-D-glucuronoside	bt:BETA_D_GLUCORONOSIDE_GLUCURONOSOHYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Glucuronide hydrolysis from beta-glucuronoside	bt:BETA_GLUCORONOSIDE_GLUCURONOSOHYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Glutathione S-conjugate hydrolysis to cysteinglycine conjugate	bt:GLUTATHIONE_S_CONJUGATE_HYDROLYSIS_PATTERN_1	reaction_type	1	base	1	1	0	placed
+Glycination of aliphatic acid	bt:GLYCINATION_OF_ALIPHATIC_ACID	reaction_type	1	base	1	0	0	placed
+Glycination of aromatic acid	bt:GLYCINATION_OF_ARYL_ACID	reaction_type	1	base	1	0	0	placed
+Glycoside hydrolysis	bt:GLYCOSIDE_HYDROLYSIS	reaction_type	1	base	1	1	0	placed
+GSH-conjugation of 4-hydroxyazaphosphorine	bt:GSH_CONJUGATION_OF_4_HYDROXYAZAPHOSPHORINE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of acyl chloride	bt:GSH_CONJUGATION_OF_ACYL_CHLORIDE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of apha,beta-unsaturated carbonyl	bt.rtype:GSH_CONJUGATION_OF_APHA_BETA_UNSATURATED_CARBONYL	reaction_class	1	metx_reaction_type	1	0	0	open
+GSH-conjugation of arene epoxide	bt:GSH_CONJUGATION_OF_ARENE_EPOXIDE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of carboxamidic acid	bt:GSH_CONJUGATION_OF_CARBOXIMIDIC_ACID	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of epoxide	bt:GSH_CONJUGATION_OF_EPOXIDE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of halo-S-triazine	bt:GSH_CONJUGATION_OF_HALO_S_TRIAZINE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of isocyanate	bt:GSH_CONJUGATION_OF_ISOCYANATE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of isothiocyanate	bt:GSH_CONJUGATION_OF_ISOTHIOCYANATE	reaction_type	1	base	1	0	0	placed
+GSH-conjugation of sulfhydryl	bt:GSH_CONJUGATION_OF_SULFHYDRYL	reaction_type	1	base	1	0	0	placed
+GST-catalyzed conjugation of alkylaryl phosphate or phosphorothioate	bt:GSH_CONJUGATION_OF_ALKYLARYL_PHOSPHATE_OR_PHOSPHOROTHIOATE	reaction_type	1	base	1	0	0	placed
+Hydrogenation;Reduction	bt.rtype:HYDROGENATION_REDUCTION	reaction_class	1	metx_reaction_type	1	0	0	open
+Hydrolysis of (S)-2-hydroxyacyl glutathione	bt:S_2_HYDROXYACYL_GLUTATHIONE_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of 1,2-diketone	bt:_12_DIKETONE_HYDROLYSIS	reaction_type	1	base	0	1	0	placed
+Hydrolysis of 1-alkenylglycerol-3-phosphocholine	bt:ALKENYLGLYCERO_3_PHOSPHOCHOLINE_HYDROLYSIS_TO_GLYCERO_3_PHOSPHOCHOLINE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of 1-alkenylglycerol-3-phosphoethanolamine	bt:ALKENYLGLYCERO_3_PHOSPHOETHANOLAMINE_HYDROLYSIS_TO_GLYCERO_3_PHOSPHOETHANOLAMINE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of 2',3'-cyclic nucleotide	bt:_2P_3P_CYCLIC_NUCLEOTIDE_HYDROLYSIS_TO_2P_NUCLEOTIDE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of 2',3'-cyclic nucleotide to 3'-nucleotide	bt:_2P_3P_CYCLIC_NUCLEOTIDE_HYDROLYSIS_TO_3P_NUCLEOTIDE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of 3',5'-cyclic nucleotide to 3'-nucleotide	bt:_3P_5P_CYCLIC_NUCLEOTIDE_HYDROLYSIS_TO_3P_NUCLEOTIDE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of a dinucleotide	bt:DINUCLEOTIDE_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of acylcarnitine	bt:HYDROLYSIS_OF_ACYLCARNITINE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of alpha,beta-mannoside	bt:ALPHA_BETA_MANNOSIDE_MANNOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of cyclic N-acylguanidine	bt:HYDROLYSIS_OF_CYCLIC_N_ACYLGUANIDINE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of cyclic N-acylurea	bt:HYDROLYSIS_OF_CYCLIC_N_ACYLUREA	reaction_type	1	base	1	0	0	placed
+Hydrolysis of cyclic tertiary carboxamide	bt:HYDROLYSIS_OF_CYCLIC_TERTIARY_CARBOXAMIDE_PATTERN_1	reaction_type	1	base	1	0	0	placed
+Hydrolysis of cysteinylglycine	bt:CYSTEINYLGLYCINE_HYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Hydrolysis of depsides	bt:DEPSIDE_HYDROLYSIS	reaction_type	1	base	0	1	0	placed
+Hydrolysis of dienelactone	bt:DIENELACTONE_HYDROLYSIS	reaction_type	1	base	0	1	0	placed
+Hydrolysis of dihydrochalcone	bt:DIHYDROCHALCONE_HYDROLYSIS	reaction_type	1	base	0	1	0	placed
+Hydrolysis of epoxide	bt:EPOXIDE_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of ethanolamine from 1-alkyl-3-phosphoethanolamine	bt:_1_ALKYLGLYCEROL_3_PHOSPHOETHANOLAMINE_HYDROLYSIS_TO_1_ALKYLGLYCEROL_3_PHOSPHATE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of ferulic acid ester	bt:HYDROLYSIS_OF_FERULIC_ACID_ESTER	reaction_type	1	base	0	1	0	placed
+Hydrolysis of galactose from galactosylceramide	bt:GALACTOSYLCERAMIDE_GALACTO_HYDROLISIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of galloyl ester	bt:GALLOYL_ESTER_HYDROLYSIS	reaction_type	1	base	0	1	0	placed
+Hydrolysis of glucose from glucosylceramide	bt:GLUCOSYLCERAMIDE_GLUCO_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of glycosylphosphatidylinositol to phosphatidate	bt:GLYCOSYLPHOSPHATIDYLINOSITOL_HYDROLYSIS_TO_PHOSPHATIDATE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of N-acylphosphatidylethanolamine	bt:N_ACYLPHOSPHATIDYLETHANOLAMINE_PHOSPHATIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of O-arylcarbamate	bt:HYDROLYSIS_OF_O_ARYL_CARBAMATE	reaction_type	1	base	1	1	0	placed
+Hydrolysis of pyrimidine nucleoside	bt:RIBOSYLPYRIMIDINE_RIBOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of secondary alkylsulfate ester	bt:HYDROLYSIS_OF_SECONDARY_ALKYL_SULFATE_ESTER	reaction_type	1	base	0	1	0	placed
+Hydrolysis of terminal 1,4-linked alpha-D-glucose	bt:HYDROLYSIS_OF_TERMINAL_14_LINKED_ALPHA_D_GLUCOSE	reaction_type	1	base	1	1	0	placed
+Hydrolysis of terminal alpha-galactose	bt:HYDROLYSIS_OF_TERMINAL_ALPHA_GALACTOSE	reaction_type	1	base	1	0	0	placed
+Hydrolysis of terminal beta-D-glucose	bt:HYDROLYSIS_OF_TERMINAL_BETA_D_GLUCOSE	reaction_type	1	base	1	1	0	placed
+Hydrolysis of terminal beta-galactose	bt:HYDROLYSIS_OF_TERMINAL_BETA_GALACTOSE	reaction_type	1	base	1	1	0	placed
+Hydrolysis of terminal hexose from trihexosylceramide	bt:TRIHEXOSYLCERAMIDE_GALACTO_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of terminal non-reducing N-acetyl-D-glucosamine from alpha-N-acetyl-glucosaminide	bt:ALPHA_N_ACETYL_GLUCOSAMINIDE_N_ACETYL_GLUCOSAMINOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of terminal sialic acid from N-acylneumarinic acid conjugate	bt:ACETYLNEURAMINYL_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydrolysis of terminal, non-reducing galactose from digalactosyldiacylglycerol	bt:DIGALACTOSYLDIACYLGLYCEROL_GALACTO_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Hydroxylation of acyclic aliphatic secondary carbon	bt:HYDROXYLATION_OF_ACYCLIC_ALIPHATIC_SECONDARY_CARBON	reaction_type	1	base	1	0	0	placed
+Hydroxylation of alicyclic tertiary carbon	bt:HYDROXYLATION_OF_ALICYCLIC_TERTIARY_CARBON	reaction_type	1	base	1	0	0	placed
+Hydroxylation of alkyl methine	bt:HYDROXYLATION_OF_ALKYL_METHINE	reaction_type	1	base	1	0	0	placed
+Hydroxylation of antepenultimate aliphatic secondary carbon	bt:HYDROXYLATION_OF_ALIPHATIC_SECONDARY_ANTEPENULTIMATE_CARBON	reaction_type	1	base	1	0	0	placed
+Hydroxylation of aromatic carbon meta to halide group	bt:HYDROXYLATION_OF_AROMATIC_CARBON_META_TO_HALIDE_GROUP	reaction_type	1	base	1	0	0	placed
+Hydroxylation of aromatic carbon ortho to halide group	bt:HYDROXYLATION_OF_AROMATIC_CARBON_ORTHO_TO_HALIDE_GROUP	reaction_type	1	base	1	0	0	placed
+Hydroxylation of aromatic carbon para to halide group	bt:HYDROXYLATION_OF_AROMATIC_CARBON_PARA_TO_HALIDE_GROUP	reaction_type	1	base	1	0	0	placed
+Hydroxylation of benzene on carbon meta to electron withdrawing group	bt:HYDROXYLATION_OF_BENZENE_META_TO_EWG	reaction_type	1	base	1	0	0	placed
+Hydroxylation of benzene on carbon ortho to electron donating group	bt:HYDROXYLATION_OF_BENZENE_ORTHO_TO_EDG	reaction_type	1	base	1	0	0	placed
+Hydroxylation of benzene on carbon ortho to strongly electron donating group	bt:HYDROXYLATION_OF_BENZENE_ORTHO_TO_STRONGLY_EDG	reaction_type	1	base	1	0	0	placed
+Hydroxylation of benzene on carbon para to electron donating group	bt:HYDROXYLATION_OF_BENZENE_PARA_TO_EDG	reaction_type	1	base	1	0	0	placed
+Hydroxylation of benzene on carbon para to strongly electron donating group	bt:HYDROXYLATION_OF_BENZENE_PARA_TO_STRONGLY_EDG	reaction_type	1	base	1	0	0	placed
+Hydroxylation of carbon adjacent to halogen	bt:ALIPHATIC_HYDROXYLATION_OF_CARBON_ADJACENT_TO_HALOGEN_GROUP	reaction_type	1	base	1	0	0	placed
+Hydroxylation of carbon alpha to conjugated carbonyl	bt:HYDROXYLATION_OF_CARBON_ALPHA_TO_CONJUGATED_CARBONYL	reaction_type	1	base	1	0	0	placed
+Hydroxylation of carbon gamma to conjugated carbonyl	bt:HYDROXYLATION_OF_CARBON_GAMMA_TO_CONJUGATED_CARBONYL	reaction_type	1	base	1	0	0	placed
+Hydroxylation of carbon next to amide	bt:HYDROXYLATION_OF_C_NEXT_TO_AMIDES	reaction_type	1	base	1	0	0	placed
+Hydroxylation of methyl carbon adjacent to aliphatic ring	bt:HYDROXYLATION_OF_METHYL_CARBON_ADJACENT_TO_ALIPHATIC_RING	reaction_type	1	base	1	0	0	placed
+Hydroxylation of N-methyl in carbamate	bt:N_METHYL_HYDROXYLATION_OF_CARBAMATE	reaction_type	1	base	1	0	0	placed
+Hydroxylation of non-terminal aliphatic carbon adjacent to aromatic ring	bt:HYDROXYLATION_OF_ALIPHATIC_NON_TERMINAL_CARBON_ADJACENT_TO_AROMATIC_RING	reaction_type	1	base	1	0	0	placed
+Hydroxylation of penultimate aliphatic carbon adjacent to aromatic carbon	bt:HYDROXYLATION_OF_ALIPHATIC_PENULTIMATE_CARBON_ADJACENT_TO_AROMATIC_CARBON	reaction_type	1	base	1	0	0	placed
+Hydroxylation of penultimate aliphatic secondary carbon	bt:HYDROXYLATION_OF_ALIPHATIC_SECONDARY_PENULTIMATE_CARBON	reaction_type	1	base	1	0	0	placed
+Hydroxylation of penultimate aliphatic tertiary carbon	bt:HYDROXYLATION_OF_ALIPHATIC_TERTIARY_PENULTIMATE_CARBON	reaction_type	1	base	1	0	0	placed
+Hydroxylation of sp3-carbon adjacent to N in nitrosamine	bt:HYDROXYLATION_OF_SP3_ADJACENT_TO_N_IN_NITROSAMINES	reaction_type	1	base	1	0	0	placed
+Hydroxylation of terminal methyl	bt:HYDROXYLATION_OF_TERMINAL_METHYL	reaction_type	1	base	1	0	0	placed
+HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON; HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON_PATTERN1	bt.rtype:HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON_HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON_PATTERN1	reaction_class	1	metx_reaction_type	1	0	0	open
+HYDROXYLATION_OF_ALIPHATIC_SECONDARY_CARBON	bt.rtype:HYDROXYLATION_OF_ALIPHATIC_SECONDARY_CARBON	reaction_class	1	metx_reaction_type	1	0	0	open
+HYDROXYLATION_OF_AROMATIC_CARBON; HYDROXYLATION_OF_BENZENE_ORTHO_TO_EDG	bt.rtype:HYDROXYLATION_OF_AROMATIC_CARBON_HYDROXYLATION_OF_BENZENE_ORTHO_TO_EDG	reaction_class	1	metx_reaction_type	1	0	0	open
+HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	bt.rtype:HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	reaction_class	1	metx_reaction_type	1	0	0	open
+HYDROXYLATION_OF_HETEROAROMATIC_CARBON; HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	bt.rtype:HYDROXYLATION_OF_HETEROAROMATIC_CARBON_HYDROXYLATION_OF_AROMATIC_CARBON_ADJACENT_TO_N	reaction_class	1	metx_reaction_type	1	0	0	open
+IMINIUM_STANDARDIZATION	bt:IMINIUM_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+ISOCYANATE_STANDARDIZATION	bt:ISOCYANATE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Isoflavan-4-ol dehydroxylation	bt:ISOFLAVAN_4_OL_DEHYDROXYLATION	reaction_type	1	base	0	1	0	placed
+Isoflavanone C-ring fission	bt:ISOFLAVANONE_C_RING_FISSION	reaction_type	1	base	0	1	0	placed
+Keto-enol tautomerization	bt:KETO_ENOL_TAUTOMERIZATION	reaction_type	1	base	1	1	0	placed
+L-Rhamnosylation of flavonol-3-O-glucoside	bt:FLAVONOL_3O_GLUCOSIDE_L_RHAMNOSYLATION	reaction_type	1	base	1	0	0	placed
+Lactonization of hexahydroxydiphenolic acid	bt:LACTONIZATION_OF_HEXAHYDROXYDIPHENOLIC_ACID	reaction_type	1	base	0	1	0	placed
+Latonohydrolysis in N-acyl-L-homoserine	bt:N_ACYL_L_HOMOSERINE_LACTONE_LACTONOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Ligation of long-chain fatty acyl-CoA	bt:LONG_CHAIN_FATTY_ACYL_COA_LIGATION	reaction_type	1	base	1	0	0	placed
+Ligation of petidoamidoglycolate peptidylamide	bt:PEPTIDOAMIDOGLYCOLATE_PEPTIDYLAMIDE_LIGATION	reaction_type	1	base	1	0	0	placed
+Lysis of choline to trimethylamine	bt:CHOLINE_LYSIS_TO_TRIMETHYLAMINE	reaction_type	1	base	0	1	0	placed
+m-Dehydroxylation of substituted resorcinol	bt:RESORCINOL_M_DEHYDROXYLATION	reaction_type	1	base	0	1	0	placed
+m-Hydroxylation of monosubstituted benzene	bt:M_HYDROXYLATION_OF_MONOSUBSTITUTED_BENZENE	reaction_type	1	base	1	0	0	placed
+Methylenedioxy ring opening	bt:METHYLENEDIOXY_RING_OPENING	reaction_type	1	base	1	0	0	placed
+N-Acetylation of L-cysteine-S-conjugate	bt:L_CYSTEINE_S_CONJUGATE_N_ACETYLATION	reaction_type	1	base	1	1	0	placed
+N-Acetylglucosaminylation of phosphatidylinositol	bt:PHOSPHATIDYLINOSITOL_N_ACETYLGLUCOSAMINYLATION	reaction_type	1	base	1	0	0	placed
+N-Deacetylation of N-acetylglucosaminyl phosphatidylinositol	bt:N_ACETYLGLUCOSAMINYL_PHOSPHATIDYLINOSITOL_N_DEACETYLATION	reaction_type	1	base	1	0	0	placed
+N-Dealkoxylation of N-aryl-N-chloroacetamide	bt:N_DEALKOXYLATION_OF_N_ARYL_N_CHLOROACETAMIDES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of acyclic secondary amine	bt:N_DEALKYLATION_OF_ACYCLIC_SECONDARY_AMINES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of acyclic tertiary amine	bt:N_DEALKYLATION_OF_ACYCLIC_TERTIARY_AMINES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of alicyclic tertiary amine	bt:N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of dicarboximide	bt:N_DEALKYLATION_OF_DICARBOXIMIDE	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of hydrazide	bt:N_DEALKYLATION_OF_HYDRAZIDE	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of hydrazine	bt:N_DEALKYLATION_OF_HYDRAZINE	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of mixed tertiary amine	bt:N_DEALKYLATION_OF_MIXED_TERTIARY_AMINES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of N-alkylnitrosamine	bt:N_DEALKYLATION_OF_N_ALKYLNITROSAMINE	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of nitrosodialkylamine	bt:N_DEALKYLATION_OF_NITROSODIALKYLAMINES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of secondary arylalkylamine	bt:N_DEALKYLATION_OF_SECONDARY_ARYLALKYL_AMINES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of secondary carboxamide	bt:N_DEALKYLATION_OF_SECONDARY_CARBOXAMIDES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of sulfonamide	bt:N_DEALKYLATION_OF_SULFONAMIDES	reaction_type	1	base	1	0	0	placed
+N-Dealkylation of urea	bt:N_DEALKYLATION_OF_UREAS	reaction_type	1	base	1	0	0	placed
+N-Dealylation	bt.rtype:N_DEALYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Dechloroethylation	bt:N_DECHLOROETHYLATION	reaction_type	1	base	1	0	0	placed
+N-Deglycosylation of glycosyl-N-acylsphingosine	bt:GLYCOSYLCERAMIDE_GLYCOSYL_HYDROLYSIS	reaction_type	1	base	1	0	0	placed
+N-Dehydrogenation of aliphatic azaheterocyclene	bt:N_DEHYDROGENATION_OF_ALIPHATIC_AZAHETEROCYCLE	reaction_type	1	base	1	0	0	placed
+N-dehydroxyethylation	bt.rtype:N_DEHYDROXYETHYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Deisopropylation	bt:N_DEISOPROPYLATION	reaction_type	1	base	1	0	0	placed
+N-Demethoxymethylation	bt:N_DEMETHOXYMETHYLATION	reaction_type	1	base	1	0	0	placed
+N-Demethylation of aryldimethylformamidine	bt:N_DEMETHYLATION_OF_ARYLDIMETHYLFORMAMIDINE	reaction_type	1	base	1	0	0	placed
+N-Depropargylation of secondary or tertiary amine	bt:N_DEPROPARGYLATION_OF_SEC_AND_TERT_AMINES	reaction_type	1	base	1	0	0	placed
+N-DESISOPROPYLATION	bt.rtype:N_DESISOPROPYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Despropylation	bt.rtype:N_DESPROPYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Glucuronidation of 3-substituted pyridine	bt:PYRIDINE_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+N-Glucuronidation of amide	bt:AMIDE_N_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+N-Glucuronidation of sulfonamide	bt:SULFONAMIDE_N_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+N-hydroxy glucuronidation	bt.rtype:N_HYDROXY_GLUCURONIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Hydroxylation of anilide	bt:N_HYDROXYLATION_OF_ANILIDES	reaction_type	1	base	1	0	0	placed
+N-Hydroxylation of aniline to hydroxylamine	bt:N_HYDROXYLATION_OF_ANILINES_TO_HYDROXYLAMINES	reaction_type	1	base	1	0	0	placed
+N-Hydroxylation of guanidine or aminohydrazone	bt:N_HYDROXYLATION_OF_GUANIDINES_AND_AMINOHYDROAZONES	reaction_type	1	base	1	0	0	placed
+N-Hydroxylation of primary arylamine	bt:N_HYDROXYLATION_OF_PRIMARY_ARYLAMINE	reaction_type	1	base	1	0	0	placed
+N-Hydroxylation of primary or secondary aliphatic amine	bt:N_HYDROXYLATION_OF_PRIM_SEC_ALIPHATIC_AMINES	reaction_type	1	base	1	0	0	placed
+N-Hydroxylation of secondary arylamide	bt:N_HYDROXYLATION_OF_SECONDARY_ARYLAMIDES	reaction_type	1	base	1	0	0	placed
+N-Hydroxylation; N-Oxidation	bt.rtype:N_HYDROXYLATION_N_OXIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+N-hyroxylation of guanidine or aminohydrazone	bt.rtype:N_HYROXYLATION_OF_GUANIDINE_OR_AMINOHYDRAZONE	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Methylation of phosphatidyl-N-dimethylethanolamine	bt:PHOSPHATIDYL_N_DIMETHYLETHANOLAMINE_N_METHYLATION	reaction_type	1	base	1	0	0	placed
+N-Methylation of phosphatidyl-N-monomethylethanolamine	bt:PHOSPHATIDYL_N_MONOMETHYLETHANOLAMINE_N_METHYLATION	reaction_type	1	base	1	0	0	placed
+N-Methylation of phosphatidylethanolamine	bt:PHOSPHATIDYLETHANOLAMINE_N_METHYLATION	reaction_type	1	base	1	0	0	placed
+N-O bond cleavage	bt.rtype:N_O_BOND_CLEAVAGE	reaction_class	1	metx_reaction_type	1	0	0	open
+N-Oxidation of alicyclic tertiary amine	bt:N_OXIDATION_OF_ALICYCLIC_TERTIARY_AMINE	reaction_type	1	base	1	0	0	placed
+N-Oxidation of aliphatic tertiary amine	bt:N_OXIDATION_OF_ALIPHATIC_TERTIARY_AMINE	reaction_type	1	base	1	0	0	placed
+N-Oxidation of pyrimidine	bt:N_OXIDATION_OF_PYRIMIDINE_RING	reaction_type	1	base	1	0	0	placed
+N_DEALKYLATION_OF_CYCLIC_TERTIARY_AMINES; N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	bt.rtype:N_DEALKYLATION_OF_CYCLIC_TERTIARY_AMINES_N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	reaction_class	1	metx_reaction_type	1	0	0	open
+N_DEHYDROGENATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	bt.rtype:N_DEHYDROGENATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	reaction_class	1	metx_reaction_type	1	0	0	open
+N_HYDROXYLATION_OF_ALICYCLIC_TERTIARY_AMINE	bt.rtype:N_HYDROXYLATION_OF_ALICYCLIC_TERTIARY_AMINE	reaction_class	1	metx_reaction_type	1	0	0	open
+Nifedipine Oxidation	bt.rtype:NIFEDIPINE_OXIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+NITRILIUM_STANDARDIZATION	bt:NITRILIUM_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+NITRO_STANDARDIZATION	bt:NITRO_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+NITRO_STANDARDIZATION_1	bt:NITRO_STANDARDIZATION_1	reaction_type	1	standardization	0	0	1	placed
+NITRONATE_STANDARDIZATION	bt:NITRONATE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Nitroreduction of nitroarene to hydroxylamine	bt:NITROREDUCTION_OF_NITROARENE_TO_HYDROXYLAMINE	reaction_type	1	base	1	1	0	placed
+NITROSO_STANDARDIZATION	bt:NITROSO_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+NS-cleavage	bt:NS_CLEAVAGE	reaction_type	1	base	1	0	0	placed
+O-acetylation	bt.rtype:O_ACETYLATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+O-Acetylation of N-hydroxyl-N-arylacetamide	bt:N_HYDROXYL_N_ARYLACETAMIDE_O_ACETYLATION	reaction_type	1	base	1	1	0	placed
+O-Acetylation of N-hydroxylarylamine	bt:N_HYDROXYARYLAMINE_O_ACETYLATION	reaction_type	1	base	1	1	0	placed
+O-Acylation of 1,2-diacylglycerol	bt:DIACYLGLYCEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+O-Aryl dealkylation adjacent to substituted carbon	bt:O_ARYL_DEALKYLATION_ADJACENT_TO_SUBSTITUTED_CARBON	reaction_type	1	base	1	0	0	placed
+O-Aryl dealkylation not adjacent to substituted carbon	bt:O_ARYL_DEALKYLATION_NOT_ADJACENT_TO_SUBSTITUTED_CARBON	reaction_type	1	base	1	0	0	placed
+O-Aryl demethylation	bt:O_ARYL_DEMETHYLATION	reaction_type	1	base	1	0	0	placed
+O-deacetylation	bt.rtype:O_DEACETYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+O-Dealklyation	bt.rtype:O_DEALKLYATION	reaction_class	1	metx_reaction_type	1	0	0	open
+O-Dealkylation	bt:O_DEALKYLATION	reaction_type	1	base	1	0	0	placed
+O-Dealkylation of dialkylether	bt:O_DEALKYLATION_OF_DIALKYLETHER	reaction_type	1	base	1	0	0	placed
+O-Debenzylation	bt.rtype:O_DEBENZYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+O-Deisopropylation	bt:O_DEISOPROPYLATION	reaction_type	1	base	1	0	0	placed
+O-Detrifluoromethylation	bt.rtype:O_DETRIFLUOROMETHYLATION	reaction_class	1	metx_reaction_type	1	0	0	open
+O-Glucuronidation of aliphatic acid	bt:ALIPHATIC_ACYL_O_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+O-Glucuronidation of aromatic acid	bt:AROMATIC_ACYL_O_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+O-Glucuronidation of N-oxide	bt:GLUCURONIDATION_OF_AMINE_OXIDE	reaction_type	1	base	1	1	0	placed
+O-Hydroxylation of monosubstituted benzene	bt:O_HYDROXYLATION_OF_MONOSUBSTITUTED_BENZENE	reaction_type	1	base	1	0	0	placed
+O-Hydroxylation of phenol	bt:O_HYDROXYLATION_OF_PHENOLS	reaction_type	1	base	1	0	0	placed
+O-sulfation	bt.rtype:O_SULFATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+O-Sulfation of 1-O-alkyl-2-O-acyl-3-O-beta-D-galactosyl-sn-glycerol	bt:GALACTOSYL_1_ALKYL_2_ACYL_SULFATION	reaction_type	1	base	1	0	0	placed
+O-Sulfohydrolysis of thiohydroximate	bt:THIOHYDROXIMATE_O_SULFOHYDROLYSIS	reaction_type	1	base	0	0	0	placed
+O-sulfonation oxidation	bt.rtype:O_SULFONATION_OXIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Oxidation of 3,7,12-hydroxycholestane	bt:_3_7_12_OH_CHOLESTANE_OXIDATION	reaction_type	1	base	1	0	0	placed
+Oxidation of 3-oxo,7,12-hydroxycholestane	bt:_3_OXO_7_12_OH_CHOLESTANE_OXIDATION	reaction_type	1	base	1	0	0	placed
+Oxidation of 4-hydroxyazaphosphorine	bt:OXIDATION_OF_4_HYDROXYAZAPHOSPHORINE	reaction_type	1	base	1	0	0	placed
+Oxidation of 4-substituted phenol	bt:OXIDATION_OF_4_SUBSTITUTTED_PHENOL	reaction_type	1	base	0	0	0	placed
+Oxidation of acyl-CoA	bt:ACYL_COA_OXIDATION	reaction_type	1	base	1	0	0	placed
+Oxidation of acylglycerol-3-phosphate	bt:ACYLGLYCEROL_3_PHOSPHATE_OXIDATION	reaction_type	1	base	1	0	0	placed
+Oxidation of alkyl formamide	bt:OXIDATION_OF_ALKYL_FORMAMIDES	reaction_type	1	base	1	0	0	placed
+Oxidation of alkylglycerol-3-phosphate	bt:ALKYLGLYCEROL_3_PHOSPHATE_OXIDATION	reaction_type	1	base	1	0	0	placed
+Oxidation of halotrifluoroethane	bt:OXIDATION_OF_HALOTRIFLUOROETHANE	reaction_type	1	base	1	0	0	placed
+Oxidation of long-chain alcohol	bt:LONG_CHAIN_ALCOHOL_OXIDATION	reaction_type	1	base	0	0	0	placed
+Oxidation of nitrogen in strained ring system	bt:OXIDATION_OF_N_IN_STRAINED_RING_SYSTEMS	reaction_type	1	base	1	0	0	placed
+Oxidation of p-substituted anilide	bt:OXIDATION_OF_P_SUBSTITUTED_ANILIDES	reaction_type	1	base	1	0	0	placed
+Oxidation of p-substituted anilides	bt.rtype:OXIDATION_OF_P_SUBSTITUTED_ANILIDES	reaction_class	1	metx_reaction_type	1	0	0	open
+Oxidation of phthalazine	bt:OXIDATION_OF_PYRIMIDINE_PHTHALAZINE	reaction_type	1	base	1	0	0	placed
+Oxidation of primary alcohol to aldehyde	bt:OXIDATION_OF_PRIM_ALCOHOL_TO_ALDEHYDE	reaction_type	1	base	1	0	0	placed
+Oxidation of S adjacent to an aliphatic nitrogen	bt.rtype:OXIDATION_OF_S_ADJACENT_TO_AN_ALIPHATIC_NITROGEN	reaction_class	1	metx_reaction_type	1	0	0	open
+Oxidation of secondary alcohol to ketone	bt:OXIDATION_OF_SEC_ALCOHOL_TO_KETONE	reaction_type	1	base	1	0	0	placed
+Oxidation of sulfur adjacent to aliphatic nitrogen	bt:OXIDATION_OF_S_ADJACENT_TO_ALIPHATIC_NITROGENS	reaction_type	1	base	1	0	0	placed
+Oxidation of very long (3R)-3-hydroxyacyl-CoA	bt:VERY_LONG_CHAIN_3R_3_HYDROXYACYL_COA_REDUCTION	reaction_type	1	base	1	0	0	placed
+OXIDATION_OF_METHYL_TO_CARBOXYLIC_ACID	bt.rtype:OXIDATION_OF_METHYL_TO_CARBOXYLIC_ACID	reaction_class	1	metx_reaction_type	1	0	0	open
+Oxidative deboronation	bt:OXIDATIVE_DEBORONATION	reaction_type	1	base	1	0	0	placed
+oxidative defluorination	bt.rtype:OXIDATIVE_DEFLUORINATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+OXIDATIVE_DEAMINATION_OF_TERTIARY_AMINES; N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	bt.rtype:OXIDATIVE_DEAMINATION_OF_TERTIARY_AMINES_N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES_PATTERN1	reaction_class	1	metx_reaction_type	1	0	0	open
+Oxidization	bt.rtype:OXIDIZATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Oxidoreduction of trans-2-enoyl-CoA	bt:ACYL_COA_TRANS_2_OXIDOREDUCTION	reaction_type	1	base	1	0	0	placed
+p-Hydroxylation of anilide	bt:P_HYDROXYLATION_OF_ANILIDES	reaction_type	1	base	1	0	0	placed
+p-Hydroxylation of monosubstituted benzene	bt:P_HYDROXYLATION_OF_MONOSUBSTITUTED_BENZENE	reaction_type	1	base	1	0	0	placed
+p-Hydroxylation of phenol	bt:P_HYDROXYLATION_OF_PHENOLS	reaction_type	1	base	1	0	0	placed
+Phosphate hydrolysis from phosphatidylcholine	bt:PHOSPHATIDYLCHOLINE_PHOSPHATIDOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Phosphatidylcholine cerebrosterol O-acylation	bt:PHOSPHATIDYLCHOLINE_CEREBROSTEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+Phosphatidylcholine cholesterol O-acylation	bt:PHOSPHATIDYLCHOLINE_CHOLESTEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+Phosphatidylcholine sitosterol O-acylation	bt:PHOSPHATIDYLCHOLINE_SITOSTEROL_O_ACYLATION	reaction_type	1	base	1	0	0	placed
+Phosphohydrolysis of acylphosphate	bt:ACYLPHOSPHATE_PHOSPHOHYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Phosphohydrolysis of nucleoside diphosphate	bt:NUCLEOSIDE_DIPHOSPHATE_PHOSPHOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Phosphohydrolysis of nucleoside triphosphate	bt:NUCLEOSIDE_TRIPHOSPHATE_PHOSPHOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+PHOSPHONIC_STANDARDIZATION	bt:PHOSPHONIC_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+PHOSPHONIUM_YLIDE_STANDARDIZATION	bt:PHOSPHONIUM_YLIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+PHOSPHORIC_STANDARDIZATION	bt:PHOSPHORIC_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+PHOSPHORIC_STANDARDIZATION_2	bt:PHOSPHORIC_STANDARDIZATION_2	reaction_type	1	standardization	0	0	1	placed
+Phosphorohydrolysis of aryldialkylphosphate	bt:ARYLDIALKYLPHOSPHATE_PHOSPHOHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Phosphorylation of 1-monoacylglycerol	bt:_1_MONOACYLGLYCEROL_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Phosphorylation of 2-monoacylglycerol	bt:_2_MONOACYLGLYCEROL_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Phosphorylation of ceramide	bt:CERAMIDE_PHOSPHORYLATION	reaction_type	1	base	1	0	0	placed
+Pyridine N-oxidation	bt:PYRIDINE_N_OXIDATION	reaction_type	1	base	1	0	0	placed
+PYRROLE_EPOXIDATION	bt.rtype:PYRROLE_EPOXIDATION	reaction_class	1	metx_reaction_type	1	0	0	open
+Reduction of (3R)-3-oxoacyl	bt:_3_R_OXOACYL_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of acylglycerol-3-phosphate	bt:ACYLGLYCERONE_3_PHOSPHATE_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of aldehyde	bt:ALDEHYDE_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of aldehyde to alcohol	bt:REDUCTION_OF_ALDEHYDES_TO_ALCOHOL	reaction_type	1	base	1	0	0	placed
+Reduction of anthocyanidin	bt:ANTHOCYANIDIN_REDUCTION	reaction_type	1	base	0	0	0	placed
+Reduction of azobenzene	bt:REDUCTION_OF_AZOBENZENE	reaction_type	1	base	0	1	0	placed
+Reduction of carbonyl	bt:CARBONYL_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of delta-14-sterol	bt:DELTA_14_STEROL_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of isoflavone to isoflavanone	bt:ISOFLAVONE_REDUCTION_TO_ISOFLAVANONE	reaction_type	1	base	0	1	0	placed
+Reduction of ketone to alcohol	bt:REDUCTION_OF_KETONE_TO_ALCOHOL	reaction_type	1	base	1	0	0	placed
+Reduction of nitroimine	bt:REDUCTION_OF_NITROIMINES	reaction_type	1	base	1	0	0	placed
+Reduction of terminal aliphatic trihalide	bt:REDUCTION_OF_TERMINAL_ALIPHATIC_TRIHALIDES	reaction_type	1	base	1	0	0	placed
+Reduction of trans-2,3-didehydroacyl-CoA	bt:TRANS_23_DIDEHYDROACYL_COA_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of very long-chain enoyl-CoA	bt:VERY_LONG_CHAIN_ENOYL_COA_REDUCTION	reaction_type	1	base	1	0	0	placed
+Reduction of vinylbenzene	bt:REDUCTION_OF_VINYL_HYDROXYBENZENE	reaction_type	1	base	0	1	0	placed
+REDUCTION_OF_KETONES_TO_ALCOHOL	bt.rtype:REDUCTION_OF_KETONES_TO_ALCOHOL	reaction_class	1	metx_reaction_type	1	0	0	open
+Rhamnohydrolysis of alpha-L-rhamnoside	bt:ALPHA_L_RHAMNOSIDE_RHAMNOHYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Ring opening of N-substituted piperidine	bt:RING_OPENING_OF_N_SUBSTITUTED_PIPERIDINE_RING	reaction_type	1	base	1	0	0	placed
+S-Dealkylation	bt.rtype:S_DEALKYLATION	reaction_class	1	metx_reaction_type	1	0	0	placed
+S-Methylation of thiopurine	bt:THIOPURINE_S_METHYLATION	reaction_type	1	base	1	1	0	placed
+S-Oxidation of alkylarylthioether to sulfoxide	bt:S_OXIDATION_OF_ALKYLARYLTHIOETHER_TO_SULFOXIDE	reaction_type	1	base	1	0	0	placed
+S-Oxidation of dialkylthioether to sulfoxide	bt:S_OXIDATION_OF_DIALKYLTHIOETHER_TO_SULFOXIDE	reaction_type	1	base	1	0	0	placed
+S-Oxidation of diarylthioether to sulfoxide	bt:S_OXIDATION_OF_DIARYLTHIOETHER_TO_SULFOXIDE	reaction_type	1	base	1	0	0	placed
+S-Oxidation of dithiocarbamate	bt:S_OXIDATION_OF_DITHIOCARBAMATE	reaction_type	1	base	1	0	0	placed
+S-Oxidation of organosulfurous compounds	bt:S_OXIDATION_OF_ORGANOSULFUROUS_COMPOUNDS	reaction_type	1	base	1	0	0	placed
+S-Oxidation of sulfoxide to sulfone	bt:S_OXIDATION_OF_SULFOXIDE_TO_SULFONE	reaction_type	1	base	1	0	0	placed
+S-Oxidation of thiocarbamate	bt:S_OXIDATION_OF_THIOCARBAMATE	reaction_type	1	base	1	0	0	placed
+S-REDUCTION	bt.rtype:S_REDUCTION	reaction_class	1	metx_reaction_type	1	0	0	open
+SELENITE_STANDARDIZATION	bt:SELENITE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+SILICATE_STANDARDIZATION	bt:SILICATE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+sn1-Specific acylhydrolysis of 1,2-diacylglycerol	bt:_1_2_DIACYLGLYCEROL_SN1_SPECIFIC_ACYLHYDROLYSIS	reaction_type	1	base	1	0	0	placed
+Sulfation of primary alcohol	bt:SULFATION_OF_PRIMARY_ALCOHOL	reaction_type	1	base	1	1	0	placed
+Sulfation of secondary alcohol	bt:SULFATION_OF_SECONDARY_ALCOHOL	reaction_type	1	base	1	1	0	placed
+SULFINE_STANDARDIZATION	bt:SULFINE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Sulfohydrolysis of arylsulfate	bt:ARYLSULFATE_SULFOHYDROLYSIS	reaction_type	1	base	1	1	0	placed
+Sulfohydrolysis of cerebroside-3-sulfate	bt:CEREBROSIDE_3_SULFATE_SULFOHYDROLYSIS	reaction_type	1	base	1	1	0	placed
+SULFONE_STANDARDIZATION	bt:SULFONE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+SULFONIUM_YLIDE_STANDARDIZATION	bt:SULFONIUM_YLIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+SULFOXIDE_STANDARDIZATION	bt:SULFOXIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Synthesis of 1,2-diacylglycerol-3-phosphethanolamine from 1,2-diacylglycerol	bt:ETHANOLAMINEPHOSPHATE_TRANSFER_TO_12_DIACYLGLYCEROL	reaction_type	1	base	1	0	0	placed
+Synthesis of 1,2-diacylglycerol-3-phosphocholine from 1,2-diacylglycerol	bt:PHOSPHOCHOLINE_TRANSFER_TO_12_DIACYLGLYCEROL	reaction_type	1	base	1	0	0	placed
+Synthesis of 1,2-diacylglycerol-3-phosphoglycerol-3-phosphate from CDP-diacylglycerol	bt:SN_GLYCEROL_3_PHOSPHATE_TRANSFER_TO_CDP_DIACYLGLYCEROL	reaction_type	1	base	1	0	0	placed
+Synthesis of 1-alkenyl-2-acylglycerophosphoethanolamine from 1-alkenyl-2-acylglycerol	bt:_1_ALKENYL_2_ACYL_GLYCEROPHOSPHOETHANOLAMINE_FROM_1_ALKYL_2_ACYLGLYCEROL	reaction_type	1	base	1	0	0	placed
+Synthesis of 1-alkyl-2-acylglycerophosphoethanolamine from 1-alkyl-2-acylglycerol	bt:_1_ALKYL_2_ACYL_GLYCEROPHOSPHOETHANOLAMINE_FROM_1_ALKYL_2_ACYLGLYCEROL	reaction_type	1	base	1	0	0	placed
+Synthesis of 1-phosphatidyl-1D-myo-inositol from CDP-diacylglycerol	bt:INOSITOL_3_PHOSPHATE_TRANSFER_TO_CDP_DIACYLGLYCEROL	reaction_type	1	base	1	0	0	placed
+Synthesis of cardiolipin	bt:CARDIOLIPIN_SYNTHESIS	reaction_type	1	base	1	0	0	placed
+Synthesis of CDP-diacylglycerol from 1,2-diacylglycerol-3-phosphate	bt:_12_DIACYLGLYCEROL_3_PHOSPHATE_CITIDYL_TRANSFER	reaction_type	1	base	1	0	0	placed
+Synthesis of phosphatidylserine from phosphatidylcholine	bt:PHOSPHATIDYLSERINE_SYNTHESIS_FROM_PHOSPHATIDYLCHOLINE	reaction_type	1	base	1	0	0	placed
+Synthesis of phosphatidylserine from phosphatidylethanolamine	bt:PHOSPHATIDYLSERINE_SYNTHESIS_FROM_PHOSPHATIDYLETHANOLAMINE	reaction_type	1	base	1	0	0	placed
+Synthesis of very long-chain 2,3,4-saturated fatty acyl CoA, CoA-dependent	bt:VERY_LONG_CHAIN_3_OXOACYL_COA_SYNTHESIS_REVERSE	reaction_type	1	base	1	0	0	placed
+Synthesis of very long-chain 3-oxoacyl-CoA, malonyl-CoA-dependent	bt:VERY_LONG_CHAIN_3_OXOACYL_COA_SYNTHESIS	reaction_type	1	base	1	0	0	placed
+Taurine conjugation of aliphatic acid	bt.rtype:TAURINE_CONJUGATION_OF_ALIPHATIC_ACID	reaction_class	1	metx_reaction_type	1	0	0	open
+Taurine conjugation of C23 bile acid-CoA	bt:C23_BILE_ACID_COA_TAURINATION	reaction_type	1	base	1	0	0	placed
+Taurine conjugation of C24 bile acid-CoA	bt:C24_BILE_ACID_COA_TAURINATION	reaction_type	1	base	1	0	0	placed
+Terminal desaturation	bt:TERMINAL_DESATURATION	reaction_type	1	base	1	0	0	placed
+TERTIARY_N_OXIDE_STANDARDIZATION	bt:TERTIARY_N_OXIDE_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Thioether S-methylation	bt:THIOETHER_S_METHYLATION	reaction_type	1	base	1	0	0	placed
+Thiol glucuronidation	bt:THIOL_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+Thiol S-methylation	bt:THIOL_S_METHYLATION	reaction_type	1	base	0	0	0	placed
+Thiophene S-oxidation	bt:THIOPHENE_S_OXIDATION	reaction_type	1	base	1	0	0	placed
+Thiophenol glucuronidation	bt:THIOPHENOL_GLUCURONIDATION	reaction_type	1	base	1	1	0	placed
+THIOUREA_STANDARDIZATION	bt:THIOUREA_STANDARDIZATION	reaction_type	1	standardization	0	0	1	placed
+Transamination of aromatic amino acid	bt:AROMATIC_AMINO_ACID_TRANSAMINATION	reaction_type	1	base	1	0	0	placed
+Transfer of acetylgalactosamine to ganglioside GD3	bt:GANGLIOSIDE_GD3_ACETYLGALACTOSAMINE_TRANSFER	reaction_type	1	base	1	0	0	placed
+Transfer of acetylgalactosamine to ganglioside GM3	bt:GANGLIOSIDE_GM3_ACETYLGALACTOSAMINE_TRANSFER	reaction_type	1	base	1	0	0	placed
+Transfer of cytidine to N-acylneuraminate	bt:CYTIDINE_TRANSFER_TO_N_ACYLNEURAMINATE	reaction_type	1	base	1	0	0	placed
+Transfer of galactose to ganglioside GM2	bt:GM2_GANGLIOSIDE_GALACTOSYL_TRANSFER	reaction_type	1	base	1	0	0	placed
+Transfer of glucopyranose to alkylcinnamate	bt:ALCOHOL_O_CINNAMOYL_TRANSFER_REVERSE	reaction_type	1	base	1	0	0	placed
+Transfer of N-acetylgalactosamine to (N-acetylneuraminyl)-galactosylglucosylceramide	bt:BETA_D_GALACTOSYL_BETA_D_GLUCOSYL_CERAMIDE_ACETYLGALACTOSAMINE_TRANSFER	reaction_type	1	base	1	0	0	placed
+Transfer of N-acetylneuraminate to lactosylceramide	bt:LACTOSYLCERAMIDE_N_ACETYLNEURAMINATE_TRANSFER	reaction_type	1	base	1	0	0	placed
+Transfer of phosphocholine to N-acylsphingoid	bt:N_ACYLSPHINGOID_PHOSPHOCHOLINE_TRANSFER	reaction_type	1	base	1	0	0	placed
+Unknown Reduction	bt.rtype:UNKNOWN_REDUCTION	reaction_class	1	metx_reaction_type	1	0	0	open

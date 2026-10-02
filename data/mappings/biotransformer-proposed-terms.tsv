@@ -1,0 +1,75 @@
+bt_label	bt_object_id	proposed_label	proposed_parent_id	proposed_parent_label	n_patterns	sources	reason
+Nitroreduction of nitroarene to nitrosoarene	bt:NITROREDUCTION_OF_NITROARENE_TO_NITROSOARENE	nitroarene to nitrosoarene reduction	xmet:4000094	nitro reduction	5	base	subset of nitro reduction (first e− pair / nitro→nitroso); no leaf for this step
+Nitroreduction of nitrosoarene to arylhydroxylamine	bt:NITROREDUCTION_OF_NITROSOARENE_TO_ARYLHYDROXYLAMINE	nitrosoarene to arylhydroxylamine reduction	xmet:4000315	nitroso reduction	3	base	subset of nitroso reduction; product is hydroxylamine
+Reduction of arylhydroxylamine to arylamine	bt:REDUCTION_OF_ARYLHYDROXYLAMINE_TO_ARYLAMINE	arylhydroxylamine to arylamine reduction	xmet:4000095	nitro to amine reduction	4	base	final step of nitro→amine path; not bare reduction
+N-Glucuronidation of azole	bt:AZOLE_N_GLUCURONIDATION	azole N-glucuronidation	xmet:4000153	N-glucuronidation	5	base	substrate-class subset of N-glucuronidation
+N-Acetylation of arylamine	bt:ARYLAMINE_N_ACETYLATION	arylamine N-acetylation	xmet:4000164	N-acetylation	3	base	substrate-class subset of N-acetylation
+Catechol O-methylation	bt:CATECHOL_O_METHYLATION	catechol O-methylation	xmet:4000176	O-methylation	3	base	substrate-class subset (COMT); not bare O-methylation
+GSH-conjugation of alpha,beta-unsaturated carbonyl	bt:GSH_CONJUGATION_OF_ALPHA_BETA_UNSATURATED_CARBONYL	alpha,beta-unsaturated carbonyl glutathionation	xmet:4000334	carbonyl glutathionation	2	base	near carbonyl/Michael GSH child; confirm vs Michael glutathionation (4000168)
+Hydrolysis of cyclic secondary carboxamide	bt:HYDROLYSIS_OF_CYCLIC_SECONDARY_CARBOXAMIDE_PATTERN_2	cyclic secondary carboxamide hydrolysis	xmet:4000079	amide hydrolysis	2	base	subset of amide hydrolysis (cyclic secondary)
+Pyridine N-oxidation	bt:PYRIDINE_N_OXIDATION	pyridine N-oxidation	xmet:4000026	nitrogen oxidation	1	base	heteroarene N-ox leaf under nitrogen oxidation
+N-Dealkylation of tertiary carboxamide	bt:N_DEALKYLATION_OF_TERTIARY_CARBOXAMIDES	tertiary carboxamide N-dealkylation	xmet:4000043	N-dealkylation	2	base	substrate-class subset of N-dealkylation
+N-Dealkylation of phosphoramide	bt:N_DEALKYLATION_OF_PHOSPHORAMIDE	phosphoramide N-dealkylation	xmet:4000043	N-dealkylation	2	base	substrate-class subset of N-dealkylation
+N-Dealkylation of N-acylurea	bt:N_DEALKYLATION_OF_N_ACYLUREAS	N-acylurea N-dealkylation	xmet:4000043	N-dealkylation	2	base	substrate-class subset of N-dealkylation
+N-Dechloroethylation	bt:N_DECHLOROETHYLATION	N-dechloroethylation	xmet:4000043	N-dealkylation	1	base	specialized N-dealkyl leaving group
+N-Deisopropylation	bt:N_DEISOPROPYLATION	N-deisopropylation	xmet:4000043	N-dealkylation	1	base	isopropyl N-dealkyl leaf; LG isopropyl exists but reaction leaf missing
+O-Deisopropylation	bt:O_DEISOPROPYLATION	O-deisopropylation	xmet:4000044	O-dealkylation	1	base	isopropyl O-dealkyl leaf
+N-Demethoxymethylation	bt:N_DEMETHOXYMETHYLATION	N-demethoxymethylation	xmet:4000043	N-dealkylation	1	base	distinct N-dealkyl pattern (methoxymethyl LG)
+N-Acetylation of aralkylamine	bt:ARALKYLAMINE_N_ACETYLATION	aralkylamine N-acetylation	xmet:4000164	N-acetylation	2	base	substrate-class subset of N-acetylation
+N-Glucuronidation of hydroxylamine	bt:HYDROXYLAMINE_N_GLUCURONIDATION	hydroxylamine N-glucuronidation	xmet:4000153	N-glucuronidation	2	base	N-OH glucuronidation leaf
+Hydroxylation of heteroalicyclic secondary carbon	bt:HYDROXYLATION_OF_SECONDARY_HETEROALICYCLIC_CARBON	heteroalicyclic secondary carbon hydroxylation	xmet:4000039	secondary carbon hydroxylation	2	base	heteroalicyclic subset of secondary-carbon hydroxylation
+Hydrolysis of hydantoin	bt:HYROLYSIS_OF_HYDANTOIN	hydantoin hydrolysis	xmet:4000083	urea hydrolysis	2	base	cyclic urea/hydantoin hydrolysis leaf
+Dehydroxylation of catechol	bt:CATECHOL_DEHYDROXYLATION	catechol dehydroxylation	xmet:4000128	dehydroxylation	2	base	catechol-specific dehydroxylation
+Oxidative deboronation	bt:OXIDATIVE_DEBORONATION	oxidative deboronation	xmet:4000005	unstable oxygenation	1	base	boron analogue of oxidative dehalogenation; no deboronation leaf
+Cysteine-S-conjugate cleavage	bt:CYSTEINE_S_CONJUGATE_CLEAVAGE	cysteine-S-conjugate cleavage	xmet:4000147	deconjugation	1	base	beta-lyase-type cysteine conjugate cleavage
+Reductive lactonization of quinone propionic acid	bt:REDUCTIVE_LACTONIZATION_OF_QUINONE_PROPIONIC_ACID	reductive lactonization of quinone propionic acid	xmet:4000104	quinone-like reduction	2	base	composite reduction+lactonization on quinone propionate
+4-OH-Sulfation of hydroxycinnamate	bt:_4_O_SULFATION_OF_HYDROXYCINNAMATE	hydroxycinnamate 4-O-sulfation	xmet:4000160	phenolic sulfation	2	base	hydroxycinnamate phenolic sulfation leaf
+Oxidation of piperidine or pyrrolidine iminium ion intermediate	bt:OXIDATION_OF_N_SUBSTITUTED_PIPERIDINE_IMINIUM	iminium ion oxidation	xmet:4000009	oxidation	2	base	iminium intermediate fate; may belong under amine dehydrogenation path
+N-Dealkylation of acyclic secondary amine	bt:N_DEALKYLATION_OF_ACYCLIC_SECONDARY_AMINES	acyclic secondary amine N-dealkylation	xmet:4000341	secondary N-dealkylation	1	base	substrate subset
+N-Dealkylation of acyclic tertiary amine	bt:N_DEALKYLATION_OF_ACYCLIC_TERTIARY_AMINES	acyclic tertiary amine N-dealkylation	xmet:4000340	tertiary N-dealkylation	1	base	substrate subset
+N-Dealkylation of alicyclic tertiary amine	bt:N_DEALKYLATION_OF_ALICYCLIC_TERTIARY_AMINES	alicyclic tertiary amine N-dealkylation	xmet:4000340	tertiary N-dealkylation	1	base	substrate subset
+N-Dealkylation of mixed tertiary amine	bt:N_DEALKYLATION_OF_MIXED_TERTIARY_AMINES	mixed tertiary amine N-dealkylation	xmet:4000340	tertiary N-dealkylation	1	base	substrate subset
+N-Dealkylation of secondary carboxamide	bt:N_DEALKYLATION_OF_SECONDARY_CARBOXAMIDES	secondary carboxamide N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of secondary arylalkylamine	bt:N_DEALKYLATION_OF_SECONDARY_ARYLALKYL_AMINES	secondary arylalkylamine N-dealkylation	xmet:4000341	secondary N-dealkylation	1	base	substrate subset
+N-Dealkylation of urea	bt:N_DEALKYLATION_OF_UREAS	urea N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of sulfonamide	bt:N_DEALKYLATION_OF_SULFONAMIDES	sulfonamide N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of hydrazine	bt:N_DEALKYLATION_OF_HYDRAZINE	hydrazine N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of hydrazide	bt:N_DEALKYLATION_OF_HYDRAZIDE	hydrazide N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of dicarboximide	bt:N_DEALKYLATION_OF_DICARBOXIMIDE	dicarboximide N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of N-alkylnitrosamine	bt:N_DEALKYLATION_OF_N_ALKYLNITROSAMINE	N-alkylnitrosamine N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Dealkylation of nitrosodialkylamine	bt:N_DEALKYLATION_OF_NITROSODIALKYLAMINES	nitrosodialkylamine N-dealkylation	xmet:4000043	N-dealkylation	1	base	substrate subset
+N-Depropargylation of secondary or tertiary amine	bt:N_DEPROPARGYLATION_OF_SEC_AND_TERT_AMINES	N-depropargylation	xmet:4000043	N-dealkylation	1	base	propargyl N-dealkyl leaf
+N-Dealkoxylation of N-aryl-N-chloroacetamide	bt:N_DEALKOXYLATION_OF_N_ARYL_N_CHLOROACETAMIDES	N-dealkoxylation	xmet:4000043	N-dealkylation	1	base	distinct N-dealkoxyl pattern
+N-Glucuronidation of amide	bt:AMIDE_N_GLUCURONIDATION	amide N-glucuronidation	xmet:4000153	N-glucuronidation	1	base	substrate subset
+N-Glucuronidation of sulfonamide	bt:SULFONAMIDE_N_GLUCURONIDATION	sulfonamide N-glucuronidation	xmet:4000153	N-glucuronidation	1	base	substrate subset
+N-Glucuronidation of 3-substituted pyridine	bt:PYRIDINE_GLUCURONIDATION	pyridine N-glucuronidation	xmet:4000153	N-glucuronidation	1	base	heteroarene N-glucuronidation
+N-Hydroxylation of anilide	bt:N_HYDROXYLATION_OF_ANILIDES	anilide N-hydroxylation	xmet:4000028	hydroxylamine formation	1	base	anilide N-OH leaf
+N-Hydroxylation of secondary arylamide	bt:N_HYDROXYLATION_OF_SECONDARY_ARYLAMIDES	secondary arylamide N-hydroxylation	xmet:4000028	hydroxylamine formation	1	base	arylamide N-OH leaf
+N-Hydroxylation of primary or secondary aliphatic amine	bt:N_HYDROXYLATION_OF_PRIM_SEC_ALIPHATIC_AMINES	aliphatic amine N-hydroxylation	xmet:4000028	hydroxylamine formation	1	base	aliphatic N-OH leaf
+N-Hydroxylation of guanidine or aminohydrazone	bt:N_HYDROXYLATION_OF_GUANIDINES_AND_AMINOHYDROAZONES	guanidine N-hydroxylation	xmet:4000028	hydroxylamine formation	1	base	guanidine/aminohydrazone N-OH
+O-Acetylation of N-hydroxylarylamine	bt:N_HYDROXYARYLAMINE_O_ACETYLATION	N-hydroxylarylamine O-acetylation	xmet:4000165	O-acetylation	1	base	bioactivation O-acetyl leaf
+O-Acetylation of N-hydroxyl-N-arylacetamide	bt:N_HYDROXYL_N_ARYLACETAMIDE_O_ACETYLATION	N-hydroxyl-N-arylacetamide O-acetylation	xmet:4000165	O-acetylation	1	base	bioactivation O-acetyl leaf
+O-Glucuronidation of N-oxide	bt:GLUCURONIDATION_OF_AMINE_OXIDE	N-oxide O-glucuronidation	xmet:4000149	O-glucuronidation	1	base	N-oxide O-glucuronidation leaf
+GSH-conjugation of acyl chloride	bt:GSH_CONJUGATION_OF_ACYL_CHLORIDE	acyl chloride glutathionation	xmet:4000373	glutathionation with leaving-group displacement	1	base	acyl halide GSH leaf
+GSH-conjugation of isothiocyanate	bt:GSH_CONJUGATION_OF_ISOTHIOCYANATE	isothiocyanate glutathionation	xmet:4000373	glutathionation with leaving-group displacement	1	base	isothiocyanate GSH leaf
+GSH-conjugation of halo-S-triazine	bt:GSH_CONJUGATION_OF_HALO_S_TRIAZINE	halo-S-triazine glutathionation	xmet:4000170	halide displacement glutathionation	1	base	halo-triazine GSH leaf
+Epoxidation of vinyl ether	bt:EPOXIDATION_OF_VINYL_ETHER	vinyl ether epoxidation	xmet:4000023	alkene epoxidation	1	base	vinyl ether alkene-epoxidation leaf
+S-Oxidation of thiocarbamate	bt:S_OXIDATION_OF_THIOCARBAMATE	thiocarbamate S-oxidation	xmet:4000032	sulfur oxidation	1	base	thiocarbamate S-ox leaf
+S-Oxidation of dithiocarbamate	bt:S_OXIDATION_OF_DITHIOCARBAMATE	dithiocarbamate S-oxidation	xmet:4000032	sulfur oxidation	1	base	dithiocarbamate S-ox leaf
+S-Oxidation of organosulfurous compounds	bt:S_OXIDATION_OF_ORGANOSULFUROUS_COMPOUNDS	organosulfur S-oxidation	xmet:4000032	sulfur oxidation	1	base	underspecified organosulfur; still propose under S-ox
+Nitroreduction of nitroarene to hydroxylamine	bt:NITROREDUCTION_OF_NITROARENE_TO_HYDROXYLAMINE	nitroarene to hydroxylamine reduction	xmet:4000096	nitroaromatic reduction	1	base	two-electron nitro→NHOH shortcut leaf
+6-electron Reduction of nitroguanidine	bt:_6E_REDUCTION_OF_NITROGUANIDINE	nitroguanidine six-electron reduction	xmet:4000094	nitro reduction	1	base	nitroguanidine full reduction
+Reduction of nitroimine	bt:REDUCTION_OF_NITROIMINES	nitroimine reduction	xmet:4000094	nitro reduction	1	base	nitroimine reduction leaf
+Formation of iminium from pyrrolidine ring	bt:FORMATION_OF_IMINIUM_IN_PYRROLIDINE_RING	pyrrolidine iminium formation	xmet:4000216	amine dehydrogenation	1	base	iminium from azaheterocycle
+Formation of imminium ion from N-substituted piperidine	bt:FORMATION_OF_IMMINIUM_ION_FROM_N_SUBSTITUTED_PIPERIDINE	piperidine iminium formation	xmet:4000216	amine dehydrogenation	1	base	iminium from piperidine
+Aliphatic hydroxylation of carbon alpha to secondary or tertiary alkyl-N	bt:ALIPHATIC_HYDROXYLATION_OF_CARBON_ALPHA_TO_SECONDARY_OR_TERTIARY_ALKYL_N	alpha-to-N aliphatic hydroxylation	xmet:4000014	aliphatic hydroxylation	1	base	N-adjacent C-hydroxylation (dealkyl precursor)
+Glycination of aliphatic acid	bt:GLYCINATION_OF_ALIPHATIC_ACID	aliphatic acid glycination	xmet:4000180	glycine conjugation	1	base	if glycine conjugation exists
+Glycination of aromatic acid	bt:GLYCINATION_OF_ARYL_ACID	aromatic acid glycination	xmet:4000180	glycine conjugation	1	base	if glycine conjugation exists
+3'-Dehydroxylation of substituted benzene	bt:_3P_DEHYDROXYLATION_OF_SUBSTITUTED_BENZENE	meta-dehydroxylation	xmet:4000128	dehydroxylation	1	base	regio dehydroxylation leaf
+4'-Dehydroxylation of substituted benzene	bt:_4P_DEHYDROXYLATION_OF_SUBSTITUTED_BENZENE	para-dehydroxylation	xmet:4000128	dehydroxylation	1	base	regio dehydroxylation leaf
+Hydrolysis of ferulic acid ester	bt:HYDROLYSIS_OF_FERULIC_ACID_ESTER	ferulic acid ester hydrolysis	xmet:4000078	ester hydrolysis	1	base	gut phenolic ester leaf
+Hydrolysis of galloyl ester	bt:GALLOYL_ESTER_HYDROLYSIS	galloyl ester hydrolysis	xmet:4000078	ester hydrolysis	1	base	gut tannin ester leaf
+Glutathione S-conjugate hydrolysis to cysteinglycine conjugate	bt:GLUTATHIONE_S_CONJUGATE_HYDROLYSIS_PATTERN_1	glutathione conjugate to cysteinylglycine	xmet:4000147	deconjugation	1	base	mercapturic-acid pathway step (GSH→CysGly)
+Hydrolysis of cysteinylglycine	bt:CYSTEINYLGLYCINE_HYDROLYSIS	cysteinylglycine hydrolysis	xmet:4000147	deconjugation	1	base	mercapturic-acid pathway step
+Hydrolysis of cyclic secondary carboxamide	bt:HYDROLYSIS_OF_CYCLIC_SECONDARY_CARBOXAMIDE_PATTERN_2	cyclic secondary carboxamide hydrolysis	xmet:4000079	amide hydrolysis	2	base	subset of amide hydrolysis (cyclic secondary)
+Acylhydrolysis of acrylacylamide	bt:HYDROLISIS_OF_ARYL_ACYLAMIDE	acrylacylamide acyl hydrolysis	xmet:4000079	amide hydrolysis	1	base	acrylamide-like amide hydrolysis

@@ -1,0 +1,129 @@
+bt_label	bt_object_id	n_patterns	sources	human	gut	reason
+Aromatic hydroxylation of fused benzene ring	bt:AROMATIC_HYDROXYLATION_OF_FUSED_BENZENE_RING	4	base	1	0	site/scaffold qualification of aromatic hydroxylation — leaf vs bundle undecided
+Hydroxylation of alicyclic secondary carbon	bt:HYDROXYLATION_OF_ALICYCLIC_SECONDARY_CARBON	4	base	1	0	may fit alicyclic (4000041) and/or secondary-carbon (4000039); confirm before SSSOM
+N-Demethylation of aryldimethylamine	bt:N_DEMETHYLATION_OF_ARYLDIMETHYLUREA	3	base	1	0	site-qualified N-demethylation; likely bundle not new leaf
+N-Glucuronidation of tertiary aliphatic amine	bt:TERTIARY_ALIPHATIC_AMINE_N_GLUCURONIDATION	3	base	1	1	check quaternary N-glucuronidation (4000154) vs proposal under N-glucuronidation
+alpha-Hydroxylation of aryldimethylamine	bt:ALPHA_HYDROXYLATION_OF_ARYLDIMETHYLUREA	3	base	1	0	check alpha-hydroxylation (4000144) vs N-dealkylation precursor path
+2,4-Thiazolidinedione ring opening	bt:_24_THIAZOLIDINEDIONE_RING_OPENING	2	base	1	0	scaffold-specific ring opening; cover vs exclude
+GSH-conjugation of organohalide	bt:GSH_CONJUGATION_OF_ORGANOHALIDE	2	base	1	0	broader than aryl-halide SSSOM; propose organohalide leaf under 4000170?
+GSH-conjugation of benzene substituted with an electron donating group	bt:GSH_CONJUGATION_OF_EWG_SUBSTITUTED_BENZENE	2	base	1	0	underspecified / possible EDG vs EWG mislabel; chemistry check
+Hydrolysis of glycosylated condensed galloyl group	bt:HYDROLYSIS_OF_GLYCOSYLATED_CONDENSED_GALLOYL_GROUPS	12	base	0	1	polyphenol/gut-specific; cover vs exclude
+Keto hydrolysis	bt:KETO_HYDROLYSIS	2	base	1	1	underspecified label (same stem as Hydrolysis of ketone); chemistry check
+Human Gut Microbial	bt.class:HUMAN_GUT_MICROBIAL	28	metx_class	0	1	biosystem/context class, not reaction-type spine
+2-Hydroxylation of 1,4-disubstituted benzene	bt:_2_HYDROXYLATION_OF_14_DISUBSTITUTED_BENZENES	2	base	1	0	regio/scaffold aromatic hydroxylation; site vs leaf
+3-Hydroxylation of 5-aryl-1,4-benzodiazepine	bt:_3_HYDROXYLATION_OF_5_ARYL_14_BENZODIAZEPINES	1	base	1	0	scaffold-specific; cover vs exclude
+Aliphatic hydroxylation of acyclic 1,2-disubstituted alkene	bt:ALIPHATIC_HYDROXYLATION_OF_ACYCLIC_12_DISUBSTITUTED_ALKENE	1	base	1	0	allylic vs aliphatic vs alkene hydration; chemistry check
+Reduction of halotrifluoroethane	bt:REDUCTION_OF_HALOTRIFLUOROETHANE	2	base	1	0	reductive dehalogenation vs hydrogenation; chemistry check
+2-electron Reduction of nitroguanidine	bt:_2E_REDUCTION_OF_NITROGUANIDINE	1	base	1	0	nitro reduction family but specialized nitroguanidine; propose?
+2-electron Reduction of nitromethylene	bt:_2E_REDUCTION_OF_NITROMETHYLENE	1	base	1	0	nitro reduction family but specialized nitromethylene; propose?
+NS-cleavage	bt:NS_CLEAVAGE	1	base	1	0	opaque label; needs SMIRKS review
+Isoflavan-4-ol dehydroxylation	bt:ISOFLAVAN_4_OL_DEHYDROXYLATION	1	base	0	1	scaffold-specific dehydroxylation; cover vs exclude
+Oxidation of pyrimidine	bt:OXIDATION_OF_PYRIMIDINE	3	base	1	0	too broad/underspecified; chemistry check
+Hydrolysis of galactose from beta-D-galactoside	bt:BETA_D_GALACTOSIDE_GALACTO_HYDROLYSIS	3	base	1	1	glycoside hydrolysis vs endogenous; cover vs exclude
+Dehydroxylation of dibenzopyranone	bt:DEHYDROXYLATION_OF_DIBENZOPYRANONE	4	base	0	1	gut polyphenol; cover vs exclude
+Anthocyanidin C-ring fission	bt:ANTHOCYANIDIN_C_RING_FISSION	3	base	0	1	gut polyphenol ring fission; cover vs exclude
+Flavan-3-ol C-ring fission	bt:FLAVAN_3_OL_C_RING_FISSION	2	base	0	1	gut polyphenol ring fission; cover vs exclude
+Structural rearrangement of anthocyanidin	bt:STRUCTURAL_REARRANGEMENT_OF_ANTHOCYANIDIN_2	4	base	0	1	gut polyphenol; cover vs exclude
+3'-O-Demethylation of flavone	bt:_3P_O_DEMETHYLATION_OF_FLAVONE	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+3-O-Demethylation of flavone	bt:_3_O_DEMETHYLATION_OF_FLAVONE	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+4'-O-Demethylation of flavone	bt:_4P_O_DEMETHYLATION_OF_FLAVONE	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+5-O-Demethylation of flavone	bt:_5_O_DEMETHYLATION_OF_FLAVONE	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+7-O-Demethylation of flavone	bt:_7_O_DEMETHYLATION_OF_FLAVONE	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+4'-Demethylation of 4'-methoxyisoflavone	bt:_4P_METHOXYLISOFLAVONE_DEMETHYLATION	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+6p-Demethylation of 6p-methoxyisoflavone	bt:_6P_METHOXYLISOFLAVONE_DEMETHYLATION	1	base	0	1	scaffold-specific O-demethylation; identity is O-demethylation but cover-as-leaf vs site-bundle undecided
+Hydroxylation of aromatic carbon meta to halide group	bt:HYDROXYLATION_OF_AROMATIC_CARBON_META_TO_HALIDE_GROUP	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of aromatic carbon ortho to halide group	bt:HYDROXYLATION_OF_AROMATIC_CARBON_ORTHO_TO_HALIDE_GROUP	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of aromatic carbon para to halide group	bt:HYDROXYLATION_OF_AROMATIC_CARBON_PARA_TO_HALIDE_GROUP	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of benzene on carbon meta to electron withdrawing group	bt:HYDROXYLATION_OF_BENZENE_META_TO_EWG	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of benzene on carbon ortho to electron donating group	bt:HYDROXYLATION_OF_BENZENE_ORTHO_TO_EDG	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of benzene on carbon ortho to strongly electron donating group	bt:HYDROXYLATION_OF_BENZENE_ORTHO_TO_STRONGLY_EDG	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of benzene on carbon para to electron donating group	bt:HYDROXYLATION_OF_BENZENE_PARA_TO_EDG	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of benzene on carbon para to strongly electron donating group	bt:HYDROXYLATION_OF_BENZENE_PARA_TO_STRONGLY_EDG	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+O-Hydroxylation of phenol	bt:O_HYDROXYLATION_OF_PHENOLS	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of carbon adjacent to halogen	bt:ALIPHATIC_HYDROXYLATION_OF_CARBON_ADJACENT_TO_HALOGEN_GROUP	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of carbon alpha to conjugated carbonyl	bt:HYDROXYLATION_OF_CARBON_ALPHA_TO_CONJUGATED_CARBONYL	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of carbon gamma to conjugated carbonyl	bt:HYDROXYLATION_OF_CARBON_GAMMA_TO_CONJUGATED_CARBONYL	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of carbon next to amide	bt:HYDROXYLATION_OF_C_NEXT_TO_AMIDES	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of methyl carbon adjacent to aliphatic ring	bt:HYDROXYLATION_OF_METHYL_CARBON_ADJACENT_TO_ALIPHATIC_RING	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of N-methyl in carbamate	bt:N_METHYL_HYDROXYLATION_OF_CARBAMATE	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of non-terminal aliphatic carbon adjacent to aromatic ring	bt:HYDROXYLATION_OF_ALIPHATIC_NON_TERMINAL_CARBON_ADJACENT_TO_AROMATIC_RING	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of penultimate aliphatic carbon adjacent to aromatic carbon	bt:HYDROXYLATION_OF_ALIPHATIC_PENULTIMATE_CARBON_ADJACENT_TO_AROMATIC_CARBON	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of alkyl methine	bt:HYDROXYLATION_OF_ALKYL_METHINE	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of antepenultimate aliphatic secondary carbon	bt:HYDROXYLATION_OF_ALIPHATIC_SECONDARY_ANTEPENULTIMATE_CARBON	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Hydroxylation of sp3-carbon adjacent to N in nitrosamine	bt:HYDROXYLATION_OF_SP3_ADJACENT_TO_N_IN_NITROSAMINES	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Aliphatic hydroxylation of methyl carbon adjacent to alkyne ring	bt:ALIPHATIC_HYDROXYLATION_OF_METHYL_CARBON_ADJACENT_TO_ALKYNE_GROUP	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+4'-Hydroxylation of oxazaphosphorinane	bt:_4P_HYDROXYLATION_OF_OXAZAPHOSPHORINE	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+4-Alkyl hydroxylation of oxazaphosphorine	bt:_4_ALKYL_HYDROXYLATION_OF_OXOAZAPHOSPHORINE	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+3'-O-Methylation of flavone	bt:FLAVONE_3P_O_METHYLATION	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+4'-O-Glucuronidation of isoflavone	bt:ISOFLAVONE_4P_OH_GLUCURONIDATION	1	base	1	1	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+7-O-Glucuronidation of isoflavone	bt:ISOFLAVONE_7_OH_GLUCURONIDATION	1	base	1	1	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+7-OH-Sulfation of a flavonol	bt:_7_OH_HYDROXYLATION_OF_FLAVONOL	1	base	1	0	site/scaffold-qualified; head already in XMET — leaf vs annotation bundle undecided
+Dehalogenation of 2-haloacid	bt:_2_HALOACID_DEHALOGENATION	1	base	1	1	isoredox vs oxidative dehalogenation; enzyme haloacid dehalogenase
+Dehalogenation of 2-haloalkane	bt:_2_HALOALKANE_DEHALOGENATION	1	base	0	1	reductive/isoredox dehalogenation; chemistry check
+Reduction of terminal aliphatic trihalide	bt:REDUCTION_OF_TERMINAL_ALIPHATIC_TRIHALIDES	1	base	1	0	reductive dehalogenation leaf?
+Oxidation of halotrifluoroethane	bt:OXIDATION_OF_HALOTRIFLUOROETHANE	1	base	1	0	oxidative dehalogenation path?
+Reduction of vinylbenzene	bt:REDUCTION_OF_VINYL_HYDROXYBENZENE	1	base	0	1	alkene hydrogenation of styrene-like
+Hydrolysis of depsides	bt:DEPSIDE_HYDROLYSIS	1	base	0	1	ester hydrolysis gut polyphenol
+Hydrolysis of dienelactone	bt:DIENELACTONE_HYDROLYSIS	1	base	0	1	lactone hydrolysis environmental
+Hydrolysis of hydropyrimidine	bt:HYROLYSIS_OF_HYDROPYRIMIDINE	3	base	0	1	amide/urea-like; chemistry check
+Hydrolysis of 1,2-diketone	bt:_12_DIKETONE_HYDROLYSIS	1	base	0	1	unusual; chemistry check
+Hydrolysis of dihydrochalcone	bt:DIHYDROCHALCONE_HYDROLYSIS	1	base	0	1	gut polyphenol
+Hydrolysis of secondary alkylsulfate ester	bt:HYDROLYSIS_OF_SECONDARY_ALKYL_SULFATE_ESTER	1	base	0	1	desulfation vs ester
+Hydrolysis of cyclic N-acylguanidine	bt:HYDROLYSIS_OF_CYCLIC_N_ACYLGUANIDINE	1	base	1	0	propose under amide/urea?
+Hydrolysis of cyclic N-acylurea	bt:HYDROLYSIS_OF_CYCLIC_N_ACYLUREA	1	base	1	0	propose under urea hydrolysis?
+Aminohydrolysis of N-acyl-aliphatic-L-amino acid	bt:N_ACYL_ALIPHATIC_L_AMINO_ACID_AMIDOHYDROLYSIS	1	base	1	0	amide hydrolysis endogenous-leaning
+Aminohydrolysis of N-acyl-aromatic-L-amino acid	bt:N_ACYL_AROMATIC_L_AMINO_ACID_AMIDOHYDROLYSIS	1	base	1	0	amide hydrolysis
+Aminohydrolysis of N-acyl-L-aspartate	bt:N_ACYL_L_ASPARTATE_AMIDOHYDROLYSIS	1	base	1	0	amide hydrolysis
+Aminohydrolysis of N-acyl-L-cysteine-S-conjugate	bt:N_ACETYL_L_CYSTEINE_S_CONJUGATE_AMIDOHYDROLYSIS	1	base	1	0	amide hydrolysis / mercapturic
+alpha-N-Acetylation of peptide	bt:PEPTIDE_ALPHA_N_ACETYLATION	1	base	1	0	peptide N-acetylation; endogenous-leaning
+N-Acetylation of L-cysteine-S-conjugate	bt:L_CYSTEINE_S_CONJUGATE_N_ACETYLATION	1	base	1	1	mercapturic N-acetylation; propose under N-acetylation
+Desulfurization of thioamide into amide	bt:DESULFURIZATION_OF_THIOAMIDE_INTO_AMIDE	1	base	1	0	desulfuration vs oxygen replacement
+Formation of cycloguanide	bt:CYCLOGUANIDE_FORMATION	1	base	1	0	drug-specific product formation
+Formation of pyridinium from 4-substituted piperidine	bt:FORMATION_OF_PYRIDINIUM_FROM_4_SUBSTITUTED_PIPERIDINE	1	base	1	0	amine dehydrogenation product
+Ring opening of N-substituted piperidine	bt:RING_OPENING_OF_N_SUBSTITUTED_PIPERIDINE_RING	1	base	1	0	ring opening subset
+N-Dehydrogenation of aliphatic azaheterocyclene	bt:N_DEHYDROGENATION_OF_ALIPHATIC_AZAHETEROCYCLE	1	base	1	0	amine dehydrogenation
+Dehydrogenation of 4-aryl substituted 1,4-dihydropyridine	bt:DEHYDROGENATION_OF_4_ARYL_SUBSTITUTED_14_DIHYDROPYRIDINES	1	base	1	0	dihydropyridine oxidation; propose
+Dehydrogenation of arylaldehyde	bt:ARYL_ALDEHYDE_DEHYDROGENATION	1	base	1	0	aldehyde oxidation? or dehydrogenation
+Dehydrogenation of benzaldehyde	bt:BENZALDEHYDE_DEHYDROGENATION	1	base	1	0	aldehyde oxidation identity?
+Dehydrogenation of alpha,beta-unsaturated amide	bt:DEHYDROGENATION_OF_ALPHA_BETA_UNSATURATED_AMIDE	1	base	1	0	dehydrogenation subset
+Oxidation of alkyl formamide	bt:OXIDATION_OF_ALKYL_FORMAMIDES	1	base	1	0	propose under oxidation
+Oxidation of 4-hydroxyazaphosphorine	bt:OXIDATION_OF_4_HYDROXYAZAPHOSPHORINE	1	base	1	0	scaffold-specific
+Oxidation of nitrogen in strained ring system	bt:OXIDATION_OF_N_IN_STRAINED_RING_SYSTEMS	1	base	1	0	N-oxidation subset
+Oxidation of p-substituted anilide	bt:OXIDATION_OF_P_SUBSTITUTED_ANILIDES	1	base	1	0	underspecified
+Oxidation of phthalazine	bt:OXIDATION_OF_PYRIMIDINE_PHTHALAZINE	1	base	1	0	scaffold-specific
+Oxidation of sulfur adjacent to aliphatic nitrogen	bt:OXIDATION_OF_S_ADJACENT_TO_ALIPHATIC_NITROGENS	1	base	1	0	S-oxidation subset
+Phosphorohydrolysis of aryldialkylphosphate	bt:ARYLDIALKYLPHOSPHATE_PHOSPHOHYDROLYSIS	1	base	1	0	phosphate ester hydrolysis
+Lysis of choline to trimethylamine	bt:CHOLINE_LYSIS_TO_TRIMETHYLAMINE	1	base	0	1	gut microbial; biological context
+Rhamnohydrolysis of alpha-L-rhamnoside	bt:ALPHA_L_RHAMNOSIDE_RHAMNOHYDROLYSIS	1	base	1	1	deglycosidation
+Deglucosylation of thioglucoside	bt:THIOGLUCOSIDE_HYDROLYSIS	1	base	1	1	deglycosidation
+Deglucosylation of thioglucosinolate	bt:THIOGLUCOSINOLATE_HYDROLYSIS	1	base	1	1	deglycosidation
+6-C-Deglycosylation of isoflavone	bt:ISOFLAVONE_6_C_DEGLYCOSYLATION	1	base	0	1	C-deglycosidation
+8-C-Deglycosylation of isoflavone	bt:ISOFLAVONE_8_C_DEGLYCOSYLATION	1	base	0	1	C-deglycosidation
+6-Acetylation of beta-D-galactoside	bt:BETA_D_GALACTOSIDE_6_ACETYLATION	1	base	0	1	glycoside O-acetylation
+Flavonoid C-ring reduction	bt:FLAVONOID_C_RING_REDUCTION	1	base	0	1	gut flavonoid
+Flavanone C-ring fission	bt:FLAVANONE_C_RING_FISSION	1	base	0	1	gut flavonoid
+Flavanon-3-ol C-ring fission	bt:FLAVANON_3_OL_C_RING_FISSION	1	base	0	1	gut flavonoid
+Isoflavanone C-ring fission	bt:ISOFLAVANONE_C_RING_FISSION	1	base	0	1	gut flavonoid
+Dehydration of isoflavanone	bt:ISOFLAVANONE_DEHYDRATION	1	base	0	1	gut flavonoid
+Reduction of isoflavone to isoflavanone	bt:ISOFLAVONE_REDUCTION_TO_ISOFLAVANONE	1	base	0	1	gut flavonoid
+Formation of phenylvalerolactone	bt:PHENYLVALEROLACTONE_FORMATION	1	base	0	1	gut polyphenol product
+Deoxybenzoin degradation	bt:DEOXYBENZOIN_DEGRADATION	1	base	0	1	gut polyphenol
+Degradation of B-type procyanidin dimer	bt:B_TYPE_PROCYANIDIN_DIMER_DEGRADATION	2	base	0	1	gut polyphenol
+Structural rearrangement of anthocyanidin	bt:STRUCTURAL_REARRANGEMENT_OF_ANTHOCYANIDIN_2	4	base	0	1	gut polyphenol
+Lactonization of hexahydroxydiphenolic acid	bt:LACTONIZATION_OF_HEXAHYDROXYDIPHENOLIC_ACID	1	base	0	1	gut polyphenol
+m-Dehydroxylation of substituted resorcinol	bt:RESORCINOL_M_DEHYDROXYLATION	1	base	0	1	dehydroxylation
+Dehydroxylation of 4-OH-5-phenylvaleric acid	bt:_4_HYDROXY_5_PHENYLVALERIC_ACID_DEHYDROXIDATION	1	base	0	1	gut polyphenol dehydroxylation
+Acyl hydrolysis of 3-acylpyruvate	bt:_3_ACYLPYRUVATE_ACYLHYDROLYSIS	1	base	1	0	ester/acyl hydrolysis
+alpha-Hydroxylation of aryldimethylformamidine	bt:ALPHA_HYDROXYLATION_OF_ARYLDIMETHYLFORMAMIDINE	1	base	1	0	alpha-hydroxylation / N-dealkyl precursor
+N-Demethylation of aryldimethylformamidine	bt:N_DEMETHYLATION_OF_ARYLDIMETHYLFORMAMIDINE	1	base	1	0	N-demethylation site-qualified
+GSH-conjugation of 4-hydroxyazaphosphorine	bt:GSH_CONJUGATION_OF_4_HYDROXYAZAPHOSPHORINE	1	base	1	0	scaffold GSH
+GSH-conjugation of carboxamidic acid	bt:GSH_CONJUGATION_OF_CARBOXIMIDIC_ACID	1	base	1	0	propose under GSH?
+GST-catalyzed conjugation of alkylaryl phosphate or phosphorothioate	bt:GSH_CONJUGATION_OF_ALKYLARYL_PHOSPHATE_OR_PHOSPHOROTHIOATE	1	base	1	0	phosphate GSH displacement
+N-Oxidation of pyrimidine	bt:N_OXIDATION_OF_PYRIMIDINE_RING	1	base	1	0	heteroarene N-ox; relate pyridine proposal
+Structural rearrangement of anthocyanidin	bt:STRUCTURAL_REARRANGEMENT_OF_ANTHOCYANIDIN_2	4	base	0	1	gut polyphenol rearrangement; cover vs exclude
+4'-O-Methylation of isoflavone	bt:ISOFLAVONE_4P_O_METHYLATION	1	base	0	0	scaffold-specific O-methylation; leaf vs bundle
+Decarboxylation of fused benzene	bt:DECARBOXYLATION_OF_FUSED_BENZENE	1	base	0	1	aromatic decarboxylation; cover vs exclude
+O-Sulfohydrolysis of thiohydroximate	bt:THIOHYDROXIMATE_O_SULFOHYDROLYSIS	1	base	0	0	unusual desulfation/thiohydroximate; chemistry check
+Oxidation of 4-substituted phenol	bt:OXIDATION_OF_4_SUBSTITUTTED_PHENOL	1	base	0	0	underspecified phenol oxidation / quinone path?
+Reduction of anthocyanidin	bt:ANTHOCYANIDIN_REDUCTION	1	base	0	0	gut polyphenol reduction; cover vs exclude
+7-Hydroxylation of coumarin	bt:_7_HYDROXYLATION_OF_COUMARINS	2	base	1	0	scaffold-specific aromatic hydroxylation; cover vs exclude

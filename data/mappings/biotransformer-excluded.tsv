@@ -1,0 +1,261 @@
+bt_label	bt_object_id	n_patterns	sources	reason
+Glucosylation of ceramide	bt:CERAMIDE_GLUCOSYLATION	3	base	endogenous sphingolipid pathway; not xenobiotic reaction type
+4-Dephosphorylation of phosphatidylinositol-4,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_45_BISPHOSPHATE_DEPHOSPHORYLATION_4	2	base	endogenous phosphoinositide signaling
+Hydrolysis of terminal, non-reducing galactose from digalactosylceramide	bt:DIGALACTOSYLCERAMIDE_GALACTO_HYDROLYSIS	2	base	endogenous glycosphingolipid
+Dehydrogenation of long-chain acyl-CoA	bt:LONG_CHAIN_ACYL_COA_DEHYDROGENATION	2	base	endogenous fatty-acid β-oxidation
+Glycination of bile acid-CoA	bt:C24_BILE_ACID_COA_GLYCINATION	2	base	endogenous bile-acid conjugation pathway
+AZIDE_STANDARDIZATION	bt:AZIDE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not metabolism
+CARBOXAMIDE_STANDARDIZATION_PATTERN1	bt:CARBOXAMIDE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not metabolism
+NITRO_STANDARDIZATION	bt:NITRO_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not metabolism
+Cleavage of C-17-acyl-sterol	bt:STEROL_C_17_ACYL_CLEAVAGE	4	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+7-Hydroxylation of sterol	bt:STEROL_7_HYDROXYLATION	3	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+12-OH-Sulfation of sterol	bt:STEROL_12_OH_SULFATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+16-Hydroxylation of sterol	bt:STEROL_16_HYDROXYLATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+17-alpha-hydroxylation of sterol	bt:STEROL_17_ALPHA_HYDROXYLATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+17-OH-Glucuronidation of sterol	bt:_17_OH_GLUCURONIDATION_OF_STEROL	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-Hydroxylation of sterol	bt:STEROL_2_HYDROXYLATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-OH-Glucuronidation of sterol	bt:_3_OH_GLUCURONIDATION_OF_STEROL	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-Hydroxylation of sterol	bt:STEROL_4_HYDROXYLATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+6-Hydroxylation of sterol	bt:STEROL_6_HYDROXYLATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+6-OH-Glucuronidation of sterol	bt:_6_OH_GLUCURONIDATION_OF_STEROL	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+7-alpha-Dehydroxylation of C24 bile acid	bt:C23_BILE_ACID_7ALPHA_DEHYDROXYLATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+7-OH-Glucuronidation of sterol	bt:_7_OH_GLUCURONIDATION_OF_STEROL	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+7-OH-Sulfation of sterol	bt:STEROL_7_OH_SULFATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Glycination of bile acid-CoA	bt:C24_BILE_ACID_COA_GLYCINATION	2	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+(8E)-Desaturation of sphingolipid	bt:SPHINGOLIPID_8E_DESATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+(8Z)-Desaturation of sphingolipid	bt:SPHINGOLIPID_8Z_DESATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-Acyl hydrolysis of phosphatidylcholine	bt:PHOSPHATIDYLCHOLINE_1_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-Acyl hydrolysis of triacylglycerol	bt:TRIACYLGLYCEROL_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-beta-Galactosyl transfer to 2-hydroxyacylsphingosine	bt:_2_HYDROXYACYLSPHINGOSINE_1_BETA_GALACTOSYL_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-O-Acyl transfer from acyl-CoA to glycerol-3-phosphate	bt:ACYL_COA_GLYCEROL_3_PHOSPHATE_1_O_ACYL_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-O-Acylation of 2-monoacylglycerol	bt:_2_ACYLGLYCEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-O-Acylation of glycerone-3-phosphate	bt:GLYCERONE_PHOSPHATE_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+1-O-Phosphorylation of N-acyl-D-mannosamine	bt:N_ACYL_MANNOSAMINE_1_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+10-Desaturation of sphingolipid	bt:SPHINGOLIPID_10_DESATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+11-beta-Hydroxylation of sterol	bt:STEROL_11_BETA_HYDROXYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+12-OH-Dehydrogenation of C24 bile acid	bt:_12_HYDROXY_C24_BILE_ACID_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2,3-Enoyl-CoA hydration	bt:_2_3_ENOYL_COA_HYDRATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-Acetyl hydrolysis of 1-alkyl, 2-acetyl-glycerol-3-phosphocholine	bt:_1_ALKYL_2_ACETYL_GLYCEROPHOSPHOCHOLINE_ACETOHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-Acyl hydrolysis of phosphatidylcholine	bt:PHOSPHATIDYLCHOLINE_2_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-Acyl hydrolysis of phosphatidylethanolamine	bt:PHOSPHATIDYLETHANOLAMINE_2_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-Acyl hydrolysis of plasmenylethanolamine	bt:PLASMENYLETHANOLAMINE_2_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Acetylation of 1-alkylglycerol-3-phosphocholine, acetyl-CoA-dependent	bt:_1_ALKYLGLYCEROPHOSPHOCHOLINE_O_ACETYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Acylation of 1-acylglycerophosphocholine from acyl-CoA	bt:_1_ACYLGLYCEROPHOSPHOCHOLINE_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Acylation of 1-monoacylglycerol, acyl-CoA-dependent	bt:_1_ACYLGLYCEROL_3_PHOSPHATE_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Deacylation of 1-alkyenyl-glycerol-3-phosphoethanolamine	bt:_1_ALKENYLGLYCEROPHOSPHOETHANOLAMINE_O_ACETYLATION_REVERSE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Deacylation of phosphatidylglycerol-3-phosphate	bt:_1_ACYLGLYCEROL_3_PHOSPHATE_O_ACYLATION_REVERSE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Deacylation of plasmalogen	bt:PLASMALOGEN_SYNTHESIS_REVERSE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+2-O-Phosphorylation of N-acyl-D-mannosamine	bt:N_ACYL_MANNOSAMINE_2_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+21-Hydroxylation of sterol	bt:STEROL_21_HYDROXYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+21-OH-Dehydroxylation of corticosteroid	bt:CORTICOSTEROID_21_DEHYDROXYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3'-O-Sulfation of digalactosylceramide	bt:DIGALACTOSYLCERAMIDE_3P_SULFATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3'-O-Sulfation of galactosylceramide	bt:GALACTOSYLCERAMIDE_3P_SULFATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-beta-Deglucosylation of sterol 3-beta-D-glucoside	bt:STEROL_3BETA_DEGLUCOSYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-beta-Glycosylation of sterol	bt:STEROL_3BETA_GLUCOSYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-Dephosphorylation of phosphatidylinositol-3,4,5-trisphosphate	bt:PHOSPHATIDYLINOSITOL_345_TRISPHOSPHATE_DEPHOSPHORYLATION_3	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-Dephosphorylation of phosphatidylinositol-3,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_35_BISPHOSPHATE_DEPHOSPHORYLATION_3	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_3_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-4,5-bisphosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_4_5_BISPHOSPHATE_3_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-4-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_4_PHOSPHATE_3_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-5-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_3_PHOSPHATE_5_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-O-Acylation of cholesterol, acyl-CoA-dependent	bt:STEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-O-Glucosylation of 1,2-diacylglycerol	bt:_1_2_DIACYLGLYCEROL_3_GLUCOSYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-O-Sterol acylation, phosphatidylcholine-dependent	bt:PHOSPHATIDYLCHOLINE_STEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-OH-Dehydrogenation of C24 bile acid	bt:_3_HYDROXY_C24_BILE_ACID_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+3-OH-Sulfation of sterol	bt:STEROL_3_OH_SULFATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-alpha-Galactosylation of lactosylceramide	bt:LACTOSYLCERAMIDE_4_ALPHA_GALACTOSE_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-Dephosphorylation of phosphatidylinositol-3,4-bisphosphate	bt:PHOSPHATIDYLINOSITOL_34_BISPHOSPHATE_DEPHOSPHORYLATION_4	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-Desaturation of sphingolipid	bt:SPHINGOLIPID_4_DESATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-Inositol phosphorylation of phosphatidyl-1D-myo-inositol-5-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_5_PHOSPHATE_4_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-O-Inositol phosphorylation of phosphatidyl-1D-myo-inositol 4-phosphate	bt:_1_PHOSPHATIDYL_1D_MYO_INOSITOL_4_PHOSPHATE_5_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+4-O-Inositol phosphorylation of phosphatidylinositol	bt:_1_PHOSPHATIDYLINOSITOL_4_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+5,6-Desaturation of delta-7-sterol	bt:DELTA_7_STEROL_56_DESATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+5,6-Saturation of delta-7-sterol	bt:DELTA_7_STEROL_56_SATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+5-Dephosphorylation of phosphatidylinositol-3,4,5-trisphosphate	bt:PHOSPHATIDYLINOSITOL_345_TRISPHOSPHATE_DEPHOSPHORYLATION_5	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+7-OH-Dehydrogenation of C24 bile acid	bt:_7_HYDROXY_C24_BILE_ACID_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of 1-monoacylglycerol	bt:_1_MONOACYLGLYCEROL_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of 2-lysophosphatidylethanolamine	bt:_2_LYSOPHOSPHATIDYLETHANOLAMINE_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of 2-monoacylglycerol	bt:_2_MONOACYLGLYCEROL_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of acylcholine	bt:ACYLCHOLINE_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of all-trans-retinyl ester	bt:ALL_TRANS_RETINYL_ESTER_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of long-chain acyl-CoA	bt:LONG_CHAIN_ACYL_COA_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acyl hydrolysis of sterol ester	bt:STERYL_ESTER_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Acylhydrolysis of glycerophosphodiester	bt:GLYCEROPHOSPHODIESTER_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Aminohydrolysis of N-acylsphingosine	bt:N_ACYLSPHINGOSINE_AMIDOHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+ANTHOCYANIDIN_STANDARDIZATION_PATTERN1	bt:ANTHOCYANIDIN_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Aromatization of androgen	bt:ANDROGEN_AROMATIZATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Bile acid C24 acyl glucuronidation	bt:C24_BILE_ACID_C24_COOH_GLUCURONIDATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+C24-bile acid leucine conjugation	bt:C24_BILE_ACID_LEUCINE_CONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+C24-bile acid phenylalanine conjugation	bt:C24_BILE_ACID_PHENYLALANINE_CONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+C24-bile acid tyrosine conjugation	bt:C24_BILE_ACID_TYROSINE_CONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+C4-Hydroxylation of sphinganine	bt:SPHINGANINE_C4_HYDROXYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+C9-Methylation of sphingolipid	bt:SPHINGOLIPID_C9_METHYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+CARBAMIDIC_ACID_TO_UREA_STANDARDIZATION	bt:CARBAMIDIC_ACID_TO_UREA_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+CARBAMIDOTHIOIC_ACID_TO_THIOUREA_STANDARDIZATION	bt:CARBAMIDOTHIOIC_ACID_TO_THIOUREA_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+CARBOXYLIC_ACID_ANION_STANDARDIZATION	bt:CARBOXYLIC_ACID_ANION_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Cleavage of phosphatidylinositol-4,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_45_BISPHOSPHATE_CLEAVAGE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Cleavage of phosphocholine from sphingomyelin	bt:SPHINGOMYELIN_PHOSPHOCHLINE_CLEAVAGE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+COENZYME_A_STANDARDIZATION	bt:COENZYME_A_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Conjugation of bile acid to C23 bile acyl-CoA thioester	bt:C23_BILE_ACID_COA_ESTERIFICATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Conjugation of bile acid to C24 acyl-CoA	bt:C24_BILE_ACID_COA_ESTERIFICATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Deacylation of N-acylsphingosine or N-acylsphinganine	bt:SPHINGOSINE_N_ACYLATION_REVERSE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Decarboxylation of phosphatidylserine	bt:PHOSPHATIDYLSERINE_DECARBOXYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Deconjugation of glycinated C23 bile acid	bt:GLYCINATED_C23_BILE_ACID_DECONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Deconjugation of glycinated C24 bile acid	bt:GLYCINATED_C24_BILE_ACID_DECONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Deconjugation of taurinated C23 bile acid	bt:TAURINATED_C23_BILE_ACID_DECONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Deconjugation of taurinated C24 bile acid	bt:TAURINATED_C24_BILE_ACID_DECONJUGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dehydration of (3S)-3-hydroxyacyl-CoA	bt:_3S_3_HYDROXYACYL_COA_DEHYDRATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dehydration of very long-chain (3R)-3-hydroxyacyl-CoA	bt:VERY_LONG_CHAIN_3R_3_HYDROXYACYL_COA_DEHYDRATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dehydrogenation of (S)-3-hydroxyacyl-CoA	bt:S_3_HYDROXYACYL_COA_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dehydrogenation of long-chain (S)-3-hydroxyacyl-CoA	bt:LONG_CHAIN_S_3_HYDROXYACYL_COA_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dehydrogenation of medium-chain acyl-CoA	bt:MEDIUM_CHAIN_ACYL_COA_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dehydrogenation of short-chain acyl-CoA	bt:SHORT_CHAIN_ACYL_COA_DEHYDROGENATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dephosphorylation of 1,2-diacylglycerol-3-diphosphate	bt:_12_DIACYLGLYCEROL_3_DIPHOSPHATE_DEPHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dephosphorylation of 1,2-diacylglycerol-3-phosphate	bt:_12_DIACYLGLYCEROL_3_PHOSPHATE_DEPHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dephosphorylation of 1-alkyl,2-acylglycerol-3-phosphate	bt:_1_ALKYL_2_ACYLGLYCEROL_3_PHOSPHATE_DEPHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dephosphorylation of phosphatidylglycerophosphate	bt:PHOSPHATIDYLGLYCEROPHOSPHATE_DEPHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Dephosphorylation of phosphatidylinositol-3-phosphate	bt:PHOSPHATIDYLINOSITOL_3_PHOSPHATE_DEPHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Desaturation of (11Z)-acyl-CoA	bt:ACYL_COA_11Z_DESATURATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+DIAZO_STANDARDIZATION	bt:DIAZO_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+DIAZONIUM_STANDARDIZATION	bt:DIAZONIUM_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+EAWAG_RULE_BT0362_PATTERN4	bt:EAWAG_RULE_BT0362	1	envmicro	structure standardization SMIRKS, not a metabolism reaction type
+Fatty acylation of retinol, acyl-CoA-dependent	bt:RETINOL_O_FATTY_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Formation of 3-oxoacyl-CoA from acyl-CoA	bt:ACYL_COA_C_ACYL_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Formation of ceramide from beta-D-galactosylceramide	bt:_2_HYDROXYACYLSPHINGOSINE_1_BETA_GALACTOSYL_TRANSFER_REVERSE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Galactosylation of beta-D-glucosyl-(1<->1)-ceramide	bt:GLUCOSYLCERAMIDE_BETA_1_4_GALACTOSYL_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of 1-alkenylglycerol-3-phosphocholine	bt:ALKENYLGLYCERO_3_PHOSPHOCHOLINE_HYDROLYSIS_TO_GLYCERO_3_PHOSPHOCHOLINE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of 1-alkenylglycerol-3-phosphoethanolamine	bt:ALKENYLGLYCERO_3_PHOSPHOETHANOLAMINE_HYDROLYSIS_TO_GLYCERO_3_PHOSPHOETHANOLAMINE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of ethanolamine from 1-alkyl-3-phosphoethanolamine	bt:_1_ALKYLGLYCEROL_3_PHOSPHOETHANOLAMINE_HYDROLYSIS_TO_1_ALKYLGLYCEROL_3_PHOSPHATE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of galactose from galactosylceramide	bt:GALACTOSYLCERAMIDE_GALACTO_HYDROLISIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of glucose from glucosylceramide	bt:GLUCOSYLCERAMIDE_GLUCO_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of glycosylphosphatidylinositol to phosphatidate	bt:GLYCOSYLPHOSPHATIDYLINOSITOL_HYDROLYSIS_TO_PHOSPHATIDATE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of N-acylphosphatidylethanolamine	bt:N_ACYLPHOSPHATIDYLETHANOLAMINE_PHOSPHATIDOHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of terminal hexose from trihexosylceramide	bt:TRIHEXOSYLCERAMIDE_GALACTO_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Hydrolysis of terminal, non-reducing galactose from digalactosyldiacylglycerol	bt:DIGALACTOSYLDIACYLGLYCEROL_GALACTO_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+IMINIUM_STANDARDIZATION	bt:IMINIUM_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+ISOCYANATE_STANDARDIZATION	bt:ISOCYANATE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Ligation of long-chain fatty acyl-CoA	bt:LONG_CHAIN_FATTY_ACYL_COA_LIGATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+N-Acetylglucosaminylation of phosphatidylinositol	bt:PHOSPHATIDYLINOSITOL_N_ACETYLGLUCOSAMINYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+N-Deacetylation of N-acetylglucosaminyl phosphatidylinositol	bt:N_ACETYLGLUCOSAMINYL_PHOSPHATIDYLINOSITOL_N_DEACETYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+N-Deglycosylation of glycosyl-N-acylsphingosine	bt:GLYCOSYLCERAMIDE_GLYCOSYL_HYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+N-Methylation of phosphatidyl-N-dimethylethanolamine	bt:PHOSPHATIDYL_N_DIMETHYLETHANOLAMINE_N_METHYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+N-Methylation of phosphatidyl-N-monomethylethanolamine	bt:PHOSPHATIDYL_N_MONOMETHYLETHANOLAMINE_N_METHYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+N-Methylation of phosphatidylethanolamine	bt:PHOSPHATIDYLETHANOLAMINE_N_METHYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+NITRILIUM_STANDARDIZATION	bt:NITRILIUM_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+NITRO_STANDARDIZATION_1	bt:NITRO_STANDARDIZATION_1	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+NITRONATE_STANDARDIZATION	bt:NITRONATE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+NITROSO_STANDARDIZATION	bt:NITROSO_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+O-Acylation of 1,2-diacylglycerol	bt:DIACYLGLYCEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Oxidation of acyl-CoA	bt:ACYL_COA_OXIDATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Oxidation of acylglycerol-3-phosphate	bt:ACYLGLYCEROL_3_PHOSPHATE_OXIDATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Oxidation of alkylglycerol-3-phosphate	bt:ALKYLGLYCEROL_3_PHOSPHATE_OXIDATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Oxidation of very long (3R)-3-hydroxyacyl-CoA	bt:VERY_LONG_CHAIN_3R_3_HYDROXYACYL_COA_REDUCTION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Oxidoreduction of trans-2-enoyl-CoA	bt:ACYL_COA_TRANS_2_OXIDOREDUCTION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Phosphate hydrolysis from phosphatidylcholine	bt:PHOSPHATIDYLCHOLINE_PHOSPHATIDOHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Phosphatidylcholine cerebrosterol O-acylation	bt:PHOSPHATIDYLCHOLINE_CEREBROSTEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Phosphatidylcholine cholesterol O-acylation	bt:PHOSPHATIDYLCHOLINE_CHOLESTEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Phosphatidylcholine sitosterol O-acylation	bt:PHOSPHATIDYLCHOLINE_SITOSTEROL_O_ACYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+PHOSPHONIC_STANDARDIZATION	bt:PHOSPHONIC_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+PHOSPHONIUM_YLIDE_STANDARDIZATION	bt:PHOSPHONIUM_YLIDE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+PHOSPHORIC_STANDARDIZATION	bt:PHOSPHORIC_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+PHOSPHORIC_STANDARDIZATION_2	bt:PHOSPHORIC_STANDARDIZATION_2	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Phosphorylation of 1-monoacylglycerol	bt:_1_MONOACYLGLYCEROL_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Phosphorylation of 2-monoacylglycerol	bt:_2_MONOACYLGLYCEROL_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Phosphorylation of ceramide	bt:CERAMIDE_PHOSPHORYLATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Reduction of acylglycerol-3-phosphate	bt:ACYLGLYCERONE_3_PHOSPHATE_REDUCTION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Reduction of delta-14-sterol	bt:DELTA_14_STEROL_REDUCTION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Reduction of trans-2,3-didehydroacyl-CoA	bt:TRANS_23_DIDEHYDROACYL_COA_REDUCTION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Reduction of very long-chain enoyl-CoA	bt:VERY_LONG_CHAIN_ENOYL_COA_REDUCTION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+SELENITE_STANDARDIZATION	bt:SELENITE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+SILICATE_STANDARDIZATION	bt:SILICATE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+sn1-Specific acylhydrolysis of 1,2-diacylglycerol	bt:_1_2_DIACYLGLYCEROL_SN1_SPECIFIC_ACYLHYDROLYSIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+SULFINE_STANDARDIZATION	bt:SULFINE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+SULFONE_STANDARDIZATION	bt:SULFONE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+SULFONIUM_YLIDE_STANDARDIZATION	bt:SULFONIUM_YLIDE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+SULFOXIDE_STANDARDIZATION	bt:SULFOXIDE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Synthesis of 1,2-diacylglycerol-3-phosphethanolamine from 1,2-diacylglycerol	bt:ETHANOLAMINEPHOSPHATE_TRANSFER_TO_12_DIACYLGLYCEROL	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of 1,2-diacylglycerol-3-phosphocholine from 1,2-diacylglycerol	bt:PHOSPHOCHOLINE_TRANSFER_TO_12_DIACYLGLYCEROL	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of 1,2-diacylglycerol-3-phosphoglycerol-3-phosphate from CDP-diacylglycerol	bt:SN_GLYCEROL_3_PHOSPHATE_TRANSFER_TO_CDP_DIACYLGLYCEROL	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of 1-alkenyl-2-acylglycerophosphoethanolamine from 1-alkenyl-2-acylglycerol	bt:_1_ALKENYL_2_ACYL_GLYCEROPHOSPHOETHANOLAMINE_FROM_1_ALKYL_2_ACYLGLYCEROL	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of 1-alkyl-2-acylglycerophosphoethanolamine from 1-alkyl-2-acylglycerol	bt:_1_ALKYL_2_ACYL_GLYCEROPHOSPHOETHANOLAMINE_FROM_1_ALKYL_2_ACYLGLYCEROL	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of 1-phosphatidyl-1D-myo-inositol from CDP-diacylglycerol	bt:INOSITOL_3_PHOSPHATE_TRANSFER_TO_CDP_DIACYLGLYCEROL	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of CDP-diacylglycerol from 1,2-diacylglycerol-3-phosphate	bt:_12_DIACYLGLYCEROL_3_PHOSPHATE_CITIDYL_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of phosphatidylserine from phosphatidylcholine	bt:PHOSPHATIDYLSERINE_SYNTHESIS_FROM_PHOSPHATIDYLCHOLINE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of phosphatidylserine from phosphatidylethanolamine	bt:PHOSPHATIDYLSERINE_SYNTHESIS_FROM_PHOSPHATIDYLETHANOLAMINE	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Synthesis of very long-chain 3-oxoacyl-CoA, malonyl-CoA-dependent	bt:VERY_LONG_CHAIN_3_OXOACYL_COA_SYNTHESIS	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Taurine conjugation of C23 bile acid-CoA	bt:C23_BILE_ACID_COA_TAURINATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Taurine conjugation of C24 bile acid-CoA	bt:C24_BILE_ACID_COA_TAURINATION	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+TERTIARY_N_OXIDE_STANDARDIZATION	bt:TERTIARY_N_OXIDE_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+THIOUREA_STANDARDIZATION	bt:THIOUREA_STANDARDIZATION	1	standardization	structure standardization SMIRKS, not a metabolism reaction type
+Transfer of N-acetylgalactosamine to (N-acetylneuraminyl)-galactosylglucosylceramide	bt:BETA_D_GALACTOSYL_BETA_D_GLUCOSYL_CERAMIDE_ACETYLGALACTOSAMINE_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Transfer of N-acetylneuraminate to lactosylceramide	bt:LACTOSYLCERAMIDE_N_ACETYLNEURAMINATE_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+Transfer of phosphocholine to N-acylsphingoid	bt:N_ACYLSPHINGOID_PHOSPHOCHOLINE_TRANSFER	1	base	endogenous lipid/sterol/bile/membrane pathway chemistry outside xenobiotic scope
+NADPH-assisted dehydrogenation	bt:NADPH_ASSISTED_DEHYDROGENATION	10	base	cofactor annotation, not a chemical reaction class
+4-Dephosphorylation of phosphatidylinositol-4,5-bisphosphate	bt:PHOSPHATIDYLINOSITOL_45_BISPHOSPHATE_DEPHOSPHORYLATION_4	2	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+7-alpha-Dehydroxylation of C24 bile acid	bt:C23_BILE_ACID_7ALPHA_DEHYDROXYLATION	2	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+27-Hydroxylation of 3,7,12-hydroxycholestane	bt:_3_7_12_OH_CHOLESTANE_27_HYDROXYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+3-O-Sulfation of phenolic hydroxysteroid	bt:PHENOLIC_STEROID_SULFONATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Acyl hydrolysis of 1,2-diacyl-3-beta-D-galactosyl-sn-glycerol	bt:_12_DIACYL_3_BETA_GLALACTOSYL_SN_GLYCEROLALACTOSYL_ACYL_HYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Acyl hydrolysis of anthocyanidin 3-glucoside-5-(4-hydroxycinnamoyl)glucoside	bt:ANTHOCYANIN_5_6PPP_HYDROXYCINNAMOYL_TRANSFER_REVERSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+alpha-Oxidation of carboxylic acid	bt:ALPHA_OXIDATION_OF_CARBXOYLIC_ACID	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+beta-Oxidation of carboxylic acid	bt:BETA_OXIDATION_OF_CARBXOYLIC_ACID	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Cleavage of diphosphate from nucleoside triphosphate	bt:NUCLEOSIDE_TRIPHOSPHATE_DIPHOSPHATE_CLEAVAGE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Deacylation of anthocyanidin 3-O-[6-O-(4-hydroxycinnamoyl)-beta-D-glucoside]	bt:ANTHOCYANIDIN_3O_GLUCOSIDE_6PP_DEACYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Deacylation of cardiolipin	bt:CARDIOLIPIN_DEACYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Decarboxylation of aromatic L-amino acid	bt:AROMATIC_L_AMINO_ACID_DECARBOXYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of (D)-2-hydroxy acid	bt:D_2_HYDROXY_ACID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of (S)-2-hydroxycarboxylate	bt:_S_2_HYDROXYCARBOXYLATE_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 11-beta-hydroxysteroid	bt:_11_BETA_HYDROXYSTEROID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 17-beta-hydroxysteroid	bt:_17_BETA_HYROXYSTEROID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 3-alpha-hydroxysteroid	bt:_3_ALPHA_HYDROXYSTEROID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 3-alpha-pregnane	bt:_3_ALPHA_PREGNANE_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 3-beta-hydroxy-delta-5-steroid	bt:_3_BETA_HYDROXY_DELTA_5_STEROID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 3-beta-hydroxysteroid-4-alpha-carboxylate	bt:_3_BETA_HYDROXYSTEROID_4_ALPHA_CARBOXYLATE_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 3-oxo-5-alpha-steroid	bt:_3_OXO_5_ALPHA_STEROID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dehydrogenation of 7-beta-hydroxysteroid	bt:_7_ALPHA_HYDROXYSTEROID_DEHYDROGENATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+delta-Isomerization of steroid	bt:STEROID_DELTA_ISOMERIZATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Demanolynation of anthocyanidin 3-O-(6-O-malonyl-beta-D-glucoside)	bt:ANTHOCYANIN_6PP_MALONYL_TRANSFER_REVERSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Demethylation of 14-alpha-methylsterol	bt:STEROL_14_ALPHA_DEMETHYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dephosphorylation of 3'-ribonucleotide	bt:_3P_RIBONUCLEOTIDE_DEPHOSPHORYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dephosphorylation of 5'-ribonucleotide	bt:_5P_RIBONUCLEOTIDE_DEPHOSPHORYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dephosphorylation of N-acylneuraminate 9-phosphate	bt:N_ACYLNEURAMINATE_9_PHOSPHATE_DEPHOSPHORYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Dephosphorylation of phosphate monoester	bt:PHOSPHATE_MONOESTER_DEPHOSPHORYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Derhamnosylation of flavonol 3-O-[alpha-L-rhamnosyl-(1->6)-beta-D-glucoside]	bt:FLAVONOL_3O_GLUCOSIDE_L_DERHAMNOSYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Formation of 2-trans-enoyl from (3R)-3-oxoacyl	bt:_2_TRANS_ENOYL_FORMATION_FROM_3_R_OXOACYL	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of (S)-2-hydroxyacyl glutathione	bt:S_2_HYDROXYACYL_GLUTATHIONE_HYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of 2',3'-cyclic nucleotide	bt:_2P_3P_CYCLIC_NUCLEOTIDE_HYDROLYSIS_TO_2P_NUCLEOTIDE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of 2',3'-cyclic nucleotide to 3'-nucleotide	bt:_2P_3P_CYCLIC_NUCLEOTIDE_HYDROLYSIS_TO_3P_NUCLEOTIDE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of 3',5'-cyclic nucleotide to 3'-nucleotide	bt:_3P_5P_CYCLIC_NUCLEOTIDE_HYDROLYSIS_TO_3P_NUCLEOTIDE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of a dinucleotide	bt:DINUCLEOTIDE_HYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of acylcarnitine	bt:HYDROLYSIS_OF_ACYLCARNITINE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of alpha,beta-mannoside	bt:ALPHA_BETA_MANNOSIDE_MANNOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of pyrimidine nucleoside	bt:RIBOSYLPYRIMIDINE_RIBOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of terminal 1,4-linked alpha-D-glucose	bt:HYDROLYSIS_OF_TERMINAL_14_LINKED_ALPHA_D_GLUCOSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of terminal alpha-galactose	bt:HYDROLYSIS_OF_TERMINAL_ALPHA_GALACTOSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of terminal beta-D-glucose	bt:HYDROLYSIS_OF_TERMINAL_BETA_D_GLUCOSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of terminal beta-galactose	bt:HYDROLYSIS_OF_TERMINAL_BETA_GALACTOSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of terminal non-reducing N-acetyl-D-glucosamine from alpha-N-acetyl-glucosaminide	bt:ALPHA_N_ACETYL_GLUCOSAMINIDE_N_ACETYL_GLUCOSAMINOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Hydrolysis of terminal sialic acid from N-acylneumarinic acid conjugate	bt:ACETYLNEURAMINYL_HYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+L-Rhamnosylation of flavonol-3-O-glucoside	bt:FLAVONOL_3O_GLUCOSIDE_L_RHAMNOSYLATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Latonohydrolysis in N-acyl-L-homoserine	bt:N_ACYL_L_HOMOSERINE_LACTONE_LACTONOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Ligation of petidoamidoglycolate peptidylamide	bt:PEPTIDOAMIDOGLYCOLATE_PEPTIDYLAMIDE_LIGATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+O-Sulfation of 1-O-alkyl-2-O-acyl-3-O-beta-D-galactosyl-sn-glycerol	bt:GALACTOSYL_1_ALKYL_2_ACYL_SULFATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Oxidation of 3,7,12-hydroxycholestane	bt:_3_7_12_OH_CHOLESTANE_OXIDATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Oxidation of 3-oxo,7,12-hydroxycholestane	bt:_3_OXO_7_12_OH_CHOLESTANE_OXIDATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Phosphohydrolysis of acylphosphate	bt:ACYLPHOSPHATE_PHOSPHOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Phosphohydrolysis of nucleoside diphosphate	bt:NUCLEOSIDE_DIPHOSPHATE_PHOSPHOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Phosphohydrolysis of nucleoside triphosphate	bt:NUCLEOSIDE_TRIPHOSPHATE_PHOSPHOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Reduction of (3R)-3-oxoacyl	bt:_3_R_OXOACYL_REDUCTION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Sulfohydrolysis of cerebroside-3-sulfate	bt:CEREBROSIDE_3_SULFATE_SULFOHYDROLYSIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Synthesis of cardiolipin	bt:CARDIOLIPIN_SYNTHESIS	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Synthesis of very long-chain 2,3,4-saturated fatty acyl CoA, CoA-dependent	bt:VERY_LONG_CHAIN_3_OXOACYL_COA_SYNTHESIS_REVERSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Transamination of aromatic amino acid	bt:AROMATIC_AMINO_ACID_TRANSAMINATION	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Transfer of acetylgalactosamine to ganglioside GD3	bt:GANGLIOSIDE_GD3_ACETYLGALACTOSAMINE_TRANSFER	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Transfer of acetylgalactosamine to ganglioside GM3	bt:GANGLIOSIDE_GM3_ACETYLGALACTOSAMINE_TRANSFER	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Transfer of cytidine to N-acylneuraminate	bt:CYTIDINE_TRANSFER_TO_N_ACYLNEURAMINATE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Transfer of galactose to ganglioside GM2	bt:GM2_GANGLIOSIDE_GALACTOSYL_TRANSFER	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Transfer of glucopyranose to alkylcinnamate	bt:ALCOHOL_O_CINNAMOYL_TRANSFER_REVERSE	1	base	endogenous steroid/lipid/nucleotide/glycosphingolipid pathway chemistry
+Reduction of sulfite	bt:SULFITE_REDUCTION	2	base,envmicro	inorganic sulfite reduction; out of xenobiotic scope
+9-alpha-Hydroxylation of 3-ketosteroid	bt:_3_KETOSTEROID_9ALPHA_HYDROXYLATION	1	base	endogenous steroid hydroxylation
+Decarboxylation of alpha-keto acid	bt:ALPHA_KETO_ACID_DECARBOXYLATION	1	base	endogenous alpha-keto acid decarboxylation
+Dehydrogenation of 3-oxosteroid	bt:_3_OXOSTEROID_DEHYDROGENATION	1	base	endogenous steroid redox

@@ -11,6 +11,7 @@ Examples:
   uv run python tools/print_xmet_tree.py --root \"reaction class\"
   uv run python tools/print_xmet_tree.py --root xmet:4000009 --depth 3
   make ontology-tree
+  make ontology-tree-biotransformer
 """
 
 from __future__ import annotations
@@ -27,6 +28,8 @@ ROOT = Path(__file__).resolve().parents[1]
 YAML_PATH = ROOT / "data/ontology/xmet.yaml"
 FOREST_SSSOM = ROOT / "data/mappings/xmet-forest.sssom.tsv"
 TAGGER_SSSOM = ROOT / "data/mappings/xmet-tagger.sssom.tsv"
+BIOTRANSFORMER_SSSOM = ROOT / "data/mappings/xmet-biotransformer.sssom.tsv"
+BIOTRANSFORMER_COMMON_SSSOM = ROOT / "data/mappings/xmet-biotransformer-common.sssom.tsv"
 
 ONTOLOGY_ROOT = "xmet:4000000"  # xenobiotic biotransformation
 REACTION_DESCRIPTOR = "xmet:4000263"
@@ -45,6 +48,23 @@ def children_map(by: dict[str, dict[str, Any]]) -> dict[str, list[str]]:
     for p in ch:
         ch[p].sort(key=lambda i: ((by[i].get("preferred_label") or "").lower(), i))
     return ch
+
+
+def merge_sssom_indexes(*indexes: dict[str, list[tuple[str, str]]]) -> dict[str, list[tuple[str, str]]]:
+    """Merge subject → [(predicate, object), ...] SSSOM indexes."""
+    out: dict[str, list[tuple[str, str]]] = {}
+    for idx in indexes:
+        for sid, rows in idx.items():
+            out.setdefault(sid, []).extend(rows)
+    return out
+
+
+def load_biotransformer_sssom() -> dict[str, list[tuple[str, str]]]:
+    """Load common_name SSSOM first, then class/rtype SSSOM."""
+    return merge_sssom_indexes(
+        load_sssom_index(BIOTRANSFORMER_COMMON_SSSOM),
+        load_sssom_index(BIOTRANSFORMER_SSSOM),
+    )
 
 
 def load_sssom_index(path: Path) -> dict[str, list[tuple[str, str]]]:
@@ -133,6 +153,8 @@ def _rank_obj(obj: str) -> int:
         return 1
     if obj.startswith("rule:"):
         return 2
+    if obj.startswith("bt.class:") or obj.startswith("bt.rtype:") or obj.startswith("bt:"):
+        return 2
     if obj.startswith("forest.ruleset:"):
         return 3
     return 4
@@ -149,6 +171,12 @@ def _short_obj(obj: str) -> str:
         return "ruleset:" + obj.split(":", 1)[1]
     if obj.startswith("rule:"):
         return "tagger:" + obj.removeprefix("rule:")
+    if obj.startswith("bt.class:"):
+        return "bt.class:" + obj.split(":", 1)[1]
+    if obj.startswith("bt.rtype:"):
+        return "bt.rtype:" + obj.split(":", 1)[1]
+    if obj.startswith("bt:"):
+        return "bt:" + obj.split(":", 1)[1]
     return obj
 
 
@@ -180,18 +208,26 @@ def mapping_note(
     *,
     show_forest: bool,
     show_tagger: bool,
+    biotransformer: dict[str, list[tuple[str, str]]] | None = None,
+    show_biotransformer: bool = False,
     always_with_in: dict[str, list[tuple[str, str]]] | None = None,
     show_incoming_always_with: bool = True,
 ) -> str:
     bits: list[str] = []
     own_forest = list(forest.get(cid) or []) if show_forest else []
     own_tagger = list(tagger.get(cid) or []) if show_tagger else []
+    own_bt = (
+        list((biotransformer or {}).get(cid) or []) if show_biotransformer else []
+    )
 
     if own_forest:
         bits.append(format_mapping_rows(own_forest).strip())
 
     if own_tagger:
         bits.append(format_mapping_rows(own_tagger).strip())
+
+    if own_bt:
+        bits.append(format_mapping_rows(own_bt).strip())
 
     parts = by.get(cid, {}).get("has_part") or []
     if parts:
@@ -257,6 +293,9 @@ def walk(
     show_ids: bool,
     show_forest: bool,
     show_tagger: bool,
+    biotransformer: dict[str, list[tuple[str, str]]] | None = None,
+    show_biotransformer: bool = False,
+    mapped_only: bool = False,
     always_with_in: dict[str, list[tuple[str, str]]] | None = None,
     prefix: str = "",
     is_last: bool = True,
@@ -275,6 +314,8 @@ def walk(
         by,
         show_forest=show_forest,
         show_tagger=show_tagger,
+        biotransformer=biotransformer,
+        show_biotransformer=show_biotransformer,
         always_with_in=always_with_in,
     )
     branch = "└── " if is_last else "├── "
@@ -295,6 +336,22 @@ def walk(
         return lines
 
     kids = children.get(cid) or []
+    if mapped_only and show_biotransformer and biotransformer is not None:
+
+        def has_bt_desc(nid: str, memo: dict[str, bool] | None = None) -> bool:
+            if memo is None:
+                memo = {}
+            if nid in memo:
+                return memo[nid]
+            if biotransformer.get(nid):
+                memo[nid] = True
+                return True
+            ok = any(has_bt_desc(k, memo) for k in (children.get(nid) or []))
+            memo[nid] = ok
+            return ok
+
+        kids = [k for k in kids if has_bt_desc(k)]
+
     for i, kid in enumerate(kids):
         last = i == len(kids) - 1
         cont = "" if depth == 0 else prefix + ("    " if is_last else "│   ")
@@ -310,6 +367,9 @@ def walk(
                 show_ids=show_ids,
                 show_forest=show_forest,
                 show_tagger=show_tagger,
+                biotransformer=biotransformer,
+                show_biotransformer=show_biotransformer,
+                mapped_only=mapped_only,
                 always_with_in=always_with_in,
                 prefix=cont if depth > 0 else "",
                 is_last=last,
@@ -501,9 +561,19 @@ def main() -> None:
         help="Omit tagger SMARTS SSSOM annotations",
     )
     ap.add_argument(
+        "--biotransformer",
+        action="store_true",
+        help="Annotate BioTransformer SSSOM mappings",
+    )
+    ap.add_argument(
+        "--bt-only",
+        action="store_true",
+        help="With --biotransformer: prune branches with no BT mapping",
+    )
+    ap.add_argument(
         "--stats",
         action="store_true",
-        help="Also print Forest/tagger SSSOM coverage counts",
+        help="Also print Forest/tagger/BT SSSOM coverage counts",
     )
     ap.add_argument(
         "--no-relations",
@@ -519,8 +589,10 @@ def main() -> None:
 
     by = load_concepts()
     children = children_map(by)
+    show_bt = args.biotransformer or args.bt_only
     forest = {} if args.no_forest else load_sssom_index(FOREST_SSSOM)
     tagger = {} if args.no_tagger else load_sssom_index(TAGGER_SSSOM)
+    biotransformer = load_biotransformer_sssom() if show_bt else {}
     always_with_in = {} if args.no_forest else load_always_with_incoming(FOREST_SSSOM)
     root = resolve_root(by, args.root)
 
@@ -535,11 +607,45 @@ def main() -> None:
         show_ids=args.ids,
         show_forest=not args.no_forest,
         show_tagger=not args.no_tagger,
+        biotransformer=biotransformer,
+        show_biotransformer=show_bt,
+        mapped_only=args.bt_only,
         always_with_in=always_with_in,
     )
     print("\n".join(lines))
 
-    subtree, depths = collect_subtree(root, children, max_depth=args.depth)
+    # For --bt-only, stats/relations use the pruned ancestor set of BT subjects.
+    if args.bt_only and biotransformer:
+        parents_of: dict[str, list[str]] = defaultdict(list)
+        for cid, c in by.items():
+            for p in c.get("parents") or []:
+                parents_of[cid].append(p)
+        pruned: set[str] = set()
+        for mid in biotransformer:
+            if mid not in by:
+                continue
+            stack = [mid]
+            while stack:
+                cur = stack.pop()
+                if cur in pruned:
+                    continue
+                pruned.add(cur)
+                stack.extend(parents_of.get(cur) or [])
+        if root in by:
+            pruned.add(root)
+        subtree = pruned
+        # depth from root along broader links
+        depths = {root: 0}
+        queue = [root]
+        while queue:
+            cur = queue.pop(0)
+            for kid in children.get(cur) or []:
+                if kid not in pruned or kid in depths:
+                    continue
+                depths[kid] = depths[cur] + 1
+                queue.append(kid)
+    else:
+        subtree, depths = collect_subtree(root, children, max_depth=args.depth)
 
     if not args.no_relations:
         print("\n".join(format_intra_relations(by, subtree)))
@@ -550,6 +656,7 @@ def main() -> None:
     if args.stats:
         with_forest = sum(1 for cid in subtree if forest.get(cid))
         with_tagger = sum(1 for cid in subtree if tagger.get(cid))
+        with_bt = sum(1 for cid in subtree if biotransformer.get(cid))
         exact_pat = 0
         for cid in subtree:
             for pred, obj in forest.get(cid) or []:
@@ -561,6 +668,10 @@ def main() -> None:
         print(f"  with Forest SSSOM: {with_forest}")
         print(f"  with exactMatch forest.pattern: {exact_pat}")
         print(f"  with tagger SSSOM: {with_tagger}")
+        if show_bt:
+            print(f"  with BioTransformer SSSOM: {with_bt}")
+            n_rows = sum(len(v) for v in biotransformer.values())
+            print(f"  BioTransformer SSSOM rows: {n_rows}")
 
 
 if __name__ == "__main__":

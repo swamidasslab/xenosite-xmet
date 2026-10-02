@@ -1,5 +1,6 @@
 # TODO
 
+- Continue BioTransformer **common_name** SSSOM (`xmet-biotransformer-common.sssom.tsv`)
 - Hang remaining tagger specialization emits under pattern homes where identity is clear
 - Account for non-SMARTS tagger rules (tag-/delta-/forest-tag helpers; deletion vs map)
 - Finish AMD mid-fuzzy `needs_adjudication` queue

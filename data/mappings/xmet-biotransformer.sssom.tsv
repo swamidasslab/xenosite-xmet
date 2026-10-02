@@ -1,0 +1,43 @@
+# BioTransformer MetX class labels ↔ XMET (secondary SSSOM).
+# `bt.class:<SLUG>` = biotransformation_type (Phase I/II).
+# `bt.rtype:<SLUG>` = short MetX reaction_type literature classes (often no BTMR).
+# Primary rule/common_name mappings: xmet-biotransformer-common.sssom.tsv.
+#curie_map:
+#  bt: https://biotransformer.ca/reaction/
+#  xmet: https://w3id.org/xenosite/xmet/
+#  skos: http://www.w3.org/2004/02/skos/core#
+#  semapv: https://w3id.org/semapv/
+subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label	comment
+xmet:4000001	skos:closeMatch	bt.class:HUMAN_PHASE_I	semapv:ManualMappingCuration	phase I	Human Phase I	MetX biotransformation_type class
+xmet:4000002	skos:closeMatch	bt.class:HUMAN_PHASE_II	semapv:ManualMappingCuration	phase II	Human Phase II	MetX biotransformation_type class
+xmet:4000006	skos:exactMatch	bt.rtype:DEHYDROGENATION	semapv:ManualMappingCuration	dehydrogenation	Dehydrogenation	MetX reaction_type class (no BTMR)
+xmet:4000008	skos:exactMatch	bt.rtype:REDUCTION	semapv:ManualMappingCuration	reduction	Reduction	MetX reaction_type class
+xmet:4000009	skos:closeMatch	bt.rtype:OXIDATION	semapv:ManualMappingCuration	oxidation	Oxidation	MetX reaction_type class (umbrella label)
+xmet:4000012	skos:exactMatch	bt.rtype:HYDROXYLATION	semapv:ManualMappingCuration	hydroxylation	Hydroxylation	MetX reaction_type class
+xmet:4000013	skos:exactMatch	bt.rtype:AROMATIC_HYDROXYLATION	semapv:ManualMappingCuration	aromatic hydroxylation	Aromatic Hydroxylation	MetX reaction_type class (n≈117+)
+xmet:4000014	skos:exactMatch	bt.rtype:ALIPHATIC_HYDROXYLATION	semapv:ManualMappingCuration	aliphatic hydroxylation	Aliphatic Hydroxylation	MetX reaction_type class (n≈213+)
+xmet:4000019	skos:exactMatch	bt.rtype:ALLYLIC_HYDROXYLATION	semapv:ManualMappingCuration	allylic hydroxylation	Allylic hydroxylation	MetX reaction_type class
+xmet:4000022	skos:exactMatch	bt.rtype:EPOXIDATION	semapv:ManualMappingCuration	epoxidation	Epoxidation	MetX reaction_type class
+xmet:4000026	skos:exactMatch	bt.rtype:N_OXIDATION	semapv:ManualMappingCuration	nitrogen oxidation	N-Oxidation	MetX reaction_type class (= N-oxidation)
+xmet:4000032	skos:exactMatch	bt.rtype:S_OXIDATION	semapv:ManualMappingCuration	sulfur oxidation	S-Oxidation	MetX reaction_type class (= S-oxidation)
+xmet:4000043	skos:exactMatch	bt.rtype:N_DEALKYLATION	semapv:ManualMappingCuration	N-dealkylation	N-Dealkylation	MetX reaction_type class
+xmet:4000044	skos:exactMatch	bt.rtype:O_DEALKYLATION	semapv:ManualMappingCuration	O-dealkylation	O-dealkylation	MetX reaction_type class
+xmet:4000045	skos:exactMatch	bt.rtype:S_DEALKYLATION	semapv:ManualMappingCuration	S-dealkylation	S-Dealkylation	MetX reaction_type class
+xmet:4000047	skos:exactMatch	bt.rtype:N_DEETHYLATION	semapv:ManualMappingCuration	N-deethylation	N-deethylation	MetX reaction_type class
+xmet:4000050	skos:exactMatch	bt.rtype:O_DEMETHYLATION	semapv:ManualMappingCuration	O-demethylation	O-Demethylation	MetX reaction_type class (incl. dementhylation typos)
+xmet:4000052	skos:exactMatch	bt.rtype:O_DEETHYLATION	semapv:ManualMappingCuration	O-deethylation	O-Deethylation	MetX reaction_type class
+xmet:4000055	skos:exactMatch	bt.rtype:OXIDATIVE_DEFLUORINATION	semapv:ManualMappingCuration	oxidative defluorination	oxidative defluorination	MetX reaction_type class
+xmet:4000090	skos:exactMatch	bt.rtype:HYDROGENATION	semapv:ManualMappingCuration	hydrogenation	Hydrogenation	MetX reaction_type class
+xmet:4000123	skos:exactMatch	bt.rtype:ESTERIFICATION	semapv:ManualMappingCuration	esterification	ESTERIFICATION	MetX reaction_type class
+xmet:4000128	skos:exactMatch	bt.rtype:DEHYDROXYLATION	semapv:ManualMappingCuration	dehydroxylation	Dehydroxylation	MetX reaction_type class
+xmet:4000134	skos:exactMatch	bt.rtype:DENITROSATION	semapv:ManualMappingCuration	denitrosation	Denitrosation	MetX reaction_type class
+xmet:4000138	skos:exactMatch	bt.rtype:DESULFATION	semapv:ManualMappingCuration	desulfation	Desulfation	MetX reaction_type class
+xmet:4000149	skos:exactMatch	bt.rtype:O_GLUCURONIDATION	semapv:ManualMappingCuration	O-glucuronidation	O-glucuronidation	MetX reaction_type class (n≈262)
+xmet:4000153	skos:exactMatch	bt.rtype:N_GLUCURONIDATION	semapv:ManualMappingCuration	N-glucuronidation	N-glucuronidation	MetX reaction_type class
+xmet:4000158	skos:closeMatch	bt.rtype:O_SULFONATION	semapv:ManualMappingCuration	sulfation	O-sulfonation	MetX class; sulfation synonym is sulfonation
+xmet:4000159	skos:exactMatch	bt.rtype:O_SULFATION	semapv:ManualMappingCuration	O-sulfation	O-sulfation	MetX reaction_type class
+xmet:4000164	skos:exactMatch	bt.rtype:N_ACETYLATION	semapv:ManualMappingCuration	N-acetylation	N-acetylation	MetX reaction_type class
+xmet:4000165	skos:exactMatch	bt.rtype:O_ACETYLATION	semapv:ManualMappingCuration	O-acetylation	O-acetylation	MetX reaction_type class
+xmet:4000167	skos:exactMatch	bt.rtype:GSH_CONJUGATION	semapv:ManualMappingCuration	glutathione conjugation	GSH-conjugation	MetX reaction_type class
+xmet:4000176	skos:exactMatch	bt.rtype:O_METHYLATION	semapv:ManualMappingCuration	O-methylation	O-methylation	MetX reaction_type class
+xmet:4000349	skos:exactMatch	bt.rtype:N_DEMETHYLATION	semapv:ManualMappingCuration	N-demethylation	N-demethylation	MetX reaction_type class (incl. dementhylation typos)

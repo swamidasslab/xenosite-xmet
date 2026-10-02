@@ -1,0 +1,105 @@
+# BioTransformer common_name ↔ XMET (primary SSSOM).
+# Prioritizes reactions.csv common_name stems (`bt:<STEM>`), bundling `_PATTERNn`.
+# Subset patterns → existing/proposed child; never exactMatch a broader parent.
+# Class-level MetX labels live in xmet-biotransformer.sssom.tsv (`bt.class` / `bt.rtype`).
+#curie_map:
+#  bt: https://biotransformer.ca/reaction/
+#  xmet: https://w3id.org/xenosite/xmet/
+#  skos: http://www.w3.org/2004/02/skos/core#
+#  semapv: https://w3id.org/semapv/
+subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label	comment
+xmet:4000014	skos:closeMatch	bt:HYDROXYLATION_OF_ACYCLIC_ALIPHATIC_SECONDARY_CARBON	semapv:ManualMappingCuration	aliphatic hydroxylation	Hydroxylation of acyclic aliphatic secondary carbon	aliphatic secondary C-OH
+xmet:4000015	skos:closeMatch	bt:P_HYDROXYLATION_OF_ANILIDES	semapv:ManualMappingCuration	para-hydroxylation	p-Hydroxylation of anilide	para hydroxylation on anilide
+xmet:4000015	skos:exactMatch	bt:P_HYDROXYLATION_OF_MONOSUBSTITUTED_BENZENE	semapv:ManualMappingCuration	para-hydroxylation	p-Hydroxylation of monosubstituted benzene	identity
+xmet:4000015	skos:closeMatch	bt:P_HYDROXYLATION_OF_PHENOLS	semapv:ManualMappingCuration	para-hydroxylation	p-Hydroxylation of phenol	para hydroxylation on phenol
+xmet:4000016	skos:exactMatch	bt:O_HYDROXYLATION_OF_MONOSUBSTITUTED_BENZENE	semapv:ManualMappingCuration	ortho-hydroxylation	O-Hydroxylation of monosubstituted benzene	identity
+xmet:4000017	skos:exactMatch	bt:M_HYDROXYLATION_OF_MONOSUBSTITUTED_BENZENE	semapv:ManualMappingCuration	meta-hydroxylation	m-Hydroxylation of monosubstituted benzene	identity
+xmet:4000018	skos:closeMatch	bt:ALIPHATIC_HYDROXYLATION_OF_METHYL_CARBON_ADJACENT_TO_AROMATIC_RING	semapv:ManualMappingCuration	benzylic hydroxylation	Aliphatic hydroxylation of methyl carbon adjacent to aromatic ring	methyl adjacent to aryl ≈ benzylic
+xmet:4000019	skos:exactMatch	bt:ALLYLIC_HYDROXLATION	semapv:ManualMappingCuration	allylic hydroxylation	Allylic hydroxylation	identity (BT stem typo HYDROXLATION)
+xmet:4000019	skos:closeMatch	bt:BISALLYLIC_HYDROXYLATION	semapv:ManualMappingCuration	allylic hydroxylation	Bisallylic hydroxylation	near-leaf of allylic hydroxylation
+xmet:4000020	skos:exactMatch	bt:HYDROXYLATION_OF_TERMINAL_METHYL	semapv:ManualMappingCuration	ω-hydroxylation	Hydroxylation of terminal methyl	identity
+xmet:4000021	skos:closeMatch	bt:HYDROXYLATION_OF_ALIPHATIC_SECONDARY_PENULTIMATE_CARBON	semapv:ManualMappingCuration	ω-1 hydroxylation	Hydroxylation of penultimate aliphatic secondary carbon	penultimate ≈ ω−1
+xmet:4000021	skos:closeMatch	bt:HYDROXYLATION_OF_ALIPHATIC_TERTIARY_PENULTIMATE_CARBON	semapv:ManualMappingCuration	ω-1 hydroxylation	Hydroxylation of penultimate aliphatic tertiary carbon	penultimate ≈ ω−1
+xmet:4000023	skos:exactMatch	bt:ALKENE_EPOXIDATION	semapv:ManualMappingCuration	alkene epoxidation	Epoxidation of alkene	identity with alkene-epoxidation child
+xmet:4000025	skos:exactMatch	bt:THIOPHENE_EPOXIDATION	semapv:ManualMappingCuration	thiophene epoxidation	Epoxidation of thiophene	identity
+xmet:4000027	skos:closeMatch	bt:N_OXIDATION_OF_ALICYCLIC_TERTIARY_AMINE	semapv:ManualMappingCuration	N-oxide formation	N-Oxidation of alicyclic tertiary amine	tertiary amine N-oxide
+xmet:4000027	skos:closeMatch	bt:N_OXIDATION_OF_ALIPHATIC_TERTIARY_AMINE	semapv:ManualMappingCuration	N-oxide formation	N-Oxidation of aliphatic tertiary amine	tertiary amine N-oxide
+xmet:4000028	skos:closeMatch	bt:N_HYDROXYLATION_OF_ANILINES_TO_HYDROXYLAMINES	semapv:ManualMappingCuration	hydroxylamine formation	N-Hydroxylation of aniline to hydroxylamine	aniline N-hydroxylation
+xmet:4000028	skos:closeMatch	bt:N_HYDROXYLATION_OF_PRIMARY_ARYLAMINE	semapv:ManualMappingCuration	hydroxylamine formation	N-Hydroxylation of primary arylamine	arylamine N-hydroxylation
+xmet:4000033	skos:exactMatch	bt:S_OXIDATION_OF_ALKYLARYLTHIOETHER_TO_SULFOXIDE	semapv:ManualMappingCuration	sulfoxidation	S-Oxidation of alkylarylthioether to sulfoxide	identity
+xmet:4000033	skos:exactMatch	bt:S_OXIDATION_OF_DIALKYLTHIOETHER_TO_SULFOXIDE	semapv:ManualMappingCuration	sulfoxidation	S-Oxidation of dialkylthioether to sulfoxide	identity
+xmet:4000033	skos:exactMatch	bt:S_OXIDATION_OF_DIARYLTHIOETHER_TO_SULFOXIDE	semapv:ManualMappingCuration	sulfoxidation	S-Oxidation of diarylthioether to sulfoxide	identity
+xmet:4000034	skos:exactMatch	bt:S_OXIDATION_OF_SULFOXIDE_TO_SULFONE	semapv:ManualMappingCuration	sulfone formation	S-Oxidation of sulfoxide to sulfone	identity
+xmet:4000035	skos:exactMatch	bt:THIOPHENE_S_OXIDATION	semapv:ManualMappingCuration	thiophene S-oxidation	Thiophene S-oxidation	identity
+xmet:4000041	skos:closeMatch	bt:HYDROXYLATION_OF_ALICYCLIC_TERTIARY_CARBON	semapv:ManualMappingCuration	alicyclic hydroxylation	Hydroxylation of alicyclic tertiary carbon	alicyclic hydroxylation
+xmet:4000044	skos:exactMatch	bt:O_DEALKYLATION	semapv:ManualMappingCuration	O-dealkylation	O-Dealkylation	identity
+xmet:4000050	skos:closeMatch	bt:DEMETHYLATION_OF_METHOXY_PHENYL_AND_BENZOIC_ACIDS	semapv:ManualMappingCuration	O-demethylation	Demethylation of methoxyphenyl, or methoxybenzoic acid	aryl/aryl-acid O-demethylation
+xmet:4000050	skos:exactMatch	bt:O_ARYL_DEMETHYLATION	semapv:ManualMappingCuration	O-demethylation	O-Aryl demethylation	aromatic O-demethylation identity
+xmet:4000053	skos:closeMatch	bt:O_ARYL_DEALKYLATION_ADJACENT_TO_SUBSTITUTED_CARBON	semapv:ManualMappingCuration	aromatic O-dealkylation	O-Aryl dealkylation adjacent to substituted carbon	aromatic O-dealkylation
+xmet:4000053	skos:closeMatch	bt:O_ARYL_DEALKYLATION_NOT_ADJACENT_TO_SUBSTITUTED_CARBON	semapv:ManualMappingCuration	aromatic O-dealkylation	O-Aryl dealkylation not adjacent to substituted carbon	aromatic O-dealkylation
+xmet:4000054	skos:exactMatch	bt:O_DEALKYLATION_OF_DIALKYLETHER	semapv:ManualMappingCuration	aliphatic O-dealkylation	O-Dealkylation of dialkylether	identity
+xmet:4000070	skos:exactMatch	bt:DEHYDROGENATION_OF_PRIMARY_ALCOHOL	semapv:ManualMappingCuration	primary alcohol oxidation	Dehydrogenation of primary alcohol	subset of dehydrogenation → existing child (not xmet:4000006)
+xmet:4000070	skos:closeMatch	bt:LONG_CHAIN_ALCOHOL_OXIDATION	semapv:ManualMappingCuration	primary alcohol oxidation	Oxidation of long-chain alcohol	long-chain primary alcohol oxidation
+xmet:4000070	skos:exactMatch	bt:OXIDATION_OF_PRIM_ALCOHOL_TO_ALDEHYDE	semapv:ManualMappingCuration	primary alcohol oxidation	Oxidation of primary alcohol to aldehyde	identity
+xmet:4000071	skos:exactMatch	bt:DEHYDROGENATION_OF_SECONDARY_ALCOHOL	semapv:ManualMappingCuration	secondary alcohol oxidation	Dehydrogenation of secondary alcohol	subset of dehydrogenation → existing child (not xmet:4000006)
+xmet:4000071	skos:exactMatch	bt:OXIDATION_OF_SEC_ALCOHOL_TO_KETONE	semapv:ManualMappingCuration	secondary alcohol oxidation	Oxidation of secondary alcohol to ketone	identity
+xmet:4000072	skos:exactMatch	bt:ALDEHYDE_OXIDATION	semapv:ManualMappingCuration	aldehyde oxidation	Aldehyde oxidation	identity
+xmet:4000073	skos:closeMatch	bt:TERMINAL_DESATURATION	semapv:ManualMappingCuration	alkene formation	Terminal desaturation	terminal desaturation ≈ alkene formation
+xmet:4000077	skos:exactMatch	bt:EPOXIDE_HYDROLYSIS	semapv:ManualMappingCuration	epoxide opening	Hydrolysis of epoxide	identity
+xmet:4000078	skos:exactMatch	bt:ACYL_HYDROLYSIS_OF_4_NITROPHENYL_ESTER	semapv:ManualMappingCuration	ester hydrolysis	Acyl hydrolysis of 4-nitrophenyl ester	model nitrophenyl ester; still ester hydrolysis
+xmet:4000078	skos:exactMatch	bt:HYDROLYSIS_OF_CARBOXYLIC_ACID_ESTER	semapv:ManualMappingCuration	ester hydrolysis	Hydrolysis of carboxylic acid ester	subset of hydrolysis → existing ester-hydrolysis child
+xmet:4000078	skos:exactMatch	bt:PHENYLACETATE_ESTER_HYDROLYSIS	semapv:ManualMappingCuration	ester hydrolysis	Ester hydrolysis of phenylacetate	identity
+xmet:4000079	skos:closeMatch	bt:HYDROLYSIS_OF_CYCLIC_TERTIARY_CARBOXAMIDE_PATTERN_1	semapv:ManualMappingCuration	amide hydrolysis	Hydrolysis of cyclic tertiary carboxamide	cyclic tertiary carboxamide hydrolysis
+xmet:4000080	skos:exactMatch	bt:LACTONE_HYDROLYSIS	semapv:ManualMappingCuration	lactone hydrolysis	Lactone hydrolysis	identity
+xmet:4000082	skos:exactMatch	bt:HYDROLYSIS_OF_O_ARYL_CARBAMATE	semapv:ManualMappingCuration	carbamate hydrolysis	Hydrolysis of O-arylcarbamate	identity
+xmet:4000084	skos:closeMatch	bt:D_GLYCOSIDE_HYDROLYSIS	semapv:ManualMappingCuration	ether cleavage	D-Glycoside hydrolysis	glycoside O-cleavage; nearest leaf
+xmet:4000084	skos:closeMatch	bt:GLYCOSIDE_HYDROLYSIS	semapv:ManualMappingCuration	ether cleavage	Glycoside hydrolysis	glycoside O-cleavage; nearest leaf
+xmet:4000088	skos:closeMatch	bt:ALIPHATIC_NITRILE_DEGRADATION_TO_CARBOXYLIC_ACID	semapv:ManualMappingCuration	nitrile hydrolysis	Degradation of aliphatic nitrile to carboxylic acid	full nitrile→acid hydrolysis
+xmet:4000088	skos:closeMatch	bt:NITRILE_DEGRADATION_TO_AMIDE	semapv:ManualMappingCuration	nitrile hydrolysis	Degradation of nitrile to carboxamide	nitrile→amide is partial nitrile hydrolysis
+xmet:4000088	skos:closeMatch	bt:NITRILE_DEGRADATION_TO_CARBOXYLIC_ACID	semapv:ManualMappingCuration	nitrile hydrolysis	Degradation of nitrile to carboxylic acid	full nitrile→acid hydrolysis
+xmet:4000091	skos:closeMatch	bt:REDUCTION_OF_ALPHA_BETA_CARBON_DOUBLE_BOND_ADJACENT_TO_EWG	semapv:ManualMappingCuration	alkene hydrogenation	Reduction of alpha,beta-unsaturated carbon-carbon double bond adjacent to electron withdrawing group	activated alkene hydrogenation
+xmet:4000091	skos:closeMatch	bt:REDUCTION_OF_ALPHA_BETA_UNSATURATED_COMPOUNDS	semapv:ManualMappingCuration	alkene hydrogenation	Reduction of alpha,beta-unsaturated compound	α,β-unsaturated C=C reduction ≈ alkene hydrogenation
+xmet:4000097	skos:exactMatch	bt:REDUCTION_OF_AZOBENZENE	semapv:ManualMappingCuration	azo reduction	Reduction of azobenzene	identity
+xmet:4000102	skos:exactMatch	bt:REDUCTION_OF_KETONE_TO_ALCOHOL	semapv:ManualMappingCuration	ketone reduction	Reduction of ketone to alcohol	identity
+xmet:4000103	skos:exactMatch	bt:ALDEHYDE_REDUCTION	semapv:ManualMappingCuration	aldehyde reduction	Reduction of aldehyde	identity
+xmet:4000103	skos:exactMatch	bt:REDUCTION_OF_ALDEHYDES_TO_ALCOHOL	semapv:ManualMappingCuration	aldehyde reduction	Reduction of aldehyde to alcohol	identity
+xmet:4000104	skos:closeMatch	bt:QUINONE_REDUCTION	semapv:ManualMappingCuration	quinone-like reduction	Reduction of quinone	close identity to quinone-like reduction
+xmet:4000105	skos:closeMatch	bt:CARBONYL_REDUCTION	semapv:ManualMappingCuration	carbonyl reduction	Reduction of carbonyl	umbrella carbonyl reduction
+xmet:4000107	skos:exactMatch	bt:SULFOXIDE_REDUCTION_TO_THIOETHER	semapv:ManualMappingCuration	sulfoxide reduction	Reduction of sulfoxide to thioether	subset of sulfur reduction → existing child
+xmet:4000121	skos:closeMatch	bt:BENZOIC_ACID_DECARBOXYLATION	semapv:ManualMappingCuration	decarboxylation	Decarboxylation of benzoic acid	identity-ish
+xmet:4000121	skos:closeMatch	bt:HYDROXYCINNAMIC_ACID_DECARBOXYLATION	semapv:ManualMappingCuration	decarboxylation	Decarboxylation of hydroxycinnamic acid	identity-ish
+xmet:4000121	skos:closeMatch	bt:PHENOLIC_ACID_DECARBOXYLATION	semapv:ManualMappingCuration	decarboxylation	Decarboxylation of phenolic acid	identity-ish
+xmet:4000135	skos:exactMatch	bt:DESULFURATION_OF_ORGANOPHOSPHORODITHIOATES	semapv:ManualMappingCuration	desulfuration	Desulfuration of organophosphorodithioate	identity
+xmet:4000135	skos:exactMatch	bt:DESULFURATION_OF_ORGANOPHOSPHOROTHIOATES	semapv:ManualMappingCuration	desulfuration	Desulfuration of organophosphothioate	identity
+xmet:4000137	skos:exactMatch	bt:BETA_D_GLUCORONOSIDE_GLUCURONOSOHYDROLYSIS	semapv:ManualMappingCuration	deglucuronidation	Glucuronide hydrolysis from beta-D-glucuronoside	identity
+xmet:4000137	skos:exactMatch	bt:BETA_GLUCORONOSIDE_GLUCURONOSOHYDROLYSIS	semapv:ManualMappingCuration	deglucuronidation	Glucuronide hydrolysis from beta-glucuronoside	identity
+xmet:4000138	skos:exactMatch	bt:ARYLSULFATE_SULFOHYDROLYSIS	semapv:ManualMappingCuration	desulfation	Sulfohydrolysis of arylsulfate	identity
+xmet:4000138	skos:closeMatch	bt:STEROID_3_SULFATE_HYDROLYSIS	semapv:ManualMappingCuration	desulfation	Steroid 3-sulfate hydrolysis	steroid sulfate hydrolysis ≈ desulfation (substrate endogenous-leaning but reaction class in scope)
+xmet:4000143	skos:exactMatch	bt:DEARYLATION_OF_ORGANOPHOSPHOSULFUR_COMPOUNDS	semapv:ManualMappingCuration	dearylation	Dearylation of organphosphosulfur compound	identity
+xmet:4000144	skos:exactMatch	bt:ALPHA_HYDROXYLATION_OF_CARBONYL_GROUP	semapv:ManualMappingCuration	alpha-hydroxylation	alpha-Hydroxylation of carbonyl group	identity
+xmet:4000150	skos:exactMatch	bt:AROMATIC_OH_GLUCURONIDATION	semapv:ManualMappingCuration	phenolic glucuronidation	Aromatic OH-glucuronidation	identity
+xmet:4000150	skos:closeMatch	bt:_3_OH_GLUCURONIDATION_OF_PHENOLIC_COMPOUND	semapv:ManualMappingCuration	phenolic glucuronidation	3-OH-Glucuronidation of a phenolic compound	phenolic glucuronidation; 3-OH is site/regio
+xmet:4000151	skos:exactMatch	bt:ALKYL_OH_GLUCURONIDATION	semapv:ManualMappingCuration	alcoholic glucuronidation	Alkyl-OH-glucuronidation	identity
+xmet:4000152	skos:exactMatch	bt:ALIPHATIC_ACYL_O_GLUCURONIDATION	semapv:ManualMappingCuration	acyl glucuronidation	O-Glucuronidation of aliphatic acid	identity
+xmet:4000152	skos:exactMatch	bt:AROMATIC_ACYL_O_GLUCURONIDATION	semapv:ManualMappingCuration	acyl glucuronidation	O-Glucuronidation of aromatic acid	identity
+xmet:4000153	skos:closeMatch	bt:GLUCURONIDATION_OF_PRIMARY_AROMATIC_AMINE	semapv:ManualMappingCuration	N-glucuronidation	Glucuronidation of primary aromatic amine	arylamine N-glucuronidation
+xmet:4000155	skos:exactMatch	bt:THIOL_GLUCURONIDATION	semapv:ManualMappingCuration	S-glucuronidation	Thiol glucuronidation	identity
+xmet:4000155	skos:closeMatch	bt:THIOPHENOL_GLUCURONIDATION	semapv:ManualMappingCuration	S-glucuronidation	Thiophenol glucuronidation	thiophenol S-glucuronidation
+xmet:4000156	skos:exactMatch	bt:_13_DICARBONYL_C_GLUCURONIDATION	semapv:ManualMappingCuration	C-glucuronidation	1,3-Dicarbonyl C-glucuronidation	classic C-glucuronidation substrate class
+xmet:4000160	skos:closeMatch	bt:_3_O_SULFATION_OF_PHENOLIC_COMPOUND	semapv:ManualMappingCuration	phenolic sulfation	3-OH-Sulfonation of phenolic compound	phenolic sulfation; 3-OH is site/regio
+xmet:4000160	skos:closeMatch	bt:_4_O_SULFATION_OF_PHENOLIC_COMPOUND	semapv:ManualMappingCuration	phenolic sulfation	4-OH-Sulfonation of phenolic compound	phenolic sulfation; 4-OH site
+xmet:4000161	skos:exactMatch	bt:SULFATION_OF_PRIMARY_ALCOHOL	semapv:ManualMappingCuration	alcoholic sulfation	Sulfation of primary alcohol	identity with alcoholic sulfation child
+xmet:4000161	skos:closeMatch	bt:SULFATION_OF_SECONDARY_ALCOHOL	semapv:ManualMappingCuration	alcoholic sulfation	Sulfation of secondary alcohol	alcoholic sulfation child
+xmet:4000166	skos:closeMatch	bt:ARYLACETAMDE_DEACETYLATION	semapv:ManualMappingCuration	deacetylation	Deacetylation of arylacetamide	arylacetamide deacetylation
+xmet:4000169	skos:closeMatch	bt:GSH_CONJUGATION_OF_ARENE_EPOXIDE	semapv:ManualMappingCuration	epoxide glutathionation	GSH-conjugation of arene epoxide	arene-epoxide GSH
+xmet:4000169	skos:exactMatch	bt:GSH_CONJUGATION_OF_EPOXIDE	semapv:ManualMappingCuration	epoxide glutathionation	GSH-conjugation of epoxide	identity
+xmet:4000170	skos:closeMatch	bt:GSH_CONJUGATION_OF_ARYL_HALIDE	semapv:ManualMappingCuration	halide displacement glutathionation	GSH-conjugation of aryl halide	subset of glutathionation → existing halide-displacement child
+xmet:4000171	skos:exactMatch	bt:GSH_CONJUGATION_OF_ISOCYANATE	semapv:ManualMappingCuration	isocyanate glutathionation	GSH-conjugation of isocyanate	identity
+xmet:4000173	skos:closeMatch	bt:GSH_CONJUGATION_OF_QUINONE	semapv:ManualMappingCuration	quinone-like glutathionation	GSH-conjugation of quinone	subset of glutathionation → existing quinone-like child
+xmet:4000178	skos:closeMatch	bt:THIOETHER_S_METHYLATION	semapv:ManualMappingCuration	S-methylation	Thioether S-methylation	thioether S-methyl ≈ S-methylation
+xmet:4000178	skos:exactMatch	bt:THIOL_S_METHYLATION	semapv:ManualMappingCuration	S-methylation	Thiol S-methylation	identity
+xmet:4000178	skos:closeMatch	bt:THIOPURINE_S_METHYLATION	semapv:ManualMappingCuration	S-methylation	S-Methylation of thiopurine	thiopurine S-methylation
+xmet:4000187	skos:exactMatch	bt:KETO_ENOL_TAUTOMERIZATION	semapv:ManualMappingCuration	keto–enol tautomerization	Keto-enol tautomerization	identity
+xmet:4000200	skos:closeMatch	bt:METHYLENEDIOXY_RING_OPENING	semapv:ManualMappingCuration	ring opening	Methylenedioxy ring opening	methylenedioxy cleavage ≈ ring opening
+xmet:4000287	skos:exactMatch	bt:ARENE_EPOXIDATION	semapv:ManualMappingCuration	aromatic epoxidation	Epoxidation of arene	identity with aromatic-epoxidation child
+xmet:4000332	skos:closeMatch	bt:GSH_CONJUGATION_OF_SULFHYDRYL	semapv:ManualMappingCuration	thiol glutathionation	GSH-conjugation of sulfhydryl	thiol/disulfide GSH path

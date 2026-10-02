@@ -50,6 +50,50 @@
   definitions. Pages deploys from `main` only when the full test suite passes —
   currently blocked by the pre-existing `test_redesign_v1` Forest SSSOM failures.
 
+## 2026-10-01
+
+- Split BioTransformer SSSOM: primary
+  `xmet-biotransformer-common.sssom.tsv` (~95 `bt:<STEM>` common_name matches);
+  secondary `xmet-biotransformer.sssom.tsv` (~33 `bt.class` / `bt.rtype`). Tree
+  printer and inventory load both (common first). Curation priority is
+  common_name identity/child matches going forward.
+
+## 2026-10-01
+
+- MetX short `reaction_type` labels (often no BTMR) are a third, higher-yield
+  grain vs `reactions.csv` `common_name` stems: they are literature **reaction
+  classes** that identity-match XMET parents (e.g. Aromatic Hydroxylation
+  n≈122, O-glucuronidation n=262, Aliphatic Hydroxylation n≈216). Inventory
+  now emits `kind=reaction_class` / `bt.rtype:*`; SSSOM gained ~30 class-level
+  exact/close matches. Fine `bt:*` stems stay for subset→child curation;
+  `commonName` still bundles `_PATTERNn` SMARTS only.
+
+
+## 2026-10-01
+
+- BioTransformer manual curation progress: SSSOM ~97 rows, ~74 proposed
+  children, ~260 excluded (endogenous lipid/sterol/nucleotide + standardization),
+  ~128 unassigned (site/scaffold / chemistry-check). Opaque `EAWAG_RULE_*`
+  EnviPath ids moved to their own bucket `biotransformer-eawag.tsv` (~300) and
+  are out of active curation. Inventory placement matches by label or any
+  pattern stem. `make ontology-tree-biotransformer` shows BT SSSOM on the tree.
+
+
+## 2026-10-01
+
+- Started BioTransformer ↔ XMET curation (manual, not auto-match). Seed SSSOM
+  `data/mappings/xmet-biotransformer.sssom.tsv` (15 rows): classes Phase I/II;
+  identity/child homes for allylic hydroxylation, alkene/arene epoxidation,
+  primary/secondary alcohol dehydrogenation → existing alcohol-oxidation
+  children (not bare dehydrogenation), ester/lactone hydrolysis, aldehyde
+  oxidation, O-dealkylation, sulfoxide/quinone reduction, aryl-halide and
+  quinone GSH. Subset→child rule: propose missing leaves in
+  `biotransformer-proposed-terms.tsv`; endogenous/standardization in
+  `biotransformer-excluded.tsv`; open questions in
+  `biotransformer-unassigned.tsv`. Inventory dump via
+  `tools/inventory_biotransformer.py`. `make ontology-tree-biotransformer`
+  prints the XMET tree pruned to BT SSSOM subjects.
+
 ## 2026-09-29
 
 - Forest SSSOM sync from metabolite (`xf:` CURIEs). Dropped short-code catalog
