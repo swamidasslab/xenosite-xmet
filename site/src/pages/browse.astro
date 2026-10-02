@@ -1,0 +1,75 @@
+---
+import Base from '../layouts/Base.astro';
+import PageIntro from '../components/PageIntro.astro';
+import TreeNode from '../components/TreeNode.astro';
+import { vocab, ui } from '../lib/vocab';
+import { pageMeta } from '../lib/pages';
+const meta = await pageMeta('browse', ui.browse);
+---
+<Base {...meta} path="browse/">
+  <PageIntro id="browse" fallbackTitle={ui.browse} />
+  <div class="card p-4 sm:p-6">
+    <div class="mb-4 flex flex-wrap items-center gap-2">
+      <input id="tree-filter" type="search" placeholder={ui.filter_placeholder} autocomplete="off" class="min-w-0 flex-1 rounded-lg border border-base-200 bg-base-50 px-3 py-2 text-sm focus:border-accent-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent-200 dark:border-base-700 dark:bg-base-800 dark:focus:ring-accent-900" />
+      <button type="button" id="tree-expand" class="rounded-lg border border-base-200 px-3 py-2 text-sm hover:border-accent-300 dark:border-base-700">{ui.expand_all}</button>
+      <button type="button" id="tree-collapse" class="rounded-lg border border-base-200 px-3 py-2 text-sm hover:border-accent-300 dark:border-base-700">{ui.collapse_all}</button>
+      <span id="tree-count" class="w-full text-sm text-base-500 sm:ml-2 sm:w-auto" aria-live="polite"></span>
+    </div>
+    <ul class="tree text-[15px]">
+      {vocab.roots.map((r) => <TreeNode slug={r} open />)}
+    </ul>
+    <p id="tree-empty" class="hidden py-6 text-center text-base-500">{ui.no_matches}</p>
+  </div>
+</Base>
+
+<script>
+  const nodes = [...document.querySelectorAll<HTMLLIElement>('.tree [data-node]')];
+  const input = document.getElementById('tree-filter') as HTMLInputElement;
+  const count = document.getElementById('tree-count')!;
+  const empty = document.getElementById('tree-empty')!;
+  const details = () => document.querySelectorAll<HTMLDetailsElement>('.tree details');
+
+  function openTo(el: Element | null) {
+    for (let p = el?.parentElement; p; p = p.parentElement) if (p instanceof HTMLDetailsElement) p.open = true;
+  }
+
+  function filter() {
+    const q = input.value.trim().toLowerCase();
+    if (!q) {
+      nodes.forEach((n) => { n.hidden = false; n.classList.remove('hit'); });
+      count.textContent = ''; empty.classList.add('hidden');
+      return;
+    }
+    // Bottom-up: a node stays visible if it or any descendant matches.
+    let hits = 0;
+    for (let i = nodes.length - 1; i >= 0; i--) {
+      const n = nodes[i];
+      const self = (n.dataset.text || '').includes(q);
+      const kids = n.querySelector(':scope > details > ul')?.children;
+      const child = kids ? [...kids].some((k) => !(k as HTMLElement).hidden) : false;
+      n.hidden = !(self || child);
+      n.classList.toggle('hit', self);
+      if (self) hits++;
+      const d = n.querySelector(':scope > details') as HTMLDetailsElement | null;
+      if (d) d.open = child;
+    }
+    count.textContent = `${hits} match${hits === 1 ? '' : 'es'}`;
+    empty.classList.toggle('hidden', hits > 0);
+  }
+
+  input.addEventListener('input', filter);
+  document.getElementById('tree-expand')!.addEventListener('click', () => details().forEach((d) => (d.open = true)));
+  document.getElementById('tree-collapse')!.addEventListener('click', () => details().forEach((d, i) => (d.open = i === 0)));
+
+  function reveal() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    const el = id && document.getElementById(id);
+    if (!el) return;
+    openTo(el);
+    document.querySelectorAll('.tree .row.current').forEach((r) => r.classList.remove('current'));
+    el.querySelector('.row')?.classList.add('current');
+    el.scrollIntoView({ block: 'center' });
+  }
+  window.addEventListener('hashchange', reveal);
+  reveal();
+</script>

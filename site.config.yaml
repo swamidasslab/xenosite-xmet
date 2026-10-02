@@ -1,0 +1,119 @@
+# Vocabulary site configuration.
+#
+# Everything project-specific about the published site lives here (or in the
+# Markdown under `content/`). The generator (tools/sitegen/) and the site
+# renderer (site/) are generic SKOS-vocabulary tools and read only this file,
+# the vocabulary sources it names, and the content directory.
+#
+# Paths are relative to the repository root.
+
+site:
+  title: XMET
+  tagline: A shared vocabulary for xenobiotic metabolism
+  description: >-
+    XMET is a controlled vocabulary of xenobiotic metabolism reactions: stable,
+    defined names for how drugs and other foreign compounds are transformed in
+    biological systems.
+  url: https://swamidasslab.github.io/xenosite-xmet   # base path is derived from this
+  repo:
+    url: https://github.com/swamidasslab/xenosite-xmet
+    branch: main
+  logo: content/assets/logo.svg
+  theme:
+    accent: red        # any Tailwind palette name
+    neutral: gray
+  organization:
+    name: Swamidass Lab · Washington University in St. Louis
+    url: https://swami.wustl.edu
+  parent_site:
+    name: XenoSite
+    url: https://xenosite.org
+  license:
+    name: MIT
+    url: https://github.com/swamidasslab/xenosite-xmet/blob/main/LICENSE
+
+content:
+  pages: content/pages        # Markdown pages; frontmatter `nav_order` puts a page in the nav
+  checks: content/checks      # one Markdown file per quality check, named <check>.md
+
+vocabulary:
+  source: data/ontology/xmet.yaml
+  rdf: data/ontology/xmet.ttl          # per-term Turtle / JSON-LD are sliced from this graph
+  scheme_key: scheme
+  concepts_key: concepts
+  namespace: https://w3id.org/xenosite/xmet/
+  curie_prefix: xmet
+  scheme_iri: https://w3id.org/xenosite/xmet/scheme
+  fields:                               # role → key in each source concept
+    id: id
+    label: preferred_label
+    definition: definition
+    synonyms: synonyms
+    parents: parents
+  relations:                            # source key → how to show and publish it
+    related_to:      { label: related to,      predicate: "https://w3id.org/xenosite/xmet/relatedTo",       symmetric: true }
+    antonyms:        { label: antonym of,      predicate: "https://w3id.org/xenosite/xmet/antonymOf",       symmetric: true }
+    suggests:        { label: suggests,        predicate: "https://w3id.org/xenosite/xmet/suggests",        inverse_label: suggested by }
+    always_with:     { label: always with,     predicate: "https://w3id.org/xenosite/xmet/alwaysWith",      inverse_label: always implied by }
+    operationalizes: { label: operationalizes, predicate: "https://w3id.org/xenosite/xmet/operationalizes", inverse_label: operationalized by }
+    predicts:        { label: predicts,        predicate: "https://w3id.org/xenosite/xmet/predicts",        inverse_label: predicted by }
+    recognizes:      { label: recognizes,      predicate: "https://w3id.org/xenosite/xmet/recognizes",      inverse_label: recognized by }
+    enumerates:      { label: enumerates,      predicate: "https://w3id.org/xenosite/xmet/enumerates",      inverse_label: enumerated by }
+    is_part_of:      { label: part of,         predicate: "http://purl.org/dc/terms/isPartOf",              inverse: has_part }
+    has_part:        { label: has part,        predicate: "http://purl.org/dc/terms/hasPart",               inverse: is_part_of }
+    exact_match:     { label: exact match,     predicate: "http://www.w3.org/2004/02/skos/core#exactMatch", external: true }
+    close_match:     { label: close match,     predicate: "http://www.w3.org/2004/02/skos/core#closeMatch", external: true }
+  extra_fields: {}                      # future: key → { label, display: text|list|link|markdown|smiles }
+  sidecars: data/ontology/terms         # optional <slug>.md per term: frontmatter fields + prose
+  sidecar_template: content/term-template.md
+  external_prefixes:                    # expand CURIEs in external matches to links
+    skos: http://www.w3.org/2004/02/skos/core#
+    dcterms: http://purl.org/dc/terms/
+    dct: http://purl.org/dc/terms/
+    MESH: https://id.nlm.nih.gov/mesh/
+    CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+    MOP: http://purl.obolibrary.org/obo/MOP_
+    RXNO: http://purl.obolibrary.org/obo/RXNO_
+    GO: http://purl.obolibrary.org/obo/GO_
+  downloads:
+    - { label: Turtle (SKOS), path: data/ontology/xmet.ttl }
+    - { label: JSON-LD (SKOS), path: data/ontology/xmet.skos.jsonld }
+    - { label: YAML (authoring source), path: data/ontology/xmet.yaml }
+    - { label: Legacy IRI links (owl:sameAs), path: data/ontology/xmet-legacy-iris.ttl }
+
+mappings:
+  show: false          # loaded into the site data now; shown on term pages once validated
+  sources:
+    - { label: Metabolic Forest, path: data/mappings/xmet-forest.sssom.tsv }
+    - { label: Reaction tagger, path: data/mappings/xmet-tagger.sssom.tsv }
+    - { label: MOP, path: data/mappings/xmet-mop.sssom.tsv }
+    - { label: MeSH, path: data/mappings/xmet-mesh.sssom.tsv }
+    - { label: Pistoia UDM, path: data/mappings/xmet-udm.sssom.tsv }
+    - { label: Other ontologies, path: data/mappings/xmet-external.sssom.tsv }
+
+quality:
+  checks:
+    missing_definition:   { severity: error }
+    short_definition:     { severity: warn, min_chars: 40 }
+    missing_synonyms:     { severity: info }
+    duplicate_label:      { severity: error }
+    near_duplicate_label:
+      severity: info
+      threshold: 92
+      ignore_prefixes: [de, un, non, dis, in, re]   # stable/unstable, alkylation/dealkylation
+      ignore_tokens_up_to: 2                       # locants: N-/O-/S-dealkylation, ω-1
+    dangling_reference:   { severity: error }
+    unreciprocated_relation: { severity: info }
+    single_child:         { severity: info }
+    wide_node:            { severity: info, max_children: 15 }
+    deep_node:            { severity: info, max_depth: 8 }
+    hierarchy_cycle:      { severity: error }
+    definition_forbidden_terms:          # mirrors validate_redesign_v1 definition_product_ref
+      severity: error
+      patterns: ['(?i)\b(?:metabolic\s+)?forest\b|forest\.|forest-map|\brainbow\b|\bxenosite\b|xenosite[.\-]']
+
+resolver:
+  # w3id.org redirect rules, written to `output` for a PR to perma-id/w3id.org.
+  w3id_path: xenosite/xmet
+  slug_pattern: '[0-9]+'
+  output: w3id/xenosite/xmet/.htaccess

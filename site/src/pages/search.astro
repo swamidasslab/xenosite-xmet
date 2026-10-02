@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { ui, href } from '../lib/vocab';
+import { pageMeta } from '../lib/pages';
+const meta = await pageMeta('search', ui.search);
+---
+<Base {...meta} path="search/">
+  <PageIntro id="search" fallbackTitle={ui.search} />
+  <div class="card p-4 sm:p-6">
+    <label class="relative block">
+      <span class="sr-only">{ui.search}</span>
+      <svg class="pointer-events-none absolute left-3.5 top-1/2 h-5 w-5 -translate-y-1/2 text-base-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 3.47 9.77l3.63 3.63a.75.75 0 1 0 1.06-1.06l-3.63-3.63A5.5 5.5 0 0 0 9 3.5ZM5 9a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z" clip-rule="evenodd" /></svg>
+      <input id="q" type="search" autocomplete="off" autofocus placeholder={ui.search_placeholder} class="w-full rounded-xl border border-base-200 bg-base-50 py-3 pl-11 pr-4 text-lg focus:border-accent-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent-200 dark:border-base-700 dark:bg-base-800 dark:focus:ring-accent-900" />
+    </label>
+    <p id="status" class="mt-4 text-sm text-base-500" aria-live="polite"></p>
+    <ol id="results" class="mt-2 divide-y divide-base-100 dark:divide-base-800"></ol>
+  </div>
+</Base>
+
+<script is:inline define:vars={{ bundle: href('pagefind/pagefind.js'), noMatches: ui.no_matches }}>
+  (async () => {
+    const input = document.getElementById('q');
+    const list = document.getElementById('results');
+    const status = document.getElementById('status');
+    let pagefind;
+    try {
+      pagefind = await import(bundle);
+      await pagefind.options({ ranking: { pageLength: 0.25 } });
+    } catch {
+      status.textContent = 'Search index not available in development; run a full build.';
+      return;
+    }
+    const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+    let seq = 0;
+
+    async function run() {
+      const q = input.value.trim();
+      const mine = ++seq;
+      history.replaceState(null, '', q ? `?q=${encodeURIComponent(q)}` : location.pathname);
+      if (!q) { list.innerHTML = ''; status.textContent = ''; return; }
+      const search = await pagefind.debouncedSearch(q, {}, 150);
+      if (!search || mine !== seq) return;
+      const data = await Promise.all(search.results.slice(0, 30).map((r) => r.data()));
+      // Exact label or identifier matches first; otherwise keep Pagefind's ranking.
+      const norm = q.toLowerCase();
+      const exact = (d) => (d.meta.title || '').toLowerCase() === norm || (d.meta.id || '').toLowerCase() === norm;
+      data.sort((a, b) => Number(exact(b)) - Number(exact(a)));
+      status.textContent = search.results.length ? `${search.results.length} result${search.results.length === 1 ? '' : 's'}` : noMatches;
+      list.innerHTML = data.map((d) => `
+        <li class="py-3">
+          <a href="${d.url}" class="group block">
+            <span class="font-semibold group-hover:text-accent-700 dark:group-hover:text-accent-300">${esc(d.meta.title || d.url)}</span>
+            ${d.meta.id ? `<span class="ml-2 font-mono text-xs text-base-400">${esc(d.meta.id)}</span>` : ''}
+            <p class="mt-0.5 text-sm text-base-600 dark:text-base-400 [&_mark]:bg-accent-100 [&_mark]:text-inherit dark:[&_mark]:bg-accent-900/60">${d.excerpt}</p>
+          </a>
+        </li>`).join('');
+    }
+
+    input.addEventListener('input', run);
+    input.value = new URLSearchParams(location.search).get('q') || '';
+    if (input.value) run();
+  })();
+</script>

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Two palette slots, filled at runtime from the site config (see Base.astro):
+   accent → --accent-*, neutral → --base-*. */
+@theme {
+  --color-accent-50: var(--accent-50);
+  --color-accent-100: var(--accent-100);
+  --color-accent-200: var(--accent-200);
+  --color-accent-300: var(--accent-300);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent-700: var(--accent-700);
+  --color-accent-800: var(--accent-800);
+  --color-accent-900: var(--accent-900);
+  --color-accent-950: var(--accent-950);
+  --color-base-50: var(--base-50);
+  --color-base-100: var(--base-100);
+  --color-base-200: var(--base-200);
+  --color-base-300: var(--base-300);
+  --color-base-400: var(--base-400);
+  --color-base-500: var(--base-500);
+  --color-base-600: var(--base-600);
+  --color-base-700: var(--base-700);
+  --color-base-800: var(--base-800);
+  --color-base-900: var(--base-900);
+  --color-base-950: var(--base-950);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+@layer base {
+  html { @apply bg-base-50 text-base-900 antialiased dark:bg-base-950 dark:text-base-100; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-accent-500; }
+}
+
+@layer components {
+  .prose-site {
+    @apply prose prose-base max-w-none dark:prose-invert;
+    --tw-prose-links: var(--accent-700);
+    --tw-prose-invert-links: var(--accent-300);
+    --tw-prose-body: var(--base-700);
+    --tw-prose-invert-body: var(--base-300);
+    --tw-prose-headings: var(--base-900);
+    --tw-prose-bullets: var(--base-400);
+  }
+  .prose-site a { @apply font-medium no-underline decoration-accent-300 underline-offset-2 hover:underline; }
+  .prose-site a.term-link { @apply rounded bg-accent-50 px-1 py-0.5 text-accent-800 dark:bg-accent-950/50 dark:text-accent-200; }
+  .card { @apply rounded-2xl border border-base-200 bg-white shadow-sm dark:border-base-800 dark:bg-base-900; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full border border-base-200 bg-base-50 px-2.5 py-0.5 text-sm text-base-700 dark:border-base-700 dark:bg-base-800 dark:text-base-200; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-wider text-base-500 dark:text-base-400; }
+  .sev-error { @apply bg-red-500; }
+  .sev-warn { @apply bg-amber-400; }
+  .sev-info { @apply bg-sky-400; }
+  .sev-pill-error { @apply bg-red-50 text-red-800 ring-red-200 dark:bg-red-950/60 dark:text-red-200 dark:ring-red-900; }
+  .sev-pill-warn { @apply bg-amber-50 text-amber-900 ring-amber-200 dark:bg-amber-950/60 dark:text-amber-200 dark:ring-amber-900; }
+  .sev-pill-info { @apply bg-sky-50 text-sky-900 ring-sky-200 dark:bg-sky-950/60 dark:text-sky-200 dark:ring-sky-900; }
+}
+
+/* Tree browser */
+.tree details > summary { list-style: none; }
+.tree details > summary::-webkit-details-marker { display: none; }
+.tree details[open] > summary .chev { transform: rotate(90deg); }
+.tree .hit > .row .lbl { @apply bg-accent-100 dark:bg-accent-900/60; }
+.tree :target > .row, .tree .row.current { @apply bg-accent-50 ring-1 ring-accent-200 dark:bg-accent-950/50 dark:ring-accent-800; }
+
+/* Pagefind UI */
+.pagefind-ui {
+  --pagefind-ui-primary: var(--accent-600);
+  --pagefind-ui-text: var(--base-900);
+  --pagefind-ui-background: white;
+  --pagefind-ui-border: var(--base-200);
+  --pagefind-ui-tag: var(--base-100);
+  --pagefind-ui-font: var(--font-sans);
+}
+@media (prefers-color-scheme: dark) {
+  .pagefind-ui {
+    --pagefind-ui-primary: var(--accent-300);
+    --pagefind-ui-text: var(--base-100);
+    --pagefind-ui-background: var(--base-900);
+    --pagefind-ui-border: var(--base-700);
+    --pagefind-ui-tag: var(--base-800);
+  }
+}

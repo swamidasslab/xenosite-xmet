@@ -1,0 +1,18 @@
+---
+import { ui } from '../lib/vocab';
+interface Props { value: string }
+const { value } = Astro.props;
+---
+<button type="button" data-copy={value} data-done={ui.copied} class="copy-btn shrink-0 rounded-md border border-base-200 px-2 py-0.5 text-xs text-base-500 transition hover:border-accent-300 hover:text-accent-700 dark:border-base-700 dark:text-base-400">{ui.copy}</button>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.copy-btn').forEach((b) => {
+    if (b.dataset.bound) return;
+    b.dataset.bound = '1';
+    const label = b.textContent;
+    b.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(b.dataset.copy || '');
+      b.textContent = b.dataset.done || label;
+      setTimeout(() => (b.textContent = label), 1200);
+    });
+  });
+</script>

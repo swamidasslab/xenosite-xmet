@@ -1,5 +1,20 @@
 # Lab log
 
+## 2026-10-02
+
+- **IRIs moved to w3id slash form**: concepts are now
+  `https://w3id.org/xenosite/xmet/{id}` (scheme `…/xmet/scheme`) so each term can
+  resolve to its own page. Old hash IRIs → `owl:sameAs` in
+  `data/ontology/xmet-legacy-iris.ttl`. **Downstream**: xenosite-tagger / namer
+  must bump the `xmet:` prefix when updating the submodule.
+- **Website**: generic config-driven SKOS browser — `tools/sitegen/` (Python →
+  JSON contract, per-term TTL/JSON-LD, w3id `.htaccess`) + `site/` (Astro 7,
+  Tailwind 4, Pagefind). Project specifics only in `site.config.yaml` and
+  `content/`. Quality checks surfaced 16 duplicate-label collisions (e.g.
+  "conjugation" is both a phase II synonym and a concept label) and 29 short
+  definitions. Pages deploys from `main` only when the full test suite passes —
+  currently blocked by the pre-existing `test_redesign_v1` Forest SSSOM failures.
+
 ## 2026-09-29
 
 - Forest SSSOM sync from metabolite (`xf:` CURIEs). Dropped short-code catalog

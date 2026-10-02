@@ -1,0 +1,6 @@
+---
+import { ui } from '../lib/vocab';
+interface Props { severity: string }
+const { severity } = Astro.props;
+---
+<span class={`sev-pill-${severity} inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ring-1 ring-inset`}>{(ui as any)[`severity_${severity}`] ?? severity}</span>

@@ -19,6 +19,9 @@ help:
 	@echo "  make validate-redesign   Redesign v1 adherence (Forest/tagger SSSOM, spines, remap)"
 	@echo "  make rebuild-tagger-sssom  Refresh xmet-tagger.sssom.tsv from tagger SMARTS emits"
 	@echo "  make sync-tagger-emits     Rewrite sibling tagger emits from xmet-tagger.sssom"
+	@echo "  make site-data           Generate website data + w3id .htaccess from site.config.yaml"
+	@echo "  make site                Build the static website into site/dist"
+	@echo "  make site-serve          Run the website dev server"
 
 ontology-stats:
 	@$(PY) $(ROOT)/tools/ontology_stats.py
@@ -50,3 +53,15 @@ sync-tagger-emits:
 rebuild-tagger-sssom:
 	@$(PY) $(ROOT)/tools/rebuild_tagger_sssom.py
 
+# --- Vocabulary website (generic generator in tools/sitegen, Astro site in site/) ---
+
+.PHONY: site-data site site-serve
+
+site-data:
+	@$(PY) $(ROOT)/tools/sitegen/build.py --config $(ROOT)/site.config.yaml
+
+site: site-data
+	@cd $(ROOT)/site && npm ci --silent && npm run build
+
+site-serve: site-data
+	@cd $(ROOT)/site && npm install --silent && npm run dev

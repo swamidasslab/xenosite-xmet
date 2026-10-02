@@ -1,0 +1,21 @@
+---
+// Renders one extra concept field by its configured display type. New display types
+// (e.g. a client-side structure depiction for `smiles`) plug in here.
+interface Props { value: unknown; display?: string }
+const { value, display = 'text' } = Astro.props;
+const items = Array.isArray(value) ? value : [value];
+const isUrl = (v: unknown) => typeof v === 'string' && /^https?:\/\//.test(v);
+---
+{display === 'list' || Array.isArray(value) ? (
+  <ul class="list-disc space-y-1 pl-5">{items.map((v) => <li><Astro.self value={v} display={display === 'list' ? 'text' : display} /></li>)}</ul>
+) : display === 'link' || isUrl(value) ? (
+  <a class="break-all text-accent-700 hover:underline dark:text-accent-300" href={String(value)}>{String(value)}</a>
+) : display === 'smiles' ? (
+  <figure class="depiction rounded-lg border border-dashed border-base-300 p-3 dark:border-base-700" data-smiles={String(value)}>
+    <code class="break-all font-mono text-sm">{String(value)}</code>
+  </figure>
+) : typeof value === 'object' && value !== null ? (
+  <pre class="overflow-x-auto rounded-lg bg-base-50 p-3 text-xs dark:bg-base-800">{JSON.stringify(value, null, 2)}</pre>
+) : (
+  <span>{String(value)}</span>
+)}

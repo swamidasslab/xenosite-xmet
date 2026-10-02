@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import PageIntro from '../components/PageIntro.astro';
+import CopyButton from '../components/CopyButton.astro';
+import { vocab, ui, localName } from '../lib/vocab';
+import { pageMeta } from '../lib/pages';
+const meta = await pageMeta('schema', 'Relations');
+const used = (key: string) => Object.values(vocab.concepts).reduce((n, c) => n + c.relations.filter((r) => r.key === key && r.direction === 'out' && !r.implied).length, 0);
+---
+<Base {...meta} path="schema/">
+  <PageIntro id="schema" fallbackTitle="Relations" />
+  <dl class="card mb-8 grid grid-cols-1 gap-4 p-5 text-sm sm:grid-cols-2">
+    <div><dt class="eyebrow">{ui.namespace}</dt><dd class="mt-1 flex items-center gap-2"><code class="break-all font-mono">{vocab.namespace}</code><CopyButton value={vocab.namespace} /></dd></div>
+    <div><dt class="eyebrow">{ui.scheme}</dt><dd class="mt-1"><code class="break-all font-mono">{vocab.scheme.iri}</code>{vocab.scheme.label && <span class="text-base-500"> — {vocab.scheme.label}</span>}</dd></div>
+  </dl>
+  <div class="card overflow-x-auto p-2 sm:p-4">
+    <table class="w-full text-left text-sm">
+      <thead class="border-b border-base-200 text-base-500 dark:border-base-800">
+        <tr><th class="p-3 font-medium">{ui.relation}</th><th class="p-3 font-medium">{ui.predicate}</th><th class="p-3 font-medium">{ui.inverse}</th><th class="p-3 text-right font-medium">#</th></tr>
+      </thead>
+      <tbody class="divide-y divide-base-100 dark:divide-base-800">
+        <tr id="broader" class="scroll-mt-24 target:bg-accent-50 dark:target:bg-accent-950/40">
+          <td class="p-3 font-medium">{ui.hierarchy}</td><td class="p-3 font-mono text-xs">http://www.w3.org/2004/02/skos/core#broader</td><td class="p-3">narrower</td><td class="p-3 text-right tabular-nums">{Object.values(vocab.concepts).filter((c) => c.parents.length).length}</td>
+        </tr>
+        {vocab.relations.map((r) => (
+          <tr id={localName(r.predicate)} class="scroll-mt-24 target:bg-accent-50 dark:target:bg-accent-950/40">
+            <td class="p-3 font-medium">{r.label}</td>
+            <td class="p-3 font-mono text-xs break-all">{r.predicate}</td>
+            <td class="p-3 text-base-500">{r.symmetric ? r.label : r.inverse ? vocab.relations.find((x) => x.key === r.inverse)?.label : r.inverse_label ?? '—'}</td>
+            <td class="p-3 text-right tabular-nums">{used(r.key)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</Base>

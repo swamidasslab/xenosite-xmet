@@ -1,0 +1,30 @@
+---
+import { concept, termHref } from '../lib/vocab';
+import FlagDot from './FlagDot.astro';
+interface Props { slug: string; open?: boolean }
+const { slug, open = false } = Astro.props;
+const c = concept(slug);
+const text = [c.label, ...c.synonyms, c.curie].join(' | ').toLowerCase();
+const row = 'row flex items-center gap-2 rounded-md py-1 pr-2 hover:bg-base-100 dark:hover:bg-base-800/60';
+---
+<li id={slug} data-node data-text={text} class="scroll-mt-24">
+  {c.children.length ? (
+    <details open={open || undefined}>
+      <summary class={`${row} cursor-pointer`}>
+        <svg class="chev h-3.5 w-3.5 shrink-0 text-base-400 transition-transform" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.17 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02Z" clip-rule="evenodd" /></svg>
+        <a href={termHref(slug)} class="lbl rounded px-0.5 font-medium hover:text-accent-700 dark:hover:text-accent-300">{c.label}</a>
+        <span class="rounded-full bg-base-100 px-1.5 text-[11px] tabular-nums text-base-500 dark:bg-base-800 dark:text-base-400" title="concepts beneath">{c.descendants}</span>
+        <FlagDot flags={c.flags} />
+      </summary>
+      <ul class="ml-[7px] border-l border-base-200 pl-3 dark:border-base-800">
+        {c.children.map((k) => <Astro.self slug={k} />)}
+      </ul>
+    </details>
+  ) : (
+    <div class={row}>
+      <span class="h-3.5 w-3.5 shrink-0" aria-hidden="true"></span>
+      <a href={termHref(slug)} class="lbl rounded px-0.5 hover:text-accent-700 dark:hover:text-accent-300">{c.label}</a>
+      <FlagDot flags={c.flags} />
+    </div>
+  )}
+</li>

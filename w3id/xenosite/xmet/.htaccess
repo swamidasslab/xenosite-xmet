@@ -1,0 +1,28 @@
+# Redirects for https://w3id.org/xenosite/xmet/
+# Generated from site.config.yaml by tools/sitegen — regenerate instead of editing.
+# Target site: https://swamidasslab.github.io/xenosite-xmet/
+
+Options +FollowSymLinks
+RewriteEngine on
+
+# Explicit extension: /{id}.ttl, /{id}.jsonld
+RewriteRule ^([0-9]+)\.(ttl|jsonld)$ https://swamidasslab.github.io/xenosite-xmet/term/$1.$2 [R=303,L]
+
+# Content negotiation for a term IRI
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^([0-9]+)/?$ https://swamidasslab.github.io/xenosite-xmet/term/$1.ttl [R=303,L]
+RewriteCond %{HTTP_ACCEPT} application/ld\+json
+RewriteRule ^([0-9]+)/?$ https://swamidasslab.github.io/xenosite-xmet/term/$1.jsonld [R=303,L]
+
+# Term IRI → term page (default, browsers)
+RewriteRule ^([0-9]+)/?$ https://swamidasslab.github.io/xenosite-xmet/term/$1/ [R=303,L]
+
+# Namespace / scheme IRI → whole vocabulary
+RewriteCond %{HTTP_ACCEPT} text/turtle
+RewriteRule ^(scheme)?$ https://swamidasslab.github.io/xenosite-xmet/downloads/xmet.ttl [R=303,L]
+RewriteCond %{HTTP_ACCEPT} application/ld\+json
+RewriteRule ^(scheme)?$ https://swamidasslab.github.io/xenosite-xmet/downloads/xmet.skos.jsonld [R=303,L]
+RewriteRule ^(scheme)?$ https://swamidasslab.github.io/xenosite-xmet/ [R=303,L]
+
+# Other local names (relation properties) → vocabulary schema page
+RewriteRule ^([A-Za-z][A-Za-z0-9_-]*)$ https://swamidasslab.github.io/xenosite-xmet/schema/#$1 [R=303,NE,L]

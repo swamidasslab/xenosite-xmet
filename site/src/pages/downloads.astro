@@ -1,0 +1,28 @@
+---
+import Base from '../layouts/Base.astro';
+import PageIntro from '../components/PageIntro.astro';
+import { vocab, ui, href, absolute } from '../lib/vocab';
+import { pageMeta } from '../lib/pages';
+const meta = await pageMeta('downloads', ui.downloads);
+const size = (b: number) => (b > 1e6 ? `${(b / 1e6).toFixed(1)} MB` : `${Math.ceil(b / 1e3)} kB`);
+const example = Object.keys(vocab.concepts)[0];
+---
+<Base {...meta} path="downloads/">
+  <PageIntro id="downloads" fallbackTitle={ui.downloads} />
+  <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    {vocab.downloads.map((d) => (
+      <li><a href={href(`downloads/${d.file}`)} class="card group flex items-center justify-between gap-4 p-5 transition hover:border-accent-300">
+        <div><p class="font-semibold group-hover:text-accent-700 dark:group-hover:text-accent-300">{d.label}</p><p class="font-mono text-xs text-base-500">{d.file}</p></div>
+        <span class="text-sm tabular-nums text-base-500">{size(d.bytes)}</span>
+      </a></li>
+    ))}
+  </ul>
+  {vocab.term_rdf && example && (
+    <section class="card mt-8 p-5 text-sm">
+      <h2 class="eyebrow mb-3">{ui.per_term}</h2>
+      <pre class="overflow-x-auto rounded-lg bg-base-50 p-4 font-mono text-xs dark:bg-base-800">{`curl -L -H 'Accept: text/turtle' ${vocab.concepts[example].iri}
+${absolute(`term/${example}.ttl`)}
+${absolute(`term/${example}.jsonld`)}`}</pre>
+    </section>
+  )}
+</Base>

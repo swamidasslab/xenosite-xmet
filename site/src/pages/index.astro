@@ -1,0 +1,73 @@
+---
+import { getEntry, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { vocab, ui, href, concept, absolute } from '../lib/vocab';
+
+const entry = await getEntry('pages', 'index');
+const Content = entry ? (await render(entry)).Content : null;
+const site = vocab.site;
+const s = vocab.stats;
+const branches = vocab.roots.flatMap((r) => (vocab.roots.length === 1 ? concept(r).children : [r]));
+const tiles = [
+  [s.concepts, ui.concepts],
+  [s.synonyms, ui.synonyms_count],
+  [s.relations, ui.relations_count],
+  [s.flagged, ui.flagged],
+];
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTermSet',
+  '@id': vocab.scheme.iri,
+  name: vocab.scheme.label || site.title,
+  description: vocab.scheme.definition || site.description,
+  url: absolute(),
+  ...(site.license?.url ? { license: site.license.url } : {}),
+  ...(site.organization ? { publisher: { '@type': 'Organization', name: site.organization.name, url: site.organization.url } } : {}),
+};
+---
+<Base description={entry?.data.summary} jsonld={jsonld} index>
+  <section class="relative overflow-hidden rounded-3xl border border-base-200 bg-white px-6 py-12 shadow-sm sm:px-12 sm:py-16 dark:border-base-800 dark:bg-base-900">
+    {site.logo && <img src={href(site.logo)} alt="" aria-hidden="true" class="pointer-events-none absolute -right-16 -top-16 h-80 w-80 opacity-[0.12] sm:-right-10 sm:h-96 sm:w-96" />}
+    <div class="relative max-w-2xl">
+      <p class="eyebrow">{entry?.data.title ?? site.title}</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight text-balance sm:text-5xl">{entry?.data.headline ?? site.tagline}</h1>
+      {entry?.data.summary && <p class="mt-4 text-lg text-base-600 sm:text-xl dark:text-base-300">{entry.data.summary}</p>}
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href={href('browse/')} class="rounded-full bg-accent-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-accent-700">{ui.browse} →</a>
+        <a href={href('search/')} class="rounded-full border border-base-300 px-5 py-2.5 text-sm font-semibold transition hover:border-accent-400 hover:text-accent-700 dark:border-base-700 dark:hover:text-accent-300">{ui.search}</a>
+      </div>
+    </div>
+  </section>
+
+  <dl class="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
+    {tiles.map(([n, label]) => (
+      <div class="card px-5 py-4">
+        <dt class="text-sm text-base-500 dark:text-base-400">{label}</dt>
+        <dd class="mt-1 text-3xl font-semibold tabular-nums tracking-tight">{Number(n).toLocaleString('en-US')}</dd>
+      </div>
+    ))}
+  </dl>
+
+  <div class="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-5">
+    <div class="prose-site lg:col-span-3">{Content && <Content />}</div>
+    <aside class="lg:col-span-2">
+      <h2 class="eyebrow mb-3">{ui.branches}</h2>
+      <ul class="space-y-3">
+        {branches.map((slug) => {
+          const c = concept(slug);
+          return (
+            <li>
+              <a href={href(`term/${slug}/`)} class="card group block p-4 transition hover:border-accent-300 hover:shadow-md dark:hover:border-accent-800">
+                <div class="flex items-baseline justify-between gap-3">
+                  <span class="font-semibold group-hover:text-accent-700 dark:group-hover:text-accent-300">{c.label}</span>
+                  <span class="shrink-0 text-xs tabular-nums text-base-400">{c.descendants}</span>
+                </div>
+                <p class="mt-1 line-clamp-2 text-sm text-base-600 dark:text-base-400">{c.definition}</p>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </aside>
+  </div>
+</Base>

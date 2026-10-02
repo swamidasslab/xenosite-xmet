@@ -1,0 +1,8 @@
+---
+import { SEVERITIES, type Flag, ui } from '../lib/vocab';
+interface Props { flags: Flag[] }
+const { flags } = Astro.props;
+const worst = SEVERITIES.find((s) => flags.some((f) => f.severity === s));
+const title = flags.map((f) => `${(ui as any)[`severity_${f.severity}`] ?? f.severity}: ${f.check.replaceAll('_', ' ')}`).join('\n');
+---
+{worst && <span class={`sev-${worst} inline-block h-2 w-2 shrink-0 rounded-full`} title={title} aria-label={title}></span>}

@@ -1,0 +1,69 @@
+name: Site
+
+# Runs only on main. Deploys to GitHub Pages only when both the test suite and
+# the site build pass.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync
+      - run: uv run pytest
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: uv sync
+      - run: npm ci
+        working-directory: site
+      - name: Generate site data
+        run: uv run python tools/sitegen/build.py
+      - name: Check committed w3id redirects are current
+        run: git diff --exit-code -- w3id/
+      - name: Type-check site
+        run: npx astro check
+        working-directory: site
+      - name: Build site
+        run: npm run build
+        working-directory: site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: [test, build]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

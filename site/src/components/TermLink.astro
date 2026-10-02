@@ -1,0 +1,9 @@
+---
+import { concept, termHref } from '../lib/vocab';
+interface Props { slug: string; class?: string; showId?: boolean }
+const { slug, class: cls = '', showId = false } = Astro.props;
+const c = concept(slug);
+---
+{c ? (
+  <a href={termHref(slug)} title={c.definition} class:list={['text-base-900 decoration-accent-400 decoration-2 underline-offset-4 transition-colors hover:text-accent-700 hover:underline dark:text-base-100 dark:hover:text-accent-300', cls]}>{c.label}{showId && <span class="ml-1.5 font-mono text-xs text-base-400">{c.curie}</span>}</a>
+) : <span class="font-mono text-base-500">{slug}</span>}

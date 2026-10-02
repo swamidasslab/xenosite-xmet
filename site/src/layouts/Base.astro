@@ -1,0 +1,104 @@
+---
+import '../styles/global.css';
+import colors from 'tailwindcss/colors';
+import { getCollection } from 'astro:content';
+import { vocab, ui, href, absolute } from '../lib/vocab';
+
+interface Props {
+  title?: string;
+  description?: string;
+  path?: string;            // site-relative path of this page, e.g. 'term/123/'
+  jsonld?: object;
+  alternates?: { type: string; href: string }[];
+  index?: boolean;          // include in the search index
+  wide?: boolean;
+}
+const { title, description, path = '', jsonld, alternates = [], index = false, wide = false } = Astro.props;
+const site = vocab.site;
+const fullTitle = title && title !== site.title ? `${title} · ${site.title}` : `${site.title}${site.tagline ? ` — ${site.tagline}` : ''}`;
+const desc = description || site.description || site.tagline || '';
+
+const pal = (name: string | undefined, fallback: string) => (colors as any)[name || fallback] || (colors as any)[fallback];
+const steps = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
+const accent = pal(site.theme?.accent, 'red');
+const neutral = pal(site.theme?.neutral, 'gray');
+const themeVars = steps.map((s) => `--accent-${s}:${accent[s]};--base-${s}:${neutral[s]};`).join('');
+
+const pages = await getCollection('pages');
+const nav = pages.filter((p) => p.data.nav_order != null).sort((a, b) => a.data.nav_order! - b.data.nav_order!);
+const footerPages = pages.filter((p) => p.data.footer);
+const current = Astro.url.pathname;
+const isCurrent = (id: string) => current.startsWith(href(`${id}/`));
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={absolute(path)} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={absolute(path)} />
+    {site.logo && <link rel="icon" href={href(site.logo)} />}
+    <link rel="sitemap" href={href('sitemap-index.xml')} />
+    {alternates.map((a) => <link rel="alternate" type={a.type} href={a.href} />)}
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+    <style set:html={`:root{${themeVars}}`}></style>
+  </head>
+  <body class="flex min-h-screen flex-col font-sans">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">Skip to content</a>
+    <header class="sticky top-0 z-30 border-b border-base-200/80 bg-white/80 backdrop-blur dark:border-base-800 dark:bg-base-950/80">
+      <div class="mx-auto flex max-w-screen-xl items-center gap-4 px-4 py-3 sm:px-6">
+        <a href={href()} class="group flex shrink-0 items-center gap-2.5">
+          {site.logo && <img src={href(site.logo)} alt="" class="h-8 w-8 transition-transform group-hover:rotate-12" />}
+          <span class="text-xl font-bold tracking-tight">{site.title}</span>
+        </a>
+        <nav class="ml-2 hidden items-center gap-1 md:flex" aria-label="Main">
+          {nav.map((p) => (
+            <a href={href(`${p.id}/`)} class:list={['rounded-lg px-3 py-1.5 text-sm font-medium transition-colors', isCurrent(p.id) ? 'bg-base-100 text-base-900 dark:bg-base-800 dark:text-white' : 'text-base-600 hover:bg-base-100 hover:text-base-900 dark:text-base-300 dark:hover:bg-base-800 dark:hover:text-white']}>{p.data.title}</a>
+          ))}
+        </nav>
+        <form action={href('search/')} method="get" role="search" class="ml-auto hidden w-64 sm:block">
+          <label class="relative block">
+            <span class="sr-only">{ui.search}</span>
+            <svg class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-base-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 3.47 9.77l3.63 3.63a.75.75 0 1 0 1.06-1.06l-3.63-3.63A5.5 5.5 0 0 0 9 3.5ZM5 9a4 4 0 1 1 8 0 4 4 0 0 1-8 0Z" clip-rule="evenodd" /></svg>
+            <input name="q" type="search" placeholder={ui.search_placeholder} class="w-full rounded-full border border-base-200 bg-base-50 py-1.5 pl-9 pr-3 text-sm placeholder:text-base-400 focus:border-accent-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-accent-200 dark:border-base-700 dark:bg-base-900 dark:focus:ring-accent-900" />
+          </label>
+        </form>
+        <details class="relative ml-auto sm:ml-0 md:hidden">
+          <summary class="cursor-pointer list-none rounded-lg p-2 hover:bg-base-100 dark:hover:bg-base-800" aria-label="Menu">
+            <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75Zm0 5A.75.75 0 0 1 2.75 9h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 9.75Zm0 5a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" /></svg>
+          </summary>
+          <div class="card absolute right-0 mt-2 flex w-48 flex-col p-2">
+            {nav.map((p) => <a href={href(`${p.id}/`)} class="rounded-lg px-3 py-2 text-sm hover:bg-base-100 dark:hover:bg-base-800">{p.data.title}</a>)}
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main id="main" class:list={['mx-auto w-full flex-1 px-4 py-8 sm:px-6 sm:py-10', wide ? 'max-w-screen-2xl' : 'max-w-screen-xl']} data-pagefind-body={index ? '' : undefined}>
+      <slot />
+    </main>
+
+    <footer class="border-t border-base-200 bg-white dark:border-base-800 dark:bg-base-900">
+      <div class="mx-auto flex max-w-screen-xl flex-col gap-6 px-4 py-8 text-sm text-base-500 sm:flex-row sm:items-start sm:justify-between sm:px-6 dark:text-base-400">
+        <div class="space-y-1">
+          <p class="font-semibold text-base-700 dark:text-base-200">{site.title}{site.tagline && <span class="font-normal text-base-500 dark:text-base-400"> — {site.tagline}</span>}</p>
+          {site.organization && <p>{site.organization.url ? <a class="hover:text-accent-600" href={site.organization.url}>{site.organization.name}</a> : site.organization.name}</p>}
+          {site.parent_site && <p>Part of <a class="hover:text-accent-600" href={site.parent_site.url}>{site.parent_site.name}</a></p>}
+        </div>
+        <nav class="flex flex-wrap gap-x-5 gap-y-2" aria-label="Footer">
+          {[...nav, ...footerPages].map((p) => <a class="hover:text-accent-600" href={href(`${p.id}/`)}>{p.data.title}</a>)}
+          {site.repo?.url && <a class="hover:text-accent-600" href={site.repo.url}>GitHub</a>}
+        </nav>
+        <div class="space-y-1 sm:text-right">
+          {site.license && <p>License: {site.license.url ? <a class="hover:text-accent-600" href={site.license.url}>{site.license.name}</a> : site.license.name}</p>}
+          {vocab.revision && <p>{ui.built_from} {site.repo?.url ? <a class="font-mono hover:text-accent-600" href={`${site.repo.url}/commit/${vocab.revision}`}>{vocab.revision}</a> : <span class="font-mono">{vocab.revision}</span>} · {vocab.generated.slice(0, 10)}</p>}
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

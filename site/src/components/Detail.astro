@@ -1,0 +1,7 @@
+---
+// Text with [[slug]] concept references rendered as links.
+import TermLink from './TermLink.astro';
+interface Props { text: string }
+const parts = Astro.props.text.split(/\[\[([^\]]+)\]\]/);
+---
+{parts.map((p, i) => (i % 2 ? <TermLink slug={p} /> : p))}

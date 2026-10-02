@@ -76,7 +76,12 @@ xenosite-xmet/
 ├── data/derived/           # db_term_mapping + extract summaries
 ├── tools/                  # export, stats, extractors, harvest
 ├── workflows/db_term_mapping/
-└── src/xenosite/xmet/      # Python path helpers
+├── src/xenosite/xmet/      # Python path helpers
+├── site.config.yaml        # website: all project-specific settings
+├── content/                # website: all prose (Markdown pages, check explanations)
+├── tools/sitegen/          # website: generic data generator (YAML → JSON contract, RDF, .htaccess)
+├── site/                   # website: generic Astro + Tailwind renderer
+└── w3id/xenosite/xmet/     # generated .htaccess for perma-id/w3id.org
 ```
 
 ## Editing workflow
@@ -86,6 +91,39 @@ xenosite-xmet/
 3. Run competency / stats as needed.
 4. Commit and push this repo; bump the pin in `xenosite-tagger` if consumers
    should pick up the change.
+
+## Website
+
+A static browser for the vocabulary — tree, per-concept pages, search, and
+automated quality notes — is built from `xmet.yaml` and deployed to GitHub Pages
+at <https://swamidasslab.github.io/xenosite-xmet/>. Concept IRIs
+(`https://w3id.org/xenosite/xmet/{id}`) resolve to its pages through w3id.org.
+
+```bash
+make site-serve   # live preview at http://localhost:4321/xenosite-xmet/
+make site         # full build (incl. search index) into site/dist
+```
+
+The site code is generic: nothing in `site/` or `tools/sitegen/` names this
+project (a test enforces it). To change what the site says or shows:
+
+| To change… | Edit |
+| --- | --- |
+| Titles, URLs, theme colour, relations shown, quality thresholds, downloads | `site.config.yaml` |
+| Home, About, Contribute, and other page text | `content/pages/*.md` (frontmatter `nav_order` adds a page to the menu) |
+| Explanation of a quality check | `content/checks/<check>.md` |
+| A concept's label, definition, synonyms, links | `data/ontology/xmet.yaml` |
+| Longer notes or examples for one concept | `data/ontology/terms/<id>.md` (see the README there) |
+
+In Markdown, `[[4000009]]` links a concept by its current label,
+`{{stats.concepts}}` inserts a live count, and relative links (`browse/`) resolve
+against the site base.
+
+The **Site** workflow runs only on `main`: it runs the full test suite and builds
+the site, and deploys to Pages only if both pass. Regenerated
+`w3id/xenosite/xmet/.htaccess` must be committed (CI checks it is current) and
+submitted to [perma-id/w3id.org](https://github.com/perma-id/w3id.org) when it
+changes.
 
 ## License
 

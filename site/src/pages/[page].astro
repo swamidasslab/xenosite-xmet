@@ -1,0 +1,20 @@
+---
+// Any content page without a dedicated app route.
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { APP_PAGES } from '../lib/pages';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.filter((p) => !APP_PAGES.has(p.id)).map((entry) => ({ params: { page: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Base title={entry.data.title} description={entry.data.summary} path={`${entry.id}/`} index>
+  <article class="mx-auto max-w-3xl">
+    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">{entry.data.title}</h1>
+    {entry.data.summary && <p class="mt-3 text-lg text-base-600 dark:text-base-300">{entry.data.summary}</p>}
+    <div class="prose-site mt-8"><Content /></div>
+  </article>
+</Base>
