@@ -97,7 +97,7 @@ def test_ndealkylation_methyl_patterns_share_demethylation_home():
     rows = [
         r
         for r in v.load_sssom(v.FOREST_SSSOM)
-        if (r.get("object_id") or "").startswith("forest.pattern:NDealkylation/methyl_")
+        if (r.get("object_id") or "").startswith("xf:NDealkylation/methyl_")
     ]
     assert len(rows) == 3
     homes = {r["subject_id"] for r in rows}
@@ -113,7 +113,7 @@ def test_dealkylation_methyl_patterns_share_demethylation_home():
     rows = [
         r
         for r in v.load_sssom(v.FOREST_SSSOM)
-        if (r.get("object_id") or "").startswith("forest.pattern:Dealkylation/methyl_")
+        if (r.get("object_id") or "").startswith("xf:Dealkylation/methyl_")
     ]
     assert len(rows) == 3
     homes = {r["subject_id"] for r in rows}

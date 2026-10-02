@@ -9,8 +9,8 @@
 # always_with: pipe-separated XMET descriptor CURIEs disambiguating multi-pattern homes.
 subject_id	predicate_id	object_id	mapping_justification	subject_label	object_label	always_with
 xmet:4000001	skos:relatedMatch	xf:PhaseOne	semapv:ManualMappingCuration	phase I	PhaseOne	
-xmet:4000006	skos:relatedMatch	xf:PhaseOne/Dehydrogenation	semapv:ManualMappingCuration	dehydrogenation	Dehydrogenation	
-xmet:4000007	skos:relatedMatch	xf:PhaseOne/Hydrolysis	semapv:ManualMappingCuration	hydrolysis	Hydrolysis	
+xmet:4000006	skos:closeMatch	xf:PhaseOne/Dehydrogenation	semapv:ManualMappingCuration	dehydrogenation	Dehydrogenation	
+xmet:4000007	skos:closeMatch	xf:PhaseOne/Hydrolysis	semapv:ManualMappingCuration	hydrolysis	Hydrolysis	
 xmet:4000004	skos:relatedMatch	xf:PhaseOne/StableOxygenation	semapv:ManualMappingCuration	stable oxygenation	StableOxygenation	
 xmet:4000005	skos:relatedMatch	xf:PhaseOne/UnstableOxygenation	semapv:ManualMappingCuration	unstable oxygenation	UnstableOxygenation	
 xmet:4000012	skos:exactMatch	xf:PhaseOne/StableOxygenation/Hydroxylation	semapv:ManualMappingCuration	hydroxylation	Hydroxylation	
@@ -37,7 +37,7 @@ xmet:4000113	skos:exactMatch	xf:PhaseOne/Reduction/Dehydration	semapv:ManualMapp
 xmet:4000158	skos:exactMatch	xf:Sulfation	semapv:ManualMappingCuration	sulfation	Sulfation	
 xmet:4000163	skos:exactMatch	xf:Acetylation	semapv:ManualMappingCuration	acetylation	Acetylation	
 xmet:4000167	skos:exactMatch	xf:Glutathionation	semapv:ManualMappingCuration	glutathione conjugation	Glutathionation	
-xmet:4000267	skos:relatedMatch	xf:Reactivity	semapv:ManualMappingCuration	adduct formation	Reactivity	
+xmet:4000267	skos:closeMatch	xf:Reactivity	semapv:ManualMappingCuration	adduct formation	Reactivity	
 xmet:4000167	skos:exactMatch	xf:Reactivity/GSH	semapv:ManualMappingCuration	glutathione conjugation	GSH	
 xmet:4000268	skos:exactMatch	xf:Reactivity/Protein	semapv:ManualMappingCuration	protein adduct formation	Protein	
 xmet:4000269	skos:exactMatch	xf:Reactivity/DNA	semapv:ManualMappingCuration	DNA adduct formation	DNA	

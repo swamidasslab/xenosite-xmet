@@ -124,8 +124,30 @@ RULESET_REQUIRED_ANCESTOR: dict[str, str] = {
 }
 
 
+# Catalog segments that may prefix a rule in Forest path-form CURIEs
+# (``xf:PhaseOne/StableOxygenation/Hydroxylation/h`` → ``xf:Hydroxylation/h``).
+CATALOG_PATH_SEGMENTS: frozenset[str] = frozenset(
+    {"PhaseOne", "StableOxygenation", "UnstableOxygenation", "Dehydrogenation",
+     "Hydrolysis", "Reduction", "Conjugation"}
+)
+
+
+def strip_catalog_path(local: str) -> str:
+    """Drop leading catalog segments from a path-form local name.
+
+    A catalog segment is dropped only when the next segment is another catalog or
+    rule (capitalized), never when it is a pattern — so ``PhaseOne/Dehydrogenation``
+    → ``Dehydrogenation`` and ``PhaseOne/Dehydrogenation/Dehydrogenation`` →
+    ``Dehydrogenation``, while flat ``Rule/pattern`` forms are unchanged.
+    """
+    segs = local.split("/")
+    while len(segs) > 1 and segs[0] in CATALOG_PATH_SEGMENTS and segs[1][:1].isupper():
+        segs = segs[1:]
+    return "/".join(segs)
+
+
 def normalize_forest_object(obj: str) -> str:
-    """Canonical ``xf:`` CURIE from ``xf:`` or legacy ``forest.*`` forms.
+    """Canonical ``xf:`` CURIE from ``xf:`` (flat or catalog-path) or legacy ``forest.*`` forms.
 
     Short catalog codes (SO/UO/…) expand to long names. Patterns keep ``Rule/pat``.
     """
@@ -142,6 +164,7 @@ def normalize_forest_object(obj: str) -> str:
         local = raw[len("forest.ruleset:") :]
     else:
         return raw
+    local = strip_catalog_path(local)
     if "/" not in local and local in SHORT_TO_LONG:
         local = SHORT_TO_LONG[local]
     return f"xf:{local}"
