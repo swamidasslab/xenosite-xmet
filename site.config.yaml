@@ -81,6 +81,10 @@ vocabulary:
     - { label: YAML (authoring source), path: data/ontology/xmet.yaml }
     - { label: Legacy IRI links (owl:sameAs), path: data/ontology/xmet-legacy-iris.ttl }
 
+edits:
+  # Where the site's "Suggest an edit" form proposes patch files (see xmet-edit).
+  patches_dir: data/patches/pending
+
 mappings:
   show: false          # loaded into the site data now; shown on term pages once validated
   sources:

@@ -39,25 +39,25 @@ const jsonld = {
     </div>
   </section>
 
-  <dl class="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
+  <dl class="mt-8 grid grid-cols-2 gap-y-6 sm:grid-cols-4 sm:divide-x sm:divide-base-200 dark:sm:divide-base-800">
     {tiles.map(([n, label]) => (
-      <div class="card px-5 py-4">
+      <div class="flex flex-col-reverse sm:px-6 sm:first:pl-0">
         <dt class="text-sm text-base-500 dark:text-base-400">{label}</dt>
-        <dd class="mt-1 text-3xl font-semibold tabular-nums tracking-tight">{Number(n).toLocaleString('en-US')}</dd>
+        <dd class="text-3xl font-semibold tabular-nums tracking-tight">{Number(n).toLocaleString('en-US')}</dd>
       </div>
     ))}
   </dl>
 
-  <div class="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-5">
+  <div class="mt-12 grid grid-cols-1 gap-x-16 gap-y-10 border-t border-base-200 pt-10 lg:grid-cols-5 dark:border-base-800">
     <div class="prose-site lg:col-span-3">{Content && <Content />}</div>
     <aside class="lg:col-span-2">
       <h2 class="eyebrow mb-3">{ui.branches}</h2>
-      <ul class="space-y-3">
+      <ul class="divide-y divide-base-200 dark:divide-base-800">
         {branches.map((slug) => {
           const c = concept(slug);
           return (
             <li>
-              <a href={href(`term/${slug}/`)} class="card group block p-4 transition hover:border-accent-300 hover:shadow-md dark:hover:border-accent-800">
+              <a href={href(`term/${slug}/`)} class="group block py-3">
                 <div class="flex items-baseline justify-between gap-3">
                   <span class="font-semibold group-hover:text-accent-700 dark:group-hover:text-accent-300">{c.label}</span>
                   <span class="shrink-0 text-xs tabular-nums text-base-400">{c.descendants}</span>

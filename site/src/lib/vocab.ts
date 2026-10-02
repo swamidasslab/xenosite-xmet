@@ -36,6 +36,7 @@ export const vocab = data as unknown as {
   ui: Record<string, string>;
   paths: Record<string, string>;
   sidecar_template: string;
+  edits?: { patches_dir?: string };
   scheme: { iri: string; label: string; definition: string };
   namespace: string; curie_prefix: string; revision: string; generated: string;
   relations: RelationDef[];

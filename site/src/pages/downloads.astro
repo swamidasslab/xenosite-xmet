@@ -9,16 +9,16 @@ const example = Object.keys(vocab.concepts)[0];
 ---
 <Base {...meta} path="downloads/">
   <PageIntro id="downloads" fallbackTitle={ui.downloads} />
-  <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+  <ul class="divide-y divide-base-200 border-y border-base-200 dark:divide-base-800 dark:border-base-800">
     {vocab.downloads.map((d) => (
-      <li><a href={href(`downloads/${d.file}`)} class="card group flex items-center justify-between gap-4 p-5 transition hover:border-accent-300">
+      <li><a href={href(`downloads/${d.file}`)} class="group flex items-center justify-between gap-4 py-4">
         <div><p class="font-semibold group-hover:text-accent-700 dark:group-hover:text-accent-300">{d.label}</p><p class="font-mono text-xs text-base-500">{d.file}</p></div>
         <span class="text-sm tabular-nums text-base-500">{size(d.bytes)}</span>
       </a></li>
     ))}
   </ul>
   {vocab.term_rdf && example && (
-    <section class="card mt-8 p-5 text-sm">
+    <section class="mt-10 text-sm">
       <h2 class="eyebrow mb-3">{ui.per_term}</h2>
       <pre class="overflow-x-auto rounded-lg bg-base-50 p-4 font-mono text-xs dark:bg-base-800">{`curl -L -H 'Accept: text/turtle' ${vocab.concepts[example].iri}
 ${absolute(`term/${example}.ttl`)}

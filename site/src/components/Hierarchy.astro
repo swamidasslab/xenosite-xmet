@@ -1,0 +1,46 @@
+---
+// Where a concept sits: its chain of broader concepts, then two levels of narrower ones.
+import { concept, termHref, ui } from '../lib/vocab';
+import FlagDot from './FlagDot.astro';
+interface Props { slug: string; grandchildLimit?: number }
+const { slug, grandchildLimit = 8 } = Astro.props;
+const c = concept(slug);
+const chain = c.ancestors;
+const indent = (n: number) => `padding-left: ${n * 1.1}rem`;
+---
+<ol class="text-[15px]">
+  {chain.map((a, i) => (
+    <li style={indent(i)} class="relative py-0.5 text-base-500 dark:text-base-400">
+      {i > 0 && <span aria-hidden="true" class="mr-1 text-base-300 dark:text-base-600">└</span>}
+      <a href={termHref(a)} class="hover:text-accent-700 hover:underline dark:hover:text-accent-300">{concept(a).label}</a>
+    </li>
+  ))}
+  <li style={indent(chain.length)} class="py-0.5">
+    {chain.length > 0 && <span aria-hidden="true" class="mr-1 text-base-300 dark:text-base-600">└</span>}
+    <span class="rounded bg-accent-50 px-1.5 py-0.5 font-semibold text-accent-900 dark:bg-accent-950/60 dark:text-accent-100">{c.label}</span>
+  </li>
+</ol>
+{c.children.length > 0 && (
+  <ul class="mt-1 space-y-2.5" style={indent(chain.length + 1)}>
+    {c.children.map((k) => {
+      const ch = concept(k);
+      const gk = ch.children.slice(0, grandchildLimit);
+      return (
+        <li class="border-l-2 border-base-200 pl-3 dark:border-base-700">
+          <div class="flex flex-wrap items-baseline gap-x-2">
+            <a href={termHref(k)} class="font-medium hover:text-accent-700 hover:underline dark:hover:text-accent-300">{ch.label}</a>
+            <FlagDot flags={ch.flags} />
+            {ch.descendants > 0 && <span class="text-xs tabular-nums text-base-400">{ch.descendants}</span>}
+          </div>
+          {ch.definition && <p class="line-clamp-1 text-sm text-base-500 dark:text-base-400">{ch.definition}</p>}
+          {gk.length > 0 && (
+            <p class="mt-1 text-sm leading-relaxed">
+              {gk.map((g, i) => (<>{i > 0 && <span class="text-base-300 dark:text-base-600"> · </span>}<a href={termHref(g)} class="text-base-600 hover:text-accent-700 hover:underline dark:text-base-300 dark:hover:text-accent-300">{concept(g).label}</a></>))}
+              {ch.children.length > gk.length && <a href={termHref(k)} class="ml-1 text-base-400 hover:text-accent-700"> +{ch.children.length - gk.length} {ui.more}</a>}
+            </p>
+          )}
+        </li>
+      );
+    })}
+  </ul>
+)}

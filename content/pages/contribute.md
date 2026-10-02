@@ -6,17 +6,21 @@ summary: How to suggest, correct, or extend XMET concepts.
 
 XMET improves through review by the chemists who use it. There are three ways to help.
 
-## Report a problem
+## Suggest an edit
 
-Every concept page has an **Open an issue** link that starts a GitHub issue pre-filled with the concept's identifier. Use it for a wrong definition, a missing synonym, a misplaced concept, or a missing concept.
+Every concept page has a **Suggest an edit** form. Change the label, definition, synonyms, parent, or relations; add a narrower concept; or propose retiring the concept in favour of another. The form turns your changes into a small patch file and opens it on GitHub, which creates a pull request for you (a free GitHub account is needed).
 
-## Edit a definition or synonym
+Within a minute, an automated review comments on the pull request. It lists exactly what would change and compares the vocabulary's automated checks before and after: which problems your edit **fixes** and which it **introduces**. You can update the suggestion until the review is clean. A maintainer then applies it or explains why not.
 
-Labels, definitions, synonyms, and links live in a single authoring file, [`data/ontology/xmet.yaml`](https://github.com/swamidasslab/xenosite-xmet/blob/main/data/ontology/xmet.yaml). The **Edit source** link on each concept page opens that file at the right line on GitHub, where you can propose a change as a pull request.
+Several related changes — for example retiring a concept, adding its replacement, and moving its narrower concepts — belong in one suggestion, so they are reviewed together. See the [patch format](https://github.com/swamidasslab/xenosite-xmet/tree/main/data/patches) to write one by hand.
 
 ## Add notes or examples
 
-Longer notes about a concept — usage guidance, worked examples, references — go in an optional Markdown file, one per concept, under [`data/ontology/terms/`](https://github.com/swamidasslab/xenosite-xmet/tree/main/data/ontology/terms). The **Add notes** link on a concept page creates that file for you. Its text appears on the concept page once merged.
+Longer notes about a concept — usage guidance, worked examples, references — go in an optional Markdown file, one per concept, under [`data/ontology/terms/`](https://github.com/swamidasslab/xenosite-xmet/tree/main/data/ontology/terms). The **Add notes** link on a concept page creates that file for you.
+
+## Anything else
+
+For questions or feedback that don't fit a structured edit, use the free-form comment link at the bottom of the suggestion form.
 
 ## Rules of thumb
 

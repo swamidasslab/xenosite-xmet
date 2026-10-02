@@ -9,11 +9,11 @@ const used = (key: string) => Object.values(vocab.concepts).reduce((n, c) => n +
 ---
 <Base {...meta} path="schema/">
   <PageIntro id="schema" fallbackTitle="Relations" />
-  <dl class="card mb-8 grid grid-cols-1 gap-4 p-5 text-sm sm:grid-cols-2">
+  <dl class="mb-10 grid grid-cols-1 gap-4 text-sm sm:grid-cols-2">
     <div><dt class="eyebrow">{ui.namespace}</dt><dd class="mt-1 flex items-center gap-2"><code class="break-all font-mono">{vocab.namespace}</code><CopyButton value={vocab.namespace} /></dd></div>
     <div><dt class="eyebrow">{ui.scheme}</dt><dd class="mt-1"><code class="break-all font-mono">{vocab.scheme.iri}</code>{vocab.scheme.label && <span class="text-base-500"> — {vocab.scheme.label}</span>}</dd></div>
   </dl>
-  <div class="card overflow-x-auto p-2 sm:p-4">
+  <div class="overflow-x-auto">
     <table class="w-full text-left text-sm">
       <thead class="border-b border-base-200 text-base-500 dark:border-base-800">
         <tr><th class="p-3 font-medium">{ui.relation}</th><th class="p-3 font-medium">{ui.predicate}</th><th class="p-3 font-medium">{ui.inverse}</th><th class="p-3 text-right font-medium">#</th></tr>

@@ -1,0 +1,177 @@
+---
+// Structured edit form. Builds a patch (see the edits format in the vocabulary repo)
+// from the fields a contributor changes and opens it on GitHub as a proposed file,
+// where automated review runs. A free-form comment link sits quietly underneath.
+import { vocab, ui, href, concept, type Concept } from '../lib/vocab';
+interface Props { c: Concept; issueUrl?: string }
+const { c, issueUrl } = Astro.props;
+const { url: repo, branch = 'main' } = vocab.site.repo;
+const dir = vocab.edits?.patches_dir;
+const relDefs = vocab.relations.filter((r) => !r.external).map((r) => ({ key: r.key, label: r.label }));
+const data = {
+  curie: c.curie,
+  slug: c.slug,
+  label: c.label,
+  definition: c.definition,
+  synonyms: c.synonyms,
+  parent: c.parents[0] ? { curie: concept(c.parents[0]).curie, label: concept(c.parents[0]).label } : null,
+  relations: c.relations
+    .filter((r) => r.direction === 'out' && !r.implied && !r.external && r.target)
+    .map((r) => ({ key: r.key, curie: concept(r.target!).curie, label: concept(r.target!).label })),
+  relDefs,
+  newFile: repo && dir ? `${repo}/new/${branch}/${dir}` : null,
+  index: href('concepts.json'),
+};
+const input = 'w-full rounded-lg border border-base-200 bg-white px-3 py-2 text-sm focus:border-accent-400 focus:outline-none focus:ring-2 focus:ring-accent-200 dark:border-base-700 dark:bg-base-900 dark:focus:ring-accent-900';
+const label = 'mb-1 block text-sm font-medium text-base-600 dark:text-base-300';
+---
+{data.newFile && (
+  <details id="suggest" class="group scroll-mt-24 border-t border-base-200 pt-6 dark:border-base-800">
+    <summary class="flex cursor-pointer list-none items-center gap-2 text-lg font-semibold">
+      <svg class="h-4 w-4 text-base-400 transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 0 1 .02-1.06L11.17 10 7.23 6.29a.75.75 0 1 1 1.04-1.08l4.5 4.25a.75.75 0 0 1 0 1.08l-4.5 4.25a.75.75 0 0 1-1.06-.02Z" clip-rule="evenodd" /></svg>
+      {ui.suggest_edit}
+    </summary>
+    <form class="suggest mt-4 space-y-5" data-concept={JSON.stringify(data)} onsubmit="return false">
+      <p class="max-w-2xl text-sm text-base-500 dark:text-base-400">{ui.suggest_intro}</p>
+      <datalist id="concept-options"></datalist>
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+        <label class="block"><span class={label}>{ui.field_label}</span><input name="label" class={input} value={c.label} /></label>
+        <label class="block"><span class={label}>{ui.field_parent}</span><input name="parent" list="concept-options" class={input} value={data.parent ? `${data.parent.label} — ${data.parent.curie}` : ''} /></label>
+      </div>
+      <label class="block"><span class={label}>{ui.definition}</span><textarea name="definition" rows="3" class={input}>{c.definition}</textarea></label>
+      <label class="block"><span class={label}>{ui.field_synonyms}</span><textarea name="synonyms" rows="3" class={input}>{c.synonyms.join('\n')}</textarea></label>
+
+      <fieldset>
+        <legend class={label}>{ui.field_relations}</legend>
+        <ul class="space-y-1 text-sm">
+          {data.relations.map((r, i) => (
+            <li><label class="inline-flex items-center gap-2"><input type="checkbox" name="keep-rel" value={i} checked /> {relDefs.find((d) => d.key === r.key)?.label ?? r.key} <span class="font-medium">{r.label}</span></label></li>
+          ))}
+        </ul>
+        <div class="add-rels mt-2 space-y-2"></div>
+        <button type="button" class="add-rel mt-2 text-sm font-medium text-accent-700 hover:underline dark:text-accent-300">+ {ui.add_relation}</button>
+        <template class="rel-row">
+          <div class="flex flex-wrap gap-2">
+            <select name="rel-key" class={input.replace("w-full", "w-auto")}>{relDefs.map((d) => <option value={d.key}>{d.label}</option>)}</select>
+            <input name="rel-target" list="concept-options" class={input.replace("w-full", "min-w-0 flex-1")} placeholder={ui.search_placeholder} />
+          </div>
+        </template>
+      </fieldset>
+
+      <details class="text-sm">
+        <summary class="cursor-pointer font-medium text-base-600 dark:text-base-300">{ui.new_child}</summary>
+        <div class="mt-3 grid grid-cols-1 gap-3 md:grid-cols-2">
+          <input name="child-label" class={input} placeholder={ui.new_child_label} />
+          <input name="child-definition" class={input} placeholder={ui.new_child_definition} />
+        </div>
+      </details>
+
+      <details class="text-sm">
+        <summary class="cursor-pointer font-medium text-base-600 dark:text-base-300">{ui.retire}</summary>
+        <div class="mt-3 max-w-xl space-y-2">
+          <input name="replaced-by" list="concept-options" class={input} placeholder={ui.retire_replaced_by} />
+          <p class="text-base-500">{ui.retire_help}</p>
+        </div>
+      </details>
+
+      <label class="block"><span class={label}>{ui.rationale}</span><textarea name="rationale" rows="2" class={input}></textarea></label>
+
+      <div>
+        <p class={label}>{ui.your_suggestion}</p>
+        <pre class="preview max-h-72 overflow-auto rounded-lg bg-base-100 p-3 font-mono text-xs dark:bg-base-800">{ui.no_changes}</pre>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <button type="button" class="submit rounded-full bg-accent-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition enabled:hover:bg-accent-700 disabled:opacity-40" disabled>{ui.submit_suggestion} ↗</button>
+        <span class="text-xs text-base-500">{ui.submit_help}</span>
+      </div>
+    </form>
+    {issueUrl && <p class="mt-6 text-xs text-base-400"><a class="underline decoration-dotted hover:text-base-600" href={issueUrl}>{ui.free_form}</a></p>}
+  </details>
+)}
+
+<script>
+  type Rel = { key: string; curie: string; label: string };
+  type Data = {
+    curie: string; slug: string; label: string; definition: string; synonyms: string[];
+    parent: { curie: string; label: string } | null; relations: Rel[]; newFile: string; index: string;
+  };
+  const q = (s: string) => JSON.stringify(s);
+
+  function toYaml(id: string, rationale: string, changes: Record<string, unknown>[]) {
+    const lines = [`id: ${id}`, `rationale: ${q(rationale)}`, 'changes:'];
+    for (const ch of changes) {
+      Object.entries(ch).forEach(([k, v], i) => lines.push(`${i ? '    ' : '  - '}${k}: ${q(String(v))}`));
+    }
+    return lines.join('\n') + '\n';
+  }
+
+  for (const form of document.querySelectorAll<HTMLFormElement>('form.suggest')) {
+    const d: Data = JSON.parse(form.dataset.concept!);
+    const f = (n: string) => form.elements.namedItem(n) as HTMLInputElement;
+    const preview = form.querySelector('.preview')!;
+    const submit = form.querySelector<HTMLButtonElement>('.submit')!;
+    const list = form.querySelector<HTMLDataListElement>('datalist')!;
+    let byText = new Map<string, string>();
+    let yaml = '', id = '';
+
+    const loadIndex = async () => {
+      if (byText.size) return;
+      const rows: [string, string][] = await (await fetch(d.index)).json();
+      list.innerHTML = rows.map(([curie, label]) => `<option value="${label.replace(/"/g, '&quot;')} — ${curie}">`).join('');
+      byText = new Map(rows.flatMap(([curie, label]) => [[`${label} — ${curie}`, curie], [label.toLowerCase(), curie], [curie, curie]]));
+    };
+    const pick = (text: string) => {
+      const t = text.trim();
+      return byText.get(t) ?? byText.get(t.toLowerCase()) ?? (t.match(/([\w-]+:[\w.-]+)\s*$/)?.[1] || '');
+    };
+
+    function build() {
+      const changes: Record<string, unknown>[] = [];
+      const label = f('label').value.trim();
+      if (label && label !== d.label) changes.push({ op: 'set_label', concept: d.curie, expect: d.label, value: label });
+      const def = f('definition').value.trim();
+      if (def && def !== d.definition) changes.push({ op: 'set_definition', concept: d.curie, expect: d.definition, value: def });
+      const syns = f('synonyms').value.split('\n').map((s) => s.trim()).filter(Boolean);
+      for (const s of syns) if (!d.synonyms.includes(s)) changes.push({ op: 'add_synonym', concept: d.curie, value: s });
+      for (const s of d.synonyms) if (!syns.includes(s)) changes.push({ op: 'remove_synonym', concept: d.curie, value: s });
+      const parent = pick(f('parent').value);
+      if (parent && d.parent && parent !== d.parent.curie) changes.push({ op: 'move', concept: d.curie, from: d.parent.curie, to: parent });
+      const kept = new Set([...form.querySelectorAll<HTMLInputElement>('input[name="keep-rel"]:checked')].map((x) => Number(x.value)));
+      d.relations.forEach((r, i) => { if (!kept.has(i)) changes.push({ op: 'remove_relation', concept: d.curie, relation: r.key, target: r.curie }); });
+      form.querySelectorAll('.add-rels > div').forEach((row) => {
+        const key = (row.querySelector('[name="rel-key"]') as HTMLSelectElement).value;
+        const target = pick((row.querySelector('[name="rel-target"]') as HTMLInputElement).value);
+        if (target) changes.push({ op: 'add_relation', concept: d.curie, relation: key, target });
+      });
+      const cl = f('child-label').value.trim(), cd = f('child-definition').value.trim();
+      if (cl && cd) changes.push({ op: 'new_concept', ref: 'new:child', label: cl, definition: cd, parent: d.curie });
+      const repl = pick(f('replaced-by').value);
+      if (repl) changes.push({ op: 'retire', concept: d.curie, replaced_by: repl });
+
+      const rationale = f('rationale').value.trim();
+      id ||= `${new Date().toISOString().slice(0, 10)}-${d.slug}-${Math.random().toString(36).slice(2, 6)}`;
+      yaml = changes.length ? toYaml(id, rationale, changes) : '';
+      preview.textContent = yaml || preview.getAttribute('data-empty') || '';
+      submit.disabled = !changes.length || !rationale;
+    }
+
+    preview.setAttribute('data-empty', preview.textContent || '');
+    form.addEventListener('input', build);
+    form.addEventListener('change', build);
+    form.addEventListener('focusin', loadIndex, { once: true });
+    form.querySelector('.add-rel')!.addEventListener('click', () => {
+      const tpl = form.querySelector<HTMLTemplateElement>('template.rel-row')!;
+      form.querySelector('.add-rels')!.append(tpl.content.cloneNode(true));
+      loadIndex();
+    });
+    submit.addEventListener('click', () => {
+      if (!yaml) return;
+      const url = `${d.newFile}?filename=${encodeURIComponent(id + '.yaml')}&value=${encodeURIComponent(yaml)}`;
+      window.open(url, '_blank', 'noopener');
+    });
+    const details = form.closest('details');
+    const openOnHash = () => { if (details && location.hash === '#suggest') details.open = true; };
+    window.addEventListener('hashchange', openOnHash);
+    openOnHash();
+  }
+</script>

@@ -48,19 +48,19 @@ const links = repoLinks(c);
         </div>
       </section>
       {Body && (
-        <section class="card p-6">
+        <section class="border-t border-base-200 pt-6 dark:border-base-800">
           <h2 class="eyebrow mb-3">About this check</h2>
           <div class="prose-site prose-sm"><Body /></div>
         </section>
       )}
     </div>
-    <aside class="min-w-0 space-y-6 lg:col-span-2">
-      <section class="card p-5">
+    <aside class="min-w-0 space-y-6 lg:col-span-2 lg:border-l lg:border-base-200 lg:pl-8 dark:lg:border-base-800">
+      <section>
         <h2 class="eyebrow mb-3">Where in the tree</h2>
         <div class="overflow-x-auto text-sm"><PathTree focus={involved} /></div>
       </section>
       {links.source && (
-        <section class="card p-5">
+        <section class="border-t border-base-200 pt-5 dark:border-base-800">
           <h2 class="eyebrow mb-3">{ui.contribute}</h2>
           <ul class="space-y-2 text-sm">
             <li><a class="text-accent-700 hover:underline dark:text-accent-300" href={`${termHref(c.slug)}#suggest`}>{ui.suggest_edit} →</a></li>

@@ -23,9 +23,9 @@ const select = 'rounded-lg border border-base-200 bg-base-50 px-3 py-2 text-sm d
 <Base {...meta} path="quality/">
   <PageIntro id="quality" fallbackTitle="Quality" />
 
-  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+  <div class="grid grid-cols-1 gap-x-12 border-t border-base-200 md:grid-cols-2 dark:border-base-800">
     {checks.filter((k) => k.count).map((k) => (
-      <section id={k.check} class="card scroll-mt-24 p-5 target:ring-2 target:ring-accent-300">
+      <section id={k.check} class="scroll-mt-24 border-b border-base-200 py-5 target:bg-accent-50/60 dark:border-base-800 dark:target:bg-accent-950/30">
         <div class="flex items-start justify-between gap-3">
           <h2 class="font-semibold">{k.title}</h2>
           <div class="flex shrink-0 items-center gap-2">
@@ -45,7 +45,7 @@ const select = 'rounded-lg border border-base-200 bg-base-50 px-3 py-2 text-sm d
     </div>
   )}
 
-  <section class="card mt-8 p-4 sm:p-6" id="table">
+  <section class="mt-10" id="table">
     <div class="mb-4 flex flex-wrap gap-2">
       <select id="f-sev" class={select} aria-label={ui.severity}>
         <option value="">{ui.severity}: {ui.all}</option>

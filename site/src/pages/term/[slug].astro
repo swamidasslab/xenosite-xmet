@@ -2,11 +2,11 @@
 import { getEntry, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import TermLink from '../../components/TermLink.astro';
-import FlagDot from '../../components/FlagDot.astro';
 import SeverityPill from '../../components/SeverityPill.astro';
 import CopyButton from '../../components/CopyButton.astro';
 import FieldValue from '../../components/FieldValue.astro';
-import Detail from '../../components/Detail.astro';
+import Hierarchy from '../../components/Hierarchy.astro';
+import SuggestEdit from '../../components/SuggestEdit.astro';
 import { vocab, ui, href, absolute, termHref, issueHref, concept, relationLabel, repoLinks, localName, type Concept, type Relation } from '../../lib/vocab';
 
 export function getStaticPaths() {
@@ -57,23 +57,25 @@ const jsonld = {
   inDefinedTermSet: { '@type': 'DefinedTermSet', '@id': vocab.scheme.iri, name: vocab.scheme.label, url: absolute() },
   'skos:inScheme': { '@id': vocab.scheme.iri },
 };
-const sectionTitle = 'eyebrow mb-3';
+const h2 = 'eyebrow mb-4';
+const section = 'border-t border-base-200 pt-6 dark:border-base-800';
+const side = 'border-t border-base-200 pt-5 first:border-t-0 first:pt-0 dark:border-base-800';
 ---
 <Base title={c.label} description={c.definition} path={path} jsonld={jsonld} alternates={rdf} index>
-  <nav aria-label="Breadcrumb" class="mb-6 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-base-500 dark:text-base-400">
+  <nav aria-label="Breadcrumb" class="mb-8 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-sm text-base-500 dark:text-base-400">
     <a href={href('browse/')} class="hover:text-accent-700">{ui.browse}</a>
     {c.ancestors.map((a) => (<><span aria-hidden="true">/</span><a href={termHref(a)} class="hover:text-accent-700 dark:hover:text-accent-300">{concept(a).label}</a></>))}
   </nav>
 
-  <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-    <article class="min-w-0 space-y-6 lg:col-span-2">
-      <header class="card p-6 sm:p-8">
+  <div class="grid grid-cols-1 gap-x-16 gap-y-10 lg:grid-cols-3">
+    <article class="min-w-0 space-y-10 lg:col-span-2">
+      <header>
         <div class="flex flex-wrap items-center gap-2" data-pagefind-ignore>
           <span class="rounded-md bg-base-100 px-2 py-0.5 font-mono text-xs text-base-600 dark:bg-base-800 dark:text-base-300" data-pagefind-meta="id">{c.curie}</span>
           {parent && <span class="text-sm text-base-500">in <TermLink slug={parent.slug} /></span>}
         </div>
-        <h1 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl" data-pagefind-meta="title" data-pagefind-weight="10">{c.label}</h1>
-        {c.definition && <p class="mt-4 text-lg leading-relaxed text-base-700 dark:text-base-200">{c.definition}</p>}
+        <h1 class="mt-3 text-3xl font-bold tracking-tight text-balance sm:text-4xl" data-pagefind-meta="title" data-pagefind-weight="10">{c.label}</h1>
+        {c.definition && <p class="mt-4 max-w-3xl text-lg leading-relaxed text-base-700 dark:text-base-200">{c.definition}</p>}
         {c.synonyms.length > 0 && (
           <div class="mt-5">
             <h2 class="sr-only" data-pagefind-ignore>{ui.synonyms}</h2>
@@ -86,8 +88,8 @@ const sectionTitle = 'eyebrow mb-3';
       </header>
 
       {shownExtras.length > 0 && (
-        <section class="card p-6">
-          <h2 class={sectionTitle}>{ui.fields}</h2>
+        <section class={section}>
+          <h2 class={h2}>{ui.fields}</h2>
           <dl class="space-y-4">
             {shownExtras.map(([k, v]) => (
               <div><dt class="text-sm font-medium text-base-500">{declared[k].label ?? k}</dt><dd class="mt-1"><FieldValue value={v} display={declared[k].display} /></dd></div>
@@ -97,44 +99,29 @@ const sectionTitle = 'eyebrow mb-3';
       )}
 
       {Notes && (
-        <section class="card p-6">
-          <h2 class={sectionTitle}>{ui.notes}</h2>
+        <section class={section}>
+          <h2 class={h2}>{ui.notes}</h2>
           <div class="prose-site"><Notes /></div>
         </section>
       )}
 
-      {c.children.length > 0 && (
-        <section class="card p-6" data-pagefind-ignore>
-          <h2 class={sectionTitle}>{ui.children} <span class="ml-1 font-normal normal-case tracking-normal text-base-400">{c.children.length}</span></h2>
-          <ul class="divide-y divide-base-100 dark:divide-base-800">
-            {c.children.map((k) => {
-              const ch = concept(k);
-              return (
-                <li class="flex items-start gap-3 py-2.5">
-                  <div class="min-w-0 flex-1">
-                    <div class="flex items-center gap-2"><TermLink slug={k} class="font-medium" /><FlagDot flags={ch.flags} /></div>
-                    {ch.definition && <p class="mt-0.5 line-clamp-1 text-sm text-base-500 dark:text-base-400">{ch.definition}</p>}
-                  </div>
-                  {ch.descendants > 0 && <span class="shrink-0 rounded-full bg-base-100 px-2 text-xs tabular-nums text-base-500 dark:bg-base-800">{ch.descendants}</span>}
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      )}
+      <section class={section} data-pagefind-ignore>
+        <h2 class={h2}>{ui.hierarchy_section}</h2>
+        <Hierarchy slug={c.slug} />
+      </section>
 
       {groups.size > 0 && (
-        <section class="card p-6" data-pagefind-ignore>
-          <h2 class={sectionTitle}>{ui.relations}</h2>
-          <dl class="space-y-4">
+        <section class={section} data-pagefind-ignore>
+          <h2 class={h2}>{ui.relations}</h2>
+          <dl class="space-y-3">
             {[...groups].map(([label, rs]) => (
               <div class="grid grid-cols-1 gap-1 sm:grid-cols-[10rem_1fr] sm:gap-4">
                 <dt class="text-sm font-medium text-base-500"><a href={href(`schema/#${localName(vocab.relations.find((d) => d.key === rs[0].key)?.predicate)}`)} class="hover:text-accent-700">{label}</a></dt>
-                <dd class="flex flex-wrap gap-2">
+                <dd class="flex flex-wrap gap-x-4 gap-y-1">
                   {rs.map((r) => r.external ? (
-                    r.iri ? <a class="chip font-mono hover:border-accent-300" href={r.iri}>{r.curie}</a> : <span class="chip font-mono">{r.curie}</span>
+                    r.iri ? <a class="font-mono text-sm hover:text-accent-700 hover:underline" href={r.iri}>{r.curie}</a> : <span class="font-mono text-sm">{r.curie}</span>
                   ) : (
-                    <span class="chip transition hover:border-accent-300"><TermLink slug={r.target!} />{r.implied && <span class="text-xs text-base-400">· {ui.implied}</span>}</span>
+                    <span><TermLink slug={r.target!} />{r.implied && <span class="ml-1 text-xs text-base-400">({ui.implied})</span>}</span>
                   ))}
                 </dd>
               </div>
@@ -144,8 +131,8 @@ const sectionTitle = 'eyebrow mb-3';
       )}
 
       {vocab.mappings.show && c.mappings.length > 0 && (
-        <section class="card p-6" data-pagefind-ignore>
-          <h2 class={sectionTitle}>{ui.mappings}</h2>
+        <section class={section} data-pagefind-ignore>
+          <h2 class={h2}>{ui.mappings}</h2>
           <table class="w-full text-sm">
             <tbody class="divide-y divide-base-100 dark:divide-base-800">
               {c.mappings.map((m) => (
@@ -157,64 +144,65 @@ const sectionTitle = 'eyebrow mb-3';
       )}
 
       {otherExtras.length > 0 && (
-        <section class="card p-6" data-pagefind-ignore>
-          <h2 class={sectionTitle}>{ui.other_fields}</h2>
+        <section class={section} data-pagefind-ignore>
+          <h2 class={h2}>{ui.other_fields}</h2>
           <dl class="space-y-3 text-sm">
             {otherExtras.map(([k, v]) => <div><dt class="font-mono text-base-500">{k}</dt><dd class="mt-1"><FieldValue value={v} /></dd></div>)}
           </dl>
         </section>
       )}
+
+      <div data-pagefind-ignore><SuggestEdit c={c} issueUrl={links.issue} /></div>
     </article>
 
-    <aside class="min-w-0 space-y-6" data-pagefind-ignore>
-      <section class="card p-5">
-        <h2 class={sectionTitle}>{ui.identifiers}</h2>
-        <dl class="space-y-3 text-sm">
-          <div><dt class="text-base-500">CURIE</dt><dd class="mt-0.5 flex items-center justify-between gap-2"><code class="font-mono">{c.curie}</code><CopyButton value={c.curie} /></dd></div>
-          <div><dt class="text-base-500">IRI</dt><dd class="mt-0.5 flex items-center justify-between gap-2"><a class="break-all font-mono hover:text-accent-700 hover:underline dark:hover:text-accent-300" href={c.iri}>{c.iri}</a><CopyButton value={c.iri} /></dd></div>
-        </dl>
-      </section>
-
-      <section class="card p-5">
-        <h2 class={sectionTitle}>{ui.position}</h2>
-        <dl class="grid grid-cols-2 gap-3 text-sm">
-          <div><dt class="text-base-500">{ui.depth}</dt><dd class="text-xl font-semibold tabular-nums">{c.depth}</dd></div>
-          <div><dt class="text-base-500">{ui.descendants}</dt><dd class="text-xl font-semibold tabular-nums">{c.descendants}</dd></div>
-        </dl>
-        <a href={href(`browse/#${c.slug}`)} class="mt-4 inline-block text-sm font-medium text-accent-700 hover:underline dark:text-accent-300">{ui.browse} →</a>
-      </section>
-
-      <section class="card p-5">
-        <h2 class={sectionTitle}>{ui.quality}</h2>
-        {c.flags.length === 0 ? <p class="text-sm text-base-500">{ui.no_flags}</p> : (
+    <aside class="min-w-0 space-y-5 text-sm lg:border-l lg:border-base-200 lg:pl-8 dark:lg:border-base-800" data-pagefind-ignore>
+      <section class={side}>
+        <h2 class={h2}>{ui.quality}</h2>
+        {c.flags.length === 0 ? <p class="text-base-500">{ui.no_flags}</p> : (
           <ul class="space-y-3">
             {c.flags.map((f) => (
-              <li class="text-sm">
-                <div class="flex items-center gap-2"><SeverityPill severity={f.severity} /><a href={issueHref(c.slug, f.check)} class="font-medium hover:text-accent-700 hover:underline">{checkTitles[f.check]} →</a></div>
-                {f.detail && <p class="mt-1 text-base-500 dark:text-base-400"><Detail text={f.detail} /></p>}
+              <li>
+                <a href={issueHref(c.slug, f.check)} class="group block">
+                  <span class="flex items-center gap-2"><SeverityPill severity={f.severity} /><span class="font-medium group-hover:text-accent-700 group-hover:underline">{checkTitles[f.check]} →</span></span>
+                  {f.detail && <span class="mt-1 block text-base-500 dark:text-base-400">{f.detail.replace(/\[\[([^\]]+)\]\]/g, (_, k) => concept(k)?.label ?? k)}</span>}
+                </a>
               </li>
             ))}
           </ul>
         )}
       </section>
 
-      {rdf.length > 0 && (
-        <section class="card p-5">
-          <h2 class={sectionTitle}>{ui.formats}</h2>
-          <div class="flex flex-wrap gap-2">{rdf.map((r) => <a class="chip hover:border-accent-300" href={r.href}>{r.label}</a>)}</div>
-        </section>
-      )}
+      <section class={side}>
+        <h2 class={h2}>{ui.identifiers}</h2>
+        <dl class="space-y-3">
+          <div><dt class="text-base-500">CURIE</dt><dd class="mt-0.5 flex items-center justify-between gap-2"><code class="font-mono">{c.curie}</code><CopyButton value={c.curie} /></dd></div>
+          <div><dt class="text-base-500">IRI</dt><dd class="mt-0.5 flex items-center justify-between gap-2"><a class="break-all font-mono hover:text-accent-700 hover:underline dark:hover:text-accent-300" href={c.iri}>{c.iri}</a><CopyButton value={c.iri} /></dd></div>
+        </dl>
+        {rdf.length > 0 && <p class="mt-3 flex gap-3 text-base-500">{rdf.map((r) => <a class="hover:text-accent-700 hover:underline" href={r.href}>{r.label}</a>)}</p>}
+      </section>
+
+      <section class={side}>
+        <h2 class={h2}>{ui.position}</h2>
+        <p class="text-base-600 dark:text-base-300">{ui.depth} <span class="font-semibold tabular-nums">{c.depth}</span> · {ui.descendants} <span class="font-semibold tabular-nums">{c.descendants}</span></p>
+        <a href={href(`browse/#${c.slug}`)} class="mt-2 inline-block font-medium text-accent-700 hover:underline dark:text-accent-300">{ui.browse} →</a>
+      </section>
 
       {links.source && (
-        <section class="card p-5">
-          <h2 class={sectionTitle}>{ui.contribute}</h2>
-          <ul class="space-y-2 text-sm">
-            <li><a class="text-accent-700 hover:underline dark:text-accent-300" href={links.source}>{ui.edit_source} ↗</a></li>
-            <li><a class="text-accent-700 hover:underline dark:text-accent-300" href={links.notes}>{c.has_sidecar ? ui.edit_notes : ui.add_notes} ↗</a></li>
-            <li><a class="text-accent-700 hover:underline dark:text-accent-300" href={links.issue}>{ui.open_issue} ↗</a></li>
+        <section class={side}>
+          <h2 class={h2}>{ui.contribute}</h2>
+          <ul class="space-y-2">
+            {vocab.edits?.patches_dir && <li><a class="font-medium text-accent-700 hover:underline dark:text-accent-300" href="#suggest">{ui.suggest_edit} ↓</a></li>}
+            <li><a class="text-base-600 hover:text-accent-700 hover:underline dark:text-base-300" href={links.source}>{ui.edit_source} ↗</a></li>
+            <li><a class="text-base-600 hover:text-accent-700 hover:underline dark:text-base-300" href={links.notes}>{c.has_sidecar ? ui.edit_notes : ui.add_notes} ↗</a></li>
           </ul>
         </section>
       )}
     </aside>
   </div>
 </Base>
+
+<script>
+  // Following a "Suggest an edit" link opens the form.
+  document.querySelectorAll<HTMLAnchorElement>('a[href="#suggest"]').forEach((a) =>
+    a.addEventListener('click', () => { const d = document.getElementById('suggest') as HTMLDetailsElement | null; if (d) d.open = true; }));
+</script>

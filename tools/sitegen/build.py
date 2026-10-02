@@ -158,6 +158,7 @@ def main() -> None:
             "pages_rel": content.get("pages") or "",
             "checks_rel": content.get("checks") or "",
         },
+        "edits": cfg.section("edits"),
         "sidecar_template": (
             cfg.resolve(cfg.vocab.get("sidecar_template")).read_text()  # type: ignore[union-attr]
             if cfg.vocab.get("sidecar_template") and cfg.resolve(cfg.vocab["sidecar_template"]).exists()  # type: ignore[union-attr]
@@ -179,6 +180,10 @@ def main() -> None:
     gen = site_dir / "src" / "generated"
     gen.mkdir(parents=True, exist_ok=True)
     (gen / "vocab.json").write_text(json.dumps(contract, ensure_ascii=False, indent=1))
+    # Rendered Markdown embeds live values ({{stats.*}}, [[slug]] labels), so the
+    # renderer's content cache is stale whenever the contract changes.
+    for cache in (site_dir / ".astro" / "data-store.json", site_dir / "node_modules" / ".astro" / "data-store.json"):
+        cache.unlink(missing_ok=True)
 
     out = cfg.resolve(cfg.section("resolver").get("output"))
     if out:
