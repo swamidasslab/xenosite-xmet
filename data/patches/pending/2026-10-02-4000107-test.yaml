@@ -1,0 +1,7 @@
+id: 2026-10-02-4000107-test
+author: "@swamidass"
+rationale: "Workflow test: add the synonym already used in the definition."
+changes:
+  - op: add_synonym
+    concept: xmet:4000107
+    value: sulfoxide deoxygenation
