@@ -487,14 +487,6 @@
       "broader": "xmet:4000032"
     },
     {
-      "id": "xmet:4000036",
-      "type": "skos:Concept",
-      "prefLabel": "thiol oxidation",
-      "inScheme": "xmet:scheme",
-      "definition": "thiol oxidation: xenobiotic-metabolism term under sulfur oxidation.",
-      "broader": "xmet:4000298"
-    },
-    {
       "id": "xmet:4000037",
       "type": "skos:Concept",
       "prefLabel": "disulfide formation",
@@ -508,7 +500,7 @@
       "prefLabel": "primary carbon hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "primary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.",
-      "broader": "xmet:4000378"
+      "broader": "xmet:4000292"
     },
     {
       "id": "xmet:4000039",
@@ -516,7 +508,7 @@
       "prefLabel": "secondary carbon hydroxylation",
       "inScheme": "xmet:scheme",
       "definition": "secondary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.",
-      "broader": "xmet:4000378"
+      "broader": "xmet:4000292"
     },
     {
       "id": "xmet:4000040",
@@ -649,7 +641,7 @@
       "prefLabel": "O-deethylation",
       "inScheme": "xmet:scheme",
       "definition": "O-deethylation: xenobiotic-metabolism term under O-dealkylation.",
-      "broader": "xmet:4000345"
+      "broader": "xmet:4000413"
     },
     {
       "id": "xmet:4000053",
@@ -1203,6 +1195,9 @@
       "prefLabel": "sulfoxide reduction",
       "inScheme": "xmet:scheme",
       "definition": "Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation).",
+      "altLabel": [
+        "S-oxide reduction"
+      ],
       "broader": "xmet:4000106"
     },
     {
@@ -1212,18 +1207,6 @@
       "inScheme": "xmet:scheme",
       "definition": "Reductive cleavage of a disulfide S–S bond to thiols (or equivalent).",
       "broader": "xmet:4000106"
-    },
-    {
-      "id": "xmet:4000109",
-      "type": "skos:Concept",
-      "prefLabel": "sulfo reduction",
-      "inScheme": "xmet:scheme",
-      "definition": "Reduction of a sulfo / sulfoxide center.",
-      "altLabel": [
-        "S-oxide reduction"
-      ],
-      "broader": "xmet:4000106",
-      "closeMatch": "xmet:4000107"
     },
     {
       "id": "xmet:4000110",
@@ -3014,7 +2997,7 @@
         "pyroglutamate neutral loss",
         "129 Da neutral loss"
       ],
-      "broader": "xmet:4000228",
+      "broader": "xmet:4000221",
       "suggests": "xmet:4000167"
     },
     {
@@ -3209,6 +3192,9 @@
       "prefLabel": "sulfenic acid formation",
       "inScheme": "xmet:scheme",
       "definition": "Oxidation of sulfur introducing an S–OH (sulfenic acid) group.",
+      "altLabel": [
+        "thiol oxidation"
+      ],
       "broader": "xmet:4000032"
     },
     {

@@ -39,7 +39,6 @@ legacy:4000032 owl:sameAs xmet:4000032 .
 legacy:4000033 owl:sameAs xmet:4000033 .
 legacy:4000034 owl:sameAs xmet:4000034 .
 legacy:4000035 owl:sameAs xmet:4000035 .
-legacy:4000036 owl:sameAs xmet:4000036 .
 legacy:4000037 owl:sameAs xmet:4000037 .
 legacy:4000038 owl:sameAs xmet:4000038 .
 legacy:4000039 owl:sameAs xmet:4000039 .
@@ -112,7 +111,6 @@ legacy:4000105 owl:sameAs xmet:4000105 .
 legacy:4000106 owl:sameAs xmet:4000106 .
 legacy:4000107 owl:sameAs xmet:4000107 .
 legacy:4000108 owl:sameAs xmet:4000108 .
-legacy:4000109 owl:sameAs xmet:4000109 .
 legacy:4000110 owl:sameAs xmet:4000110 .
 legacy:4000111 owl:sameAs xmet:4000111 .
 legacy:4000112 owl:sameAs xmet:4000112 .

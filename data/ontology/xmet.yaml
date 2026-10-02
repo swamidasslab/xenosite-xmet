@@ -301,11 +301,6 @@ concepts:
   definition: S-oxidation of a thiophene ring; a dearomatizing path to S-oxides.
   parents:
   - xmet:4000032
-- id: xmet:4000036
-  preferred_label: thiol oxidation
-  definition: 'thiol oxidation: xenobiotic-metabolism term under sulfur oxidation.'
-  parents:
-  - xmet:4000298
 - id: xmet:4000037
   preferred_label: disulfide formation
   definition: Formation of a disulfide (R–S–S–R′) by sulfur oxidation / oxidative coupling. Does not
@@ -316,12 +311,12 @@ concepts:
   preferred_label: primary carbon hydroxylation
   definition: 'primary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.'
   parents:
-  - xmet:4000378
+  - xmet:4000292
 - id: xmet:4000039
   preferred_label: secondary carbon hydroxylation
   definition: 'secondary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.'
   parents:
-  - xmet:4000378
+  - xmet:4000292
 - id: xmet:4000040
   preferred_label: tertiary carbon hydroxylation
   definition: 'tertiary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation.'
@@ -416,7 +411,7 @@ concepts:
   preferred_label: O-deethylation
   definition: 'O-deethylation: xenobiotic-metabolism term under O-dealkylation.'
   parents:
-  - xmet:4000345
+  - xmet:4000413
 - id: xmet:4000053
   preferred_label: aromatic O-dealkylation
   definition: Cleavage of an aryl–O–alkyl ether (e.g. anisole → phenol).
@@ -872,6 +867,8 @@ concepts:
   - xmet:4000008
 - id: xmet:4000107
   preferred_label: sulfoxide reduction
+  synonyms:
+  - S-oxide reduction
   definition: Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation).
   parents:
   - xmet:4000106
@@ -880,15 +877,6 @@ concepts:
   definition: Reductive cleavage of a disulfide S–S bond to thiols (or equivalent).
   parents:
   - xmet:4000106
-- id: xmet:4000109
-  preferred_label: sulfo reduction
-  synonyms:
-  - S-oxide reduction
-  definition: Reduction of a sulfo / sulfoxide center.
-  parents:
-  - xmet:4000106
-  close_match:
-  - xmet:4000107
 - id: xmet:4000110
   preferred_label: reductive dehalogenation
   definition: Reductive removal of halogen. Under reduction; related to isoredox dehalogenation (not
@@ -2196,7 +2184,7 @@ concepts:
   definition: Characteristic MS neutral loss of ~129 Da (pyroglutamate) suggesting glutathione 
     conjugation / GSH adduct.
   parents:
-  - xmet:4000228
+  - xmet:4000221
   suggests:
   - xmet:4000167
 - id: xmet:4000280
@@ -2375,6 +2363,8 @@ concepts:
   - xmet:4000032
 - id: xmet:4000298
   preferred_label: sulfenic acid formation
+  synonyms:
+  - thiol oxidation
   definition: Oxidation of sulfur introducing an S–OH (sulfenic acid) group.
   parents:
   - xmet:4000032

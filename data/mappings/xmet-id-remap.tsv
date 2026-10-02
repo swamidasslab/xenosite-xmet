@@ -42,7 +42,7 @@ xmet:1200209	xmet:4000075	merged	redundant class node → single- to double-bond
 xmet:1200210	xmet:4000076	merged	redundant class node → double- to triple-bond dehydrogenation
 xmet:1200211	xmet:4000085	merged	redundant class node → ether hydrolysis
 xmet:1200212	xmet:4000086	merged	CORRECTED: cyanide hydrolysis class → cyanide hydrolysis (not nitrile)
-xmet:1200213	xmet:4000109	merged	redundant class node → sulfo reduction
+xmet:1200213	xmet:4000107	merged	redundant class node → sulfo reduction
 xmet:1200214	xmet:4000101	merged	redundant class node → oxygen reduction
 xmet:1300000		retired	deferred spine wiped (out of scope this redesign version)
 xmet:1300100	xmet:4000149	merged	redundant class node → O-glucuronidation
@@ -674,7 +674,7 @@ xmet:0000130	xmet:4000032	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000131	xmet:4000033	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000132	xmet:4000034	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000133	xmet:4000035	renumbered	dense opaque renumber to xmet:4000000+
-xmet:0000134	xmet:4000036	renumbered	dense opaque renumber to xmet:4000000+
+xmet:0000134	xmet:4000298	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000135	xmet:4000037	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000140	xmet:4000038	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000141	xmet:4000039	renumbered	dense opaque renumber to xmet:4000000+
@@ -747,7 +747,7 @@ xmet:0000524	xmet:4000105	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000530	xmet:4000106	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000531	xmet:4000107	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000532	xmet:4000108	renumbered	dense opaque renumber to xmet:4000000+
-xmet:0000533	xmet:4000109	renumbered	dense opaque renumber to xmet:4000000+
+xmet:0000533	xmet:4000107	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000540	xmet:4000110	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000541	xmet:4000111	renumbered	dense opaque renumber to xmet:4000000+
 xmet:0000542	xmet:4000112	renumbered	dense opaque renumber to xmet:4000000+
@@ -1057,3 +1057,5 @@ xmet:4000363		retired	quinone-like formation by product type collapsed; children
 	xmet:4000415	minted	relation vocab: predicts (under operationalizes)
 	xmet:4000416	minted	relation vocab: recognizes (under operationalizes)
 	xmet:4000417	minted	relation vocab: enumerates (under operationalizes)
+xmet:4000109	xmet:4000107	merged	duplicate of sulfoxide reduction
+xmet:4000036	xmet:4000298	merged	duplicate of sulfenic acid formation

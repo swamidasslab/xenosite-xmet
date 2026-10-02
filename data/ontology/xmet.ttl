@@ -286,12 +286,6 @@ xmet:4000035 a skos:Concept ;
   skos:altLabel "thiohene S-oxidation" ;
   skos:broader xmet:4000032 .
 
-xmet:4000036 a skos:Concept ;
-  skos:prefLabel "thiol oxidation" ;
-  skos:definition "thiol oxidation: xenobiotic-metabolism term under sulfur oxidation." ;
-  skos:inScheme xmet:scheme ;
-  skos:broader xmet:4000298 .
-
 xmet:4000037 a skos:Concept ;
   skos:prefLabel "disulfide formation" ;
   skos:definition "Formation of a disulfide (R–S–S–R′) by sulfur oxidation / oxidative coupling. Does not require an S=O (sulfur oxo) bond." ;
@@ -302,13 +296,13 @@ xmet:4000038 a skos:Concept ;
   skos:prefLabel "primary carbon hydroxylation" ;
   skos:definition "primary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:4000378 .
+  skos:broader xmet:4000292 .
 
 xmet:4000039 a skos:Concept ;
   skos:prefLabel "secondary carbon hydroxylation" ;
   skos:definition "secondary carbon hydroxylation: xenobiotic-metabolism term under aliphatic hydroxylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:4000378 .
+  skos:broader xmet:4000292 .
 
 xmet:4000040 a skos:Concept ;
   skos:prefLabel "tertiary carbon hydroxylation" ;
@@ -401,7 +395,7 @@ xmet:4000052 a skos:Concept ;
   skos:prefLabel "O-deethylation" ;
   skos:definition "O-deethylation: xenobiotic-metabolism term under O-dealkylation." ;
   skos:inScheme xmet:scheme ;
-  skos:broader xmet:4000345 .
+  skos:broader xmet:4000413 .
 
 xmet:4000053 a skos:Concept ;
   skos:prefLabel "aromatic O-dealkylation" ;
@@ -795,6 +789,7 @@ xmet:4000107 a skos:Concept ;
   skos:prefLabel "sulfoxide reduction" ;
   skos:definition "Reduction of a sulfoxide by cleavage of the S=O bond (sulfoxide deoxygenation)." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "S-oxide reduction" ;
   skos:broader xmet:4000106 .
 
 xmet:4000108 a skos:Concept ;
@@ -802,14 +797,6 @@ xmet:4000108 a skos:Concept ;
   skos:definition "Reductive cleavage of a disulfide S–S bond to thiols (or equivalent)." ;
   skos:inScheme xmet:scheme ;
   skos:broader xmet:4000106 .
-
-xmet:4000109 a skos:Concept ;
-  skos:prefLabel "sulfo reduction" ;
-  skos:definition "Reduction of a sulfo / sulfoxide center." ;
-  skos:inScheme xmet:scheme ;
-  skos:altLabel "S-oxide reduction" ;
-  skos:broader xmet:4000106 ;
-  skos:closeMatch xmet:4000107 .
 
 xmet:4000110 a skos:Concept ;
   skos:prefLabel "reductive dehalogenation" ;
@@ -2074,7 +2061,7 @@ xmet:4000279 a skos:Concept ;
   skos:altLabel "NL 129" ;
   skos:altLabel "pyroglutamate neutral loss" ;
   skos:altLabel "129 Da neutral loss" ;
-  skos:broader xmet:4000228 ;
+  skos:broader xmet:4000221 ;
   xmet:suggests xmet:4000167 .
 
 xmet:4000280 a skos:Concept ;
@@ -2215,6 +2202,7 @@ xmet:4000298 a skos:Concept ;
   skos:prefLabel "sulfenic acid formation" ;
   skos:definition "Oxidation of sulfur introducing an S–OH (sulfenic acid) group." ;
   skos:inScheme xmet:scheme ;
+  skos:altLabel "thiol oxidation" ;
   skos:broader xmet:4000032 .
 
 xmet:4000299 a skos:Concept ;

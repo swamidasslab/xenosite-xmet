@@ -1,0 +1,41 @@
+id: 2026-10-02-structure-cleanup
+author: '@swamidass'
+rationale: Structural cleanup from the quality review. Primary and secondary carbon
+  hydroxylation join tertiary in carbon-class homes (methyl/methylene vs methine);
+  O-deethylation sits under deethylation as O-demethylation sits under demethylation;
+  the GSH neutral loss is not a kind of mass shift; sulfo reduction duplicates sulfoxide
+  reduction; thiol oxidation duplicates sulfenic acid formation.
+changes:
+- op: move
+  concept: xmet:4000038
+  from: xmet:4000378
+  to: xmet:4000292
+- op: move
+  concept: xmet:4000039
+  from: xmet:4000378
+  to: xmet:4000292
+- op: move
+  concept: xmet:4000052
+  from: xmet:4000345
+  to: xmet:4000413
+- op: move
+  concept: xmet:4000279
+  from: xmet:4000228
+  to: xmet:4000221
+- op: retire
+  concept: xmet:4000109
+  replaced_by: xmet:4000107
+  note: duplicate of sulfoxide reduction
+- op: add_synonym
+  concept: xmet:4000107
+  value: S-oxide reduction
+- op: retire
+  concept: xmet:4000036
+  replaced_by: xmet:4000298
+  note: duplicate of sulfenic acid formation
+- op: add_synonym
+  concept: xmet:4000298
+  value: thiol oxidation
+applied:
+  date: '2026-10-02'
+  ids: {}

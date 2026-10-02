@@ -151,7 +151,7 @@ xmet:4000106	skos:exactMatch	rule:struct-sulfur-reduction	semapv:ManualMappingCu
 xmet:4000136	skos:exactMatch	rule:struct-sulfuration	semapv:ManualMappingCuration	sulfuration	struct-sulfuration
 xmet:4000182	skos:exactMatch	rule:struct-taurine-conjugation	semapv:ManualMappingCuration	taurine conjugation	struct-taurine-conjugation
 xmet:4000040	skos:exactMatch	rule:struct-tertiary-carbon-hydroxylation	semapv:ManualMappingCuration	tertiary carbon hydroxylation	struct-tertiary-carbon-hydroxylation
-xmet:4000036	skos:exactMatch	rule:struct-thiol-oxidation	semapv:ManualMappingCuration	thiol oxidation	struct-thiol-oxidation
+xmet:4000298	skos:exactMatch	rule:struct-thiol-oxidation	semapv:ManualMappingCuration	sulfenic acid formation	struct-thiol-oxidation
 xmet:4000025	skos:exactMatch	rule:struct-thiophene-epoxidation	semapv:ManualMappingCuration	thiophene epoxidation	struct-thiophene-epoxidation
 xmet:4000035	skos:exactMatch	rule:struct-thiophene-s-oxidation	semapv:ManualMappingCuration	thiophene S-oxidation	struct-thiophene-s-oxidation
 xmet:4000124	skos:exactMatch	rule:struct-transesterification	semapv:ManualMappingCuration	transesterification	struct-transesterification
