@@ -33,7 +33,7 @@ jobs:
       PR: ${{ github.event.pull_request.number }}
     steps:
       - uses: actions/checkout@v7   # base branch (main), not the PR
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v10.2.0
         with:
           python-version: "3.12"
       - run: uv sync
@@ -84,7 +84,7 @@ jobs:
       - uses: actions/checkout@v7
         with:
           ref: main
-      - uses: astral-sh/setup-uv@v10
+      - uses: astral-sh/setup-uv@v10.2.0
         with:
           python-version: "3.12"
       - run: uv sync
